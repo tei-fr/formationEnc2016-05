@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- :  On invente un projet imaginaire concernant l'encodage d'une archive de 
+documents (existants).
+Nous circulons une douzaine de pages images extraites de cet archive.
+Les etudiants sont invites a considerer deux modelisations de ces materiaux
+(a) un modele tres simple utilisable  par un projet de transcription 
+collaborative ("crowd sourcing") d'un quantite important des documents
+(b) un modele plus complet utilisable par un projet editoriale classique 
+visant l'edition d'un ou deux des documents  et/ou un modele visant la 
+production d'un corpus langagiere?
+On discute les modeles. On les represente avec Roma, on genere des 
+schemas, on valide les resultats etc. comme dhabitude. Ils preparent des 
+transcriptions TEI conformantes.
+On discute les interfaces necessaires/souhaitables pour l'affichage et 
+l'analyse des documents produits.
+Ils font une implementation du modele (a) avec par ex boilerplate
+Ils font une implementation du modele (b) avec par ex BaseX
+Ils decouvrent comment generer des formats diverses a partir de ces bases.
+ : -->
+<!-- : 
+Programme de la formation
+Premier jour
+9h-9h30 Introduction
+10h-11h Présentation des participants
+Chaque participant se présente et expose son travail et les difficultés rencontrées.
+Travail en binome
+Synthèse sur le balisage  PM (présentation magistrale)
+Théorie du balisage
+Expression en utilisant XML
+Document bien formé et document valide
+1h Modélisation   TP (travaux pratiques)
+Fournir plusieurs documents, discuter ce que l’on doit baliser.
+Exposés oraux des participants
+Premier exercice TEI ??
+Créer une première version d’un des documents modélisés en utilisant un schéma que nous allons préparer.
+Se familiariser avec l’environnement technique et expérimenter la saisie contextuelle, etc.
+Introduction complexités TEI   :  PM
+Personnalisation TEI avec ODD   :  TP
+Veut restreindre la TEI et travailler avec.
+Fournir un ODD préparé avant (qui contient très peu de choses et nécessite donc d’être augmenté).
+Utilisation ODD et génération Schémas XML
+d’abord un schema réduit
+ensuite un schema  riche  
+
+
+Balisage d’un ou plusieurs docs
+Travail en binôme (intervertir exercice)
+
+2ème journée…
+30 min Édition critique – PM
+Édition critique – TP
+Rappel des choix de modélisation définis la veille
+Identification des éléments de la TEI correspondant
+Travail avec ODD pour l’édition critique
+TEI Header – PM
+TEI Header – TP
+créer un header simple
+TEI  Msdescription  :  PM
+(exemple d’un document très spécialisée)
+TEI Msdesc - TP
+1h - Présentation projets avec la TEI
+3ème journée…
+Entités nommées PM
+
+TP a fournir
+Modalités de construction d’un document (group., corpus, facsimile.  etc) PM
+
+TP a fournir: discussion de comment organiser le projet imaginaire: importance de versioning; démontrer usage de Github?
+
+Creation d’un ODD personalise
+avec Roma
+avec Oxygen
+(teaser pour la formation qui suit)
+
+4eme journée…
+Travailler avec la TEI (intro PM)
+XSLT, XQuery, environnements, éditeurs
+XPath (TP existant)
+XSLT Stylesheets (???)
+
+
+Outils a demontrer:
+Boilerplate
+BaseX
+Exist+TEI Simple
+TXM
+VersioningMachine
+
+Florilegium de Projets TEI
+
+
+Au cours de la présentation essayer d’engager la discussion autour des outils en fonction.
+ : -->
+

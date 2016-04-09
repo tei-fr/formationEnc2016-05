@@ -23,7 +23,7 @@
     <text>
         <body>
 
-
+<div>
             <head>Programme de la formation</head>
             <div xml:id="h.pvysuqhi05m3">
                 <head>Premier jour</head>
@@ -43,31 +43,31 @@
                     <head>11h-11h30 Synthèse sur le balisage PM (présentation magistrale) EM</head>
                     <list>
                         <item>Théorie du balisage</item>
-                        <item> Expression en utilisant XML</item>
-                        <item> Document bien formé et document valide</item>
+                        <item>Expression en utilisant XML</item>
+                        <item>Document bien formé et document valide</item>
                     </list>
                 </div>
                 <div xml:id="h.g78pu2zg70yq">
                     <head>11h30-12h30 Modélisation TP (travaux pratiques) [ex-2-analyse.xml]
                         LB</head>
-                    <p>Fournir plusieurs documents, discuter ce que l’on doit baliser.</p>
-                    <p>Exposés oraux des participants</p>
+                    <p>Fournir plusieurs documents et discuter ce que l’on doit baliser; 
+                    Exposés oraux des participants</p>
                 </div>
                 <div xml:id="h.h0jsftvmkkxb">
-                    <head>Dejeuner</head>
+                    <head>LUNCH</head>
                 </div>
                 <div xml:id="h.mzfkwuk3n6ll">
-                    <head>13h30 - 14h Revoir l’exercice encodage initial  –   LB/EM</head>
+                    <head>13h30 - 14h Revoir l’exercice encodage initial – LB/EM</head>
                     <p>Contrôler que les participants se sont familiarisés avec l’environnement
                         technique et expérimenter la saisie contextuelle, etc.</p>
                 </div>
                 <div xml:id="h.61oy4e1nsru2">
-                    <head>14h -15h : Introduction complexités TEI  –  PM LB</head>
-                    <p>[comment partir des complexités du modele vers la TEI; les 5 étapes; modules,
-                        classes]</p>
+                    <head>14h -15h : Introduction complexités TEI – PM LB</head>
+                    <p>Comment partir des complexités du modele vers la TEI; les 5 étapes; modules,
+                        classes etc.</p>
                 </div>
                 <div xml:id="h.afxpdi1lc2c1">
-                    <head>15h - 17h Personnalisation TEI avec ODD  –  TP EM</head>
+                    <head>15h - 17h Personnalisation TEI avec ODD – TP EM</head>
                     <list>
                         <item> Création avec Roma ODD schéma réduit</item>
                         <item> Génération du schéma et de l’ODD</item>
@@ -88,7 +88,7 @@
             </div>
             <div xml:id="h.8g2upeenxvkn">
                 <head>2ème journée…</head>
-                <div xml:id="h.wy4843kuqgsh">
+                <div>
                     <head>9h30-10h min Édition critique – PM EM</head>
                     <p>transcription source primaire : segmentation; interventions editoriales </p>
                 </div>
@@ -99,8 +99,9 @@
                         <item>Identification des éléments de la TEI correspondant</item>
                         <item>Travail avec ODD pour l’édition critique</item>
                     </list>
-                    <p>Reprise de la transcription déjà faite pour la compléter. Et sélectionner un document complexe qui pourrait leur être donné à
-                        travailler pour approfondir. </p>
+                    <p>Reprise de la transcription déjà faite pour la compléter. Et sélectionner un
+                        document complexe qui pourrait leur être donné à travailler pour
+                        approfondir. </p>
                 </div>
                 <div xml:id="h.7gxph8dbmwvh">
                     <head>pause</head>
@@ -118,18 +119,17 @@
                     <head>LUNCH</head>
                 </div>
                 <div xml:id="h.ixpzxzkl26yf">
-                    <head>13h30 -14h15 TEI Msdescription  –  PM LB</head>
+                    <head>13h30 -14h15 TEI Msdescription – PM LB</head>
                     <p>Exemple d’un document très spécialisé</p>
                 </div>
                 <div xml:id="h.db6udhz2a7x6">
-                    <head>14h15 - 15h30 TEI Msdesc - TP LB</head>
+                    <head>14h15 - 15h30 TEI Msdescription – TP LB</head>
                 </div>
                 <div xml:id="h.zhysqra5n3mg">
                     <head>pause</head>
                 </div>
                 <div xml:id="h.x3bw3vjvbabf">
                     <head>16h - 17h - Présentation projets avec la TEI</head>
-                
                     <p>Les participants présentent leurs projet de travail : </p>
                     <list type="unordered">
                         <item>trois diapos</item>
@@ -140,59 +140,60 @@
                     </list>
                 </div>
             </div>
-            <div xml:id="h.z98b1atgfgop">
-                <head>3ème journée</head>
+            <div >
+                <head>3ème journée…</head>
                 <div xml:id="h.a89z6wz3j402">
-                    <head>09h30-10h Entités nommées PM EM</head>
+                    <head>09h30-10h Entités nommées  –  PM EM</head>
                 </div>
                 <div xml:id="h.of5vwr4r0kbl">
-                    <head>10h-11h00 TP a fournir EM</head>
+                    <head>10h-11h00 Création et gestion des Entités nommées  – TP EM</head>
                 </div>
                 <div xml:id="h.zhy4ca6477dm">
                     <head>11h00-11h30 Pause</head>
                 </div>
                 <div xml:id="h.92r0cb5mkj0x">
-                    <head>11h30-12h30 Modalités d'organisation des documents TEI  –  PM LB </head>
-                    <p>Conceptes de group, corpus,
-                        facsimile. etc: organisation des fichiers. </p>
-                    <p>Comment organiser le projet imaginaire: importance de
-                        versioning; démontrer usage de Github? –  TP EM </p>
+                    <head>11h30-12h Modalités d'organisation des documents TEI – PM LB </head>
+                    <p>Conceptes de group, corpus, facsimile. etc: organisation des fichiers. </p></div>
+                <div><head>12h - 12h30 Cas d'etude: organisation du projet Oulipo – TP EM </head>
+                    <p>Comment organiser le projet imaginaire: importance de versioning; démontrer
+                        usage de Github? </p>
                 </div>
                 <div xml:id="h.wx1s3eh19wz8">
-                    <head>déjeuner</head>
+                    <head>LUNCH</head>
                 </div>
                 <div xml:id="h.e57fk14vbhqs">
-                    <head>13h30-14h Personnalisation avancée avec ODD  – PM LB </head>
-                    <p>Revoir et comprendre l’ODD crée</p></div>
+                    <head>13h30-14h Personnalisation avancée avec ODD – PM LB </head>
+                    <p>Revoir et comprendre l’ODD crée</p>
+                </div>
                 <div>
                     <head>14h - 15h Creation d’un ODD personalisé – TP LB </head>
                     <list type="unordered">
                         <item>avec Roma</item>
                         <item>avec Oxygen</item>
                     </list>
-              </div>
+                </div>
                 <div xml:id="h.we3t9crz65au">
                     <head>pause</head>
                 </div>
                 <div xml:id="h.ek1o9kyttk3m">
-                    <head>15h30 - 16h15: Florilegium TEI – PM LB</head>
-                    <p>Travailler avec la TEI</p>
+                    <head>15h30 - 16h15: Florilegium de projets TEI – PM LB</head>
+                    <p>Comment les gens se servent de la TEI</p>
                 </div>
                 <div xml:id="h.u1cf6uobb6t5">
-                    <head>16h15-17h XPath TP  – EM</head>
-                    <p>rappel de l'intérêt de structuration ; technique essentiel pour ce qui
+                    <head>16h15-17h XPath TP – EM</head>
+                    <p>Rappel de l'intérêt de structuration ; technique essentiel pour ce qui
                         suit</p>
                 </div>
             </div>
             <div xml:id="h.lr0l85wkrsry">
                 <head>4ème journée…</head>
                 <div xml:id="h.f09yqhpvnwkf">
-                    <head>9h30-10h Chaînes de traitement TEI   –  PM EM</head>
+                    <head>9h30-10h Chaînes de traitement TEI – PM EM</head>
                     <p>CSS, XSLT, XQuery, environnements de publication</p>
                     <p>epub, pdf, inDesign, etc.</p>
                 </div>
                 <div xml:id="h.2dk18c4fn8od">
-                    <head>10h00-11h XSLT Pour les nuls  –  PM+TP LB</head>
+                    <head>10h00-11h XSLT Pour les nuls – PM+TP LB</head>
                     <p>Création d’une feuille de style très simple pour transformer un document TEI
                         vers HTML.</p>
                     <p>Ajout de quelques templates.</p>
@@ -201,10 +202,12 @@
                     <head>Pause</head>
                 </div>
                 <div xml:id="h.hl51hez47nmm">
-                    <head>11h30-12h30 XSLT pour les paresseux  –  PM+TP EM</head>
-                    <list><item>Framework TEI Oxygen
-                    </item><item>Personnalisation avec les variables
-                    </item><item>Réécriture d’une règle</item></list>
+                    <head>11h30-12h30 XSLT pour les paresseux – PM+TP EM</head>
+                    <list>
+                        <item>Framework TEI Oxygen </item>
+                        <item>Personnalisation avec les variables </item>
+                        <item>Réécriture d’une règle</item>
+                    </list>
                 </div>
                 <div xml:id="h.syfdmzmov7b4">
                     <head>LUNCH</head>
@@ -231,15 +234,17 @@
                         en fonction.</p>
                 </div>
             </div>
-
-            <div >
+</div>
+            <div>
                 <head>Exercices avant la formation</head>
-              <list> <item>Lire le bouquin <hi rend="italic">Qu’est-ce que la TEI ?</hi></item><item>
-               Leur donner un premier exercice à faire (tutoriel initial)
-                </item><item>Appliquer un schéma.
-                Questionnaire
-                </item><item>Au début de la formation, dans la session où les gens se présentent,
-                chacun présente son travail et les difficultés auxquelles il a été confronté.</item></list>
+                <list>
+                    <item>Lire le bouquin <hi rend="italic">Qu’est-ce que la TEI ?</hi></item>
+                    <item>Leur donner un premier exercice à faire (tutoriel initial) </item>
+                    <item>Appliquer un schéma. Questionnaire </item>
+                    <item>Au début de la formation, dans la session où les gens se présentent,
+                        chacun présente son travail et les difficultés auxquelles il a été
+                        confronté.</item>
+                </list>
             </div>
             <div>
                 <head>Propositions de documents OULIPO</head>

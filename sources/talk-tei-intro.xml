@@ -1039,7 +1039,7 @@
         <p rend="box">L'objet de ces règles est de faciliter le "blind interchange" des
           documents.</p>
       </div>
-      <div>
+    <!--  <div>
         <head>http://www.tei-c.org/Roma/</head>
         <p>On va experimenter cela... <graphic url="../Graphics/Roma-new.png" height="60%"/>
         </p>
@@ -1049,7 +1049,7 @@
           <item>Utilisez un template ou un schema prédéfini</item>
           <item>Retravailler une personalisation déjà faite </item>
         </list>
-      </div>
+      </div>-->
     </body>
   </text>
 </TEI>

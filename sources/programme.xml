@@ -28,9 +28,9 @@
 
             <div>
                 <head>Programme de la formation</head>
-                <div xml:id="h.pvysuqhi05m3">
+                <div >
                     <head>Premier jour</head>
-                    <div xml:id="h.9tp6287y5juk">
+                    <div >
                         <head>9h30 Introduction</head>
                     </div>
                     <div>
@@ -56,7 +56,7 @@
                         <head>11h30-12h30 Modélisation TP (travaux pratiques) LB</head>
                         <p>Fournir plusieurs documents et discuter ce que l’on doit baliser; Exposés
                             oraux des participants</p>
-                        <p>Cf. <ref target="ex-2-analyse.xml"/></p>
+                        <p> <ref target="ex-2-analyse.xml">ex-2-analyse</ref></p>
                     </div>
                     <div >
                         <head>LUNCH</head>
@@ -68,16 +68,17 @@
                             technique et expérimenter la saisie contextuelle, etc.</p>
                     </div>
                     <div resp="#LB">
-                        <head>14h -15h : Introduction complexités TEI – PM LB</head>
+                        <head>14h -15h : Introduction aux richesses de la TEI – PM LB</head>
                         <p>Comment partir des complexités du modele vers la TEI; les 5 étapes;
                             modules, classes etc.</p>
-                        <p>A construire <bibl><title>L'envergure de la TEI Un tour d'horizon de
+                        <p><ref target="talk-tei-intro.xml">talk-tei-intro</ref></p>
+                       <!-- <p>A construire <bibl><title>L'envergure de la TEI Un tour d'horizon de
                                     l'univers TEI</title>
                                 <ident>lbc:2013-03-lille/talk-4.xml</ident></bibl>; <bibl>
                                 <title>Comment se servir des TEI Guidelines? </title>
                                 <ident>lbc:2016-01-tours/talk-03.xml</ident>
-                            </bibl>
-                        </p>
+                            </bibl>-->
+                        <!--</p>-->
                     </div>
                     <div resp="#EM #LB">
                         <head>15h - 17h Personnalisation TEI avec ODD – TP EM</head>
@@ -165,10 +166,10 @@
                     <div resp="#EM">
                         <head>09h30-10h Entités nommées – PM EM</head>
                     </div>
-                    <div xml:id="h.of5vwr4r0kbl">
+                    <div>
                         <head>10h-11h00 Création et gestion des Entités nommées – TP EM</head>
                     </div>
-                    <div xml:id="h.zhy4ca6477dm">
+                    <div>
                         <head>11h00-11h30 Pause</head>
                     </div>
                     <div resp="#LB">
@@ -181,7 +182,7 @@
                         <p>Comment organiser le projet imaginaire: importance de versioning;
                             démontrer usage de Github? </p>
                     </div>
-                    <div xml:id="h.wx1s3eh19wz8">
+                    <div >
                         <head>LUNCH</head>
                     </div>
                     <div resp="#LB">
@@ -195,7 +196,7 @@
                             <item>avec Oxygen</item>
                         </list>
                     </div>
-                    <div xml:id="h.we3t9crz65au">
+                    <div >
                         <head>pause</head>
                     </div>
                     <div resp="#LB">

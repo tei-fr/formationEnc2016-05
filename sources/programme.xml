@@ -39,7 +39,7 @@
                             rencontrées.</p>
                         <p>Définition des binômes</p>
                     </div>
-                    <div xml:id="h.lw1ucyt2yxmj">
+                    <div>
                         <head>Pause</head>
                     </div>
                     <div resp="#EM">
@@ -58,7 +58,7 @@
                             oraux des participants</p>
                         <p>Cf. <ref target="ex-2-analyse.xml"/></p>
                     </div>
-                    <div xml:id="h.h0jsftvmkkxb">
+                    <div >
                         <head>LUNCH</head>
                     </div>
                     <div resp="#LB #EM">
@@ -105,6 +105,10 @@
                         <head>9h30-10h min Édition critique – PM EM</head>
                         <p>transcription source primaire : segmentation; interventions editoriales
                         </p>
+                        <p> <ident>2015-09-lyon/talk-07-ms.xml</ident>; 
+                            <ident>2015-09-lyon/04-editionCritique.tei.xml</ident>
+                            
+                        </p>
                     </div>
                     <div xml:id="h.hv09jkfu37zg">
                         <head>10h-11h Édition critique – TP LB</head>
@@ -134,6 +138,8 @@
                     </div>
                     <div resp="#LB">
                         <head>13h30 -14h15 TEI Msdescription – PM LB</head>
+                       <p> <ident>2014-05-inha/talk-msdesc.xml</ident>
+                       </p> 
                         <p>Exemple d’un document très spécialisé</p>
                     </div>
                     <div xml:id="h.db6udhz2a7x6">
@@ -194,6 +200,7 @@
                     </div>
                     <div resp="#LB">
                         <head>15h30 - 16h15: Florilegium de projets TEI – PM LB</head>
+                        <p><ref target="2013-10-tours/tei-florilege.xml"/></p>
                         <p>Comment les gens se servent de la TEI</p>
                     </div>
                     <div resp="#EM">
@@ -211,11 +218,14 @@
                     </div>
                     <div resp="#LB">
                         <head>10h00-11h XSLT Pour les nuls – PM+TP LB</head>
+                        <p><ref target="2015-09-lyon/talk-11-xslt.xml"/></p>
+                        <p><ref target="2015-09-lyon/ex-11-xslt.xml"/></p>
+                        
                         <p>Création d’une feuille de style très simple pour transformer un document
                             TEI vers HTML.</p>
                         <p>Ajout de quelques templates.</p>
                     </div>
-                    <div xml:id="h.q3p00s855qyf">
+                    <div >
                         <head>Pause</head>
                     </div>
                     <div resp="#EM">

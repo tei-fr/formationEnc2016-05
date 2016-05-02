@@ -4,7 +4,7 @@
     <fileDesc>
       <titleStmt>
         <title>Analyse et modélisation des textes</title>
-        <author>TEI@Oxford</author>
+        <author>Lou Burnard Consulting</author>
       </titleStmt>
       <publicationStmt>
         <publisher>TEI</publisher>
@@ -93,7 +93,7 @@
         <p>On peut également appliquer ce modèle dans notre cas. Vous savez tous ce qu’est qu’une carte postale.</p></note>
       </div>
 
-      <div>
+      <!--<div>
         <head>Par exemple…</head>
         <figure>    
           <graphic url="../images/carte-modele.png"/>
@@ -102,7 +102,7 @@
         <p>En jaune, ce sont des entités, des choses pour lesquelles on dispose d’information. Les liens sont des relations entre les objets.</p>
         <p>On a une carte et des noms de personnes. Les noms de personnes peuvent intervenir pour deux raisons : où une carte mentionne la personne, ou bien la personne est soit destinataire soit expéditeur. De même la carte peut être rédigée en un lieu, ou adressée à une adresse. Mais la carte peut encore représenter un lieu…</p></note>
       </div>
-
+-->
       <div>
         <head>Analyse des documents </head>
         <list>
@@ -116,15 +116,15 @@
       </div>
       
       <div><head>Document A</head>
-        <figure><graphic url="../exemples/carte-1v.png"/>
+        <figure><graphic url="../travaux/carte-1v.png"/>
         <head>une carte postale</head></figure></div>
       
       <div><head>Document B</head>
-        <figure><graphic url="../exemples/acteRoyale.jpg"/>
+        <figure><graphic url="../travaux/acteRoyale.jpg"/>
           <head>un manuscrit </head></figure></div>
       
       <div><head>Document C</head>
-        <figure><graphic url="../exemples/10010099-1_1.jpg"/>
+        <figure><graphic url="../travaux/10010099-1_1.jpg"/>
           <head>un tapuscrit </head></figure></div>
       <div>
        <head>
@@ -136,15 +136,12 @@
           <item>Quels sont ses composants intéressants, possible dans tous ces documents ?</item>
           <item>Sauriez vous faire en sorte qu'une autre personne reconnaitrait les mêmes objets
             ?</item>
-<<<<<<< .mine
-          <item>Faire une liste de tous les objets et propriétés essentiels de votre document</item>
-          <item>Présenter cette liste ... et la justifier ! </item></list></div>
-=======
+
           <item>Faire une liste de tous les  objets et proprietes essentiels de votre
             document</item>
           <item>Présenter cette liste ... et la justifier ! </item></list></div>
       <note><p>L’une des leçons de cet exercice, c’est que l’on ne peut pas encoder mécaniquement un texte. Toujours intéressant de voir une personne prendre un document et se l’approprier.</p></note>
->>>>>>> .r66
+
     </body>
   </text>
 </TEI>

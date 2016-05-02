@@ -82,12 +82,17 @@
                     </div>
                     <div xml:id="T05" resp="#EM #LB">
                         <head>15h - 17h Personnalisation TEI avec ODD – TP EM</head>
+                        <p><ref target="ex-3-roma.xml">ex-roma</ref></p>
                         <list>
                             <item> Création avec Roma ODD schéma réduit</item>
                             <item> Génération du schéma et de l’ODD</item>
                             <item> Valider avec le schéma</item>
+                            
                             <item> Transcription d’un document Oulipo</item>
-                            <item> Puis relancer l’ODD dans Roma pour l’étendre [LB]</item>
+                            <!-- il s'agit de quel document?
+    je propose travaux/cr650308 mais c'est un peu long -->
+                            
+<item> Puis relancer l’ODD dans Roma pour l’étendre [LB]</item>
                             <item> retravailler sur un autre doc plus complexe? retravailler sur le
                                 meme doc en ajoutant des complexites?</item>
                             <item> Avoir un dossier où mettent leurs transcriptions identifiées par
@@ -111,7 +116,7 @@
                             
                         </p>
                     </div>
-                    <div xml:id="T07 resp="#LB">
+                    <div xml:id="T07" resp="#LB">
                         <head>10h-11h Édition critique – TP LB</head>
                         <list type="unordered">
                             <item>Rappel des choix de modélisation définis la veille</item>
@@ -128,13 +133,13 @@
                     <div xml:id="T08" resp="#EM">
                         <head>11h30 -1200 TEI Header – PM EM</head>
                     </div>
-                    <div >
+                    <div xml:id="T08bis" resp="#EM">
                         <head>12h -12h30 TEI Header – TP EM</head>
                         <list type="unordered">
                             <item>créer un header simple</item>
                         </list>
                     </div>
-                    <div xml:id="h.ymrba966tegx">
+                    <div>
                         <head>LUNCH</head>
                     </div>
                     <div xml:id="T09" resp="#LB">
@@ -166,7 +171,7 @@
                     <div xml:id="T12" resp="#EM">
                         <head>09h30-10h Entités nommées – PM EM</head>
                     </div>
-                    <div xml:id="T12" resp="#EM">
+                    <div xml:id="T12bis" resp="#EM">
                         <head>10h-11h00 Création et gestion des Entités nommées – TP EM</head>
                     </div>
                     <div>
@@ -253,7 +258,7 @@
                             <item>Omeka, Zotero EM </item>
                         </list>
                     </div>
-                    <div ">
+                    <div >
                         <head>14h30-16h Discussion sur leurs projets</head>
                     </div>
                     <div>

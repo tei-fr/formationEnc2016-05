@@ -80,25 +80,25 @@
                             </bibl>-->
                         <!--</p>-->
                     </div>
-                    <div xml:id="T05" resp="#EM #LB">
-                        <head>15h - 17h Personnalisation TEI avec ODD – TP EM</head>
+                    <div xml:id="T05" resp="#EM ">
+                        <head>15h - 17h Personnalisation TEI avec Roma– TP EM</head>
                         <p><ref target="ex-3-roma.xml">ex-roma</ref></p>
                         <list>
                             <item> Création avec Roma ODD schéma réduit</item>
                             <item> Génération du schéma et de l’ODD</item>
                             <item> Valider avec le schéma</item>
                             
-                            <item> Transcription d’un document Oulipo</item>
-                            <!-- il s'agit de quel document?
-    je propose travaux/cr650308 mais c'est un peu long -->
-                            
+                            <item> Transcription d’un manuscrit simple; validation de la transcription. 
+                            (exercices sur deGaulle.xml) </item>
+                           
+      <!-- on n'aura pas le temps a mon avis, donc pour l'instant je supprime                       
 <item> Puis relancer l’ODD dans Roma pour l’étendre [LB]</item>
                             <item> retravailler sur un autre doc plus complexe? retravailler sur le
                                 meme doc en ajoutant des complexites?</item>
                             <item> Avoir un dossier où mettent leurs transcriptions identifiées par
                                 un système de nommage pour éviter les problèmes des conflits. Ce qui
                                 leur permettra de reprendre le même document le matin et corriger
-                                les fautes.</item>
+                                les fautes.</item> -->
                         </list>
                     </div>
                     <div >
@@ -190,9 +190,10 @@
                     <div >
                         <head>LUNCH</head>
                     </div>
-                    <div xml:id="T15" resp="#LB">
-                        <head>13h30-14h Personnalisation avancée avec ODD – PM LB </head>
-                        <p>Revoir et comprendre l’ODD crée</p>
+                    <div xml:id="T15" resp="#EM">
+                        <head>13h30-14h Personnalisation avancée avec ODD – PM EM </head>
+                 <p>       <ref target="07-personnalisation.tei.xml">07-personnalisation.tei</ref>
+              </p>          <p>Revoir et comprendre l’ODD crée</p>
                     </div>
                     <div xml:id="T16" resp="#LB">
                         <head>14h - 15h Creation d’un ODD personalisé – TP LB </head>

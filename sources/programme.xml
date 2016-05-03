@@ -111,13 +111,15 @@
                         <head>9h30-10h min Édition critique – PM EM</head>
                         <p>transcription source primaire : segmentation; interventions editoriales
                         </p>
-                        <p> <ident>2015-09-lyon/talk-07-ms.xml</ident>; 
+                        <p><ref target="sources/05-editionNumerique.tei.xml">05-editionNumerique.tei</ref></p>
+                        <p> cf. <ident>2015-09-lyon/talk-07-ms.xml</ident>; 
                             <ident>2015-09-lyon/04-editionCritique.tei.xml</ident>
                             
                         </p>
                     </div>
                     <div xml:id="T07" resp="#LB">
                         <head>10h-11h Édition critique – TP LB</head>
+                        <p><ref target="ex-4-oulipo.xml">ex-4-oulipo</ref></p>
                         <list type="unordered">
                             <item>Rappel des choix de modélisation définis la veille</item>
                             <item>Identification des éléments de la TEI correspondant</item>
@@ -132,6 +134,8 @@
                     </div>
                     <div xml:id="T08" resp="#EM">
                         <head>11h30 -1200 TEI Header – PM EM</head>
+                        <p><ref target="sources/03-teiHeader.tei.xml">03-teiHeader.tei</ref></p>
+                        
                     </div>
                     <div xml:id="T08bis" resp="#EM">
                         <head>12h -12h30 TEI Header – TP EM</head>
@@ -170,6 +174,8 @@
                     <head>3ème journée…</head>
                     <div xml:id="T12" resp="#EM">
                         <head>09h30-10h Entités nommées – PM EM</head>
+                        <p><ref target="06-namedEntities.tei.xml">06-namedEntities.tei</ref></p>
+                        
                     </div>
                     <div xml:id="T12bis" resp="#EM">
                         <head>10h-11h00 Création et gestion des Entités nommées – TP EM</head>

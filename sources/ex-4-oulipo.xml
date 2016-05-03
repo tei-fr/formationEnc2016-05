@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Edition numerique d'un document archival : un cas d'etude</title>
+        <author>Lou Burnard Consulting</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>TEI</publisher>
+        <availability>
+          <p>Freely available for use and derivative works under a Creative Commons Attribution
+            license.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Some bits may be lifted from previous talks/workshops by the TEI Community.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+      <p>Dans cet exercice, nous allons: <list>
+          <item>discuter la modelisation d'un document d'archive</item>
+          <item>experimenter son balisage en TEI XML</item>
+        </list></p>
+        <p>Notre cas d'etude concerne quelques documents extrait des archives de l'OULIPO. 
+      </p>
+      <div>
+        <head>Modelisation du document</head>
+        <p>Pour ceux qui ne le connaissent pas, l'OULIPO est une groupe d'ecrivains un peu particuliere qui (depuis les annees 1960) se reunissent tous les jeudis discuter
+      de leur methodes et de leurs productions. Ils ont ainsi cree une archive importante, notamment des comptes rendus de leur reunions, actuellement disponible au BNF, et
+      qui fait l'objet d'un projet de numerisation finance par l'ANR. </p>
+        <p>Vous etes invites d'abord de considerer les documents presentes en mode image, par ex <ident>cr650308_1.jpg</ident>. Ce fichier represente la premiere page du compte rendu (cr)
+        de la reunion de 8 mars 1965 (650308). Quels sont les objets d'interet que vous souhaitez encoder dans ce document? Comment est-il structure? </p>
+      </div>
+    </body>
+  </text>
+</TEI>

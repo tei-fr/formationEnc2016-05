@@ -25,16 +25,32 @@
           <item>discuter la modelisation d'un document d'archive</item>
           <item>experimenter son balisage en TEI XML</item>
         </list></p>
-        <p>Notre cas d'etude concerne quelques documents extrait des archives de l'OULIPO. 
+      <p>Notre cas d'etude concerne quelques documents extrait des archives de l'OULIPO. </p>
+
+      <p>Pour ceux qui ne le connaissent pas, l'OULIPO est une groupe d'ecrivains un peu
+        particuliere qui (depuis les annees 1960) se reunissent tous les jeudis discuter de leur
+        methodes et de leurs productions. Ils ont ainsi cree une archive importante, notamment des
+        comptes rendus de leur reunions, actuellement disponible au BNF, et qui fait l'objet d'un
+        projet de numerisation finance par l'ANR. </p>
+      <p>Vous etes invites d'abord de considerer les documents presentes en mode image, par ex
+          <ident>cr650308_1.jpg</ident>. Ce fichier represente la premiere page du compte rendu (cr)
+        de la reunion de 8 mars 1965 (650308). Quels sont les objets d'interet que vous souhaitez
+        encoder dans ce document? Comment est-il structure? Faites une liste des concepts qui vous
+        concernent.</p>
+      <p>Ensuite, decider comment representer ces concepts en utilisant les balises TEI. Par
+        exemple, si vous considerez que les remarques d'un des participants sont presentes comme si
+        il s'agissait d'un representation dramatique, voire theatrale, il va vous falloir les
+        balises <gi>sp</gi>, <gi>speaker</gi>, <gi>stage</gi>. Si par contre, vous considerez que
+        cette presentation en forme de drame est moins interessant ou moins coherent qu'une
+        presentation en serie de paragraphes, dont quelques-uns portent un label, vous n'aurez
+        besoin que des balises <gi>label</gi> et <gi>p</gi>. Si cela vous interesse, peut etre les
+        noms de personnes, de lieux, des oeuvres sont a baliser avec <gi>name</gi>, <gi>title</gi>,
+        etc. Et quid des corrections, ajouts etc. ? En tout cas, vous aurez besoin des <gi>div</gi>,
+          <gi>pb</gi>, <gi>hi</gi> etc. </p>
+      <p>Procedez ensuite a documenter votre selection, en utilisant Roma comme avant, et puis
+        faites votre transcription sous controle du schema ressortisant. Pour reduire un peu le travail de transcription
+        vous trouverez dans le fichier <ident>cr650308.txt</ident> un transcription en texte pur. 
       </p>
-      <div>
-        <head>Modelisation du document</head>
-        <p>Pour ceux qui ne le connaissent pas, l'OULIPO est une groupe d'ecrivains un peu particuliere qui (depuis les annees 1960) se reunissent tous les jeudis discuter
-      de leur methodes et de leurs productions. Ils ont ainsi cree une archive importante, notamment des comptes rendus de leur reunions, actuellement disponible au BNF, et
-      qui fait l'objet d'un projet de numerisation finance par l'ANR. </p>
-        <p>Vous etes invites d'abord de considerer les documents presentes en mode image, par ex <ident>cr650308_1.jpg</ident>. Ce fichier represente la premiere page du compte rendu (cr)
-        de la reunion de 8 mars 1965 (650308). Quels sont les objets d'interet que vous souhaitez encoder dans ce document? Comment est-il structure? </p>
-      </div>
     </body>
   </text>
 </TEI>

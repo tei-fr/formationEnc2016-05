@@ -252,7 +252,7 @@
             <head>Référence à des modules</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <schemaSpec ident="monSchema"
-                source="http://www.tei-c.org/release/xml/tei/odd/p5subset.xml">
+                source="http://www.tei-c.org/release/xml/tei/ODD/p5subset.xml">
                 <moduleRef key="tei"/>
                 <moduleRef key="core"/>
                 <moduleRef key="header"/>
@@ -283,7 +283,7 @@
             <head>Contraindre la valeur d’un attribut</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <schemaSpec ident="monSchema"
-                source="http://www.tei-c.org/release/xml/tei/odd/p5subset.xml">
+                source="http://www.tei-c.org/release/xml/tei/ODD/p5subset.xml">
                 <moduleRef key="tei"/>
                 <moduleRef key="core"/>
                 <moduleRef key="header"/>
@@ -309,8 +309,9 @@
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <attDef ident="agent" mode="change" usage="req">
                 <datatype minOccurs="1" maxOccurs="unbounded">
-                  <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
-                </datatype>
+                  <dataRef key="teidata.enumerated"/>
+     <!--             <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/>
+   -->             </datatype>
                 <valList type="closed" mode="replace">
                   <valItem ident="fire"/>
                   <valItem ident="moisture"/>
@@ -400,7 +401,7 @@
             <head>TP Utilisation de <ref target="http://www.tei-c.org/Roma/"
                 >Roma</ref></head>
             <p>Utiliser <ref target="http://www.tei-c.org/Roma/"
-              >Roma</ref> pour produire un Odd et le modifier</p>
+              >Roma</ref> pour produire un ODD et le modifier</p>
           </div>
         </div>
         <div type="slide" xml:lang="fr">
@@ -433,7 +434,7 @@
       <div type="biblio" xml:lang="fr">
         <head>Sources et orientations bibliographiques</head>
         <list>
-          <item><ref target="https://github.com/TEIC/pureodd">https://github.com/TEIC/pureodd</ref></item>
+          <item><ref target="https://github.com/TEIC/pureODD">https://github.com/TEIC/pureODD</ref></item>
           <item>Lou Burnard, Formation ODD, Lyon 2013, <ref target="https://code.google.com/p/tei">https://code.google.com/p/tei</ref>-fr/source/browse/#svn%2Ftrunk%2FTalks%2F2014-02-lyon%253Fstate%253Dclosed</item>
           <item>About Customisation, tei-c, http://www.tei-c.org/Guidelines/Customization/</item>
           <item>Rahtz, Sebastian, et Lou Burnard. "Reviewing the TEI ODD System." In Proceedings of the 2013 ACM Symposium on Document Engineering. DocEng ’13. ACM, 2013. <ref target="http://doi.acm.org/10.1145/2494266.2494321."

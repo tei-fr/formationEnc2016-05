@@ -231,8 +231,9 @@
                     </div>
                     <div xml:id="T20" resp="#LB">
                         <head>10h00-11h XSLT Pour les nuls – PM+TP LB</head>
-                        <p><ref target="2015-09-lyon/talk-11-xslt.xml"/></p>
-                        <p><ref target="2015-09-lyon/ex-11-xslt.xml"/></p>
+                        <p><ref target="talk-xslt.xml">talk-xslt</ref></p>
+                        
+                        <p><ref target="ex-n-xslt.xml">ex-n-xslt</ref></p>
                         
                         <p>Création d’une feuille de style très simple pour transformer un document
                             TEI vers HTML.</p>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">A l'Ambicieux et Avare ennemy des Bonnes Lettres</title>
+        <title>Un sonnet du Du Bellay numerisé</title>
+        <author>Joachim Du Bellay</author>
+        <respStmt>
+          <resp>Encodé en TEI</resp>
+          <name>Lou Burnard</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p>Document de travail faisant partie d'une formation TEI</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Encodé à partir d'un facsimilé de la première édition trouvé au Bibliotheque Virtuel des
+          Humanistes, du CESR de Tours.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change when="2016-05-04">Revised for ENC</change>
+      <change when="2011-05-11">Revised for MUTEC</change>
+      <change when="2011-02-11">Drafted first version for Aix</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+      <head>A l'Ambicieux, ET AVARE ENNEMY DES BONNES LETTRES. Sonnet. </head>
+
+      <lg>
+        <l> Serf de Faveur, Esclave d'Avarice, </l>
+        <l>Tu n'<choice>
+            <orig>heus</orig>
+            <reg>eus</reg>
+          </choice> jamais sur <choice>
+            <orig>toymesmes</orig>
+            <reg>toi-meme</reg>
+          </choice> pouvoir, </l>
+        <l>Et je me veux d'un tel Maitre pourvoir, </l>
+        <l>Que l'Esprit libre en plaisir se nourisse.</l>
+      </lg>
+
+
+      <lg>
+        <l>L'Air, la Fortune, &amp; l'humaine Police </l>
+        <l>Ont en leurs Mains ton malheureux Avoir. </l>
+        <l>Le Juge avare <choice>
+            <orig>icy</orig>
+            <reg>ici</reg>
+          </choice> n'a rien à voir. </l>
+        <l>Ny les <choice>
+            <orig>troys</orig>
+            <reg>trois</reg>
+          </choice>
+          <choice>
+            <orig>Seurs</orig>
+            <reg>soeurs</reg>
+          </choice>, <choice>
+            <orig>ny</orig>
+            <reg>ni</reg>
+          </choice> du <choice>
+            <orig>Tens</orig>
+            <reg>Temps</reg>
+          </choice> la malice. </l>
+      </lg>
+      <lg>
+        <l>Regarde donc qui est plus souhaitable </l>
+        <l>L'<choice>
+            <orig>ayse</orig>
+            <reg>aise</reg>
+          </choice>, ou l'<choice>
+            <orig>ennuy</orig>
+            <reg>ennui</reg>
+          </choice>, le certain, ou l'instable. </l>
+        <l>Quand à l'honneur, j'espere <choice>
+            <orig>estre</orig>
+            <reg>être</reg>
+          </choice> immortel: </l>
+      </lg>
+      <lg>
+        <l>Car un <orig>cler</orig> Nom <orig>soubz</orig> Mort jamais ne <orig>tumbe</orig>. </l>
+        <l>Le tien obscur ne te promet rien tel. </l>
+        <l> Ainsi, tous deux serez <orig>soubz</orig>
+          <orig>mesme</orig><orig> Tumbe.</orig>
+        </l>
+      </lg>
+
+      <quote>CAELO MVSA BEAT. </quote>
+
+    </body>
+  </text>
+</TEI>

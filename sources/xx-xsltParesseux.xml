@@ -76,6 +76,7 @@
             <p>En revanche elles permettent de régler de nombreux problèmes habituels.</p>
           </div>
           <div>
+            <head>Limitations</head>
             <p>Il est important de comprendre d’emblée que si les XSLT Stylesheets offrent un ensemble de traitements génériques pour la TEI, elles ne traitent pas tous les cas de figure ou tous les éléments ou valeurs d’attribut de la TEI.</p>
             <p>Elles ne prétendent pas non plus constituer un modèle de traitement ou de rendu standard pour la TEI. En revanche, elles offrent une très riche bibliothèque de transformations qui devrait dans bien des cas vous faciliter le travail.</p>
           </div>
@@ -139,17 +140,62 @@
             <p>Vous pouvez également, si vous l’avez installé, de transformations spécialisées destinées à travailler avec des documents ODD.</p>
           </div>
         </div>
-      </div>
-      <div type="part">
-        <div type="title" xml:lang="fr" xml:id="part3">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>TP personnalisation d’une sortie vers html</head>
             <p>Les XSL Stylesheets propose de très nombreux paramètres de personnalisation pour calibrer la sortie.</p>
             <list>
               <head><hi>Exercice :</hi> personnalisation d’une sortie vers html</head>
-              <item>Ajouter un sommaire</item>
-              <item>Ajouter un sommaire</item>
+              <item>Ajouter/retirer un sommaire</item>
+              <item>Ajouter des numéros de paragraphes</item>
+              <item>Sélectionner une CSS</item>
+              <!-- @todo préciser sur quel fichier rtavailler -->
             </list>
+          </div>
+          <div>
+            <p>En appliquant un scénario pré-défini de transformation dans oXygen, vous avez en réalité appliqué une transformation XSLT, ou une suite de transformations XSL, définies par les XSL Stylesheets qui constituent le framework TEI d’oXygen.</p>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Organisation du Framework</head>
+            <list>
+              <!-- @todo détailler -->
+              <label>common</label>
+              <item>règles utilisées par plusieurs transformations</item>
+              <label>csv</label>
+              <item>transformations pour csv</item>
+              <label>epub</label>
+              <item>transformations pour epub</item>
+              <label>html</label>
+              <item>transformations pour html</item>
+              <label><hi rend="bold">profiles</hi></label>
+              <item>profils utilisateurs</item>
+              <label>...</label>
+              <item>autres</item>
+            </list>
+          </div>
+          <div>
+            <p>Les transformations XSL des XSL Stylesheets sont organisées et modularisées en différents répertoires. Parmi ces répertoires, <code>commons/</code> contient les éléments communs aux diverses transformations.</p>
+            <p>Les autres répertoires contiennent tous les fichiers utiles aux transformations depuis ou vers le format désigné par leur nom. À l’intérieur de ces différents répertoires des fichiers <code>build-to.xml</code> ou <code>build-from.xml</code> définissent l’utilisation en sortie ou en entrée de ces transformations.</p>
+            <p>Ici, le répertoire <code>profiles/</code> est très important car c’est celui qui va contenir vos fichiers de personnalisation. On peut employer les transformations proposées par défaut, ou bien celles développées par d’autres projets. Nous verrons plus tard que l’on peut aussi créer ses propres transformations.</p>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Sorties non proposées par défaut</head>
+            <p>Chemin du Framework : <code>oxygen/frameworks/tei/xml/tei/stylesheet/</code></p>
+          </div>
+          <div>
+            <p>Outre les sorties par défaut proposées par oXygen, vous pouvez directement à toutes les transformations définies dans le Framework avec leurs paramètres en configurant votre propre scénario de transformation.</p>
+            <p>Pour cela, il vous faut localiser les transformations définies par les XSL Stylesheets sur votre ordinateur. Celles-ci étant embarquées par oXygen, vous pouvez les trouver au chemin suivant : </p>
+          </div>
+      </div>
+      </div>
+      <div type="part">
+        <div type="title" xml:lang="fr" xml:id="part3">
+          <div>
+            <head>Personnalisation</head>
           </div>
         </div>
         <div type="slide" xml:lang="fr">
@@ -162,7 +208,11 @@
             </list>
           </div>
           <div>
-            <p>Les XSL Stylesheets ont été conçues pour être personnalisées, soit par l’intermédiaire de paramètres (comme on l’a vu précédemment), soit en ajoutant des règles supplémentaires ou en les surchargeant.</p>
+            <p>Les XSL Stylesheets ont été conçues pour pouvoir être personnalisées de différentes manières. Il est possible de modifier la sortie produite par défaut <list>
+              <item>soit par l’intermédiaire de paramètres (comme on l’a vu précédemment),</item>
+              <item>soit en ajoutant des règles supplémentaires,</item>
+              <item>ou en les surchargeant.</item>
+            </list></p>
           </div>
         </div>
         <div type="slide" xml:lang="fr">

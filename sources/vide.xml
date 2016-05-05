@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt>
+                <p>Document nativement numérique</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>emchateau, ENC 2016</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change>première rédaction, <date when="2016-05">mai 2016</date></change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage xml:lang="fr">
+                <titlePart>xx-xxx</titlePart>
+                <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
+                <note><ref target="00-programme.html">Programme</ref></note>
+            </titlePage>
+            <div type="title">
+                <div>
+                    <head>Introduction</head>
+                </div>
+            </div>
+        </front>
+        <body>
+            <div type="part">
+                <div type="title" xml:lang="fr" xml:id="part1">
+                    <div>
+                        <head/>
+                    </div>
+                </div>
+                <div type="slide" xml:lang="fr">
+                    <div>
+                        <head/>
+                        <p/>
+                    </div>
+                    <div/>
+                </div>
+            </div>
+            <div type="part">
+                <div type="title" xml:lang="fr" xml:id="part2">
+                    <div>
+                        <head/>
+                    </div>
+                </div>
+                <div type="slide" xml:lang="fr">
+                    <div>
+                        <head/>
+                        <p/>
+                    </div>
+                    <div/>
+                </div>
+            </div>
+            <div type="part">
+                <div type="title" xml:lang="fr" xml:id="part3">
+                    <div>
+                        <head/>
+                    </div>
+                </div>
+                <div type="slide" xml:lang="fr">
+                    <div>
+                        <head/>
+                        <p/>
+                    </div>
+                    <div/>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="title">
+                <div>
+                    <head>Pour finir, les <ref target="xxx.html">entités nommées</ref></head>
+                    <note><ref target="#index">revenir au début</ref> | <ref
+                            target="00-programme.html">programme</ref></note>
+                </div>
+            </div>
+        </back>
+    </text>
+</TEI>

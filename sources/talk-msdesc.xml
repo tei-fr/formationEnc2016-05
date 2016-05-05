@@ -24,8 +24,8 @@
         <body xml:lang="fra">
             <div>
                 <head>Objectifs</head>
-                <p><graphic url="../Graphics/morrisCatalog.jpg" height="50%"/>
-                    <graphic url="../Graphics/catalogCard.jpg" height="50%"/>
+                <p><graphic url="../images/morrisCatalog.jpg" height="50%"/>
+                    <graphic url="../images/catalogCard.jpg" height="50%"/>
                     <!-- William-Morris-autograph-calligraphic-manuscript-catalogue-of-his-library-ca.1890.--></p>
                 <list type="unordered">
                     <item>découvrir les balises spécifiques pour l’encodage de descriptions des
@@ -53,11 +53,11 @@
             <div rend="slide">
                 <head>Propositions de la TEI</head>
                 <p>La TEI propose un élément <gi>msDesc</gi>, apte à plusieurs applications: <list>
-                        <item>base de donnee de record bibliographique (<term>finding
+                        <item>base de données de records bibliographique (<term>finding
                             aid</term>)</item>
                         <item>texte discursif contenant plusieurs records (<term>catalogue
                                 raisonn&#x00E9;</term>)</item>
-                        <item>assemblage des metadonnees au sein d'une edition numerique
+                        <item>assemblage des metadonnées au sein d'une édition numérique
                                 (<term>electronic edition</term>)</item>
                         <item>instrument pour la <soCalled>codicologie
                             quantitative</soCalled></item>
@@ -68,7 +68,7 @@
 
             <div rend="slide">
                 <head>Catalogue Raisonn&#x00E9;</head>
-                <p>Un <gi>msDesc</gi> peut apparaître aux memes lieux qu'un <gi>p</gi>
+                <p>Un <gi>msDesc</gi> peut apparaître dans les mêmes contextes qu'un <gi>p</gi>
                     paragraphe</p>
 
                 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -199,7 +199,7 @@
 
             <div rend="slide">
                 <head>Identification (2)</head>
-                <p>L'élément <gi>msName</gi> fournit un nom ou une appellation familiere (surnom):
+                <p>L'élément <gi>msName</gi> fournit un nom ou une appellation familière (surnom):
                         <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <msIdentifier>
                             <country>Danmark</country>
@@ -291,7 +291,7 @@
 
             <div rend="slide">
                 <head>Description physique</head>
-                <p>Une groupement commode de plusieurs items:</p>
+                <p>Une groupement commode de plusieurs sujets:</p>
                 <list>
                     <item><gi>objectDesc</gi>: le support matériel du manuscrit</item>
                     <item><gi>handDesc</gi>: description d'écritures </item>
@@ -300,7 +300,7 @@
                     <item><gi>bindingDesc</gi> et <gi>sealDesc</gi>: reliure, sceaux</item>
                     <item><gi>accMat</gi>: materiaux associés/attachés </item>
                 </list>
-                <p>Comme ailleurs, éléments généralement fournissant un choix entre des éléments
+                <p>Comme ailleurs, ces éléments généralement fournissent un choix entre des éléments
                     plus ou moins structurants et une description en prose.</p>
             </div>
 
@@ -328,7 +328,7 @@
 
             <div>
                 <head>Le support (1) </head>
-                <p><gi>objectDesc</gi> peut etre structuré en <gi>supportDesc</gi> et
+                <p>Pour distinguer l'objet inscrit de la manière où il est inscrit, <gi>objectDesc</gi> peut etre structuré en <gi>supportDesc</gi> et
                         <gi>layoutDesc</gi>
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <objectDesc form="codex">
@@ -599,7 +599,7 @@
 
 <div><head>Travaux pratiques</head>
 <p>Au lieu de travailler sur la lettre de Vinet, je vous propose un
-manuscrit de la Bibliotheque Municpale d'Orleans, le MS 629.</p>
+manuscrit de la Bibliotheque Municipale d'Orleans, le MS 629.</p>
 
 <figure><graphic url="Ms629_p01.png"/></figure>
 </div>

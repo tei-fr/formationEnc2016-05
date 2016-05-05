@@ -138,7 +138,7 @@
                         
                     </div>
                     <div xml:id="T08bis" resp="#EM">
-                        <head>12h -12h30 TEI Header – TP EM</head>
+                        <head>12h -12h30 TEI Header – TP EM</head> <!-- a fournir -->
                         <list type="unordered">
                             <item>créer un header simple</item>
                         </list>
@@ -148,12 +148,12 @@
                     </div>
                     <div xml:id="T09" resp="#LB">
                         <head>13h30 -14h15 TEI Msdescription – PM LB</head>
-                       <p> <ident>2014-05-inha/talk-msdesc.xml</ident>
+                       <p> <ref target="talk-msdesc.xml">talk-msdesc.xml</ref>
                        </p> 
                         <p>Exemple d’un document très spécialisé</p>
                     </div>
                     <div xml:id="T10" resp="#LB">
-                        <head>14h15 - 15h30 TEI Msdescription – TP LB</head>
+                        <head>14h15 - 15h30 TEI Msdescription – TP LB</head> <!-- a fournir -->
                     </div>
                     <div >
                         <head>pause</head>
@@ -178,18 +178,18 @@
                         
                     </div>
                     <div xml:id="T12bis" resp="#EM">
-                        <head>10h-11h00 Création et gestion des Entités nommées – TP EM</head>
+                        <head>10h-11h00 Création et gestion des Entités nommées – TP EM</head><!-- a fournir -->
                     </div>
                     <div>
                         <head>11h00-11h30 Pause</head>
                     </div>
                     <div xml:id="T13" resp="#LB">
-                        <head>11h30-12h Modalités d'organisation des documents TEI – PM LB </head>
+                        <head>11h30-12h Modalités d'organisation des documents TEI – PM LB </head><!-- a fournir -->
                         <p>Conceptes de group, corpus, facsimile. etc: organisation des fichiers.
                         </p>
                     </div>
                     <div xml:id="T14" resp="#EM">
-                        <head>12h - 12h30 Cas d'etude: organisation du projet Oulipo – TP EM </head>
+                        <head>12h - 12h30 Cas d'etude: organisation du projet Oulipo – TP EM </head><!-- a fournir -->
                         <p>Comment organiser le projet imaginaire: importance de versioning;
                             démontrer usage de Github? </p>
                     </div>
@@ -202,7 +202,7 @@
               </p>          <p>Revoir et comprendre l’ODD crée</p>
                     </div>
                     <div xml:id="T16" resp="#LB">
-                        <head>14h - 15h Creation d’un ODD personalisé – TP LB </head>
+                        <head>14h - 15h Creation d’un ODD personalisé – TP LB </head><!-- a fournir -->
                         <list type="unordered">
                             <item>avec Roma</item>
                             <item>avec Oxygen</item>
@@ -213,11 +213,11 @@
                     </div>
                     <div xml:id="T17" resp="#LB">
                         <head>15h30 - 16h15: Florilegium de projets TEI – PM LB</head>
-                        <p><ref target="2013-10-tours/tei-florilege.xml"/></p>
+                        <p><ref target="tei-florilege.xml"/></p><!-- a mettre a jour -->
                         <p>Comment les gens se servent de la TEI</p>
                     </div>
                     <div xml:id="T18" resp="#EM">
-                        <head>16h15-17h XPath TP – EM</head>
+                        <head>16h15-17h XPath TP – EM</head> <!-- ? is this same as first part of xslt pour les nuls? -->
                         <p>Rappel de l'intérêt de structuration ; technique essentiel pour ce qui
                             suit</p>
                     </div>
@@ -225,14 +225,15 @@
                 <div >
                     <head>4ème journée…</head>
                     <div xml:id="T19" resp="#EM">
-                        <head>9h30-10h Chaînes de traitement TEI – PM EM</head>
+                        <head>9h30-10h Chaînes de traitement TEI – PM EM</head><!-- a fournir -->
                         <p>CSS, XSLT, XQuery, environnements de publication</p>
                         <p>epub, pdf, inDesign, etc.</p>
                     </div>
                     <div xml:id="T20" resp="#LB">
                         <head>10h00-11h XSLT Pour les nuls – PM+TP LB</head>
-                        <p><ref target="2015-09-lyon/talk-11-xslt.xml"/></p>
-                        <p><ref target="2015-09-lyon/ex-11-xslt.xml"/></p>
+                        <p><ref target="talk-xslt.xml">talk-xslt</ref></p>
+                        
+                        <p><ref target="ex-n-xslt.xml">ex-n-xslt</ref></p>
                         
                         <p>Création d’une feuille de style très simple pour transformer un document
                             TEI vers HTML.</p>
@@ -242,7 +243,7 @@
                         <head>Pause</head>
                     </div>
                     <div xml:id="T21" resp="#EM">
-                        <head>11h30-12h30 XSLT pour les paresseux – PM+TP EM</head>
+                        <head>11h30-12h30 XSLT pour les paresseux – PM+TP EM</head><!-- a fournir -->
                         <list>
                             <item>Framework TEI Oxygen </item>
                             <item>Personnalisation avec les variables </item>
@@ -253,7 +254,7 @@
                         <head>LUNCH</head>
                     </div>
                     <div xml:id="T22" resp="#LB #EM">
-                        <head>13h30-14h30 Outils a démontrer LB/EM en alternance</head>
+                        <head>13h30-14h30 Outils a démontrer LB/EM en alternance</head><!-- a preparer -->
                         <list type="unordered">
                             <item>Boilerplate LB</item>
                             <item>VersioningMachine EM </item>

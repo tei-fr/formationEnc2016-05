@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../difdepo.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="t10010007-1961-04-28-cr">
+  <teiHeader>
+   <fileDesc>
+     <titleStmt>
+      <title>Transcription du scan 10010007 pp. 6 à 11 (CR) : version TEI</title><respStmt><resp>transcription</resp><name>Invité</name></respStmt>
+      
+     </titleStmt>
+     
+     <publicationStmt>
+      <p>Edition numérique distribué par le projet ANR DifDePo</p>
+     </publicationStmt>
+     <sourceDesc>
+      <bibl><idno type="ark">12148/btv1b100100073</idno><idno type="ead">d0e191</idno><idno>t10010007-1961-04-28-cr</idno><meeting xml:id="t10010007-1961-04-28"><date when="1961-04-28"/><list type="present"><item><persName ref="#NA"/></item><item><persName ref="#AMS"/></item><item><persName ref="#JL"/></item><item><persName ref="#RQ"/></item><item><persName ref="#JB"/></item><item><persName role="président" ref="#JQ"/></item></list></meeting></bibl>
+     </sourceDesc>
+   </fileDesc>
+   
+   <revisionDesc>
+     <listChange><change when="2016-04-21T21:28:57Z">Oulipo specific tags added</change>
+      <change>
+        <date>2016-04-21T20:52:23Z</date>
+        <name>Invité</name>
+      </change>
+     </listChange>
+   </revisionDesc>
+  </teiHeader>
+  <text type="CR">
+   <body><pb xml:id="p6" n="6"/>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     <p rend="incipit">OUVROIR DE</p>
+     <p rend="incipit">LITTERATURE            </p>
+     <p rend="incipit">POTENTIELLE</p>
+     <p rend="incipit">Circulaire n°8</p>
+     <p rend="incipit">5 mai 1961</p>
+     <p rend="incipit">COMPTE-RENDU DE LA REUNION DU VENDREDI 28 AVRIL 1961</p>
+     <p rend="incipit">Absents : <persName ref="#FLL">François Le Lionnais</persName>, <persName ref="#CB">Claude Berge</persName> et <persName ref="#L">Latis</persName>, excusés.</p>
+     <p rend="incipit">Président de séance : <persName ref="#JQ">Jean Queval</persName>.</p>
+     <p>
+      <persName ref="#AMS">Albert-Marie Schmidt</persName> ouvre la séance par la lecture d’un poème en <term ref="#versmonosyllabiques">vers monosyllabiques</term> d’<persName ref="#amedeepommier">Amédée Pommier</persName>, intitulé <title ref="#sparte">Sparte</title> (en <term ref="#languelaconique">langue laconique</term>). Le présentateur fait remarquer que la réussite technique de ce poème lui semble résider dans l’alternance des <term ref="#rimesmasculinesetfeminines">rimes masculines et féminines</term>, à quoi n’est pas parvenu <persName ref="#rimbaud">Rimbaud</persName>, en d’analogues exercices.</p>
+     <p>
+      <persName ref="#JL">Jean LESCURE</persName> : Mais y pensa-t-il ?</p>
+     <p>
+      <persName ref="#RQ">Raymond QUENEAU</persName> : Bien sûr : comment n’y aurait-il pas pensé ? Ce <term ref="#poeme">poème</term> est versé aux archives.</p>
+     <p>
+      <persName ref="#NA">Noël ARNAUD</persName> déclare que <persName ref="#samagnificence">Sa Magnificence</persName>, après s’être penchée avec bienveillance sur les activités de l’OuLiPo, serait disposée à modifier la formule d’inclusion de l’OuLiPo dans le <orgName ref="#collegedepataphysique">Collège de Pataphysique</orgName> de manière à lui accorder l’autonomie interne au sein de la <orgName ref="#commissiondesimprevisibles">Commission des Imprévisibles</orgName> présidée pour un tiers par le <persName ref="#satraperaymondqueneau">Satrape Raymond Queneau</persName>. L’OuLiPo constituerait alors à lui tout seul une Sous-Commission.</p>
+     <p>La déclaration de <persName ref="#NA">Noël Arnaud</persName> sur les intentions de <persName ref="#samagnificence">Sa Magnificence</persName> est accueillie, naturellement, avec un respect satisfait et une respectueuse satisfaction.</p>
+     <p>Lecture est faite ensuite d’une <title ref="#balladealimitation">Ballade à l’imitation</title> de<title/> 
+      <persName ref="#jehanmolinet">Jehan Molinet</persName>, sur les <term ref="#rimesoulipo">rimes Ou, Li, Po</term>, par <persName ref="#jaquetcardon">Jaquet Cardon</persName>. Murmures flatteurs sur tous les bancs.</p>
+     
+      <pb xml:id="p7" n="7"/>
+    
+     <p>Par le même, un <term ref="#oulipotage">OuLiPotage</term> sur un poème de <persName ref="#jehancocteau">Jehan Cocteau</persName>, extrait de <title ref="#lechiffresept">le Chiffre Sept</title> – <term ref="#oulipotage">OuLiPotage</term> consistant à changer le dernier mot de chaque vers, suivant une méthode <term ref="#rime3">R(ime) + 3</term>, au moyen d’un Dictionnaire à cet effet. La médiocrité du résultat laisse chacun perplexe.</p>
+     <p>
+      <persName ref="#RQ">Raymond QUENEAU</persName> : La seule explication possible me paraît la suivante : quand un poème présente les caractères des <term ref="#boutsrimes">bouts-rimés</term>, l’<term ref="#oulipotage">OuLiPotage</term> accentue ces <term ref="#caracteres">caractères</term>. Ceci expliquerait, par ailleurs, la densité des fins de vers de <persName ref="#mallarme">Mallarmé</persName>.</p>
+     <p>
+      <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : …et le grand intérêt (souvent supérieur à celui des <term ref="#sonnets">sonnets</term> achevés) des brouillons de <persName ref="#heredia">Heredia</persName>, qui ne présentent que des recherches de <term ref="#rimes">rimes</term>.</p>
+     <p>
+      <persName ref="#RQ">Raymond Queneau</persName> présente deux <term ref="#sigles">sigles</term> dessinés par M.<persName ref="#L">Latis</persName>. Une photocopie de ces <term ref="#sigles">sigles</term> fut <ref>jointe à la précédente circulaire</ref>. Précisons que celui de gauche se lit du centre vers l’extérieur (« ça fait plus <term ref="#potentiel">potentiel</term> ») et que celui de droite se lit de l’extérieur vers le centre (« ça fait plus <term ref="#ouvroir">ouvroir</term> »). C’est celui de droite qui est adopté par la majorité (parce qu’il ressemble à la fois à un ciboire et à un chandelier). <persName ref="#JL">Jean Lescure</persName> vote pour la gauche. Des félicitations et des remerciements unanimes sont adressés à M.<persName ref="#L">Latis</persName>.</p>
+     <p>
+      <persName ref="#AMS">Albert-Marie Schmidt</persName> fait remarquer que le mot ομλε/oule (« salut ») était le salut traditionnel au cours des fêtes de Cérès. Ce salut est adopté et rendu obligatoire entre OuLiPiens. (<persName ref="#amschmidt">A.M. Schmidt</persName> a cependant omis de nous indiquer quel geste accompagnait ce cri.)</p>
+     <p>
+      <persName ref="#JQ">Jean Queval</persName> propose la composition d’un <term ref="#hymneoulipien">Hymne OuLiPien</term> ou, plus précisément, l’ouverture d’un concours pour la composition des paroles d’un tel hymne. Les paroles rédigées, on demandera aux membres du <orgName ref="#miam">MIAM</orgName> (<note place="foot" xml:id="ftn1" n="1">
+        <p>Le <orgName ref="#miam">MIAM</orgName> est un groupe composé de <persName ref="#michelphilippot">Michel Philippot</persName> (M), <persName ref="#ianisxenakis">Ianis Xenakis</persName> (I) <persName ref="#alaindechambure">Alain de Chambure</persName> (A), <persName ref="#abrahammoles">Abraham Moles</persName> (M), qui étudie les <term ref="#regles">règles</term> très générales auxquelles doit obéir un <term ref="#assemblage">assemblage</term> (sonore), pictural, etc …) pour être considéré comme un <term ref="#oeuvredart">oeuvre d’art</term> par un opérateur humain moyen (encore qu’actuellement le <orgName ref="#miam">MIAM</orgName> s’efforce de composer une musique pour les rats).</p>
+      </note>) de les mettre en musique (sans leur révéler ce dont il s’agit exactement. <pb xml:id="p8" n="8"/>
+    </p>
+     <p>
+      <persName ref="#JQ">Jean Queval</persName> souhaiterait que ces paroles fussent <term ref="#composees">composées</term> en tenant compte des <term ref="#troispremiereslettresdesnomsdechaquemembre">trois premières lettres des noms de chaque membre</term> de l’OuLiPo. Chacun peut adopter la méthode qu’il voudra (à condition de la justifier). Il est recommandé d’introduire, dans la méthode, un « <term ref="#incidencearithmetique">incidence arithmétique</term> ».</p>
+     <p>Un blâme est adressé au <persName ref="#president">Président</persName> pour avoir oublié sa propre méthode.</p>
+     <p>Un second blâme (plus grave) lui est infligé pour avoir déclaré : « …que chacun inventasse ».)</p>
+     <p>
+      <persName ref="#PB">Paul BRAFFORT</persName>, poète, belge et atomiste, est adopté à l’unanimité comme membre correspondant. La présente circulaire lui sera adressée dès que le <persName ref="#secretariatprovisoire">Secrétariat Provisoire</persName> aura connaissance de sa résidence habituelle.</p>
+     <p>
+      <persName ref="#RQ">Raymond Queneau</persName> lit une lettre de M.<persName ref="#L">Latis</persName> concernant la définition de l’OuLiPo publiée dans la <ref>circulaire n° 6</ref>. Cette lettre et cette définition donnent lieu à une controverse et passionnante, dont voici quelques bribes, médiocrement saisies et mal raccommodées par la plume trop lente du <persName ref="#sp">S.P.</persName>
+    </p>
+     <p>
+      <persName ref="#JQ">Jean QUEVAL</persName> : Une définition est assez difficile établir, parce que nos travaux sont partis dans tous les sens.</p>
+     <p>
+      <persName ref="#JB">Jacques BENS</persName> : C’est évident. <persName ref="#JQ">Queval</persName> aurait même pu dire qu’une telle définition est prématurée. Car elle est analogue à tout loi scientifique : on expérimente d’abord ; on tire la loi ensuite. Il est sans doute trop tôt pour tirer cette loi. Mais nous pouvons peut-être cerner la question, ne serait-ce que pour permettre aux lecteurs des<orgName/> 
+      <title ref="#dossiersducollege">Dossiers du Collège</title> de s’y retrouver un peu parmi nos communications.</p>
+     <p>(On note à ce propos, que la définition que <persName ref="#RQ">Raymond Queneau</persName> a rédigée pour ce <title ref="#dossier">Dossier</title> est, actuellement, excellente. Elle n’a pas été déposée au <orgName ref="#secretariatprovisoire_orgName">Secrétariat Provisoire</orgName>. Mais elle reste dans la mémoire de chacun).</p>
+     <p>CRITIQUE ET RECHERCHE D’UNE DEFINITION</p>
+     <p>
+      <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : Le mot « scientifique » me gêne. Qu’y a-t-il de tellement « scientifique » dans le <term ref="#decoupagedetextes">découpage de textes</term>, dans la</p>
+     
+      <pb xml:id="p9" n="9"/>
+    
+     <p>
+      <term ref="#composition">composition</term> de poèmes avec mots imposés (qui ne sont donc que <term ref="#boutsrimes">bouts-rimés</term>). Dans la <term ref="#substitutiondetermes">substitution de termes</term>, etc … ?</p>
+     <p>
+      <persName ref="#RQ">Raymond QUENEAU</persName> et <persName ref="#JL">Jean LESCURE</persName> (en chœur) : Nous sommes au milieu du XX° siècle. Tout présente un rapport avec la <term ref="#science">Science</term>.</p>
+     <p>
+      <persName ref="#RQ">Raymond QUENEAU</persName> : Nous pouvons dire, par exemple, que nos recherches de rhétorique tiennent compte du fait que la <term ref="#science">Science</term> n’en est pas restée à <persName ref="#pythagore">Pythagore</persName>.</p>
+     <p>
+      <persName ref="#AMS">Albert Marie-SCHMIDT</persName> : On pourrait alors préciser que nous nous trouvons devant de textes existants, et que nous les modifions sans faire intervenir notre <term ref="#affectivite">affectivité</term> personnelle…</p>
+     <p>
+      <persName ref="#RQ">Raymond QUENEAU</persName> : Permettez ! Permettez : nous avons trouvé inintéressant l’<term ref="#oulipotage">OuLiPotage</term> réalisé sur un poème de <persName ref="#cocteau">Cocteau</persName>…</p>
+     <p>
+      <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : …qui n’a pas flatté notre <term ref="#affectivite">affectivité</term>…</p>
+     <p>
+      <persName ref="#NA">Noël ARNAUD</persName> : …qui ne nous a pas donné de plaisir !</p>
+     <p>
+      <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : l’<term ref="#affectivite">affectivité</term> est donc résolument mise en cause !</p>
+     <p>
+      <persName ref="#JB">Jacques BENS</persName> : il faudrait tout de même remarquer que ce qui nous a préoccupés jusqu’ici, c’est la méthode. Or, c’est une <term ref="#methodescientifique">méthode scientifique</term> : nous partons de textes existants, c’est-à-dire de faits. Et nous leur appliquons un certain nombre de traitements systématiques et prévus par avance. C’est la démarche même de toute expérience scientifique.</p>
+     <p>
+      <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : En tant que professeur, je tiens à relever la complète objectivité des recherches que l’on nous a présentées jusqu’ici. Cependant, un phénomène me semble mériter un soupçon d’attention : tout texte étudié possède des <term ref="#potentialites">potentialités</term> que nous faisons passer à l’actualité, c’est-à-dire que nous transformons en réalités.</p>
+     <p>
+      <persName ref="#NA">Noël ARNAUD</persName> : Je voudrais insister à mon tour sur les faits. Ce sont des faits que nous partons. C’est pourquoi, je crois qu’il serait vaut mieux nous en tenir au matériau concret. Et puis, ne pas oublier les <term ref="#machines">machines</term>.</p>
+     <p>
+      <persName ref="#RQ">Raymond QUENEAU</persName> : Je proteste ! Notre méthode pourrait s’appliquer à des faits inexistants.</p>
+     <p>
+      <persName ref="#JL">Jean LESCURE</persName> : J’approuve ce que vient de dire le <persName ref="#trtsatrape">Trt Satrape</persName> : nous pouvons très bien faire passer des faits inexistants à l’existence. Il y a une <term ref="#potentialite">potentialité</term> de l’<term ref="#inexistant">inexistant</term>.</p>
+     <p>
+      <persName ref="#AMS">Albert-Marie SCHMIDT</persName> (avec étonnement) : Mais c’est très intelligent !</p>
+     <p>
+      <persName ref="#JL">Jean LESCURE</persName> : Je ne vous le fais pas dire.</p>
+     <p>
+      <persName ref="#JQ">Jean QUEVAL</persName> : Messieurs, pas d’<term ref="#ironie">ironie</term>, je vous prie.</p>
+     <p>
+      <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : Mais pas du tout ! <persName ref="#JL">Lescure</persName> rejoint là un certain nombre de conceptions très en honneur dans le <term ref="#romantismeallemand">Romantisme Allemand</term>.</p>
+     <p>
+      <persName ref="#JB">Jacques BENS</persName> : Je proteste à mon tour ! Ce dont parle <persName ref="#JL">Lescure</persName> fait appel à une <term ref="#methode">méthode</term> poétique, non pas scientifique.</p>
+     
+      <pb xml:id="p10" n="10"/>
+    
+     <p>
+      <persName ref="#JQ">Jean QUEVAL</persName> : Permettez au <persName ref="#president">Président</persName> de récapituler, pour clarifier (si faire se peut—mais faire se peut-il ?) la discussion. Je relève trois points : a/ l’unanimité est faite sur l’importance de cette définition et sa difficulté ; b/ nous est-il possible de ne pas nous limiter aux matériaux ; c/ ne pas oublier l’intervention des machines.</p>
+     <p>
+      <persName ref="#RQ">Raymond QUENEAU</persName> (qui tient à son idée) : Pour en revenir au petit b, ne pensez-vous pas que ce que nous faisons ressemble à ce que font certains peintres ? Comme ils découvrent des <term ref="#valeurspicturales">valeurs picturales</term> où elles n’existent pas, nous découvrons des <term ref="#valeurslitteraires">valeurs littéraires</term> où il n’y en a pas. Historiquement, on peut considérer que, le jour où les <persName ref="#carolingiens">Carolingiens</persName> se sont mis à compter sur leurs doigts jusqu'à 6, 8, ou 12 pour faire des vers, ils ont accompli un travail OuLiPien.</p>
+     <p>
+      <persName ref="#JL">Jean LESCURE</persName> : Du boulier à la machine Bull !</p>
+     <p>
+      <persName ref="#RQ">Raymond QUENEAU</persName> : D’autre part, et contrairement à ce que l’attitude de notre ami <persName ref="#JL">Lescure</persName> pourrait parfois laisser croire, nous ne sommes pas des petits plaisantins. C’est très sérieusement que nous nous livrons à nos travaux. (Murmures approbateurs.) Et nous avons acclamé la détermination de <term ref="#potentiel">potentiel</term> au lieu d’expérimental. Or, le <term ref="#potentiel">potentiel</term> c’est ce qui n’existe pas encore.</p>
+     <p>
+      <persName ref="#JL">Jean LESCURE</persName> (qui n’a rien compris) : T’as compris, <persName ref="#dataire">dataire</persName> ?</p>
+     <p>
+      <persName ref="#JB">Jacques BENS</persName> : Que disais-je d’autre ? Pour arriver au <term ref="#potentiel">potentiel</term> (au futur), il faut bien partir de ce qui <term ref="#existe">existe</term> (le présent) !</p>
+     <p>(La fin de la discussion se perd dans le tumulte et l’anarchie.)</p>
+     <p>Il est enfin question du <title ref="#dossieroulipienducollege">Dossier OuLiPien du Collège</title>. Une <ref>circulaire spéciale (n°7)</ref> a été consacrée à cet important problème. Une <name type="manif" ref="#reunionspeciale">réunion spéciale</name> lui sera également consacrée.</p>
+     <p>
+      <persName ref="#JL">Jean Lescure</persName> donne lecture de permutations réalisées sur des <title ref="#phrases">Phrases</title> d’<persName ref="#arthurrimbaud">Arthur Rimbaud</persName>. L’opération paraît intéressante. A poursuivre.</p>
+     <p>
+      <persName ref="#RQ">Raymond Queneau</persName> signale la perte de la <term ref="#canonicite">canonicité</term> par exemple <persName ref="#philomene">Philomène</persName>. Il ajoute : « Ce <term ref="#degommage">dégommage</term> conduit inéluctablement à la négation de la divinité du <persName ref="#christ">Christ</persName> », sans préciser s’il le déplore ou s’en réjouit, ce que n’a pas cherché à percer la discrétion toute OuLiPienne de l’assemblée.</p>
+     
+      <pb xml:id="p11" n="11"/>
+    
+     <p>
+      <persName ref="#NA">Noël Arnaud</persName> lit (et verse aux archives) le très curieux résultat d’un « <name type="manif" ref="#concoursdesartistes">Concours des Artistes</name> » de Guadeloupe. Bien que ces textes ressortissent plus à la folie littéraire qu’à la <term ref="#litteraturepotentielle">littérature potentielle</term>, <persName ref="#RQ">Raymond Queneau</persName> propose de retenir ce vers d’une chanson primée :</p>
+     <p>« Ces recherches sobres et fécondes … »</p>
+     <p>La <name type="manif" ref="#prochainereunion">prochaine réunion</name> officielle aura lieu le LUNDI 5 JUIN 1961, au Restaurant Laborderie, 40 rue de l’Université (1er étage).</p>
+     <p>Cependant, une <name type="manif" ref="#reunionfacultative">réunion facultative</name> est prévue pour le VENDREDI 12 MAI, au même lieu. Elle sera entièrement consacrée à la préparation du <ref>Dossier</ref> dont il a été question à plusieurs reprises. Les absences seront excusées, mais les présences hautement appréciées.</p>
+     <p>pour le <persName ref="#sdd">S.D.D</persName>.,</p>
+     <p>
+      <persName ref="#ythiermarchant">Ythier MARCHANT</persName>
+    </p>
+   </body>
+  </text>
+</TEI>

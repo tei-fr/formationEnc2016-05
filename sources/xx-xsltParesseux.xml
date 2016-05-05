@@ -1,0 +1,190 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>XSLT pour les paresseux</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Document nativement numérique</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>emchateau, ENC 2016</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change>première rédaction, <date when="2016-05">mai 2016</date></change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage xml:lang="fr">
+        <titlePart>xx-TEI Stylesheets</titlePart>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
+        <note><ref target="00-programme.html">Programme</ref></note>
+      </titlePage>
+      <div type="title">
+        <div>
+          <head>Introduction</head>
+        </div>
+        <div>
+          <head>Introduction</head>
+          <p>Lorsque des documents sont encodés en XML, il devient relativement aisé de les manipuler et de les transformer en utilisant différents langages informatiques tels que XSLT ou XQuery. Tout en étant extrêmement puissants, ces langages sont complexes et difficiles à maîtriser. Aussi, la Text Encoding Initiative met à disposition plusieurs outils pour transformer des documents TEI en différents formats sans nécessairement avoir besoin de connaissances approfondies en programmation.</p>
+          <p>Les <soCalled>XSL Stylesheets</soCalled> développées par Sebastian Rahtz, sont un ensemble de transformations XSLT qui sert notamment à produire les Guidelines et le site web de la TEI. Celles-ci sont également présentes au sein du Framework TEI offert par l’éditeur XML oXygen. Nous vous proposons une rapide introduction pour apprendre à les utiliser pour produire des sorties dans différents formats (xhtml, LateX, pdf, docx, etc.) à partir de vos documents TEI.</p>
+        </div>
+      </div>
+      <div type="sommaire" xml:lang="fr" xml:id="index">
+        <div>
+          <head>Sommaire</head>
+          <list>
+            <item><ref target="#part1">Distribution des XSL Stylesheets</ref></item>
+            <item><ref target="#part2">Transformations par défaut avec oXygen</ref></item>
+            <item><ref target="#part3">Personnalisations</ref></item>
+          </list>
+        </div>
+      </div>
+    </front>
+    <body>
+      <div type="part">
+        <div type="title" xml:lang="fr" xml:id="part1">
+          <div>
+            <head>Distribution des XSL Stylesheets</head>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Les XSL Stylesheet</head>
+            <p>XSLT Stylesheets = une bibliothèque de XSL pour transformer des documents TEI vers toute sortes de formats<list>
+                <item>conçues pour les besoins du TEI Consortium</item>
+                <item>processing de documents ODD pour Roma</item>
+                <item>génération des Guidelines en XHTML</item>
+                <item>transformations vers LaTeX, MsWord (.docx), OpenOffice (.odt)</item>
+                <item>et bien d’autres choses encore…</item>
+              </list></p>
+          </div>
+          <div>
+            <p/>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Limitations</head>
+            <list>
+              <item>ne fournissent pas nécessairement des rendus pour tous les éléments de la TEI</item>
+              <item>toutes les valeurs possibles d’attribut ne sont pas prises en compte (ex. <att>rend</att>, <att>type</att>)</item>
+              <item>les différents formats de sortie peuvent être incomplets</item>
+            </list>
+            <p>En revanche elles permettent de régler de nombreux problèmes habituels.</p>
+          </div>
+          <div>
+            <p>Il est important de comprendre d’emblée que si les XSLT Stylesheets offrent un ensemble de traitements génériques pour la TEI, elles ne traitent pas tous les cas de figure ou tous les éléments ou valeurs d’attribut de la TEI.</p>
+            <p>Elles ne prétendent pas non plus constituer un modèle de traitement ou de rendu standard pour la TEI. En revanche, elles offrent une très riche bibliothèque de transformations qui devrait dans bien des cas vous faciliter le travail.</p>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Sebastian Patrick Quintus Rahtz (13 February 1955 – 15 March 2016)</head>
+            <figure><graphic url="sebastian.jpg"/></figure>
+          </div>
+          <div>
+            <p>La TEI est une communauté, elle est largement redevable des personnes qui ont contribué à son fonctionnement. Sebastian Rahtz a été l’initiateur des XSL Stylesheets dont il a longtemps assuré la maintenance. Pour beaucoup d’entre nous, il était un modèle d’engagement, de désintéressement et de rigueur dans le travail. Sa contribution à la TEI fut considérable, et son décès une grande perte pour la communauté.</p>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Distribution des XSL Stylesheets</head>
+            <list>
+              <label>Sources</label>
+              <item>https://github.com/TEIC/Stylesheets</item>
+              <label>Documentation</label>
+              <item>http://www.tei-c.org/release/doc/tei-xsl/</item>
+              <label>Framework oXygen</label>
+              <item>Pré-installé dans la distribution d’oXygen</item>
+            </list>
+          </div>
+          <div>
+            <p>À l’instar du code source de la TEI, les XSL Stylesheets sont distribuées par l’intermédiaire de la page GitHub du Consortium.</p>
+            <p>La bibliothèque peut donc être installée localement pour être exécutée en ligne de commandes avec un processeur compatible avec XSLT 2.0 (le répertoire <code>bin/</code> contient plusieurs fichiers exécutables).</p>
+            <p>Toutefois, les stylesheets sont également distribuées parmi les Framework offerts par oXygen et peuvent être exécutées directement depuis l’éditeur oXygen Editor.</p>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Plusieurs manières de personnaliser les XSL Stylesheets</head>
+            <list>
+              <item>en spécifiant des valeurs de paramètres avec oXygen</item>
+              <item>en fournissant ces paramètres en ligne de commande</item>
+              <item>en construisant des feuilles de styles embarquant celles de la librairie en les surchargeant.</item>
+            </list>
+          </div>
+          <div/>
+        </div>
+      </div>
+      <div type="part">
+        <div type="title" xml:lang="fr" xml:id="part2">
+          <div>
+            <head>Transformations par défaut avec oXygen</head>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Scénarios du Framework TEI d’oXygen</head>
+            <figure>
+              <graphic url="../images/oxygenScenariosTEIP5.png"/>
+              <desc>Scénarios par défaut du Framework TEI P5 d’oXygen.</desc>
+            </figure>
+          </div>
+          <div>
+            <p>Lorsque vous avez importé un document MsWord en XML-TEI, avec oXygen, vous déjà utilisé le Framework de la TEI P5 embarqué avec le logiciel.</p>
+            <p>oXygen propose un certain nombre de transformations par défault de documents TEI, telles que TEI vers pdf, xhtml, docx, odt.</p>
+            <p>Vous pouvez également, si vous l’avez installé, de transformations spécialisées destinées à travailler avec des documents ODD.</p>
+          </div>
+        </div>
+      </div>
+      <div type="part">
+        <div type="title" xml:lang="fr" xml:id="part3">
+          <div>
+            <head>TP personnalisation d’une sortie vers html</head>
+            <p>Les XSL Stylesheets propose de très nombreux paramètres de personnalisation pour calibrer la sortie.</p>
+            <list>
+              <head><hi>Exercice :</hi> personnalisation d’une sortie vers html</head>
+              <item>Ajouter un sommaire</item>
+              <item>Ajouter un sommaire</item>
+            </list>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Plusieurs manières de personnaliser les XSL Stylesheets</head>
+            <list>
+              <item>En utilisant des paramètres</item>
+              <item>En ajoutant des règles</item>
+              <item>En surchargeant des règles</item>
+            </list>
+          </div>
+          <div>
+            <p>Les XSL Stylesheets ont été conçues pour être personnalisées, soit par l’intermédiaire de paramètres (comme on l’a vu précédemment), soit en ajoutant des règles supplémentaires ou en les surchargeant.</p>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head/>
+            <egXML xmlns="http://www.w3.org/1999/XSL/Transform">
+              <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+                <xsl:import href="../path/to/" />
+              </xsl:stylesheet>
+            </egXML>
+          </div>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="title">
+        <div>
+          <head>Pour finir, les <ref target="06-namedEntities.html">entités nommées</ref></head>
+          <note><ref target="#index">revenir au début</ref> | <ref target="00-programme.html"
+              >programme</ref></note>
+        </div>
+      </div>
+    </back>
+  </text>
+</TEI>

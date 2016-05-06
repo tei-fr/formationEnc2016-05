@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div type="part">
+            <div type="title" xml:lang="fr" xml:id="presentationEdition">
+               <div>
+                  <head>La présentation de l'édition critique</head>
+               </div>
+            </div>
+            <div type="slide" xml:lang="fr">
+               <div type="introduction">
+                  <head>La Présentation de l’édition critique</head>
+                  <list>
+                     <item>déterminer les modalités de consultation du texte</item>
+                     <item>déterminer la réception du texte</item>
+                     <item>pas de modèle unique</item>
+                     <item>des conventions</item>
+                  </list>
+               </div>
+               <div>
+                  <p>La méthode d’édition critique bien établie, il convient de régler le problème pratique de la présentation de l’édition. Ici, les choix que vous allez formuler détermineront les modalités de consultation du texte et sa réception.</p>
+                  <p>Même si une édition numérique offre plus de souplesse qu’une édition imprimée, elle n’en reste pas moins problématique sous cet aspect qui tient du parti-pris éditorial. Là encore, il n’existe pas de solution absolue en la matière, le meilleur dispositif étant celui qui sert le mieux le point de vue éditorial adopté ou qui offre les meilleures conditions d’accessibilité au texte.</p>
+                  <p>Avant de pouvoir établir un cahier des charges fonctionnel, il vous faudra donc arrêter clairement ce que doit véhiculer l’édition d’un point de vue scientifique. Les pré-requis pour l’édition que vous voulez produire seront soit généralement liés au respect des conventions de l’édition scientifique, soit propres aux spécificités du corpus édité.</p>
+               </div>
+            </div>
+            <div type="slide" xml:lang="fr">
+               <div type="introduction">
+                  <head>La Présentation de l’apparat critique</head>
+                  <list>
+                     <item>une longue tradition d’appareillage savant du texte</item>
+                     <item>de nouvelles formes de présentation avec le numérique</item>
+                     <item>des enjeux identiques (citabilité, commodité, etc.)</item>
+                  </list>
+               </div>
+               <div>
+                  <head>La Présentation de l’apparat critique</head>
+                  <div>
+                     <p>Dans une édition critique d’un texte ancien, on appelle apparat critique l’ensemble des notes fournies par l’auteur de l’édition pour justifier des choix opérés dans l’édition ou signaler certaines particularités de la source. L’apparat critique d’une édition a essentiellement une fonction descriptive. Il concerne la description des particularités matérielles du texte transcrit, et celle des autres états du texte s’il en existe par un relevé des leçons pour chaque passage.</p>
+                     <p>Il est d’usage de fournir les leçons variantes du texte au moyen de notes critiques habituellement numérotées alphabétiquement. Bien que l’édition numérique permette de les afficher d’une autre manière (par exemple en proposant plusieurs vues), il a été choisi de les présenter en note. N’ayant pas totalement renoncé à une édition imprimée, une telle présentation permettait notamment d’être identique dans les deux versions. D’autre part, cette solution correspondait assez bien au mode de production du texte qui, comme nous le verrons plus loin, a été traité par les auteurs de l’édition critique à partir d’un logiciel de traitement de texte.</p>
+                     <p>La lecture du texte ne présentant le plus souvent pas de difficultés très spécifiques, les autres aspects de l’apparat critique, comme l’indication des lacunes, des difficultés de lecture, ou des segments sémantiquement incorrects, etc., utilisent également une présentation typographique conventionnelle. Néanmoins, elle peut être enrichie par des artifices de présentation que permet le numérique tels que l’affichage au survol, etc.</p>
+                  </div>
+                  <div>
+                     <p>La longue tradition de l’édition critique détermine en grande partie <hi>ce qu’est en droit d’attendre un lecteur</hi> lors de la consultation d’une édition. Elle fixe un ensemble de prérequis qui <hi>qualifient en grande partie l’édition</hi>. Au cours du temps, cette tradition a généré une grande richesse dans l’emploi des marques typographiques (barres, crochets, soufflets, etc.) pour signifier telle ou telle caractéristique matérielle, mais celles-ci n’ont pas toujours la même signification à travers les éditions. Elle a également fixé un certain nombre d’habitudes pour donner des éléments de repérage et de citabilité, pour indiquer la pagination du texte de base, une numérotation marginale des lignes, etc.</p>
+                     <p>L’utilisation du support numérique a donné l’occasion d’explorer de <hi>nouvelles formes de présentation de l’apparat critique</hi>. Sa malléabilité a notamment permis d’envisager de manière nouvelle la présentation des variantes puisqu’elle permet de proposer alternativement plusieurs vues sur un même texte, ou encore par exemple de proposer à bien moindre frais qu’avec l’imprimé des éditions dites hyper-diplomatiques qui présentent des fac simili en regard du texte édité. Il n’en reste pas moins qu’une bonne édition numérique se doit de respecter un certain nombre de <hi>standards éditoriaux</hi> en particulier pour faciliter la citation ou rendre la consultation de l’apparat critique ou des notes de commentaire historique la plus aisée possible.</p>
+                  </div>
+               </div>
+            </div>
+            <div type="slide" xml:lang="fr">
+               <div>
+                  <head>Glossaires et index</head>
+                  <list>
+                     <head>Glossaires</head>
+                     <item>termes</item>
+                     <item>gloses</item>
+                  </list>
+                  <list>
+                     <head>Index</head>
+                     <item>toponymique</item>
+                     <item>patronymique</item>
+                     <item>matière</item>
+                  </list>
+                  <list>
+                     <item>Listes d’occurences</item>
+                     <item>…</item>
+                  </list>
+               </div>
+               <div>
+                  <head>Glossaires et index</head>
+                  <p>Outre cet apparat critique et historique, on peut avoir le désir de fournir un glossaire des termes architecturaux et juridiques. C’est-à-dire une liste alphabétique des mots difficiles jouant le rôle d’un dictionnaire propre au texte pour favoriser sa compréhension. En dehors des aspects de vulgarisation, un tel glossaire peut aussi assez bien répondre au caractère pluri-disciplinaire d'une édition.</p>
+                  <p>Plusieurs index peuvent également permettre d’offrir différents types d’accès aux textes. En plus des index patronymiques et toponymiques habituellement requis dans une édition critique, on peut parfois envisager l’établissement d’un index des matières. Attention, la production d’un index même si elle se trouve en grande partie facilité par l’emploi du numérique doit être consistante. Elle elle surtout difficile et extrêmement chronophage.</p>
+               </div>
+            </div>
+            <div type="slide" xml:lang="fr">
+               <div>
+                  <head>Recherche et recherche plein texte</head>
+                  <list>
+                     <item>Recherche structurée</item>
+                     <item>Recherche plein-texte</item>
+                  </list>
+               </div>
+               <div>
+                  <head>Recherche et recherche plein texte</head>
+                  <p>Outre les index qui relèvent en grande partie de l’apparat critique, il s’agissait également de proposer au lecteur une recherche plein texte. La recherche dite plein texte est l’une des modalités de consultation du texte spécifiquement permise par le support numérique. Il paraît donc souvent difficile de s’en passer dans une édition numérique.</p>
+                  <p>Toutefois, pour être efficace, une telle recherche suppose un traitement particulier de la langue qui n’est pas sans présenter quelques difficultés ; a fortiori lorsque le texte n’est pas modernisé. Si une telle fonctionnalité est apparemment simple pour l’utilisateur, sa mise en place efficace est loin d’être triviale. On a habituellement recours à des logiciels spécifiques comme Lucenne, Solr, ou ElasticSearch qui fonctionnent généralement en environnement Java.</p>
+               </div>
+            </div>
+            <div type="slide" xml:lang="fr">
+               <div>
+                  <head>Hypertextualité et matérialité</head>
+                  <list>
+                     <item>liens cliquables</item>
+                     <item>traitements automatisés</item>
+                     <item>enrichissements interactifs</item>
+                     <item>visualisations complexes</item>
+                     <item>Matérialité de l’édition</item>
+                  </list>
+               </div>
+               <div>
+                  <head>Hypertextualité et matérialité</head>
+                  <div>
+                     <head>L’hypertextualité</head>
+                     <p>Une édition électronique peut présenter de nombreux avantages pratiques sur une édition imprimée. D’abord, elle est de loin moins coûteuse à produire et peut être directement mise à disposition d’un très grand nombre de lecteurs. Surtout comme nous venons de le voir, elle rend possible des recherches textuelles et permet d’accéder rapidement aux informations qu’elles contiennent en utilisant l’hypertextualité.</p>
+                     <p>À cet égard, l’utilisation de l’hypertexte rend particulièrement maniable toute l’information para-textuelle qui peut accompagner l’édition. Les index électroniques, et les listes d’occurrences lorsqu’ils existent dans le format papier sont bien moins maniables qu’avec le numérique. De surcroît, l’édition électronique permet d’envisager des traitements automatisés qui présentent un réel gain de temps dans l’établissement de telles modalités d’accès au contenu. Elle permet également de produire une visualisation plus contextuelle des entités.</p>
+                     <p>L’édition numérique se caractérise également par la possibilité de permettre des enrichissements interactifs de l’édition. Afficher des définitions au survol, proposer des hyperliens.</p>
+                  </div>
+                  <div>
+                     <head>Matérialité de l’édition</head>
+                     <p>Dans un tel contexte, il n’y a plus de texte définitif. Le numérique est un support labile qui permet les enrichissements successifs et les améliorations. L’utilisation de système de gestion de versions règle les problèmes de citation. Plutôt que de concevoir le travail comme un objet terminé, il n’est plus nécessaire d’attendre l’achèvement complet du travail pour mettre à disposition le matériel ou exposer le travail en cours. De telles dispositions peuvent toutefois heurter les cadres de pensée habituels.</p>
+                     <p>La finesse de l’enregistrement que le balisage rend possible est paradoxalement parfois difficile à exprimer de manière typographique. Car le support numérique ne fait pas complètement disparaître la matérialité du texte. Il conditionne au contraire les lectures du texte. Il n’est d’ailleurs pas contradictoire avec une édition papier. Celle-ci n’a simplement pas la même autorité, et n’offre pas la même qualité de lecture. Il s’agit simplement d’envisager différents usages en fonction des supports.</p>
+                  </div>
+               </div>
+            </div>
+            <div type="slide" xml:lang="fr">
+               <div>
+                  <head>Offrir plus de choix au lecteur</head>
+                  <list>
+                     <item>plus accessible ?</item>
+                     <item>accès plus direct aux sources ?</item>
+                     <item>quel public</item>
+                  </list>
+               </div>
+               <div>
+                  <head>Offrir plus de choix au lecteur</head>
+                  <p>Dans sa présentation de 2013, <bibl>A Bag of Words</bibl>, Edward Vanhotte soulèvait la question de ce que pourrait être une édition numérique par rapport à ce qu’elle est en définitive aux prises avec diverses contraintes qui pèsent sur sa production. Ce faisant, il déconstruisait à cette occasion plusieurs mythes sur la nature des éditions numériques. Notamment le fait que celles-ci seraient plus accessibles, ou permettrait d’offrir un accès plus rapide ou plus direct à des sources que des éditions imprimées.</p>
+                  <p>Une édition imprimée est par nature accessible, généralement fournie pour une audience clairement ciblée et lorsqu’il s’agit d’une édition scientifique elle adopte le plus souvent des critères explicites. En réalité, et pour reprendre les termes d’Edward Vanhoutte, une édition numérique présente une accessibilité « qualitativement différente ». Le media numérique permet notamment la recherche plein texte que n’offre pas le support imprimé. Une édition numérique mettra également souvent en place toute une série d’index dont l’utilisation repose entièrement sur l’hypertextualité.</p>
+                  <p>Qu’importe l’honnêteté ou la transparence de l’éditeur, le support imprimé impose une structure particulière, une séquence, une mise en page, etc. Ce qui change avec l’électronique ce sont les hiérarchies qui libèrent les choix du lecteur. Mais le numérique n’est pas sans conséquence sur le texte lui-même et sa lecture.</p>
+                  <p>Avec une édition électronique, on peut également de proposer au lecteur de produire sa propre édition en fonction de ses lectures ou des utilisations qu’il souhaite faire de la source. Bien sûr pour ce faire il demeure nécessaire que l’éditeur ait considéré à l’avance ces questions de sorte qu’il puisse ménager les utilisations potentielles en laissant libre le plus de choix possibles. Il s’agit donc de produire un dispositif, d’offrir selon l’expression de Corinne Welger-Barboza un « corpus outillé ».</p>
+               </div>
+            </div>
+         </div>
+      </body>
+  </text>
+</TEI>

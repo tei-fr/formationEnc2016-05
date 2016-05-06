@@ -30,7 +30,7 @@
                         <head>9h30 Introduction</head>
                     </div>
                     <div>
-                        <head>10h-10h45 Présentation des participants</head>
+                        <head>10h-10h45 : Présentation des participants</head>
                         <p>Chaque participant se présente et expose son travail et les difficultés
                             rencontrées.</p>
                         <p>Définition des binômes</p>
@@ -39,17 +39,17 @@
                         <head>Pause</head>
                     </div>
                     <div xml:id="T01" resp="#EM">
-                        <head>11h-11h30 Synthèse sur le balisage PM (présentation magistrale)
+                        <head>11h-11h30 : Synthèse sur le balisage PM (présentation magistrale)
                             EM</head>
                         <list>
                             <item>Théorie du balisage</item>
                             <item>Expression en utilisant XML</item>
                             <item>Document bien formé et document valide</item>
                         </list>
-                        <p>Cf <ref target="talk-01.xml"/></p>
+                        <p>Cf <ref target="01-editionNumerique.tei.xml"/></p>
                     </div>
                     <div xml:id="T02" resp="#LB">
-                        <head>11h30-12h30 Modélisation TP (travaux pratiques) LB</head>
+                        <head>11h30-12h30 : Modélisation TP (travaux pratiques) LB</head>
                         <p>Fournir plusieurs documents et discuter ce que l’on doit baliser; Exposés
                             oraux des participants</p>
                         <p> <ref target="ex-2-analyse.xml">ex-2-analyse</ref></p>
@@ -58,14 +58,14 @@
                         <head>LUNCH</head>
                     </div>
                     <div xml:id="T03" resp="#LB #EM">
-                        <head>13h30 - 14h Revoir l’exercice encodage initial (<ref
+                        <head>13h30 - 14h : Revoir l’exercice encodage initial (<ref
                                 target="ex-1.oxygen.xml"/>) – LB/EM</head>
                         <p>Contrôler que les participants se sont familiarisés avec l’environnement
                             technique et expérimenter la saisie contextuelle, etc.</p>
                     </div>
                     <div xml:id="T04" resp="#LB">
-                        <head>14h -15h : Introduction aux richesses de la TEI – PM LB</head>
-                        <p>Comment partir des complexités du modele vers la TEI; les 5 étapes;
+                        <head>14h -15h : Introduction aux richesses de la TEI – PM LB</head>
+                        <p>Comment partir des complexités du modèle vers la TEI; les 5 étapes;
                             modules, classes etc.</p>
                         <p><ref target="talk-tei-intro.xml">talk-tei-intro</ref></p>
                        <!-- <p>A construire <bibl><title>L'envergure de la TEI Un tour d'horizon de
@@ -77,7 +77,7 @@
                         <!--</p>-->
                     </div>
                     <div xml:id="T05" resp="#EM ">
-                        <head>15h - 17h Personnalisation TEI avec Roma– TP EM</head>
+                        <head>15h - 17h : Personnalisation TEI avec Roma– TP EM</head>
                         <p><ref target="ex-3-roma.xml">ex-roma</ref></p>
                         <list>
                             <item> Création avec Roma ODD schéma réduit</item>
@@ -130,11 +130,11 @@
                     </div>
                     <div xml:id="T08" resp="#EM">
                         <head>11h30 -1200 TEI Header – PM EM</head>
-                        <p><ref target="sources/03-teiHeader.tei.xml">03-teiHeader.tei</ref></p>
+                        <p><ref target="03-teiHeader.tei.xml">03-teiHeader.tei</ref></p>
                         
                     </div>
                     <div xml:id="T08bis" resp="#EM">
-                        <head>12h -12h30 TEI Header – TP EM</head> <!-- a fournir -->
+                        <head>12h -12h30 TEI Header – TP EM</head> <!-- à fournir -->
                         <list type="unordered">
                             <item>créer un header simple</item>
                         </list>

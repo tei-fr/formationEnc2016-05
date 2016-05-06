@@ -53,14 +53,15 @@
             <label>10h45-11h15</label>
             <item>pause</item>
             <label>11h15-12h</label>
-            <item>TP01 : <ref target="ex-1-oxygen.xml">A la découverte d'oXygen</ref></item>
+            <item>TP01 : <ref target="ex-1-oxygen.xml">À la découverte d’oXygen</ref></item>
             <label>12h-13h30</label>
-            <item>pause dejeuner</item>
+            <item>pause déjeuner</item>
             <label>13h30-14h30</label>
-            <item><ref target="talk-02-tei.xml">La Text Encoding Initiative (TEI) C’est quoi ?
-              </ref> : des exemples actuels</item>
+            <item><ref target="talk-02-tei.xml"
+                >La Text Encoding Initiative (TEI) C’est quoi ? </ref> : des exemples actuels</item>
             <label>14h30-15h15</label>
-            <item>TP02 : <ref target="ex-2-analyse.xml">Analyse et modelisation des textes</ref></item>
+            <item>TP02 : <ref target="ex-2-analyse.xml"
+              >Analyse et modélisation des textes</ref></item>
             <label>15h15-15h45</label>
             <item>pause</item>
             <label>15h45-16h45</label>
@@ -122,15 +123,15 @@
         <div>
           <head>Organisation du répertoire</head>
           <list>
-            <item>exemples/ exemples tei</item>
-            <item>exercices/ contient les dossiers de travaux pratiques</item>
-            <item>images/ contenus graphiques</item>
-            <item>pdf/ présentations au format pdf</item>
-            <item>presentations/ présentations au format HTML</item>
-            <item>ressources/ matériel d’accompagnement</item>
-            <item>schemas/ schémas distribués pour la formation</item>
-            <item>sources/ sources tei des présentations (contient un sous-module schema/)</item>
-            <item>xsl/ transformations xslt</item>
+            <item><code>exemples/</code> exemples tei</item>
+            <item><code>exercices/</code> contient les dossiers de travaux pratiques</item>
+            <item><code>images/</code> contenus graphiques</item>
+            <item><code>pdf/</code> présentations au format pdf</item>
+            <item><code>presentations/</code> présentations au format HTML</item>
+            <item><code>ressources/</code> matériel d’accompagnement</item>
+            <item><code>schemas/</code> schémas distribués pour la formation</item>
+            <item><code>sources/</code> sources tei des présentations (contient un sous-module schema/)</item>
+            <item><code>xsl/</code> transformations xslt</item>
           </list>
         </div>
       </div>

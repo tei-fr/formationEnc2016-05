@@ -28,9 +28,9 @@
 
             <div>
                 <head>Programme de la formation</head>
-                <div >
+                <div>
                     <head>Premier jour</head>
-                    <div >
+                    <div>
                         <head>9h30 Introduction</head>
                     </div>
                     <div>
@@ -56,9 +56,10 @@
                         <head>11h30-12h30 Modélisation TP (travaux pratiques) LB</head>
                         <p>Fournir plusieurs documents et discuter ce que l’on doit baliser; Exposés
                             oraux des participants</p>
-                        <p> <ref target="ex-2-analyse.xml">ex-2-analyse</ref></p>
+                        <p>
+                            <ref target="ex-2-analyse.xml">ex-2-analyse</ref></p>
                     </div>
-                    <div >
+                    <div>
                         <head>LUNCH</head>
                     </div>
                     <div xml:id="T03" resp="#LB #EM">
@@ -72,7 +73,7 @@
                         <p>Comment partir des complexités du modele vers la TEI; les 5 étapes;
                             modules, classes etc.</p>
                         <p><ref target="talk-tei-intro.xml">talk-tei-intro</ref></p>
-                       <!-- <p>A construire <bibl><title>L'envergure de la TEI Un tour d'horizon de
+                        <!-- <p>A construire <bibl><title>L'envergure de la TEI Un tour d'horizon de
                                     l'univers TEI</title>
                                 <ident>lbc:2013-03-lille/talk-4.xml</ident></bibl>; <bibl>
                                 <title>Comment se servir des TEI Guidelines? </title>
@@ -87,11 +88,11 @@
                             <item> Création avec Roma ODD schéma réduit</item>
                             <item> Génération du schéma et de l’ODD</item>
                             <item> Valider avec le schéma</item>
-                            
-                            <item> Transcription d’un manuscrit simple; validation de la transcription. 
-                            (exercices sur deGaulle.xml) </item>
-                           
-      <!-- on n'aura pas le temps a mon avis, donc pour l'instant je supprime                       
+
+                            <item> Transcription d’un manuscrit simple; validation de la
+                                transcription. (exercices sur deGaulle.xml) </item>
+
+                            <!-- on n'aura pas le temps a mon avis, donc pour l'instant je supprime                       
 <item> Puis relancer l’ODD dans Roma pour l’étendre [LB]</item>
                             <item> retravailler sur un autre doc plus complexe? retravailler sur le
                                 meme doc en ajoutant des complexites?</item>
@@ -101,20 +102,19 @@
                                 les fautes.</item> -->
                         </list>
                     </div>
-                    <div >
+                    <div>
                         <head>Social event (bière)</head>
                     </div>
                 </div>
-                <div >
+                <div>
                     <head>2ème journée…</head>
                     <div xml:id="T06" resp="#EM">
                         <head>9h30-10h min Édition critique – PM EM</head>
-                        <p>transcription source primaire : segmentation; interventions editoriales
-                        </p>
-                        <p><ref target="sources/05-editionNumerique.tei.xml">05-editionNumerique.tei</ref></p>
-                        <p> cf. <ident>2015-09-lyon/talk-07-ms.xml</ident>; 
-                            <ident>2015-09-lyon/04-editionCritique.tei.xml</ident>
-                            
+                        <p>transcription source primaire : segmentation; interventions editoriales </p>
+                        <p><ref target="sources/05-editionNumerique.tei.xml"
+                                >05-editionNumerique.tei</ref></p>
+                        <p> cf. <ident>2015-09-lyon/talk-07-ms.xml</ident>;
+                                <ident>2015-09-lyon/04-editionCritique.tei.xml</ident>
                         </p>
                     </div>
                     <div xml:id="T07" resp="#LB">
@@ -135,10 +135,11 @@
                     <div xml:id="T08" resp="#EM">
                         <head>11h30 -1200 TEI Header – PM EM</head>
                         <p><ref target="sources/03-teiHeader.tei.xml">03-teiHeader.tei</ref></p>
-                        
+
                     </div>
                     <div xml:id="T08bis" resp="#EM">
-                        <head>12h -12h30 TEI Header – TP EM</head> <!-- a fournir -->
+                        <head>12h -12h30 TEI Header – TP EM</head>
+                        <!-- a fournir -->
                         <list type="unordered">
                             <item>créer un header simple</item>
                         </list>
@@ -148,14 +149,16 @@
                     </div>
                     <div xml:id="T09" resp="#LB">
                         <head>13h30 -14h15 TEI Msdescription – PM LB</head>
-                       <p> <ref target="talk-msdesc.xml">talk-msdesc.xml</ref>
-                       </p> 
+                        <p>
+                            <ref target="talk-msdesc.xml">talk-msdesc.xml</ref>
+                        </p>
                         <p>Exemple d’un document très spécialisé</p>
                     </div>
                     <div xml:id="T10" resp="#LB">
-                        <head>14h15 - 15h30 TEI Msdescription – TP LB</head> <!-- a fournir -->
+                        <head>14h15 - 15h30 TEI Msdescription – TP LB</head>
+                        <!-- a fournir -->
                     </div>
-                    <div >
+                    <div>
                         <head>pause</head>
                     </div>
                     <div xml:id="T11" resp="#EM">
@@ -175,75 +178,87 @@
                     <div xml:id="T12" resp="#EM">
                         <head>09h30-10h Entités nommées – PM EM</head>
                         <p><ref target="06-namedEntities.tei.xml">06-namedEntities.tei</ref></p>
-                        
+
                     </div>
                     <div xml:id="T12bis" resp="#EM">
-                        <head>10h-11h00 Création et gestion des Entités nommées – TP EM</head><!-- a fournir -->
+                        <head>10h-11h00 Création et gestion des Entités nommées – TP EM</head>
+                        <!-- a fournir -->
                     </div>
                     <div>
                         <head>11h00-11h30 Pause</head>
                     </div>
                     <div xml:id="T13" resp="#LB">
-                        <head>11h30-12h Modalités d'organisation des documents TEI – PM LB </head><!-- a fournir -->
+                        <head>11h30-12h Modalités d'organisation des documents TEI – PM LB </head>
+                        <!-- a fournir -->
                         <p>Conceptes de group, corpus, facsimile. etc: organisation des fichiers.
                         </p>
                     </div>
                     <div xml:id="T14" resp="#EM">
-                        <head>12h - 12h30 Cas d'etude: organisation du projet Oulipo – TP EM </head><!-- a fournir -->
+                        <head>12h - 12h30 Cas d'etude: organisation du projet Oulipo – TP EM </head>
+                        <!-- a fournir -->
                         <p>Comment organiser le projet imaginaire: importance de versioning;
                             démontrer usage de Github? </p>
                     </div>
-                    <div >
+                    <div>
                         <head>LUNCH</head>
                     </div>
                     <div xml:id="T15" resp="#EM">
                         <head>13h30-14h Personnalisation avancée avec ODD – PM EM </head>
-                 <p>       <ref target="07-personnalisation.tei.xml">07-personnalisation.tei</ref>
-              </p>          <p>Revoir et comprendre l’ODD crée</p>
+                        <p>
+                            <ref target="07-personnalisation.tei.xml">07-personnalisation.tei</ref>
+                        </p>
+                        <p>Revoir et comprendre l’ODD crée</p>
                     </div>
                     <div xml:id="T16" resp="#LB">
-                        <head>14h - 15h Creation d’un ODD personalisé – TP LB </head><!-- a fournir -->
+                        <head>14h - 15h Creation d’un ODD personalisé – TP LB </head>
+                        <!-- a fournir -->
                         <list type="unordered">
                             <item>avec Roma</item>
                             <item>avec Oxygen</item>
                         </list>
                     </div>
-                    <div >
+                    <div>
                         <head>pause</head>
                     </div>
                     <div xml:id="T17" resp="#LB">
-                        <head>15h30 - 16h15: Florilegium de projets TEI – PM LB</head>
-                        <p><ref target="tei-florilege.xml"/></p><!-- a mettre a jour -->
+                        <head>15h30 - 16h15: Florilegium de projets TEI – PM+TP LB</head>
+                        <p><ref target="tei-florilege.xml"/></p>
+                        <!-- a mettre a jour -->
                         <p>Comment les gens se servent de la TEI</p>
+                        <p><ref target="ex-tei-explore.xml">ex-tei-explore</ref></p>
                     </div>
                     <div xml:id="T18" resp="#EM">
-                        <head>16h15-17h XPath TP – EM</head> <!-- ? is this same as first part of xslt pour les nuls? -->
+                        <head>16h15-17h XPath TP – EM</head>
+                        <!-- ? is this same as first part of xslt pour les nuls? -->
+                        <!-- si oui, le supprimer, et remplacer par l'ex precedent -->
                         <p>Rappel de l'intérêt de structuration ; technique essentiel pour ce qui
                             suit</p>
                     </div>
                 </div>
-                <div >
+                <div>
                     <head>4ème journée…</head>
                     <div xml:id="T19" resp="#EM">
-                        <head>9h30-10h Chaînes de traitement TEI – PM EM</head><!-- a fournir -->
+                        <head>9h30-10h Chaînes de traitement TEI – PM EM</head>
+                        <!-- a fournir -->
                         <p>CSS, XSLT, XQuery, environnements de publication</p>
                         <p>epub, pdf, inDesign, etc.</p>
                     </div>
                     <div xml:id="T20" resp="#LB">
                         <head>10h00-11h XSLT Pour les nuls – PM+TP LB</head>
                         <p><ref target="talk-xslt.xml">talk-xslt</ref></p>
-                        
+
                         <p><ref target="ex-n-xslt.xml">ex-n-xslt</ref></p>
-                        
+
                         <p>Création d’une feuille de style très simple pour transformer un document
                             TEI vers HTML.</p>
                         <p>Ajout de quelques templates.</p>
                     </div>
-                    <div >
+                    <div>
                         <head>Pause</head>
                     </div>
                     <div xml:id="T21" resp="#EM">
-                        <head>11h30-12h30 XSLT pour les paresseux – PM+TP EM</head><!-- a fournir -->
+                        <head>11h30-12h30 XSLT pour les paresseux – PM+TP EM</head>
+                        <!-- a fournir -->
                         <list>
                             <item>Framework TEI Oxygen </item>
                             <item>Personnalisation avec les variables </item>
@@ -254,7 +269,8 @@
                         <head>LUNCH</head>
                     </div>
                     <div xml:id="T22" resp="#LB #EM">
-                        <head>13h30-14h30 Outils a démontrer LB/EM en alternance</head><!-- a preparer -->
+                        <head>13h30-14h30 Outils a démontrer LB/EM en alternance</head>
+                        <!-- a preparer -->
                         <list type="unordered">
                             <item>Boilerplate LB</item>
                             <item>VersioningMachine EM </item>
@@ -266,7 +282,7 @@
                             <item>Omeka, Zotero EM </item>
                         </list>
                     </div>
-                    <div >
+                    <div>
                         <head>14h30-16h Discussion sur leurs projets</head>
                     </div>
                     <div>
@@ -288,8 +304,17 @@
                 </list>
             </div>
             <div>
-                <head>Propositions de documents OULIPO</head>
-                <p><ref target="http://gallica.bnf.fr/ark:/12148/btv1b100101635"><hi
+                <head>Quelques documents OULIPO</head>
+                <p>Le dossier <ident>oulipoDox</ident> rassemble quelques un des comptes-rendus des
+                    reunions oulipo des annees 60. Ils sont presentes en mode page-image (un fichier
+                    par page) et egalement dans un TEI XML cree par le projet DifDepo (en cours). Le
+                    balisage est tres simple, et nous allons l'ameliorer et l'approfondir. </p>
+                <p>Chaque fichier est nomme pour la date de la reunion concernee. Par ex, le fichier
+                        <ident>cr610417.xml</ident> est une transcription TEI du CR de la reunion du
+                    17 avril 1961; il y a 3 fichiers pages-images correspondents:
+                        <ident>cr610417_2.jpg</ident>, <ident>cr610417_1.jpg</ident>, et
+                        <ident>cr610417_1.jpg</ident>. </p>
+                <!--   <p><ref target="http://gallica.bnf.fr/ark:/12148/btv1b100101635"><hi
                             rend="underline color(1155cc)"
                             >http://gallica.bnf.fr/ark:/12148/btv1b100101635</hi></ref> :
                     (“Convocation dactylographiée au Congrès de l’Oulipo les 10 et 11 juin adressée
@@ -325,7 +350,7 @@
                     combinatoire ». Copie de « Oulipo-Java ». )</p>
                 <p>Ces 3 dossiers (choisis a l’hasard) rassemble une variete des cas interessants a
                     mon avis. J’ai aussi telecharger les version PDF, qui nous permettrait de
-                    diffuser directement les pages images individuelles. </p>
+                    diffuser directement les pages images individuelles. </p>-->
             </div>
             <!--<div xml:id="h.tv5uqemypkvi">
                     <head>Todo</head>

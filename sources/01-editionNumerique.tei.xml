@@ -314,6 +314,107 @@
       </div>
       <div type="slide" xml:lang="fr">
         <div>
+          <head>e<hi rend="bold">X</hi>tensible <hi rend="bold">M</hi>arkup <hi rend="bold"
+            >L</hi>anguage – historique</head>
+          <div>
+            <head>héritier de SGML (Standard Generalized Markup Language)</head>
+            <list>
+              <item>métalangage informatique pour le balisage du texte</item>
+              <item><ref target="http://www.iso.org/iso/fr/catalogue_detail.htm?csnumber=16387"
+                >norme ISO (ISO 8879:1986)</ref></item>
+            </list>
+          </div>
+          <div>
+            <head>publication par le W3C en février 1998</head>
+            <list>
+              <item>des spécifications du métalangage XML 1.0</item>
+              <item>maîtres mots : simplicité, clarté, universalité</item>
+              <item><ref target="http://www.w3.org/TR/xml11">version 1.1</ref> en 2004</item>
+            </list>
+          </div>
+        </div>
+        <div type="comments">
+          <div>
+            <head>Un héritier de SGML</head>
+            <p>SGML lui-même héritier d’un langage descriptif conçu en 1969 par des ingénieurs de la société IBM : DCF (Document Composition Facility).</p>
+            <p>SGML : puissant et générique mais aussi trop souple et complexe en même temps → surtout utilisé dans le cadre d’applications lourdes. Utilisation la plus notable : langage HTML, dérivé du SGML => langage de publication pour le web.Né en 1989 et depuis 2011, HTML 5.</p>
+          </div>
+          <div>
+            <head>Publication de XML</head>
+            <p>En février 1998 : publication en février 1998 par le W3C Consortium des spécifications du métalangage XML 1.0 => maîtres mots : simplicité, clarté, universalité.</p>
+            <p>Dans son Référentiel général d’interopérabilité publié en 2009, la Direction générale de la modernisation de l’État recommande l’utilisation des technologies XML (Extensible Markup Language) à des fins d’interopérabilité et de pérennisation de l’information.</p>
+            <p>Depuis 1998, la norme XML a peu évolué → dernière édition en date : 5e édition, mise à jour en 2008. Version 1.0 => véritable témoignage de sa stabilité.</p>
+            <p><ref target="http://www.w3.org/TR/xml11"
+              >Version 1.1</ref> publiée en février 2004 et mise à jour en 2006, notamment pour intégrer les évolution d’Unicode, mais XML 1.1 reste très peu utilisé.</p>
+          </div>
+          <div>
+            <head>Un succès immédiat</head>
+            <p>Les langages et outils permettant de produire, contrôler, échanger, transformer et exploiter des fichiers XML se sont multipliés, souvent associés à des normes du W3C : modèles de documents et de (méta)données, langages de modélisation, de présentation, de programmation, protocoles, …</p>
+            <p>Métalangage désormais utilisé partout en informatique qu’il s’agisse de structurer des informations dont la durée de vie est importante ou d’échanger des informations entre applications, qu’on ait à s’occuper essentiellement de données, de documents ou d’une combinaison des deux.</p>
+            <bibl>cf. Ministre du Budget, des Comptes publics, Référentiel Général d’Interopérabilité (RGI), 2009. <ref
+              target="http://references.modernisation.gouv.fr/rgi-interoperabilite"
+              >http://references.modernisation.gouv.fr/rgi-interoperabilite</ref></bibl>
+          </div>
+        </div>
+      </div>
+      <div type="slide" xml:lang="fr">
+        <div>
+          <head>Principes de conception de <hi>XML</hi></head>
+          <list>
+            <item>applicable à tout type de texte</item>
+            <item>extensible</item>
+            <item>définition par un schéma</item>
+            <item>hypertextualité</item>
+            <item>simple, universel</item>
+            <item>modèle hiérarchique</item>
+          </list>
+        </div>
+        <div type="comments">
+          <head>Principes de conception de XML</head>
+          <list>
+            <item>XML s’applique à tout type de texte : fondé sur le principe du balisage → càd : sur l’isolement d’une portion de texte et l’identification explicite de son rôle ou nature particulière. Autorise l’imbrication des balises et une granularité aussi fine que nécessaire.</item>
+            <item>Un schéma est un modèle (=la liste des balises utilisables, leurs noms, les contraintes de leur emploi : position, cardinalité, type de contenu) peut être défini sous la forme d’une DTD (Document Type Definition) ou d’un schéma (écrit en RelaxNG ou directement XML).</item>
+            <item>XML permet d’identifier la structure d’un texte et d’informer sur la sémantique des informations qu’il contient, ou d’en isoler les données => notion de structuration absolument primordiale : permet de rendre l’information exploitable par la machine (moteurs de recherche) et par l’utilisateur ; permet également à l’information d’être réutilisée, échangée, pérennisée. + bonne structure seule condition pour ensuite une transformation automatique.</item>
+            <item>XML conçu à l’ère de l’hypermédia : liens peuvent être établis entre des sections du même document XML ou entre un document XML et d’autres ressources électroniques, qui peuvent ne pas être du texte.</item>
+            <item>norme simple, sans ambiguïté, permettant à un humain de lire l’information produite.</item>
+            <item>fichiers XML sont des fichiers texte (peuvent être lus par grand nombre de logiciels donc) et supportent surtout un grand nombre de systèmes d’écriture → utilise le standard Unicode et le codage par défaut de XML est UTF-8 (codage de caractères conçu pour coder l’ensemble des caractères Unicode).</item>
+            <item>norme universelle, concentrée sur le contenu informationnel, ne traitant pas de son utilisation, indépendante des plates-formes informatiques (≠.odt, .doc, …).</item>
+            <item>utiliser XML pour structurer et échanger l’information est considéré comme une bonne pratique → les documents XML sont de bons candidats pour l’archivage pérenne.</item>
+            <item>grâce à leur structure réutilisation : l’accès, l’indexation et la recherche de l’information sont améliorées → on peut avec certains outils informatiques indexer un (ou un ensemble de) documents XML en exploitant leur marquage structurel, ce qui permet des recherches fines multicritères et améliore considérablement la qualité des réponses par rapport à une recherche plein texte dans un document non structuré.</item>
+            <item>on peut aussi explorer un document XML en tant qu’arbre, en utilisant notamment le langage XPath. => XML : format de stockage pour autant de formats de diffusion qu’on souhaite. Après transformation par programmes dans un ou plusieurs formats dédiés, le contenu structuré d’un document XML peut être consulté sous forme imprimée (transformation directement en PDF ou vers LateX), sous forme électronique (HTML) => XML : format pivot pour les nouvelles chaînes éditoriales.</item>
+          </list>
+        </div>
+      </div>
+      <div type="slide" xml:lang="fr">
+        <div>
+          <head><hi>XML</hi> en 4 points</head>
+          <list type="ordered">
+            <item><hi rend="bold"
+              >XML ne sert pas à afficher les données mais à les décrire</hi>. Seul, il ne fait rien. Appliqué à la représentation des textes, il permet de décrire notamment leur structure</item>
+            <item><hi rend="bold"
+              >Le nom des balises n’est pas prédéfini</hi> : on peut librement créer son propre vocabulaire</item>
+            <item><hi rend="bold"
+              >On peut utiliser une "grammaire" de balises</hi>, pour définir des contraintes ou s’assurer de la consistance de l’encodage</item>
+            <item><hi rend="bold"
+              >XML est auto-descriptif et lisible par l’homme</hi>. Un fichier XML n’est rien que du texte, on peut facilement prendre connaissance d’un corpus dans n’importe quel éditeur textuel</item>
+          </list>
+        </div>
+        <div>
+          <head><hi>XML</hi> en 4 points</head>
+          <list type="ordered">
+            <item><hi rend="bold"
+              >XML ne sert pas à afficher les données mais à les décrire</hi>. Seul, il ne fait rien. Appliqué à la représentation des textes, il permet de décrire notamment leur structure (livre, chapitre, paragraphe, phrase, mot, etc.)</item>
+            <item><hi rend="bold"
+              >Le nom des balises n’est pas prédéfini</hi> : on peut librement créer son propre vocabulaire</item>
+            <item><hi rend="bold"
+              >On peut utiliser une "grammaire" de balises</hi>, pour définir des contraintes ou s’assurer de la consistance de l’encodage</item>
+            <item><hi rend="bold"
+              >XML est auto-descriptif et lisible par l’homme</hi>. Un fichier XML n’est rien que du texte, on peut facilement prendre connaissance d’un corpus dans n’importe quel éditeur textuel</item>
+          </list>
+        </div>
+      </div>
+      <div type="slide" xml:lang="fr">
+        <div>
           <head>Élément <hi>XML</hi></head>
           <figure>
             <graphic url="../images/xml01.svg"/>

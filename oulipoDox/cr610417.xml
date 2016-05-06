@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="../difdepo.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="t10010007-1961-04-17-cr">
+  <teiHeader>
+   <fileDesc>
+     <titleStmt>
+      <title>Transcription du scan 10010007 pp. 1 à 3 (CR) : version TEI</title><respStmt><resp>transcription</resp><name>Chris</name></respStmt>
+      
+     </titleStmt>
+     
+     <publicationStmt>
+      <p>Edition numérique distribué par le projet ANR DifDePo</p>
+     </publicationStmt>
+     <sourceDesc>
+      <bibl><idno type="ark">12148/btv1b100100073</idno><idno type="ead">d0e191</idno><idno>t10010007-1961-04-17-cr</idno><meeting xml:id="t10010007-1961-04-17"><date when="1961-04-17"/><list type="present"><item><persName ref="#NA"/></item><item><persName ref="#JD"/></item><item><persName ref="#JL"/></item><item><persName ref="#JQ"/></item><item><persName role="président" ref="#RQ"/></item></list></meeting></bibl>
+     </sourceDesc>
+   </fileDesc>
+   
+   <revisionDesc>
+     <listChange><change when="2016-04-21T21:28:56Z">Oulipo specific tags added</change>
+      <change>
+        <date>2016-04-21T20:52:18Z</date>
+        <name>Chris</name>
+      </change>
+     </listChange>
+   </revisionDesc>
+  </teiHeader>
+  <text type="CR">
+   <body><pb xml:id="p1" n="1"/>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     <p><label type="rubrique">Erratum :</label></p>
+     <p>Inclure, ligne 8 en partant du bas, entre « OuLiPo » et « Ce sera fait ». La phrase suivante qui a sauté à la composition :</p>
+     <p>« A ce sujet, <persName ref="#NA">Noël Arnaud</persName> précise qu’il est nécessaire d’étudier, au cours de notre prochaine séance, le contenu du <title ref="#dossierducollege">Dossier du Collège</title> qui sera consacré (pour moitié environ) aux activités OuLiPiennes. »</p>
+     
+      <pb xml:id="p2" n="2"/>
+    
+     <p rend="incipit">Circulaire n°6</p>
+     <p rend="incipit">OUVROIR</p>
+     <p rend="incipit">DE</p>
+     <p rend="incipit">LITTERATURE POTENTIELLE</p>
+     <p rend="incipit">Compte-rendu de la réunion</p>
+     <p rend="incipit">du lundi 17 avril 1961</p>
+     <p rend="incipit">Présents : <persName ref="#NA">Noël Arnaud</persName>, <persName ref="#JD">Jacques Duchateau</persName>, <persName ref="#JL">Jean Lescure</persName>, <persName ref="#RQ">Raymond Queneau</persName>, <persName ref="#JQ">Jean Queval</persName>.</p>
+     <p rend="incipit">Président : <persName ref="#RQ">Raymond Queneau</persName>.</p>
+     <p>Les absents s’étant excusés eux-mêmes, le <persName ref="#president">Président</persName> se donne la parole assez facilement, pour constater que :</p>
+     <list type="ordered">
+      <item>le point (a) de l’ordre du jour (les <term ref="#monosyllabes">monosyllabes</term> d’<persName ref="#amedeepommier">Amédée Pommier</persName>) est, en l’absence d’<persName ref="#amschmidt">A.M. Schmidt</persName>, exclu du dit ordre ;</item>
+    </list>
+     <list type="ordered">
+      <item>qu’il en est de même du point (c), en l’absence de <persName ref="#sexc">S. Exc</persName>. <persName ref="#qb">Q.B</persName>. ;</item>
+    </list>
+     <list type="ordered">
+      <item>qu’en l’absence des mathématiciens, le point (b) doit être reporté à une date ultérieure</item>
+    </list>
+     <p>Ceci étant acquis, le <persName ref="#president">Président</persName> se lance dans un long exposé de cette <term ref="#loidestoupzipf">loi d’Estoup-Zipf</term>, objet du point (b). Divers mouvements sur tous les bancs suggèrent que les assistants perdent assez vite de vue la constante de cette <term ref="#loi">loi</term>. Un nouvel examen s’avère indispensable et aura lieu au cours d’un prochain déjeuner.</p>
+     <p>Le <persName ref="#president">Président</persName> s’engage à publier dans le prochain <title ref="#dossierducollege">Dossier du Collège</title> un communiqué annonçant la création de l’Oulipo. Ce sera fait.</p>
+     <p>Il était normal que ces occurrences portassent les OuLiPiens présents à s’interroger sur leur être même. Au terme de cette interrogation, ils aboutirent à deux définitions provisoirement péremptoires :</p>
+     <p>
+      <term ref="#oulipo">OuLiPo</term> : Organisme qui se propose d’examiner en quoi et par quel moyen, étant donnée une théorie scientifique concernant éventuellement le langage (donc : l’anthropologie), on peut y introduire du plaisir esthétique (affectivité et fantaisie).</p>
+     
+      <pb xml:id="p3" n="3"/>
+    
+     <p>
+      <term ref="#oulipiens">Oulipiens</term> : Rats qui ont à construire le <term ref="#labyrinthe">labyrinthe</term> dont ils se proposent de sortir. (1)</p>
+     <p>Voici que tourne à l’aigre une discussion sur le <title ref="#cratyle">Cratyle</title> entre <persName ref="#JL">Lescure</persName> et <persName ref="#RQ">Queneau</persName>. Le premier ayant jésuitiquement provoqué le second à commettre un affreux <term ref="#calembour">calembour</term> sur le « sot <title ref="#cratyle">Cratyle</title> », il est déclaré que « l’<term ref="#etymologie">étymologie</term> est une pente neigeuse qui nous entraîne dans un abîme de merdre » (2).</p>
+     <p>La séance est levée. (3)</p>
+     <p>(1) On aperçoit, sous les grands mots, toute la sournoiserie du cheminement. Car le <term ref="#labyrinthe">labyrinthe</term> dont on sort les plus aisément est évidemment celui que l’on a construit de ses mains. (<persName ref="#nd">N.D</persName>.<persName ref="#qb">Q.B</persName>.)</p>
+     <p>(2) On voit où peut conduire l’absence des membres les plus avisés (<persName ref="#nd">N.D</persName>.<persName ref="#AMS">A.M.S</persName>.)</p>
+     <p>(3) Il était temps, en effet (<persName ref="#nd">N.D</persName>.<persName ref="#FLL">F.L.L</persName>.)</p>
+     <p>Prochaine réunion :</p>
+     <p>VENDREDI 28 AVRIL 1961</p>
+     <p>Restaurant Laborderie, 40, rue de l’Université</p>
+     <p>Par intérim :</p>
+     <p>
+      <persName ref="#RQ">R.Q</persName>. et <persName ref="#JL">J.L</persName>.</p>
+   </body>
+  </text>
+</TEI>

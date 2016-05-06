@@ -6,9 +6,7 @@
                 <title>Formation XML-TEI à l'école Nationale des Chartes, mai 2016</title>
                 <author xml:id="LB">Lou Burnard</author>
                 <author xml:id="EM">Emmanuel Chateau</author>
-
             </titleStmt>
-
             <publicationStmt>
                 <p>unknown</p>
             </publicationStmt>
@@ -16,7 +14,6 @@
                 <p>Converted from a Word document</p>
             </sourceDesc>
         </fileDesc>
-
         <revisionDesc>
             <listChange>
                 <change><date>2016-04-09T20:11:28Z</date><name>LB/EMC</name></change>
@@ -25,7 +22,6 @@
     </teiHeader>
     <text>
         <body>
-
             <div>
                 <head>Programme de la formation</head>
                 <div>

@@ -256,7 +256,7 @@
                     </div>
                     <div xml:id="T21" resp="#EM">
                         <head>11h30-12h30 XSLT pour les paresseux – PM+TP EM</head>
-                        <!-- a fournir -->
+                        <p><ref target="08-xsltParesseux.tei.xml">08-xsltParesseux.tei</ref></p>
                         <list>
                             <item>Framework TEI Oxygen </item>
                             <item>Personnalisation avec les variables </item>
@@ -279,14 +279,14 @@
                             <item>TEI Chi LB</item>
                             <item>Omeka, Zotero EM </item>
                         </list>
+                        <p>Au cours de la présentation essayer d’engager la discussion autour des
+                            outils en les appliquant aux exemples de la formation.</p>
                     </div>
                     <div>
                         <head>14h30-16h Discussion sur leurs projets</head>
                     </div>
                     <div>
                         <head>16h évaluation</head>
-                        <p>Au cours de la présentation essayer d’engager la discussion autour des
-                            outils en fonction.</p>
                     </div>
                 </div>
             </div>

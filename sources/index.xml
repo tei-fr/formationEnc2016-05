@@ -5,7 +5,7 @@
       <titleStmt>
         <title>Programme de la formation</title>
         <author>Lou Burnard</author>
-        <author>Emmanuel Chateau</author>
+        <author>Emmanuel Château</author>
       </titleStmt>
       <publicationStmt>
         <publisher>MEET</publisher>
@@ -16,9 +16,11 @@
     </fileDesc>
     <revisionDesc>
       <change>
+        <date>2016-05</date>
+        <name>Emmanuel Chateau</name>, modifications pour la formation 2016</change>
+      <change>
         <date>2015-05-10</date>
-        <name>Emmanuel Chateau creation</name>
-      </change>
+        <name>Emmanuel Chateau</name>, création</change>
     </revisionDesc>
   </teiHeader>
   <text>

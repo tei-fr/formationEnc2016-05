@@ -3,7 +3,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Formation XML-TEI à l'école Nationale des Chartes, mai 2016</title>
+                <title>Formation XML-TEI à l’école Nationale des Chartes, mai 2016</title>
                 <author xml:id="LB">Lou Burnard</author>
                 <author xml:id="EM">Emmanuel Château</author>
             </titleStmt>
@@ -186,29 +186,28 @@
                         <head>11h00-11h30 Pause</head>
                     </div>
                     <div xml:id="T13" resp="#LB">
-                        <head>11h30-12h Modalités d'organisation des documents TEI – PM LB </head>
+                        <head>11h30-12h Modalités d’organisation des documents TEI – PM LB </head>
                         <!-- a fournir -->
                         <p>Conceptes de group, corpus, facsimile. etc: organisation des fichiers.
                         </p>
                     </div>
                     <div xml:id="T14" resp="#EM">
-                        <head>12h - 12h30 Cas d'etude: organisation du projet Oulipo – TP EM </head>
+                        <head>12h - 12h30 Cas d’étude : organisation du projet Oulipo – TP EM </head>
                         <!-- a fournir -->
-                        <p>Comment organiser le projet imaginaire: importance de versioning;
-                            démontrer usage de Github? </p>
+                        <p>Comment organiser le projet imaginaire: importance de versioning ; démontrer usage de Github ? </p>
                     </div>
                     <div>
                         <head>LUNCH</head>
                     </div>
                     <div xml:id="T15" resp="#EM">
-                        <head>13h30-14h Personnalisation avancée avec ODD – PM EM </head>
+                        <head>13h30-14h : Personnalisation avancée avec ODD – PM EM </head>
                         <p>
                             <ref target="07-personnalisation.tei.xml">07-personnalisation.tei</ref>
                         </p>
                         <p>Revoir et comprendre l’ODD crée</p>
                     </div>
                     <div xml:id="T16" resp="#LB">
-                        <head>14h - 15h Creation d’un ODD personalisé – TP LB </head>
+                        <head>14h - 15h : Création d’un ODD personnalisé – TP LB </head>
                         <!-- a fournir -->
                         <list type="unordered">
                             <item>avec Roma</item>
@@ -219,14 +218,14 @@
                         <head>pause</head>
                     </div>
                     <div xml:id="T17" resp="#LB">
-                        <head>15h30 - 16h15: Florilegium de projets TEI – PM+TP LB</head>
+                        <head>15h30 - 16h15 : Florilège de projets TEI – PM+TP LB</head>
                         <p><ref target="tei-florilege.xml"/></p>
                         <!-- a mettre a jour -->
                         <p>Comment les gens se servent de la TEI</p>
                         <p><ref target="ex-tei-explore.xml">ex-tei-explore</ref></p>
                     </div>
                     <div xml:id="T18" resp="#EM">
-                        <head>16h15-17h XPath TP – EM</head>
+                        <head>16h15-17h : XPath TP – EM</head>
                         <!-- ? is this same as first part of xslt pour les nuls? -->
                         <!-- si oui, le supprimer, et remplacer par l'ex precedent -->
                         <p>Rappel de l'intérêt de structuration ; technique essentiel pour ce qui
@@ -236,13 +235,13 @@
                 <div>
                     <head>4ème journée…</head>
                     <div xml:id="T19" resp="#EM">
-                        <head>9h30-10h Chaînes de traitement TEI – PM EM</head>
+                        <head>9h30-10h : Chaînes de traitement TEI – PM EM</head>
                         <!-- a fournir -->
                         <p>CSS, XSLT, XQuery, environnements de publication</p>
                         <p>epub, pdf, inDesign, etc.</p>
                     </div>
                     <div xml:id="T20" resp="#LB">
-                        <head>10h00-11h XSLT Pour les nuls – PM+TP LB</head>
+                        <head>10h00-11h : XSLT Pour les nuls – PM+TP LB</head>
                         <p><ref target="talk-xslt.xml">talk-xslt</ref></p>
 
                         <p><ref target="ex-n-xslt.xml">ex-n-xslt</ref></p>
@@ -303,15 +302,8 @@
             </div>
             <div>
                 <head>Quelques documents OULIPO</head>
-                <p>Le dossier <ident>oulipoDox</ident> rassemble quelques un des comptes-rendus des
-                    reunions oulipo des annees 60. Ils sont presentes en mode page-image (un fichier
-                    par page) et egalement dans un TEI XML cree par le projet DifDepo (en cours). Le
-                    balisage est tres simple, et nous allons l'ameliorer et l'approfondir. </p>
-                <p>Chaque fichier est nomme pour la date de la reunion concernee. Par ex, le fichier
-                        <ident>cr610417.xml</ident> est une transcription TEI du CR de la reunion du
-                    17 avril 1961; il y a 3 fichiers pages-images correspondents:
-                        <ident>cr610417_2.jpg</ident>, <ident>cr610417_1.jpg</ident>, et
-                        <ident>cr610417_1.jpg</ident>. </p>
+                <p>Le dossier <ident>oulipoDox</ident> rassemble quelques un des comptes-rendus des réunions de l’Oulipo (l’Ouvroir de littérature potentielle) des années 60. Ils sont présentés en mode page-image (un fichier par page) et également dans un fichier XML-TEI crée dans le cadre du projet (en cours) DifDepo. Le balisage est très sommaire, et nous allons l’améliorer et l’approfondir.</p>
+                <p>Chaque fichier est nommé avec la date de la réunion concernée. Par exemple, le fichier <ident>cr610417.xml</ident> est une transcription TEI du CR de la réunion du 17 avril 1961 ; il y a trois fichiers pages-images correspondants : <ident>cr610417_2.jpg</ident>, <ident>cr610417_1.jpg</ident>, et <ident>cr610417_1.jpg</ident>. </p>
                 <!--   <p><ref target="http://gallica.bnf.fr/ark:/12148/btv1b100101635"><hi
                             rend="underline color(1155cc)"
                             >http://gallica.bnf.fr/ark:/12148/btv1b100101635</hi></ref> :

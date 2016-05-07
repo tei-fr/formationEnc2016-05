@@ -24,7 +24,7 @@
         <docImprint>Formation TEI | ENC 26-29 mai 2015</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
-      <div type="sommaire" xml:lang="fr" xml:id="index">
+      <div rend="sommaire" xml:lang="fr" xml:id="index">
         <div>
           <head>La macrostructure TEI</head>
           <list type="ordered">
@@ -45,13 +45,11 @@
       <p>-\-\-</p>
       <p>name: index</p>
       <p>class: center middle</p>-->
-      <div type="part">
-        <div type="title" xml:lang="fr"  xml:id="part1">
-          <div>
-            <head>Structure d’un document TEI</head>
-          </div>
+      <div type="part" xml:id="part1">
+        <div rend="title" xml:lang="fr"  xml:id="part1">
+          <head>Structure d’un document TEI</head>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Composition d’un fichier TEI</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -86,7 +84,7 @@
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Macrostructures de texte composite</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -102,7 +100,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>teiCorpus</head>
             <p>Dans le cas de corpus de textes hétérogènes, on utilisera des éléments <gi>teiCorpus</gi> comme élément racine comportant des éléments <gi>TEI</gi></p>
@@ -115,13 +113,9 @@
           </div>
         </div>
       </div>
-      <div type="part">
-        <div type="title" xml:lang="fr" xml:id="part2">
-          <div>
-            <head>Le teiHeader</head>
-          </div>
-        </div>
-        <div type="slide" xml:lang="fr">
+      <div type="part" xml:id="part2">
+        <head xml:lang="fr">Le teiHeader</head>
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>teiHeader minimal</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -150,7 +144,7 @@
             <p>On y trouvera notamment un élément <gi>sourceDesc</gi> obligatoire qui décrit le texte que l’on édite. Cela peut être aussi un fichier nativement numérique. Nombreux autres éléments.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head><gi>teiHeader</gi>, mentions de responsabilité</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -186,7 +180,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Mentions de publications</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -224,13 +218,9 @@
           </div>
         </div>
       </div>
-        <div type="part" >
-          <div type="title" xml:lang="fr" xml:id="part3">
-            <div>
-              <head>Macrostructure du texte</head>
-            </div>
-          </div>
-          <div type="slide" xml:lang="fr">
+        <div type="part" xml:id="part3">
+          <head xml:lang="fr">Macrostructure du texte</head>
+          <div rend="slide" xml:lang="fr">
             <div>
               <head>Parties liminaires, postérieures</head>
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -260,7 +250,7 @@
               <p>Cette macrostructure peut-être plus compliquée en fonction de la nature des projets.</p>
             </div>
           </div>
-          <div type="slide" xml:lang="fr">
+          <div rend="slide" xml:lang="fr">
             <div>
               <head>Macrostructure du texte</head>
               <list>
@@ -272,7 +262,7 @@
               </list>
             </div>
           </div>
-          <div type="slide" xml:lang="fr">
+          <div rend="slide" xml:lang="fr">
             <div>
               <head>Macrostructure du texte</head>
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -302,7 +292,7 @@
               </egXML>
             </div>
           </div>
-          <div type="slide" xml:lang="fr">
+          <div rend="slide" xml:lang="fr">
             <div>
               <head>Structures de listes</head>
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -316,7 +306,7 @@
               </egXML>
             </div>
           </div>
-          <div type="slide" xml:lang="fr">
+          <div rend="slide" xml:lang="fr">
             <div>
               <head>Structures de tableaux</head>
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -337,7 +327,7 @@
               </egXML>
             </div>
           </div>
-          <div type="slide" xml:lang="fr">
+          <div rend="slide" xml:lang="fr">
             <div>
               <head>Structures versifiées</head>
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -366,7 +356,7 @@
               </egXML>
             </div>
           </div>
-          <div type="slide" xml:lang="fr">
+          <div rend="slide" xml:lang="fr">
             <div>
               <head>Éléments d’usage courant</head>
               <list>
@@ -382,7 +372,7 @@
               </list>
             </div>
           </div>
-          <div type="slide" xml:lang="fr">
+          <div rend="slide" xml:lang="fr">
               <div>
                 <head>Attributs globaux (toujours disponibles)</head>
                 <list>
@@ -395,7 +385,7 @@
                 </list>
               </div>
           </div>
-          <div type="slide" xml:lang="fr">
+          <div rend="slide" xml:lang="fr">
             <div>
               <head>Attributs fréquemment employés</head>
               <list>
@@ -406,7 +396,7 @@
               </list>
             </div>
           </div>
-          <div type="slide" xml:lang="fr">
+          <div rend="slide" xml:lang="fr">
             <div>
               <head>Éléments de type <soCalled>milestone</soCalled></head>
               <p>Désignent un point dans le flux textuel. Des éléments XML vides.</p>
@@ -421,7 +411,7 @@
               </list>
             </div>
           </div>
-          <div type="slide" xml:lang="fr">
+          <div rend="slide" xml:lang="fr">
             <div>
               <head>Structures complexes</head>
               <list>
@@ -442,7 +432,7 @@
               </egXML>
             </div>
           </div>
-          <div type="slide" xml:lang="fr">
+          <div rend="slide" xml:lang="fr">
             <div>
               <head>Pages de titre</head>
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -477,7 +467,7 @@
         </div>
     </body>
     <back>
-      <div type="title" xml:lang="fr">
+      <div rend="title" xml:lang="fr">
         <div>
           <head>Maintenant, passons à <ref target="ex02-teiMacrostructure.html"
             >la pratique</ref> !</head>

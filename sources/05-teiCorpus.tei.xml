@@ -31,7 +31,7 @@
         <docImprint>Formation TEI | ENC 26-29 mai 2015</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
-      <div type="title">
+      <div rend="title">
         <div>
           <head>Introduction</head>
         </div>
@@ -53,12 +53,12 @@
     </front>
     <body>
       <div type="part">
-        <div type="title" xml:lang="fr" xml:id="part1">
+        <div rend="title" xml:lang="fr" xml:id="part1">
           <div>
             <head>Les liens</head>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <div>
               <head>Créer des liens</head>
@@ -82,7 +82,7 @@
             </div>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Notes de commentaire historique</head>
             <p><code>note</code> élément pour l’enregistrement d’une note</p>
@@ -100,7 +100,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Localisation référencée</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -127,12 +127,12 @@
         </div>
       </div>
       <div type="part">
-        <div type="title">
+        <div rend="title">
           <div>
             <head>Les corpus</head>
           </div>
         </div>
-        <div type="slide" xml:lang="fr" xml:id="part2">
+        <div rend="slide" xml:lang="fr" xml:id="part2">
           <div>
             <head>Macrostructures de texte composite</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -155,7 +155,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Macrostructure</head>
             <!-- image -->
@@ -167,7 +167,7 @@
             <p>Pour des groupes de textes, des documents composites, ou des corpus hétérogènes, on aura probablement besoin de structures plus complexes</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>teiCorpus</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -194,7 +194,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Utilisation de XInclude</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -239,12 +239,12 @@
         </div>
       </div>
       <div type="part">
-        <div type="title" xml:id="part3">
+        <div rend="title" xml:id="part3">
           <div>
             <head>Les figures et facsimili</head>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Description des figures (simple)</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -256,7 +256,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Description des figures (plus élaborée)</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -278,7 +278,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Traitement des facsimili</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -302,7 +302,7 @@
             <p>L’élément <gi>facsimile</gi> permet de fournir des artefacts numériques référencés par ailleurs dans le texte.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Traitement des facsimili</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -326,7 +326,7 @@
       </div>
     </body>
     <back>
-      <div type="title">
+      <div rend="title">
         <div>
           <head>Pour finir, les <ref target="06-namedEntities.html"
               >entités nommées</ref></head>

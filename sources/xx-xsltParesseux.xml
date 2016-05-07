@@ -22,7 +22,7 @@
         <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
-      <div type="title">
+      <div rend="title">
         <div>
           <head>Introduction</head>
         </div>
@@ -45,12 +45,12 @@
     </front>
     <body>
       <div type="part">
-        <div type="title" xml:lang="fr" xml:id="part1">
+        <div rend="title" xml:lang="fr" xml:id="part1">
           <div>
             <head>Distribution des XSL Stylesheets</head>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Les XSL Stylesheet</head>
             <p><hi>XSLT Stylesheets</hi> = une bibliothèque de XSL (XSLT et XSL-FO) pour transformer des documents TEI vers toute sorte de formats<list>
@@ -65,7 +65,7 @@
             <p/>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Pourquoi utiliser les XSL Stylesheet ?</head>
             <p>En dehors du fait d’être faignants…</p>
@@ -87,7 +87,7 @@
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Limitations</head>
             <list>
@@ -104,7 +104,7 @@
             <p>Les transformations pour la P5 sont seulement développées en XSLT 2.0, leur utilisation nécessite donc un processeur adapté.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Sebastian Patrick Quintus Rahtz (13 February 1955 – 15 March 2016)</head>
             <figure><graphic url="sebastian.jpg"/></figure>
@@ -113,7 +113,7 @@
             <p>La TEI est une communauté, elle est largement redevable des personnes qui ont contribué à son fonctionnement. Sebastian Rahtz a été l’initiateur des XSL Stylesheets dont il a longtemps assuré la maintenance. Pour beaucoup d’entre nous, il était un modèle d’engagement, de désintéressement et de rigueur dans le travail. Sa contribution à la TEI fut considérable, et son décès est une grande perte pour la communauté.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Distribution des XSL Stylesheets</head>
             <list>
@@ -136,7 +136,7 @@
             <p>Enfin, les stylesheets sont également distribuées parmi les Framework offerts par oXygen et peuvent être exécutées directement depuis l’éditeur oXygen Editor.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Plusieurs manières de personnaliser les XSL Stylesheets</head>
             <list>
@@ -149,12 +149,12 @@
         </div>
       </div>
       <div type="part">
-        <div type="title" xml:lang="fr" xml:id="part2">
+        <div rend="title" xml:lang="fr" xml:id="part2">
           <div>
             <head>Transformations par défaut avec oXygen</head>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Scénarios du Framework TEI d’oXygen</head>
             <figure>
@@ -168,7 +168,7 @@
             <p>Vous pouvez également, si vous l’avez installé, de transformations spécialisées destinées à travailler avec des documents ODD.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>TP personnalisation d’une sortie vers html</head>
             <p>Les XSL Stylesheets propose de très nombreux paramètres de personnalisation pour calibrer la sortie.</p>
@@ -184,7 +184,7 @@
             <p>En appliquant un scénario pré-défini de transformation dans oXygen, vous avez en réalité appliqué une transformation XSLT, ou une suite de transformations XSL, définies par les XSL Stylesheets qui constituent le framework TEI d’oXygen.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Organisation du Framework</head>
             <list>
@@ -209,7 +209,7 @@
             <p>Ici, le répertoire <code>profiles/</code> est très important car c’est celui qui va contenir vos fichiers de personnalisation ou les profils de transformation. On peut employer les transformations proposées par défaut, ou bien celles développées par d’autres projets. Nous verrons plus tard que l’on peut aussi créer ses propres transformations.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Sorties non proposées par défaut</head>
             <p>Chemin du Framework : <code>oxygen/frameworks/tei/xml/tei/stylesheet/</code></p>
@@ -244,12 +244,12 @@
       </div>
       </div>
       <div type="part">
-        <div type="title" xml:lang="fr" xml:id="part3">
+        <div rend="title" xml:lang="fr" xml:id="part3">
           <div>
             <head>Personnalisation</head>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Plusieurs manières de personnaliser les XSL Stylesheets</head>
             <list>
@@ -267,7 +267,7 @@
             <p>Si l’on regarde ce que contiennent les fichiers XSLT contenus dans le répertoire <code>profile/</code>, on s’aperçoit que le programme importe une autre feuille de transformation. On va ensuite pouvoir ajouter autant de règles supplémentaires ou surcharger les règles existantes dans ce fichier.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head/>
             <egXML xmlns="http://www.w3.org/1999/XSL/Transform">
@@ -277,7 +277,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head><ident>import</ident> et <ident>include</ident></head>
             <p><ident>import</ident> et <ident>include</ident> sont deux fonctionnalités prévues par XSLT.</p>
@@ -295,7 +295,7 @@
             </list></p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Créer son propre profil</head>
             <p>profiles/$PROFILENAME/$FORMAT/to.xsl</p>
@@ -308,7 +308,7 @@
       </div>
     </body>
     <back>
-      <div type="title">
+      <div rend="title">
         <div>
           <head>Pour finir, les <ref target="06-namedEntities.html">entités nommées</ref></head>
           <note><ref target="#index">revenir au début</ref> | <ref target="00-programme.html"

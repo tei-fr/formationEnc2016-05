@@ -31,16 +31,16 @@
         <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
-      <div type="title" xml:lang="fr">
+      <div rend="title" xml:lang="fr">
         <div>
           <head>Introduction</head>
         </div>
-        <div type="comments">
+        <div rend="comments">
           <p>Un des avantages liés à l’utilisation de documents XML réside dans la possibilité de fournir des métadonnées directement dans le document. Ces métadonnées étant étroitement associées au fichier, elles facilitent l’échange de documents et leur intégration automatique dans des bases de données.</p>
           <p>Le modèle de la TEI prévoit que les métadonnées soient renseignées dans un élément <gi>teiHeader</gi>. C’est au contenu de cet élément que nous allons maintenant nous intéresser plus particulièrement.</p>
         </div>
       </div>
-      <div type="sommaire" xml:lang="fr" xml:id="index">
+      <div rend="sommaire" xml:lang="fr" xml:id="index">
         <div>
           <head>L’en-tête TEI et les métadonnées</head>
           <list type="ordered">
@@ -52,13 +52,9 @@
       </div>
     </front>
     <body>
-      <div type="part">
-        <div type="title" xml:lang="fr" xml:id="part1">
-          <div>
-            <head>L’en-tête TEI (le <gi>teiHeader</gi>)</head>
-          </div>
-        </div>
-        <div type="slide" xml:lang="fr">
+      <div type="part" xml:id="part1">
+        <head xml:lang="fr">L’en-tête TEI (le <gi>teiHeader</gi>)</head>
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Pourquoi fournir des métadonnées ?</head>
             <list>
@@ -67,7 +63,7 @@
               <item>renseigner l’édition et ses attributions</item>
               <item>intégration possible dans des bibliothèques numériques</item>
             </list>
-            <div type="comments">
+            <div rend="comments">
               <head>L’importance des métadonnées</head>
               <div>
                 <p>L’entête TEI ou <gi>teiHeader</gi> vous permet de renseigner finement les métadonnées concernant votre fichier. Comme ces métadonnées qui comportent des informations sur l’information font partie du document, on peut dire qu’elles sont auto-portées. Ces métadonnées peuvent aussi bien concerner la source du document édité que votre édition et ses attributions. La qualité de ces information et la granularité du modèle descriptif utilisé déterminent en grande partie les possibilité d’agrégation dans des bibliothèques numériques.</p>
@@ -75,7 +71,7 @@
             </div>
           </div>
         </div>
-        <div type="slide">
+        <div rend="slide">
           <div>
             <head>Choix des modèles descriptifs</head>
             <list>
@@ -87,7 +83,7 @@
                 target="http://sourceforge.net/p/weboai/wiki/Home/"
                 >« weboai, Human web interface on OAI repository »</ref>, SourceForge.</p>
           </div>
-          <div type="comments">
+          <div rend="comments">
             <p>Dans le cadre de la production d’une édition numérique il est souvent nécessaire de traiter avec soin les en-têtes TEI et de produire des métadonnées de qualité. La TEI propose de nombreuses manières possibles de fournir une description des fichiers.</p>
             <p>Ici, pour arrêter les choix d’encodages, il convient d’examiner un certain nombre de pratiques documentaires existantes dans le monde bibliothéconomique et de rechercher des guides de bonnes pratiques pour la TEI.</p>
             <p>Un travail en vue de permettre un moissonnage des en-têtes TEI en OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting) des éditions produites au sein du Consortium cahier a permis de se diriger vers la définition de pratiques commune pour la communauté francophone. Il serait dommage de ne pas s’y conformer.</p>
@@ -96,7 +92,7 @@
               >« weboai, Human web interface on OAI repository »</ref>, SourceForge.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Macrostructure d’un document TEI</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -110,12 +106,12 @@
               </TEI>
             </egXML>
           </div>
-          <div type="comments">
+          <div rend="comments">
             <p>Vous vous souvenez probablement qu’un document TEI dispose d’un élément racine <gi>TEI</gi> (ou <gi>teiCorpus</gi>) qui contient obligatoirement deux éléments enfants qui sont <gi>teiHeader</gi> et <gi>text</gi>.</p>
             <p>C’est au sein du teiHeader que nous allons pouvoir renseigner les métadonnées concernant le texte édité.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Les composants de l’en-tête (<gi>teiHeader</gi>)</head>
             <p>Le <gi rend="mandatory">teiHeader</gi> comporte un élément obligatoire <gi rend="mandatory">fileDesc</gi> et trois éléments facultatifs</p>
@@ -136,12 +132,12 @@
         </div>
       </div>
       <div type="part">
-        <div type="title" xml:lang="fr" xml:id="part2">
+        <div rend="title" xml:lang="fr" xml:id="part2">
           <div>
             <head>La description du fichier (<gi>fileDesc</gi>)</head>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>La description du fichier (<gi>fileDesc</gi>)</head>
             <p><gi rend="mandatory">fileDesc</gi> contient la description de fichier</p>
@@ -160,7 +156,7 @@
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Exemple d’en-tête minimale</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -180,7 +176,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Mentions de titre et de responsabilité (<gi>titleStmt</gi>)</head>
             <p><gi rend="mandatory">titleStmt</gi> contient les mentions de titre et de responsabilité</p>
@@ -192,7 +188,7 @@
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Exemple de mentions de titre et de responsabilité (<gi>titleStmt</gi>)</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -220,7 +216,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Description de la source (<gi>sourceDesc</gi>)</head>
             <p><gi rend="mandatory">sourceDesc</gi> est un élément obligatoire, il est destiné à accueillir une description de la source du document soit en texte libre soit de manière structurée avec les éléments <gi>bibl</gi>, <gi>msDesc</gi>, etc.</p>
@@ -233,19 +229,19 @@
               <bibl>Henri Sauval. <title>Histoire et recherches des antiquités de la ville de Paris </title>. Paris : Charles Moette et Jacques Chardon, 1724</bibl>
             </egXML>
           </div>
-          <div type="comments">
+          <div rend="comments">
             <p>La description de la source est un élément obligatoire dans la description d’un fichier TEI. Notez bien que la TEI différencie clairement les informations concernant l’édition des informations concernant la source du texte encodé (avec <gi>sourceDesc</gi>).</p>
             <p>Plus tard, nous verrons que la TEI offre également un très riche modèle de contenu pour la description des sources manuscrites.</p>
           </div>
         </div>
       </div>
       <div type="part">
-        <div type="title" xml:lang="fr" xml:id="part3">
+        <div rend="title" xml:lang="fr" xml:id="part3">
           <div>
             <head>Les autres sous-composants de l’en-tête TEI</head>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Après la description de fichier…</head>
             <p>Après <gi>fileDesc</gi>, l’entête peut contenir trois éléments optionnels</p>
@@ -259,7 +255,7 @@
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Description de l’encodage</head>
             <p><gi>encodingDesc</gi> est un élément optionnel destiné à documenter l’encodage.</p>
@@ -278,7 +274,7 @@
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>exemple d’<gi>encodingDesc</gi></head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -313,7 +309,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head><gi>profileDesc</gi></head>
             <list>
@@ -332,7 +328,7 @@
               </profileDesc>
             </egXML>
           </div>
-          <div type="slide" xml:lang="fr">
+          <div rend="slide" xml:lang="fr">
             <div>
               <head><gi>revisionDesc</gi></head>
               <p>Enregistre les révisions et modifications du fichier</p>
@@ -349,10 +345,10 @@
       </div>
     </body>
     <back>
-      <div type="title" xml:lang="fr">
+      <div rend="title" xml:lang="fr">
         <head>Sources et bibliographie</head>
       </div>
-      <div type="slide" xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <div>
           <head>Orientations bibliographiques</head>
           <list>
@@ -374,7 +370,7 @@
           </list>
         </div>
       </div>
-      <div type="title" xml:lang="fr">
+      <div rend="title" xml:lang="fr">
         <div>
           <head>Mettre <ref target="ex03-teiHeader.html">en pratique</ref></head>
           <note><ref target="#index">revenir au début</ref><ref target="00-programme.html"

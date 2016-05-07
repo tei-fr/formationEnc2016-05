@@ -34,7 +34,7 @@
             >Répertoire GitHub</ref></note>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
-      <div type="title" xml:lang="fr">
+      <div rend="title" xml:lang="fr">
         <div>
           <head>Introduction</head>
         </div>
@@ -58,7 +58,7 @@
     </front>
     <body>
       <div type="part">
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Entités nommées définition</head>
             <p>unités lexicales sélectionnées pour leur intérêt sémantique</p>
@@ -78,7 +78,7 @@
             <p>LB: La TEI se positionne avec Frege dans la grande discussion philosophique autour de la théorie de référence : elle cherche à encoder ce qu’il appelle das bedeutung (signification)</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Pourquoi s’en occuper ?</head>
             <list>
@@ -98,7 +98,7 @@
             <p>en perspective : le web sémantique</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Ce que propose la TEI pour les entités-nommées</head>
             <div>
@@ -119,7 +119,7 @@
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>La classe <ident>model.nameLike</ident></head>
             <p>Regroupe les éléments qui se rapportent tous à un nom de personne ou de lieu</p>
@@ -136,7 +136,7 @@
             <p>Comme il s’agit d’une classe, tous les éléments qui appartiennent à cette classe disposent de certaines propriétés.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Les formes du nom</head>
             <p>exemple de personne</p>
@@ -166,7 +166,7 @@
             <p>Ou au contraire autoriser son absence.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Composantes du nom</head>
             <list>
@@ -216,7 +216,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Liens vers des données d’autorité</head>
             <list>
@@ -241,7 +241,7 @@
             <p><att>cert</att> (certainty) signifies the degree of certainty associated with the intervention or interpretation.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Le modèle conceptuel</head>
             <list>
@@ -264,7 +264,7 @@
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Éléments biographiques et prosopographiques</head>
             <p>Ce module fournit également des éléments pour la représentation d’information à caractère biographique, historique ou proposographique sur la personne, les lieux, ou l’organisation à laquelle un nom fait référence.</p>
@@ -305,7 +305,7 @@
             </div>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Événements</head>
             <list>
@@ -376,7 +376,7 @@
             <p><att>source</att> provides a pointer to the bibliographical source from which a quotation or citation is drawn.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Relations</head>
             <p>
@@ -395,7 +395,7 @@
       </div>
       </body>
      <back>
-      <div type="title">
+      <div rend="title">
         <div>
           <head>à <ref target="09-personnalisation.html">demain</ref></head>
           <note><ref target="#index">revenir au début</ref></note>

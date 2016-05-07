@@ -22,7 +22,7 @@
         <titlePart>07-persobnalisation</titlePart>
         <titlePart>La personnalisation de la TEI</titlePart>
       </titlePage>
-      <div type="title" xml:lang="fr">
+      <div rend="title" xml:lang="fr">
         <div>
           <head>Introduction</head>
         </div>
@@ -47,12 +47,12 @@
     </front>
     <body>
       <div type="part" xml:id="part1">
-        <div type="title" xml:lang="fr">
+        <div rend="title" xml:lang="fr">
           <div>
             <head>Une logique modulaire</head>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Un système modulaire</head>
             <p>Une modélisation s’exprime à l’aide d’un <hi>schéma</hi></p>
@@ -96,12 +96,12 @@
         </div>
       </div>
       <div type="part" xml:id="part2">
-        <div type="title">
+        <div rend="title">
           <div>
             <head>Le Langage ODD</head>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <head>De quoi a-t-on besoin ?</head>
           <list>
             <item>quelque chose qui <hi>documente</hi> notre modèle</item>
@@ -125,7 +125,7 @@
           <p>un schéma pour non seulement contrôler la validité de nos fichiers, mais aussi pour spécifier les balises disponibles, en fonction du contexte, leurs attributs, leurs valeurs…</p>
           <p>Des outils pour transformer : processeur ODD, archivage long terme</p>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head><hi>O</hi>ne <hi>D</hi>ocument <hi>D</hi>oes it all (<hi>ODD</hi>)</head>
             <p>C’est précisément l’objet de ODD qui propose un vocabulaire spécialisé pour définir</p>
@@ -148,7 +148,7 @@
             <p>--&gt; Le language ODD est le vocabulaire XML utilisé par la TEI pour se décrire elle même.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Éléments de base en ODD</head>
             <list>
@@ -167,7 +167,7 @@
             <p>Le module <ident>tagdocs</ident>, qui sert au modèle TEI à produire ses spécifications formelles mais dont peut se servir pour préciser les spécifications.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Organisation de la TEI (rappel)</head>
             <list>
@@ -218,7 +218,7 @@
             </div>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Sélection des modules</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -247,7 +247,7 @@
             <p>Dans le fichier ODD, à l’intérieur de l’élément <gi>schemaSpec</gi>, une série d’éléments <gi>moduleRef</gi> servent à désigner les modules utilisés au moyen d’un attribut <att>key</att></p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Référence à des modules</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -278,7 +278,7 @@
           <p>On peut également modifier la liste des attributs possibles pour un élément. Celles-ci peuvent être données explicitement au moyen d’un élément <gi>attList</gi> dans la spécification de l’élément correspondant ou bien être héritées d’une classe d’attribut. Lorsque l’on ajoute un attribut, on doit d’abord vérifier si celui-ci n’est pas déjà défini dans une classe d’attribut. Si tel est le cas, il suffit de rendre l’élément concerné membre de cette classe. Sinon ont doit définir un attribut au moyen de <gi>attDef</gi> pour l’ajouter à la liste  <gi>attList</gi> de l’élément concerné.</p>
         </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Contraindre la valeur d’un attribut</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -303,7 +303,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Contraindre la valeur d’un attribut</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -332,7 +332,7 @@
               <p>Bientôt remplacé par une déclaration entièrement fournie en ODD</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Modification des classes</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -356,7 +356,7 @@
             <p>Le mode modification peut également s’appliquer à des classes. Dans cet exemple, nous avons remplacé à l’aide de Roma un ensemble de valeurs d’attributs pour tout attribut membre de la classe att.internetMedia.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Les différentes manières de personnaliser la TEI</head>
             <list type="ordered">
@@ -378,12 +378,12 @@
         </div>
       </div>
       <div type="part" xml:id="part3">
-        <div type="title" xml:lang="fr">
+        <div rend="title" xml:lang="fr">
           <div>
             <head>Génération d’un Schéma XML ou RelaxNG</head>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Le processeur ODD</head>
             <p>Le processeur ODD, sera un outil logiciel capable</p>
@@ -396,7 +396,7 @@
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>TP Utilisation de <ref target="http://www.tei-c.org/Roma/"
                 >Roma</ref></head>
@@ -404,7 +404,7 @@
               >Roma</ref> pour produire un ODD et le modifier</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>TP rédiger un ODD "from scratch"</head>
             <list type="unordered">
@@ -413,7 +413,7 @@
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>TP Utiliser les feuilles de style Oxygen pour manipuler des fichiers ODD</head>
             <list type="unordered">
@@ -426,7 +426,7 @@
       </div>
     </body>
     <back>
-      <div type="title" xml:lang="fr">
+      <div rend="title" xml:lang="fr">
         <div>
           <head>Sources et bibliographie</head>
         </div>
@@ -443,7 +443,7 @@
           <item>Burnard, Lou, et Rahtz, Sebastian. A complete schema definition language for the Text Encoding Initiative, XML London, June 16th 2013. http://tei.oucs.ox.ac.uk/Talks/2013-06-london/talk.pdf</item>
         </list>
       </div>
-      <div type="title" xml:lang="fr">
+      <div rend="title" xml:lang="fr">
         <div>
           <head>...</head>
           <note><ref target="#index">revenir au début</ref></note>

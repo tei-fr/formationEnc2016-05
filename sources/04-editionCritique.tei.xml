@@ -3,49 +3,43 @@
     <fileDesc>
       <titleStmt>
         <title>L’édition critique des sources manuscrites</title>
+        <author>Emmanuel Château</author>
       </titleStmt>
       <publicationStmt>
-        <p>from markdown</p>
+        <publisher>Unknown</publisher>
+        <date when="2016">2016</date>
       </publicationStmt>
       <sourceDesc>
-        <p>emchateau, ENC 2015</p>
+        <p>Document nativement numérique</p>
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
+      <change when="2016-05">modifications pour la formation 2016</change>
       <change when="2015-05-24">conversion du fichier en TEI</change>
       <change when="2014-10-30">première rédaction</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <front>
-      <!--<p>title: 06-editionCritique</p>
-         <p>description: emchateau, ENC 27-30 octobre 2014</p>
-         <p>theme: theme/remark-dark.css</p>
-         <p>name: inverse</p>
-         <p>layout: true</p>
-         <p>class: inverse</p>
-         <p>-\-\-</p>
-         <p>class: center middle</p>-->
       <titlePage xml:lang="fr">
-        <titlePart>04-Édition critique</titlePart>
-        <titlePart>L’édition critique des sources manuscrites</titlePart>
-        <docImprint>Formation TEI | ENC 26-29 mai 2015</docImprint>
+        <titlePart>04-Édition critique des sources manuscrites</titlePart>
+        <docImprint>Formation TEI | ENC 9-12 mai 2016</docImprint>
         <note><ref target="https://github.com/tei-fr/formationEnc2015-05"
           >Répertoire GitHub</ref></note>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
-      <div type="title" xml:lang="fr">
+      <div rend="title" xml:lang="fr">
         <div>
           <head>Introduction</head>
         </div>
         <div>
           <head>Introduction</head>
-          <p>La TEI présente de nombreux mécanismes spécialement destinés à la prise en charge des éditions critiques.</p>
-          <p>La plupart de ces éléments sont compris dans le module <ident>transcr</ident>, d’autres dabs <ident>msdescription</ident>.</p>
-          <p>Ces modules peuvent parfois être augmentés à propos par <ident>certainty</ident>.</p>
+          <p>Une édition critique est un essai de restitution d’un texte. Ainsi que nous l’avons vu, chaque édition résulte d’un point de vue du le texte, c’est-à-dire de choix et de partis-pris raisonnés. Dans le domaine de la production de sources historiques, on pourra par exemple souhaiter rendre le plus fidèlement possible le documents tel qu’il se présente au lecteur (transcription diplomatique). Dans certains cas, la tradition du texte peut-être riche et il faudra trouver des solutions pour prendre en charge les différents états du texte et ses témoins. Enfin, dans le cas d’une édition dite de génétique textuel, on s’intéressera aux différents manuscrits en essayant de restituer la succession des actes d’écriture.</p>
+          <p>La TEI présente de nombreux mécanismes spécialement destinés à la prise en charge de ces différentes sortes d’éditions critiques. Ici, la plus part des éléments qui nous intéressent sont compris dans les modules de transcription <ident>transcr</ident>, et d’autres dans celui de description des manuscrits <ident>msdescription</ident> que nous aborderons plus tard. Les éléments définis dans ces modules peuvent parfois être utilement augmentés par <ident>certainty</ident> pour traiter des niveaux de certitudes et <ident>gaiji</ident> pour la prise en charge des glyphes et la documentation des systèmes d’écriture. Mais aussi <ident>Critical Apparatus</ident> pour les notes de variantes, ainsi que des mécanismes de liage et d’alignement tirés du module <ident>Linking</ident>. </p>
+          <p>Ces différents éléments de la Text Encoding Initiative vous permettent de décrire aussi finement que de besoin les phénomènes textuels rencontrés ainsi que d’embarquer directement l’apparat critique de votre édition à l’intérieur du balisage.</p>
         </div>
       </div>
-      <div type="slide" xml:lang="fr">
+      <div rend="sommaire" xml:lang="fr">
         <div>
           <head>Sommaire</head>
           <list>
@@ -58,12 +52,35 @@
     </front>
     <body>
       <div type="part" xml:id="part1">
-        <div type="title" xml:lang="fr">
+        <head xml:lang="fr">L’inscription du texte sur le support</head>
+        <div><p>test</p></div>
+        <div rend="slide" xml:lang="fr">
           <div>
-            <head>L’inscription du texte sur le support</head>
+            <head>Prise en charge des lacunes</head>
+            <p><gi>gap</gi> passage ne pouvant pas être restitué pour des raisons matérielles</p>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <gap reason="illegible" agent="ink-blot" />
+            </egXML>
+            <p><gi>unclear</gi> passage en partie illisible</p>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <unclear agent="ink-blot" cert="low" resp="#EC" />
+            </egXML>
+            <p>
+              <gi>suplied</gi> restitution d’un passage manquant</p>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <supplied reason="hole" source="#autreEd">les</supplied>
+            </egXML>
+          </div>
+          <div>
+            <head>Prise en charge des lacunes</head>
+            <p>Ne pas confondre <gi>gap</gi> et <gi>space</gi> qui sert à désigner un espace blanc jugé significatif</p>
+            <p>Plusieurs attributs issus du module <ident>certainty</ident> qui peuvent vous permettre de préciser le niveau de certitude des restitutions.</p>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <space quantity="1" unit="cm"/>
+            </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Ajouts et surplus</head>
             <div>
@@ -81,7 +98,7 @@
               </egXML>
             </div>
           </div>
-          <div type="slide" xml:lang="fr">
+          <div rend="slide" xml:lang="fr">
             <div>
               <head>
                 <gi>subst</gi> substitutions (génétique textuelle)</head>
@@ -94,45 +111,15 @@
             </div>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
-          <div>
-            <head>Prise en charge des lacunes</head>
-            <p><gi>gap</gi> passage ne pouvant pas être restitué pour des raisons matérielles</p>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <gap reason="illegible" agent="ink-blot" />
-            </egXML>
-            <p><gi>unclear</gi> passage en partie illisible</p>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <unclear agent="ink-blot" cert="low" resp="#EC" />
-            </egXML>
-            <p>
-              <gi>suplied</gi> restitution d'un passage manquant</p>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <supplied reason="hole" source="#autreEd">les</supplied>
-            </egXML>
-          </div>
-          <div>
-            <head>Prise en charge des lacunes</head>
-            <p>Ne pas confondre <gi>gap</gi> et <gi>space</gi> qui sert à désigner un espace blanc jugé significatif</p>
-            <p>Plusieurs attributs issus du module <ident>certainty</ident> qui peuvent vous permettre de préciser le niveau de certitude des restitutions.</p>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <space quantity="1" unit="cm"/>
-            </egXML>
-          </div>
-        </div>
       </div>
       <div type="part" xml:id="part2">
-        <div type="title" xml:lang="fr">
-          <div>
-            <head>Les corrections éditoriales</head>
-          </div>
-        </div>
-        <div type="slide" xml:lang="fr">
+        <head xml:lang="fr">Les corrections éditoriales</head>
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Passages fautifs</head>
             <list>
               <item><gi>sic</gi> passage fautif, ou segment syntaxiquement incorrect</item>
-              <item><gi>corr</gi> correction de l'éditeur</item>
+              <item><gi>corr</gi> correction de l’éditeur</item>
               <item><gi>abbr</gi> abréviation</item>
               <item>utilisation de <gi>choice</gi></item>
             </list>
@@ -157,12 +144,8 @@
         </div>
       </div>
       <div type="part" xml:id="part3">
-        <div type="title" xml:lang="fr">
-          <div>
-            <head>Les variantes et les mains</head>
-          </div>
-        </div>
-        <div type="slide" xml:lang="fr">
+        <head>Les variantes et les mains</head>
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>La description des mains</head>
             <list>
@@ -178,7 +161,7 @@
             <p>handNote est répétable et peut contenir une localisation avec <att>locus</att>.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Trois approches pour l’enregistrement et l’<hi>alignement</hi> des variantes</head>
             <p>Les Guidelines proposent trois approches différentes pour aligner des passages textuels lorsque l’on établit une édition critique :</p>
@@ -199,11 +182,11 @@
             <p>La méthode par segmentation parallèle est le plus couramment utilisée lors de l’encodage de sources en XML-TEI pour comparer des témoins. Cette méthode correspond également à une méthode de travail pour l’établissement du texte. Mais son emploi qui présente une certain nombre de limites est sujet à discussion.</p>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Segmentation parallèle</head>
             <list>
-              <item><gi>app</gi> entrée d'apparat critique</item>
+              <item><gi>app</gi> entrée d’apparat critique</item>
               <item><gi>lem</gi> lemme ou leçon retenue du texte</item>
               <item><gi>rdg</gi> variante (lecture)</item>
             </list>
@@ -216,7 +199,7 @@
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Variantes</head>
             <list>
@@ -226,7 +209,7 @@
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Tableau de tradition</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -247,12 +230,12 @@
                     <!-- ... -->
                   </msDesc>
                 </witness>
-                <!-- répéter l'élément witness autant de fois que de témoins -->
+                <!-- répéter l’élément witness autant de fois que de témoins -->
               </listWit>
             </egXML>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <div rend="slide" xml:lang="fr">
           <div>
             <head>Localisation référencée</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -273,7 +256,7 @@
       </div>
     </body>
     <back>
-      <div type="slide" xml:lang="fr">
+      <div rend="title" xml:lang="fr">
         <div>
           <head>Exemple d’<ref target="ex04-witness.html">apparat critique</ref></head>
           <note><ref target="#index">Revenir au début</ref></note>

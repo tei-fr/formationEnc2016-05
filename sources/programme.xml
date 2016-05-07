@@ -98,6 +98,7 @@
                                 leur permettra de reprendre le même document le matin et corriger
                                 les fautes.</item> -->
                         </list>
+                        <p>Avant de partir, ne pas oublier de prévenir les participants que nous attendons d’eux trois diapositives de présentation de leur projet pour le lendemain.</p>
                     </div>
                     <div>
                         <head>Social event (bière)</head>
@@ -107,9 +108,9 @@
                     <head>2ème journée…</head>
                     <div xml:id="T06" resp="#EM">
                         <head>9h30-10h min Édition critique – PM EM</head>
-                        <p>transcription source primaire : segmentation; interventions editoriales </p>
-                        <p><ref target="sources/05-editionNumerique.tei.xml"
-                                >05-editionNumerique.tei</ref></p>
+                        <p>Transcription sources primaires : segmentation ; interventions éditoriales </p>
+                        <p><ref target="04-editionCritique.tei.xml"
+                            >04-editionCritique.tei</ref></p>
                         <p> cf. <ident>2015-09-lyon/talk-07-ms.xml</ident>;
                                 <ident>2015-09-lyon/04-editionCritique.tei.xml</ident>
                         </p>
@@ -153,14 +154,14 @@
                     </div>
                     <div xml:id="T10" resp="#LB">
                         <head>14h15 - 15h30 TEI Msdescription – TP LB</head>
-                        <!-- a fournir -->
+                        <!-- à fournir -->
                     </div>
                     <div>
                         <head>pause</head>
                     </div>
                     <div xml:id="T11" resp="#EM">
                         <head>16h - 17h - Présentation projets avec la TEI</head>
-                        <p>Les participants présentent leurs projet de travail : </p>
+                        <p>Les participants présentent leurs projet de travail : </p>
                         <list type="unordered">
                             <item>trois diapos</item>
                             <item>présentation des sources</item>

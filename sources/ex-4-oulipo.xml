@@ -3,7 +3,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Edition numerique d'un document archival : un cas d'étude</title>
+        <title>Edition numerique d’un document archival : un cas d’étude</title>
         <author>Lou Burnard Consulting</author>
       </titleStmt>
       <publicationStmt>
@@ -22,35 +22,17 @@
     <body>
 
       <p>Dans cet exercice, nous allons: <list>
-          <item>discuter la modelisation d'un document d'archive</item>
-          <item>experimenter son balisage en TEI XML</item>
+          <item>discuter la modélisation d’un document d’archive</item>
+          <item>expérimenter son balisage en TEI XML</item>
         </list></p>
-      <p>Notre cas d'étude concerne quelques documents extraits des archives de l'OULIPO. </p>
+      <p>Notre cas d’étude concerne quelques documents extraits des archives de l’OULIPO. </p>
 
-      <p>Pour ceux qui ne le connaissent pas, l'OULIPO est une groupe d'écrivains un peu
-        particulière qui (depuis les années 1960) se réunissent tous les jeudis discuter de leur
-        méthodes et de leurs productions. Ils ont ainsi créé une archive importante, notamment des
-        comptes rendus de leur réunions, actuellement disponible au BNF, et qui fait l'objet d'un
-        projet de numérisation financé par l'ANR. </p>
-      <p>Vous etes invités d'abord de considérer les documents presentés en mode image, par ex
-          <ident>cr650308_1.jpg</ident>. Ce fichier représente la première page du compte rendu (cr)
-        de la réunion de 8 mars 1965 (650308). Quels sont les objets d'interet que vous souhaitez
-        encoder dans ce document? Comment est-il structuré? Faites une liste des concepts qui vous
-        concernent.</p>
-      <p>Ensuite, décider comment representer ces concepts en utilisant des balises TEI. Par
-        exemple, si vous considérez que les remarques d'un des participants sont presentés comme si
-        il s'agissait d'un représentation dramatique, voire théatrale, il va vous falloir les
-        balises <gi>sp</gi>, <gi>speaker</gi>, <gi>stage</gi>. Si par contre, vous considérez que
-        cette presentation en forme de drame est moins intéressant ou moins cohérent qu'une
-        presentation en serie de paragraphes, dont quelques-uns portent un label, vous n'aurez
-        besoin que des balises <gi>label</gi> et <gi>p</gi>. Si cela vous interesse, peut etre les
-        noms de personnes, de lieux, des oeuvres sont à baliser avec <gi>name</gi>, <gi>title</gi>,
-        etc. Et quid des corrections, ajouts etc. ? En tout cas, vous aurez besoin des <gi>div</gi>,
-          <gi>pb</gi>, <gi>hi</gi> etc. </p>
-      <p>Procédez ensuite à documenter votre séléction, en utilisant Roma comme avant, et puis
-        faites votre transcription sous controle du schéma ressortisant. Pour reduire un peu le
-        travail de transcription vous trouverez dans le fichier <ident>cr650308.txt</ident> un
-        transcription déjà faite en texte pur. </p>
+      <p>Pour ceux qui ne le connaissent pas, l’OULIPO ou Ouvroir de littérature potentielle est un groupe d’écrivains un peu particulier qui (depuis les années 1960) se réunissent tous les jeudis discuter de leur méthodes et de leurs productions. Ils ont ainsi créé une archive importante, notamment composée des comptes rendus de leur réunions, actuellement disponible à la BnF, et qui fait actuellement l’objet d’un projet de numérisation financé par l’ANR. </p>
+      <p>Vous êtes d’abord invités à considérer les documents présentés en mode image, par ex <ident>cr650308_1.jpg</ident>. Ce fichier représente la première page du compte rendu (cr) de la réunion du 8 mars 1965 (650308). Quels sont, d’après vous, les objets d’intérêt que vous pourriez souhaiter encoder dans ce document ? Comment est-il structuré ? Faîtes une liste des concepts qui vous intéressent.</p>
+      <p>Ensuite, décider comment représenter ces concepts en utilisant des balises TEI. Par exemple, si vous considérez que les remarques d’un des participants sont présentées comme si il s’agissait d’un représentation dramatique, voire théâtrale, vous aurez alors probablement besoin des balises <gi>sp</gi>, <gi>speaker</gi>, <gi>stage</gi>. Si par contre, vous considérez que cette présentation en forme de drame est moins intéressante ou moins cohérente qu’une présentation en série de paragraphes, dont quelques-uns portent un label, vous n’aurez besoin que des balises <gi>label</gi> et <gi>p</gi>. Si cela vous intéresse, peut-être faudra-t-il faire quelque chose avec les noms de personnes, de lieux, des œuvres qui pourront être balisés avec <gi>name</gi>, <gi>title</gi>, etc. Et <foreign
+          xml:lang="lat"
+          >quid</foreign> des corrections, ajouts etc. ? En tout les cas, vous aurez besoin des <gi>div</gi>, <gi>pb</gi>, <gi>hi</gi>,  etc. </p>
+      <p>Documenter ensuite votre sélection, en utilisant Roma comme nous l’avons fait précédemment. Enfin, réalisez votre transcription sous le contrôle du schéma correspondant. Pour faciliter le travail de transcription vous trouverez dans le fichier <ident>cr650308.txt</ident> une première transcription en texte brut. </p>
     </body>
   </text>
 </TEI>

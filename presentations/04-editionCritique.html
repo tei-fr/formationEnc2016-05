@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Programme</title>
+      <link href="themes/remark-dark.css" rel="stylesheet" media="all" type="text/css">
+   </head>
+   <body><textarea id="source">
+title: L’édition critique des sources manuscrites
+description: Emmanuel Château, 2016
+theme: theme/remark-dark-em.cssname: inverse
+layout: true
+class: inverse
+
+---
+name: index
+class: center middle
+
+
+
+# 04-Édition critique
+
+# L’édition critique des sources manuscrites
+
+## Formation TEI | ENC 26-29 mai 2015
+
+.footnote[[Répertoire GitHub](https://github.com/tei-fr/formationEnc2015-05)]
+
+.footnote[[Programme](00-programme.html)]
+![test](images/logo-ecole-nationale-des-chartes.png)
+
+---
+template: inverse
+class: center middle
+
+
+## Introduction
+
+???
+
+## Introduction
+
+Une édition critique est un essai de restitution d’un texte. Ainsi que nous l’avons vu, chaque édition résulte d’un point de vue du le texte, c’est-à-dire de choix et de partis-pris raisonnés. Dans le domaine de la production de sources historiques, on pourra par exemple souhaiter rendre le plus fidèlement possible le documents tel qu’il se présente au lecteur (transcription diplomatique). Dans certains cas, la tradition du texte peut-être riche et il faudra trouver des solutions pour prendre en charge les différents états du texte et ses témoins. Enfin, dans le cas d’une édition dite de génétique textuel, on s’intéressera aux différents manuscrits en essayant de restituer la succession des actes d’écriture.
+
+La TEI présente de nombreux mécanismes spécialement destinés à la prise en charge de ces différentes sortes d’éditions critiques. Ici, la plus part des éléments qui nous intéressent sont compris dans les modules de transcription `transcr`, et d’autres dans celui de description des manuscrits `msdescription` que nous aborderons plus tard. Les éléments définis dans ces modules peuvent parfois être utilement augmentés par `certainty` pour traiter des niveaux de certitudes et `gaiji` pour la prise en charge des glyphes et la documentation des systèmes d’écriture. Mais aussi `Critical Apparatus` pour les notes de variantes, ainsi que des mécanismes de liage et d’alignement tirés du module `Linking`.
+
+Ces différents éléments de la Text Encoding Initiative vous permettent de décrire aussi finement que de besoin les phénomènes textuels rencontrés ainsi que d’embarquer directement l’apparat critique de votre édition à l’intérieur du balisage.
+
+---
+layout: false
+
+## Sommaire
+
+* [L’inscription du texte sur le support](#part1)
+
+* [Les corrections éditoriales](#part2)
+
+* [Les variantes](#part3)
+
+---
+template: inverse
+class: center middle
+name: part1
+
+
+---
+template: inverse
+class: center middle
+
+
+### L’inscription du texte sur le support
+
+???
+
+Test commentaire
+
+---
+
+
+### Prise en charge des lacunes
+
+`&lt;gap&gt;` passage ne pouvant pas être restitué pour des raisons matérielles
+
+```xml
+<gap xmlns="http://www.tei-c.org/ns/Examples" reason="illegible" agent="ink-blot"></gap>
+```
+
+`&lt;unclear&gt;` passage en partie illisible
+
+```xml
+<unclear xmlns="http://www.tei-c.org/ns/Examples" agent="ink-blot" cert="low" resp="#EC"></unclear>
+```
+
+`&lt;suplied&gt;` restitution d’un passage manquant
+
+```xml
+<supplied xmlns="http://www.tei-c.org/ns/Examples" reason="hole" source="#autreEd">les</supplied>
+```
+
+???
+
+### Prise en charge des lacunes
+
+Ne pas confondre `&lt;gap&gt;` et `&lt;space&gt;` qui sert à désigner un espace blanc jugé significatif
+
+Plusieurs attributs issus du module `certainty` qui peuvent vous permettre de préciser le niveau de certitude des restitutions.
+
+```xml
+<space xmlns="http://www.tei-c.org/ns/Examples" quantity="1" unit="cm"></space>
+```
+
+---
+
+
+### Ajouts et surplus
+
+#### `&lt;add&gt;` texte ajouté
+
+```xml
+<add xmlns="http://www.tei-c.org/ns/Examples" place="above">nous</add>
+```
+
+#### `&lt;del&gt;` texte supprimé
+
+```xml
+<del xmlns="http://www.tei-c.org/ns/Examples" rend="overstrike">claustra</del>
+```
+
+???
+
+#### `&lt;subst&gt;` substitutions (génétique textuelle)
+
+```xml
+<subst xmlns="http://www.tei-c.org/ns/Examples">
+                  <del>claustra</del>
+                  <add place="margin">fenêtre</add>
+                </subst>
+```
+
+---
+template: inverse
+class: center middle
+name: part2
+
+
+# Les corrections éditoriales
+
+---
+
+
+### Passages fautifs
+
+* `&lt;sic&gt;` passage fautif, ou segment syntaxiquement incorrect
+
+* `&lt;corr&gt;` correction de l’éditeur
+
+* `&lt;abbr&gt;` abréviation
+
+* utilisation de `&lt;choice&gt;`
+
+```xml
+<choice xmlns="http://www.tei-c.org/ns/Examples">
+                <abbr>M<hi rend="superscript">r</hi></abbr>
+                <expan>Monsieur</expan>
+              </choice>
+```
+
+???
+
+### Passages fautifs
+
+La même utilisation de `&lt;choice&gt;` est possible pour les segments syntaxiquement incorrects.
+
+```xml
+<choice xmlns="http://www.tei-c.org/ns/Examples">
+                <sic>charbone</sic>
+                <corr>charbon</corr>
+              </choice>
+```
+
+Partout, les attributs `@cert`, `@resp` et `@source` peuvent s’avérer utile.
+
+---
+template: inverse
+class: center middle
+
+
+### Les variantes et les mains
+
+---
+
+
+### La description des mains
+
+* `@hand`
+
+* `@handDesc` et ses sous-éléments dans le `&lt;teiHeader&gt;`
+
+```xml
+<handDesc xmlns="http://www.tei-c.org/ns/Examples">
+                <handNote xml:id="c2Hand1" scope="major">à l’encre noire</handNote>
+                <handNote xml:id="c2Hand2" scope="minor">au crayon</handNote>
+              </handDesc>
+```
+
+handNote est répétable et peut contenir une localisation avec `@locus`.
+
+---
+
+
+### Trois approches pour l’enregistrement et l’.red[alignement] des variantes
+
+Les Guidelines proposent trois approches différentes pour aligner des passages textuels lorsque l’on établit une édition critique&nbsp;:
+
+* la .red[méthode de localisation référencée], où les entrées d’apparat critique sont liées aux blocs de texte identifiés qui contiennent les lemmes respectifs
+
+* la .red[méthode d’attachement à double point], où les entrées d’apparat critique sont liées à des ponts de départ et de fin identifiées dans un texte
+
+* la .red[méthode de segmentation parallèle], où les entrées d’apparat critique son encodées au moyen d’une transcription du texte connu invariable et de tous les témoins.
+
+???
+
+### Trois approches pour l’enregistrement et l’.red[alignement] des variantes
+
+Les Guidelines proposent trois approches différentes pour aligner des passages textuels lorsque l’on établit une édition critique&nbsp;:
+
+* la .red[méthode de localisation référencée], où les entrées d’apparat critique sont liées aux blocs de texte identifiés qui contiennent les lemmes respectifs
+
+* la .red[méthode d’attachement à double point], où les entrées d’apparat critique sont liées à des ponts de départ et de fin identifiées dans un texte
+
+* la .red[méthode de segmentation parallèle], où les entrées d’apparat critique son encodées au moyen d’une transcription du texte connu invariable et de tous les témoins.
+
+La méthode par segmentation parallèle est le plus couramment utilisée lors de l’encodage de sources en XML-TEI pour comparer des témoins. Cette méthode correspond également à une méthode de travail pour l’établissement du texte. Mais son emploi qui présente une certain nombre de limites est sujet à discussion.
+
+---
+
+
+### Segmentation parallèle
+
+* `&lt;app&gt;` entrée d’apparat critique
+
+* `&lt;lem&gt;` lemme ou leçon retenue du texte
+
+* `&lt;rdg&gt;` variante (lecture)
+
+```xml
+<app xmlns="http://www.tei-c.org/ns/Examples">
+                <lem>remener</lem>
+                <rdg wit="#l-1-C #l-1-D #l-1-E #l-1-F">remettre</rdg>
+                <rdg wit="#l-#-a">conduire dehors</rdg>
+              </app>
+```
+
+---
+
+
+### Variantes
+
+* `&lt;rdgGrp&gt;` pour regrouper plusieurs variantes ayant un lien entre elles
+
+* `@type` pour catégoriser la variante
+
+* `@cause` pour expliciter la cause de la variante
+
+---
+
+
+### Tableau de tradition
+
+```xml
+<listWit xmlns="http://www.tei-c.org/ns/Examples">
+                <witness xml:id="A">
+                  <msDesc>
+                    <msIdentifier>
+                      <country>France</country>
+                      <settlement>Paris</settlement>
+                      <repository>Archives nationales</repository>
+                      <collection>Monuments ecclésiastiques</collection>
+                      <idno>S 2364 n° 5</idno>
+                    </msIdentifier>
+                  </msDesc>
+                </witness>
+                <witness xml:id="B">
+                  <msDesc>
+                    
+                  <!-- ... -->
+                  </msDesc>
+                </witness>
+                
+            <!-- répéter l’élément witness autant de fois que de témoins -->
+              </listWit>
+```
+
+---
+
+
+### Localisation référencée
+
+```xml
+<div xmlns="http://www.tei-c.org/ns/Examples" type="alignmentText" xml:id="cAlignmentText">
+                <linkGrp>
+                  
+               <!-- Front -->
+                  <link target="#c1Front #c2Front"></link>
+                  <link target="#c1FrontFr #c2FrontFr02"></link>
+                  <link target="#c1FrontFr01 #c2FrontFr01"></link>
+                  <link target="#c1FrontFr01.p001 #c2FrontFr01.p001"></link>
+                  
+               <!-- ... -->
+                </linkGrp>
+              </div>
+```
+
+---
+
+
+## Exemple d’[apparat critique](ex04-witness.html)
+
+.footnote[[Revenir au début](#index)]
+
+.footnote[[Programme](00-programme.html)]
+</textarea><script src="js/remark-0.6.5.min.js" type="text/javascript"></script><script type="text/javascript">
+        var hljs = remark.highlighter.engine;
+      </script><script src="remark.language.js" type="text/javascript"></script><script type="text/javascript">
+        var slideshow = remark.create({
+        highlightStyle: 'monokai',
+        highlightLanguage: 'remark'
+        }) ;
+      </script></body>
+</html>

@@ -23,7 +23,7 @@
   </teiHeader>
   <text>
     <body>
-      <div type="slide">
+      <div rend="slide">
         <div xml:lang="fr">
           <head>Programme d’ensemble</head>
           <list>
@@ -40,7 +40,7 @@
           </list>
         </div>
       </div>
-      <div type="slide">
+      <div rend="slide">
         <div xml:lang="fr">
           <head>Première journée</head>
           <list type="gloss">
@@ -72,7 +72,7 @@
           </list>
         </div>
       </div>
-      <div type="slide">
+      <div rend="slide">
         <div xml:lang="fr">
           <head>2<hi rend="superscript">ème</hi> journée</head>
           <list>
@@ -84,7 +84,7 @@
           </list>
         </div>
       </div>
-      <div type="slide">
+      <div rend="slide">
         <div xml:lang="fr">
           <head>3<hi rend="superscript">ème</hi> journée</head>
           <list>
@@ -96,7 +96,7 @@
           </list>
         </div>
       </div>
-      <div type="slide">
+      <div rend="slide">
         <div xml:lang="fr">
           <head>4<hi rend="superscript">ème</hi> journée</head>
           <list>
@@ -107,7 +107,7 @@
           </list>
         </div>
       </div>
-      <div type="slide">
+      <div rend="slide">
         <div>
           <head>Télécharger les sources</head>
           <list>
@@ -119,7 +119,7 @@
           <eg>git clone --recursive https://github.com/tei-fr/formationEnc2015-05.git</eg>
         </div>
       </div>
-      <div type="slide">
+      <div rend="slide">
         <div>
           <head>Organisation du répertoire</head>
           <list>
@@ -135,7 +135,7 @@
           </list>
         </div>
       </div>
-      <div type="slide">
+      <div rend="slide">
         <div>
           <head>Utiliser ces diapositives</head>
           <list>

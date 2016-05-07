@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="/Users/emmanuelchateau/Downloads/TEI-Boilerplate-master/teibp.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>L'ambassade extraordinaire des duc d'Angoulême, comte de Béthune
+                    et abbé de Préaux (1620-1621)</title>
+                <title type="subtitle">Édition de la correspondance active avec
+                    l'autorité royale et ses représentants</title>
+                <principal xml:id="CD">Camille Desenclos</principal>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Service de formation continue de l'Ecole Nationale des Chartes</distributor>
+                <date>2014</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Exercice d'encodage dans le cadre de la formation continue sur
+                    l'édition électronique</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <group>
+            <text xml:id="l-1">
+                <front>
+                    <head>Des trois ambassadeurs à Puisieux</head>
+                    <docDate>
+                        <date when="1620-05-22">1620, 22 mai</date>
+                        <placeName>Lunéville</placeName>
+                    </docDate>
+                    <argument>
+                        <p corresp="#l-1-p1">Réception des ambassadeurs à Nancy par le
+                            duc de Lorraine.</p>
+                        <p corresp="#l-1-p2">Report des rencontres avec les princes
+                            unis et demande de constitution d'une assemblée des
+                            électeurs ecclésiastiques pour faciliter la
+                            négociation.</p>
+                        <p corresp="#l-1-p3">Recherche d'un interprète et demande de
+                            régularisation de leur situation.</p>
+                    </argument>
+                    <div type="tradition">
+                        <listWit>
+                            <head>Duplicata</head>
+                            <witness xml:id="l-1-A">BnF, fr. 15930: fol.
+                                146-147.</witness>
+                        </listWit>
+                        <listWit>
+                            <head>Copies XVII<hi rend="sup">e</hi>siècle</head>
+                            <witness xml:id="l-1-B">BnF, fr. 3972: fol.
+                                28v-30r</witness>
+                            <witness xml:id="l-1-C">BnF, NAF 7064: fol.
+                                34r-35v</witness>
+                            <witness xml:id="l-1-D">BnF, Dupuy 205: fol.
+                                18v-19v</witness>
+                            <witness xml:id="l-1-E">BnF, fr. 23560: fol.
+                                34v-35v</witness>
+                            <witness xml:id="l-1-F">BnF, fr. 23561: p. 63-65</witness>
+                            <witness xml:id="l-1-G">BnF, fr. 7097: fol.
+                                46v-48v</witness>
+                        </listWit>
+                        <listWit>
+                            <head>Edition</head>
+                            <witness xml:id="l-1-a"><title>Ambassade extraordinaire de
+                                    messieurs le duc d'Angoulesme, comte de Béthune et
+                                    de Preaux Chasteauneuf: envoyez par le roy Louis
+                                    XIII vers l'empereur Ferdinand II et les princes et
+                                    potentats d'Allemagne, en l'année MDCXX</title>,
+                                Henri de Béthune [éditeur] [Paris: F. Preuveray], 1667:
+                                p. 59-60</witness>
+                        </listWit>
+                    </div>
+                </front>
+                <body>
+                    <div type="transcription">
+                        <opener>
+                            <salute>Sire</salute>
+                        </opener>
+                        <p xml:id="l-1-p1"> Nous escrivons au roy pour faire entendre à
+                            Sa Majesté ce que nous avons fait jusques icy au fait de
+                            nostre negociation. Et bien que par là vous soyez
+                                    <app><lem>assez informé, nous avons jugé vous
+                                    devoir faire celle cy en particulier</lem><rdg
+                                    wit="#l-1-a">suffisamment instruit de toute chose,
+                                    nous avons creu vous devoir escrire en vostre
+                                    particulier</rdg></app> pour vous dire que nous
+                            avons esté favorablement <app><lem>accueillis et
+                                    receulz</lem><rdg wit="#l-1-G"
+                                >recueulis</rdg></app> de monsieur le duc de Lorraine,
+                            lequel mesme a voulu prendre la peine de nous venir
+                            recepvoir et <app><lem>remener</lem><rdg
+                                    wit="#l-1-C #l-1-D #l-1-E #l-1-F"
+                                    >remettre</rdg><rdg wit="l-1-a">conduire
+                                    dehors</rdg></app> hors la ville. Aussy nous nous
+                            sommes envers luy avec le plus de soin et d’affection que
+                            nous avons peu acquitez de nostre commission.</p>
+                        <p xml:id="l-1-p2">Nous avons trouvé à Nancy un gentilhomme
+                            envoyé vers nous de la part du duc de Wirtemberg pour nous
+                            asseurer que l'assemblée des princes unis est resolue à
+                            Heylbron ville impériale au premier jour du mois prochain
+                            mais il nous a fait cognoistre que ces princes seroient
+                            bien ayses que nous differassions à nous y rendre jusques
+                            au sixiesme pour se pouvoir veoir et <app><lem>concerter
+                                    entre eux</lem><rdg wit="#l-1-a">conférer ensemble
+                                    avec liberté</rdg></app> de leurs affaires, ce qui
+                            nous contraindra à sejourner trois jours à Strasbourg. Et
+                            d'autant que nous avons jugé grandement necessaire à
+                            l'advancement de nostre voyage que les electeurs
+                                    <app><lem/><rdg wit="#l-1-D">
+                                catholicques</rdg></app>eclesiasticques se voulussent
+                            assembler <app><lem>pour nous donner moyen de les
+                                    veoir</lem><rdg wit="#l-1-a">afin que nous les
+                                    peussions voir</rdg></app> en un mesme lieu aussy
+                            bien que lesditz princes unis, nous avons fait en sorte que
+                            ledit sieur duc de Lorraine a comme de luy mesme envoyé un
+                            gentilhomme vers eux pour moyenner ladite assemblée
+                                    <app><lem>et</lem><rdg wit="#l-1-a">où
+                                il</rdg></app> nous doit <app><lem>revenir
+                                    trouver</lem><rdg wit="#l-1-C #l-1-D #l-1-F">venir
+                                    retrouver</rdg></app> dans le 8<hi rend="sup"
+                                >e</hi> du mois prochain audit Heylbron avec la
+                            resolution qu'auront prise lesdits sieurs electeurs et
+                                    <app><lem/><rdg wit="#l-1-a">nous informer par
+                                    mesme moyen du</rdg></app> le lieu et jour qu'ils
+                            auront choisy.</p>
+                        <p xml:id="l-1-p3">De là nous donneront advis de tout au roy et
+                            à vous qui sçaurez aussy que nous avons appris que le
+                                Rheingrave<ref type="note" target="#rhingrave"/> est
+                            destiné avec ses troupes pour demeurer en Alsace à la
+                            conservation du pais en cas que la guerre civile
+                                    <app><lem>soit en</lem><rdg wit="#l-1-a">s'allume
+                                    dans</rdg></app> toute l'Allemagne. Cependant nous
+                            vous dirons qu'ayant de Thoul envoyé à Metzles lettres du
+                            roy au <app><lem>sieur de Flavigny> et à Praillon, ledit de
+                                    Flavigny nous est venu trouver à Nancy ainsy que
+                                    nous luy avions mandé qui nous a dit ledit Praillon
+                                    estre à Paris il y a six sepmaines</lem><rdg
+                                    wit="#l-1-F"/></app>. De plus nous avons sceu que
+                            ledit Praillon ne peut servir d'interprete et que son pere
+                            estoit bien versé aux langues germaniques mais que cestuy
+                            ci n'a esté conservé en la charge d'interprete qu'en
+                            consideration des services du pere. Nous pourrons prendre
+                            un nommé Bernard passants à Strasbourg pour nous servir
+                            jusques <app><lem><app><lem>en</lem><rdg
+                                           wit="#l-1-D #l-1-G">à la</rdg></app> fin
+                                    de</lem><rdg wit="#l-1-a">à</rdg></app> l'assemblée
+                            des princes unis, mais n'estant catholique nous le
+                            renvoyrons de là et nous servirons des occasions qui se
+                            pourront offrir et que nostre soin et
+                                    <app><lem>affection</lem><rdg wit="#l-1-a"
+                                    >vigilance</rdg></app> pourront
+                                    <app><lem>rencontrer</lem><rdg wit="#l-1-a"
+                                    >fournir</rdg></app> à cet effect. Au reste nous
+                            vous suplions vous <app><lem>souvenir</lem><rdg
+                                    wit="#l-1-D">ressouvenir</rdg></app> que par
+                                    <app><lem>obeissance</lem><rdg wit="#l-1-a"
+                                    >soumission aux volontez du Roi</rdg></app> nous
+                            sommes partis sans que nostre estat fut signé mais que
+                            maintenant nous le demandons par raison à commencer dès le
+                            premier apvril ainsy que nous <app><lem>le</lem><rdg
+                                    wit="#l-1-B #l-1-C #l-1-D #l-1-E #l-1-F #l-1-G"
+                                /></app> devons <app><lem>atendre</lem><rdg
+                                    wit="#l-1-a">justement attendre et
+                                espérer</rdg></app> des promesses qui nous ont esté
+                            faites et des services que nous rendons et
+                                    <app><lem>esperons rendre de jour à autre</lem><rdg
+                                    wit="#l-1-a"> rendrons dans la
+                            suite</rdg></app>.</p>
+                        <closer>
+                            <salute><app><lem>Croyant qu'il vous plaira <app><lem>de
+                                           prendre</lem><rdg wit="#l-1-D"
+                                           ><subst><del>entreprendre</del><add>prendre</add></subst></rdg></app>
+                                        soin comme de ceux qui sont absens </lem><rdg
+                                        wit="#l-1-a">nous persuadans que vous aurez
+                                        bien agreable d'en prendre le soin et plus
+                                        encore que la chose regarde des
+                                    personnes</rdg></app><app><lem>et</lem><rdg
+                                        wit="#l-1-C #l-1-D #l-1-E #l-1-F #l-1-a"
+                                    /></app> employez au service du roy avec beaucoup
+                                plus de despense <app><lem>que nous ne pensions nous
+                                        mesmes et attendans cela de vostre
+                                        bienveillance</lem><rdg wit="#l-1-a">qu'ils
+                                        n'avoient eux mesmes presumé. En attendant
+                                        cette grâce de vostre bienveillance et de
+                                        vostre amitié</rdg></app> nous demeurons,<lb/>
+                                Monsieur <lb/> Vos bien humbles serviteurs</salute>
+                            <signed> Charles de Valois </signed>
+                            <signed> Bethune </signed>
+                            <signed> Préaulx </signed>
+                        </closer>
+                    </div>
+                </body>
+                <back>
+                    <div type="notes">
+                        <note n="1" xml:id="rhingrave">Le Rhingrave fait partie du
+                            cercle électoral du Rhin, il peut lever un droit de passage
+                            sur le fleuve, et prendre le titre de maréchal héréditaire
+                            du Palatinat. C'est alors Philippe-Othon de Salm qui exerce
+                            cette charge.</note>
+                    </div>
+                </back>
+            </text>
+            <text subtype="split" xml:id="l-2" n="2">
+                <front>
+                    <head>Des trois ambassadeurs au roi</head>
+                    <docDate>
+                        <date when="1620-05-22">1620, 22 mai</date>
+                        <placeName>Lunéville</placeName>
+                    </docDate>
+                    <argument>
+                        <p corresp="#l-2-p1">Réception à Nancy par le duc de
+                            Lorraine.</p>
+                        <p corresp="#l-2-p2">Confirmation et utilité de l'assemblée des
+                            princes unis.</p>
+                        <p corresp="#l-2-p3">Tensions au sujet du pont de Brisach et
+                            menace apportée par Bethlen Gabor.</p>
+                    </argument>
+                    <div type="tradition">
+                        <listWit>
+                            <head>Duplicata</head>
+                            <witness xml:id="l-2-A">BnF, fr. 15930: fol.
+                                148-151.</witness>
+                        </listWit>
+                        <listWit>
+                            <head>Copies XVII<hi rend="sup">e</hi>siècle</head>
+                            <witness xml:id="l-2-B">BnF, fr. 3972: fol.26r-28v </witness>
+                            <witness xml:id="l-2-C">BnF, NAF 7064: fol. 31r-34r </witness>
+                            <witness xml:id="l-2-D">BnF, Dupuy 205: fol. 17r-18v </witness>
+                            <witness xml:id="l-2-E">BnF, fr. 23560: fol. 31v-34r </witness>
+                            <witness xml:id="l-2-F">BnF, fr. 23561: p. 57-62 </witness>
+                            <witness xml:id="l-2-G">BnF, fr. 7097: fol.43r-46v
+                            </witness>
+                        </listWit>
+                        <listWit>
+                            <head>Edition</head>
+                            <witness xml:id="l-2-a"><title>Ambassade extraordinaire de
+                                    messieurs le duc d'Angoulesme, comte de Béthune et
+                                    de Preaux Chasteauneuf: envoyez par le roy Louis
+                                    XIII vers l'empereur Ferdinand II et les princes et
+                                    potentats d'Allemagne, en l'année MDCXX</title>,
+                                Henri de Béthune [éditeur] [Paris: F.Preuveray], 1667:
+                                p. 56-59.</witness>
+                        </listWit>
+                    </div>
+                </front>
+                <body>
+                    <div type="transcription">
+                        <opener>
+                            <salute>Sire</salute>
+                        </opener>
+                        <p xml:id="l-2-p1">Nous avons <app><lem>estimé</lem><rdg
+                                    wit="#l-2-a">creu</rdg></app> devoir rendre compte
+                            à Vostre Majesté du commencement de nostre voyage et
+                                    <app><lem>luy faire entendre comme nous
+                                    arrivasmes</lem><rdg wit="#l-2-a">l'informer à
+                                    mesme temps de nostre arrivée</rdg></app> à Nancy
+                            dimanche dernier <app><lem>18</lem><rdg wit="#l-2-F"
+                                    >17</rdg></app><hi rend="sup">e</hi> du mois et le
+                            bon accueil et reception qui nous y <app><lem>a esté
+                                    faite</lem><rdg wit="#l-2-C #l-2-D #l-2-E #l-2-F"
+                                    >ont esté faictz</rdg></app> par monsieur le duc de
+                            Lorraine <app><lem>comme il a accoustumé faire à</lem><rdg
+                                    wit="#l-2-a">qui n'en fait pas moins à
+                                tous</rdg></app> ceux qui le visitent de vostre part
+                            faisant tousjours paroistre une affection tres particuliere
+                            au service de Vostredite Majesté. Le lendemain il nous
+                            donna audience et apres luy avoir fait les compliments
+                            ordinaires et l’avoir asseuré de la bienveillance de Vostre
+                            Majesté <app><lem>en son endroit</lem><rdg wit="#l-2-a"
+                                /></app> et luy avoir presenté la lettre qu'il vous a
+                            pleu luy escrire nous luy <app><lem>fismes
+                                    entendre</lem><rdg wit="#l-2-a">exposasmes en
+                                    long</rdg></app> le subject de nostre legation et
+                            vos bonnes <app><lem>et saintes</lem><rdg
+                                    wit="#l-2-B #l-2-C #l-2-D #l-2-E #l-2-F #l-2-a"
+                                /></app> intentions au commun advantage, conservation
+                            et repos de toute la chrestienté <app><lem>avec
+                                    priere</lem><rdg wit="#l-2-a">le prians à mesme
+                                    temps</rdg></app> de nous assister de ses bons
+                            advis et conseils et y contribuer de sa part ce qui peut
+                            dependre de luy comme en un affaire qui le regarde et tous
+                            princes chrestiens. Ledit <app><lem>sieur</lem><rdg
+                                    wit="#l-2-D"/></app> duc <app><lem>s'excusa
+                                    du</lem><rdg wit="#l-2-a">s'en excusa dans
+                                le</rdg></app> commencement par modestie, disant qu'il
+                            ne pouvoit rien adjouster au commandement que nous avions
+                            de Vostre Majesté.</p>
+                        <p xml:id="l-2-p2"> Et neantmoings comme nous entrasmes en
+                                conference<ref type="note" target="#conference"/> il
+                            tesmoigna approuver grandement l'assemblée des princes
+                            unis, et pour ce que nous avions jugé qu’en suite de ladite
+                            assemblée il seroit bon d’en moyenner une des trois
+                            electeurs eclesiastiques nous luy en fismes ouverture, ce
+                            qu’il approuva pareillement. Et
+                                    <app><lem>estimans</lem><rdg wit="#l-2-a">comme
+                                    nous jugeasmes</rdg></app> estre plus à propos que
+                            la proposition en fust faite auzditz electeurs
+                            eclesiasticques par ledit sieur duc, il s'offrit d’envoyer
+                            vers eux et de fait y a envoyé un gentilhomme<ref
+                                type="note" target="#note-Dattel"/> lequel nous doit
+                            apporter la resolution desdits electeurs dans le
+                                    <app><lem>8</lem><rdg wit="#l-2-F">3</rdg></app><hi
+                                rend="sup">e</hi> du mois prochain à Heylbron ville
+                            imperiale où nous serons pour l’assemblée desditz princes
+                            unis et si l’assemblée des eclesiasticques se resoult
+                                    <app><lem/><rdg wit="#l-2-a">d'un commun
+                                    consentement</rdg></app><app><lem>cela apportera un
+                                    grand <app><lem>advencement</lem><rdg wit="#l-2-F"
+                                           >contentement</rdg></app> à </lem><rdg
+                                    wit="#l-2-a">elle avancera sans doute
+                                    beaucoup</rdg></app> nostre negociation pour ce que
+                            les trouvans tous ensemble nous <app><lem>serons deschargez
+                                    du</lem><rdg wit="#l-2-a">gagnerons</rdg></app>
+                            temps qu'il nous faudroit employer pour les aller trouver
+                            en <app><lem/><rdg wit="#l-2-a"
+                            >leur</rdg></app>particulier. Nous avons trouvé audit Nancy
+                            un gentilhomme <app><lem>qui nous estoit envoyé de la part
+                                    des</lem><rdg wit="#l-2-a">que nous avoient
+                                    depesché le</rdg></app> duc de Wirtemberg et
+                            marquis Daonsbach pour nous faire scavoir que l'assemblée
+                            desdits princes unis est <app><lem>indite</lem><rdg
+                                    wit="#l-2-G"/><rdg wit="#l-2-a"
+                                >indiquée</rdg></app> au premier du mois prochain audit
+                            Heylbron et nous <app><lem>a</lem><rdg wit="#l-2-F"/></app>
+                            asseuré que le duc de Deux-ponts, le landgrave de Hessen,
+                            ledit marquis Daonsbach, ledit duc de Wirtemberg, le
+                            marquis de Dourlach et autres comtes, barons et deputés des
+                            villes de l’Union s’y trouveront, <app><lem>qui sera un
+                                    moyen pour advancer</lem><rdg wit="#l-2-a">ce qui
+                                    n'avancera pas peu</rdg></app> le fruit de nostre
+                            negociation d'autant que nous pourrons beaucoup plus
+                            utilement concerter avec eux <app><lem>ainsy</lem><rdg
+                                    wit="#l-2-a">etant</rdg></app> assemblez
+                                    <app><lem>et prendre</lem><rdg wit="#l-2-a">comme
+                                    aussi penetrer et decouvrir</rdg></app> leurs
+                            sentiments <app><lem>et recognoistre mieux leurs
+                                    inclinations</lem><rdg wit="#l-2-F"/></app>
+                            <app><lem>au fait qui se presente</lem><rdg wit="#l-2-a"
+                                    >sur le sujet dont il s'agit</rdg></app> que si
+                            nous les eussions veuz en particulier. Nostre plus grande
+                            diligence, Sire, auroit esté <app><lem>jusques
+                                    icy</lem><rdg wit="#l-2-a"/></app> inutile pour ce
+                            que le gentilhomme vesnu de la part dudit duc de Wirtemberg
+                            a fait cognoistre que ces princes qui s'assemblent
+                            desireroient bien que nous ne nous rendissions audit
+                            Heylbron que le 3 ou 4<hi rend="sup">e</hi> dudit mois
+                            prochain afin qu'ils eussent <app><lem/>
+                                <rdg wit="#l-2-B #l-2-C #l-2-F #l-2-G #l-2-a"
+                                >le</rdg></app> loisir de se veoir devant que nous
+                                    <app><lem>fussions arrives à eux</lem><rdg
+                                    wit="#l-2-a">arrivassions</rdg></app>, tellement
+                            que nous serons contrains de sejourner deux ou trois jours
+                            à Strasbourg.</p>
+                        <p xml:id="l-2-p3">Nous eussions desiré employer ce temps à
+                            visiter l'archiduc Leopold, n'estoit que nous apprenons
+                            qu'il est party depuis quelque jours de Saverne pour s'
+                            acheminer vers le pont de Brisac pour faire faire
+                                monstre<ref type="note" target="#montre"/> generale à
+                            ses troupes le 25 ou 26 de ce mois, et ainsy nous estimons
+                            qu'il suffira de luy envoyer un gentilhomme avec celle
+                            qu'il a pleu à Vostre Majesté luy escrire, n’estant pas une
+                            des personnes <app><lem>des</lem><rdg wit="#l-2-D"/></app>
+                            plus necessaires à nostre negociation. Messieurs les ducs
+                            de Lorraine et de Vaudemont <app><lem>comme</lem><rdg
+                                    wit="#l-2-a">et</rdg></app> plusieurs
+                                    <app><lem/><rdg
+                                    wit="#l-2-C #l-2-D #l-2-E #l-2-F #l-2-a">
+                                    autres</rdg></app> cappitaines que nous avons
+                            rencontrez qui <app><lem>vont</lem><rdg wit="#l-2-a">s'en
+                                    allans</rdg></app> au service de l’empereur nous
+                            ont parlé assez diversement du passage des troupes à
+                            Brisac, les uns <app><lem>tenans</lem><rdg wit="#l-2-D"
+                                    >trouvans</rdg><rdg wit="#l-2-a"
+                                >estimans</rdg></app> que lesdites troupes ne peuvent
+                            passer sans venir aux mains avec ledit sieur marquis de
+                            Dourlac et les autres au contraire
+                                    <app><lem>croient</lem><rdg wit="#l-2-a"
+                                    >croyans</rdg></app> que les forts que ledit
+                            marquis a faits estans à <app><lem>un quart de</lem><rdg
+                                    wit="#l-2-E">un grande</rdg></app>lieue dudit pont,
+                            ils pourront passer sans se battre si ce n’est que d'eux
+                            mesmes <app><lem/><rdg
+                                    wit="#l-2-B #l-2-C #l-2-D #l-2-E #l-2-F #l-2-a">
+                                    ilz </rdg></app> se portent volontairement au
+                            combat ce qui n’est pas à presumer <app><lem>d'autant
+                                    que</lem><rdg wit="#l-2-a">vu que</rdg></app> nous
+                            voyons les uns et les autres <app><lem>fort retenuz à ne
+                                    vouloir estre</lem><rdg wit="#l-2-a">en ces
+                                    commencements dans l'apprehension de passer
+                                    pour</rdg></app> les premiers autheurs de la guerre
+                            civile dans leurs pais. Et mesme quant ledit marquis de
+                            Dourlac pourroit empescher le passage desdites troupes, il
+                            laissera tousjours passer celles qui s'avoueront et diront
+                            aller servir l’empereur en Boheme. Et pour ce qui regarde
+                            les levées du duc de Baviere qu’on dit estre de vingt mil
+                            homme de pied et quatre mil chevaulx (ce que difficilement
+                            nous croyons), nous n'avons peu, Sire, certainement
+                            apprendre dudit sieur de Vaudemont où il les veult
+                            employer. Et sur ce que nous l'avons pressé pour essayer de
+                            penetrer <app><lem/><rdg wit="#l-2-D"> sur </rdg></app>
+                            <app><lem>ce qui estoit de leur dessein</lem><rdg
+                                    wit="#l-2-a">leurs desseins</rdg></app>, il nous a
+                            dit <app><lem>lesdites levees se faire</lem><rdg
+                                    wit="#l-2-a">que ces levées se
+                                faisoient</rdg></app> pour la conservation du pais
+                            dudit duc de Baviere<app><lem>au mouvement general qui se
+                                    prepare</lem><rdg wit="#l-2-a">dans l'apprehension
+                                    d'un mouvement et revolution generale</rdg></app>.
+                            Toutesfois nous avons recognu qu'il n'est pas marry qu'on
+                                    <app><lem>croye</lem><rdg wit="#l-2-a">se
+                                    persuadast</rdg></app> que lesdites troupes se
+                            levent pour l'execution <app><lem>du</lem><rdg wit="#l-2-D"
+                                    >d'un</rdg></app> ban imperial <app><lem>qui semble
+                                           <app><lem>devoir</lem><rdg wit="#l-2-E"
+                                        /></app> intervenir</lem><rdg wit="#l-2-a"
+                                    >qu'on croit se devoir faire</rdg></app> contre
+                            l'electeur palatin pour l'advancement duquel on luy mande
+                            de Vienne qu'on a ja<ref type="note" target="#ja"/> envoyé
+                            quelques monitoires<ref type="note" target="#monitoire"/>
+                            audit electeur, d’où ledit sieur de Vaudemont receut aussy
+                            nouvelles le jour de nostre partement de Nancy qu’en la
+                            diette qui se doit faire en Hongrie Bethleem Gabor pretend
+                            s’en faire eslire roy et pour y parvenir y a praticqué<ref
+                                type="note" target="#pratiquer"/> les plus grands et
+                            mesme beaucoup de catholiques qui jusques icy estoient
+                            demeurés fermes pour l’empereur et qui maintenant
+                                    <app><lem>inclinent au désir dudit Bethleem,
+                                    lequel</lem><rdg wit="#l-2-a">panchent de son
+                                    costé. On adjoute encore qu'il</rdg></app>
+                            travaille à s'affermir en ceste couronne par <app><lem>le
+                                    moyen mesme</lem><rdg wit="#l-2-a"
+                                    >l'assistance</rdg></app> du Turcq et empescher
+                            qu'il ne vienne <app><lem/><rdg wit="#l-2-a"> du
+                                </rdg></app> secours <app><lem>à</lem><rdg wit="#l-2-D"
+                                    >de</rdg></app> l’empereur du costé de la Pologne
+                            par la menace qu'il fait d’y faireentrer les Tartares,
+                                    <app><lem>de quoy les Polonois semblent estre
+                                    refroidiz</lem><rdg wit="#l-2-a">ce qui me semble
+                                    refroidir et destourner les Polonois</rdg></app>
+                            d'envoyer leurs troupes en Silesie comme ils avoient promis
+                            à sa Majeste imperiale, ce que Vostre Majesté pourra desja
+                            avoir aprins par les advis du sieur de Baugy<app><lem/><rdg
+                                    wit="#l-2-a"> son resident à Vienne</rdg></app>.
+                            Toutesfois nous n'avons pas voulu <app><lem>faillir de luy
+                                    en mander ce qui nous a esté dit</lem><rdg
+                                    wit="#l-2-a">manquer à l'informer de ce qui est
+                                    venu à nostre connoissance</rdg></app> sur ce
+                            subject comme nous ferons toujours en ce que
+                                    <app><lem>jugerons importer à</lem><rdg
+                                    wit="#l-2-a">nous estimerons regarder</rdg></app>
+                            son service. </p>
+                        <closer>
+                            <salute><app><lem>Estants de Vostre Majesté,</lem><rdg
+                                        wit="#l-2-a">pour lequel nous n'avons pas moins
+                                        d'attachement et de zele qu'elle doit en
+                                        attendre de</rdg></app><lb/> Sire<lb/> Tres
+                                humbles, tres obeissants et tres fideles subjectz et
+                                serviteurs </salute>
+                            <signed>Charles de Valois</signed>
+                            <signed>Bethune</signed>
+                            <signed>Préaulx</signed>
+                        </closer>
+                    </div>
+                </body>
+                <back>
+                    <div type="notes">
+                        <note n="1" xml:id="conference">Se fit des entretiens qu'ont
+                            ensemble des ministres, des princes, des ambassadeurs pour
+                            négocier des affaires d'Etat.</note>
+                        <note n="2" xml:id="montre"><term>Montre</term>: revue des
+                            troupes que l'on fait pour voir si elles sont complètes
+                            afin d'en régler la marche et le paiement.</note>
+                        <note n="3" xml:id="ja"><term>Ja</term>: maintenant,
+                            déjà.</note>
+                        <note n="4" xml:id="monitoire"><term>Monitoire</term>: lettre
+                            qui s'obtient du juge de l'Église et qu'on publie au prône
+                            des paroisses pour obliger les fidèles à venir déposer ce
+                            qu'ils savent des faits qui y sont contenus sous peine
+                            d'excommunication. </note>
+                        <note n="5" xml:id="pratiquer"><term>Pratiquer</term>:
+                            corrompre, suborner.</note>
+                        <note n="6" xml:id="note-Dattel"> Il s'agirait de Dattel,
+                            conseiller du duc de Lorraine. </note>
+                    </div>
+                </back>
+            </text>
+        </group>
+    </text>
+</TEI>

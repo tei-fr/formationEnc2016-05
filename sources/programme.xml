@@ -5,7 +5,7 @@
             <titleStmt>
                 <title>Formation XML-TEI à l'école Nationale des Chartes, mai 2016</title>
                 <author xml:id="LB">Lou Burnard</author>
-                <author xml:id="EM">Emmanuel Chateau</author>
+                <author xml:id="EM">Emmanuel Château</author>
             </titleStmt>
             <publicationStmt>
                 <p>unknown</p>
@@ -46,7 +46,8 @@
                             <item>Expression en utilisant XML</item>
                             <item>Document bien formé et document valide</item>
                         </list>
-                        <p>Cf <ref target="01-editionNumerique.tei.xml"/></p>
+                        <p>Cf <ref target="01-editionNumerique.tei.xml"
+                                >01-editionNumerique.tei</ref></p>
                     </div>
                     <div xml:id="T02" resp="#LB">
                         <head>11h30-12h30 : Modélisation TP (travaux pratiques) LB</head>
@@ -134,7 +135,8 @@
                         
                     </div>
                     <div xml:id="T08bis" resp="#EM">
-                        <head>12h -12h30 TEI Header – TP EM</head> <!-- à fournir -->
+                        <head>12h -12h30 TEI Header – TP EM</head><!-- à fournir -->
+                        <p><ref target="ex-5-header.xml">ex-5-header</ref></p>
                         <list type="unordered">
                             <item>créer un header simple</item>
                         </list>

@@ -8,10 +8,11 @@
         <p>from markdown</p>
       </publicationStmt>
       <sourceDesc>
-        <p>emchateau, ENC 2015</p>
+        <p>emchateau, ENC 2016</p>
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
+      <change when="2016-05">modifications diverses et formatage</change>
       <change when="2015-05-24">conversion du fichier en TEI</change>
       <change when="2014-10-30">première rédaction</change>
     </revisionDesc>
@@ -132,11 +133,7 @@
         </div>
       </div>
       <div type="part">
-        <div rend="title" xml:lang="fr" xml:id="part2">
-          <div>
-            <head>La description du fichier (<gi>fileDesc</gi>)</head>
-          </div>
-        </div>
+        <head>La description du fichier (<gi>fileDesc</gi>)</head>
         <div rend="slide" xml:lang="fr">
           <div>
             <head>La description du fichier (<gi>fileDesc</gi>)</head>
@@ -236,11 +233,7 @@
         </div>
       </div>
       <div type="part">
-        <div rend="title" xml:lang="fr" xml:id="part3">
-          <div>
-            <head>Les autres sous-composants de l’en-tête TEI</head>
-          </div>
-        </div>
+        <head>Les autres sous-composants de l’en-tête TEI</head>
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Après la description de fichier…</head>
@@ -345,9 +338,8 @@
       </div>
     </body>
     <back>
-      <div rend="title" xml:lang="fr">
+      <div type="part">
         <head>Sources et bibliographie</head>
-      </div>
       <div rend="slide" xml:lang="fr">
         <div>
           <head>Orientations bibliographiques</head>
@@ -369,6 +361,7 @@
                   >http://www.digitalmedievalist.org/journal/2.1/driscoll/</ref> (accessed February 23, 2014).</bibl></item>
           </list>
         </div>
+      </div>
       </div>
       <div rend="title" xml:lang="fr">
         <div>

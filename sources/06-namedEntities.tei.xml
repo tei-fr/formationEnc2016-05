@@ -9,10 +9,11 @@
           <p>from markdown</p>
         </publicationStmt>
         <sourceDesc>
-          <p>emchateau, ENC 2015</p>
+          <p>emchateau, ENC 2016</p>
         </sourceDesc>
       </fileDesc>
      <revisionDesc>
+       <change when="2016-05">modifications diverses et formatage</change>
        <change when="2015-05-24">conversion du fichier en TEI</change>
        <change when="2014-10-30">première rédaction</change>
      </revisionDesc>
@@ -29,9 +30,7 @@
        <p>class: center middle</p>-->
       <titlePage xml:lang="fr">
         <titlePart>08-Entités nommées</titlePart>
-        <docImprint>Formation TEI | ENC 26-29 mai 2015</docImprint>
-        <note><ref target="https://github.com/tei-fr/formationEnc2015-05"
-            >Répertoire GitHub</ref></note>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="title" xml:lang="fr">

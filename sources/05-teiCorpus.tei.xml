@@ -8,10 +8,11 @@
             <p>from markdown</p>
          </publicationStmt>
         <sourceDesc>
-          <p>emchateau, ENC 2015</p>
+          <p>emchateau, ENC 2016</p>
         </sourceDesc>
       </fileDesc>
      <revisionDesc>
+       <change when="2016-05">modifications diverses et formatage</change>
        <change when="2015-05-24">conversion du fichier en TEI</change>
        <change when="2014-10-30">première rédaction</change>
      </revisionDesc>
@@ -28,7 +29,7 @@
        <p>class: center middle</p>-->
       <titlePage xml:lang="fr">
         <titlePart>05-Liens et structures complexes</titlePart>
-        <docImprint>Formation TEI | ENC 26-29 mai 2015</docImprint>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="title">
@@ -53,11 +54,7 @@
     </front>
     <body>
       <div type="part">
-        <div rend="title" xml:lang="fr" xml:id="part1">
-          <div>
-            <head>Les liens</head>
-          </div>
-        </div>
+        <head xml:lang="fr">Les liens</head>
         <div rend="slide" xml:lang="fr">
           <div>
             <div>
@@ -127,11 +124,7 @@
         </div>
       </div>
       <div type="part">
-        <div rend="title">
-          <div>
-            <head>Les corpus</head>
-          </div>
-        </div>
+        <head xml:lang="fr">Les corpus</head>
         <div rend="slide" xml:lang="fr" xml:id="part2">
           <div>
             <head>Macrostructures de texte composite</head>
@@ -216,7 +209,7 @@
             <p><ref target="http://www.w3.org/TR/xinclude/">XML Inclusions (XInclude) Version 1.0 (Second Edition), W3C Recommendation 15 November 2006.</ref></p>
           </div>
         </div>
-        <div>
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Utilisation de XInclude</head>
             <p>Pour faciliter la mise en œuvre du travail (par exemple pour répartir l'encodage entre des participants), il peut parfois être utile de traiter les éléments du corpus dans des fichiers séparés.</p>
@@ -239,11 +232,7 @@
         </div>
       </div>
       <div type="part">
-        <div rend="title" xml:id="part3">
-          <div>
-            <head>Les figures et facsimili</head>
-          </div>
-        </div>
+        <head xml:lang="fr">Les figures et facsimili</head>
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Description des figures (simple)</head>

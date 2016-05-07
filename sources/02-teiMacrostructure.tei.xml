@@ -9,10 +9,11 @@
         <p>from markdown</p>
       </publicationStmt>
       <sourceDesc>
-        <p>emchateau, ENC 2015</p>
+        <p>emchateau, ENC 2016</p>
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
+      <change when="2016-05">modifications diverses et formatage</change>
       <change when="2015-05-24">conversion du fichier en TEI</change>
       <change when="2014-10-30">première rédaction</change>
     </revisionDesc>
@@ -21,7 +22,7 @@
     <front>
       <titlePage xml:lang="fr">
         <titlePart>02-Macrostructure TEI</titlePart>
-        <docImprint>Formation TEI | ENC 26-29 mai 2015</docImprint>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="sommaire" xml:lang="fr" xml:id="index">

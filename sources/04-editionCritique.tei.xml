@@ -14,7 +14,7 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
-      <change when="2016-05">modifications pour la formation 2016</change>
+      <change when="2016-05">modifications diverses et formatage</change>
       <change when="2015-05-24">conversion du fichier en TEI</change>
       <change when="2014-10-30">première rédaction</change>
     </revisionDesc>
@@ -23,9 +23,7 @@
     <front>
       <titlePage xml:lang="fr">
         <titlePart>04-Édition critique des sources manuscrites</titlePart>
-        <docImprint>Formation TEI | ENC 9-12 mai 2016</docImprint>
-        <note><ref target="https://github.com/tei-fr/formationEnc2015-05"
-          >Répertoire GitHub</ref></note>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="title" xml:lang="fr">
@@ -39,7 +37,7 @@
           <p>Ces différents éléments de la Text Encoding Initiative vous permettent de décrire aussi finement que de besoin les phénomènes textuels rencontrés ainsi que d’embarquer directement l’apparat critique de votre édition à l’intérieur du balisage.</p>
         </div>
       </div>
-      <div rend="sommaire" xml:lang="fr">
+      <div rend="sommaire" xml:lang="fr"  xml:id="index">
         <div>
           <head>Sommaire</head>
           <list>
@@ -53,7 +51,7 @@
     <body>
       <div type="part" xml:id="part1">
         <head xml:lang="fr">L’inscription du texte sur le support</head>
-        <div><p>test</p></div>
+        <div type="comments"/>
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Prise en charge des lacunes</head>
@@ -258,7 +256,8 @@
     <back>
       <div rend="title" xml:lang="fr">
         <div>
-          <head>Exemple d’<ref target="ex04-witness.html">apparat critique</ref></head>
+          <!-- @todo ajouter exemple apparat critique -->
+          <head>Exemple d’<ref target="../travaux/witnessAngouleme.xml">apparat critique</ref></head>
           <note><ref target="#index">Revenir au début</ref></note>
           <note><ref target="00-programme.html">Programme</ref></note>
         </div>

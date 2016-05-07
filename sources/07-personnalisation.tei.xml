@@ -8,10 +8,11 @@
         <p>from markdown</p>
       </publicationStmt>
       <sourceDesc>
-        <p>emchateau, ENC 2015</p>
+        <p>emchateau, ENC 2016</p>
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
+      <change when="2016-05">Modifications diverses et mise au format</change>
       <change when="2015-05-24">conversion du fichier en TEI</change>
       <change when="2014-10-30">première rédaction</change>
     </revisionDesc>
@@ -19,8 +20,9 @@
   <text>
     <front>
       <titlePage xml:lang="fr">
-        <titlePart>07-persobnalisation</titlePart>
-        <titlePart>La personnalisation de la TEI</titlePart>
+        <titlePart>07-persobnalisation de la TEI</titlePart>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
+        <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="title" xml:lang="fr">
         <div>
@@ -47,11 +49,7 @@
     </front>
     <body>
       <div type="part" xml:id="part1">
-        <div rend="title" xml:lang="fr">
-          <div>
-            <head>Une logique modulaire</head>
-          </div>
-        </div>
+        <head xml:lang="fr">Une logique modulaire</head>
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Un système modulaire</head>
@@ -96,11 +94,7 @@
         </div>
       </div>
       <div type="part" xml:id="part2">
-        <div rend="title">
-          <div>
-            <head>Le Langage ODD</head>
-          </div>
-        </div>
+        <head xml:lang="fr">Le Langage ODD</head>
         <div rend="slide" xml:lang="fr">
           <head>De quoi a-t-on besoin ?</head>
           <list>
@@ -378,11 +372,7 @@
         </div>
       </div>
       <div type="part" xml:id="part3">
-        <div rend="title" xml:lang="fr">
-          <div>
-            <head>Génération d’un Schéma XML ou RelaxNG</head>
-          </div>
-        </div>
+        <head xml:lang="fr">Génération d’un Schéma XML ou RelaxNG</head>
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Le processeur ODD</head>

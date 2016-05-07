@@ -18,7 +18,7 @@
   <text>
     <front>
       <titlePage xml:lang="fr">
-        <titlePart>xx-TEI Stylesheets</titlePart>
+        <titlePart>08-TEI Stylesheets</titlePart>
         <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
@@ -45,11 +45,7 @@
     </front>
     <body>
       <div type="part">
-        <div rend="title" xml:lang="fr" xml:id="part1">
-          <div>
-            <head>Distribution des XSL Stylesheets</head>
-          </div>
-        </div>
+        <head xml:lang="fr">Distribution des XSL Stylesheets</head>
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Les XSL Stylesheet</head>
@@ -149,11 +145,7 @@
         </div>
       </div>
       <div type="part">
-        <div rend="title" xml:lang="fr" xml:id="part2">
-          <div>
-            <head>Transformations par défaut avec oXygen</head>
-          </div>
-        </div>
+        <head xml:lang="fr">Transformations par défaut avec oXygen</head>
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Scénarios du Framework TEI d’oXygen</head>
@@ -244,11 +236,7 @@
       </div>
       </div>
       <div type="part">
-        <div rend="title" xml:lang="fr" xml:id="part3">
-          <div>
-            <head>Personnalisation</head>
-          </div>
-        </div>
+        <head xml:lang="fr">Personnalisation</head>
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Plusieurs manières de personnaliser les XSL Stylesheets</head>

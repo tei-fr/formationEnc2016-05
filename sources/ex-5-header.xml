@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Exercice TEI Header</title>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Unknown</publisher>
+            <date when="2016">2016</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Document nativement numérique</p>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2016-05">Création du fichier</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <head>ex05 – Créer une en-tête simple</head>
+            <div>
+               <p>Dans cet exercice, nous allons maintenant enrichir l’en-tête de notre édition des textes de l’Oulipo. Il s’agit ici d’explorer les possibilités offertes par la TEI pour fournir les métadonnées concernant le fichier.</p>
+            </div>
+            <div>
+               <head>La description de fichier (<gi>fileDesc</gi>)</head>
+               <p>Pour le moment, votre en-tête TEI présente des informations minimales. Nous allons maintenant essayer de mieux renseigner la description de fichier.</p>
+               <list>
+                  <label>Donner un titre à votre édition</label>
+                  <item>Dans <gi>titleStmt</gi>, donnez un titre et un sous-titre à votre édition.</item>
+                  <label>Fournir les mentions de responsabilité</label>
+                  <item>Toujours à l’intérieur de <gi>titleStmt</gi>, renseignez maintenant l’éditeur (on dira pour l’exercice qu’il s’agit de Lou Burnard), renseignez le transcripteur (on dira ici que c’est vous).</item>
+                  <label>Indications sur le financement du projet</label>
+                  <item>Comme votre édition est financée par l’Agence Nationale de Recherche, vous voulez l’indiquer.</item>
+                  <label>Renseigner les mentions de publication</label>
+                  <item>Vous allez maintenant renseigner les mention de publication avec <gi>publicationStmt</gi>. Observez à quel endroit le schéma vous permet d’ajouter cet élément. Donnez ici une date de publication, et un responsable de la publication (disons la Bibliothèque nationale de France).</item>
+                  <label>Description de la source</label>
+                  <item>La description de la source avec <gi>sourceDesc</gi> est obligatoire dans un fichier TEI. Précisons-la maintenant.</item>
+               </list>
+            </div>
+            <div>
+               <head>La description de l’encodage (<gi>encodingDesc</gi>)</head>
+               <p>Nous allons maintenant essayer de fournir des indications sur l’encodage du fichier.</p>
+               <list>
+                  <label>Fournir un élément <gi>encodingDesc</gi></label>
+                  <item>Ajoutez à votre fichier un élément <gi>encodingDesc</gi> après <gi>fileDesc</gi>.</item>
+                  <label>Observer les éléments disponibles dans <gi>encodingDesc</gi></label>
+                  <item>Dans <gi>encodingDesc</gi>, plusieurs sous-éléments sont disponibles pour indiquer la manière dont le texte est encodé. Positionnez-vous à l’intérieur de <gi>encodingDesc</gi> et tappez &lt; pour observer les éléments disponibles, et parcourez les.</item>
+                  <label>Donner des indications éditoriales</label>
+                  <item>Nous voulons fournir des indications sur nos pratiques éditoriales avec <gi>editorialDecl</gi>. Observez à nouveau les sous-éléments disponibles. Nous nous contenterons de les donner en texte libre avec <gi>p</gi>.</item>
+               </list>
+            </div>
+            <div>
+               <head>Indication sur les révisions</head>
+               <p>Au fur et à mesure de votre édition, il pourrait être utile de renseigner l’historiques des révisions apportées à vorte fichier.</p>
+               <list>
+                  <label>Ajouter un élément sur les révisions</label>
+                  <item>Après <gi>encodingDesc</gi>, ajoutez maintenant un élément <gi>revisionDesc</gi></item>
+                  <label>Indiquer la création sur fichier</label>
+                  <item>Dans cet élement revisonDesc, essayez d’indiquer la date de création du fichier et de fournir une date.</item>
+               </list>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

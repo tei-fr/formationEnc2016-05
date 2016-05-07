@@ -62,7 +62,7 @@
                   <label>Ajouter un élément sur les révisions</label>
                   <item>Après <gi>encodingDesc</gi>, ajoutez maintenant un élément <gi>revisionDesc</gi></item>
                   <label>Indiquer la création sur fichier</label>
-                  <item>Dans cet élement revisonDesc, essayez d’indiquer la date de création du fichier et de fournir une date.</item>
+                  <item>Dans cet élement <gi>revisonDesc</gi>, essayez d’indiquer la date de création du fichier et de fournir une date.</item>
                </list>
             </div>
          </div>

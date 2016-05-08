@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<msDesc><!-- Description d'une source originale (manuscrit ou imprimé ancien) -->
+    <msIdentifier>
+        <country><!-- Pays --></country>
+        <settlement><!-- Ville --></settlement>
+        <institution><!-- institution conservatrice --></institution>
+        <repository><!--Fonds de l'institution conservatrice--></repository>       
+        <idno type="cote"><!-- Renseigner ici la cote de l'exemplaire --></idno>
+    </msIdentifier>
+    <msContents>
+        <p><!-- une description sommaire du contenu intellectuel -->
+        </p>
+        <!-- ou bien un ou plusieurs ... -->
+        <msItem> 
+            <!-- description/s des item/s distingues dans le ms: sont disponibles par ex <title> <author> etc. -->
+        </msItem>
+    </msContents>
+    <physDesc>
+        <!-- Description physique de la source -->
+        <objectDesc>
+            <supportDesc>
+                <collation>
+                    <p><!-- collation --></p>
+                    <dimensions>
+                        <dim type="format"><!-- format --></dim>
+                    </dimensions>
+                </collation>
+                <condition><p><!-- Etat physique --></p></condition>
+            </supportDesc>
+        </objectDesc>
+        <additions><p><!-- Ajouts, annotations marginales--></p></additions>
+        <bindingDesc><binding><p><!--Description de reliure--></p></binding>
+        </bindingDesc>
+    </physDesc>
+    <history><!-- historique de la source -->
+        <provenance><p><!-- Information sur les possesseurs de l'exemplaire --></p></provenance>
+    </history>
+    <additional>
+        <adminInfo>
+            <recordHist><!-- Histoire de la notice bibliographique -->
+                <source><!-- Sources bibliographiques de la présente notice -->
+                    <listBibl>
+                        <bibl>
+                            <ref target="ajouter-ici-URL"><!-- Texte du lien --></ref>
+                            <idno type="notice"><!-- notice --></idno>
+                        </bibl>
+                        
+                    </listBibl>
+                </source><!-- Historique des modifications de la notice (<sourceDesc> dans <teiHeader> -->
+                <change><!-- Zone répétable autant de <change> que de lignes de modification --></change>
+            </recordHist>
+        </adminInfo>
+        <surrogates>
+            <!--reproduction numérique de la source-->
+            <bibl>
+                <!--lien vers la reproduction numérique de la source-->
+                <relatedItem type="original">
+                    <ref target="ajouter-ici-URL"><!-- texte du lien --></ref>
+                </relatedItem>
+            </bibl></surrogates>
+    </additional>
+    <msPart><!-- Relié avec -->
+        <altIdentifier>
+            <idno type="cote"><!-- cote --></idno>
+        </altIdentifier>
+        <msContents>
+            <p><!-- Description des documents reliés avec --></p>
+        </msContents>
+        
+    </msPart>
+</msDesc>

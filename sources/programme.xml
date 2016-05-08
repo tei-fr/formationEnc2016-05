@@ -70,13 +70,7 @@
                         <p>Comment partir des complexités du modèle vers la TEI; les 5 étapes;
                             modules, classes etc.</p>
                         <p><ref target="talk-tei-intro.xml">talk-tei-intro</ref></p>
-                        <!-- <p>A construire <bibl><title>L'envergure de la TEI Un tour d'horizon de
-                                    l'univers TEI</title>
-                                <ident>lbc:2013-03-lille/talk-4.xml</ident></bibl>; <bibl>
-                                <title>Comment se servir des TEI Guidelines? </title>
-                                <ident>lbc:2016-01-tours/talk-03.xml</ident>
-                            </bibl>-->
-                        <!--</p>-->
+                       
                     </div>
                     <div xml:id="T05" resp="#EM ">
                         <head>15h - 17h : Personnalisation TEI avec Roma– TP EM</head>
@@ -137,7 +131,7 @@
                         
                     </div>
                     <div xml:id="T08bis" resp="#EM">
-                        <head>12h -12h30 TEI Header – TP EM</head><!-- à fournir -->
+                        <head>12h -12h30 TEI Header – TP EM</head>
                         <p><ref target="ex-5-header.xml">ex-5-header</ref></p>
                         <list type="unordered">
                             <item>créer un header simple</item>
@@ -155,8 +149,7 @@
                     </div>
                     <div xml:id="T10" resp="#LB">
                         <head>14h15 - 15h30 TEI Msdescription – TP LB</head>
-                        <!-- à fournir -->
-                        <p><ref target="ex-5-msdesc.xml">ex-5-msdesc</ref></p>
+                         <p><ref target="ex-6-msdesc.xml">ex-6-msdesc</ref></p>
                     </div>
                     <div>
                         <head>pause</head>

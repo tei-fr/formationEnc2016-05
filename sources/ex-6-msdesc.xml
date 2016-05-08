@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Creation d'une description de manuscrit TEI</title>
+        <author>Lou Burnard Consulting</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>TEI</publisher>
+        <availability>
+          <p>Freely available for use and derivative works under a Creative Commons Attribution
+            license.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Some bits may be lifted from previous talks/workshops by the TEI Community.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+      <head>ex06 – Créer une description de manuscrit</head>
+      <div>
+        <p>Dans cet exercice, nous allons considerer comment decrire et baliser des descriptions de
+          manuscrits, a fin d'effectuer un catalogage exhaustif de ces objets precieux. Il s’agit
+          ici d’explorer les possibilités offertes par l'element TEI <gi>msDesc</gi> pour fournir
+          les métadonnées concernant la source.</p>
+      </div>
+      <div>
+        <head>Un cas typique</head>
+        <p>D'abord, un ms du 16eme, extrait du fonds de la Bibliotheque Municipale d'Orleans, le MS
+          629, dont voici les pages initiales : <figure>
+            <graphic url="../images/ms629-00.png" width="70%"/>
+          </figure>
+        </p>
+        <p><figure>
+            <graphic url="../images/ms629-02.png" width="70%"/>
+          </figure>
+        </p>
+
+
+        <p>Et voici les informations descriptives du manuscrit qu'on souhaite structurer dans un
+            <gi>msDesc</gi></p>
+        <list type="gloss">
+
+          <label>Notice n°</label>
+          <item>11640</item>
+
+          <label> Auteur: </label>
+          <item>Colas, Jacques </item>
+          <label> Titre: </label>
+          <item> Suputation nouvellement faicte de la valeur des monnoyes et abuz dicelles quant a
+            la mise Par Jaques Colas de paris Nihil est opertum quod non reveletur. </item>
+          <label> Date: </label>
+          <item> 1557 </item>
+          <label> Format:</label>
+          <item> 8° </item>
+          <label>Collation:</label>
+          <item> 2 f. préliminaire (1er blanc, 2e C'est de Jaques Colas Spes mea deus.) 52 f. 3 f.
+            postliminaires. </item>
+          <label> Institution: </label>
+          <item> Bibliothèque municipale </item>
+          <label> Ville: </label>
+          <item> Orléans </item>
+          <label> Cote: </label>
+          <item> Ms. 629 </item>
+          <label>Référence bibliographique: </label>
+          <item> Catalogue reliure p. 53. </item>
+          <label> Etat physique: </label>
+          <item> Dans un très bon état, sauf les représentations de monnaies, avec argent et or, qui
+            sont très effacées. </item>
+          <label> Reliure:</label>
+          <item> Reliure veau brun (XVIe siècle) </item>
+          <label> Provenance: </label>
+          <item> Au feuillet chiffré 1 : "Ce present livre ma este donne de monsieur et père
+            monsieur Colas, conseiller du Roy et general en son court des monnoyes, le Sixme jour de
+            novembre mil vc soisante dixneuf. Colas / Mon espoir passe ma fortune". </item>
+          <label>Numérisation</label>
+          <item> 10/10/2008 17:57:39 Fac-similé numérisé</item>
+        </list>
+        <p>Pour chacun de ces items, il existe un élément TEI qui lui correspond. A vous de le
+          trouver, et de créer ainsi un joli <gi>msDesc</gi> bien structuré. Utilisez le schema
+            <ident>tei-msdesc.rnc</ident> pour assurer la validite de votre description, et pour
+          vous aider dans sa preparation. Vous trouverez dans le fichier <gi>ms629_dtls.txt</gi> les informations presentées au-dessus et
+dans            <gi>msDesc-squelette.xml</gi> une proposition de structuration pour vous aider. Si vous l'utilisez, n'oubliez pas d'enlever
+          du squelette les parties non-utilisées et de l'enregistrer sous une autre nom !</p>
+      </div>
+      <div>
+        <head>Un tapuscrit oulipien</head>
+        <p>Regardez (par exemple) le tapuscrit <ident>cr610417</ident> d'un oeuil de catalogueur. Qu'est-ce que
+          nous voyons? Sauriez vous créer un <gi>msDesc</gi> pour cela? Notez que les responsables
+          de la transcription que vous avez déjà vue prenaient position que la source du texte
+          numerisé serait la réunion décrite at non pas le tapuscrit lui même. Pour cette raison ils
+          ont utilisé la balise <gi>meeting</gi> (réunion) dans sa <gi>sourceDescription</gi>, et ne
+          font pas mention des détails physiques des tapuscrits. Supposons que dans un accès d'enthousiasme
+          bibliographique nous essayons de décrire la source elle-même, de quelles informations
+          disposons-nous?</p>
+        <p>Nous avons des identifiants: le titre fourni <title>Dossiers mensuels de
+            réunion (1960-2010) / 1961 / Décembre 1961. (Feuillets 1-5)</title> et sa cote à la BNF
+          indiquée par un identifiant de type "ark" <ident>12148/btv1b100100073</ident>. Nous savons
+          bien sur comment décrire la Bibliothèque de l'Arsenal, ou se trouve le fonds qui contient
+          ce tapuscrit.</p>
+        <p>Pour la reste, on peut constater que physiquement il s'agit de plusieurs feuilles de
+          papier de taille variable, tapées a la machine, qu'il y a des evidences de plusieurs
+          numérotations (collation) éffectuées dans le passé, et également des traces d'une trombone,
+          et plusiers tampons. Nous pouvons tenter d'identifier les personnes responables de la creation du document
+          originel, des annotations eventuelles, et de sa numerisation.
+     </p><p>Tout cela est, bien sur, exprimable dans un <gi>msDesc</gi>. Essayez cela, et ajoutez le <gi>msDesc</gi> qui en ressort dans
+       la <gi>sourceDesc</gi> de votre document Oulipo.
+          </p>
+
+
+      </div>
+
+
+    </body>
+  </text>
+</TEI>

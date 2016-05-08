@@ -327,7 +327,7 @@
               <p>Enregistre les révisions et modifications du fichier</p>
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
                 <revisionDesc>
-                  <change when="2009-11" who="#VJ">Deuxième édition éclectronique</change>
+                  <change when="2009-11" who="#VJ">Deuxième édition électronique</change>
                   <change when="2009-10" who="#FG">Schéma et transformations</change>
                   <change when="2009-10" who="#CD">Encodage de l'apparat critique</change>
                 </revisionDesc>

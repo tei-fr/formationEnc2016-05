@@ -150,11 +150,9 @@
         <list>
           <item>un ensemble d'images numérique, chacun représentant une page d'une ressource </item>
           <item>une transcription plus ou moins complète du texte qui figure sur ces pages</item>
-          <item>des metadonnées concernant les ressources numerisées, par ex. leur relation, leur
-            origine etc.</item>
-          <item>des metadonnées concenant la manière de sa numérisation</item>
-          <item>des annotations plus ou moins riches sur les entités referenciés par les textes, la
-            langue des textes, etc</item>
+          <item>des métadonnées concernant les ressources numérisées, par ex. leur relation, leur origine etc.</item>
+          <item>des métadonnées concernant la manière de sa numérisation</item>
+          <item>des annotations plus ou moins riches sur les entités réferencées par les textes, la langue des textes, etc</item>
         </list>
         <p rend="box">Le système TEI nous propose plusieurs manières d'organiser tout cela</p>
       </div>
@@ -170,8 +168,7 @@
 
           <item><gi>sourceDoc</gi> : transcription quasiment objective des aspects physique d'un
             document </item>
-          <item><gi>teiHeader</gi> : rassemble les métadonnées qui décrivent les objects traités et
-            les méthodes d'encodage concernées </item>
+          <item><gi>teiHeader</gi> : rassemble les métadonnées qui décrivent les objets traités et les méthodes d'encodage concernées </item>
         </list>
         <p rend="box">Un élément <gi>TEI</gi> contient au minimum un <gi>teiHeader</gi>, suivi d'un
           ou plusieurs des autres possibilités</p>

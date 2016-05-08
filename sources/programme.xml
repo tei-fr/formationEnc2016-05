@@ -70,11 +70,11 @@
                         <p>Comment partir des complexités du modèle vers la TEI; les 5 étapes;
                             modules, classes etc.</p>
                         <p><ref target="talk-tei-intro.xml">talk-tei-intro</ref></p>
-                       
+
                     </div>
                     <div xml:id="T05" resp="#EM ">
                         <head>15h - 17h : Personnalisation TEI avec Roma– TP EM</head>
-                        <p><ref target="ex-3-roma.xml">ex-roma</ref></p>
+                        <p><ref target="ex-3-roma.xml">ex-3-roma</ref></p>
                         <list>
                             <item> Création avec Roma ODD schéma réduit</item>
                             <item> Génération du schéma et de l’ODD</item>
@@ -92,20 +92,25 @@
                                 leur permettra de reprendre le même document le matin et corriger
                                 les fautes.</item> -->
                         </list>
-                        <p>Avant de partir, ne pas oublier de prévenir les participants que nous attendons d’eux trois diapositives de présentation de leur projet pour le lendemain.</p>
+                        <p>Avant de partir, ne pas oublier de prévenir les participants que nous
+                            attendons d’eux trois diapositives de présentation de leur projet pour
+                            le lendemain.</p>
                     </div>
                     <div>
                         <head>Social event (bière)</head>
-                        <p>Il faut que je pense à réserver ou choisir un endroit, tout n’est pas toujours ouvert le lundi. Le Café Vivienne possède une petite salle à l’étage qui serait parfaite, mais voudront-ils l’ouvrir pour 12 personnes ?</p>
+                        <p>Il faut que je pense à réserver ou choisir un endroit, tout n’est pas
+                            toujours ouvert le lundi. Le Café Vivienne possède une petite salle à
+                            l’étage qui serait parfaite, mais voudront-ils l’ouvrir pour 12
+                            personnes ?</p>
                     </div>
                 </div>
                 <div>
                     <head>2ème journée…</head>
                     <div xml:id="T06" resp="#EM">
                         <head>9h30-10h min Édition critique – PM EM</head>
-                        <p>Transcription sources primaires : segmentation ; interventions éditoriales </p>
-                        <p><ref target="04-editionCritique.tei.xml"
-                            >04-editionCritique.tei</ref></p>
+                        <p>Transcription sources primaires : segmentation ; interventions
+                            éditoriales </p>
+                        <p><ref target="04-editionCritique.tei.xml">04-editionCritique.tei</ref></p>
                         <p> cf. <ident>2015-09-lyon/talk-07-ms.xml</ident>;
                                 <ident>2015-09-lyon/04-editionCritique.tei.xml</ident>
                         </p>
@@ -128,7 +133,7 @@
                     <div xml:id="T08" resp="#EM">
                         <head>11h30 -1200 TEI Header – PM EM</head>
                         <p><ref target="03-teiHeader.tei.xml">03-teiHeader.tei</ref></p>
-                        
+
                     </div>
                     <div xml:id="T08bis" resp="#EM">
                         <head>12h -12h30 TEI Header – TP EM</head>
@@ -149,7 +154,7 @@
                     </div>
                     <div xml:id="T10" resp="#LB">
                         <head>14h15 - 15h30 TEI Msdescription – TP LB</head>
-                         <p><ref target="ex-6-msdesc.xml">ex-6-msdesc</ref></p>
+                        <p><ref target="ex-6-msdesc.xml">ex-6-msdesc</ref></p>
                     </div>
                     <div>
                         <head>pause</head>
@@ -192,7 +197,8 @@
                         <head>12h - 12h30 Cas d’étude : organisation du projet Oulipo – TP EM </head>
                         <!-- a fournir -->
                         <p><ref target="ex-8-organisation.xml">ex-8-organisation</ref></p>
-                        <p>Comment organiser le projet imaginaire: importance de versioning ; démontrer usage de Github ? </p>
+                        <p>Comment organiser le projet imaginaire: importance de versioning ;
+                            démontrer usage de Github ? </p>
                     </div>
                     <div>
                         <head>LUNCH</head>
@@ -220,16 +226,20 @@
                         <head>15h30 - 16h15 : Florilège de projets TEI – PM+TP LB</head>
                         <p><ref target="tei-florilege.xml"/></p>
                         <!-- a mettre a jour -->
+
+                    </div>
+                    <div xml:id="T18" resp="#LB">
+                        <head>16h15-17h : Explorations</head>
                         <p>Comment les gens se servent de la TEI</p>
                         <p><ref target="ex-tei-explore.xml">ex-tei-explore</ref></p>
                     </div>
-                    <div xml:id="T18" resp="#EM">
+                    <!-- <div xml:id="T18" resp="#EM">
                         <head>16h15-17h : XPath TP – EM</head>
-                        <!-- ? is this same as first part of xslt pour les nuls? -->
-                        <!-- si oui, le supprimer, et remplacer par l'ex precedent -->
+                        <!-\- ? is this same as first part of xslt pour les nuls? -\->
+                        <!-\- si oui, le supprimer, et remplacer par l'ex precedent -\->
                         <p>Rappel de l'intérêt de structuration ; technique essentiel pour ce qui
                             suit</p>
-                    </div>
+                    </div>-->
                 </div>
                 <div>
                     <head>4ème journée…</head>
@@ -301,8 +311,16 @@
             </div>
             <div>
                 <head>Quelques documents OULIPO</head>
-                <p>Le dossier <ident>oulipoDox</ident> rassemble quelques un des comptes-rendus des réunions de l’Oulipo (l’Ouvroir de littérature potentielle) des années 60. Ils sont présentés en mode page-image (un fichier par page) et également dans un fichier XML-TEI crée dans le cadre du projet (en cours) DifDepo. Le balisage est très sommaire, et nous allons l’améliorer et l’approfondir.</p>
-                <p>Chaque fichier est nommé avec la date de la réunion concernée. Par exemple, le fichier <ident>cr610417.xml</ident> est une transcription TEI du CR de la réunion du 17 avril 1961 ; il y a trois fichiers pages-images correspondants : <ident>cr610417_2.jpg</ident>, <ident>cr610417_1.jpg</ident>, et <ident>cr610417_1.jpg</ident>. </p>
+                <p>Le dossier <ident>oulipoDox</ident> rassemble quelques un des comptes-rendus des
+                    réunions de l’Oulipo (l’Ouvroir de littérature potentielle) des années 60. Ils
+                    sont présentés en mode page-image (un fichier par page) et également dans un
+                    fichier XML-TEI crée dans le cadre du projet (en cours) DifDepo. Le balisage est
+                    très sommaire, et nous allons l’améliorer et l’approfondir.</p>
+                <p>Chaque fichier est nommé avec la date de la réunion concernée. Par exemple, le
+                    fichier <ident>cr610417.xml</ident> est une transcription TEI du CR de la
+                    réunion du 17 avril 1961 ; il y a trois fichiers pages-images correspondants :
+                        <ident>cr610417_2.jpg</ident>, <ident>cr610417_1.jpg</ident>, et
+                        <ident>cr610417_1.jpg</ident>. </p>
                 <!--   <p><ref target="http://gallica.bnf.fr/ark:/12148/btv1b100101635"><hi
                             rend="underline color(1155cc)"
                             >http://gallica.bnf.fr/ark:/12148/btv1b100101635</hi></ref> :

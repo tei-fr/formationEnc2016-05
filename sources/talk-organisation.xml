@@ -1,0 +1,623 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+           <title>Modalités d’organisation des documents TEI</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>from markdown</p>
+         </publicationStmt>
+        <sourceDesc>
+          <p>emchateau, ENC 2015</p>
+        </sourceDesc>
+      </fileDesc>
+     <revisionDesc>
+       <change when="2015-05-24">conversion du fichier en TEI</change>
+       <change when="2014-10-30">première rédaction</change>
+     </revisionDesc>
+   </teiHeader>
+  <text>
+<!--    <front>
+      <!-\-<p>title: 07-teiCorpus</p>
+       <p>description: emchateau, ENC 27-30 octobre 2014</p>
+       <p>theme: theme/remark-dark.css</p>
+       <p>name: inverse</p>
+       <p>layout: true</p>
+       <p>class: inverse</p>
+       <p>-\\-\\-</p>
+       <p>class: center middle</p>-\->
+      <titlePage xml:lang="fr">
+        <titlePart>05-Liens et structures complexes</titlePart>
+        <docImprint>Formation TEI | ENC 26-29 mai 2015</docImprint>
+        <note><ref target="00-programme.html">Programme</ref></note>
+      </titlePage>
+      <div type="title">
+        <div>
+          <head>Introduction</head>
+        </div>
+        <div>
+          <head>Introduction</head>
+          <p>On l’a vu, la Text Encoding Initiative fournit un grand nombre de balises dans lesquelles il est possible de puiser pour modéliser son texte. Personne ne les utilise toutes dans le cadre d’un même projet. En d’autres termes, on doit construire des représentations du texte source qui reflètent les phénomènes que l’on observe d’un point de vue structurel, sémantique ou linguistique, et que l’on va modéliser d’après la manière dont on espère les exploiter par la suite. À cet égard, la modélisation XML-TEI est une opération intrinsèque au processus éditorial et qui a directement trait au caractère scientifique de l’édition numérique. Puisqu’il s’agit bel et bien de produire un artefact orienté.</p>
+        </div>
+      </div>
+      <div type="sommaire" xml:lang="fr" xml:id="index">
+        <div>
+          <head>Sommaire</head>
+          <list>
+            <item><ref target="#part1">Les liens</ref></item>
+            <item><ref target="#part2">Les Corpus</ref></item>
+            <item><ref target="#part3">Les figures et facsimili</ref></item>
+          </list>
+        </div>
+      </div>
+    </front>
+    <body>
+      <div type="part">
+        <div type="title" xml:lang="fr" xml:id="part1">
+          <div>
+            <head>Les liens</head>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <div>
+              <head>Créer des liens</head>
+              <p><gi>ptr</gi> pointeur vers un autre emplacement (élément vide)</p>
+              <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                <ptr target="url.fr"/>
+              </egXML>
+              <p><gi>ref</gi> référence vers un autre emplacement (complément d’information)</p>
+              <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                <ref type="note" target="#nH201">Passage annoté</ref>
+              </egXML>
+            </div>
+            <div>
+              <head>Attributs</head>
+              <list>
+                <item>
+                  <att>xml:id</att> ancre pour identifier l'élément de référence</item>
+                <item><att>target</att> spécifie la destination de la référence</item>
+                <item><att>corresp</att> indique un élément correspondant</item>
+              </list>
+            </div>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Notes de commentaire historique</head>
+            <p><code>note</code> élément pour l’enregistrement d’une note</p>
+            <list>
+              <item>soit encodée directement dans le texte</item>
+              <item>soit regroupées à un autre endroit</item>
+            </list>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <p>Le fût de chaque colonne est cannelé de vingt
+                quatre canneaux dans son pourtour<ref
+                  type="noteHistorical" target="#c2Nh0081"/>. En...
+              </p>
+              <!-\- ... -\->
+              <note xml:id="c2Nh0081"><p>texte de la note</p></note>
+            </egXML>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Localisation référencée</head>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <div type="alignmentText" xml:id="cAlignmentText">
+                <linkGrp>
+                  <!-\- Front -\->
+                  <link target="#c1Front #c2Front"/>
+                  <link target="#c1FrontFr #c2FrontFr02"/>
+                  <link target="#c1FrontFr01 #c2FrontFr01"/>
+                  <link
+                    target="#c1FrontFr01.p001 #c2FrontFr01.p001"/>
+                  <!-\- ... -\->
+                </linkGrp>
+              </div>
+            </egXML>
+          </div>
+          <div>
+            <head>Localisation référencée</head>
+            <p>L’utilisation d’identifiants uniques rassemble plusieurs avantages, ceux-ci permettent d’identifier précisément, à l’exclusion de tout autre, une unité textuelle ou un passage dans l’un des manuscrits.</p>
+            <p>Ils constituent donc une bonne pratique notamment pour la citabilité.</p>
+            <p>Comme on utilise ici l’attribut global de XML <att>xml:id</att> qui doit nécessairement être unique dans un fichier XML, il y a un contrôle d’unicité (ce contrôle s’applique à l’ensemble du corpus car il est compris dans une arborescence de fichiers XML).</p>
+            <p>Enfin, le fait d’utiliser des identifiants uniques, a surtout l’avantage de permettre de traiter les regroupements de paragraphes, les interversions, les ajouts, indépendamment du manuscrit édité (et donc par la suite éventuellement d’éditer toutes les variantes du texte ou le réemploi des sources XML-TEI dans d’autres projets).</p>
+          </div>
+        </div>
+      </div>
+      <div type="part">
+        <div type="title">
+          <div>
+            <head>Les corpus</head>
+          </div>
+        </div>-->
+      <body>
+        <div rend="slide">
+          <head>Structure(s) d'un document TEI-XML</head>
+          <list>
+            <item>Chaque document TEI est représenté par un élément <gi>TEI</gi>, regroupant de texte
+              et des metadonnées </item>
+            <item>On peut également regrouper des <gi>TEI</gi> dans  un <gi>teiCorpus</gi></item>
+          </list>
+          <p rend="box"> Le terme <term rend="it">document </term> n'a aucune définition formelle,
+            mais d'habitude il correspond à un object complet (un livre par ex). D'autres possibilités
+            ne sont pas exclus... </p>
+        </div>
+        <!-- <div rend="slide">
+        <head> Comment structurer un corpus TEI-XML?</head>
+        <p>
+          <graphic url="../Graphics/struct-2.png" height="80%"/>
+        </p>
+        <p>Le <gi>teiHeader</gi> d'un corpus rassemble les metadonnées communes à un ensemble de
+          documents TEI.</p>
+      </div>
+-->
+        <div>
+          <head>Un document TEI peut rassembler...</head>
+          <list>
+            <item>un ensemble de représentations visuelles (<gi>facsimile</gi>)</item>
+            <item>ou une transcription textuelle (<gi>text</gi>) </item>
+            <item>ou une transcription documentaire (<gi>sourceDoc</gi>) </item>
+            <item>ou ces trois types d'objet conjointement</item>
+          </list>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
+            <TEI>
+              <teiHeader>
+                <!-- obligatoire :  métadonnées  -->
+              </teiHeader>
+              <facsimile>
+                <!-- facultatif :  rassemble des images de l'objet-->
+              </facsimile>
+              <sourceDoc>
+                <!-- facultatif :  transcription documentaire  de l'objet -->
+              </sourceDoc>
+              <text>
+                <!-- facultatif :  transcription textuelle  de l'objet -->
+              </text>
+            </TEI>
+          </egXML>
+        </div>
+        <div>
+          <head>Un TEI Corpus par contre.... </head>
+          <p>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <teiCorpus>
+                <teiHeader>
+                  <!-- obligatoire -->
+                </teiHeader>
+                <TEI>
+                  <!-- obligatoire -->
+                </TEI>
+                <!-- encore d'elements <TEI>  -->
+              </teiCorpus>
+            </egXML>
+          </p>
+          <p rend="box">Cette structure servirait par ex à une collection de livres de cette sorte</p>
+        </div>
+        <div type="slide" xml:lang="fr" xml:id="part2">
+          <div>
+            <head>Macrostructures de texte composite</head>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <TEI>
+                <teiHeader><!-- ... --></teiHeader>
+                <text>
+                  <front><!-- ... --></front>
+                  <group>
+                    <text>
+                      <front><!-- ... --></front>
+                      <body><!-- ... --></body>
+                      <back><!-- ... --></back>
+                    </text>
+                    <text><!-- ... --></text>
+                    <text><!-- ... --></text>
+                  </group>
+                  <back><!-- ... --></back>
+                </text>
+              </TEI>
+            </egXML>
+          </div>
+        </div>
+        <div>
+          <head>L'édition numérique : en pratique</head>
+          <p>On fait une édition numérique à partir des composants suivants: </p>
+          <list>
+            <item>un ensemble d'images numérique, chacun représentant une page d'une ressource </item>
+            <item>une transcription plus ou moins complète des textes qui figurent sur ces
+              pages</item>
+            <item>des metadonnées concernant les ressources numerisées, par ex. leur relation </item>
+            <item>des metadonnées concenant la manière de sa numérisation</item>
+            <item>des annotations plus ou moins riches sur les entités referenciés par les textes, la
+              langue des textes, etc</item>
+          </list>
+          <p rend="box">Le système TEI nous propose plusieurs manières d'organiser tout cela</p>
+        </div>
+        <div>
+          <head>Structures TEI pour la transcription des sources</head>
+          <list>
+            <item><gi>text</gi> : rassemble une lecture structurée du contenu intellectuel d'un
+              document (ou en ensemble des documents) son <q>texte</q></item>
+            <item><gi>facsimile</gi> : regroupe un ensemble d'images représentant les pages
+              (<foreign>vel sim</foreign>) d'un document</item>
+            <item><gi>sourceDoc</gi> : facsimile et transcription quasiment objective des aspects
+              physique d'un seul document </item>
+            <item><gi>teiHeader</gi> : fournit des métadonnées qui décrivent les objects traités et
+              les méthodes d'encodage concernées </item>
+          </list>
+          <p rend="box">Un élément <gi>TEI</gi> contient au minimum un <gi>teiHeader</gi>, suivi d'un
+            ou plusieurs des autres possibilités</p>
+        </div>
+        <div xml:lang="fr">
+          <head> Deux méthodes simplissimes pour gérer un "facsimilé numérique"</head>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
+            <TEI>
+              <teiHeader>
+                <!-- metadonnées sur l'édition numerique -->
+              </teiHeader>
+              <facsimile>
+                <graphic url="page1r.png"/>
+                <graphic url="page1v.png"/>
+                <graphic url="page2r.png"/>
+                <graphic url="page2v.png"/>
+              </facsimile>
+            </TEI>
+          </egXML>
+          <p>NB: aucune manière de structurer les images</p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
+            <TEI>
+              <teiHeader>
+                <!-- metadonnées sur l'édition numerique -->
+              </teiHeader>
+              <text>
+                <pb facs="page1.png"/>
+                <!-- texte de la  page 1 facultativement transcrit ici -->
+                <pb facs="page2.png"/>
+                <!-- texte de la  page 2 facultativement transcrit ici-->
+              </text>
+            </TEI>
+          </egXML>
+          <p>(On se servirait de <gi>sourceDoc</gi> au lieu de <gi>text</gi> selon ses principes
+            editoriaux)</p>
+        </div>
+        <div xml:lang="en">
+          <head>Inconvénients</head>
+          <list>
+            <item>difficile de supporter des relations plus compliquées </item>
+            <item>maintien difficile d'informations propres à l'image </item>
+            <item>nécessité donc d'intégration avec d'autres fichiers (typiquement METS) </item>
+          </list>
+          <p> .Problèmes : </p>
+          <list>
+            <item>plusieurs images pour une seul page</item>
+            <item>comment associer des pages, par ex pour une feuille, ou une double-page </item>
+          </list>
+        </div>
+        <div>
+          <head>On dispose de versions alternatives d'une même image ?</head>
+          <p>L'élément <gi>surface</gi> nous permet de regrouper les images équivalentes: </p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <facsimile>
+              <graphic url="page1.png"/>
+              <surface>
+                <graphic url="page2-highRes.png"/>
+                <graphic url="page2-lowRes.png"/>
+              </surface>
+              <graphic url="page3.png"/>
+              <graphic url="page4.png"/>
+            </facsimile>
+          </egXML>
+        </div>
+        <div>
+          <head>On veut identifier les feuilles d'un manuscrit ?</head>
+          <p>L'élément <gi>surfaceGrp</gi> nous permet de regrouper les surfaces: </p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <facsimile>
+              <surfaceGrp type="leaf">
+                <surface>
+                  <graphic url="page1recto.png"/>
+                </surface>
+                <surface>
+                  <graphic url="page1verso.png"/>
+                </surface>
+              </surfaceGrp>
+            </facsimile>
+          </egXML>
+        </div>
+        <div>
+          <head>On veut distinguer des sous-parties d'une surface</head>
+          <p>L'élément <gi>zone</gi> nous permet d'identifier n'importe quelle région d'une surface. </p>
+          <list>
+            <item>Un <gi>zone</gi> identifie un polygone (pas forcément rectangulaire) : un espace en
+              2d</item>
+            <item>Il est défini ou bien par l'attribut <att>points</att> ou bien par les attributs
+              <att>ulx</att>, <att>uly</att>, <att>lrx</att> et <att>lry</att></item>
+            <item>Toute définition de zone doit utiliser le <term>système de coordonnées</term>
+              définie pour la surface </item>
+            <item>Un système de coordonnées définit une plage de valeurs pour les paires de
+              coordonnées (x,y) qui expriment un polygone 2d </item>
+            <item>(il ne s'agit pas d'une mensuration)</item>
+          </list>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
+            <facsimile>
+              <surface ulx="0" uly="0" lrx="40" lry="30">
+                <graphic url="page1r.png"/>
+                <zone points="22,10 30,21 17,25 12,23">
+                  <graphic url="page1rdetail.png"/>
+                </zone>
+              </surface>
+            </facsimile>
+          </egXML>
+        </div>
+        <div>
+          <head>Lier les images avec leur transcription</head>
+          <list>
+            <item>L'attribut <att>facs</att> est disponible sur tout élément de transcription. Il
+              pointe sur un <gi>zone</gi>, <gi>surface</gi>, ou (plus simplement) sur un
+              <gi>graphic</gi>
+            </item>
+            <item>(L'attribut <att>start</att> de <gi>zone</gi> ou de <gi>surface</gi> pointe dans le
+              sens opposé, vers une portion de transcription) </item>
+          </list>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny"><facsimile>
+            <surfaceGrp type="leaf">
+              <surface xml:id="p1r">
+                <graphic url="page1r.png"/>
+                <graphic url="page1r.tiff"/>
+              </surface>
+              <surface xml:id="p1v">
+                <graphic url="page1v.png"/>
+              </surface>
+            </surfaceGrp>
+          </facsimile>
+            <text>
+              <pb facs="#p1r"/>
+              <!-- text from page 1 recto transcribed here -->
+              <pb facs="#p1v"/>
+              <!-- text from page 1 verso transcribed here -->
+            </text>
+          </egXML>
+        </div>
+        <div>
+          <head>Exemple </head>
+          <figure>
+            <graphic url="../Graphics/bovelles.png" height="90%"/>
+          </figure>
+          <cb/>
+          <p/>
+          <p>Nous distinguons plusieurs zones sur cette surface : <list>
+            <item>le titre</item>
+            <item>la lettrine</item>
+            <item>l'image d'une cloche</item>
+          </list>...</p>
+          <p>Ce sont tous des zones rectangulaires</p>
+        </div>
+        <div>
+          <head>Exemple</head>
+          <figure>
+            <graphic url="../Graphics/bovelles-boxed.png" height="90%"/>
+          </figure>
+          <cb/>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny"><facsimile>
+            <surface ulx="0" uly="0" lrx="52" lry="32">
+              <graphic url="bovelles.png"/>
+              <zone ulx="4" uly="4" lrx="27" lry="13"/>
+              <!-- le titre -->
+              <zone ulx="4" uly="31" lrx="12" lry="38"/>
+              <!-- la lettrine  -->
+              <zone ulx="10" uly="40" lrx="27" lry="52"/>
+              <!-- la cloche -->
+            </surface>
+          </facsimile></egXML>
+          <p>(Notons que nous n'avons pas encore introduit des identifiants pour chaque zone)</p>
+        </div>
+        <div>
+          <head>Et la transcription</head>
+          <figure>
+            <graphic url="../Graphics/bovelles-boxed.png" height="90%"/>
+          </figure>
+          <cb/>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny"><facsimile>
+            <surface xml:id="B49r" ulx="0" uly="0" lrx="52" lry="32">
+              <graphic url="bovelles.png"/>
+              <zone xml:id="B49rHead" ulx="4" uly="4" lrx="27" lry="13"/>
+              <!-- le titre -->
+              <zone xml:id="B49rCap" ulx="4" uly="31" lrx="12" lry="38"/>
+              <!-- la lettrine  -->
+              <zone xml:id="B49rFig" ulx="10" uly="40" lrx="27" lry="52"/>
+              <!-- la cloche -->
+            </surface></facsimile>
+            <text>
+              <body>
+                <pb facs="#B49r"/>
+                <fw>De Geometrie 159</fw>
+                <head facs="#B49rHead"> DU SON ET ACCORD DES CLOCHES ET DES ALleures des cheuaux,
+                  chariots &amp;amp; charges: des fontaines,&amp;amp; encyclie du monde: &amp;amp; de
+                  la dimension du corps humain.</head>
+                <head>Chapitre Septiesme.</head>
+                <div n="1">
+                  <p>Le son &amp;amp; accord des cloches pendans en ung mesme axe, est faict en
+                    contraires parties.</p>
+                  <p><g facs="#B49rCap">L</g>Es cloches ont quasi figures de rondes pyramides
+                    imperfaictes &amp;amp; irregulieres: &amp;amp; leur accord se fait par reigle
+                    Geometrique: comme si les deux cloches C &amp;amp; D sont pendantes à vn mesme
+                    axe, ou essieu, A B: je dy que leur accord se fera en contraires parties
+                    co<ex>m</ex>me voyez icy figuré. Car quand l'vne sera en haut, l'autre declinera
+                    en bas. Autreme<ex>m</ex>t si elles de.<figure facs="#B49rFig1"/>
+                    <pb/><!-- ... -->
+                  </p>
+                </div>
+              </body>
+            </text></egXML>
+        </div> <div type="slide" xml:lang="fr">
+          <div>
+            <head>Macrostructure</head>
+            <!-- image -->
+          </div>
+          <div>
+            <head>Macrostructure</head>
+            <p>Exemple de l’édition desgodets : Les manuscrits que nous avions à traiter présentaient généralement une structure textuelle relativement commune qui pouvait facilement être prise en charge à l’aide des éléments structurels offerts par la TEI. Il a systématiquement été établi une division tripartite dans l’édition avec les éléments &lt;front&gt; pour les parties liminaires, &lt;body&gt; pour le corps de texte et &lt;back&gt; pour les paries postérieures.</p>
+            <p>À l’intérieur de ces différentes parties, &lt;titlePage&gt; avec ses sous-composants permettait de prendre en charge les pages de titre, et une combinaison des éléments &lt;div&gt;, &lt;p&gt;, &lt;list&gt; et tous ses composants, ainsi que &lt;seg&gt; a paru adaptée et suffisante pour traiter presque tous les cas de figure. Un système de typage des divisions a toutefois été établi pour préciser cette macrostructure en utilisant l’attribut @type. La liste fermée des types de division doit encore être restreinte par le schéma.</p>
+            <p>Pour des groupes de textes, des documents composites, ou des corpus hétérogènes, on aura probablement besoin de structures plus complexes</p>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>teiCorpus</head>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <teiCorpus>
+                <teiCorpus>
+                  <TEI>
+                    <!-- témoin manuscrit -->
+                    <teiHeader><!-- ... --></teiHeader>
+                    <text>
+                      <body><!-- ... --></body>
+                    </text>
+                  </TEI>
+                  <TEI>
+                    <!-- témoin manuscrit -->
+                  </TEI>
+                  <TEI>
+                    <!-- témoin manuscrit -->
+                  </TEI>
+                </teiCorpus>
+                <teiCorpus>
+                  <!-- ... -->
+                </teiCorpus>
+              </teiCorpus>
+            </egXML>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Utilisation de XInclude</head>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+             <![CDATA[ <teiCorpus xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude">
+                <teiHeader>
+                  <!-- ... -->
+                </teiHeader>
+                <!-- Inclusion du fichier TEI du manuscrit des Ordres (O) -->
+                <xi:include href="o/desgodetsO.tei.xml" parse="xml">
+                  <xi:fallback>Fichier des Ordres non trouvé</xi:fallback>
+                </xi:include>
+                <!-- Inclusion du fichier TEI du manuscrit des Commodités (C) -->
+                <xi:include href="c/desgodetsC.tei.xml" parse="xml">
+                  <xi:fallback>Fichier des Commodités non trouvé</xi:fallback>
+                </xi:include>
+              </teiCorpus>
+           ]]> </egXML>
+            <p><ref target="http://www.w3.org/TR/xinclude/">XML Inclusions (XInclude) Version 1.0 (Second Edition), W3C Recommendation 15 November 2006.</ref></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <head>Utilisation de XInclude</head>
+            <p>Pour faciliter la mise en œuvre du travail (par exemple pour répartir l'encodage entre des participants), il peut parfois être utile de traiter les éléments du corpus dans des fichiers séparés.</p>
+            <p>Pour l’inclusion, on s'appuie ici sur le standard XML du W3C XInclude.</p>
+            <p>Attention ! il ne faut pas oublier de déclarer l'espace de nom XInclude.</p>
+          </div>
+          <div>
+            <head>Utilisation de XInclude</head>
+            <p>équivaut à :</p>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+             <![CDATA[ <teiCorpus xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:xi="http://www.w3.org/2001/XInclude">
+                <teiHeader><!-- ... --></teiHeader>
+                <!-- Inclusion du fichier TEI du manuscrit des Ordres (O) -->
+                <TEI><!-- contenu du fichier TEI --></TEI>
+                <TEI><!-- contenu du fichier TEI --></TEI>
+              </teiCorpus>
+            ]]></egXML>
+          </div>
+        </div>
+     
+      <div type="part">
+        <div type="title" xml:id="part3">
+          <div>
+            <head>Les figures et facsimili</head>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Description des figures (simple)</head>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <figure xml:id="c2Pl0001" type="plate" facs="#c2FacsPl0001">
+                <head>L'église de Sainte-Sabine à Rome</head>
+                <figDesc>Plan de l'église</figDesc>
+                <graphic url="facs/full/facsC2Pl0001.jpg" />
+              </figure>
+            </egXML>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Description des figures (plus élaborée)</head>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <figure xml:id="c2Pl0001" type="plate" facs="#c2FacsPl0001">
+                <head>Plan de l'église de Sainte-Sabine à Rome</head>
+                <figDesc>
+                  <locus from="#c2F9v" n="p16">p. 16</locus>
+                  <label>
+                    <num n="1">1</num>
+                  </label>
+                  <title>Plan de l’église de Sainte-Sabine à Rome</title>
+                  <desc>plume et encre noire, lavis</desc>
+                  <dimensions>
+                    <height quantity="21" unit="mm"/>
+                    <width quantity="42" unit="mm"/>
+                  </dimensions>
+                </figDesc>
+              </figure>
+            </egXML>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Traitement des facsimili</head>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <teiHeader><!-- ... --></teiHeader>
+              <facsimile corresp="#c2ImagesLicence" xml:id="c2Facs">
+                <surface xml:id="c2FacsPl0001">
+                  <graphic n="full" mimeType="image/jpg"
+                    url="facs/full/facsC2Pl0001.jpg" />
+                  <graphic n="thumb" mimeType="image/jpg"
+                    url="facs/thumbs/facsC2Pl0001.jpg" />
+                </surface>
+                <!-- ... -->
+              </facsimile>
+              <text>
+                <!-- ... -->
+              </text>
+            </egXML>
+          </div>
+          <div>
+            <head>Traitement des facsimili</head>
+            <p>L’élément <gi>facsimile</gi> permet de fournir des artefacts numériques référencés par ailleurs dans le texte.</p>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Traitement des facsimili</head>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <teiHeader><!-- ... --></teiHeader>
+              <facsimile corresp="#c2ImagesLicence" xml:id="c2Facs">
+                <surface xml:id="c2FacsPl0001">
+                  <graphic n="full" mimeType="image/jpg"
+                    url="facs/full/facsC2Pl0001.jpg" />
+                  <graphic n="thumb" mimeType="image/jpg"
+                    url="facs/thumbs/facsC2Pl0001.jpg" />
+                </surface>
+                <!-- ... -->
+              </facsimile>
+              <text>
+                <!-- ... -->
+                <pb facs="#c2Facs"/>
+              </text>
+            </egXML>
+          </div>
+        </div>
+      </div>
+    </body>
+    
+  </text>
+</TEI>

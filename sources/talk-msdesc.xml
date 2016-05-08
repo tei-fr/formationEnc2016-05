@@ -97,14 +97,11 @@
                 <head>Application du <gi>msDesc</gi> dans l'édition numérique</head>
                 <p>Un <gi>msDesc</gi> peut apparaître aussi au sein du <gi>teiHeader</gi> attaché à
                     une édition numérique d'un ou plusieurs manuscrits.</p>
-                <egXML xmlns="http://www.tei-c.org/ns/Examples">
-<TEI>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples"><TEI>
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Edition numérique du Ms 629</title>
-        <!-- ... -->
-      </titleStmt>
+        <title>Edition numérique du Ms 629</title><!-- ... --></titleStmt>
       <sourceDesc>
         <msDesc><!-- ... --></msDesc>
       </sourceDesc>

@@ -24,6 +24,13 @@
     </revisionDesc>
   </teiHeader>
   <text>
+    <front>
+      <titlePage xml:lang="fr" xml:id="index">
+        <titlePart>00-Programme</titlePart>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
+        <note><ref target="00-programme.html">Programme</ref></note>
+      </titlePage>
+    </front>
     <body>
       <div rend="slide">
         <div xml:lang="fr">
@@ -40,6 +47,11 @@
             <item>Naviguer dans ses documents avec XPath</item>
             <item>Transformer ses documents avec XSLT</item>
           </list>
+        </div>
+      </div>
+      <div rend="slide" xml:lang="fr">
+        <div>
+          
         </div>
       </div>
       <div rend="slide">

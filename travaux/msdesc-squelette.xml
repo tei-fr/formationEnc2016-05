@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<msDesc><!-- Description d'une source originale (manuscrit ou imprimé ancien) -->
+<?xml-model href="tei-msdesc.rnc" type="application/relax-ng-compact-syntax"?>
+<msDesc xmlns="http://www.tei-c.org/ns/1.0"><!-- Description d'une source originale (manuscrit ou imprimé ancien) -->
     <msIdentifier>
         <country><!-- Pays --></country>
         <settlement><!-- Ville --></settlement>
@@ -8,12 +9,15 @@
         <repository><!--Fonds de l'institution conservatrice--></repository>       
         <idno type="cote"><!-- Renseigner ici la cote de l'exemplaire --></idno>
     </msIdentifier>
-    <msContents>
-        <p><!-- une description sommaire du contenu intellectuel -->
-        </p>
+    <msContents><summary><p><!-- facultativement, une description sommaire du contenu intellectuel --></p></summary>      
         <!-- ou bien un ou plusieurs ... -->
-        <msItem> 
-            <!-- description/s des item/s distingues dans le ms: sont disponibles par ex <title> <author> etc. -->
+        <msItem > <!-- un ou plusieurs des suivants pour decrire l'item -->
+            <locus from="debut" to="fin"><!-- location de cet item dans le ms -->  </locus>
+          <title> <!-- un titre pour l'item --></title>
+            <author><!-- l'auteur présumé --></author>
+            <incipit><!-- mots initiales servant à indiquer le début d'un item --></incipit>
+            <explicit><!-- mots finales servant à indiquer la fin d'un item --></explicit>
+            <rubric><!-- mots indiquant un sous-titre, typiquement en rouge --></rubric>
         </msItem>
     </msContents>
     <physDesc>
@@ -52,12 +56,10 @@
             </recordHist>
         </adminInfo>
         <surrogates>
-            <!--reproduction numérique de la source-->
+            <!--reproductions numériques (ou autre) de la source-->
             <bibl>
-                <!--lien vers la reproduction numérique de la source-->
-                <relatedItem type="original">
-                    <ref target="ajouter-ici-URL"><!-- texte du lien --></ref>
-                </relatedItem>
+                <!--lien vers une reproduction numérique de la source-->              
+                    <ref target="ajouter-ici-URL"><!-- texte du lien --></ref>               
             </bibl></surrogates>
     </additional>
     <msPart><!-- Relié avec -->
@@ -66,7 +68,6 @@
         </altIdentifier>
         <msContents>
             <p><!-- Description des documents reliés avec --></p>
-        </msContents>
-        
+        </msContents>        
     </msPart>
 </msDesc>

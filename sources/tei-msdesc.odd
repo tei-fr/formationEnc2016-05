@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_odds.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>ODD simple pour les description de mss</title>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Service de formation continue de l'Ecole Nationale des Chartes</distributor>
+            <date>2016</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Document nativement numérique</p>
+         </sourceDesc>
+      </fileDesc>
+     <revisionDesc>
+        <change when="2016-05-06">Création du fichier</change>
+     </revisionDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>Un ODD simple pour les msDesc, les permettant  ou bien dans un document TEI comme d'habitude
+         ou comme element racine (en quel cas, n'oublier pas le namespace!) </p>
+         <schemaSpec ident="TEI-msdesc" start="TEI msDesc">
+            <moduleRef key="tei"/>
+            <moduleRef key="msdescription"/>
+            <moduleRef key="textstructure" include="TEI front body back text"/>
+            <moduleRef key="namesdates" include="country settlement"/>
+            <moduleRef key="core" include="p list listBibl bibl author title hi item date ref"/>
+            <moduleRef key="header"/>
+      </schemaSpec>
+      </body>
+  </text>
+</TEI>

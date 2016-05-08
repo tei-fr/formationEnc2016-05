@@ -75,7 +75,7 @@ Pour chacun(e) des entités/concepts identifiés dans votre modèle, il faut dé
 
 
 # Un exemple simple…
-![](../images/guyDeWarwick-tp.jpg)![](../Graphics/guyDeWarwick-15.jpg)
+![](../images/guy-1.jpg)
 ---
 
 
@@ -299,69 +299,17 @@ On peut également baliser…
 
 
 # Notre exemple (1)
-
-```xml
-<text xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-            <front>
-              <titlePage>
-                <docTitle>cy commence Guy de Wa- ruich chevalier Dãgleterre qui en son temps fit
-                  plusieurs prouesses et con- questes en Allemaigne/ytalie et Da<damage></damage>emarche. Et
-                  aussi sur les infidel- les ennemys de la chrestiente Comme pourrez veoir plus a
-                  plain en ce pre- sent livre Imprime nouvellement a Paris </docTitle>
-                <figure>
-                  <graphic url="gdw-tp-1"></graphic>
-                  <head>FRANCOYS REGNAULT</head>
-                </figure>
-                <imprint>cum privilegio</imprint>
-              </titlePage>
-              
-               <!-- ... -->
-            </front>
-          </text>
-```
-![](../images/guyDeWarwick-tp.jpg)
+![](../images/guy2.png)
 ---
 
 
 # Notre exemple (2)
-
-```xml
-<text xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-            <front>
-              
-               <!-- … -->
-              <div type="prolog" xml:id="p1">
-                <head>Cy commence le prologue de lacteur</head>
-                <figure><graphic url="gdw-p01.png"></graphic></figure>
-                <p><g type="lettrine" ref="#ornA">A</g>u temps du roy A- thelstã prince de no- ble memoire regnat en souverainete ou royaulme Dangle- terre <abbr>ape</abbr>lan de lin- carnation notre sei gne<am>r</am> Jesuchrist qua tre cens ans et vingtquatre ... </p>
-                <trailer>Ici fine le prologue</trailer>
-              </div>
-            </front>
-            
-            <!-- ... -->
-          </text>
-```
-![](../images/guyDeWarwick-13.jpg)
+![](../images/guy3.png)
 ---
 
 
 # Notre exemple (3)
-
-```xml
-<text xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-            
-            <!-- ... -->
-            <body>
-              <fw>feuillet premier.</fw>
-              <div type="chap" xml:id="C1">
-                <head>Comment le conte Roalt avoit une belle fille nomee Felisse sur- montant en beautee toutes autres dames et damoiselles et envoya querir Guyonet filz de son seneschal pour demeurer en sa court.</head>
-                <figure><graphic url="gdw-p02.png"></graphic></figure>
-                <p><g type="lettrine" ref="#ornE">E</g>n icelle honnorable sai- son a regne dudit roy A- thelstã estoit ou royaul- me dangleterre ung tres puissant cont nomme Roalt <abbr>leql</abbr> avoit la sei- gneurie de la conte de waruich ...</p>
-              </div>
-            </body>
-          </text>
-```
-![](../images/guyDeWarwick-15.jpg)
+![](../images/guy4.png)
 ---
 
 
@@ -679,18 +627,7 @@ Plusieurs autres attributs de type pointeur sont disponibles, fournissant une ga
 
 
 # Par exemple
-
-```xml
-<pb xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" n="5" facs="page_A3r.png"></pb><fw xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">5</fw><div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-            <head>LIVRE I. FABLE SECONDE.</head>
-            <figure><graphic url="I2dtl.png"></graphic><figDesc>Un renard regarde un arbre dans lequel se trouve un corbeau. Le renard tient un fromage dans la bouche. En arrière plan, un château.</figDesc></figure>
-            <head>Le Corbeau &amp; le Renard.</head>
-            <l>Maistre Coirbeau sur un arbre perché…</l>
-          </div>
-```
-
-
-
+![](../images/corbeau.png)
 ---
 
 
@@ -718,18 +655,7 @@ Plusieurs autres attributs de type pointeur sont disponibles, fournissant une ga
 
 
 # Et pour terminer, les notes
-
-
-
-```xml
-<div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" n="3">
-            <p>J’écris&nbsp;: j’habite ma feuille de papier, je l’investis, je la parcours.</p>
-            <p>Je suscite des <hi>blancs</hi>, des <hi>espaces</hi> (sauts dans le sens : discontinuités, passages, transitions). <note place="margin">J’écris dans la marge…</note></p>
-            <p rend="indent3">Je vais <lb></lb>à la ligne. Je renvoie à une note en bas de page<note place="foot">J’aime beaucoup les renvois en bas de page, même si je n’ai rien de particulier à y préciser.</note></p>
-            <p rend="indent2">Je change de feuille.</p>
-          </div><pb xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" n="20"></pb>
-```
-
+![](../images/perec.png)
 ---
 
 

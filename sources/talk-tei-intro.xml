@@ -81,13 +81,15 @@
       </div>
       <div rend="slide">
         <head>Un exemple simple…</head>
-        <figure>
+       <!-- <figure>
           <graphic url="../images/guyDeWarwick-tp.jpg" height="98%"/>
         </figure>
         <cb/>
-
         <figure>
-          <graphic url="../Graphics/guyDeWarwick-15.jpg" height="89%"/>
+          <graphic url="../images/guyDeWarwick-15.jpg" height="89%"/>
+        </figure>-->
+        <figure>
+          <graphic url="../images/guy-1.jpg" height="89%"/>
         </figure>
       </div>
       <div rend="slide">
@@ -335,7 +337,7 @@
         <head>Dans notre cas... </head>-->
       <div rend="slide">
         <head>Notre exemple (1)</head>
-
+<!--
         <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
           <text>
             <front>
@@ -350,20 +352,23 @@
                 </figure>
                 <imprint>cum privilegio</imprint>
               </titlePage>
-              <!-- ... -->
+              <!-\- ... -\->
             </front>
           </text></egXML>
         <cb/>
         <figure>
           <graphic url="../images/guyDeWarwick-tp.jpg" height="98%"/>
+        </figure>-->
+        <figure>
+          <graphic url="../images/guy2.png" height="98%"/>
         </figure>
       </div>
       <div rend="slide">
         <head>Notre exemple (2)</head>
-        <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
+        <!--<egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
           <text>
             <front>
-              <!-- … -->
+              <!-\- … -\->
               <div type="prolog" xml:id="p1">
                 <head>Cy commence le prologue de lacteur</head>
                 <figure><graphic url="gdw-p01.png"/></figure>
@@ -372,18 +377,21 @@
                 <trailer>Ici fine le prologue</trailer>
               </div>
             </front>
-            <!-- ... -->
+            <!-\- ... -\->
           </text></egXML>
         <cb/>
         <figure>
           <graphic url="../images/guyDeWarwick-13.jpg" height="98%"/>
+        </figure>-->
+        <figure>
+          <graphic url="../images/guy3.png" height="98%"/>
         </figure>
       </div>
       <div rend="slide">
         <head>Notre exemple (3)</head>
-        <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
+       <!-- <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
           <text>
-            <!-- ... -->
+            <!-\- ... -\->
             <body>
               <fw>feuillet premier.</fw>
               <div type="chap" xml:id="C1">
@@ -397,6 +405,9 @@
         <cb/>
         <figure>
           <graphic url="../images/guyDeWarwick-15.jpg" height="98%"/>
+        </figure>-->
+        <figure>
+          <graphic url="../images/guy4.png" height="98%"/>
         </figure>
       </div>
       <div rend="slide">
@@ -648,7 +659,7 @@
       </div>
       <div rend="slide">
         <head>Par exemple</head>
-        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+        <!--<egXML xmlns="http://www.tei-c.org/ns/Examples">
           <pb n="5" facs="page_A3r.png"/>
           <fw>5</fw>
           <div>
@@ -661,10 +672,12 @@
         <cb/>
         <p>
           <graphic url="../images/corbeau-1.jpg"/>
-        </p>
+        </p>-->
+        <figure>
+          <graphic url="../images/corbeau.png" height="98%"/>
+        </figure>
       </div>
-      <div rend="slide">
-        <head>Les citations bibliographiques</head>
+      <div rend="slide">        <head>Les citations bibliographiques</head>
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <bibl xml:id="MK_73">Sturm, U. &amp; Drang, F. : <title>Musikalische Katastrophe</title>.
             (Berlin, W. de Gruyter, 1973)</bibl>
@@ -685,7 +698,7 @@
       </div>
       <div rend="slide">
         <head>Et pour terminer, les notes</head>
-        <p>
+        <!--<p>
           <graphic url="../images/perec.png"/></p>
         <cb/>
         <egXML rend="tiny" xmlns="http://www.tei-c.org/ns/Examples" corresp="#fr-ex-Perec-esp"><div
@@ -698,7 +711,10 @@
                 >J’aime beaucoup les renvois en bas de page, même si je n’ai rien de particulier à y préciser.</note></p>
             <p rend="indent2">Je change de feuille.</p>
           </div><pb n="20"/>
-        </egXML>
+        </egXML>-->
+        <figure>
+          <graphic url="../images/perec.png"/>
+        </figure>
       </div>
       <div rend="slide">
         <head>Vous vous sentez un peu accablé ?</head>

@@ -28,7 +28,7 @@
   </teiHeader>
   <text>
     <body>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Objectif de cette session</head>
         <p>Répondre à ces questions : <list type="ordered">
             <item>Qu’est-ce qu’un <term>texte</term> ? qu’est-ce qu’un <term>document</term> ? </item>
@@ -37,7 +37,7 @@
               important ?</item>
           </list></p>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>La tournée numérique</head>
         <p>Les sciences humaines et sociales s’occupent surtout du <emph>texte</emph>... <list>
             <item>(majoritairement non-numérique) les livres, les manuscrits, les fonds d’archives ... </item>
@@ -47,7 +47,7 @@
         <p rend="box">Le balisage (markup, encodage) est une composante incontournable de ces
           manipulations</p>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Texte et texte numérique</head>
         <p>Un texte peut être envisagé selon trois perspectives : <list>
             <item>Un texte a une existence physique, ayant des <hi>traits visuels</hi> qu’on peut (plus ou moins) transférer automatiquement d’une instance à une autre</item>
@@ -57,7 +57,7 @@
         <p rend="box"
           >Un balisage effectif devrait donc opérer dans ces trois directions.</p>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Un text numérique peut être … </head>
         <p rend="box">un <q>substitut</q> (surrogate) représentant l’apparence d’un document
           existant</p>
@@ -65,7 +65,7 @@
           <graphic url="../images/graves-2.png" height="80%"/>
         </figure>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head> ... ou bien </head>
         <p rend="box"
           >une représentation du contenu linguistique, de sa structure, avec des annotations sur sa portée, son contexte..</p>
@@ -73,13 +73,13 @@
           <graphic url="../images/graves-1.png" height="80%"/>
         </figure>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Que fait-on en numérisant un texte ?</head>
         <figure>
           <graphic url="../images/model-fr.png"/>
         </figure>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>La TEI pourrait nous aider...</head>
         <p>Elle représente un modèle conceptuel de texte bien établi qui facilite : <list>
             <item>la conversion des données existantes</item>
@@ -89,19 +89,19 @@
         <p>Elle est basée sur des formats ouverts et des technologies ouvertes</p>
         <p>Elle s’appuie sur une théorie explicite de l’ontologie textuelle </p>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Est-ce que ceci représente la même chose ?</head>
         <figure>
           <graphic url="../images/duBellay-1.png"/>
         </figure>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Et ceci ?</head>
         <figure>
           <graphic url="../images/duBellay-1a.png"/>
         </figure>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Un texte n’est pas un document...</head>
         <p>En quoi consiste l’essentiel d’un texte ? <list rend="pause">
             <item>en l’apparence des lettres et leur mise-en-page ?</item>
@@ -115,7 +115,7 @@
         <p rend="box"
             >Un <soCalled>texte</soCalled> est une abstraction construite par, ou pour, une communauté de lecteurs, que nous pouvons <emph>encoder</emph>.</p>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>L’encodage</head>
         <list type="bulleted">
           <item>Un texte est plus qu’une séquence de caractères encodés !</item>
@@ -128,7 +128,7 @@
           <item>Sans explicitation, on ne peut rien traiter </item>
         </list>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>L’effet Babel</head>
         <p>Bien sûr il existe plusieurs lectures possibles pour la plupart des textes...</p>
         <p><figure>
@@ -136,7 +136,7 @@
           </figure></p>
         <p>... et (malheureusement) plusieurs manières d’expression pour ces lectures !</p>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Encodage ou Babel ?</head>
         <figure>
           <graphic url="../images/moby.png" height="60%"/>
@@ -147,21 +147,21 @@
           <item rend="pause">Mauvaise nouvelle : on en a besoin !</item>
         </list>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Échange d’informations (1)</head>
         <figure>
           <graphic url="../images/echange-1.png"/>
           <head>sans format pivot: 20 passerelles requises (n*n-n)</head>
         </figure>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Échange d’informations (2)</head>
         <figure>
           <graphic url="../images/echange-2.png" height="80%"/>
           <head>avec format pivot: 10 passerelles requises (2n)</head>
         </figure>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Définitions</head>
         <list type="bulleted">
           <item>Un balisage explicite les distinctions qu’on désire faire en traitant une chaîne de
@@ -171,7 +171,7 @@
           <item>Quel genre de composants ? La réponse dépend des usages prévus...</item>
         </list>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Séparation de forme et contenu</head>
         <list type="bulleted">
           <item rend="pause">Un balisage descriptif s’intéresse plus au contenu qu’à sa mise en
@@ -183,7 +183,7 @@
             >Un balisage présentationnel, par contre, s’intéresse plus à l’affichage qu’à sa sémantique</item>
         </list>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Qu’est ce qu’on balisera ?</head>
         <p>Comparer : </p>
         <egXML xmlns="http://www.tei-c.org/ns/Examples"><pb n="4"/>A MONSEI- <lb/>GNEUR LE REVE-
@@ -196,7 +196,7 @@
             <p><c rend="lettrine">V</c>EU le Personnaige, que tu joues au Spectacle de toute
               l’Europe... </p>...</div></egXML>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>... et avec </head>
         <egXML xmlns="http://www.tei-c.org/ns/Examples"><pb n="4"/>
           <s><w pos="PPJ" lemma="voir">VEU</w>
@@ -212,7 +212,7 @@
             Spectacle...</s>
         </egXML>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Notre système d’encodage devrait être capable de…</head>
         <list>
           <item>spécifier les caractères d’un texte</item>
@@ -223,7 +223,7 @@
         </list>
         <p rend="box">Jusqu’à présent, XML semble une bonne solution...</p>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>La bonne soupe d’acronymes</head>
         <table>
           <row>
@@ -265,7 +265,7 @@
         </table>
         <p>à ne pas oublier <hi>TEI</hi>, la <emph>Text Encoding Initiative</emph></p>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>XML: ce que c’est et pourquoi on devrait le connaître</head>
         <list>
           <item>XML est une manière de représenter les <hi>données structurées</hi> sous forme de
@@ -302,7 +302,7 @@
           </doc>
         </egXML>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>(Presque) tout ce qu’il faut savoir au sujet de XML, sur un seul transparent</head>
         <list>
           <item>Un document XML contient au moins un <term>élément</term></item>
@@ -323,11 +323,11 @@
             </root>]]>
         </egXML>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Encore un petit document XML </head>
         <p><graphic url="../images/cookbook.png" height="90%"/></p>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Syntaxe XML</head>
         <p>Un document XML contient :
           <list>
@@ -346,7 +346,7 @@
         <p>C’est tout !</p>
       </div>
 
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>XML: règles du jeu</head>
         <list>
           <item>Un document XML représente une arborescence composée de <term>nœuds</term>
@@ -376,7 +376,7 @@
    <p>     <graphic url="../images/xml00.svg"/>
   </p>    </div>
      -->
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Représentation d’une arborescence XML</head>
         <list>
           <item>Un document XML linéarisé commence par une instruction de traitement spécial</item>
@@ -397,7 +397,7 @@
           </item>
         </list>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Syntaxe XML : le "fine print"</head>
         <p>Pour qu’un document soit <term>bien formé</term>, il faut que : <list type="ordered">
             <item>une seul racine contienne le document entier</item>
@@ -408,7 +408,7 @@
             <item>les valeurs d’attribut soient présentées correctement entre guillemets</item>
           </list></p>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Bien formé ? oui ou non ?</head>
         <list type="unordered">
           <item rend="pause">
@@ -446,7 +446,7 @@
           </item>
         </list>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>XML est un standard international</head>
         <list>
           <item>Un document XML doit respecter le standard ISO 10646 (aka Unicode) <list>
@@ -461,7 +461,7 @@
         </list>
         <p rend="box">Un attribut <att>xml:id</att> est également prédéfini par le W3C.</p>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Validation XML</head>
         <p>Un document XML <term>valide</term> est (bien sûr) bien formé, et en plus conforme à des
           règles supplémentaires, qui constituent un <term>schéma</term>
@@ -480,7 +480,7 @@
         <p>Un espace de noms, par contraste, ne vous permet que de labelliser le vocabulaire d’où
           est dérivé un ensemble d’éléments.</p>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Langues de schéma</head>
         <p>Un schéma est exprimé dans une langue formelle. Actuellement, on peut choisir entre : <list>
             <item>WSD : langage schéma du W3C</item>
@@ -492,7 +492,7 @@
         <p>
           <graphic width="2in" url="../images/relax.png"/></p>
       </div>
-      <div xml:lang="fr">
+      <div rend="slide" xml:lang="fr">
         <head>Exercice 1</head>
         <p>D’abord, nous allons expérimenter un logiciel spécialisé pour créer et modifier des
           fichiers XML...</p>

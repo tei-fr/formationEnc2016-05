@@ -21,8 +21,15 @@
         </fileDesc>
     </teiHeader>
     <text>
+        <front>
+            <titlePage xml:lang="fr">
+                <titlePart>Description des manuscrits</titlePart>
+                <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
+                <note><ref target="00-programme.html">Programme</ref></note>
+            </titlePage>
+        </front>
         <body xml:lang="fra">
-            <div>
+            <div rend="slide">
                 <head>Objectifs</head>
                 <p><graphic url="../images/morrisCatalog.jpg" height="50%"/>
                     <graphic url="../images/catalogCard.jpg" height="50%"/>
@@ -90,22 +97,19 @@
                 <head>Application du <gi>msDesc</gi> dans l'édition numérique</head>
                 <p>Un <gi>msDesc</gi> peut apparaître aussi au sein du <gi>teiHeader</gi> attaché à
                     une édition numérique d'un ou plusieurs manuscrits.</p>
-                <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                    <TEI>
-                        <teiHeader>
-                            <fileDesc>
-                                <titleStmt>
-                                    <title>Edition numérique du Ms 629</title>
-                                    <!-- ... -->
-                                </titleStmt>
-                                <sourceDesc>
-                                    <msDesc><!-- ... --></msDesc>
-                                </sourceDesc>
-                            </fileDesc>
-                        </teiHeader>
-                        <text><!--...--></text>
-                    </TEI>
-                </egXML>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples"><TEI>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Edition numérique du Ms 629</title><!-- ... --></titleStmt>
+      <sourceDesc>
+        <msDesc><!-- ... --></msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text><!--...--></text>
+</TEI>
+</egXML>
                 <p>Dans ce cas, la description aura tendence bas-de-données</p>
             </div>
             <!--
@@ -141,7 +145,7 @@
             </div>
 
 
-            <div>
+            <div rend="slide">
                 <head>Exemple </head>
 
                 <egXML rend="tiny" xmlns="http://www.tei-c.org/ns/Examples">
@@ -264,7 +268,7 @@
                 </p>
             </div>
 
-            <div>
+            <div rend="slide">
                 <head><gi>msContents</gi> avec plusieurs <gi>msItem</gi>s </head>
                 <p>
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -304,7 +308,7 @@
                     plus ou moins structurants et une description en prose.</p>
             </div>
 
-            <div>
+            <div rend="slide">
                 <head><gi>physDesc</gi> exemple simple </head>
                 <p>
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -326,7 +330,7 @@
                     </egXML></p>
             </div>
 
-            <div>
+            <div rend="slide">
                 <head>Le support (1) </head>
                 <p>Pour distinguer l'objet inscrit de la manière où il est inscrit, <gi>objectDesc</gi> peut etre structuré en <gi>supportDesc</gi> et
                         <gi>layoutDesc</gi>
@@ -343,7 +347,7 @@
                     </egXML></p>
             </div>
 
-            <div>
+            <div rend="slide">
                 <head>Le support (2)</head>
                 <p>D'autres éléments structurants sont disponible pour la description détaillée du
                     support materiel: <gi>support</gi>, <gi>extent</gi>, <gi>foliation</gi>,
@@ -375,7 +379,7 @@
 
 
             </div>
-            <div>
+            <div rend="slide">
                 <head>Layout(s)</head>
                 <p>Plusiers mise-en-forme (layout)s peuvent etre specifiés: <egXML
                         xmlns="http://www.tei-c.org/ns/Examples">
@@ -392,7 +396,7 @@
                     </egXML></p>
             </div>
 
-            <div>
+            <div rend="slide">
                 <head><gi>handDesc</gi> et <gi>decoDesc</gi></head>
                 <p>Ces éléments décrivent respectivement les mains (écritures) distinguées dans un
                     manuscrit et les décorations, soit en prose, soit avec les éléments
@@ -406,7 +410,7 @@
                     </list></p>
             </div>
 
-            <div>
+            <div rend="slide">
                 <head><gi>handDesc</gi> example (1)</head>
                 <p>
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -421,7 +425,7 @@
                 </p>
             </div>
 
-            <div>
+            <div rend="slide">
                 <head><gi>handDesc</gi> exemple (2)</head>
                 <p>
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -443,7 +447,7 @@
             </div>
 
 
-            <div>
+            <div rend="slide">
                 <head> Ajouts significatifs </head>
                 <p> L'élément <gi>additions</gi> contient une description des ajouts significatifs
                     trouvés dans un manuscrit, tels que gloses marginales ou autres annotations. </p>
@@ -461,7 +465,7 @@
                 </p>
             </div>
 
-            <div>
+            <div rend="slide">
                 <head>Matériel d'accompagnement </head>
                 <p>
                     <gi>accMat</gi> (accompanying material) donne des détails sur tout matériel
@@ -494,7 +498,7 @@
                         <att>when</att> etc. </p>
             </div>
 
-            <div>
+            <div rend="slide">
                 <head>Exemple</head>
                 <p>
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -644,8 +648,12 @@ Provenance: Au feuillet chiffré 1 : "Ce present livre ma este donne de monsieur
 
 </div>
 -->
-
-
         </body>
+        <back>
+            <div rend="title" xml:lang="fr">
+                    <note><ref target="#index">Revenir au début</ref> | <ref target="programme.html"
+                        >Programme</ref></note>
+            </div>
+        </back>
     </text>
 </TEI>

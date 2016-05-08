@@ -4,7 +4,7 @@ namespace rng = "http://relaxng.org/ns/structure/1.0"
 namespace sch = "http://purl.oclc.org/dsdl/schematron"
 namespace xlink = "http://www.w3.org/1999/xlink"
 
-# Schema generated from ODD source 2016-05-08T19:34:05Z. .
+# Schema generated from ODD source 2016-05-08T19:38:40Z. .
 # TEI Edition: Version 2.8.0. Last updated on
 #	6th April 2015, revision 13197
 # TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 2.8.0/
@@ -2132,12 +2132,12 @@ att.datable.custom.attribute.datingMethod =
   
   ## supplies a pointer to a calendar element or other means of interpreting the values of the custom dating attributes.
   attribute datingMethod { data.pointer }?
-model.persNamePart = notAllowed
-model.persNamePart_alternation = notAllowed
-model.persNamePart_sequence = empty
-model.persNamePart_sequenceOptional = empty
-model.persNamePart_sequenceOptionalRepeatable = empty
-model.persNamePart_sequenceRepeatable = notAllowed
+model.persNamePart = surname | forename
+model.persNamePart_alternation = surname | forename
+model.persNamePart_sequence = surname, forename
+model.persNamePart_sequenceOptional = surname?, forename?
+model.persNamePart_sequenceOptionalRepeatable = surname*, forename*
+model.persNamePart_sequenceRepeatable = surname+, forename+
 att.datable.iso.attributes =
   att.datable.iso.attribute.when-iso,
   att.datable.iso.attribute.notBefore-iso,
@@ -2172,6 +2172,26 @@ persName =
     att.global.attributes,
     att.datable.attributes,
     att.editLike.attributes,
+    att.personal.attributes,
+    att.typed.attributes,
+    empty
+  }
+surname =
+  
+  ## contains a family (inherited) name, as opposed to a given, baptismal, or nick name. [13.2.1. Personal Names]
+  element surname {
+    macro.phraseSeq,
+    att.global.attributes,
+    att.personal.attributes,
+    att.typed.attributes,
+    empty
+  }
+forename =
+  
+  ## contains a forename, given or baptismal name. [13.2.1. Personal Names]
+  element forename {
+    macro.phraseSeq,
+    att.global.attributes,
     att.personal.attributes,
     att.typed.attributes,
     empty

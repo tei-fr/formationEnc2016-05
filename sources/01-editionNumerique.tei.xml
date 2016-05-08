@@ -687,10 +687,10 @@
             <head>Exemples d’éditions numériques</head>
             <list>
               <item><ref target="http://elec.enc.sorbonne.fr">elec</ref></item>
-              <item><ref target="http://elec.enc.sorbonne.fr">hyperdonnat</ref></item>
+              <item><ref target="http://hyperdonat.tge-adonis.fr">hyperdonat</ref></item>
               <item><ref
-                  target="http://www.unicaen.fr/puc/sources/gsp/www.unicaen.fr/services/puc/sources/gsp/index-2.html"
-                  >Roman du Mont Saint-Michel</ref></item>
+                target="https://www.unicaen.fr/services/puc/sources/chroniqueslatines/"
+                  >Chroniques du Mont Saint-Michel</ref></item>
               <item><ref target="http://obvil.paris-sorbonne.fr/corpus/mercure-galant/"
                   >Mercure galant</ref></item>
               <item><ref target="http://vangoghletters.org/vg/">vangoghletters.org</ref></item>

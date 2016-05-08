@@ -46,31 +46,28 @@
         <div xml:lang="fr">
           <head>Première journée</head>
           <list type="gloss">
-            <label>09h-09h15</label>
+            <label>09h30-10h</label>
             <item>Introduction de la formation </item>
-            <label>09h15-10h</label>
+            <label>10h00-10h45</label>
             <item>Tour de table et répartition des groupes </item>
-            <label>10h-10h45</label>
-            <item><ref target="talk-01.xml">Initiation à l’encodage XML-TEI</ref> (45 mins)</item>
-            <label>10h45-11h15</label>
-            <item>pause</item>
-            <label>11h15-12h</label>
-            <item>TP01 : <ref target="ex-1-oxygen.xml">À la découverte d’oXygen</ref></item>
-            <label>12h-13h30</label>
+            <label>10h45-11h</label>
+            <item>Pause</item>
+            <label>11h-11h30</label>
+            <item><ref target="01-editionNumerique.tei.xml">Synthèse sur le balisage</ref></item>
+            <label>11h30-12h30</label>
+            <item><ref target="ex-2-analyse.xml">TP Modélisation</ref></item>
+            <label>12h30-13h30</label>
             <item>pause déjeuner</item>
-            <label>13h30-14h30</label>
-            <item><ref target="talk-02-tei.xml"
-                >La Text Encoding Initiative (TEI) C’est quoi ? </ref> : des exemples actuels</item>
-            <label>14h30-15h15</label>
-            <item>TP02 : <ref target="ex-2-analyse.xml"
-              >Analyse et modélisation des textes</ref></item>
-            <label>15h15-15h45</label>
-            <item>pause</item>
-            <label>15h45-16h45</label>
-            <item><ref target="tei-history.xml">Histoire et évolution de la Text Encoding Initiative
-                (TEI)</ref></item>
+            <label>13h30-14h</label>
+            <item><ref target="ex-1-oxygen.xml">Retours sur l’exercice d’encodage fait chez soi</ref></item>
+            <label>14h-15h</label>
+            <item><ref target="talk-tei-intro.xml">Introduction aux richesses de la TEI</ref></item>
+            <label>15h-17h</label>
+            <item><ref target="ex-3-roma.xml">TP Personnalisation TEI avec Roma</ref></item>
             <label>16h45-1700</label>
             <item>Questions, discussions, perspectives</item>
+            <label>17h30</label>
+            <item>Social event (bière)</item>
           </list>
         </div>
       </div>
@@ -78,11 +75,26 @@
         <div xml:lang="fr">
           <head>2<hi rend="superscript">ème</hi> journée</head>
           <list>
-            <item><ref target="01-editionNumerique.html">L’organisation de la TEI (Guidelines, et Spécification technique)</ref></item>
-            <item><ref target="02-teiMacrostructure.html">La macrostructure TEI</ref></item>
-            <item><ref target="03-teiHeader.html">La description des sources manuscrites</ref></item>
-            <item><ref target="04-editionCritique.html">L’édition critique des sources manuscrites</ref></item>
-            <item><ref target="05-teiCorpus.html">Structures complexes</ref></item>
+            <label>9h30-10h</label>
+            <item><ref target="04-editionCritique.tei.html">La transcription des sources primaires</ref></item>
+            <label>10h-11h</label>
+            <item><ref target="ex-4-oulipo.xml">Exercice OuLiPo</ref></item>
+            <label>11h-11h30</label>
+            <item>pause</item>
+            <label>11h30-12h</label>
+            <item><ref target="03-teiHeader.tei.xml">L’en-tête TEI</ref></item>
+            <label>12h-12h30</label>
+            <item><ref target="ex-5-header.xml">TP Création d’une entête simple</ref></item>
+            <label>12h30-13h30</label>
+            <item>Pause déjeuner</item>
+            <label>13h30-14h15</label>
+            <item><ref target="talk-msdesc.xml">La description des manuscrits</ref></item>
+            <label>14h15-15h30</label>
+            <item><ref target="ex-5-msdesc.xml">TP Description des manuscrits</ref></item>
+            <label>15h30-16h</label>
+            <item>Pause</item>
+            <label>16h-17h</label>
+            <item>Présentation de projets</item>
           </list>
         </div>
       </div>
@@ -90,11 +102,28 @@
         <div xml:lang="fr">
           <head>3<hi rend="superscript">ème</hi> journée</head>
           <list>
-            <item><ref target="06-namedEntities.html">Les entités nommées</ref></item>
-            <item><ref target="07-personnalisation.html">Personnaliser la TEI</ref></item>
-            <item><ref target="09-travaillerAvecTEI.html">Personnaliser la TEI</ref></item>
-            <item><ref target="10-xpath01.html">Le langage XPath</ref></item>
-            <item><ref target="11-xpath02.html">Explorer ses documents avec XPath</ref></item>
+            <label>9h30-10h</label>
+            <item><ref target="06-namedEntities.tei.xml">Les entités-nommées</ref></item>
+            <label>10h-11h00</label>
+            <item><ref target="ex-7-entites.xml">TP entités-nommées</ref></item>
+            <label>11h-11h30</label>
+            <item>Pause</item>
+            <label>11h30-12h</label>
+            <item><ref target="talk-organisation.xml">Organisation des documents</ref></item>
+            <label>12h-12h30</label>
+            <item><ref target="ex-8-organisation.xml">TP étude de cas</ref></item>
+            <label>12h30-13h30</label>
+            <item>Déjeuner</item>
+            <label>13h30-14h</label>
+            <item><ref target="07-personnalisation.tei.xml">Personnalisation avancée avec ODD</ref></item>
+            <label>14h-15h</label>
+            <item><ref target="ex-9-personnalisation.xml">TP Création d’un ODD personnalisé</ref></item>
+            <label>15h-15h30</label>
+            <item>Pause</item>
+            <label>15h30-16h15</label>
+            <item><ref target="tei-florilege.xml">Florilège de projets TEI</ref></item>
+            <label>16h15-17h</label>
+            <item><ref target="08-xpath.tei.xml">TP XPath</ref></item>
           </list>
         </div>
       </div>

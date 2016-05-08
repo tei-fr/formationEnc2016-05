@@ -61,7 +61,7 @@
                     </div>
                     <div xml:id="T03" resp="#LB #EM">
                         <head>13h30 - 14h : Revoir l’exercice encodage initial (<ref
-                                target="ex-1.oxygen.xml"/>) – LB/EM</head>
+                                target="ex-1-oxygen.xml"/>) – LB/EM</head>
                         <p>Contrôler que les participants se sont familiarisés avec l’environnement
                             technique et expérimenter la saisie contextuelle, etc.</p>
                     </div>
@@ -156,6 +156,7 @@
                     <div xml:id="T10" resp="#LB">
                         <head>14h15 - 15h30 TEI Msdescription – TP LB</head>
                         <!-- à fournir -->
+                        <p><ref target="ex-5-msdesc.xml">ex-5-msdesc</ref></p>
                     </div>
                     <div>
                         <head>pause</head>
@@ -181,6 +182,7 @@
                     </div>
                     <div xml:id="T12bis" resp="#EM">
                         <head>10h-11h00 Création et gestion des Entités nommées – TP EM</head>
+                        <p><ref target="ex-7-entites.xml">ex-7-entites</ref></p>
                         <!-- a fournir -->
                     </div>
                     <div>
@@ -189,12 +191,14 @@
                     <div xml:id="T13" resp="#LB">
                         <head>11h30-12h Modalités d’organisation des documents TEI – PM LB </head>
                         <!-- a fournir -->
+                        <p><ref target="talk-organisation.xml">talk-organisation</ref></p>
                         <p>Conceptes de group, corpus, facsimile. etc: organisation des fichiers.
                         </p>
                     </div>
                     <div xml:id="T14" resp="#EM">
                         <head>12h - 12h30 Cas d’étude : organisation du projet Oulipo – TP EM </head>
                         <!-- a fournir -->
+                        <p><ref target="ex-8-organisation.xml">ex-8-organisation</ref></p>
                         <p>Comment organiser le projet imaginaire: importance de versioning ; démontrer usage de Github ? </p>
                     </div>
                     <div>
@@ -210,6 +214,7 @@
                     <div xml:id="T16" resp="#LB">
                         <head>14h - 15h : Création d’un ODD personnalisé – TP LB </head>
                         <!-- a fournir -->
+                        <p><ref target="ex-9-personnalisation.xml">ex-9-personnalisation</ref></p>
                         <list type="unordered">
                             <item>avec Roma</item>
                             <item>avec Oxygen</item>

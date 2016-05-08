@@ -1,469 +1,116 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
-   Fichier du manuscrit C2 de la Commodité de Desgodets 
-   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
---> 
-<!-- TODO : supprimer les exemples d’encodage mis en commentaire -->
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <!-- début de l’en-tête TEI -->
-  <teiHeader>
-    <fileDesc>
-      <!-- mentions de titre et de responsabilité -->
-      <titleStmt>
-        <title xml:lang="fre" type="main">Traité de la commodité</title>
-        <title xml:lang="fre" type="sub">manuscrit C2</title>
-        <author>
-          <persName ref="#desgodets">
-            <forename>Antoine</forename>
-            <surname>Desgodets</surname>
-          </persName>
-        </author>
-        <!-- mention de responsabilité principale (responsable scientifique de l’édition) -->
-        <principal>
-          <persName ref="#RC">
-            <forename>Robert</forename>
-            <surname>Carvais</surname>
-            <affiliation>
-              <orgName>Centre National de la Recherche
-                        Scientifique</orgName>
-              <orgName type="acronym">CNRS</orgName>
-              <roleName>responsable d’ANR</roleName>
-            </affiliation>
-          </persName>
-        </principal>
-        <!-- organismes qui ont financé l’opération -->
-        <funder>
-          <orgName>Agence Nationale de Recherche</orgName>
-          <orgName type="acronym">ANR</orgName>
-          <date from="2008" to="2013">2008-2013</date>
-        </funder>
-        <funder>
-          <orgName>Association Française d’Histoire de la
-                  Construction</orgName>
-          <orgName type="acronym">AFHC</orgName>
-          <date when="2013">2013</date>
-        </funder>
-        <!-- mentions de responsabilité secondaires -->
-        <respStmt>
-          <resp key="prg">modélisation XML-TEI</resp>
-          <persName ref="#EC">
-            <forename>Emmanuel</forename>
-            <surname>Château</surname>
-            <email>emchateau@laposte.net</email>
-          </persName>
-        </respStmt>
-        <respStmt>
-          <resp key="edt">édition</resp>
-          <persName ref="#EC">
-            <forename>Emmanuel</forename>
-            <surname>Château</surname>
-            <email>emchateau@laposte.net</email>
-          </persName>
-          <persName ref="#HRC">
-            <forename>Hélène</forename>
-            <surname>Rousteau-Chambon</surname>
-          </persName>
-        </respStmt>
-        <respStmt>
-          <resp key="mrk">encodage</resp>
-          <persName ref="#EC">
-            <forename>Emmanuel</forename>
-            <surname>Château</surname>
-            <email>emchateau@laposte.net</email>
-          </persName>
-        </respStmt>
-        <respStmt>
-          <resp key="trc">transcription</resp>
-          <persName ref="#LT">
-            <forename>Linnéa</forename>
-            <surname>Tilly</surname>
-          </persName>
-        </respStmt>
-      </titleStmt>
-      <!-- mention d’édition -->
-      <editionStmt>
-        <edition n="bêta">première édition électronique, <date from="2013" to="2013"
-            >2008-2013</date>, version bêta</edition>
-      </editionStmt>
-      <extent><!-- taille du fichier en octet --></extent>
-      <!-- information sur la publication électronique -->
-      <publicationStmt>
-        <date when="2013">2013</date>
-        <!-- voir si on attribue un DOI ou un identifiant ARK aux fichiers édités -->
-        <idno n="criticalEdition" type="URI">c2</idno>
-        <!-- responsable de la publication -->
-        <publisher>
-          <orgName>Centre de théorie et d’analyse du droit (UMR
-                  7074)</orgName>
-          <orgName type="acronym">CTAD</orgName>
-          <address>
-            <addrLine>Université Paris Ouest-Nanterre La Défense</addrLine>
-            <addrLine>UFR Droit et Science politique</addrLine>
-            <addrLine>Bâtiment F. - Bur. 404</addrLine>
-            <addrLine>200, Avenue de la République</addrLine>
-            <addrLine>92001 Nanterre Cedex</addrLine>
-            <addrLine>France</addrLine>
-            <addrLine>http://ctad.u-paris10.fr/cdr-theorie-droit/</addrLine>
-            <addrLine>contact@desgodets.fr</addrLine>
-          </address>
-        </publisher>
-        <availability status="restricted" xml:id="c2ImagesLicence">
-          <p>Les images numériques des manuscrits sont mises à disposition
-                  par les institutions partenaires mais restent leur propriété
-                  exclusive. Celles-ci en autorisent la reproduction et la
-                  réutilisation selon leurs propres règles en vigueur. Toute
-                  diffusion de ces images, sous quelque forme et sur quelque
-                  support que ce soit (papier, audiovisuel, ou numérique), pour
-                  quelque finalité que ce soit (pédagogique, scientifique ou
-                  commercial), doit faire l’objet d’une demande d’autorisation
-                  préalable auprès de l’institution concernée.</p>
-        </availability>
-        <availability status="restricted" xml:id="c2TextLicence">
-          <licence target="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"
-              >Le Centre de théorie et d’analyse du droit (UMR 7074) met à
-                  disposition cette ressource électronique structurée, protégée
-                  par le code de la propriété intellectuelle sur les bases de
-                  données (L341-1), selon les termes de la licence Creative
-                  Commons « Attribution – Pas d’Utilisation Commerciale –
-                  Partage dans les Mêmes Conditions ; 4.0 International
-                  (CC-BY-NC-SA 4.0) ». <lb/>Cette licence est disponible en
-                  ligne : <ref
-              target="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr"
-              >http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr</ref>
-                  ou par courrier postal à Creative Commons, 171 Second Street,
-                  Suite 300, San Francisco, California 94105, USA.</licence>
-          <p>Attribution : Vous devez créditer l’œuvre, intégrer un lien
-                  vers la licence et indiquer si des modifications ont été
-                  effectuées. Vous devez indiquer ces informations par tous les
-                  moyens possibles mais vous ne pouvez pas suggérer que le
-                  Centre de théorie et d’analyse du droit vous soutient ou
-                  soutient la façon dont vous avez utilisé son œuvre. <lb/>Le
-                  Centre de théorie et d’analyse du droit demande à ce que toute
-                  publication dérivée de ses ressources électroniques comporte :
-                  <lb/>1. le nom du Centre de théorie et d’analyse du droit et,
-                  pour les publications électroniques, son logo ainsi que la
-                  mention des auteurs de l’édition. <lb/>2. l’URI permettant
-                  d’accéder à la page citée sur notre site, ou à la page
-                  d’accueil de la ressource <lb/>3. la date et la version du
-                  fichier source utilisé.</p>
-          <p><hi rend="italic"
-            >Pas d’Utilisation Commerciale</hi> — Vous
-                  n’êtes pas autorisé à faire un usage commercial de cette
-                  œuvre, tout ou partie du matériel la composant. <lb/>Le Centre
-                  de théorie et d’analyse du droit souhaite principalement
-                  encourager l’utilisation et l’amélioration de ses ressources
-                  électroniques dans l’intérêt de l’enseignement et de la
-                  recherche. Toute autorisation au-delà du champ de cette
-                  licence doit être obtenue auprès du Centre de théorie et
-                  d’analyse du droit.</p>
-          <p><hi rend="italic"
-              >Partage dans les Mêmes Conditions</hi> —
-                  Dans le cas où vous effectuez un remix, que vous transformez,
-                  ou créez à partir du matériel composant l’œuvre originale,
-                  vous devez diffuser l’œuvre modifiée dans les même conditions,
-                  c’est à dire avec la même licence avec laquelle l’œuvre
-                  originale a été diffusée. <lb/>Vous n’êtes pas obligé de
-                  signaler votre travail auprès du Centre de théorie et
-                  d’analyse du droit, mais vous êtes incités à le faire en nous
-                  envoyant un mail à <ref
-              type="external" target="mailto:contact@desgodets.net">contact@desgodets.net</ref>.</p>
-          <p><hi rend="italic"
-            >Pas de restrictions additionnelles</hi> –
-                  Vous n’êtes pas autorisé à appliquer des conditions légales ou
-                  des mesures techniques qui restreindraient légalement autrui à
-                  utiliser l’œuvre dans les conditions décrites par la
-                  licence.</p>
-          <p>Le Centre de théorie et d’analyse du droit s’engage à
-                  conserver et à toujours offrir publiquement la version la plus
-                  à jour de ses ressources électroniques par l’intermédiaire
-                  d’une URI pérenne. <lb/>Dans l’intérêt de la communauté
-                  scientifique, afin de ne pas disperser les contributions et de
-                  permettre les meilleures conditions de collaboration
-                  scientifique, le Centre de théorie et d’analyse du droit se
-                  propose de recueillir et d’intégrer les corrections et
-                  contributions qui lui seront soumises (après validation par un
-                  comité scientifique), et à référencer leur origine.</p>
-          <p>Vous n’êtes pas dans l’obligation de respecter la licence pour
-                  les éléments ou matériel appartenant au domaine public ou dans
-                  le cas où l’utilisation que vous souhaitez faire est couverte
-                  par une exception.</p>
-        </availability>
-      </publicationStmt>
-      <!-- ajout d’un élément pour traiter le corpus général et réduire la hiérarchie des titres -->
-      <seriesStmt>
-        <title xml:lang="fre" type="main">Les cours de Desgodets</title>
-        <title xml:lang="fre" type="sub">une édition électronique</title>
-        <idno type="URI">http://www.desgodets.net</idno>
-      </seriesStmt>
-      <!-- ajout d’un élément pour DC.description -->
-      <notesStmt>
-        <note xml:lang="fre" type="abstract"
-          >Texte de description pour
-               DC.description</note>
-        <note xml:lang="eng" type="abstract"
-          >Texte de description en anglais
-               pour DC.description</note>
-      </notesStmt>
-      <!-- description de la source -->
-      <sourceDesc>
-        <msDesc xml:id="c2" xml:lang="fre">
-          <!-- identification du manuscrit -->
-          <msIdentifier xml:id="c2msIdentifier">
-            <country>France</country>
-            <settlement>Paris</settlement>
-            <institution>Bibliothèque nationale de France</institution>
-            <repository>Département des estampes</repository>
-            <!-- <collection>[collection (si besoin)]</collection> -->
-            <idno>Ha-23b-Pet.fol.</idno>
-            <!-- <altIdentifier> <idno>[autre identifiant]</idno> </altIdentifier> -->
-          </msIdentifier>
-          <!-- contenu du manuscrit-->
-          <msContents>
-            <msItemStruct>
-              <author>
-                <persName xml:lang="fre" full="yes" ref="#desgodets"
-                  >Desgodets, Antoine (1653-1728)</persName>
-                <persName>
-                  <forename>Antoine</forename>
-                  <surname>Desgodets</surname>
-                </persName>
-              </author>
-              <respStmt>
-                <resp key="com">collationneur</resp>
-                <persName xml:lang="fre" full="yes" ref="#pinardJean">
-                  <forename>Jean</forename>
-                  <surname>Pinard</surname>
-                </persName>
-              </respStmt>
-              <title type="supplied"
-                >Traité de la Commodité de
-                        l’architecture concernant la distribution et les
-                        proportions des édifices</title>
-              <title type="full"
-                  >Traité de la Commodité de l’architecture
-                        concernant la distribution et les proportions des
-                        édifices divisé en trois sections, la première contient
-                        les <term
-                  type="gT" ref="#eglise"
-                >églises</term> et
-                        autres lieux pieux, la seconde section contient les
-                        basiliques, les hôtels de ville et de commerce, et la
-                        troisième section contient les palais, les hôtels et les
-                        maisons particulières servant au logement, expliqué en
-                        l’Académie Royale d’architecture par Monsieur Desgodets
-                        architecte des Bastimens du Roy et professeur de laditte
-                        Académie, Recueillie par Jean Pinard, élève et étudiant
-                        de laditte académie Royalle d’architecture</title>
-              <!--<colophon>[colophon si présent]</colophon>-->
-              <note>
-                <p>Suite du cours d’architecture prononcé par Antoine
-                           Desgodets à l’Académie d’architecture concernant les
-                           Ordres. Manuscrit incomplet, divisé en trois
-                           sections, la première en cinq chapitres, la deuxième
-                           en deux chapitres, les autres chapitres et la
-                           troisième section manquent.</p>
-              </note>
-              <textLang mainLang="fre" otherLangs="lat ita"
-                >texte en
-                        français, quelques passages en latin et en
-                        italien.</textLang>
-            </msItemStruct>
-          </msContents>
-          <!-- description physique -->
-          <physDesc>
-            <objectDesc form="codex">
-              <supportDesc material="paper">
-                <support>
-                  <p><objectType>codex</objectType>, <material>papier à
-                                 la cuve</material> avec filigranes,
-                                 <watermark>raisins</watermark> similaire à
-                                 <ref>[référence]</ref>,
-                              <date>1570-1758</date></p>
-                </support>
-                <extent>
-                  <dimensions type="leaves">
-                    <dim quantity="286" unit="leaves"
-                      >286 pages, dont
-                                 42 planches</dim>
-                    <height quantity="410" unit="mm"/>
-                    <width quantity="250" unit="mm"/>
-                    <depth quantity="40" unit="mm"/>
-                  </dimensions>
-                  <!-- dimensions est répétable -->
-                </extent>
-                <foliation>foliotées au crayon en haut, au centre des
-                           pages</foliation>
-                <collation>le manuscrit est monté sur onglet</collation>
-                <condition>bon</condition>
-              </supportDesc>
-              <layoutDesc>
-                <layout columns="1" ruledLines="25 30"
-                  >texte sur une
-                           colonne, 25 à 30 lignes réglées à la mine de
-                           plomb</layout>
-                <!-- layout est répétable et peut contenir une localisation avec locus -->
-              </layoutDesc>
-            </objectDesc>
-            <handDesc>
-              <handNote xml:id="c2Hand1" scope="major"
-                >à l’encre
-                        noire</handNote>
-              <!-- handNote est répétable et peut contenir une localisation avec locus -->
-              <!-- TODO retirer cette note de main fournie pour exemple -->
-              <handNote xml:id="c2Hand2" scope="minor"
-                >à l’encre
-                        noire</handNote>
-            </handDesc>
-            <decoDesc>
-              <decoNote>le manuscrit contient 42 planches au lavis d’une
-                        grande qualité d’exécution</decoNote>
-              <!-- decoNote est répétable et peut contenir une localisation avec locus -->
-            </decoDesc>
-            <bindingDesc>
-              <binding>
-                <p>relié en <material>veau</material></p>
-                <condition>bon</condition>
-                <decoNote>dorure au fer</decoNote>
-              </binding>
-            </bindingDesc>
-            <!-- <accMat>[description du matériel d’accompagnement, s’il y en a]</accMat> -->
-          </physDesc>
-          <history>
-            <origin>
-              <p>Copié au cours du <origDate notBefore="1725" notAfter="1785">XVIII<hi
-                    rend="superscript"
-                >e</hi>
-                           siècle</origDate> ce manuscrit est pour ainsi dire en
-                        tous points identique à celui conservé au Rijk. La
-                        numérotation des planches semble indiquer qu’il a pu
-                        être copié d’après un même original.</p>
-            </origin>
-            <!--<provenance>
-                     <p>[Si nous avions eu des informations sur la
-                        provenance].</p>
-                  </provenance>-->
-            <acquisition>
-              <p>Entré par le biais d’une acquisition du cabinet des
-                        Estampes de la bibliothèque du roi circa 1785.</p>
-            </acquisition>
-          </history>
-          <additional>
-            <surrogates>
-              <idno>microfilm R 710124-710264</idno>
-            </surrogates>
-            <!-- références bibliographiques sur l’exemplaire -->
-            <listBibl>
-              <bibl corresp="#scheurleer1964"/>
-            </listBibl>
-          </additional>
-        </msDesc>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <!-- description du projet éditorial -->
-      <projectDesc>
-        <p>L’édition des cours de Desgodets fait partie d’un programme de
-               recherche sur la formalisation du savoir architectural au XVII<hi
-            rend="superscript">e</hi> siècle.</p>
-      </projectDesc>
-      <!-- déclaration des principes éditoriaux -->
-      <editorialDecl>
-        <correction>
-          <p>La syntaxe originale du manuscrit a été respectée en suivant
-                  les indications de Bernard Barbiche, <ref
-              type="external"
-              target="http://theleme.enc.sorbonne.fr/cours/edition_epoque_moderne/edition_des_textes"
-                >Conseils pour l’édition des textes de l’époque moderne
-                        (XVI<hi
-                rend="superscript">e</hi>-XVIII<hi rend="superscript">e</hi> siècle)</ref>.</p>
-        </correction>
-        <hyphenation>
-          <p>Pour les ouvrages imprimés, il n’a pas été tenu compte de
-                  l’hyphénation.</p>
-        </hyphenation>
-        <interpretation>
-          <p>Les interprétations sont traitées au moyen d’un élément
-                  supplied ou bien sont renvoyées en notes. Une mention de
-                  responsabilité est fournie grâce à l’attribut resp sur le
-                  passage concerné.</p>
-        </interpretation>
-        <normalization>
-          <p>La ponctuation ainsi que les majuscules ont été normalisées.
-                  Les abréviations ont été développées.</p>
-        </normalization>
-        <stdVals>
-          <p>On utilise...</p>
-        </stdVals>
-        <quotation>
-          <p>Les citations dans le texte sont encodées soit au moyen d’un
-                  élément quote, soit au moyen d’un élément q. Les guillemets
-                  doivent donc être restitués en conséquence.</p>
-        </quotation>
-      </editorialDecl>
-      <!-- déclaration concernant la méthode d’établissement du corpus (sélection) -->
-      <refsDecl>
-        <p>Description du système de référence canonique. Plus tard on
-               fournira peut-être une expression régulière.</p>
-      </refsDecl>
-      <samplingDecl>
-        <p>Le manuscrit a été transcrit intégralement.</p>
-      </samplingDecl>
-      <variantEncoding method="location-referenced" location="external"/>
-    </encodingDesc>
-    <!-- présentation du profil de fichier -->
-    <profileDesc>
-      <creation notBefore="1721" notAfter="1785">XVIII<hi rend="superscript"
-        >e</hi> siècle (entre 1721 et 1785)</creation>
-      <langUsage>
-        <language ident="fre" usage="99"
-          >Français (langue principale du
-               corpus)</language>
-        <language ident="lat" usage="01"
-          >Latin (langue utilisée dans le
-               corpus)</language>
-      </langUsage>
-      <textClass>
-        <keywords xml:lang="fre" scheme="http://data.bnf.fr/liste-rameau">
-          <term>Architecture</term>
-          <term>18e siècle</term>
-          <term>France</term>
-          <term>Architecture –– Philosophie</term>
-          <term>Architecture religieuse</term>
-          <term>Architecture hospitalière</term>
-          <term>Architecture publique</term>
-        </keywords>
-        <keywords xml:lang="eng" scheme="http://id.loc.gov/authorities/about.html#lcsh">
-          <term>Architecture, Modern</term>
-          <term>17th-18th centuries</term>
-          <term>France</term>
-          <term>Architecture -- Philosophy</term>
-          <term>Church architecture</term>
-          <term>Hospital architecture</term>
-          <term>Public architecture</term>
-        </keywords>
-        <classCode scheme="http://dublincore.org/documents/2012/06/14/dcmi-terms/">
-          <term>Text</term>
-        </classCode>
-      </textClass>
-    </profileDesc>
-    <revisionDesc>
-      <change when="2013-03-30" who="#EC">version bêta</change>
-      <change when="2013-04-11" who="#EC">mise à jour du teiHeader</change>
-      <change when="2013-01-07" who="#EC">sérialisation des
-            paragraphes</change>
-      <change when="2013-01-06" who="#EC"
-        >augmentation de l’en-tête TEI et
-            structuration du texte</change>
-      <change when="2012-09-05" who="#EC">première version du
-            fichier</change>
-    </revisionDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div>
-        <p>ee</p>
-      </div>
-    </body>
-  </text>
-</TEI>
+
+<msDesc xmlns="http://www.tei-c.org/ns/1.0" xml:id="c2" xml:lang="fre">
+  <!-- identification du manuscrit -->
+  <msIdentifier xml:id="c2msIdentifier">
+    <country>France</country>
+    <settlement>Paris</settlement>
+    <institution>Bibliothèque nationale de France</institution>
+    <repository>Département des estampes</repository>
+    <!-- <collection>[collection (si besoin)]</collection> -->
+    <idno>Ha-23b-Pet.fol.</idno>
+    <!-- <altIdentifier> <idno>[autre identifiant]</idno> </altIdentifier> -->
+  </msIdentifier>
+  <!-- contenu du manuscrit-->
+  <msContents>
+    <msItemStruct>
+      <author>
+        <persName xml:lang="fre" full="yes" ref="#desgodets">Desgodets, Antoine
+          (1653-1728)</persName>
+        <persName>
+          <forename>Antoine</forename>
+          <surname>Desgodets</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <resp key="com">collationneur</resp>
+        <persName xml:lang="fre" full="yes" ref="#pinardJean">
+          <forename>Jean</forename>
+          <surname>Pinard</surname>
+        </persName>
+      </respStmt>
+      <title type="supplied">Traité de la Commodité de l’architecture concernant la distribution et
+        les proportions des édifices</title>
+      <title type="full">Traité de la Commodité de l’architecture concernant la distribution et les
+        proportions des édifices divisé en trois sections, la première contient les <term type="gT"
+          ref="#eglise">églises</term> et autres lieux pieux, la seconde section contient les
+        basiliques, les hôtels de ville et de commerce, et la troisième section contient les palais,
+        les hôtels et les maisons particulières servant au logement, expliqué en l’Académie Royale
+        d’architecture par Monsieur Desgodets architecte des Bastimens du Roy et professeur de
+        laditte Académie, Recueillie par Jean Pinard, élève et étudiant de laditte académie Royalle
+        d’architecture</title>
+      <!--<colophon>[colophon si présent]</colophon>-->
+      <note>
+        <p>Suite du cours d’architecture prononcé par Antoine Desgodets à l’Académie d’architecture
+          concernant les Ordres. Manuscrit incomplet, divisé en trois sections, la première en cinq
+          chapitres, la deuxième en deux chapitres, les autres chapitres et la troisième section
+          manquent.</p>
+      </note>
+      <textLang mainLang="fre" otherLangs="lat ita">texte en français, quelques passages en latin et
+        en italien.</textLang>
+    </msItemStruct>
+  </msContents>
+  <!-- description physique -->
+  <physDesc>
+    <objectDesc form="codex">
+      <supportDesc material="paper">
+        <support>
+          <p><objectType>codex</objectType>, <material>papier à la cuve</material> avec filigranes,
+              <watermark>raisins</watermark> similaire à <ref>[référence]</ref>,
+              <date>1570-1758</date></p>
+        </support>
+        <extent>
+          <dimensions type="leaves">
+            <dim quantity="286" unit="leaves">286 pages, dont 42 planches</dim>
+            <height quantity="410" unit="mm"/>
+            <width quantity="250" unit="mm"/>
+            <depth quantity="40" unit="mm"/>
+          </dimensions>
+          <!-- dimensions est répétable -->
+        </extent>
+        <foliation>foliotées au crayon en haut, au centre des pages</foliation>
+        <collation>le manuscrit est monté sur onglet</collation>
+        <condition>bon</condition>
+      </supportDesc>
+      <layoutDesc>
+        <layout columns="1" ruledLines="25 30">texte sur une colonne, 25 à 30 lignes réglées à la
+          mine de plomb</layout>
+        <!-- layout est répétable et peut contenir une localisation avec locus -->
+      </layoutDesc>
+    </objectDesc>
+    <handDesc>
+      <handNote xml:id="c2Hand1" scope="major">à l’encre noire</handNote>
+      <!-- handNote est répétable et peut contenir une localisation avec locus -->
+    </handDesc>
+    <decoDesc>
+      <decoNote>le manuscrit contient 42 planches au lavis d’une grande qualité
+        d’exécution</decoNote>
+      <!-- decoNote est répétable et peut contenir une localisation avec locus -->
+    </decoDesc>
+    <bindingDesc>
+      <binding>
+        <p>relié en <material>veau</material></p>
+        <condition>bon</condition>
+        <decoNote>dorure au fer</decoNote>
+      </binding>
+    </bindingDesc>
+   </physDesc>
+  <history>
+    <origin>
+      <p>Copié au cours du <origDate notBefore="1725" notAfter="1785">XVIII<hi rend="superscript"
+            >e</hi> siècle</origDate> ce manuscrit est pour ainsi dire en tous points identique à
+        celui conservé au Rijk. La numérotation des planches semble indiquer qu’il a pu être copié
+        d’après un même original.</p>
+    </origin>
+   
+    <acquisition>
+      <p>Entré par le biais d’une acquisition du cabinet des Estampes de la bibliothèque du roi
+        circa 1785.</p>
+    </acquisition>
+  </history>
+  <additional>
+    <surrogates>
+      <idno>microfilm R 710124-710264</idno>
+    </surrogates>
+
+  </additional>
+</msDesc>

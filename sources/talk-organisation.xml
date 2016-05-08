@@ -17,121 +17,7 @@
     </revisionDesc>
   </teiHeader>
   <text>
-    <!--    <front>
-      <!-\-<p>title: 07-teiCorpus</p>
-       <p>description: emchateau, ENC 27-30 octobre 2014</p>
-       <p>theme: theme/remark-dark.css</p>
-       <p>name: inverse</p>
-       <p>layout: true</p>
-       <p>class: inverse</p>
-       <p>-\\-\\-</p>
-       <p>class: center middle</p>-\->
-      <titlePage xml:lang="fr">
-        <titlePart>05-Liens et structures complexes</titlePart>
-        <docImprint>Formation TEI | ENC 26-29 mai 2015</docImprint>
-        <note><ref target="00-programme.html">Programme</ref></note>
-      </titlePage>
-      <div type="title">
-        <div>
-          <head>Introduction</head>
-        </div>
-        <div>
-          <head>Introduction</head>
-          <p>On l’a vu, la Text Encoding Initiative fournit un grand nombre de balises dans lesquelles il est possible de puiser pour modéliser son texte. Personne ne les utilise toutes dans le cadre d’un même projet. En d’autres termes, on doit construire des représentations du texte source qui reflètent les phénomènes que l’on observe d’un point de vue structurel, sémantique ou linguistique, et que l’on va modéliser d’après la manière dont on espère les exploiter par la suite. À cet égard, la modélisation XML-TEI est une opération intrinsèque au processus éditorial et qui a directement trait au caractère scientifique de l’édition numérique. Puisqu’il s’agit bel et bien de produire un artefact orienté.</p>
-        </div>
-      </div>
-      <div type="sommaire" xml:lang="fr" xml:id="index">
-        <div>
-          <head>Sommaire</head>
-          <list>
-            <item><ref target="#part1">Les liens</ref></item>
-            <item><ref target="#part2">Les Corpus</ref></item>
-            <item><ref target="#part3">Les figures et facsimili</ref></item>
-          </list>
-        </div>
-      </div>
-    </front>
-    <body>
-      <div type="part">
-        <div type="title" xml:lang="fr" xml:id="part1">
-          <div>
-            <head>Les liens</head>
-          </div>
-        </div>
-        <div type="slide" xml:lang="fr">
-          <div>
-            <div>
-              <head>Créer des liens</head>
-              <p><gi>ptr</gi> pointeur vers un autre emplacement (élément vide)</p>
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <ptr target="url.fr"/>
-              </egXML>
-              <p><gi>ref</gi> référence vers un autre emplacement (complément d’information)</p>
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <ref type="note" target="#nH201">Passage annoté</ref>
-              </egXML>
-            </div>
-            <div>
-              <head>Attributs</head>
-              <list>
-                <item>
-                  <att>xml:id</att> ancre pour identifier l'élément de référence</item>
-                <item><att>target</att> spécifie la destination de la référence</item>
-                <item><att>corresp</att> indique un élément correspondant</item>
-              </list>
-            </div>
-          </div>
-        </div>
-        <div type="slide" xml:lang="fr">
-          <div>
-            <head>Notes de commentaire historique</head>
-            <p><code>note</code> élément pour l’enregistrement d’une note</p>
-            <list>
-              <item>soit encodée directement dans le texte</item>
-              <item>soit regroupées à un autre endroit</item>
-            </list>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <p>Le fût de chaque colonne est cannelé de vingt
-                quatre canneaux dans son pourtour<ref
-                  type="noteHistorical" target="#c2Nh0081"/>. En...
-              </p>
-              <!-\- ... -\->
-              <note xml:id="c2Nh0081"><p>texte de la note</p></note>
-            </egXML>
-          </div>
-        </div>
-        <div type="slide" xml:lang="fr">
-          <div>
-            <head>Localisation référencée</head>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <div type="alignmentText" xml:id="cAlignmentText">
-                <linkGrp>
-                  <!-\- Front -\->
-                  <link target="#c1Front #c2Front"/>
-                  <link target="#c1FrontFr #c2FrontFr02"/>
-                  <link target="#c1FrontFr01 #c2FrontFr01"/>
-                  <link
-                    target="#c1FrontFr01.p001 #c2FrontFr01.p001"/>
-                  <!-\- ... -\->
-                </linkGrp>
-              </div>
-            </egXML>
-          </div>
-          <div>
-            <head>Localisation référencée</head>
-            <p>L’utilisation d’identifiants uniques rassemble plusieurs avantages, ceux-ci permettent d’identifier précisément, à l’exclusion de tout autre, une unité textuelle ou un passage dans l’un des manuscrits.</p>
-            <p>Ils constituent donc une bonne pratique notamment pour la citabilité.</p>
-            <p>Comme on utilise ici l’attribut global de XML <att>xml:id</att> qui doit nécessairement être unique dans un fichier XML, il y a un contrôle d’unicité (ce contrôle s’applique à l’ensemble du corpus car il est compris dans une arborescence de fichiers XML).</p>
-            <p>Enfin, le fait d’utiliser des identifiants uniques, a surtout l’avantage de permettre de traiter les regroupements de paragraphes, les interversions, les ajouts, indépendamment du manuscrit édité (et donc par la suite éventuellement d’éditer toutes les variantes du texte ou le réemploi des sources XML-TEI dans d’autres projets).</p>
-          </div>
-        </div>
-      </div>
-      <div type="part">
-        <div type="title">
-          <div>
-            <head>Les corpus</head>
-          </div>
-        </div>-->
+   
     <body>
       <div rend="slide">
         <head>Structure(s) d'un document TEI-XML</head>
@@ -150,9 +36,11 @@
         <list>
           <item>un ensemble d'images numérique, chacun représentant une page d'une ressource </item>
           <item>une transcription plus ou moins complète du texte qui figure sur ces pages</item>
-          <item>des métadonnées concernant les ressources numérisées, par ex. leur relation, leur origine etc.</item>
-          <item>des métadonnées concernant la manière de sa numérisation</item>
-          <item>des annotations plus ou moins riches sur les entités réferencées par les textes, la langue des textes, etc</item>
+          <item>des metadonnées concernant les ressources numerisées, par ex. leur relation, leur
+            origine etc.</item>
+          <item>des metadonnées concenant la manière de sa numérisation</item>
+          <item>des annotations plus ou moins riches sur les entités referenciés par les textes, la
+            langue des textes, etc</item>
         </list>
         <p rend="box">Le système TEI nous propose plusieurs manières d'organiser tout cela</p>
       </div>
@@ -168,7 +56,8 @@
 
           <item><gi>sourceDoc</gi> : transcription quasiment objective des aspects physique d'un
             document </item>
-          <item><gi>teiHeader</gi> : rassemble les métadonnées qui décrivent les objets traités et les méthodes d'encodage concernées </item>
+          <item><gi>teiHeader</gi> : rassemble les métadonnées qui décrivent les objects traités et
+            les méthodes d'encodage concernées </item>
         </list>
         <p rend="box">Un élément <gi>TEI</gi> contient au minimum un <gi>teiHeader</gi>, suivi d'un
           ou plusieurs des autres possibilités</p>
@@ -373,6 +262,9 @@
       <div>
         <head>Exemple </head>
         <figure>
+          <graphic url="../images/bovelles-1.png" height="90%"/>
+        </figure>
+       <!-- <figure>
           <graphic url="../images/bovelles.png" height="90%"/>
         </figure>
         <cb/>
@@ -382,11 +274,14 @@
             <item>la lettrine</item>
             <item>l'image d'une cloche</item>
           </list>...</p>
-        <p>Ce sont tous des zones rectangulaires</p>
+        <p>Ce sont tous des zones rectangulaires</p>-->
       </div>
       <div>
         <head>Exemple</head>
         <figure>
+          <graphic url="../images/bovelles-2.png" height="90%"/>
+        </figure>
+        <!--<figure>
           <graphic url="../images/bovelles-boxed.png" height="90%"/>
         </figure>
         <cb/>
@@ -394,18 +289,20 @@
             <surface ulx="0" uly="0" lrx="52" lry="32">
               <graphic url="bovelles.png"/>
               <zone ulx="4" uly="4" lrx="27" lry="13"/>
-              <!-- le titre -->
+              <!-\- le titre -\->
               <zone ulx="4" uly="31" lrx="12" lry="38"/>
-              <!-- la lettrine  -->
+              <!-\- la lettrine  -\->
               <zone ulx="10" uly="40" lrx="27" lry="52"/>
-              <!-- la cloche -->
+              <!-\- la cloche -\->
             </surface>
           </facsimile></egXML>
-        <p>(Notons que nous n'avons pas encore introduit des identifiants pour chaque zone)</p>
+        <p>(Notons que nous n'avons pas encore introduit des identifiants pour chaque zone)</p>-->
       </div>
       <div>
         <head>Et la transcription</head>
         <figure>
+          <graphic url="../images/bovelles-3.png" height="90%"/>
+        </figure><!--<figure>
           <graphic url="../images/bovelles-boxed.png" height="90%"/>
         </figure>
         <cb/>
@@ -413,11 +310,11 @@
             <surface xml:id="B49r" ulx="0" uly="0" lrx="52" lry="32">
               <graphic url="bovelles.png"/>
               <zone xml:id="B49rHead" ulx="4" uly="4" lrx="27" lry="13"/>
-              <!-- le titre -->
+              <!-\- le titre -\->
               <zone xml:id="B49rCap" ulx="4" uly="31" lrx="12" lry="38"/>
-              <!-- la lettrine  -->
+              <!-\- la lettrine  -\->
               <zone xml:id="B49rFig" ulx="10" uly="40" lrx="27" lry="52"/>
-              <!-- la cloche -->
+              <!-\- la cloche -\->
             </surface></facsimile>
           <text>
             <body>
@@ -436,11 +333,11 @@
                   axe, ou essieu, A B: je dy que leur accord se fera en contraires parties
                     co<ex>m</ex>me voyez icy figuré. Car quand l'vne sera en haut, l'autre declinera
                   en bas. Autreme<ex>m</ex>t si elles de.<figure facs="#B49rFig1"/>
-                  <pb/><!-- ... -->
+                  <pb/><!-\- ... -\->
                 </p>
               </div>
             </body>
-          </text></egXML>
+          </text></egXML>-->
       </div>
       <div type="slide" xml:lang="fr">
 
@@ -539,7 +436,9 @@
                 <TEI><!-- contenu du fichier TEI --></TEI>
               </teiCorpus>
             ]]></egXML>
+          <!-- desgodets images for example -->
         </div>
+        <!-- add oulipens.xml for example -->
       </div>
 
       

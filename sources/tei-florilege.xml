@@ -90,7 +90,7 @@ les reflexions sur la materialite des textes qu'ils impliquent?
 
       <div>
         <head>Interoperabilite des textes TEI</head>
-        <p rend="box">La TEI fut concu comme outil de l'interoperabilite/interchange : est-ce que
+        <p rend="box">La TEI fut conçu comme outil de l'interoperabilite/interchange : est-ce que
           cette promesse a ete validee? </p>
         <list>
           <item>confronte par la richesse, beaucoup d'utilisateurs se limitent a des sous ensembles
@@ -101,14 +101,21 @@ les reflexions sur la materialite des textes qu'ils impliquent?
         <p>Nous allons explorer cela...</p>
       </div>
       <div>
+        <head>Répertoires d’éditions critiques numériques</head>
+        <p>Si</p>
+        <list>
+          <item><ref target="http://www.tei-c.org/Activities/Projects/">Projects Using the TEI, site de la TEI</ref></item>
+          <item><ref target="http://www.digitale-edition.de">Scholarly Digital Editions. An annotated List, compiled by Patrick Sahle</ref></item>
+          <item><ref target="https://github.com/gfranzini/digEds_cat/wiki">Greta Franzini, Catalogue of Digital Editions?</ref></item>
+        </list>
+      </div>
+      <div>
         <head>Quelques exemples</head>
-        <p>Mais nous commencons avec un brief regard sur quelques projets de divers types,
-          d'origines differentes, et egalement tres variable de point de vue disciplinaire. Mais ils
+        <p>Mais nous commencons avec un brief regard sur quelques projets de divers types, d'origines differentes, et egalement tres variable de point de vue disciplinaire. Mais ils
           on tous en commun: <list>
             <item>ils se servent de la TEI</item><item>ils traitent des documents
               francais</item><item>ils exposent les source TEI XML</item>
           </list></p>
-
       </div>
       <div>
         <head> Essai sur le récit, ou entretiens sur la manière de raconter de François-Joseph
@@ -395,14 +402,12 @@ or new site?
           <item>un lexique commun</item>
           <item>un respect de l'autonomie</item>
         </list>
-        <p>Un effort de standardisation qui ne dit pas «fais comme moi» ; mais plutot «explique-moi
-          ce que tu fais. »</p>
+        <p>Un effort de standardisation qui ne dit pas «fais comme moi» ; mais plutôt «explique-moi ce que tu fais. »</p>
       </div>
 
       <div>
         <head>TEI explorations</head>
-        <p>Dans l'exercice qui suit, vous etes invite a rechercher la variete des textes TEI
-          disponible sur le web.</p>
+        <p>Dans l'exercice qui suit, vous êtes invite a rechercher la variéte des textes TEI disponible sur le web.</p>
       </div>
 
 

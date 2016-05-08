@@ -1,0 +1,905 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Programme</title>
+      <link href="themes/remark-dark.css" rel="stylesheet" media="all" type="text/css">
+   </head>
+   <body><textarea id="source">
+title: Comment se servir des TEI Guidelines? 
+description: , 2012-01-24
+theme: theme/remark-dark-em.cssname: inverse
+layout: true
+class: inverse
+
+---
+
+
+# Les Cinq Étapes du chemin de l’Éveil TEI
+
+1. Modélisation&nbsp;: quels sont les buts et les objets de votre projet&nbsp;?
+
+1. Orientation&nbsp;: est-ce que vos objets sont déjà reconnus par la TEI&nbsp;?
+
+1. Déclaration&nbsp;: comment créer une specification TEI-conforme&nbsp;? 
+
+1. Documentation&nbsp;: comment documenter vos pratiques TEI&nbsp;?
+
+1. Validation&nbsp;: comment valider vos efforts&nbsp;?
+
+---
+
+
+# Modélisation
+
+La modélisation de vos données est une préalable essentiel. Que vous vous serviez de UML, de RDBMS, de SKOS, ou de quoique ça soit d’autre, si vous n’avez pas un modèle explicite des choses que vous espérez gérer, vous aurez de grands difficultés.
+![](../images/tree-image.jpg)
+---
+
+
+# Orientation
+![](../images/sweeties.jpg)
+---
+
+
+# Comment s’orienter?
+
+Les TEI Guidelines, imprimées ou en ligne, se divisent en deux grosses parties&nbsp;: 
+* une séquence de 23 chapitres, dont la plupart correspondent à un module
+
+* des listes alphabétiques de définitions exhaustives de classes (183), d’éléments (546), d’attributs (470), de macros(8), et de types de données (28) .
+
+
+Comment savoir quel élément (etc.) choisir pour telle ou telle entité identifiée dans votre analyse préalable&nbsp;? Comment savoir que vous avez besoin d’une licorne&nbsp;?
+
+---
+
+
+# La triste vérité…
+
+* Désolé, mais il n’y a aucune méthode scientifique&nbsp;; aucun raccourci pour cela… 
+
+* Il faut étudier les exemplaires et les définitions pour savoir si cet élément TEI si prometteur s’applique en effet à votre cas
+
+* comme c’est le cas pour d’autres types de mapping… 
+
+Pour chacun(e) des entités/concepts identifiés dans votre modèle, il faut décider&nbsp;: 
+* quel objet TEI lui correspond parfaitement&nbsp;? (s’il existe)
+
+* quel objet TEI lui ressemble et quelles petites modifications seraient nécessaires pour qu’il lui corresponde&nbsp;?
+
+* quelle lacune TEI votre analyse vous permettra de corriger (oui, elles existent les licornes&nbsp;!)
+
+
+---
+
+
+# Un exemple simple…
+![](../images/guyDeWarwick-tp.jpg)![](../Graphics/guyDeWarwick-15.jpg)
+---
+
+
+# Structuration
+
+* C’est un livret de la bibliothèque bleue – un chapbook– organisé de manière traditionnelle, avec des pièces liminaires (une page de titre, une table des matières) et plusieurs chapitres
+
+* chacun des chapitres contient&nbsp;: 
+* un titre et un sommaire
+
+* des paragraphes narratifs
+
+* des passages de dialogue
+
+* des noms de lieux, noms de personnes, noms d’événements, etc.
+
+
+* chaque page est dotée de matières paratextuelles (signatures, etc.)
+
+* Et plusieurs images
+
+---
+
+
+# Structure(s) d’un document XML-TEI
+
+* Chaque document TEI est représenté par un élément `&lt;TEI&gt;`, regroupant le contenu d’un document avec un entête de métadonnées (`&lt;teiHeader&gt;`) qui le décrivent
+
+* On peut également regrouper des `&lt;TEI&gt;` dans un `&lt;teiCorpus&gt;`
+
+Le terme document  n’a aucune définition formelle, mais d’habitude il correspond à un objet complet (un livre par ex). D’autres possibilités ne sont pas exclus…
+
+---
+
+
+# Un document TEI peut contenir…
+
+* un ensemble de représentations visuelles (`&lt;facsimile&gt;`)
+
+* ou une transcription textuelle (`&lt;text&gt;`)
+
+* ou une transcription documentaire (`&lt;sourceDoc&gt;`)
+
+* ou ces trois types d’objet conjointement
+
+```xml
+<TEI xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+            <teiHeader>
+               <!-- obligatoire :  métadonnées  --></teiHeader>
+            <facsimile>
+              
+               <!-- facultatif :  rassemble des images de l’objet-->
+            </facsimile>
+            <sourceDoc>
+              
+               <!-- facultatif :  transcription documentaire  de l’objet -->
+            </sourceDoc>
+            <text>
+               <!-- facultatif :  transcription textuelle  de l’objet --></text>
+          </TEI>
+```
+
+---
+
+
+# Un TEI Corpus par contre… 
+
+
+```xml
+<teiCorpus xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+              <teiHeader>
+                
+               <!-- obligatoire -->
+              </teiHeader>
+              <TEI>
+                
+               <!-- obligatoire -->
+              </TEI>
+              
+            <!-- encore d’elements <TEI>  -->
+            </teiCorpus>
+```
+
+
+Cette structure servirait par exemple à une collection de livres de ce genre
+
+---
+
+
+# L’entête minimale
+
+
+```xml
+<teiHeader xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+              <fileDesc>
+                <titleStmt>
+                  <title>titre de la ressource</title>
+                </titleStmt>
+                <publicationStmt>
+                  <p>agence de distribution de la source</p>
+                </publicationStmt>
+                <sourceDesc>
+                  <p>provenance de la source</p>
+                </sourceDesc>
+              </fileDesc>
+            </teiHeader>
+```
+
+
+---
+
+
+# L’élément `&lt;text&gt;`
+
+Un texte peut être simple ou complexe&nbsp;: 
+* un `&lt;text&gt;` simple est un objet autonome, en lui-même complet, par ex un roman, un poème
+
+* un `&lt;text&gt;` complexe ou composé, rassemble d’autres textes, par exemple une anthologie, une collection de poésies
+
+
+---
+
+
+# TEI text structure (1)
+
+Un document simple&nbsp;: 
+```xml
+<text xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+              <front>
+               <!-- facultatif --></front>
+              <body>
+               <!-- obligatoire --></body>
+              <back>
+               <!-- facultatif --></back>
+            </text>
+```
+
+
+---
+
+
+# TEI text structure (2)
+
+Un document composé&nbsp;: 
+```xml
+<text xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+              <front>
+               <!-- ... --></front>
+              <group>
+                <text n="1">
+                  <body>
+                    <p>...</p>
+                  </body>
+                </text>
+                <text n="2">
+                  <body>
+                    <p>...</p>
+                  </body>
+                </text>
+              </group>
+              <back>
+               <!-- ... --></back>
+            </text>
+```
+
+
+---
+
+
+# Entrons dans le `&lt;body&gt;` d’un `&lt;text&gt;`…
+
+D’habitude, on y trouve des divisions 
+* qui s’emboîtent
+
+* l’attribut `@type` sert à distinguer les divisions par fonction ou par niveau
+
+* l’attribut `@n` fournit un nom ou un nombre pour une division déjà numérotée d’une manière quelconque
+
+* l’attribut `@xml:id` fournit une identifiant unique
+
+* l’attribut `@xml:lang` identifie la langue (humaine) du contenu de la division
+
+
+Ces deux derniers sont deux des attributs dits globaux qui peuvent s’attacher à n’importe quel élément TEI
+
+---
+
+
+# Composants des divisions
+
+Nous reconnaissons facilement… 
+
+* éléments liminaux spécialisés : `&lt;head&gt;`, `&lt;trailer&gt;`, etc.
+
+* en prose&nbsp;: les `&lt;p&gt;`, `&lt;list&gt;` etc.
+
+* en poésie&nbsp;: les `&lt;lg&gt;`, `&lt;l&gt;` …
+
+* en drame&nbsp;: les `&lt;sp&gt;`, `&lt;stage&gt;` etc.
+
+* partout&nbsp;: les `&lt;note&gt;`, les `&lt;bibl&gt;`, les `&lt;figure&gt;` …
+
+---
+
+
+# Composants des composants des divisions
+
+On peut également baliser…
+
+* éléments de repérage&nbsp;: les `&lt;lb&gt;`, `&lt;pb&gt;` etc.
+
+* éléments et attributs de mise-en-forme&nbsp;: `&lt;hi&gt;`, `@rend`, `@rendition` etc.
+
+* éléments sémantiques&nbsp;: `&lt;date&gt;`, `&lt;name&gt;`, `&lt;placeName&gt;` etc.
+
+* éléments para-textuels&nbsp;: `&lt;sic&gt;`, `&lt;corr&gt;`, `&lt;add&gt;` etc.
+
+* etc., etc., etc.
+
+---
+
+
+# Notre exemple (1)
+
+```xml
+<text xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+            <front>
+              <titlePage>
+                <docTitle>cy commence Guy de Wa- ruich chevalier Dãgleterre qui en son temps fit
+                  plusieurs prouesses et con- questes en Allemaigne/ytalie et Da<damage></damage>emarche. Et
+                  aussi sur les infidel- les ennemys de la chrestiente Comme pourrez veoir plus a
+                  plain en ce pre- sent livre Imprime nouvellement a Paris </docTitle>
+                <figure>
+                  <graphic url="gdw-tp-1"></graphic>
+                  <head>FRANCOYS REGNAULT</head>
+                </figure>
+                <imprint>cum privilegio</imprint>
+              </titlePage>
+              
+               <!-- ... -->
+            </front>
+          </text>
+```
+![](../images/guyDeWarwick-tp.jpg)
+---
+
+
+# Notre exemple (2)
+
+```xml
+<text xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+            <front>
+              
+               <!-- … -->
+              <div type="prolog" xml:id="p1">
+                <head>Cy commence le prologue de lacteur</head>
+                <figure><graphic url="gdw-p01.png"></graphic></figure>
+                <p><g type="lettrine" ref="#ornA">A</g>u temps du roy A- thelstã prince de no- ble memoire regnat en souverainete ou royaulme Dangle- terre <abbr>ape</abbr>lan de lin- carnation notre sei gne<am>r</am> Jesuchrist qua tre cens ans et vingtquatre ... </p>
+                <trailer>Ici fine le prologue</trailer>
+              </div>
+            </front>
+            
+            <!-- ... -->
+          </text>
+```
+![](../images/guyDeWarwick-13.jpg)
+---
+
+
+# Notre exemple (3)
+
+```xml
+<text xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+            
+            <!-- ... -->
+            <body>
+              <fw>feuillet premier.</fw>
+              <div type="chap" xml:id="C1">
+                <head>Comment le conte Roalt avoit une belle fille nomee Felisse sur- montant en beautee toutes autres dames et damoiselles et envoya querir Guyonet filz de son seneschal pour demeurer en sa court.</head>
+                <figure><graphic url="gdw-p02.png"></graphic></figure>
+                <p><g type="lettrine" ref="#ornE">E</g>n icelle honnorable sai- son a regne dudit roy A- thelstã estoit ou royaul- me dangleterre ung tres puissant cont nomme Roalt <abbr>leql</abbr> avoit la sei- gneurie de la conte de waruich ...</p>
+              </div>
+            </body>
+          </text>
+```
+![](../images/guyDeWarwick-15.jpg)
+---
+
+
+# Composants des divisions
+
+Qu’est-ce qu’on trouve dans une division&nbsp;? 
+* Un ou plusieurs titres (au début et/ou à la fin), balisés avec `&lt;head&gt;` ou `&lt;trailer&gt;`
+
+* de la prose, divisée en paragraphes (`&lt;p&gt;`) ou listes (`&lt;list&gt;`) contenant des `&lt;item&gt;` et facultativement des `&lt;label&gt;`
+
+* de la poésie, divisée en vers (`&lt;l&gt;`), facultativement regroupés en strophes (`&lt;lg&gt;`)
+
+* des dialogues divisés en énoncés (`&lt;sp&gt;`), contenant une mélange de `&lt;p&gt;` ou de `&lt;l&gt;` facultativement entrecoupée de didascalies (`&lt;stage&gt;`)
+
+
+… et bien sûr des sous-divisions 
+
+---
+
+
+# Exemple prosaïque… 
+
+```xml
+<div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" n="1">
+            <head>La Fête</head>
+            <p>C’était à Mégara, faubourg de Carthage, dans les jardins d’Hamilcar.</p>
+            <p>Les soldats qu’il avait commandés en Sicile se donnaient un grand festin pour célébrer le jour anniversaire de la bataille d’Eryx, et comme le maître était absent et qu’ils se trouvaient nombreux, ils mangeaient et ils buvaient en pleine liberté.</p>
+            
+            <!-- … -->
+          </div>
+```
+
+---
+
+
+# Exemple poétique 
+
+```xml
+<div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" type="sonnet">
+            <lg type="quatrain">
+              <l>Les amoureux fervents et les savants austères</l>
+              <l>Aiment également, dans leur mûre saison,</l>
+              <l>Les chats puissants et doux, orgueil de la maison,</l>
+              <l>Qui comme eux sont frileux et comme eux sédentaires.</l>
+            </lg>
+            <lg type="quatrain">
+              <l>Amis de la science et de la volupté</l>
+              <l>Ils cherchent le silence et l’horreur des ténèbres ;</l>
+              <l>L’Erèbe les eût pris pour ses coursiers funèbres,</l>
+              <l>S’ils pouvaient au servage incliner leur fierté.</l>
+            </lg>
+            <lg type="tercet">
+              <l>Ils prennent en songeant les nobles attitudes</l>
+              <l>Des grands sphinx allongés au fond des solitudes,</l>
+              <l>Qui semblent s’endormir dans un rêve sans fin ;</l>
+            </lg>
+            <lg type="tercet">
+              <l>Leurs reins féconds sont pleins d’étincelles magiques,</l>
+              <l>Et des parcelles d’or, ainsi qu’un sable fin,</l>
+              <l>Etoilent vaguement leurs prunelles mystiques.</l>
+            </lg>
+          </div>
+```
+
+---
+
+
+# Exemples dramatiques (1) 
+
+```xml
+<sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" who="#V">
+            <speaker>Vladimir</speaker>
+            <p>Relève ton pantalon.</p>
+          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" who="#E">
+            <speaker>Estragon</speaker>
+            <p>Que j’enlève mon pantalon ?</p>
+          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" who="#V">
+            <speaker>Vladimir</speaker>
+            <p><emph>RE</emph>lève ton pantalon.</p>
+          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" who="#E">
+            <speaker>Estragon</speaker>
+            <p>C’est vrai. </p>
+            <stage>Il relève son pantalon. Silence.</stage>
+          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" who="#V">
+            <speaker>Vladimir</speaker>
+            <p>Alors, on y va ?</p>
+          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" who="#E">
+            <speaker>Estragon</speaker>
+            <p>Allons-y.</p>
+          </sp><stage xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">Ils ne bougent pas.</stage><list xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" type="speakers">
+            <item xml:id="V">Vladimir</item>
+            <item xml:id="E">Estragon</item>
+          </list>
+```
+
+---
+
+
+# Exemples dramatiques (2)
+
+```xml
+<sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+            <speaker>Alceste.</speaker>
+            <l>Non : j’ ai résolu de n’ en pas faire un pas.</l>
+            <l part="I">J’ ai tort, ou j’ ai raison.</l>
+          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+            <speaker>Philinte.</speaker>
+            <l part="F">Ne vous y fiez pas.</l>
+          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+            <speaker>Alceste.</speaker>
+            <l part="I">Je ne remuerai point.</l>
+          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+            <speaker>Philinte.</speaker>
+            <l part="F">Votre partie est forte,</l>
+            <l part="I">et peut, par sa cabale, entraîner...</l>
+          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+            <speaker>Alceste.</speaker>
+            <l part="F">Il n’ importe.</l>
+          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+            <speaker>Philinte.</speaker>
+            <l part="I">Vous vous tromperez.</l>
+          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+            <speaker>Alceste.</speaker>
+            <l part="F">Soit. J’ en veux voir le suite.</l>
+          </sp>
+```
+
+---
+
+
+# Composants textuels typiques
+
+1. des séquences de mots qui sont (par convention) mises en évidence, par exemple pour leur donner une emphase, parce qu’ils sont en langue étranger, ou cités etc, 
+
+1. des mots qui pourraient être d’intérêt non-lexicale “data-like” (des noms de lieu ou de personne, des dates, des chiffres… )
+
+1. des indications d’interventions éditoriales (corrections, normalisations, ajouts, ratures…)
+
+1. des références et des liens
+
+1. listes, notes, annotations, graphies, tables, citations bibliographiques…
+
+1. indications de structuration dans une autre hiérarchie, par exemple frontières de pages
+
+TEI fournit des balises pour toutes ces choses : mais il faut faire une choix, selon les objectifs de son projet
+
+---
+
+
+# (1) La mise en évidence et son interprétation
+
+On voit une partie en italique ou en petites capitales : et on se demande pourquoi… par exemple&nbsp;:
+![](../images/prevert.png)
+---
+
+
+# La mise en évidence, et son interprétation - 1
+
+Plusieurs politiques sont envisageables&nbsp;: 
+* on signale la présence d’une mise en évidence sans distinction particulière avec `&lt;hi&gt;` (highlighted&nbsp;: distinction typographique) 
+```xml
+<p xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">... mais Prévert pense que la <hi>parole</hi> convainc, et il continue « <hi>mais la brûlure de son regard Les rappelle à de bons sentiments</hi> », plus prompts à l’accord que les gens du <hi>Dîner de Têtes</hi>, ...</p>
+```
+
+
+* on essaie de distinguer l’ .red[objectif sémantique] de ces mises en évidence&nbsp;: dans le cas présent, il y a un `&lt;emph&gt;` (emphase linguistique), une `&lt;quote&gt;` (citation) et un `&lt;title&gt;` (titre)&nbsp;: 
+```xml
+<p xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">… mais Prévert pense que la <emph>parole</emph> convainc, et il continue « <quote>mais la brûlure de son regard Les rappelle à de bons sentiments</quote> », plus prompts à l’accord que les gens du <title>Dîner de Têtes</title>, …</p>
+```
+
+
+
+---
+
+
+# La mise en évidence et son interprétation - 2
+
+
+* on peut combiner ces deux niveaux de description… 
+```xml
+<p xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">… mais Prévert pense que la <emph rend="italic">parole</emph> convainc, et il continue « <q rend="italic">mais la brûlure de son regard Les rappelle à de bons sentiments</q> », plus prompts à l’accord que les gens du <title rend="italic">Dîner de Têtes</title>, …</p>
+```
+
+
+* Les valeurs possibles de l’attribut `@rend` sont à définir pour chaque projet.
+
+* Des attributs complémentaires `@style` ou `@rendition` permettent l’usage des systèmes déjà standardisés, notamment le CSS.
+
+
+---
+
+
+# Phrases en langues étrangères 
+
+* L’attribut `@xml:lang` peut s’attacher à tout élément TEI
+
+* L’élément `&lt;foreign&gt;` est disponible s’il n’y a pas d’autre sémantique à signaler
+
+* La langue est identifiée par son code normalisé ISO 
+
+```xml
+<title xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="de">Die Dreigroschenoper&nbsp;</title>
+```
+
+```xml
+<foreign xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="de"> himmel&nbsp;! </foreign>
+```
+
+---
+
+
+# (2) Noms de lieux et de personnes
+
+La balise `&lt;rs&gt;` (referring string) est très générique&nbsp;: 
+```xml
+<p xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">Le premier dîner que <rs type="person">M. de Norpois</rs> fit à la maison, une année où je jouais encore aux <rs type="place">Champs-Élysées</rs>, est resté dans ma mémoire, parce que l’après-midi de ce même jour fut celui où j’allai enfin entendre <rs type="person">la Berma</rs>, en « matinée », dans <title>Phèdre</title>…</p>
+```
+
+
+Les balises `&lt;name&gt;`, `&lt;persName&gt;`, ou `&lt;persName&gt;` sont plus spécifique : 
+```xml
+<p xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">Le premier dîner que <persName ref="http://fr.wikipedia.org/wiki/Marquis_de_Norpois">M. de Norpois</persName> fit à la maison, une année où je jouais encore aux <placeName>Champs-Élysées</placeName>, est resté dans ma mémoire, parce que l’après-midi de ce même jour fut celui où j’allai enfin entendre <name>la Berma</name>, en « matinée », dans <title>Phèdre</title>…</p>
+```
+
+
+Nous allons traiter ce sujet plus tard avec plus de détail.
+
+---
+
+
+# Expressions temporelles
+
+Les dates qui figurent dans les textes manifestent beaucoup de variations lexicales, pour ne rien dire des variations des systèmes de calendrier. Pour comparer et contrôler de telles expressions d’une manière efficace, il faut les normaliser. La TEI propose un élément `&lt;date&gt;` pour identifier ces expressions, et plusieurs attributs pour leur normalisation.
+
+```xml
+<date xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" when="1980-02-21">21 février
+            1980</date><date xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" when="1990-02-21" xml:lang="en">21 September, 1990</date>
+```
+
+```xml
+<date xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" when="2001-09-11T12:48:00">11
+            septembre, neuf heures moins douze, EST</date>
+```
+
+```xml
+<date xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" when="1794-10-30">9 Brumaire An III</date>
+```
+
+---
+
+
+# (3) Les interventions éditoriales
+
+En transcrivant une source primaire on pourrait vouloir 
+* respecter, normaliser, ou corriger l’orthographie originel
+
+* signaler la présence des ajouts, ratures, etc.
+
+* développer ou signaler les abréviations
+
+* indiquer des leçons varies pour une source difficile a lire ou existant en plusieurs versions
+
+* indiquer des changements de main ou d’écriture
+
+
+Nous allons traiter plus tard ce sujet avec plus de détails.
+
+---
+
+
+# (4) Les références croisées et les liens
+
+Pour relier deux endroits d’un ou plusieurs textes, on utilise l’un des éléments `&lt;ptr&gt;` ou `&lt;ref&gt;`. 
+```xml
+<ref xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" target="#pv1894_61"> procès-verbal no
+              61</ref>
+```
+ 
+```xml
+<ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" target="#pv1894_61"></ptr>
+```
+
+
+L’attribut `@target` spécifie l’objet ciblé par la référence, que ce soit en fournissant l’identifiant d’un autre élément dans le même document, ou en fournissant une adresse complète sur le Web (un URL) 
+```xml
+<ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" target="http://www.example.org/example.xml#pv1894_61"></ptr>
+```
+
+
+Dans ces exemples, on pointe sur la section suivante&nbsp;: 
+```xml
+<div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:id="pv1894_61">
+            <!-- … --></div>
+```
+
+
+Plusieurs autres attributs de type pointeur sont disponibles, fournissant une gamme de type de liens plus spécialisés.
+
+---
+
+
+# (5) Les images
+
+
+* `&lt;graphic&gt;` précise la location d’une image, illustration, etc. faisant partie du texte)
+
+* `&lt;figure&gt;` précise une partie iconographique plus complexe, rassemblant par exemple plusieurs images, un titre, des `&lt;figDesc&gt;` pour les décrire
+
+* L’attribut `@facs` fournit un lien externe sur une représentation supplémentaire de la source encodée
+
+* L’attribut `@url` par contre (sur `&lt;graphic&gt;`) fournit un lien sur une image qui est intégrale à cette source
+
+
+---
+
+
+# Par exemple
+
+```xml
+<pb xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" n="5" facs="page_A3r.png"></pb><fw xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">5</fw><div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+            <head>LIVRE I. FABLE SECONDE.</head>
+            <figure><graphic url="I2dtl.png"></graphic><figDesc>Un renard regarde un arbre dans lequel se trouve un corbeau. Le renard tient un fromage dans la bouche. En arrière plan, un château.</figDesc></figure>
+            <head>Le Corbeau &amp; le Renard.</head>
+            <l>Maistre Coirbeau sur un arbre perché…</l>
+          </div>
+```
+
+
+
+---
+
+
+# Les citations bibliographiques
+
+```xml
+<bibl xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:id="MK_73">Sturm, U. &amp; Drang, F. : <title>Musikalische Katastrophe</title>.
+            (Berlin, W. de Gruyter, 1973)</bibl>
+```
+
+* Une référence bibliographique peut être plus ou moins structurée, en se servant d’éléments tels que `&lt;author&gt;`, `&lt;editor&gt;`, `&lt;title&gt;`, `&lt;pubPlace&gt;`, `&lt;publisher&gt;`, `&lt;series&gt;` etc.
+
+* les conventions de présentation des références ne sont pas forcément à encoder
+
+```xml
+<bibl xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:id="MK73"><author>Sturm, U.</author>
+            <author>Drang, F.</author>
+            <title xml:lang="de" level="m">Musikalische Katastrophe </title>
+            <pubPlace>Berlin</pubPlace>
+            <publisher>W. de Gruyter</publisher>
+            <date>1973</date></bibl>
+```
+
+---
+
+
+# Et pour terminer, les notes
+
+
+
+```xml
+<div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" n="3">
+            <p>J’écris&nbsp;: j’habite ma feuille de papier, je l’investis, je la parcours.</p>
+            <p>Je suscite des <hi>blancs</hi>, des <hi>espaces</hi> (sauts dans le sens : discontinuités, passages, transitions). <note place="margin">J’écris dans la marge…</note></p>
+            <p rend="indent3">Je vais <lb></lb>à la ligne. Je renvoie à une note en bas de page<note place="foot">J’aime beaucoup les renvois en bas de page, même si je n’ai rien de particulier à y préciser.</note></p>
+            <p rend="indent2">Je change de feuille.</p>
+          </div><pb xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" n="20"></pb>
+```
+
+---
+
+
+# Vous vous sentez un peu accablé&nbsp;?
+
+Tout ceci n’est qu’une des manières de se servir de la TEI. 
+
+* TEI est un système modulaire. On s’en sert pour créer un système d’encodage selon ses propres besoins, en sélectionnant des modules spécifiés par la TEI
+
+* Chaque module définit un groupe d’éléments (et leurs attributs)
+
+* on peut sélectionner les éléments voulus, et même en modifier des propriétés 
+
+* on peut y mélanger des éléments nouveaux, ou bien natifs ou bien d’autres standards
+
+Il faut définir ses objets avant de se servir la TEI&nbsp;!
+
+---
+
+
+# La TEI facilite un balisage intelligent
+
+La TEI s’applique à l’encodage des… 
+* composants structuraux et fonctionnels d’un texte 
+
+* transcriptions diplomatiques des sources historiques, des images, des annotations
+
+* liens, correspondances, alignements
+
+* données et entités : par exemple de temps, personnes, lieux ou événements
+
+* annotations péri-textuelles et méta-textuelles (correction, suppression, ajouts)
+
+* analyses linguistiques
+
+* métadonnées de plusieurs types
+
+* … et définitions formelles de schéma XML&nbsp;!
+
+
+On est vraiment gâté par l’étendue des choix possibles…
+
+---
+
+
+# Liste des modules TEI
+analysisSimple analytic mechanismscertaintyCertainty and uncertainty.red[core]éléments common to all TEI documentscorpusHeader extensions for corpus textsdeclarefsFeature system déclarationsdictionariesPrinted dictionariesdramaPerformance textsfiguresTables, formulae, and figuresgaijiCharacter and glyph documentation.red[header]The TEI Headeriso-fsFeature structureslinkingLinking, segmentation and alignmentmsdescriptionManuscript DescriptionnamesdatesNames and datesnetsGraphs, networks and treesspokenTranscribed SpeechtagdocsDocumentation of TEI modules.red[tei]déclarations for datatypes, classes, and macros available to all TEI modulestextcritText criticism.red[textstructure]Default text structuretranscrTranscription of primary sourcesverseVerse structures
+---
+
+
+# Niveaux de validation
+
+Un document TEI-XML doit&nbsp;: 
+1. respecter les règles syntaxiques d’XML&nbsp;; 
+
+1. être valide par rapport à un schéma quelconque; 
+
+1. respecter la sémantique définie de chaque élément TEI utilisé
+
+
+Un schéma exprime d’une manière formelle qui permet la validation logicielle, une partie importante de ces règles
+
+Un TEI ODD nous permet de construire un schéma adéquat à nos besoins
+
+---
+
+
+# Comment effectuer notre choix de balises&nbsp;?
+
+Nous aurons besoins de plusieurs choses&nbsp;: 
+* un schéma formel (en langue informatique tel que DTD, RELAXNG, W3C Schema, Schematron) qui peut contrôler&nbsp;: 
+* quelles balises sont disponibles&nbsp;?
+
+* dans quels contextes&nbsp;?
+
+* avec quels attributs&nbsp;?
+
+* avec quelles valeurs&nbsp;?
+
+* en respectant quelles contraintes&nbsp;?
+
+
+* une documentation pour expliquer nos principes éditoriaux, nos principes de choix de balises, etc. aux utilisateurs/ développeurs&nbsp;: 
+* en plusieurs langues naturelles
+
+* en plusieurs formats bureautiques (PDF, Word, HTML, epub…) 
+
+
+* des outils informatiques pour transformer et gérer nos données XML
+
+
+---
+
+
+# Propositions de la TEI
+
+Ayant elle-même ces mêmes besoins, la TEI vous propose&nbsp;: * ODD&nbsp;: Un vocabulaire XML pour définir les vocabulaires XML
+* Stylesheets&nbsp;: Un ensemble de feuilles de style XSLT très générique pour la conversion des documents XML TEI
+* Roma&nbsp;: Un logiciel pour traiter des documents exprimés dans ce vocabulaire, pour en faire ressortir 
+* des schémas RELAXNG, DTD, etc. 
+
+* des manuels "mode d’emploi" en HTML, PDF etc.
+
+* OxGarage&nbsp;: Un outil web pour effectuer plusieurs transformations documentaires, par ex 
+* de DOCX en TEI, et l’inverse
+
+* de HTML en TEI, et l’inverse
+
+
+
+---
+
+
+# I18n
+
+Nous essayons le mieux possible d’internationaliser la TEI&nbsp;! 
+* Suite à un effort financé par le ALLC (entre autres), les définitions, les gloses, et quelques exemples sont traduits en plusieurs langues, notamment en français, mais aussi&nbsp;: 
+* en espagnol, en portugais, en allemand, en chinois, en koréen, en japonais…
+
+
+* Exception faite de quelques épreuves, les chapitres des Guidelines actuelles restent jusqu’à présent rédigées en anglais.
+
+
+L’usage de ODD nous permet de sélectionner une documentation française.
+
+---
+
+
+# L’idée essentielle de ODD
+
+.red[O]ne .red[D]ocument .red[D]oes it all
+
+Un vocabulaire spécialisé pour la définition 
+* des schémas
+
+* des types d’élément XML, indépendant des schémas
+
+* des regroupements de tels éléments, publics ou privés 
+
+* des patrons (MLE macros) 
+
+* des classes (et sous-classes) d’éléments
+
+
+Pour la définition des références également, qui permettront de réunir dans un schéma 
+* des objets identifiables (dans la liste ci-dessus)
+
+* des objets appartenant à d’autres espaces de nom
+
+
+et qui serait intégrable à un système de balisage documentaire classique
+
+---
+
+
+# Être conforme à la TEI, ça veut dire quoi&nbsp;?
+
+* être honnête&nbsp;: Les éléments XML qui se déclarent comme appartenant à l’espace de nom TEI doivent respecter les définitions TEI de ces éléments
+
+* être explicite : Pour valider un document TEI, un ODD est fortement conseillé, parce que cela mettra en évidence toutes les modifications effectuées
+
+* Tout document valide TEI est valide par rapport au schéma TEI-ALL
+
+L’objet de ces règles est de faciliter le "blind interchange" des documents.
+</textarea><script src="js/remark-0.6.5.min.js" type="text/javascript"></script><script type="text/javascript">
+        var hljs = remark.highlighter.engine;
+      </script><script src="remark.language.js" type="text/javascript"></script><script type="text/javascript">
+        var slideshow = remark.create({
+        highlightStyle: 'monokai',
+        highlightLanguage: 'remark'
+        }) ;
+      </script></body>
+</html>

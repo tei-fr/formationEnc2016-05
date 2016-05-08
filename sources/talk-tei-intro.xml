@@ -42,7 +42,7 @@
           <item>Validation : comment valider vos efforts ?</item>
         </list>
       </div>
-      <div xml:id="model">
+      <div rend="slide">
         <head>Modélisation</head>
         <p>La modélisation de vos données est une préalable essentiel. Que vous vous serviez de UML, de RDBMS, de SKOS, ou de quoique ça soit d’autre, si vous n’avez pas un modèle explicite des choses que vous espérez gérer, vous aurez de grands difficultés.</p>
         <figure>
@@ -50,7 +50,7 @@
         </figure>
       </div>
 
-      <div xml:id="map">
+      <div rend="slide">
         <head>Orientation</head>
         <figure>
           <graphic url="../images/sweeties.jpg"/>

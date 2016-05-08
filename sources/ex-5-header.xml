@@ -57,12 +57,12 @@
             </div>
             <div>
                <head>Indication sur les révisions</head>
-               <p>Au fur et à mesure de votre édition, il pourrait être utile de renseigner l’historiques des révisions apportées à vorte fichier.</p>
+               <p>Au fur et à mesure de votre édition, il pourrait être utile de renseigner l’historique des révisions apportées à votre fichier.</p>
                <list>
                   <label>Ajouter un élément sur les révisions</label>
                   <item>Après <gi>encodingDesc</gi>, ajoutez maintenant un élément <gi>revisionDesc</gi></item>
                   <label>Indiquer la création sur fichier</label>
-                  <item>Dans cet élement <gi>revisonDesc</gi>, essayez d’indiquer la date de création du fichier et de fournir une date.</item>
+                  <item>Dans l’élément <gi>revisonDesc</gi>, essayez d’indiquer la date de création du fichier et de fournir une date.</item>
                </list>
             </div>
          </div>

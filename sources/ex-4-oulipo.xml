@@ -21,9 +21,9 @@
   <text>
     <body>
 
-      <p>Dans cet exercice, nous allons: <list>
+      <p>Dans cet exercice, nous allons : <list>
           <item>discuter la modélisation d’un document d’archive</item>
-          <item>expérimenter son balisage en TEI XML</item>
+          <item>expérimenter son balisage en XML-TEI</item>
         </list></p>
       <p>Notre cas d’étude concerne quelques documents extraits des archives de l’OULIPO. </p>
 

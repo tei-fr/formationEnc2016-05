@@ -188,7 +188,7 @@
                                 <item><hi>Valeur par défaut :</hi> nous permet de proposer une valeur par défaut pour l’attribut, dans le cas où aucune valeur n’est fournie dans le document. Laissez cela vide, puisque nous avons déjà décidé de rendre obligatoire la présence d’une valeur.</item>
                                 <item><hi>Liste fermée :</hi> nous permet de préciser si la liste de valeurs proposées est une liste fixe impossible à augmenter ou non. Dans notre schéma, c’est une liste fermée, donc répondez <val>Yes</val>&#xa0; !</item>
                                 <item><hi>Liste de valeurs&#xa0; :</hi> nous permet de spécifier les valeurs permises pour cet attribut dans notre schéma. Les valeurs sont proposées sous la forme d’une seule ligne, chaque valeur séparée par une virgule. Entrez donc la séquence suivante (<hi>sans blancs</hi>) <code>prose,vers,drama,chapitre,volume,autre,inconnu</code>.</item>
-                                <item><hi>Description&#xa0; :</hi> nous permet de modifier la description de cet attribut. Vous pouvez la changer comme vous le souhaitez&#xa0; : par exemple, changer « n’importe quel système ou typologie de classification approprié » en « le système de classement proposé pour notre projet ».</item>
+                                <item><hi>Description :</hi> nous permet de modifier la description de cet attribut. Vous pouvez la changer comme vous le souhaitez&#xa0; : par exemple, changer « n’importe quel système ou typologie de classification approprié » en « le système de classement proposé pour notre projet ».</item>
                         </list></item>
                         <item rend="bold"
                             >De nouveau, n’oubliez pas de cliquez sur le bouton <ident>Save</ident> en bas de la page ! </item>
@@ -197,7 +197,7 @@
             </div>
             <div>
                 <head>Testons à nouveau notre schéma…</head>
-                <p>Est-ce que nous avons réussi ? Vous connaissez maintenant la démarche… pour le vérifier &#xa0; :<list>
+                <p>Est-ce que nous avons réussi ? Vous connaissez maintenant la démarche… pour le vérifier :<list>
                         <item>Cliquez sur l’onglet <ident>Schéma</ident></item>
                         <item>Choisissez l’un des formats de schéma</item>
                         <item>Cliquez sur <ident>Générer</ident></item>

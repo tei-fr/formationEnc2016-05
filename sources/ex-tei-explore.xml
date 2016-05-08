@@ -18,17 +18,14 @@
    </teiHeader>
    <text>
       <body>
-         <head>A la recherche des textes TEI en francais...</head>
-         <p>Voici quelques liens que j'ai decouvert a l'hasard en recherchant des textes TEI
-            disponible sur l'internet. Dans cet exercice, vous etes invite a <list>
-               <item>telecharger un ou plusieurs de ces documents</item>
-               <item>valider le document contre tei_all (ou un schema plus precise s'il est
-                  disponible)</item>
-               <item>considerez l'utilite, la validite, et l'elegance du balisage fourni, et l'ameliorez si besoin est</item>
+         <head>À la recherche des textes TEI en français...</head>
+         <p>Voici quelques liens que j’ai découvert au hasard en recherchant des textes TEI disponibles sur l’internet. Dans cet exercice, vous êtes invité à : <list>
+               <item>télécharger un ou plusieurs de ces documents</item>
+               <item>valider le document contre tei_all (ou un schéma plus précis s’il est disponible)</item>
+               <item>considérez l’utilité, la validité, et l’élégance du balisage fourni, et l’améliorez si besoin est</item>
             </list>
          </p>
-         <p>Si aucun des documents dans la liste vous interesse, vous etes bien sur libre d'aller
-            retrouver d'autres! </p>
+         <p>Si aucun des documents dans la liste vous intéresse, vous êtes bien sur libre d’aller retrouver d’autres ! </p>
          <list>
             <item> <bibl><title>Le Pelerinage de Vie humaine de Guillaume de Digulleville</title>
                <distributor>Ortolang</distributor>

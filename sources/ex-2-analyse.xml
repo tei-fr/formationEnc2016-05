@@ -21,13 +21,13 @@
   </teiHeader>
   <text>
     <body>
-      <!-- ceci n'est pas une pipe -->
+      <!-- ceci n’est pas une pipe -->
       <div rend="slide">
         <head>Magritte nous rappelle</head>
         <figure>
           <graphic url="../images/ceci-nest-pas-une-pipe.jpg"/>
         </figure>
-        <note><p>À chaque fois que créée une représentation d’un texte ou d’autre chose, une image non réductible à la réalité.</p></note>
+        <note><p>Qu’à chaque fois que l’on créée une représentation d’un texte ou d’autre chose, une image n’est pas réductible à la réalité.</p></note>
       </div>
 
       <!--<div n="22">
@@ -39,45 +39,36 @@
       </div>-->
       
       <div>
-        <head>Numériser et encoder...</head>
-        <p>La numérisation nous propose une <emph>image</emph>, une représentation d'un
-          object déjà existant</p>
-        <p>L'encodage nous permet de représenter l'image des <emph>idées</emph>
-          résultant de ces représentations</p>
+        <head>Numériser et encoder…</head>
+        <p>La numérisation nous propose une <emph>image</emph>, une représentation d’un objet déjà existant</p>
+        <p>L’encodage nous permet de représenter l’image des <emph>idées</emph> résultant de ces représentations</p>
         <note><p>Distinction fine mais très importante.</p></note>
       </div>
       
       
       <div>
         <head>Des idées sur quoi?</head>
-        <p>Tout! mais on peut distinger plusieurs axes...
-          <list>
-            <item>infos <q>intrinsèques</q> à l'objet : les formes, couleurs,
-              etc. d'une image; les sons, rythmes, etc. d'une musique; les
-              structures linguistiques (mot, phrase, paragraphe) ou formels (chapitre, titre, nom de lieu) d'un texte...</item>
-            <item>infos <q>extrinsèques</q> ou <q>meta</q> sur l'objet : son type,
-              ses origines, ses buts, ses usages ...</item>
-            <item>infos <q>interprétatives</q>: la portée d'un texte ou d'un
-              dessin, le programme d'une musique ou d'un rite...</item>
+        <p>Tout! mais on peut distinguer plusieurs axes… <list>
+            <item>infos <q>intrinsèques</q> à l’objet : les formes, couleurs, etc. d’une image; les sons, rythmes, etc. d’une musique; les structures linguistiques (mot, phrase, paragraphe) ou formels (chapitre, titre, nom de lieu) d’un texte…</item>
+            <item>infos <q>extrinsèques</q> ou <q>meta</q> sur l’objet : son type, ses origines, ses buts, ses usages …</item>
+            <item>infos <q>interprétatives</q>: la portée d’un texte ou d’un dessin, le programme d’une musique ou d’un rite…</item>
           </list>
         </p>
-        <p rend="display">distinctions floues mais pervasives...</p>
+        <p rend="display">distinctions floues mais pervasives…</p>
         <note><p>L’essentiel est de faire le choix. Peut distinguer des actes, des informations intrinsèques à un objet, etc. Des informations dite méta, extrinsèques qui ne sont pas nécessairement présentes dans l’objet : ses origines, ses buts, etc. Enfin, des informations interprétatives.</p></note>
       </div>
       
       
       <div>
         <head>Modélisation et structuration</head>
-        <p>Il existe (quelques) méthodes classiques d'analyses de données. L'important c'est de
-          comprendre: <list>
-            <item>toute méthode ne serait qu'une modélisation</item>
-            <item>la modelisation devrait faire resortir la structuration essentielle d'un objet
-              complexe</item>
+        <p>Il existe (quelques) méthodes classiques d’analyses de données. L’important c’est de bien comprendre : <list>
+            <item>toute méthode ne serait qu’une modélisation</item>
+            <item>la modélisation devrait faire ressortir la structuration essentielle d’un objet complexe</item>
           </list>
         </p>
         <p>Après une modélisation, on peut donner une implémentation informatisée ; sans modèle, une
           implémentation risque d’être incompréhensible et aléatoire, inutile…</p>
-        <note><p>Ce que va vouloir faire, c’est modaliser. Pourquoi conduire cette étape, c’est que cela permettra de donner une implémentation informatisée. Si vous n’êtes pas conscient de votre modèle, vous risquer d’avoir une implémentation inconsistante ou incompréhensible qui ne sera pas exploitable.</p></note>
+        <note><p>Ce que l’on va vouloir faire, c’est modéliser. Pourquoi cette étape ? c’est qu’elle va nous permettre de donner une implémentation informatisée. Si vous n’êtes pas conscient de votre modèle, vous risquer d’avoir une implémentation inconsistante ou incompréhensible qui ne sera pas exploitable.</p></note>
       </div>
 
       <div>
@@ -106,13 +97,12 @@
       <div>
         <head>Analyse des documents </head>
         <list>
-          <item>quels sont les unités que nous souhaitons traiter?</item>
-          <item>comment sont-ils structurés (quels composants, quels attributs)?</item>
-          <item>est-ce que les occurrences de ces objets sont clairement identifiables dans un flux
-            de texte?</item>
+          <item>quelles sont les unités que nous souhaitons traiter ?</item>
+          <item>comment sont-elles structurées (quels composants, quels attributs) ?</item>
+          <item>est-ce que les occurrences de ces objets sont clairement identifiables dans un flux textuel ?</item>
         </list>
-        <p rend="box">Essayons cela avec ces trois documents:</p>
-        <note><p>Je vous propose avec l’exercice qui vient de vous même identifier un certain nombre de choses.</p></note>
+        <p rend="box">Essayons cela avec ces trois documents :</p>
+        <note><p>Je vous propose avec l’exercice qui suit de identifier vous même un certain nombre de choses.</p></note>
       </div>
       
       <div><head>Document A</head>
@@ -127,20 +117,15 @@
         <figure><graphic url="../travaux/10010099-1_1.jpg"/>
           <head>un tapuscrit </head></figure></div>
       <div>
-       <head>
-       Exercice 2 : analyse d'un document
-     </head> 
-     <list><item>Dans votre groupe, sélectionner d'abord un rapporteur</item><item>Regarder bien votre document. Supposer que vous en avez quelques centaines d'autres
-            pareilles.</item><item>Comment est votre document organisé? </item>
-          <item>Quels sont ses composants essentiels, commun à tous ces documents ?</item>
-          <item>Quels sont ses composants intéressants, possible dans tous ces documents ?</item>
-          <item>Sauriez vous faire en sorte qu'une autre personne reconnaitrait les mêmes objets
-            ?</item>
+       <head> Exercice 2 : analyse d’un document </head> 
+     <list><item>Dans votre groupe, sélectionner d’abord un rapporteur</item><item>Regarder bien votre document. Supposer que vous en avez quelques centaines d’autres pareils.</item><item>Comment est votre document organisé ? </item>
+          <item>Quels sont ses composants essentiels, commun à tous ces documents ?</item>
+          <item>Quels sont ses composants intéressants, possible dans tous ces documents ?</item>
+          <item>Sauriez vous faire en sorte qu’une autre personne reconnaîtrait les mêmes objets ?</item>
 
-          <item>Faire une liste de tous les  objets et proprietes essentiels de votre
-            document</item>
-          <item>Présenter cette liste ... et la justifier ! </item></list></div>
-      <note><p>L’une des leçons de cet exercice, c’est que l’on ne peut pas encoder mécaniquement un texte. Toujours intéressant de voir une personne prendre un document et se l’approprier.</p></note>
+          <item>Faire une liste de tous les objets et propriétés essentiels de votre document</item>
+          <item>Présenter cette liste… et justifier la ! </item></list></div>
+      <note><p>L’une des leçons de cet exercice, c’est que l’on ne peut pas encoder mécaniquement un texte. Il est toujours intéressant de voir comment une personne envisage un document et se l’approprie.</p></note>
 
     </body>
   </text>

@@ -7,7 +7,7 @@
     <fileDesc>
       <titleStmt>
         <title>Un florilège de projets TEI</title>
-        <author>Lou Burnard<lb/>lou.burnard@huma-num.fr</author>
+        <author>Lou Burnard Consulting</author>
 
       </titleStmt>
       <publicationStmt>
@@ -22,6 +22,7 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
+      <change when="2016-05-06">Revised for ENC</change>
       <change when="2013-03-02">Integrated for Tours</change>
       <change when="2013-03-02">As used for Lille, and Paris </change>
     </revisionDesc>
@@ -46,7 +47,8 @@ les reflexions sur la materialite des textes qu'ils impliquent?
       <div>
         <figure>
           <graphic url="../Graphics/taiwan-1.jpg" height="85%"/>
-          <head>Extraits du soutra "Coeur" (Tripitaka), <lb/>
+          <head>Extraits du soutra "Coeur" (Tripitaka),
+            <lb/>
             <seg xml:lang="zh-TW">法鼓山</seg> (Montagne du Tambour du Dharma: Dharma Drum Mountain),
             Taiwan, 2009</head>
         </figure>
@@ -58,23 +60,6 @@ les reflexions sur la materialite des textes qu'ils impliquent?
           <graphic url="../Graphics/taiwan-2.jpg" height="80%"/>
         </figure>
       </div>
-
-
-      <!--<div>
-        <head>Lire, c'est encoder... </head>
-        <list>
-          <item>L'interprétation des mots d'un texte n'est pas aléatoire : elle est guidée par les
-            signes de ponctuation, par les changements de police, par leur disposition spatiale etc
-            !</item>
-          <item>Pour indiquer les même choses (et d'autres) dans un texte numérique, une balisage
-            devient essentiel</item>
-          <item>Le balisage sert ainsi à exprimer nos lectures préalables</item>
-          <item>Le balisage rend possible une polyvalence des ressources textuelles et induit des
-            reflexions profondes sur la materialité des textes qu'elles impliquent</item>
-        </list>
-      </div>
--->
-
 
       <div>
         <head>Usages typiques de la TEI</head>
@@ -117,6 +102,13 @@ les reflexions sur la materialite des textes qu'ils impliquent?
       </div>
       <div>
         <head>Quelques exemples</head>
+        <p>Mais nous commencons avec un brief regard sur quelques projets de divers types,
+          d'origines differentes, et egalement tres variable de point de vue disciplinaire. Mais ils
+          on tous en commun: <list>
+            <item>ils se servent de la TEI</item><item>ils traitent des documents
+              francais</item><item>ils exposent les source TEI XML</item>
+          </list></p>
+
       </div>
       <div>
         <head> Essai sur le récit, ou entretiens sur la manière de raconter de François-Joseph
@@ -139,7 +131,7 @@ les reflexions sur la materialite des textes qu'ils impliquent?
         </note>
       </div>
       <!-- screenshots1-6 show old/new spelling, annotation, and xml source -->
-     <!-- <div>
+      <!-- <div>
         <head>Berardier : "entretiens sur la manière de raconter"</head>
         <p>
           <graphic url="../2013-03-lille/screenshots/berardier-2.png"/>
@@ -176,7 +168,7 @@ les reflexions sur la materialite des textes qu'ils impliquent?
         </p>
       </div>-->
 
-      <div>
+      <!--<div>
         <head>Deutsches Textarchiv (Archive allemand des textes)</head>
         <list>
           <item>http://www.deutsches-textarchiv.de </item>
@@ -187,12 +179,12 @@ les reflexions sur la materialite des textes qu'ils impliquent?
           <item>Plusieurs modes d’affichage page par page des images et de leur transcription</item>
           <item>Niveau basique d'encodage, applique soigneusement et consistement .</item>
         </list>
-      </div>
+      </div>-->
       <!-- 
 look for Grimm, find maerchen show different formats 
 or new site? 
 -->
-      <div>
+     <!-- <div>
         <head>Rechercher un mot a travers les livres</head>
         <p>
           <graphic url="../2013-03-lille/screenshots/dta-1.png"/>
@@ -210,7 +202,7 @@ or new site?
           <graphic url="../2013-03-lille/screenshots/dta-3.png"/>
         </p>
       </div>
-
+-->
 
       <div>
         <head>Le mariage sous L'Ancien Regime</head>
@@ -291,8 +283,21 @@ or new site?
           <graphic url="../2013-03-lille/screenshots/puc-chroniques-latin-xml.png"/>
         </p>
       </div>
+      
+      <div><head>Bibliotheques virtuelles humanistes </head>
+      <list>
+        <item><ref target="http://renom.univ-tours.fr/">Renom</ref></item>
+      </list></div>
+      <!-- play with renom, but mainly we want to see the texts spo go to
+        L'isle sonnante
+        foillow link to tf.bvh.univ-tours.fr/xtf/view?docId=tei/B751131011_RES_P_Y2_1349/B751131011_RES_P_Y2_1349_tei.xml&doc.view=notice;
+        Acceder au docu,ment
+        show display options, searchability
+        under "telecharger", right click TEI to get TEI file
+        open it in oxygen to look at the encoding
+        -->
 
-
+<!--
       <div>
         <head>Editions numériques des fonds archivistiques</head>
         <p>L'édition numérique, rassemblant les pages en facsimilés, leurs transcriptions, et leurs
@@ -321,7 +326,7 @@ or new site?
         </p>
       </div>
 
-
+-->
       <div>
         <head>Catalogue en ligne de notices bibliographiques</head>
         <p>La TEI propose un niveau de description des fonds beaucoup plus riche que celui de EAD,
@@ -394,9 +399,11 @@ or new site?
           ce que tu fais. »</p>
       </div>
 
-<div><head>TEI explorations</head>
-<p>Dans l'exercice qui suit, vous etes invite a rechercher la variete des textes TEI disponible sur le web.</p>
-</div>
+      <div>
+        <head>TEI explorations</head>
+        <p>Dans l'exercice qui suit, vous etes invite a rechercher la variete des textes TEI
+          disponible sur le web.</p>
+      </div>
 
 
     </body>

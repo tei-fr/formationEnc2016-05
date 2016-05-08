@@ -1,0 +1,104 @@
+
+<div  xmlns="http://www.tei-c.org/ns/1.0">
+            <div>
+                        <head>Premier jour</head>
+                        <list>
+                                    <label>10h-10h45 </label>
+                                    <item> Présentation des participants</item>
+                                    <label>11h-11h30 </label>
+                                    <item> Synthèse sur le balisage<ref
+                                                  target="01-editionNumerique.tei.xml"
+                                                  >01-editionNumerique.tei</ref></item>
+                                    <label>11h30-12h30 </label>
+                                    <item> TP Modélisation<ref target="ex-2-analyse.xml"
+                                                  >ex-2-analyse</ref></item>
+                                    <label>13h30 - 14h </label>
+                                    <item> Revoir l’exercice encodage initial</item>
+                                    <label>14h -15h </label>
+                                    <item> Introduction aux richesses de la TEI<ref
+                                                  target="talk-tei-intro.xml"
+                                                >talk-tei-intro</ref></item>
+                                    <label>15h - 17h </label>
+                                    <item> Personnalisation TEI avec Roma<ref target="ex-3-roma.xml"
+                                                  >ex-3-roma</ref></item>
+                        </list>
+            </div>
+            <div>
+                        <head>2ème journée…</head>
+                        <list>
+                                    <label>9h30-10h </label>
+                                    <item> Édition critique <ref target="04-editionCritique.tei.xml"
+                                                  >04-editionCritique.tei</ref></item>
+                                    <label>10h-11h  </label>
+                                    <item> TP Édition critique <ref target="ex-4-oulipo.xml"
+                                                  >ex-4-oulipo</ref></item>
+                                    <label>11h30 -1200  </label>
+                                    <item> TEI Header <ref target="03-teiHeader.tei.xml"
+                                                  >03-teiHeader.tei</ref></item>
+                                    <label>12h -12h30 </label>
+                                    <item> TP TEI Header<ref target="ex-5-header.xml"
+                                                  >ex-5-header</ref></item>
+                                    <label>13h30 -14h15  </label>
+                                    <item> TEI Msdescription<ref target="talk-msdesc.xml"
+                                                  >talk-msdesc.xml</ref></item>
+                                    <label>14h15 - 15h30  </label>
+                                    <item> TP TEI Msdescription<ref target="ex-6-msdesc.xml"
+                                                  >ex-6-msdesc</ref></item>
+                                    <label>16h - 17h  </label>
+                                    <item> Présentation projets avec la TEI</item>
+                        </list>
+            </div>
+            <div>
+                        <head>3ème journée…</head>
+                        <list>
+                                    <label>09h30-10h  </label>
+                                    <item> Entités nommées<ref target="06-namedEntities.tei.xml"
+                                                  >06-namedEntities.tei</ref></item>
+                                    <label>10h-11h00  </label>
+                                    <item> Création et gestion des Entités nommées<ref
+                                                  target="ex-7-entites.xml"
+                                                >ex-7-entites</ref></item>
+                                    <label>11h30-12h  </label>
+                                    <item> Modalités d’organisation des documents TEI<ref
+                                                  target="talk-organisation.xml"
+                                                  >talk-organisation</ref></item>
+                                    <label>12h - 12h30  </label>
+                                    <item> Cas d’étude : organisation du projet Oulipo<ref
+                                                  target="ex-8-organisation.xml"
+                                                  >ex-8-organisation</ref></item>
+                                    <label>13h30-14h </label>
+                                    <item> Personnalisation avancée avec ODD<ref
+                                                  target="07-personnalisation.tei.xml"
+                                                  >07-personnalisation.tei</ref></item>
+                                    <label>14h - 15h </label>
+                                    <item> TP Création d’un ODD personnalisé <ref
+                                                  target="ex-9-personnalisation.xml"
+                                                  >ex-9-personnalisation</ref></item>
+                                    <label>15h30 - 16h15 </label>
+                                    <item> Florilège de projets TEI <ref target="tei-florilege.xml"
+                                                /></item>
+                                    <label>16h15-17h </label>
+                                    <item> TP Explorations <ref target="ex-10-explore.xml"
+                                                  >ex-10-explore</ref></item>
+                        </list>
+            </div>
+            <div>
+                        <head>4ème journée…</head>
+                        <list>
+                                    <label>9h30-10h </label>
+                                    <item> Chaînes de traitement TEI </item>
+                                    <label>10h00-11h </label>
+                                    <item> XSLT Pour les nuls<ref target="talk-xslt.xml"
+                                                  >talk-xslt</ref><ref target="ex-11-xslt.xml"
+                                                  >ex-11-xslt</ref></item>
+                                    <label>11h30-12h30  </label>
+                                    <item> XSLT pour les paresseux <ref
+                                                  target="08-xsltParesseux.tei.xml"
+                                                  >08-xsltParesseux.tei</ref></item>
+                                    <label>13h30-14h30  </label>
+                                    <item> L'outillage TEI</item>
+                        </list>
+            </div>
+
+
+</div>

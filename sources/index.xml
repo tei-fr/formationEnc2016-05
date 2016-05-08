@@ -54,7 +54,8 @@
           
         </div>
       </div>
-      <div rend="slide">
+    <include xmlns="http://www.w3.org/2001/XInclude" href="progindex.xml"/>
+      <!-- <div rend="slide">
         <div xml:lang="fr">
           <head>Première journée</head>
           <list type="gloss">
@@ -149,7 +150,7 @@
             <item><ref target="10-XSLT03.html">Transformer un document TEI en HTML</ref></item>
           </list>
         </div>
-      </div>
+      </div>-->
       <div rend="slide">
         <div>
           <head>Télécharger les sources</head>

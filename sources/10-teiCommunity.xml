@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>La communauté TEI</title>
+        <author>Lou Burnard</author>
+        <author>Emmanuel Château</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>MEET</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This is the master version of an original document.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change>
+        <date>2016-05</date>
+        <name>Emmanuel Chateau</name>, Création du fichier</change>
+      <change>
+        <date>2015-05-10</date>
+        <name>Emmanuel Chateau</name>, création</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage xml:lang="fr" xml:id="index">
+        <titlePart>10-La Communauté TEI</titlePart>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
+        <note><ref target="00-programme.html">Programme</ref></note>
+      </titlePage>
+    </front>
+    <body>
+      <div rend="slide">
+        <div xml:lang="fr">
+          <head>L’organisation de la TEI</head>
+          <p>Le <ref target="http://www.tei-c.org/index.xml">Consortium TEI</ref> se compose de :</p>
+          <list>
+            <item><ref target="http://www.tei-c.org/Activities/Council/"
+              >Le Technical council</ref></item>
+            <item><ref target="http://www.tei-c.org/Activities/Workgroups/">Groupes de travail (Workgroup)</ref></item>
+            <item><ref target="http://www.tei-c.org/Board/"
+              >Le Board</ref></item>
+            <item><ref target="http://www.tei-c.org/Activities/SIG/">Les Special Interest Group (SIG)</ref></item>
+            <item>Sa communauté d’utilisateurs</item>
+          </list>
+        </div>
+      </div>
+      <div rend="slide">
+        <div>
+          <head>Devenir membre</head>
+          <p>La Text Encoding Initiative étant une organisation à but non lucratif, vous pouvez <ref target="http://members.tei-c.org/Join">devenir membre.</ref></p>
+          <list>
+            <head>Bénéfice de l’adhésion</head>
+            <item>Manifester son soutien</item>
+            <item>Participer aux décisions et aux orientations</item>
+            <item>Bénéficier de services communautaires (par exemple <ref target="http://tapasproject.org">TAPAS</ref>) ou de tarifs négociés pour des logiciels</item>
+            <item>Participer à la <ref target="http://www.tei-c.org/Membership/Meetings/">conférence annuelle</ref> (TEI annual Conference and Members’Meeting)</item>
+          </list>
+        </div>
+      </div>
+      <div rend="slide">
+        <div xml:lang="fr">
+          <head>Listes de diffusion</head>
+          <p>La communauté TEI possède plusieurs listes de diffusion où vous pouvez poser vos questions ou trouver des solutions à vos problèmes.</p>
+          <list>
+            <label>Liste francophone</label>
+            <item><ref target="https://groupes.renater.fr/sympa/info/tei-fr"
+                >https://groupes.renater.fr/sympa/info/tei-fr</ref></item>
+            <label>Liste internationale</label>
+            <item><ref target="https://listserv.brown.edu/archives/cgi-bin/wa?A0=tei-l"
+                >https://listserv.brown.edu/archives/cgi-bin/wa?A0=tei-l</ref></item>
+          </list>
+        </div>
+      </div>
+      <div rend="slide">
+        <div xml:lang="fr">
+          <head>Entrepôt GitHub</head>
+          <p>Le code source de la TEI est distribué de manière libre et open source par l’intermédiaire d’un entrepôt GitHub auquel vous pouvez contribuer.</p>
+          <list>
+            <label>Le consortium TEI sur GitHub</label>
+            <item><ref target="https://github.com/TEIC"
+              >https://github.com/TEIC</ref></item>
+            <label>Entrepôt des Guidelines</label>
+            <item><ref target="https://github.com/TEIC/TEI"
+              >https://github.com/TEIC/TEI</ref></item>
+            <label>Gestionnaires d’issues des Guidelines</label>
+            <item><ref target="https://github.com/TEIC/TEI/issues">https://github.com/TEIC/TEI/issues</ref></item>
+          </list>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="part">
+        <div rend="title" xml:lang="fr">
+          <head><ref target="https://groupes.renater.fr/sympa/info/tei-fr"
+            >À très bientôt</ref>, donc</head>
+          <note><ref target="#index">Revenir au début</ref> | <ref target="programme.html"
+              >Programme</ref></note>
+        </div>
+      </div>
+    </back>
+  </text>
+</TEI>

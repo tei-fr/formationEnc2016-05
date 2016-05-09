@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Programme de la formation</title>
+        <author>Lou Burnard</author>
+        <author>Emmanuel Château</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>MEET</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This is the master version of an original document.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change>
+        <date>2016-05</date>
+        <name>Emmanuel Chateau</name>, modifications pour la formation 2016</change>
+      <change>
+        <date>2015-05-10</date>
+        <name>Emmanuel Chateau</name>, création</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage xml:lang="fr" xml:id="index">
+        <titlePart>00-Programme</titlePart>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
+        <note><ref target="00-programme.html">Programme</ref></note>
+      </titlePage>
+    </front>
+    <body>
+      <div rend="slide">
+        <div xml:lang="fr">
+          <head>Programme d’ensemble</head>
+          <list>
+            <item>Introduction de la formation</item>
+            <item>L’encodage en XML</item>
+            <item>La Text Encoding Initiative</item>
+            <item>L’organisation de la TEI</item>
+            <item>L’en-tête TEI</item>
+            <item>La description des sources manuscrites</item>
+            <item>L’encodage des variantes</item>
+            <item>Personnaliser la TEI</item>
+            <item>Naviguer dans ses documents avec XPath</item>
+            <item>Transformer ses documents avec XSLT</item>
+          </list>
+        </div>
+      </div>
+      <div rend="slide" xml:lang="fr">
+        <div>
+          
+        </div>
+      </div>
+      <include xmlns="http://www.w3.org/2001/XInclude" href="progindex.xml"/>
+      <!-- <div rend="slide">
+        <div xml:lang="fr">
+          <head>Première journée</head>
+          <list type="gloss">
+            <label>09h30-10h</label>
+            <item>Introduction de la formation </item>
+            <label>10h00-10h45</label>
+            <item>Tour de table et répartition des groupes </item>
+            <label>10h45-11h</label>
+            <item>Pause</item>
+            <label>11h-11h30</label>
+            <item><ref target="01-editionNumerique.tei.xml">Synthèse sur le balisage</ref></item>
+            <label>11h30-12h30</label>
+            <item><ref target="ex-2-analyse.xml">TP Modélisation</ref></item>
+            <label>12h30-13h30</label>
+            <item>pause déjeuner</item>
+            <label>13h30-14h</label>
+            <item><ref target="ex-1-oxygen.xml">Retours sur l’exercice d’encodage fait chez soi</ref></item>
+            <label>14h-15h</label>
+            <item><ref target="talk-tei-intro.xml">Introduction aux richesses de la TEI</ref></item>
+            <label>15h-17h</label>
+            <item><ref target="ex-3-roma.xml">TP Personnalisation TEI avec Roma</ref></item>
+            <label>16h45-1700</label>
+            <item>Questions, discussions, perspectives</item>
+            <label>17h30</label>
+            <item>Social event (bière)</item>
+          </list>
+        </div>
+      </div>
+      <div rend="slide">
+        <div xml:lang="fr">
+          <head>2<hi rend="superscript">ème</hi> journée</head>
+          <list>
+            <label>9h30-10h</label>
+            <item><ref target="04-editionCritique.tei.html">La transcription des sources primaires</ref></item>
+            <label>10h-11h</label>
+            <item><ref target="ex-4-oulipo.xml">Exercice OuLiPo</ref></item>
+            <label>11h-11h30</label>
+            <item>pause</item>
+            <label>11h30-12h</label>
+            <item><ref target="03-teiHeader.tei.xml">L’en-tête TEI</ref></item>
+            <label>12h-12h30</label>
+            <item><ref target="ex-5-header.xml">TP Création d’une entête simple</ref></item>
+            <label>12h30-13h30</label>
+            <item>Pause déjeuner</item>
+            <label>13h30-14h15</label>
+            <item><ref target="talk-msdesc.xml">La description des manuscrits</ref></item>
+            <label>14h15-15h30</label>
+            <item><ref target="ex-5-msdesc.xml">TP Description des manuscrits</ref></item>
+            <label>15h30-16h</label>
+            <item>Pause</item>
+            <label>16h-17h</label>
+            <item>Présentation de projets</item>
+          </list>
+        </div>
+      </div>
+      <div rend="slide">
+        <div xml:lang="fr">
+          <head>3<hi rend="superscript">ème</hi> journée</head>
+          <list>
+            <label>9h30-10h</label>
+            <item><ref target="06-namedEntities.tei.xml">Les entités-nommées</ref></item>
+            <label>10h-11h00</label>
+            <item><ref target="ex-7-entites.xml">TP entités-nommées</ref></item>
+            <label>11h-11h30</label>
+            <item>Pause</item>
+            <label>11h30-12h</label>
+            <item><ref target="talk-organisation.xml">Organisation des documents</ref></item>
+            <label>12h-12h30</label>
+            <item><ref target="ex-8-organisation.xml">TP étude de cas</ref></item>
+            <label>12h30-13h30</label>
+            <item>Déjeuner</item>
+            <label>13h30-14h</label>
+            <item><ref target="07-personnalisation.tei.xml">Personnalisation avancée avec ODD</ref></item>
+            <label>14h-15h</label>
+            <item><ref target="ex-9-personnalisation.xml">TP Création d’un ODD personnalisé</ref></item>
+            <label>15h-15h30</label>
+            <item>Pause</item>
+            <label>15h30-16h15</label>
+            <item><ref target="tei-florilege.xml">Florilège de projets TEI</ref></item>
+            <label>16h15-17h</label>
+            <item><ref target="08-xpath.tei.xml">TP XPath</ref></item>
+          </list>
+        </div>
+      </div>
+      <div rend="slide">
+        <div xml:lang="fr">
+          <head>4<hi rend="superscript">ème</hi> journée</head>
+          <list>
+            <item><ref target="12-XSLT01.html">Le langage XSLT</ref></item>
+            <item><ref target="14-XSLT02.html">Ma première XSLT</ref></item>
+            <item><ref target="13-html4Humanists.html">HTML pour les Humanistes</ref></item>
+            <item><ref target="10-XSLT03.html">Transformer un document TEI en HTML</ref></item>
+          </list>
+        </div>
+      </div>-->
+      <div rend="slide">
+        <div>
+          <head>Télécharger les sources</head>
+          <list>
+            <item>Aller sur https://github.com/tei-fr/formationEnc2015-05</item>
+            <item>Copiez le lien HTTPS</item>
+            <item>Ouvrez le terminal et tapez les commandes magiques suivantes</item>
+          </list>
+          <eg>cd Desktop</eg>
+          <eg>git clone --recursive https://github.com/tei-fr/formationEnc2015-05.git</eg>
+        </div>
+      </div>
+      <div rend="slide">
+        <div>
+          <head>Organisation du répertoire</head>
+          <list>
+            <item><code>exemples/</code> exemples tei</item>
+            <item><code>exercices/</code> contient les dossiers de travaux pratiques</item>
+            <item><code>images/</code> contenus graphiques</item>
+            <item><code>pdf/</code> présentations au format pdf</item>
+            <item><code>presentations/</code> présentations au format HTML</item>
+            <item><code>ressources/</code> matériel d’accompagnement</item>
+            <item><code>schemas/</code> schémas distribués pour la formation</item>
+            <item><code>sources/</code> sources tei des présentations (contient un sous-module schema/)</item>
+            <item><code>xsl/</code> transformations xslt</item>
+          </list>
+        </div>
+      </div>
+      <div rend="slide">
+        <div>
+          <head>Utiliser ces diapositives</head>
+          <list>
+            <item>←, ↑, Pg Up, k : aller à la page précédente</item>
+            <item>→, ↓, Pg Dn, Espace, j : aller à la page suivante</item>
+            <item>Home : aller à la première diapositive</item>
+            <item>End : aller à la dernière diapositive</item>
+            <item>f : afficher en plein écran</item>
+            <item>Esc : quitter le mode plein écran</item>
+            <item>?, h : afficher l’aide</item>
+          </list>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -23,7 +23,7 @@
     <front>
       <titlePage xml:lang="fr">
         <titlePart>04-Édition critique des sources manuscrites</titlePart>
-        <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="title" xml:lang="fr">
@@ -56,7 +56,7 @@
           <div>
             <head>Prise en charge des lacunes</head>
             <p><gi>gap</gi> passage ne pouvant pas être restitué pour des raisons matérielles</p>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <egXML>
               <gap reason="illegible" agent="ink-blot" />
             </egXML>
             <p><gi>unclear</gi> passage en partie illisible</p>
@@ -162,22 +162,22 @@
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Trois approches pour l’enregistrement et l’<hi>alignement</hi> des variantes</head>
-            <p>Les Guidelines proposent trois approches différentes pour aligner des passages textuels lorsque l’on établit une édition critique :</p>
+            <p>Les <title>Guidelines</title> proposent trois approches différentes pour aligner des passages textuels lorsque l’on établit une édition critique :</p>
             <list>
               <item>la <hi>méthode de localisation référencée</hi>, où les entrées d’apparat critique sont liées aux blocs de texte identifiés qui contiennent les lemmes respectifs</item>
-              <item>la <hi>méthode d’attachement à double point</hi>, où les entrées d’apparat critique sont liées à des ponts de départ et de fin identifiées dans un texte</item>
+              <item>la <hi>méthode d’attachement à double point</hi>, où les entrées d’apparat critique sont liées à des points de départ et de fin identifiés dans un texte</item>
               <item>la <hi>méthode de segmentation parallèle</hi>, où les entrées d’apparat critique son encodées au moyen d’une transcription du texte connu invariable et de tous les témoins.</item>
             </list>
           </div>
           <div>
             <head>Trois approches pour l’enregistrement et l’<hi>alignement</hi> des variantes</head>
-            <p>Les Guidelines proposent trois approches différentes pour aligner des passages textuels lorsque l’on établit une édition critique :</p>
+            <p>Les <title>Guidelines</title> proposent trois approches différentes pour aligner des passages textuels lorsque l’on établit une édition critique :</p>
             <list>
               <item>la <hi>méthode de localisation référencée</hi>, où les entrées d’apparat critique sont liées aux blocs de texte identifiés qui contiennent les lemmes respectifs</item>
-              <item>la <hi>méthode d’attachement à double point</hi>, où les entrées d’apparat critique sont liées à des ponts de départ et de fin identifiées dans un texte</item>
+              <item>la <hi>méthode d’attachement à double point</hi>, où les entrées d’apparat critique sont liées à des points de départ et de fin identifiés dans un texte</item>
               <item>la <hi>méthode de segmentation parallèle</hi>, où les entrées d’apparat critique son encodées au moyen d’une transcription du texte connu invariable et de tous les témoins.</item>
             </list>
-            <p>La méthode par segmentation parallèle est le plus couramment utilisée lors de l’encodage de sources en XML-TEI pour comparer des témoins. Cette méthode correspond également à une méthode de travail pour l’établissement du texte. Mais son emploi qui présente une certain nombre de limites est sujet à discussion.</p>
+            <p>La méthode par segmentation parallèle est le plus couramment utilisée lors de l’encodage de sources en XML-TEI pour comparer des témoins. Cette méthode correspond également à une méthode de travail pour l’établissement du texte. Mais son emploi, qui présente une certain nombre de limites, est sujet à discussion.</p>
           </div>
         </div>
         <div rend="slide" xml:lang="fr">
@@ -234,6 +234,7 @@
           </div>
         </div>
         <div rend="slide" xml:lang="fr">
+          <!-- @todo choisir un meilleur exemple tiré des Guidelines -->
           <div>
             <head>Localisation référencée</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">

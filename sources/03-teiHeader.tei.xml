@@ -59,15 +59,16 @@
           <div>
             <head>Pourquoi fournir des métadonnées ?</head>
             <list>
-              <head>Pourquoi</head>
               <item>documenter la source</item>
               <item>renseigner l’édition et ses attributions</item>
               <item>intégration possible dans des bibliothèques numériques</item>
             </list>
+            <p>L’entête d’un fichier TEI ou <gi>teiheader</gi> vous permet de finement renseigner les métadonnées de votre fichier. Elles renseignent aussi bien le fichier de votre édition que la source du texte édité.</p>
             <div rend="comments">
               <head>L’importance des métadonnées</head>
               <div>
-                <p>L’entête TEI ou <gi>teiHeader</gi> vous permet de renseigner finement les métadonnées concernant votre fichier. Comme ces métadonnées qui comportent des informations sur l’information font partie du document, on peut dire qu’elles sont auto-portées. Ces métadonnées peuvent aussi bien concerner la source du document édité que votre édition et ses attributions. La qualité de ces information et la granularité du modèle descriptif utilisé déterminent en grande partie les possibilité d’agrégation dans des bibliothèques numériques.</p>
+                <p>L’entête TEI ou <gi>teiHeader</gi> vous permet de renseigner finement les métadonnées concernant votre fichier. Comme ces métadonnées qui comportent des informations sur l’information font partie du document, on peut dire qu’elles sont auto-portées. </p>
+                <p>Ces métadonnées peuvent aussi bien concerner la source du document édité que votre édition et ses attributions. La qualité de ces information et la granularité du modèle descriptif utilisé déterminent en grande partie les possibilité d’agrégation dans des bibliothèques numériques.</p>
               </div>
             </div>
           </div>
@@ -223,7 +224,9 @@
               </sourceDesc>
             </egXML>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <bibl>Henri Sauval. <title>Histoire et recherches des antiquités de la ville de Paris </title>. Paris : Charles Moette et Jacques Chardon, 1724</bibl>
+              <bibl>Henri Sauval. <title>Histoire et recherches des antiquités 
+                de la ville de Paris </title>. Paris : Charles Moette et Jacques
+                Chardon, 1724</bibl>
             </egXML>
           </div>
           <div rend="comments">
@@ -297,7 +300,8 @@
             <head>Par exemple, pour les ouvrages imprimés</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <hyphenation>
-                <p>Pour les ouvrages imprimés, il n’a pas été tenu compte de l’hyphénation.</p>
+                <p>Pour les ouvrages imprimés, il n’a pas été tenu compte 
+                  de l’hyphénation.</p>
               </hyphenation>
             </egXML>
           </div>
@@ -313,7 +317,8 @@
             </list>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <profileDesc>
-                <creation><date when="2009-04-20">20 avril 2009</date></creation>
+                <creation><date when="2009-04-20">20 avril
+                  2009</date></creation>
                 <langUsage>
                   <language indent="fre" scope="60">Français</language>
                   <language ident="lat" scope="40">Latin</language>
@@ -327,9 +332,12 @@
               <p>Enregistre les révisions et modifications du fichier</p>
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
                 <revisionDesc>
-                  <change when="2009-11" who="#VJ">Deuxième édition électronique</change>
-                  <change when="2009-10" who="#FG">Schéma et transformations</change>
-                  <change when="2009-10" who="#CD">Encodage de l'apparat critique</change>
+                  <change when="2009-11" who="#VJ">Deuxième édition
+                    électronique</change>
+                  <change when="2009-10" who="#FG">Schéma et 
+                    transformations</change>
+                  <change when="2009-10" who="#CD">Encodage de 
+                    l'apparat critique</change>
                 </revisionDesc>
               </egXML>
             </div>

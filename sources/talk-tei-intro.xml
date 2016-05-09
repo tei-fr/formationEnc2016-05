@@ -4,7 +4,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Comment se servir des TEI Guidelines? </title>
+        <title>02 - Introduction aux richesses de la TEI</title>
       </titleStmt>
       <editionStmt>
         <edition>
@@ -30,6 +30,13 @@
     </revisionDesc>
   </teiHeader>
   <text>
+    <front>
+      <titlePage xml:lang="fr">
+        <titlePart>02 - Introduction aux richesses de la TEI</titlePart>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
+        <note><ref target="00-programme.html">Programme</ref></note>
+      </titlePage>
+    </front>
     <body>
       <!-- d’abord un peu de contextualisation -->
       <div rend="slide">

@@ -23,7 +23,7 @@
   <text>
     <front>
       <titlePage xml:lang="fr">
-        <titlePart>01-Synthèse sur le balisage des éditions critiques</titlePart>
+        <titlePart>01 - Synthèse sur le balisage des éditions critiques</titlePart>
         <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
@@ -435,10 +435,10 @@
             <!-- @todo traiter l’exemple correctement -->
             <egXML>
               <![CDATA[<?xml version="1.0"?>
-       <doc xmlns="http://example.org/​namespace">
-        <p n="1">This is a paragraph.</p>
-        <p n="2">This paragraph mentions <placeName>Bristol</placeName>.</p>
-       </doc>]]>
+  <doc xmlns="http://example.org/​namespace">
+    <p n="1">This is a paragraph.</p>
+    <p n="2">This paragraph mentions <placeName>Bristol</placeName>.</p>
+  </doc>]]>
             </egXML>
           </div>
           <div rend="comments">
@@ -456,10 +456,10 @@
             <!-- @todo traiter l’exemple correctement -->
             <egXML>
               <![CDATA[<?xml version="1.0" encoding="UTF-8?>
-       <doc xmlns="http://example.org/​namespace">
-        <p n="1">This is a paragraph.</p>
-        <p n="2">This paragraph mentions <placeName>Bristol</placeName>.</p>
-       </doc>]]>
+  <doc xmlns="http://example.org/​namespace">
+    <p n="1">This is a paragraph.</p>
+    <p n="2">This paragraph mentions <placeName>Bristol</placeName>.</p>
+  </doc>]]>
             </egXML>
           </div>
           <div rend="comments">
@@ -481,10 +481,10 @@
             <!-- @todo traiter l’exemple correctement -->
             <egXML>
               <![CDATA[<?xml version="1.0" encoding="UTF-8?>
-       <doc xmlns="http://example.org/​namespace">
-        <p n="1">This is a paragraph.</p>
-        <p n="2">This paragraph mentions <placeName>Bristol</placeName>.</p>
-       </doc>]]>
+  <doc xmlns="http://example.org/​namespace">
+    <p n="1">This is a paragraph.</p>
+    <p n="2">This paragraph mentions <placeName>Bristol</placeName>.</p>
+  </doc>]]>
             </egXML>
             <p>Les séquences <code>&lt;</code>, <code>&gt;</code> et <code>&lt;/</code> délimitent les balises : <code>&lt;div&gt;&lt;/div&gt;</code></p>
             <p>Les paires nom-valeur des attributs ont la forme <code>nom='valeur'</code> équivalente à <code>nom="valeur"</code></p>

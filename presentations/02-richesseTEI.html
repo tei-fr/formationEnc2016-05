@@ -33,7 +33,7 @@ layout: false
 
 1. Orientation&nbsp;: est-ce que vos objets sont déjà reconnus par la TEI&nbsp;?
 
-1. Déclaration&nbsp;: comment créer une specification TEI-conforme&nbsp;? 
+1. Déclaration&nbsp;: comment créer une spécification TEI-conforme&nbsp;? 
 
 1. Documentation&nbsp;: comment documenter vos pratiques TEI&nbsp;?
 
@@ -59,7 +59,7 @@ La modélisation de vos données est une préalable essentiel. Que vous vous ser
 
 # Comment s’orienter?
 
-Les TEI Guidelines, imprimées ou en ligne, se divisent en deux grosses parties&nbsp;: 
+Les _TEI Guidelines_, imprimées ou en ligne, se divisent en deux grosses parties&nbsp;: 
 * une séquence de 23 chapitres, dont la plupart correspondent à un module
 
 * des listes alphabétiques de définitions exhaustives de classes (183), d’éléments (546), d’attributs (470), de macros(8), et de types de données (28) .
@@ -742,28 +742,28 @@ On est vraiment gâté par l’étendue des choix possibles…
 
 # Liste des modules TEI
 
-- analysis : Simple analytic mechanisms
-- certainty : Certainty and uncertainty
-- .red[core] éléments common to all TEI documents corpus
-- Header : extensions for corpus texts
-- declarefs : Feature system déclarations
-- dictionaries : Printed dictionaries
-- drama : Performance texts
-- figures : Tables, formulae, and figures
-- gaiji : Character and glyph documentation
-- .red[header] : The TEI Header
-- iso-fs : Feature structures
-- linking : Linking, segmentation and alignment
-- msdescription : Manuscript Description
-- namesdates : Names and dates
-- nets : Graphs, networks and trees
-- spoken : Transcribed Speech
-- tagdocs : Documentation of TEI modules
-- .red[tei] : déclarations for datatypes, classes, and macros available to all TEI modules
-- textcrit : Text criticism
-- .red[textstructure] : Default text structure
-- transcr : Transcription of primary sources
-- verse : Verse structures
+- **analysis** : Simple analytic mechanisms
+- **certainty** : Certainty and uncertainty
+- **.red[core]** éléments common to all TEI documents corpus
+- **Header** : extensions for corpus texts
+- **declarefs** : Feature system déclarations
+- **dictionaries** : Printed dictionaries
+- **drama** : Performance texts
+- **figures** : Tables, formulae, and figures
+- **gaiji** : Character and glyph documentation
+- **.red[header]** : The TEI Header
+- **iso-fs** : Feature structures
+- **linking** : Linking, segmentation and alignment
+- **msdescription** : Manuscript Description
+- **namesdates** : Names and dates
+- **nets** : Graphs, networks and trees
+- **spoken** : Transcribed Speech
+- **tagdocs** : Documentation of TEI modules
+- **.red[tei]** : déclarations for datatypes, classes, and macros available to all TEI modules
+- **textcrit** : Text criticism
+- **.red[textstructure]** : Default text structure
+- **transcr** : Transcription of primary sources
+- **verse** : Verse structures
 </list>
 ---
 
@@ -788,23 +788,19 @@ Un TEI ODD nous permet de construire un schéma adéquat à nos besoins
 # Comment effectuer notre choix de balises&nbsp;?
 
 Nous aurons besoins de plusieurs choses&nbsp;: 
+
 * un schéma formel (en langue informatique tel que DTD, RELAXNG, W3C Schema, Schematron) qui peut contrôler&nbsp;: 
-* quelles balises sont disponibles&nbsp;?
 
-* dans quels contextes&nbsp;?
-
-* avec quels attributs&nbsp;?
-
-* avec quelles valeurs&nbsp;?
-
-* en respectant quelles contraintes&nbsp;?
+ * quelles balises sont disponibles&nbsp;?
+ * dans quels contextes&nbsp;?
+ * avec quels attributs&nbsp;?
+ * avec quelles valeurs&nbsp;?
+ * en respectant quelles contraintes&nbsp;?
 
 
 * une documentation pour expliquer nos principes éditoriaux, nos principes de choix de balises, etc. aux utilisateurs/ développeurs&nbsp;: 
-* en plusieurs langues naturelles
-
-* en plusieurs formats bureautiques (PDF, Word, HTML, epub…) 
-
+ * en plusieurs langues naturelles
+ * en plusieurs formats bureautiques (PDF, Word, HTML, epub…) 
 
 * des outils informatiques pour transformer et gérer nos données XML
 
@@ -814,15 +810,19 @@ Nous aurons besoins de plusieurs choses&nbsp;:
 
 # Propositions de la TEI
 
-Ayant elle-même ces mêmes besoins, la TEI vous propose&nbsp;: * ODD&nbsp;: Un vocabulaire XML pour définir les vocabulaires XML
-* Stylesheets&nbsp;: Un ensemble de feuilles de style XSLT très générique pour la conversion des documents XML TEI
-* Roma&nbsp;: Un logiciel pour traiter des documents exprimés dans ce vocabulaire, pour en faire ressortir 
+Ayant elle-même ces mêmes besoins, la TEI vous propose&nbsp;: 
+
+* .red[ODD]&nbsp;: Un vocabulaire XML pour définir les vocabulaires XML
+
+* .red[Stylesheets]&nbsp;: Un ensemble de feuilles de style XSLT très générique pour la conversion des documents XML TEI
+
+* .red[Roma]&nbsp;: Un logiciel pour traiter des documents exprimés dans ce vocabulaire, pour en faire ressortir 
+
 * des schémas RELAXNG, DTD, etc. 
 
 * des manuels "mode d’emploi" en HTML, PDF etc.
 
-* OxGarage&nbsp;: Un outil web pour effectuer plusieurs transformations documentaires, par ex 
-* de DOCX en TEI, et l’inverse
+* OxGarage&nbsp;: Un outil web pour effectuer plusieurs transformations documentaires, par ex de DOCX en TEI, et l’inverse
 
 * de HTML en TEI, et l’inverse
 

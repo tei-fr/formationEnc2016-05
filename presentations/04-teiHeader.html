@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Programme</title>
+      <link href="themes/remark-dark.css" rel="stylesheet" media="all" type="text/css">
+   </head>
+   <body><textarea id="source">
+title: Le teiHeader
+description: , 
+theme: theme/remark-dark-em.css
+name: inverse
+layout: true
+class: inverse
+
+---
+class: center middle
+
+
+# 03-Le teiHeader
+
+# Formation TEI | ENC 9 au 12 mai 2015
+
+.footnote[[Programme](00-programme.html)]
+![test](images/logo-ecole-nationale-des-chartes.png)
+
+---
+template: inverse
+class: center middle
+
+
+# Introduction
+
+???
+
+Un des avantages liés à l’utilisation de documents XML réside dans la possibilité de fournir des métadonnées directement dans le document. Ces métadonnées étant étroitement associées au fichier, elles facilitent l’échange de documents et leur intégration automatique dans des bases de données.
+
+Le modèle de la TEI prévoit que les métadonnées soient renseignées dans un élément `&lt;teiHeader&gt;`. C’est au contenu de cet élément que nous allons maintenant nous intéresser plus particulièrement.
+
+---
+layout: false
+name: index
+
+# L’en-tête TEI et les métadonnées
+
+1. [L’en-tête TEI (le `&lt;teiHeader&gt;`)](#part1)
+
+1. [La description du fichier (`&lt;fileDesc&gt;`)](#part2)
+
+1. [Les autres sous-composants de l’en-tête TEI](#part3)
+
+---
+template: inverse
+class: center middle
+name: part1
+
+
+# L’en-tête TEI (le `&lt;teiHeader&gt;`)
+
+---
+
+
+## Pourquoi fournir des métadonnées&nbsp;?
+
+* documenter la source
+
+* renseigner l’édition et ses attributions
+
+* intégration possible dans des bibliothèques numériques
+
+L’entête d’un fichier TEI ou `&lt;teiheader&gt;` vous permet de finement renseigner les métadonnées de votre fichier. Elles renseignent aussi bien le fichier de votre édition que la source du texte édité.
+
+## L’importance des métadonnées
+
+L’entête TEI ou `&lt;teiHeader&gt;` vous permet de renseigner finement les métadonnées concernant votre fichier. Comme ces métadonnées qui comportent des informations sur l’information font partie du document, on peut dire qu’elles sont auto-portées.
+
+Ces métadonnées peuvent aussi bien concerner la source du document édité que votre édition et ses attributions. La qualité de ces information et la granularité du modèle descriptif utilisé déterminent en grande partie les possibilité d’agrégation dans des bibliothèques numériques.
+
+---
+
+
+## Choix des modèles descriptifs
+
+* cohérent avec la politique de votre établissement
+
+* possibilité de mapping avec d’autres modèles
+
+* conformité aux bonnes pratiques
+
+Glorieux, Frédéric, et Jolivet, Vincent, [«&nbsp;weboai, Human web interface on OAI repository&nbsp;»](http://sourceforge.net/p/weboai/wiki/Home/), SourceForge.
+
+???
+
+Dans le cadre de la production d’une édition numérique il est souvent nécessaire de traiter avec soin les en-têtes TEI et de produire des métadonnées de qualité. La TEI propose de nombreuses manières possibles de fournir une description des fichiers.
+
+Ici, pour arrêter les choix d’encodages, il convient d’examiner un certain nombre de pratiques documentaires existantes dans le monde bibliothéconomique et de rechercher des guides de bonnes pratiques pour la TEI.
+
+Un travail en vue de permettre un moissonnage des en-têtes TEI en OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting) des éditions produites au sein du Consortium cahier a permis de se diriger vers la définition de pratiques commune pour la communauté francophone. Il serait dommage de ne pas s’y conformer.
+
+Glorieux, Frédéric, et Jolivet, Vincent, [«&nbsp;weboai, Human web interface on OAI repository&nbsp;»](http://sourceforge.net/p/weboai/wiki/Home/), SourceForge.
+
+---
+
+
+## Macrostructure d’un document TEI
+
+```xml
+<TEI>
+  <teiHeader>
+  <!-- ... métadonnées ... -->
+  </teiHeader>
+  <text>
+  <!-- ... votre édition ...-->
+  </text>
+</TEI>
+```
+
+???
+
+Vous vous souvenez probablement qu’un document TEI dispose d’un élément racine `&lt;TEI&gt;` (ou `&lt;teiCorpus&gt;`) qui contient obligatoirement deux éléments enfants qui sont `&lt;teiHeader&gt;` et `&lt;text&gt;`.
+
+C’est au sein du teiHeader que nous allons pouvoir renseigner les métadonnées concernant le texte édité.
+
+---
+
+
+## Les composants de l’en-tête (`&lt;teiHeader&gt;`)
+
+Le `&lt;teiHeader&gt;` comporte un élément obligatoire `&lt;fileDesc&gt;` et trois éléments facultatifs
+* `&lt;fileDesc&gt;`&nbsp;: contient la description du fichier
+* `&lt;encodingDesc&gt;`&nbsp;: description des convention d’encodage
+* `&lt;profileDesc&gt;`&nbsp;: informations classificatoires
+* `&lt;revisionDesc&gt;`&nbsp;: description des révisions
+
+---
+template: inverse
+class: center middle
+
+
+# La description du fichier (`&lt;fileDesc&gt;`)
+
+---
+
+
+## La description du fichier (`&lt;fileDesc&gt;`)
+
+`&lt;fileDesc&gt;` contient la description de fichier
+
+* `&lt;titleStmt&gt;` mentions de titre et de responsabilité
+
+* `&lt;publicationStmt&gt;` mentions de publication (du texte électronique)
+
+* `&lt;sourceDesc&gt;` renseignements sur la source dont est issu le fichier numérique
+
+* `&lt;editionStmt&gt;` informations relatives à l'édition
+
+* `&lt;extent&gt;` taille du fichier
+
+* `&lt;seriesStmt&gt;` informations relatives à la collection
+
+* `&lt;noteStmt&gt;` notes fournissant des informations sur le texte
+
+---
+
+
+## Exemple d’en-tête minimale
+
+```xml
+<teiHeader>
+  <fileDesc>
+  <titleStmt>
+    <title>
+     <!-- titre du document --></title>
+  </titleStmt>
+  <publicationSmt>
+    <p><!-- mentions de publication --></p>
+  </publicationSmt>
+    <sourceDesc>
+      <p><!-- description de la source --></p>
+    </sourceDesc>
+  </fileDesc>
+</teiHeader>
+```
+
+---
+
+
+## Mentions de titre et de responsabilité (`&lt;titleStmt&gt;`)
+
+`&lt;titleStmt&gt;` contient les mentions de titre et de responsabilité
+
+* `&lt;title&gt;` est obligatoire et répétable
+
+* `&lt;principal&gt;`, `&lt;author&gt;`, `&lt;editor&gt;`, `&lt;funder&gt;` permettent de renseigner les mentions de responsabilité principales
+
+* `&lt;respStmt&gt;` et ses sous-composants permettent de préciser les autres types de contribution
+
+---
+
+
+## Exemple de mentions de titre et de responsabilité (`&lt;titleStmt&gt;`)
+
+```xml
+<titleStmt  >
+  <title xml:lang="fre" type="main">Sauval 1724</title>
+  <principal>
+    <persName ref="#MCL">
+      <forename>Marianne</forename>
+      <surname>Cojannot-Le Blanc</surname>
+    </persName>
+  </principal>
+  <funder>
+    <orgName>Labex Les Passés dans le Présent</orgName>
+    <date from="2013" to="2018">2013-2018</date>
+  </funder>
+  <respStmt>
+    <resp key="mrk">encodage XML-TEI</resp>
+    <persName ref="#EC">
+      <forename>Emmanuel</forename>
+      <surname>Château</surname>
+    </persName>
+  </respStmt>
+  <!-- ... -->
+</titleStmt>
+```
+
+---
+
+
+## Description de la source (`&lt;sourceDesc&gt;`)
+
+`&lt;sourceDesc&gt;` est un élément obligatoire, il est destiné à accueillir une description de la source du document soit en texte libre soit de manière structurée avec les éléments `&lt;bibl&gt;`, `&lt;msDesc&gt;`, etc.
+
+```xml
+<sourceDesc  >
+  <p>Fichier nativement numérique</p>
+</sourceDesc>
+```
+
+```xml
+<bibl  >Henri Sauval. <title>Histoire et recherches des antiquités 
+de la ville de Paris </title>. Paris&nbsp;: Charles Moette et Jacques
+Chardon, 1724</bibl>
+```
+
+???
+
+La description de la source est un élément obligatoire dans la description d’un fichier TEI. Notez bien que la TEI différencie clairement les informations concernant l’édition des informations concernant la source du texte encodé (avec `&lt;sourceDesc&gt;`).
+
+Plus tard, nous verrons que la TEI offre également un très riche modèle de contenu pour la description des sources manuscrites.
+
+---
+template: inverse
+class: center middle
+
+
+# Les autres sous-composants de l’en-tête TEI
+
+---
+
+
+## Après la description de fichier…
+
+Après `&lt;fileDesc&gt;`, l’entête peut contenir trois éléments optionnels
+
+* `&lt;encodingDesc&gt;`&nbsp;: description des convention d’encodage
+
+* `&lt;profileDesc&gt;`&nbsp;: informations classificatoires
+
+* `&lt;revisionDesc&gt;`&nbsp;: description des révisions
+
+---
+
+
+## Description de l’encodage
+
+`&lt;encodingDesc&gt;` est un élément optionnel destiné à documenter l’encodage.
+
+* soit des structures simples avec des paragraphes `&lt;p&gt;`
+
+* une description structurée à l’aide des éléments ci-dessous&nbsp;: 
+* `&lt;projectDesc&gt;` description de l’objectif de l’édition électronique
+
+* `&lt;samplingDesc&gt;` méthode d’échantillonnage
+
+* `&lt;tagsDecl&gt;` description du balisage employé
+
+* `&lt;refDecl&gt;` précision sur la construction des références canoniques
+
+* `&lt;geoDecl&gt;` système de notation des coordonnées géographiques
+
+* `&lt;schemaSpec&gt;` spécification de schéma
+
+
+---
+
+
+## exemple d’`&lt;encodingDesc&gt;`
+
+```xml
+<encodingDesc  >
+  <charDecl>
+    <glyph xml:id="uut">
+      <glyphName>two latin small letter u with macron and vertical
+        line</glyphName>
+      <charProp>
+        <localName>entity</localName>
+        <value>omega2</value>
+      </charProp>
+      <mapping type="composed">u͞u͞|</mapping>
+      <graphic url="x2.jpg"></graphic>
+    </glyph>
+  </charDecl>
+  <editorialDecl>
+    <normalization>
+      <p>La ponctuation a été ajoutée, conformément...</p>
+      <p>les mots ont été séparés lorsque l'usage actuel...</p>
+    </normalization>
+  </editorialDecl>
+</encodingDesc>
+```
+
+???
+
+## Par exemple, pour les ouvrages imprimés
+
+```xml
+<hyphenation  >
+  <p>Pour les ouvrages imprimés, il n’a pas été tenu compte 
+  de l’hyphénation.</p>
+</hyphenation>
+```
+
+---
+
+
+## `&lt;profileDesc&gt;`
+
+* `&lt;abstract&gt;` bref résumé
+
+* `&lt;creation&gt;` informations sur la création du texte
+
+* `&lt;langUsage&gt;` langues présentes dans le texte
+
+* `&lt;textClass&gt;` nature du texte d’après un thesaurus interne ou externe
+
+```xml
+<profileDesc  >
+  <creation><date when="2009-04-20">20 avril
+  2009</date></creation>
+  <langUsage>
+    <language indent="fre" scope="60">Français</language>
+    <language ident="lat" scope="40">Latin</language>
+  </langUsage>
+</profileDesc>
+```
+
+???
+
+## `&lt;revisionDesc&gt;`
+
+Enregistre les révisions et modifications du fichier
+
+```xml
+<revisionDesc  >
+  <change when="2009-11" who="#VJ">Deuxième édition
+    électronique</change>
+  <change when="2009-10" who="#FG">Schéma et 
+    transformations</change>
+  <change when="2009-10" who="#CD">Encodage de 
+    l'apparat critique</change>
+</revisionDesc>
+```
+
+---
+template: inverse
+class: center middle
+
+
+# Sources et bibliographie
+
+---
+
+## Orientations bibliographiques
+
+* Glorieux, Frédéric, et Jolivet, Vincent, [« weboai, Human web interface on OAI repository »](http://weboai.sourceforge.net), SourceForge.
+
+* [DeMArch Description des manuscrits et fonds d'archives modernes et contemporains en bibliothèque](http://www.bnf.fr/fr/professionnels/normes_catalogage/a.ead_demarch.html).
+
+* Hawkins, Kevin, Dalmau, Michelle, et Bauman, Syd, [Best Practices for TEI in Libraries](http://www.tei-c.org/SIG/Libraries/teiinlibraries/main-driver.html).
+
+* Lou Burnard ed., [The ENRICH Schema – A Reference Guide](http://projects.oucs.ox.ac.uk/ENRICH/).
+
+* Driscoll. "P5-MS: A General Purpose Tagset for Manuscript Description." Digital Medievalist 1 (2006). [http://www.digitalmedievalist.org/journal/2.1/driscoll/](http://www.digitalmedievalist.org/journal/2.1/driscoll/) (accessed February 23, 2014).
+
+---
+template: inverse
+class: center middle
+
+
+# Mettre [en pratique](ex-5-header.xml)
+
+.footnote[[revenir au début](#index)[Programme](00-programme.html)]
+</textarea><script src="js/remark-0.6.5.min.js" type="text/javascript"></script><script type="text/javascript">
+        var hljs = remark.highlighter.engine;
+      </script><script src="remark.language.js" type="text/javascript"></script><script type="text/javascript">
+        var slideshow = remark.create({
+        highlightStyle: 'monokai',
+        highlightLanguage: 'remark'
+        }) ;
+      </script></body>
+</html>

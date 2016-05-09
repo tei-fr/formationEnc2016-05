@@ -52,6 +52,7 @@
     <xsl:apply-templates select="fileDesc/publicationStmt/date"/>
     <xsl:call-template name="newline"/>
     <xsl:text>theme: theme/remark-dark-em.css</xsl:text>
+    <xsl:call-template name="newline"/>
     <xsl:text>name: inverse</xsl:text>
     <xsl:call-template name="newline"/>
     <xsl:text>layout: true</xsl:text>
@@ -63,8 +64,6 @@
   <xsl:template match="titlePage">
     <xsl:call-template name="newline"/>
     <xsl:text>---</xsl:text>
-    <xsl:call-template name="newline"/>
-    <xsl:text>template: inverse</xsl:text>
     <xsl:call-template name="newline"/>
     <xsl:text>class: center middle</xsl:text>
     <xsl:call-template name="newline"/>

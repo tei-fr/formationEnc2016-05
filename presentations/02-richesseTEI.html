@@ -8,14 +8,13 @@
    <body><textarea id="source">
 title: 02 - Introduction aux richesses de la TEI
 description: , 2012-01-24
-theme: theme/remark-dark-em.cssname: inverse
+theme: theme/remark-dark-em.css
+name: inverse
 layout: true
 class: inverse
 
 ---
-template: inverse
-class: center middle
-
+class: align center
 
 
 # 02 - Introduction aux richesses de la TEI
@@ -26,7 +25,7 @@ class: center middle
 ![test](images/logo-ecole-nationale-des-chartes.png)
 
 ---
-
+layout: false
 
 # Les Cinq Étapes du chemin de l’Éveil TEI
 
@@ -46,12 +45,15 @@ class: center middle
 # Modélisation
 
 La modélisation de vos données est une préalable essentiel. Que vous vous serviez de UML, de RDBMS, de SKOS, ou de quoique ça soit d’autre, si vous n’avez pas un modèle explicite des choses que vous espérez gérer, vous aurez de grands difficultés.
+
 ![](../images/tree-image.jpg)
+
 ---
 
 
 # Orientation
 ![](../images/sweeties.jpg)
+
 ---
 
 
@@ -88,7 +90,7 @@ Pour chacun(e) des entités/concepts identifiés dans votre modèle, il faut dé
 
 
 # Un exemple simple…
-![](../images/guy-1.jpg)
+![](../images/guy-1.png)
 ---
 
 
@@ -135,20 +137,19 @@ Le terme document  n’a aucune définition formelle, mais d’habitude il corre
 * ou ces trois types d’objet conjointement
 
 ```xml
-<TEI xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-            <teiHeader>
-               <!-- obligatoire :  métadonnées  --></teiHeader>
-            <facsimile>
-              
-               <!-- facultatif :  rassemble des images de l’objet-->
-            </facsimile>
-            <sourceDoc>
-              
-               <!-- facultatif :  transcription documentaire  de l’objet -->
-            </sourceDoc>
-            <text>
-               <!-- facultatif :  transcription textuelle  de l’objet --></text>
-          </TEI>
+<TEI>
+  <teiHeader>
+     <!-- obligatoire :  métadonnées  --></teiHeader>
+  <facsimile>
+    <!-- facultatif :  rassemble des images de l’objet-->
+  </facsimile>
+  <sourceDoc>
+    <!-- facultatif :  transcription documentaire  de l’objet -->
+  </sourceDoc>
+  <text>
+     <!-- facultatif :  transcription textuelle  de l’objet -->
+  </text>
+</TEI>
 ```
 
 ---
@@ -158,18 +159,13 @@ Le terme document  n’a aucune définition formelle, mais d’habitude il corre
 
 
 ```xml
-<teiCorpus xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-              <teiHeader>
-                
-               <!-- obligatoire -->
-              </teiHeader>
-              <TEI>
-                
-               <!-- obligatoire -->
-              </TEI>
-              
-            <!-- encore d’elements <TEI>  -->
-            </teiCorpus>
+<teiCorpus>
+  <teiHeader>
+    <!-- obligatoire -->
+  </teiHeader>
+  <TEI><!-- obligatoire --></TEI>
+  <!-- encore des éléments <TEI>  -->
+</teiCorpus>
 ```
 
 
@@ -182,19 +178,19 @@ Cette structure servirait par exemple à une collection de livres de ce genre
 
 
 ```xml
-<teiHeader xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-              <fileDesc>
-                <titleStmt>
-                  <title>titre de la ressource</title>
-                </titleStmt>
-                <publicationStmt>
-                  <p>agence de distribution de la source</p>
-                </publicationStmt>
-                <sourceDesc>
-                  <p>provenance de la source</p>
-                </sourceDesc>
-              </fileDesc>
-            </teiHeader>
+<teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>titre de la ressource</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>agence de distribution de la source</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>provenance de la source</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
 ```
 
 
@@ -216,14 +212,11 @@ Un texte peut être simple ou complexe&nbsp;:
 
 Un document simple&nbsp;: 
 ```xml
-<text xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-              <front>
-               <!-- facultatif --></front>
-              <body>
-               <!-- obligatoire --></body>
-              <back>
-               <!-- facultatif --></back>
-            </text>
+  <text>
+    <front><!-- facultatif --></front>
+    <body><!-- obligatoire --></body>
+    <back><!-- facultatif --></back>
+  </text>
 ```
 
 
@@ -234,24 +227,22 @@ Un document simple&nbsp;:
 
 Un document composé&nbsp;: 
 ```xml
-<text xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-              <front>
-               <!-- ... --></front>
-              <group>
-                <text n="1">
-                  <body>
-                    <p>...</p>
-                  </body>
-                </text>
-                <text n="2">
-                  <body>
-                    <p>...</p>
-                  </body>
-                </text>
-              </group>
-              <back>
-               <!-- ... --></back>
-            </text>
+  <text>
+    <front><!-- ... --></front>
+    <group>
+      <text n="1">
+        <body>
+          <p>...</p>
+        </body>
+      </text>
+      <text n="2">
+        <body>
+          <p>...</p>
+        </body>
+      </text>
+    </group>
+    <back><!-- ... --></back>
+  </text>
 ```
 
 
@@ -313,16 +304,19 @@ On peut également baliser…
 
 # Notre exemple (1)
 ![](../images/guy2.png)
+
 ---
 
 
 # Notre exemple (2)
 ![](../images/guy3.png)
+
 ---
 
 
 # Notre exemple (3)
 ![](../images/guy4.png)
+
 ---
 
 
@@ -346,13 +340,17 @@ Qu’est-ce qu’on trouve dans une division&nbsp;?
 # Exemple prosaïque… 
 
 ```xml
-<div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" n="1">
-            <head>La Fête</head>
-            <p>C’était à Mégara, faubourg de Carthage, dans les jardins d’Hamilcar.</p>
-            <p>Les soldats qu’il avait commandés en Sicile se donnaient un grand festin pour célébrer le jour anniversaire de la bataille d’Eryx, et comme le maître était absent et qu’ils se trouvaient nombreux, ils mangeaient et ils buvaient en pleine liberté.</p>
-            
-            <!-- … -->
-          </div>
+<div n="1">
+  <head>La Fête</head>
+  <p>C’était à Mégara, faubourg de Carthage, dans les jardins 
+    d’Hamilcar.</p>
+  <p>Les soldats qu’il avait commandés en Sicile se donnaient 
+    un grand festin pour célébrer le jour anniversaire de la 
+    bataille d’Eryx, et comme le maître était absent et qu’ils 
+    se trouvaient nombreux, ils mangeaient et ils buvaient en 
+    pleine liberté.</p>
+  <!-- … -->
+</div>
 ```
 
 ---
@@ -361,61 +359,59 @@ Qu’est-ce qu’on trouve dans une division&nbsp;?
 # Exemple poétique 
 
 ```xml
-<div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" type="sonnet">
-            <lg type="quatrain">
-              <l>Les amoureux fervents et les savants austères</l>
-              <l>Aiment également, dans leur mûre saison,</l>
-              <l>Les chats puissants et doux, orgueil de la maison,</l>
-              <l>Qui comme eux sont frileux et comme eux sédentaires.</l>
-            </lg>
-            <lg type="quatrain">
-              <l>Amis de la science et de la volupté</l>
-              <l>Ils cherchent le silence et l’horreur des ténèbres ;</l>
-              <l>L’Erèbe les eût pris pour ses coursiers funèbres,</l>
-              <l>S’ils pouvaient au servage incliner leur fierté.</l>
-            </lg>
-            <lg type="tercet">
-              <l>Ils prennent en songeant les nobles attitudes</l>
-              <l>Des grands sphinx allongés au fond des solitudes,</l>
-              <l>Qui semblent s’endormir dans un rêve sans fin ;</l>
-            </lg>
-            <lg type="tercet">
-              <l>Leurs reins féconds sont pleins d’étincelles magiques,</l>
-              <l>Et des parcelles d’or, ainsi qu’un sable fin,</l>
-              <l>Etoilent vaguement leurs prunelles mystiques.</l>
-            </lg>
-          </div>
+<div type="sonnet">
+  <lg type="quatrain">
+    <l>Les amoureux fervents et les savants austères</l>
+    <l>Aiment également, dans leur mûre saison,</l>
+    <l>Les chats puissants et doux, orgueil de la maison,</l>
+    <l>Qui comme eux sont frileux et comme eux sédentaires.</l>
+  </lg>
+  <lg type="quatrain">
+    <l>Amis de la science et de la volupté</l>
+    <l>Ils cherchent le silence et l’horreur des ténèbres ;</l>
+    <l>L’Erèbe les eût pris pour ses coursiers funèbres,</l>
+    <l>S’ils pouvaient au servage incliner leur fierté.</l>
+  </lg>
+  <lg type="tercet">
+    <l>Ils prennent en songeant les nobles attitudes</l>
+    <l>Des grands sphinx allongés au fond des solitudes,</l>
+    <l>Qui semblent s’endormir dans un rêve sans fin ;</l>
+  </lg>
+  <lg type="tercet">
+    <l>Leurs reins féconds sont pleins d’étincelles magiques,</l>
+    <l>Et des parcelles d’or, ainsi qu’un sable fin,</l>
+    <l>Etoilent vaguement leurs prunelles mystiques.</l>
+  </lg>
+</div>
 ```
 
 ---
 
 
-# Exemples dramatiques (1) 
+### Exemples dramatiques (1) 
 
 ```xml
-<sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" who="#V">
-            <speaker>Vladimir</speaker>
-            <p>Relève ton pantalon.</p>
-          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" who="#E">
-            <speaker>Estragon</speaker>
-            <p>Que j’enlève mon pantalon ?</p>
-          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" who="#V">
-            <speaker>Vladimir</speaker>
-            <p><emph>RE</emph>lève ton pantalon.</p>
-          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" who="#E">
-            <speaker>Estragon</speaker>
-            <p>C’est vrai. </p>
-            <stage>Il relève son pantalon. Silence.</stage>
-          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" who="#V">
-            <speaker>Vladimir</speaker>
-            <p>Alors, on y va ?</p>
-          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" who="#E">
-            <speaker>Estragon</speaker>
-            <p>Allons-y.</p>
-          </sp><stage xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">Ils ne bougent pas.</stage><list xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" type="speakers">
-            <item xml:id="V">Vladimir</item>
-            <item xml:id="E">Estragon</item>
-          </list>
+<sp who="#V">
+  <speaker>Vladimir</speaker>
+  <p><emph>RE</emph>lève ton pantalon.</p>
+</sp>
+<sp who="#E">
+  <speaker>Estragon</speaker>
+  <p>C’est vrai. </p>
+  <stage>Il relève son pantalon. Silence.</stage>
+</sp>
+<sp who="#V">
+  <speaker>Vladimir</speaker>
+  <p>Alors, on y va ?</p>
+</sp>
+<sp who="#E">
+  <speaker>Estragon</speaker>
+  <p>Allons-y.</p>
+</sp>
+<stage>Ils ne bougent pas.</stage><list type="speakers">
+  <item xml:id="V">Vladimir</item>
+  <item xml:id="E">Estragon</item>
+</list>
 ```
 
 ---
@@ -424,30 +420,36 @@ Qu’est-ce qu’on trouve dans une division&nbsp;?
 # Exemples dramatiques (2)
 
 ```xml
-<sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-            <speaker>Alceste.</speaker>
-            <l>Non : j’ ai résolu de n’ en pas faire un pas.</l>
-            <l part="I">J’ ai tort, ou j’ ai raison.</l>
-          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-            <speaker>Philinte.</speaker>
-            <l part="F">Ne vous y fiez pas.</l>
-          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-            <speaker>Alceste.</speaker>
-            <l part="I">Je ne remuerai point.</l>
-          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-            <speaker>Philinte.</speaker>
-            <l part="F">Votre partie est forte,</l>
-            <l part="I">et peut, par sa cabale, entraîner...</l>
-          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-            <speaker>Alceste.</speaker>
-            <l part="F">Il n’ importe.</l>
-          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-            <speaker>Philinte.</speaker>
-            <l part="I">Vous vous tromperez.</l>
-          </sp><sp xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-            <speaker>Alceste.</speaker>
-            <l part="F">Soit. J’ en veux voir le suite.</l>
-          </sp>
+<sp>
+  <speaker>Alceste.</speaker>
+  <l>Non : j’ ai résolu de n’ en pas faire un pas.</l>
+  <l part="I">J’ ai tort, ou j’ ai raison.</l>
+</sp>
+<sp>
+  <speaker>Philinte.</speaker>
+  <l part="F">Ne vous y fiez pas.</l>
+</sp>
+<sp>
+  <speaker>Alceste.</speaker>
+  <l part="I">Je ne remuerai point.</l>
+</sp>
+<sp>
+  <speaker>Philinte.</speaker>
+  <l part="F">Votre partie est forte,</l>
+  <l part="I">et peut, par sa cabale, entraîner...</l>
+</sp>
+<sp>
+  <speaker>Alceste.</speaker>
+  <l part="F">Il n’ importe.</l>
+</sp>
+<sp>
+  <speaker>Philinte.</speaker>
+  <l part="I">Vous vous tromperez.</l>
+</sp>
+<sp>
+  <speaker>Alceste.</speaker>
+  <l part="F">Soit. J’ en veux voir le suite.</l>
+</sp>
 ```
 
 ---
@@ -484,13 +486,19 @@ On voit une partie en italique ou en petites capitales : et on se demande pourqu
 Plusieurs politiques sont envisageables&nbsp;: 
 * on signale la présence d’une mise en évidence sans distinction particulière avec `&lt;hi&gt;` (highlighted&nbsp;: distinction typographique) 
 ```xml
-<p xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">... mais Prévert pense que la <hi>parole</hi> convainc, et il continue « <hi>mais la brûlure de son regard Les rappelle à de bons sentiments</hi> », plus prompts à l’accord que les gens du <hi>Dîner de Têtes</hi>, ...</p>
+<p>... mais Prévert pense que la <hi>parole</hi> convainc, 
+ et il continue « <hi>mais la brûlure de son regard Les 
+ rappelle à de bons sentiments</hi> », plus prompts à 
+ l’accord que les gens du <hi>Dîner de Têtes</hi>, …</p>
 ```
 
 
 * on essaie de distinguer l’ .red[objectif sémantique] de ces mises en évidence&nbsp;: dans le cas présent, il y a un `&lt;emph&gt;` (emphase linguistique), une `&lt;quote&gt;` (citation) et un `&lt;title&gt;` (titre)&nbsp;: 
 ```xml
-<p xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">… mais Prévert pense que la <emph>parole</emph> convainc, et il continue « <quote>mais la brûlure de son regard Les rappelle à de bons sentiments</quote> », plus prompts à l’accord que les gens du <title>Dîner de Têtes</title>, …</p>
+<p>… mais Prévert pense que la <emph>parole</emph> convainc,
+ et il continue « <quote>mais la brûlure de son regard Les 
+ rappelle à de bons sentiments</quote> », plus prompts à 
+ l’accord que les gens du <title>Dîner de Têtes</title>, …</p>
 ```
 
 
@@ -503,7 +511,11 @@ Plusieurs politiques sont envisageables&nbsp;:
 
 * on peut combiner ces deux niveaux de description… 
 ```xml
-<p xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">… mais Prévert pense que la <emph rend="italic">parole</emph> convainc, et il continue « <q rend="italic">mais la brûlure de son regard Les rappelle à de bons sentiments</q> », plus prompts à l’accord que les gens du <title rend="italic">Dîner de Têtes</title>, …</p>
+<p>… mais Prévert pense que la <emph rend="italic">parole</emph> 
+  convainc, et il continue « <q rend="italic">mais la brûlure de 
+  son regard Les rappelle à de bons sentiments</q> », plus prompts 
+  à l’accord que les gens du <title rend="italic">Dîner de 
+  Têtes</title>, …</p>
 ```
 
 
@@ -524,11 +536,11 @@ Plusieurs politiques sont envisageables&nbsp;:
 * La langue est identifiée par son code normalisé ISO 
 
 ```xml
-<title xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="de">Die Dreigroschenoper&nbsp;</title>
+<title xml:lang="de">Die Dreigroschenoper&nbsp;</title>
 ```
 
 ```xml
-<foreign xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="de"> himmel&nbsp;! </foreign>
+<foreign xml:lang="de"> himmel&nbsp;! </foreign>
 ```
 
 ---
@@ -538,13 +550,24 @@ Plusieurs politiques sont envisageables&nbsp;:
 
 La balise `&lt;rs&gt;` (referring string) est très générique&nbsp;: 
 ```xml
-<p xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">Le premier dîner que <rs type="person">M. de Norpois</rs> fit à la maison, une année où je jouais encore aux <rs type="place">Champs-Élysées</rs>, est resté dans ma mémoire, parce que l’après-midi de ce même jour fut celui où j’allai enfin entendre <rs type="person">la Berma</rs>, en « matinée », dans <title>Phèdre</title>…</p>
+<p>Le premier dîner que <rs type="person">M. de Norpois</rs> fit à 
+ la maison, une année où je jouais encore aux 
+ <rs type="place">Champs-Élysées</rs>, est resté dans ma mémoire, 
+ parce que l’après-midi de ce même jour fut celui où j’allai enfin 
+ entendre <rs type="person">la Berma</rs>, en « matinée », dans
+ <title>Phèdre</title>…</p>
 ```
 
 
 Les balises `&lt;name&gt;`, `&lt;persName&gt;`, ou `&lt;persName&gt;` sont plus spécifique : 
 ```xml
-<p xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0">Le premier dîner que <persName ref="http://fr.wikipedia.org/wiki/Marquis_de_Norpois">M. de Norpois</persName> fit à la maison, une année où je jouais encore aux <placeName>Champs-Élysées</placeName>, est resté dans ma mémoire, parce que l’après-midi de ce même jour fut celui où j’allai enfin entendre <name>la Berma</name>, en « matinée », dans <title>Phèdre</title>…</p>
+<p>Le premier dîner que <persName 
+  ref="http://fr.wikipedia.org/wiki/Marquis_de_Norpois">M. de Norpois
+ </persName> fit à la maison, une année où je jouais encore aux
+ <placeName>Champs-Élysées</placeName>, est resté dans ma mémoire,
+  parce que l’après-midi de ce même jour fut celui où j’allai enfin
+  entendre <name>la Berma</name>, en « matinée », dans 
+  <title>Phèdre</title>…</p>
 ```
 
 
@@ -558,17 +581,18 @@ Nous allons traiter ce sujet plus tard avec plus de détail.
 Les dates qui figurent dans les textes manifestent beaucoup de variations lexicales, pour ne rien dire des variations des systèmes de calendrier. Pour comparer et contrôler de telles expressions d’une manière efficace, il faut les normaliser. La TEI propose un élément `&lt;date&gt;` pour identifier ces expressions, et plusieurs attributs pour leur normalisation.
 
 ```xml
-<date xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" when="1980-02-21">21 février
-            1980</date><date xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" when="1990-02-21" xml:lang="en">21 September, 1990</date>
+<date when="1980-02-21">21 février
+  1980</date><date when="1990-02-21" xml:lang="en">21 September,
+  1990</date>
 ```
 
 ```xml
-<date xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" when="2001-09-11T12:48:00">11
-            septembre, neuf heures moins douze, EST</date>
+<date when="2001-09-11T12:48:00">11
+  septembre, neuf heures moins douze, EST</date>
 ```
 
 ```xml
-<date xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" when="1794-10-30">9 Brumaire An III</date>
+<date when="1794-10-30">9 Brumaire An III</date>
 ```
 
 ---
@@ -597,25 +621,25 @@ Nous allons traiter plus tard ce sujet avec plus de détails.
 
 Pour relier deux endroits d’un ou plusieurs textes, on utilise l’un des éléments `&lt;ptr&gt;` ou `&lt;ref&gt;`. 
 ```xml
-<ref xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" target="#pv1894_61"> procès-verbal no
-              61</ref>
+<ref target="#pv1894_61"> procès-verbal no
+    61</ref>
 ```
  
 ```xml
-<ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" target="#pv1894_61"></ptr>
+<ptr target="#pv1894_61"></ptr>
 ```
 
 
 L’attribut `@target` spécifie l’objet ciblé par la référence, que ce soit en fournissant l’identifiant d’un autre élément dans le même document, ou en fournissant une adresse complète sur le Web (un URL) 
 ```xml
-<ptr xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" target="http://www.example.org/example.xml#pv1894_61"></ptr>
+<ptr target="http://www.example.org/example.xml#pv1894_61"></ptr>
 ```
 
 
 Dans ces exemples, on pointe sur la section suivante&nbsp;: 
 ```xml
-<div xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:id="pv1894_61">
-            <!-- … --></div>
+<div xml:id="pv1894_61">
+  <!-- … --></div>
 ```
 
 
@@ -640,15 +664,16 @@ Plusieurs autres attributs de type pointeur sont disponibles, fournissant une ga
 
 
 # Par exemple
-![](../images/corbeau.png)
+![](../images/corbeau-1.jpg)
 ---
 
 
 # Les citations bibliographiques
 
 ```xml
-<bibl xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:id="MK_73">Sturm, U. &amp; Drang, F. : <title>Musikalische Katastrophe</title>.
-            (Berlin, W. de Gruyter, 1973)</bibl>
+<bibl xml:id="MK_73">Sturm, U. &amp; Drang, F. : <title>Musikalische 
+  Katastrophe</title>.
+  (Berlin, W. de Gruyter, 1973)</bibl>
 ```
 
 * Une référence bibliographique peut être plus ou moins structurée, en se servant d’éléments tels que `&lt;author&gt;`, `&lt;editor&gt;`, `&lt;title&gt;`, `&lt;pubPlace&gt;`, `&lt;publisher&gt;`, `&lt;series&gt;` etc.
@@ -656,12 +681,13 @@ Plusieurs autres attributs de type pointeur sont disponibles, fournissant une ga
 * les conventions de présentation des références ne sont pas forcément à encoder
 
 ```xml
-<bibl xmlns="http://www.tei-c.org/ns/Examples" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:id="MK73"><author>Sturm, U.</author>
-            <author>Drang, F.</author>
-            <title xml:lang="de" level="m">Musikalische Katastrophe </title>
-            <pubPlace>Berlin</pubPlace>
-            <publisher>W. de Gruyter</publisher>
-            <date>1973</date></bibl>
+<bibl xml:id="MK73"><author>Sturm, U.</author>
+  <author>Drang, F.</author>
+  <title xml:lang="de" level="m">Musikalische Katastrophe </title>
+  <pubPlace>Berlin</pubPlace>
+  <publisher>W. de Gruyter</publisher>
+  <date>1973</date>
+</bibl>
 ```
 
 ---
@@ -715,7 +741,30 @@ On est vraiment gâté par l’étendue des choix possibles…
 
 
 # Liste des modules TEI
-analysisSimple analytic mechanismscertaintyCertainty and uncertainty.red[core]éléments common to all TEI documentscorpusHeader extensions for corpus textsdeclarefsFeature system déclarationsdictionariesPrinted dictionariesdramaPerformance textsfiguresTables, formulae, and figuresgaijiCharacter and glyph documentation.red[header]The TEI Headeriso-fsFeature structureslinkingLinking, segmentation and alignmentmsdescriptionManuscript DescriptionnamesdatesNames and datesnetsGraphs, networks and treesspokenTranscribed SpeechtagdocsDocumentation of TEI modules.red[tei]déclarations for datatypes, classes, and macros available to all TEI modulestextcritText criticism.red[textstructure]Default text structuretranscrTranscription of primary sourcesverseVerse structures
+
+- analysis : Simple analytic mechanisms
+- certainty : Certainty and uncertainty
+- .red[core] éléments common to all TEI documents corpus
+- Header : extensions for corpus texts
+- declarefs : Feature system déclarations
+- dictionaries : Printed dictionaries
+- drama : Performance texts
+- figures : Tables, formulae, and figures
+- gaiji : Character and glyph documentation
+- .red[header] : The TEI Header
+- iso-fs : Feature structures
+- linking : Linking, segmentation and alignment
+- msdescription : Manuscript Description
+- namesdates : Names and dates
+- nets : Graphs, networks and trees
+- spoken : Transcribed Speech
+- tagdocs : Documentation of TEI modules
+- .red[tei] : déclarations for datatypes, classes, and macros available to all TEI modules
+- textcrit : Text criticism
+- .red[textstructure] : Default text structure
+- transcr : Transcription of primary sources
+- verse : Verse structures
+</list>
 ---
 
 

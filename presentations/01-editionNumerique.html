@@ -8,27 +8,27 @@
    <body><textarea id="source">
 title: Synthèse sur le balisage des éditions critiques
 description: Emmanuel Château, mai 2016
-theme: theme/remark-dark-em.cssname: inverse
+theme: theme/remark-dark-em.css
+name: inverse
 layout: true
 class: inverse
+
+---
+class: center middle
+
+# 01 - Synthèse sur le balisage des éditions critiques
+
+## Formation TEI | ENC 9 au 12 mai 2016
+
+.footnote[[Programme](00-programme.html)]
+![test](images/logo-ecole-nationale-des-chartes.png)
 
 ---
 template: inverse
 class: center middle
 
 
-
-# 01 - Synthèse sur le balisage des éditions critiques
-
-## Formation TEI | ENC 9 au 12 mai 2015
-
-.footnote[[Programme](00-programme.html)]
-![test](images/logo-ecole-nationale-des-chartes.png)
-
----
-
-
-## Introduction
+# Introduction
 
 ???
 
@@ -39,9 +39,10 @@ On pourra se référer à la bibliographie ecdotique traditionnelle, mais aussi 
 Cette première présentation s’intéressera plus particulièrement aux caractéristiques attendues d’une édition critique et à la manière dont on peut y répondre en utilisant un balisage descriptif.
 
 ---
-name: Synthèse sur le balisage des éditions critiquesSommaireCaractéristiques attendues d’une édition critiqueLa prise en charge de l’édition critique par un balisage descriptifRappels sur la syntaxe XML
+layout:false
+name: index
 
-## Synthèse sur le balisage des éditions critiques
+# Synthèse sur le balisage des éditions critiques
 
 ## Sommaire
 
@@ -61,18 +62,17 @@ name: part1
 
 ---
 
+# Qu’est-ce qu’une .red[édition critique]&nbsp;?
 
-### Qu’est-ce qu’une .red[édition critique]&nbsp;?
+### Caractère savant
 
-* Caractère savant
+### Un essai de reconstitution d’un texte
 
-* Un essai de reconstitution d’un texte
-
-* Objectivité / parti-pris
+### Objectivité / parti-pris
 
 ???
 
-### Qu’est-ce qu’une édition critique&nbsp;?
+## Qu’est-ce qu’une édition critique&nbsp;?
 
 #### Un essai de reconstitution d’un texte
 
@@ -91,13 +91,13 @@ Bourgain, Pascale, et Vielliard, Françoise, Conseils pour l’édition des text
 ---
 
 
-### Critères de scientificité
+# Critères de scientificité
 
-* Fiable
+### Fiable
 
-* Consistante
+### Consistante
 
-* Justification des partis-pris
+### Justification des partis-pris
 
 ???
 
@@ -128,13 +128,13 @@ Par exemple, dans le cas des Cours d’Antoine Desgodets à l’Académie d’ar
 ---
 
 
-### Un investissement important
+# Un investissement important
 
-* Méthode de travail adaptée (temps long, travail en équipe)
+### Méthode de travail adaptée (temps long, travail en équipe)
 
-* Enjeux d’interopérabilité
+### Enjeux d’interopérabilité
 
-* Problèmes de pérennité
+### Problèmes de pérennité
 
 ???
 
@@ -157,7 +157,7 @@ name: part2
 ---
 
 
-### Peut-on .red[(sérieusement)] utiliser un traitement de texte&nbsp;?
+# Peut-on .red[(sérieusement)] utiliser un traitement de texte&nbsp;?
 
 ### Plusieurs questions à se poser…
 
@@ -188,11 +188,11 @@ Ici, les critères de qualité d’une édition critique peuvent guider certains
 ---
 
 
-### Encodage descriptif
+## Encodage descriptif
 
 ### vs
 
-### encodage présentationnel
+## encodage présentationnel
 
 ???
 
@@ -205,15 +205,15 @@ La supériorité du balisage descriptif sur les autres types de balisage du text
 ---
 
 
-### La production d’un .red[balisage descriptif]
+# La production d’un .red[balisage descriptif]
 
 Identifier explicitement la structure sémantique sous-jacente d’un document, indépendamment de tout traitement déterminé à l’avance.
 
-* Distinguer à l'intérieur du texte différents objets éditoriaux
+### Distinguer à l'intérieur du texte différents objets éditoriaux
 
-* Fournir une information sémantique
+### Fournir une information sémantique
 
-* Possibilité de produire des vues distinctes
+### Possibilité de produire des vues distinctes
 
 ???
 
@@ -228,13 +228,13 @@ Ce faisant l’auteur d’un balisage fournit une .red[information sémantique] 
 ---
 
 
-### Procédure mise en œuvre lors du .red[balisage]
+# Procédure mise en œuvre lors du .red[balisage]
 
-* Reconnaissance des éléments
+### Reconnaissance des éléments
 
-* Sélection des balises
+### Sélection des balises
 
-* Réalisation du balisage, marquage de l'élément
+### Réalisation du balisage, marquage de l'élément
 
 ???
 
@@ -248,13 +248,13 @@ cf. Coombs, James, et al., .red[op. cit.]
 ---
 
 
-### .red[OHCO], Ordered Hierarchical Content Objects
+# .red[OHCO], Ordered Hierarchical Content Objects
 
 L’idée d’un balisage descriptif suggère une représentation du texte qui correspond à un modèle d’.red[éléments contenus hiérarchiquement imbriqués] (OHCO, .red[Ordered Hierarchical Content Objects, en anglais]).
 
-* structure hiérarchique
+### structure hiérarchique
 
-* relations linéaires
+### relations linéaires
 
 ???
 
@@ -267,7 +267,7 @@ Dans une telle représentation du texte, les éléments contenus (paragraphes, c
 ---
 
 
-### Avantages sur un balisage présentationnel
+## Avantages sur un balisage présentationnel
 
 1. Processus d’établissement du texte simplifié
 
@@ -297,6 +297,7 @@ name: part3
 
 # Rappels sur XML (eXtensible Markup Language)
 
+???
 On vient de voir qu’un balisage descriptif permettait de .red[se concentrer sur le contenu du texte plutôt que sur la présentation physique finale du document].
 
 Dans une démarche qui privilégie avant tout l’édition du texte, il convient en premier lieu de .red[rendre la structure du texte explicite, c’est-à-dire de clarifier à la fois les relations hiérarchiques et séquentielles]. La présence du balisage détermine par la suite la possibilité de traiter les éléments pour une transformation.
@@ -318,15 +319,15 @@ Coombs, James H, Renear, Allen H, et DeRose, Steven J. "Markup Systems and the F
 ---
 
 
-### e.red[X]tensible .red[M]arkup .red[L]anguage – historique
+# e.red[X]tensible .red[M]arkup .red[L]anguage – historique
 
-#### héritier de SGML (Standard Generalized Markup Language)
+### héritier de SGML (Standard Generalized Markup Language)
 
 * métalangage informatique pour le balisage du texte
 
 * [norme ISO (ISO 8879:1986)](http://www.iso.org/iso/fr/catalogue_detail.htm?csnumber=16387)
 
-#### publication par le W3C en février 1998
+### publication par le W3C en février 1998
 
 * des spécifications du métalangage XML 1.0
 
@@ -361,19 +362,19 @@ cf. Ministre du Budget, des Comptes publics, Référentiel Général d’Interop
 ---
 
 
-### Principes de conception de .red[XML]
+# Principes de conception de .red[XML]
 
-* applicable à tout type de texte
+#### applicable à tout type de texte
 
-* extensible
+#### extensible
 
-* définition par un schéma
+#### définition par un schéma
 
-* hypertextualité
+#### hypertextualité
 
-* simple, universel
+#### simple, universel
 
-* modèle hiérarchique
+#### modèle hiérarchique
 
 ???
 
@@ -402,7 +403,7 @@ cf. Ministre du Budget, des Comptes publics, Référentiel Général d’Interop
 ---
 
 
-### .red[XML] en 4 points
+## .red[XML] en 4 points
 
 1. .red[XML ne sert pas à afficher les données mais à les décrire]. Seul, il ne fait rien. Appliqué à la représentation des textes, il permet de décrire notamment leur structure
 
@@ -427,23 +428,30 @@ cf. Ministre du Budget, des Comptes publics, Référentiel Général d’Interop
 ---
 
 
-### Élément .red[XML]
+# Élément .red[XML]
 ![](../images/xml01.svg)
 ---
 
 
-### Attribut .red[XML]
+# Attribut .red[XML]
 ![](../images/xml02.svg)
 ---
 
 
-### Exemple de balisage .red[XML]
+# Exemple de balisage .red[XML]
 ![](../images/xml00.svg)
 ---
 
 
-### Exemple de document .red[XML]
-&lt;?xml version="1.0"?&gt; &lt;doc xmlns="http://example.org/​namespace"&gt; &lt;p n="1"&gt;This is a paragraph.&lt;/p&gt; &lt;p n="2"&gt;This paragraph mentions &lt;placeName&gt;Bristol&lt;/placeName&gt;.&lt;/p&gt; &lt;/doc&gt; 
+# Exemple de document .red[XML]
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+  <doc xmlns="http://example.org/​namespace">
+    <p n="1">This is a paragraph.</p>
+    <p n="2">This paragraph mentions <placeName>Bristol</placeName>.</p>
+  </doc>
+```
+
 ???
 
 Un document XML prend toujours la forme suivante.
@@ -457,10 +465,14 @@ La première ligne de ce documents s’appelle une déclaration XML elle apparti
 ---
 
 
-### Spécification de l’.red[encodage]
-&lt;?xml version="1.0" encoding="UTF-8?&gt; &lt;doc xmlns="http://example.org/​namespace"&gt; &lt;p n="1"&gt;This is a paragraph.&lt;/p&gt; &lt;p n="2"&gt;This paragraph mentions &lt;placeName&gt;Bristol&lt;/placeName&gt;.&lt;/p&gt; &lt;/doc&gt; 
-???
-
+# Spécification de l’.red[encodage]
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+  <doc xmlns="http://example.org/​namespace">
+    <p n="1">This is a paragraph.</p>
+    <p n="2">This paragraph mentions <placeName>Bristol</placeName>.</p>
+  </doc>
+```
 On peut également préciser l’encodage des caractères (par défaut en XML mais une bonne pratique).
 
 Ici on déclare l’utilisation de l’encodage de caractère UTF-8 (pour Universal Character Set) qui permet de représenter la plupart des caractères du «&nbsp;répertoire universel de caractères codés&nbsp;» initialement développé par l’[ISO (ISO/CEI 10646)](http://www.iso.org/iso/fr/catalogue_detail.htm?csnumber=51273), aujourd’hui entièrement compatible avec le standard Unicode.
@@ -474,7 +486,7 @@ Le répertoire Unicode peut contenir plus d’un million de caractères.
 ---
 
 
-### Spécification de l’.red[encodage]
+# Spécification de l’.red[encodage]
 &lt;?xml version="1.0" encoding="UTF-8?&gt; &lt;doc xmlns="http://example.org/​namespace"&gt; &lt;p n="1"&gt;This is a paragraph.&lt;/p&gt; &lt;p n="2"&gt;This paragraph mentions &lt;placeName&gt;Bristol&lt;/placeName&gt;.&lt;/p&gt; &lt;/doc&gt; 
 Les séquences `&lt;`, `&gt;` et `&lt;/` délimitent les balises : `&lt;div&gt;&lt;/div&gt;`
 
@@ -497,7 +509,7 @@ Notez la syntaxe particulière des éléments vides.
 ---
 
 
-### Le corps du document XML : un .red[arbre d’éléments]
+# Le corps du document XML : un .red[arbre d’éléments]
 
 * le nom de l’élément obéit aux contraintes syntaxiques des noms XML
 
@@ -510,12 +522,13 @@ Notez la syntaxe particulière des éléments vides.
 * Il existe un et un seul élément englobant tous les autres, encodé en premier, juste après le prologue : c’est l’élément racine.
 
 ```xml
-<p xmlns="http://www.tei-c.org/ns/Examples">Exemple de contenu mixte avec une <name>entité-nommée</name><pb></pb></p>
+<p xmlns="http://www.tei-c.org/ns/Examples">Exemple de contenu mixte 
+  avec une <name>entité-nommée</name><pb></pb></p>
 ```
 
 ???
 
-### Le corps du document XML consiste en un arbre d’éléments
+# Le corps du document XML consiste en un arbre d’éléments
 
 Les éléments permettent de décomposer le texte en unités d’information
 
@@ -530,12 +543,13 @@ Il existe un et un seul élément englobant tous les autres, encodé en premier,
 ---
 
 
-### Les .red[attributs]
+# Les .red[attributs]
 
 Les attributs précisent la signification des éléments, leur ajoutent des caractéristiques.
 
 ```xml
-<date xmlns="http://www.tei-c.org/ns/Examples" when="2011-03-09">9 mars 2011</date>
+<date xmlns="http://www.tei-c.org/ns/Examples" 
+  when="2011-03-09">9 mars 2011</date>
 ```
 
 * toujours saisis à l’intérieur de la balise ouvrante de l’élément
@@ -561,7 +575,7 @@ En principe ne sont pas destinés à ajouter du contenu à l’élément, donc l
 ---
 
 
-### .red[Contraintes syntaxiques] des noms XML
+# .red[Contraintes syntaxiques] des noms XML
 
 Règles pour l’écriture de ces noms (parfois appelés identificateurs génériques)&nbsp;:
 
@@ -576,7 +590,7 @@ Règles pour l’écriture de ces noms (parfois appelés identificateurs génér
 ---
 
 
-### Les .red[entités]
+## Les .red[entités]
 
 #### Entités internes
 
@@ -594,16 +608,16 @@ XML propose des mécanismes pour donner un nom à des expressions ou phrases sou
 
 Un appel d’entité dans le corps du document XML se fait en utilisant l’esperluette (&amp;), suivi du nom donné à l’entité, suivi du signe ;.
 
-* &amp;amp;&nbsp;: &amp;
+* `<![CDATA[&amp;]]>`&nbsp;: &amp;
 
-* &amp;gt;&nbsp;: &gt;
+* `<![CDATA[&gt;]]>`&nbsp;: &gt;
 
 * …
 
 ---
 
 
-#### Les commentaires
+### Les commentaires
 
 Commencent par `&lt;!--` et se terminent par `--&gt;`
 
@@ -611,31 +625,28 @@ Le double trait d’union «&nbsp;--&nbsp;» ne doit pas apparaître au sein d�
 
 Servent à… commenter, utiles pour documenter ce qu’on fait ou consigner des notes. Ne sont pas destinés aux programmes informatiques, qui les ignorent par défaut.
 
-#### Les instructions de traitement
+### Les instructions de traitement
 
 Commencent par `&lt;?` et se terminent par `?&gt;`.
 
 Définissent une cible (fournissent le nom de l’application à qui elles sont destinées, par ex.), et des arguments
 
-#### Sections CDATA
+### Sections CDATA
 
 sections de caractères non parsées. Commencent par `&lt;![CDATA[` et se terminent par `]]&gt;`.
 
 ---
 
 
-### Notion d’.red[Espace de nom]
+# Notion d’.red[Espace de nom]
 
 ```xml
 <TEI xmlns="http://www.tei-c.org/ns/Examples">
-                <teiHeader>
-               <!-- autres éléments --></teiHeader>
-                <text>
-               <!-- autres éléments --></text>
-              </TEI>
+  <teiHeader><!-- autres éléments --></teiHeader>
+  <text><!-- autres éléments --></text>
+</TEI>
 ```
 
-* 
 
 ???
 
@@ -656,7 +667,7 @@ exemple Ici l’espace de noms par défaut est défini par l’URI http://www.te
 ---
 
 
-### Document .red[bien formé]
+## Document .red[bien formé]
 
 On dit d’un document XML qu’il est bien formé quand celui-ci répond à un certain nombre de contraintes
 
@@ -679,36 +690,36 @@ Le contrôle se fait par analyse syntaxique ou parsing (avec des outils appelés
 ---
 
 
-### Bien formé, oui ou non&nbsp;?
+# Bien formé, oui ou non ?
 
-* &lt;segment&gt;du texte&lt;/segment&gt;
+- `<segment>du texte</segment>`
 
-* &lt;segment&gt;&lt;article&gt;du&lt;/article&gt;&lt;nom&gt;texte&lt;/nom&gt;&lt;/segment&gt;
+- `<segment><article>du</article><nom>texte</nom></segment>`
 
-* &lt;segment&gt;&lt;article&gt;du &lt;nom&gt;&lt;/article&gt; texte&lt;/nom&gt;&lt;/segment&gt;
+- `<segment><article>du <nom></article> texte</nom></segment>`
 
-* &lt;segment type="text"&gt;du texte&lt;/segment&gt;
+- `<segment type="text">du texte</segment>`
 
-* &lt;segment type='text'&gt;du texte&lt;/segment&gt;
+- `<segment type='text'>du texte</segment>`
 
-* &lt;segment type=text&gt;du texte&lt;/segment&gt;
+- `<segment type=text>du texte</segment>`
 
-* &lt;segment type="text"&gt;du texte&lt;segment/&gt;
+- `<segment type="text">du texte<segment/>`
 
-* &lt;segment type="text"&gt;du texte&lt;lacune/&gt;&lt;/segment&gt;
+- `<segment type="text">du texte<lacune/></segment>`
 
-* &lt;segment type="text"&gt;du texte&lt; /segment&gt;
+- `<segment type="text">du texte< /segment>`
 
-* &lt;segment type="text"&gt;du texte&lt;/Segment&gt;
+- `<segment type="text">du texte</Segment>`
 
-* &lt;segment type="text" type="toto"&gt;du texte&lt;/segment&gt;
-
+- `<segment type="text" type="toto">du texte</segment>`
 ---
 
 
-### .red[Modèles de documents] ou schéma
+# .red[Modèles de documents] ou schéma
 
 Rappel : définissent les contraintes que doit respecter une certaine classe de documents Diverses syntaxes peuvent être utilisées pour écrire de tels modèles&nbsp;:
+
 * celle des DTD (partie intégrante de la norme XML 1.0), la plus utilisée encore aujourd’hui&nbsp;;
 
 * celle, exprimée en XML, des schémas XML (norme du W3C publiée en mai 2001&nbsp;; 2&lt;sup&gt;e&lt;/sup&gt; édition octobre 2004&nbsp;; voir [http://www.w3.org/XML/Schema](http://www.w3.org/XML/Schema))&nbsp;;
@@ -728,8 +739,7 @@ Beaucoup d’applications XML sont validantes, ainsi un processeur XSLT n’opé
 
 ---
 
-
-### Exemples d’éditions numériques
+# Exemples d’éditions numériques
 
 * [elec](http://elec.enc.sorbonne.fr)
 
@@ -748,14 +758,11 @@ template: inverse
 class: center middle
 
 
----
-
-
-### Conclusions
+# Conclusions
 
 ???
 
-### Conclusions
+## Conclusions
 
 Dans la perspective de produire une édition critique de qualité, privilégier le marquage sémantique plutôt que présentationnel présente plusieurs avantages notables tels que&nbsp;:
 
@@ -767,10 +774,6 @@ Dans la perspective de produire une édition critique de qualité, privilégier 
 
 Même si la mise en place d’un balisage descriptif du texte, implique le déploiement d’une infrastructure technique sans-doute moins confortable pour travailler que l’utilisation de logiciels de traitement de texte, il faut relever qu’il permet de se concentrer sur le contenu du texte plutôt que sur la présentation physique finale du document. Bien entendu, concernant l’édition de manuscrits historiques, ou de sources primaires, il pourra être nécessaire de traiter la matérialité physique du document. Néanmoins c’est avant tout l’édition du texte qui est ici privilégiée. Dans une telle démarche, il convient en premier lieu de rendre la structure du texte explicite, c’est-à-dire de clarifier à la fois les relations hiérarchiques et séquentielles. Et la présence du balisage détermine la possibilité de traiter les éléments pour une transformation.
 
----
-template: inverse
-class: center middle
-
 
 ---
 template: inverse
@@ -778,12 +781,12 @@ class: center middle
 name: biblio
 
 
-### Sources et bibliographie
+# Sources et bibliographie
 
 ---
 
 
-### Orientations bibliographiques, édition numérique
+## Orientations bibliographiques, édition numérique
 
 * Burnard, Lou, O'Brien O'Keeffe, Katherine et Unsworth, John. [Electronic Textual Editing. Modern Language Association](http://www.tei-c.org/About/Archive_new/ETE/Preview/index.xml), 2006.
 
@@ -800,7 +803,7 @@ name: biblio
 ---
 
 
-### Orientations bibliographiques .inverse[(édition critique)]
+## Orientations bibliographiques .inverse[(édition critique)]
 
 * Guyotjeannin, Olivier, and Olivier Poncet. .red[[L’édition électronique de sources d’archives médiévales et modernes, Quelques réflexions](https://intranet.enc.sorbonne.fr/files/20100315-Edition-electronique-intro-OGJ-OP.pdf)]. mars, 2010.
 
@@ -812,8 +815,7 @@ name: biblio
 
 ---
 
-
-### Orientations bibliographiques .inverse[(XML)]
+## Orientations bibliographiques .inverse[(XML)]
 
 * A gentle introduction to XML&nbsp;: [http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html)
 
@@ -821,17 +823,13 @@ name: biblio
 
 * L’espace XML francophone&nbsp;: actualités, discussions, articles et billets, sur le site Web [http://xmlfr.org/](http://xmlfr.org/)
 
----
-template: inverse
-class: center middle
-
 
 ---
 template: inverse
 class: center middle
 
 
-## XML, [Encoder la structure d’un document en TEI](02-teiMacrostructure.html)
+## [Analyse et modélisation des textes](../exercices/ex-2-analyse.pdf)
 
 .footnote[[Revenir au début](#index) | [Programme](programme.html)]
 </textarea><script src="js/remark-0.6.5.min.js" type="text/javascript"></script><script type="text/javascript">

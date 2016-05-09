@@ -119,7 +119,7 @@
     <xsl:call-template name="newline"/>
     <xsl:if test="@xml:id">
       <xsl:text>name: </xsl:text>
-      <xsl:value-of select="."/>
+      <xsl:value-of select="@xml:id"/>
     </xsl:if>
     <xsl:call-template name="newline"/>
     <xsl:apply-templates/>

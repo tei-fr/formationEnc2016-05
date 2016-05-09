@@ -488,7 +488,7 @@
             </egXML>
             <p>Les séquences <code>&lt;</code>, <code>&gt;</code> et <code>&lt;/</code> délimitent les balises : <code>&lt;div&gt;&lt;/div&gt;</code></p>
             <p>Les paires nom-valeur des attributs ont la forme <code>nom='valeur'</code> équivalente à <code>nom="valeur"</code></p>
-            <p>Syntaxte des éléments vides : <code>&lt;div&gt;&lt;/div&gt;</code> = &lt;div/&gt;</p>
+            <p>Syntaxte des éléments vides : <code>&lt;div&gt;&lt;/div&gt;</code> = <![CDATA[<div/>]]></p>
           </div>
           <div rend="comments">
             <p>Les caractères <code>&lt;</code> et <code>&gt;</code> sont utilisés pour marquer le début et la fin de <soCalled>balises</soCalled> à l’intérieur de ce flux textuel. Ces éléments possèdent un nom.</p>

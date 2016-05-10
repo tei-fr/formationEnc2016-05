@@ -14,6 +14,7 @@ layout: true
 class: inverse
 
 ---
+name: index
 class: center middle
 
 
@@ -41,13 +42,13 @@ layout: false
 
 # Le manuscrit&nbsp;: un cas particulier
 
-* Un manuscrit est un object unique, souvent d’importance culturel ou politique majeur.
+* Un manuscrit est .red[un objet unique], souvent d’importance culturel ou politique majeur.
 
-* Un livre, par contre, existe d’habitude en pluseurs exemplaires. Une description adéquate se fait avec l’aide des conventions bien établies, bien connues.
+* Un livre, par contre, existe d’habitude en plusieurs exemplaires. Une description adéquate se fait avec l’aide des conventions bien établies, bien connues.
 
 * Pour les manuscrits, il existe plusieurs traditions de documentation, et peu de consensus. 
 
-On pourrait dire autant pour d’autres objets "texte-portant" p.e. les inscriptions classiques... cf Epidoc
+On pourrait dire autant pour d’autres objets "texte-portant" p.e. les inscriptions classiques… cf Epidoc
 
 ---
 
@@ -55,11 +56,11 @@ On pourrait dire autant pour d’autres objets "texte-portant" p.e. les inscript
 # Propositions de la TEI
 
 La TEI propose un élément `&lt;msDesc&gt;`, apte à plusieurs applications: 
-* base de données de records bibliographique (finding aid)
+* base de données d’enregistrements bibliographique (finding aid)
 
-* texte discursif contenant plusieurs records (catalogue raisonné)
+* texte discursif contenant plusieurs enregistrements (catalogue raisonné)
 
-* assemblage des metadonnées au sein d’une édition numérique (electronic edition)
+* assemblage des métadonnées au sein d’une édition numérique (electronic edition)
 
 * instrument pour la codicologie quantitative
 
@@ -74,19 +75,23 @@ Avoir le beurre et l’argent du beurre?
 Un `&lt;msDesc&gt;` peut apparaître dans les mêmes contextes qu’un `&lt;p&gt;` paragraphe
 
 ```xml
-<div xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+<div>
   <head>Bibliotheque virtuel des humanistes</head>
-  <p>Le BVH se situe à l’Universite Francois Rabelais de Tours. Parmi ses fonds sont à regarder quelques manuscrits remarquables du 16e siecle …</p>
+  <p>Le BVH se situe à l’Universite Francois Rabelais de Tours. 
+      Parmi ses fonds sont à regarder quelques manuscrits 
+      remarquables du 16e siecle …</p>
   <p>Ce manuscrit par exemple. </p>
   <msDesc xml:id="BVH-0101" xml:lang="fr">
-               <!-- …--></msDesc>
+    <!-- …-->
+  </msDesc>
   <p>Par contre, cet autre manuscrit…</p>
   <msDesc xml:id="BVH-0595" xml:lang="fr">
-  <!-- …--></msDesc>
+    <!-- …-->
+  </msDesc>
 </div>
 ```
 
-Dans ce cas, la description aura tendence belle-lettriste
+Dans ce cas, la description aura une tendance belle-lettriste
 
 ---
 
@@ -96,26 +101,23 @@ Dans ce cas, la description aura tendence belle-lettriste
 Un `&lt;msDesc&gt;` peut apparaître aussi au sein du `&lt;teiHeader&gt;` attaché à une édition numérique d’un ou plusieurs manuscrits.
 
 ```xml
-<TEI xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+<TEI>
   <teiHeader>
       <fileDesc>
           <titleStmt>
               <title>Edition numérique du Ms 629</title>
-              
-                     <!-- ... -->
+              <!-- ... -->
           </titleStmt>
           <sourceDesc>
-              <msDesc>
-  <!-- ... --></msDesc>
+              <msDesc><!-- ... --></msDesc>
           </sourceDesc>
       </fileDesc>
   </teiHeader>
-  <text>
-  <!--...--></text>
+  <text><!--...--></text>
 </TEI>
 ```
 
-Dans ce cas, la description aura tendence base-de-données
+Dans ce cas, la description aura une tendance base-de-données
 
 ---
 
@@ -137,38 +139,36 @@ Facultativement il est completé par une séléction d’ éléments plus spéci
 ---
 
 
-# Exemple 
-
 ```xml
-<sourceDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-  <msDesc>
-      <msIdentifier>
-          <country>France</country>
-          <settlement>Paris</settlement>
-          <repository>Archives nationales</repository>
-          <collection>Commerce et Industrie</collection>
-          <idno>F/12/5080</idno>
-      </msIdentifier>
-      <msContents>
-          <p>Minute d’un rapport de proposition à la Légion d’honneur fait, en
-              1850, par le ministre du Commerce et de l’Agriculture et
-              président de la Société de géographie, Jean-Baptiste Dumas, au
-              Président de la République, en faveur des frères d’Abbadie,
-              Antoine (1810-1897) et Arnaud (1815-1893), auteurs d’un voyage
-              en Abyssinie.</p>
-      </msContents>
-      <physDesc>
-          <p>Deux feuilles de papier 24 x 12 cm; écriture encre noir.</p>
-          <handDesc>
-              <handNote xml:id="AA" scope="major">Antoine d’Abbadie</handNote>
-              <handNote xml:id="DJB" scope="minor">Jean-Baptiste
-                  Dumas</handNote>
-              <handNote xml:id="EPR" scope="minor">membre inconnu du cabinet
-                  du ministre</handNote>
-          </handDesc>
-      </physDesc>
+<sourceDesc>
+ <msDesc>
+  <msIdentifier>
+    <country>France</country>
+    <settlement>Paris</settlement>
+    <repository>Archives nationales</repository>
+    <collection>Commerce et Industrie</collection>
+    <idno>F/12/5080</idno>
+  </msIdentifier>
+    <msContents>
+      <p>Minute d’un rapport de proposition à la Légion d’honneur fait, en
+       1850, par le ministre du Commerce et de l’Agriculture et
+       président de la Société de géographie, Jean-Baptiste Dumas, au
+       Président de la République, en faveur des frères d’Abbadie,
+       Antoine (1810-1897) et Arnaud (1815-1893), auteurs d’un voyage
+       en Abyssinie.</p>
+    </msContents>
+    <physDesc>
+      <p>Deux feuilles de papier 24 x 12 cm; écriture encre noir.</p>
+      <handDesc>
+        <handNote xml:id="AA" scope="major">Antoine d’Abbadie</handNote>
+        <handNote xml:id="DJB" scope="minor">Jean-Baptiste
+        Dumas</handNote>
+        <handNote xml:id="EPR" scope="minor">membre inconnu du cabinet
+        du ministre</handNote>
+      </handDesc>
+    </physDesc>
   </msDesc>
-                    </sourceDesc>
+</sourceDesc>
 ```
 
 ---
@@ -186,12 +186,12 @@ Une spécification classique est divisée en trois:
 * identifiant (`&lt;collection&gt;`, `&lt;idno&gt;`)
  
 ```xml
-<msIdentifier xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <msIdentifier>
       <country>France</country>
       <settlement>Troyes</settlement>
       <repository>Bibliothèque Municipale</repository>
       <idno>50</idno>
-</msIdentifier>
+  </msIdentifier>
 ```
 
 
@@ -202,7 +202,7 @@ Une spécification classique est divisée en trois:
 
 L’élément `&lt;msName&gt;` fournit un nom ou une appellation familière (surnom): 
 ```xml
-<msIdentifier xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <msIdentifier>
       <country>Danmark</country>
       <settlement>København</settlement>
       <repository> Det ArnamagnæanskeInstitut </repository>
@@ -224,22 +224,20 @@ L’élément `&lt;msName&gt;` fournit un nom ou une appellation familière (sur
 
 * … précedée d’une sommaire facultative
 
-On peut décrire le contenu à un niveau general:
+On peut décrire le contenu à un niveau général&nbsp;:
 ```xml
-<msContents xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-      <p>Receuil des comptes fiscales de l’Abbeye de Nimportou.</p>
+  <msContents>
+      <p>Recueil des comptes fiscales de l’Abbaye 
+          de Nimportou.</p>
   </msContents>
 ```
-ou on peut distinguer et détailler chaque item (ou quelques un): 
+Ou bien, on peut distinguer et détailler chaque item (ou quelques un)&nbsp;: 
 ```xml
-<msContents xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-      <summary>Receuil des comptes fiscales de l’Abbeye de Nimportou..</summary>
-      <msItem>
-               <!-- compte 1 -->
-      </msItem>
-      <msItem>
-               <!-- compte 2 -->
-      </msItem>
+  <msContents>
+      <summary>Recueil des comptes fiscales de l’Abbaye 
+          de Nimportou..</summary>
+      <msItem><!-- compte 1 --></msItem>
+      <msItem><!-- compte 2 --></msItem>
   </msContents>
 ```
 
@@ -249,10 +247,10 @@ ou on peut distinguer et détailler chaque item (ou quelques un):
 
 # L’élément `&lt;msItem&gt;`
 
-Un manuscrit contient plusieurs items distincts, chacun en principe localisé dans un (ou plusieurs) lieu(x), ce qu’on appelle son locus. 
+Un manuscrit contient plusieurs .red[items] distincts, chacun en principe localisé dans un (ou plusieurs) lieu(x), ce qu’on appelle leur locus. 
 * L’element `&lt;locus&gt;` contient une localisation formelle, facultativement normalisée par les attributs `@from` et `@to`
 
-* et suivie d’une sélection des: 
+* et suivie d’une sélection des éléments suivants&nbsp;: 
 * `&lt;author&gt;`, `&lt;respStmt&gt;`
 
 * `&lt;title&gt;`, `&lt;rubric&gt;`, `&lt;incipit&gt;`, `&lt;explicit&gt;`, `&lt;colophon&gt;`, `&lt;finalRubric&gt;`
@@ -266,19 +264,23 @@ Un manuscrit contient plusieurs items distincts, chacun en principe localisé da
 ---
 
 
-# `&lt;msContents&gt;` avec plusieurs `&lt;msItem&gt;`s
+# `&lt;msContents&gt;` 
+
+# avec plusieurs `&lt;msItem&gt;`s
 
 
 ```xml
-<msContents xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <msContents>
       <msItem n="1">
           <locus from="5r" to="7v">fols. 5r-7v</locus>
           <incipit>Pater noster qui es in celis</incipit>
       </msItem>
       <msItem n="2">
           <locus from="7v" to="8v">fols. 7v-8v</locus>
-          <incipit defective="true">tatem dedit hominibus alleluia.</incipit>
+          <incipit defective="true">tatem dedit hominibus 
+              alleluia.</incipit>
       </msItem>
+      
             <!-- … -->
       <msItem n="6">
           <locus from="14r" to="126v">fols. 14r-126v</locus>
@@ -294,17 +296,17 @@ Un manuscrit contient plusieurs items distincts, chacun en principe localisé da
 
 # Description physique
 
-Une groupement commode de plusieurs sujets:
+Un groupement commode de plusieurs sujets&nbsp;:
 
-* `&lt;objectDesc&gt;`: le support matériel du manuscrit
+* `&lt;objectDesc&gt;`&nbsp;: le support matériel du manuscrit
 
-* `&lt;handDesc&gt;`: description d’écritures
+* `&lt;handDesc&gt;`&nbsp;: description des mains et des écritures
 
 * `&lt;musicNotation&gt;`, `&lt;decoDesc&gt;`, `&lt;additions&gt;` musique, decoration, annotations
 
-* `&lt;bindingDesc&gt;` et `&lt;sealDesc&gt;`: reliure, sceaux
+* `&lt;bindingDesc&gt;` et `&lt;sealDesc&gt;`&nbsp;: reliure, sceaux
 
-* `&lt;accMat&gt;`: materiaux associés/attachés
+* `&lt;accMat&gt;`&nbsp;: materiaux associés/attachés
 
 Comme ailleurs, ces éléments généralement fournissent un choix entre des éléments plus ou moins structurants et une description en prose.
 
@@ -315,18 +317,19 @@ Comme ailleurs, ces éléments généralement fournissent un choix entre des él
 
 
 ```xml
-<physDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <physDesc>
       <objectDesc>
           <supportDesc>
               <condition>
-                  <damage>Il manque les trois derniers feuillets, dont deux
-                      blancs.</damage>
+                  <damage>Il manque les trois derniers 
+                      feuillets, dont deux blancs.</damage>
               </condition>
           </supportDesc>
       </objectDesc>
       <bindingDesc>
           <binding>
-              <p>Reliure maroquin vert, signée Koehler. Dos à 4 nerfs. </p>
+              <p>Reliure maroquin vert, signée Koehler. 
+                  Dos à 4 nerfs. </p>
           </binding>
       </bindingDesc>
   </physDesc>
@@ -340,9 +343,10 @@ Comme ailleurs, ces éléments généralement fournissent un choix entre des él
 
 Pour distinguer l’objet inscrit de la manière où il est inscrit, `&lt;objectDesc&gt;` peut etre structuré en `&lt;supportDesc&gt;` et `&lt;layoutDesc&gt;` 
 ```xml
-<objectDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" form="codex">
+  <objectDesc form="codex">
       <supportDesc material="mixed">
-          <p><material>parchemin</material> et <material>papier</material> du 12eme siecle.</p>
+          <p><material>parchemin</material> et 
+              <material>papier</material>du 12eme siècle.</p>
       </supportDesc>
       <layoutDesc>
           <layout columns="1" ruledLines="25 32"></layout>
@@ -356,10 +360,10 @@ Pour distinguer l’objet inscrit de la manière où il est inscrit, `&lt;object
 
 # Le support (2)
 
-D’autres éléments structurants sont disponible pour la description détaillée du support materiel: `&lt;support&gt;`, `&lt;extent&gt;`, `&lt;foliation&gt;`, `&lt;collation&gt;`, `&lt;condition&gt;` .
+D’autres éléments structurants sont disponibles pour la description détaillée du support matériel&nbsp;: `&lt;support&gt;`, `&lt;extent&gt;`, `&lt;foliation&gt;`, `&lt;collation&gt;`, `&lt;condition&gt;` .
 
 ```xml
-<supportDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+<supportDesc>
   <support> Rouleau de parchemin avec des rubans de
       <material>soie</material>.</support>
   <extent>
@@ -373,10 +377,11 @@ D’autres éléments structurants sont disponible pour la description détaill�
 ```
 
 ```xml
-<supportDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+<supportDesc>
   <support>parchemin</support>
-  <foliation>Foliotation du 18eme en encre rouge au centre de la marge
-      exterieure des premiers pages de chaque cahier.</foliation>
+  <foliation>Foliotation du 18eme en encre rouge 
+      au centre de la marge extérieure des premiers 
+      pages de chaque cahier.</foliation>
   <collation>2 f. préliminaire, 52 f, 3 f. postliminaires.</collation>
 </supportDesc>
 ```
@@ -386,16 +391,18 @@ D’autres éléments structurants sont disponible pour la description détaill�
 
 # Layout(s)
 
-Plusiers mise-en-forme (layout)s peuvent être specifiés: 
+Plusiers mise-en-forme (layout)s peuvent être spécifiées&nbsp;: 
 ```xml
-<layoutDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <layoutDesc>
       <layout ruledLines="25" columns="1">
           <p><locus from="1r" to="202v"></locus>
-              <locus from="210r" to="212v"></locus> 25 lignes réglées.</p>
+              <locus from="210r" to="212v"></locus> 25 
+              lignes réglées.</p>
       </layout>
       <layout ruledLines="34 50" columns="2">
-          <p><locus from="203r" to="209v"></locus>Entre 34 et 50 lignes réglées,
-              disposées en deux colonnes.</p>
+          <p><locus from="203r" to="209v"></locus>Entre 
+              34 et 50 lignes 
+              réglées, disposées en deux colonnes.</p>
       </layout>
   </layoutDesc>
 ```
@@ -406,7 +413,7 @@ Plusiers mise-en-forme (layout)s peuvent être specifiés:
 
 # `&lt;handDesc&gt;` et `&lt;decoDesc&gt;`
 
-Ces éléments décrivent respectivement les mains (écritures) distinguées dans un manuscrit et les décorations, soit en prose, soit avec les éléments structurants: 
+Ces éléments décrivent respectivement les mains (écritures) distinguées dans un manuscrit et les décorations, soit en prose, soit avec les éléments structurants&nbsp;: 
 * `&lt;handNote&gt;` décrit un style d’écriture ou une main qui sont reconnus dans un manuscrit.
 
 * `&lt;decoNote&gt;`contient une note décrivant soit un élément de décoration du manuscrit, soit une catégorie relativement homogène de tels éléments.
@@ -419,7 +426,7 @@ Ces éléments décrivent respectivement les mains (écritures) distinguées dan
 
 
 ```xml
-<handDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" hands="2">
+  <handDesc hands="2">
       <p>The manuscript is written in two contemporary
           hands, otherwise unknown, but clearly those 
           of practised scribes. Hand I writes ff.1r-22v 
@@ -438,18 +445,20 @@ Ces éléments décrivent respectivement les mains (écritures) distinguées dan
 
 
 ```xml
-<physDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <physDesc>
       <handDesc>
-          <handNote xml:id="secretaire" scope="major">Un secrétaire a couché
-              par écrit une liste de questions.</handNote>
-          <handNote xml:id="PDN" scope="minor">Philippe de Noailles
-              (1715-1794), intendant et gouverneur du 
-              château et domaine de Versailles, a porté 
+          <handNote xml:id="secretaire" scope="major">Un 
+              secrétaire a couché par écrit une liste de 
+              questions.</handNote>
+          <handNote xml:id="PDN" scope="minor">Philippe 
+              de Noailles (1715-1794), intendant et gouverneur 
+              du château et domaine de Versailles, a porté 
               dans la marge de gauche les réponses du roi,
               en paraphant ces réponses. Il a également 
               signé le document.</handNote>
-          <handNote xml:id="anonyme" scope="minor">une autre main à noté la
-              date du document en haut de la page.</handNote>
+          <handNote xml:id="anonyme" scope="minor">une autre 
+              main à noté la date du document en haut de 
+              la page.</handNote>
       </handDesc>
   </physDesc>
 ```
@@ -464,7 +473,7 @@ L’élément `&lt;additions&gt;` contient une description des ajouts significat
 
 
 ```xml
-<additions xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <additions>
       <p>The text of this manuscript is not interpolated 
           with sentences from Royal decrees promulgated 
           in 1294, 1305 and 1314. In the margins, however, 
@@ -488,9 +497,9 @@ L’élément `&lt;additions&gt;` contient une description des ajouts significat
 
 
 ```xml
-<accMat xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">Un formulaire des impôts datée 1947 était collé
-      sur la derniere page; elle n’a pas été cataloguée 
-      séparamment. </accMat>
+<accMat>Un formulaire des impôts datée 1947 était collé
+      sur la dernière page; elle n’a pas été cataloguée 
+      séparément. </accMat>
 ```
 
 
@@ -499,15 +508,15 @@ L’élément `&lt;additions&gt;` contient une description des ajouts significat
 
 # Historique du manuscrit 
 
-L’élément `&lt;history&gt;` rassemble les éléments servant à donner un historique complet du manuscrit: 
-* `&lt;origin&gt;`: informations sur l’origine du manuscrit
+L’élément `&lt;history&gt;` rassemble les éléments servant à donner un historique complet du manuscrit&nbsp;: 
+* `&lt;origin&gt;`&nbsp;: informations sur l’origine du manuscrit
 
-* `&lt;acquisition&gt;`: informations sur les modalités d’entrée (&amp;c.) du manuscrit dans l’institution qui le conserve
+* `&lt;acquisition&gt;`&nbsp;: informations sur les modalités d’entrée du manuscrit dans l’institution qui le conserve, (etc.)
 
-* `&lt;provenance&gt;`: informations sur un épisode précis de l’histoire du manuscrit, après sa création et avant son acquisition
+* `&lt;provenance&gt;`&nbsp;: informations sur un épisode précis de l’histoire du manuscrit, après sa création et avant son acquisition
 
 
-`&lt;origin&gt;` est membre de la classe datable, d’où sont derivés les attributs normalisants `@notBefore`, `@notAfter`, `@when` etc.
+`&lt;origin&gt;` est membre de la classe datable, d’où sont derivés les attributs normalisants `@notBefore`, `@notAfter`, `@when`, etc.
 
 ---
 
@@ -516,15 +525,17 @@ L’élément `&lt;history&gt;` rassemble les éléments servant à donner un hi
 
 
 ```xml
-<history xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <history>
       <origin notBefore="1750-01-01" notAfter="1750-12-31">
           <p>Reliure exécutée par Louis-François Le Monnier 
-              (signature), Paris, vers 1750 d’après <ref target="#bib01">Michon, 1956 (n° 38 (120)</ref> .</p>
+              (signature), Paris, vers 1750 d’après 
+              <ref target="#bib01">Michon, 1956 (n° 38 (120)</ref>.</p>
       </origin>
       <provenance>Répertorié comme appartenant à l’abbé Untel 
           en 1788.</provenance>
       <provenance>Vendu par Sothebys en 1820.</provenance>
-      <acquisition notBefore="1833-12-31" notAfter="1848-01-31">Estampille n° 24, utilisée de 1833 à 1848</acquisition>
+      <acquisition notBefore="1833-12-31" notAfter="1848-01-31">
+          Estampille n° 24, utilisée de 1833 à 1848</acquisition>
   </history>
 ```
 
@@ -534,61 +545,55 @@ L’élément `&lt;history&gt;` rassemble les éléments servant à donner un hi
 
 # Informations supplémentaires
 
-L’élément `&lt;additional&gt;` regroupe: 
-* `&lt;adminInfo&gt;` : informations administratives
+L’élément `&lt;additional&gt;` regroupe&nbsp;: 
+* `&lt;adminInfo&gt;`&nbsp;: informations administratives
 
-* `&lt;surrogates&gt;` : informations sur surrogates, e.g. photos, images numerisés etc.
+* `&lt;surrogates&gt;`&nbsp;: informations sur surrogates, e.g. photos, images numerisés, etc.
 
-* `&lt;listBibl&gt;` : notices bibliographiques
+* `&lt;listBibl&gt;`&nbsp;: notices bibliographiques
 
 
 ---
 
 
-# Informations administratives 
+### Informations administratives 
 
-L’élément `&lt;admininfo&gt;` regroupe: 
-* `&lt;recordHist&gt;`: historique du record
-
-* `&lt;availability&gt;`: disponibilité du manuscrit
-
-* `&lt;custHist&gt;`: historique du manuscrit apres son acquisition
-
-* `&lt;note&gt;`: d’autres remarques pertinentes
+L’élément `&lt;admininfo&gt;` regroupe&nbsp;: 
+`&lt;recordHist&gt;`&nbsp;: historique du record | `&lt;availability&gt;`&nbsp;: disponibilité du manuscrit | `&lt;custHist&gt;`&nbsp;: historique du manuscrit apres son acquisition |  `&lt;note&gt;`&nbsp;: d’autres remarques pertinentes | 
  
 ```xml
-<adminInfo xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
-      <recordHist>
-          <source>Record created <date>1 Aug 
-              2004</date></source>
-      </recordHist>
-      <availability>
-          <p>Le manuscrit originel n’est plus accessible 
-              sauf sur présentation d’autorisation écrite. </p>
-      </availability>
-      <custodialHist>
-          <custEvent type="restauration" notBefore="1961-03" notAfter="1961-03">
-              <p>Tentative de restauration de reliure mars 1961 
-                  à la bibliothèque municipale de Lyon. </p>
-          </custEvent>
-          <custEvent type="numerisation" notBefore="1988-05-01" notAfter="1988-05-30">
-              <p>Numerisation complète en mode images par 
-                  Arkhênum mai 1988.</p>
-          </custEvent>
-      </custodialHist>
-  </adminInfo>
+<adminInfo>
+  <recordHist>
+    <source>Record created <date>1 Aug 2004</date></source>
+  </recordHist>
+  <availability>
+    <p>Le manuscrit original n’est plus accessible sauf sur 
+       présentation d’autorisation écrite. </p>
+  </availability>
+  <custodialHist>
+    <custEvent type="restauration" notBefore="1961-03" notAfter="1961-03">
+      <p>Tentative de restauration de reliure mars 1961 à 
+      la bibliothèque municipale de Lyon. </p>
+    </custEvent>
+      <custEvent type="numerisation" notBefore="1988-05-01" 
+          notAfter="1988-05-30">
+        <p>Numérisation complète en mode images par 
+        Arkhênum mai 1988.</p>
+      </custEvent>
+  </custodialHist>
+</adminInfo>
 ```
 
 
 ---
 
 
-# Et pour en finir...
+## Et pour en finir...
 
 Un `&lt;msDesc&gt;` peut en contenir un autre, balisé comme `&lt;msPart&gt;`, dans le cas où des manuscrits d’origine distincts ont été combiné pour faire un manuscrit composé.
 
 ```xml
-<msDesc xmlns="http://www.tei-c.org/ns/Examples" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+<msDesc>
   <msIdentifier>
       <settlement>Amiens</settlement>
       <repository>Bibliothèque Municipale</repository>
@@ -617,7 +622,7 @@ template: inverse
 class: center middle
 
 
-.footnote[[Revenir au début](#index) | [Programme](programme.html)]
+.footnote[[Revenir au début](#index) | [Programme](00-programme.html)]
 </textarea><script src="js/remark-0.6.5.min.js" type="text/javascript"></script><script type="text/javascript">
         var hljs = remark.highlighter.engine;
       </script><script src="remark.language.js" type="text/javascript"></script><script type="text/javascript">

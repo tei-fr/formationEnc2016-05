@@ -9,7 +9,7 @@
             <title>Exercice TEI Header</title>
          </titleStmt>
          <publicationStmt>
-            <publisher>Unknown</publisher>
+            <publisher>École nationale des chartes</publisher>
             <date when="2016">2016</date>
          </publicationStmt>
          <sourceDesc>
@@ -25,7 +25,7 @@
          <div>
             <head>ex05 – Créer une en-tête simple</head>
             <div>
-               <p>Dans cet exercice, nous allons maintenant enrichir l’en-tête de notre édition des textes de l’Oulipo. Il s’agit ici d’explorer les possibilités offertes par la TEI pour fournir les métadonnées concernant le fichier.</p>
+               <p>Dans cet exercice, nous allons maintenant enrichir l’en-tête de notre fichier pour l’édition des textes de l’Oulipo. Il s’agit ici d’explorer les possibilités offertes par la TEI pour fournir les métadonnées concernant le document à éditer et son fichier.</p>
             </div>
             <div>
                <head>La description de fichier (<gi>fileDesc</gi>)</head>

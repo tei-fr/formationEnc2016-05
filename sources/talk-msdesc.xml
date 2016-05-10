@@ -44,22 +44,20 @@
             <div rend="slide">
                 <head>Le manuscrit : un cas particulier</head>
                 <list>
-                    <item>Un manuscrit est un object <emph>unique</emph>, souvent d’importance culturel ou politique majeur.</item>
+                    <item>Un manuscrit est <hi>un object <emph>unique</emph></hi>, souvent d’importance culturel ou politique majeur.</item>
                     <item>Un livre, par contre, existe d’habitude en pluseurs exemplaires. Une description adéquate se fait avec l’aide des conventions bien établies, bien connues.</item>
                     <item>Pour les manuscrits, il existe plusieurs traditions de documentation, et
                         peu de consensus. </item>
                 </list>
-                <p>On pourrait dire autant pour d’autres objets "texte-portant" p.e. les inscriptions classiques... cf Epidoc</p>
+                <p>On pourrait dire autant pour d’autres objets "texte-portant" p.e. les inscriptions classiques… cf Epidoc</p>
             </div>
 
 
             <div rend="slide">
                 <head>Propositions de la TEI</head>
                 <p>La TEI propose un élément <gi>msDesc</gi>, apte à plusieurs applications: <list>
-                        <item>base de données de records bibliographique (<term>finding
-                            aid</term>)</item>
-                        <item>texte discursif contenant plusieurs records (<term>catalogue
-                                raisonn&#x00E9;</term>)</item>
+                        <item>base de données d’enregistrements bibliographique (<term>finding aid</term>)</item>
+                        <item>texte discursif contenant plusieurs enregistrements (<term>catalogue raisonn&#x00E9;</term>)</item>
                         <item>assemblage des metadonnées au sein d’une édition numérique (<term>electronic edition</term>)</item>
                         <item>instrument pour la <soCalled>codicologie
                             quantitative</soCalled></item>
@@ -82,7 +80,7 @@
                         <msDesc xml:id="BVH-0595" xml:lang="fr"><!-- …--></msDesc>
                     </div>
                 </egXML>
-                <p>Dans ce cas, la description aura tendence belle-lettriste</p>
+                <p>Dans ce cas, la description aura une tendance belle-lettriste</p>
             </div>
 
             <div rend="slide">
@@ -103,7 +101,7 @@
                         <text><!--...--></text>
                     </TEI>
                 </egXML>
-                <p>Dans ce cas, la description aura tendence base-de-données</p>
+                <p>Dans ce cas, la description aura une tendance base-de-données</p>
             </div>
             <!--
             <div rend="slide">
@@ -212,12 +210,12 @@
                     <item>… ou une arborescence d’éléments <gi>msItem</gi></item>
                     <item>… précedée d’une sommaire facultative</item>
                 </list>
-                <p>On peut décrire le contenu à un niveau general:<egXML rend="tiny"
+                <p>On peut décrire le contenu à un niveau general :<egXML rend="tiny"
                         xmlns="http://www.tei-c.org/ns/Examples">
                         <msContents>
                             <p>Receuil des comptes fiscales de l’Abbeye de Nimportou.</p>
                         </msContents>
-                    </egXML>ou on peut distinguer et détailler chaque item (ou quelques un): <egXML
+                    </egXML>Ou bien, on peut distinguer et détailler chaque item (ou quelques un) : <egXML
                         rend="tiny" xmlns="http://www.tei-c.org/ns/Examples">
                         <msContents>
                             <summary>Receuil des comptes fiscales de l’Abbeye de Nimportou..</summary>
@@ -234,10 +232,10 @@
 
             <div rend="slide">
                 <head>L’élément <gi>msItem</gi></head>
-                <p>Un manuscrit contient plusieurs items distincts, chacun en principe localisé dans un (ou plusieurs) lieu(x), ce qu’on appelle son <term>locus</term>. <list>
+                <p>Un manuscrit contient plusieurs <hi>items</hi> distincts, chacun en principe localisé dans un (ou plusieurs) lieu(x), ce qu’on appelle leur <term>locus</term>. <list>
                         <item>L’element <gi>locus</gi> contient une localisation formelle, facultativement normalisée par les attributs <att>from</att> et <att>to</att>
                         </item>
-                        <item>et suivie d’une sélection des: <list>
+                        <item>et suivie d’une sélection des éléments suivants : <list>
                                 <item><gi>author</gi>, <gi>respStmt</gi></item>
                                 <item><gi>title</gi>, <gi>rubric</gi>, <gi>incipit</gi>, <gi>explicit</gi>, <gi>colophon</gi>, <gi>finalRubric</gi>
                                 </item>
@@ -275,14 +273,14 @@
 
             <div rend="slide">
                 <head>Description physique</head>
-                <p>Une groupement commode de plusieurs sujets:</p>
+                <p>Un groupement commode de plusieurs sujets :</p>
                 <list>
-                    <item><gi>objectDesc</gi>: le support matériel du manuscrit</item>
-                    <item><gi>handDesc</gi>: description d’écritures </item>
+                    <item><gi>objectDesc</gi> : le support matériel du manuscrit</item>
+                    <item><gi>handDesc</gi> : description des mains et des écritures </item>
                     <item><gi>musicNotation</gi>, <gi>decoDesc</gi>, <gi>additions</gi> musique,
                         decoration, annotations</item>
-                    <item><gi>bindingDesc</gi> et <gi>sealDesc</gi>: reliure, sceaux</item>
-                    <item><gi>accMat</gi>: materiaux associés/attachés </item>
+                    <item><gi>bindingDesc</gi> et <gi>sealDesc</gi> : reliure, sceaux</item>
+                    <item><gi>accMat</gi> : materiaux associés/attachés </item>
                 </list>
                 <p>Comme ailleurs, ces éléments généralement fournissent un choix entre des éléments
                     plus ou moins structurants et une description en prose.</p>
@@ -327,7 +325,7 @@
 
             <div rend="slide">
                 <head>Le support (2)</head>
-                <p>D’autres éléments structurants sont disponible pour la description détaillée du support materiel: <gi>support</gi>, <gi>extent</gi>, <gi>foliation</gi>, <gi>collation</gi>, <gi>condition</gi> .</p>
+                <p>D’autres éléments structurants sont disponibles pour la description détaillée du support matériel : <gi>support</gi>, <gi>extent</gi>, <gi>foliation</gi>, <gi>collation</gi>, <gi>condition</gi> .</p>
 
                 <egXML rend="tiny" xmlns="http://www.tei-c.org/ns/Examples">
                     <supportDesc>
@@ -357,7 +355,7 @@
             </div>
             <div rend="slide">
                 <head>Layout(s)</head>
-                <p>Plusiers mise-en-forme (layout)s peuvent être specifiés: <egXML
+                <p>Plusiers mise-en-forme (layout)s peuvent être spécifiées : <egXML
                         xmlns="http://www.tei-c.org/ns/Examples">
                         <layoutDesc>
                             <layout ruledLines="25" columns="1">
@@ -366,8 +364,7 @@
                             </layout>
                             <layout ruledLines="34 50" columns="2">
                                 <p><locus from="203r" to="209v"
-                                    />Entre 34 et 50 lignes réglées,
-                                    disposées en deux colonnes.</p>
+                                    />Entre 34 et 50 lignes réglées, disposées en deux colonnes.</p>
                             </layout>
                         </layoutDesc>
                     </egXML></p>
@@ -375,14 +372,10 @@
 
             <div rend="slide">
                 <head><gi>handDesc</gi> et <gi>decoDesc</gi></head>
-                <p>Ces éléments décrivent respectivement les mains (écritures) distinguées dans un
-                    manuscrit et les décorations, soit en prose, soit avec les éléments
-                    structurants: <list>
+                <p>Ces éléments décrivent respectivement les mains (écritures) distinguées dans un manuscrit et les décorations, soit en prose, soit avec les éléments structurants : <list>
                         <item>
                             <gi>handNote</gi> décrit un style d’écriture ou une main qui sont reconnus dans un manuscrit. </item>
-                        <item><gi>decoNote</gi>contient une note décrivant soit un élément de
-                            décoration du manuscrit, soit une catégorie relativement homogène de
-                            tels éléments.</item>
+                        <item><gi>decoNote</gi>contient une note décrivant soit un élément de décoration du manuscrit, soit une catégorie relativement homogène de tels éléments.</item>
                     </list></p>
             </div>
 
@@ -466,12 +459,12 @@
 
             <div rend="slide">
                 <head> Historique du manuscrit </head>
-                <p>L’élément <gi>history</gi> rassemble les éléments servant à donner un historique complet du manuscrit: <list>
-                        <item><gi>origin</gi>: informations sur l’origine du manuscrit </item>
-                        <item><gi>acquisition</gi>: informations sur les modalités d’entrée (&amp;c.) du manuscrit dans l’institution qui le conserve</item>
-                        <item><gi>provenance</gi>: informations sur un épisode précis de l’histoire du manuscrit, après sa création et avant son acquisition</item>
+                <p>L’élément <gi>history</gi> rassemble les éléments servant à donner un historique complet du manuscrit : <list>
+                        <item><gi>origin</gi> : informations sur l’origine du manuscrit </item>
+                        <item><gi>acquisition</gi> : informations sur les modalités d’entrée du manuscrit dans l’institution qui le conserve,  (etc.) </item>
+                        <item><gi>provenance</gi> : informations sur un épisode précis de l’histoire du manuscrit, après sa création et avant son acquisition</item>
                     </list></p>
-                <p><gi>origin</gi> est membre de la classe <term>datable</term>, d’où sont derivés les attributs normalisants <att>notBefore</att>, <att>notAfter</att>, <att>when</att> etc. </p>
+                <p><gi>origin</gi> est membre de la classe <term>datable</term>, d’où sont derivés les attributs normalisants <att>notBefore</att>, <att>notAfter</att>, <att>when</att>, etc. </p>
             </div>
 
             <div rend="slide">
@@ -498,42 +491,38 @@
             <div rend="slide">
                 <head>Informations supplémentaires</head>
 
-                <p>L’élément <gi>additional</gi> regroupe: <list>
-                        <item><gi>adminInfo</gi> : informations administratives</item>
-                        <item><gi>surrogates</gi> : informations sur surrogates, e.g. photos, images numerisés etc.</item>
-                        <item><gi>listBibl</gi> : notices bibliographiques</item>
+                <p>L’élément <gi>additional</gi> regroupe : <list>
+                        <item><gi>adminInfo</gi> : informations administratives</item>
+                        <item><gi>surrogates</gi> : informations sur surrogates, e.g. photos, images numerisés, etc.</item>
+                        <item><gi>listBibl</gi> : notices bibliographiques</item>
                     </list>
                 </p>
             </div>
 
             <div rend="slide">
                 <head>Informations administratives </head>
-                <p>L’élément <gi>admininfo</gi> regroupe: <list>
-                        <item><gi>recordHist</gi>: historique du record</item>
-                        <item><gi>availability</gi>: disponibilité du manuscrit</item>
-                        <item><gi>custHist</gi>: historique du manuscrit apres son acquisition</item>
-                        <item><gi>note</gi>: d’autres remarques pertinentes</item>
+                <p>L’élément <gi>admininfo</gi> regroupe : <list>
+                        <item><gi>recordHist</gi> : historique du record</item>
+                        <item><gi>availability</gi> : disponibilité du manuscrit</item>
+                        <item><gi>custHist</gi> : historique du manuscrit apres son acquisition</item>
+                        <item><gi>note</gi> : d’autres remarques pertinentes</item>
                     </list>
                     <egXML rend="tiny" xmlns="http://www.tei-c.org/ns/Examples">
                         <adminInfo>
                             <recordHist>
-                                <source>Record created <date>1 Aug 
-                                    2004</date></source>
+                                <source>Record created <date>1 Aug 2004</date></source>
                             </recordHist>
                             <availability>
-                                <p>Le manuscrit originel n’est plus accessible 
-                                    sauf sur presentation d’autorisation ecrite. </p>
+                                <p>Le manuscrit original n’est plus accessible sauf sur presentation d’autorisation écrite. </p>
                             </availability>
                             <custodialHist>
                                 <custEvent type="restauration" notBefore="1961-03"
                                     notAfter="1961-03">
-                                    <p>Tentative de restauration de reliure mars 1961 
-                                        à la bibliothèque municipale de Lyon. </p>
+                                    <p>Tentative de restauration de reliure mars 1961 à la bibliothèque municipale de Lyon. </p>
                                 </custEvent>
                                 <custEvent type="numerisation" notBefore="1988-05-01"
                                     notAfter="1988-05-30">
-                                    <p>Numerisation complète en mode images par 
-                                        Arkhênum mai 1988.</p>
+                                    <p>Numérisation complète en mode images par Arkhênum mai 1988.</p>
                                 </custEvent>
                             </custodialHist>
                         </adminInfo>
@@ -624,7 +613,7 @@ Provenance: Au feuillet chiffré 1 : "Ce present livre ma este donne de monsieur
         </body>
         <back>
             <div rend="title" xml:lang="fr">
-                <note><ref target="#index">Revenir au début</ref> | <ref target="programme.html"
+                <note><ref target="#index">Revenir au début</ref> | <ref target="00-programme.html"
                         >Programme</ref></note>
             </div>
         </back>

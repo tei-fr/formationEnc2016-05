@@ -129,10 +129,9 @@
                         <item>Cette interface vous permet d’explorer la fonction et l’usage de tous les éléments TEI. Il vous permet également de sélectionner ceux que vous souhaitez intégrer dans votre schéma.</item>
                         <item>Vous pouvez Inclure ou Exclure tous les éléments d’un module. Sélectionnez la case à cocher <ident>Exclure</ident> dans le titre de la table, et tous les éléments sont exclus par défaut. Il en est de même pour <ident>Inclure</ident> tous les éléments. Cliqueé le bouton à côté d’un élément pour changer son statut ! </item>
                         <item>Pour cet exercice vous êtes invité à sélectionner que les éléments suivants : <list>
-                                <item>Du module <ident>core</ident> vous devez exclure tout les éléments sauf : <gi>add</gi>, <gi>author</gi>, <gi>choice</gi>, <gi>corr</gi>, <gi>del</gi>, <gi>graphic</gi>, <gi>head</gi>, <gi>hi</gi>, <gi>lb</gi>, <gi>p</gi>, <gi>pb</gi>, <gi>reg</gi>, <gi>sic</gi>, <gi>signed</gi>, <gi>title</gi>
-                                    <gi>trailer</gi> et <gi>unclear</gi>.</item>
+                                <item>Du module <ident>core</ident> vous devez exclure tout les éléments sauf : <gi>add</gi>, <gi>author</gi>, <gi>choice</gi>, <gi>corr</gi>, <gi>del</gi>, <gi>graphic</gi>, <gi>head</gi>, <gi>hi</gi>, <gi>lb</gi>, <gi>p</gi>, <gi>pb</gi>, <gi>reg</gi>, <gi>sic</gi>, <gi>title</gi> et <gi>unclear</gi>.</item>
                                 <item>Du module <ident>header</ident> vous devez exclure tous les éléments sauf : <gi>fileDesc</gi>, <gi>publicationStmt</gi>, <gi>sourceDesc</gi>, <gi>teiHeader</gi> et <gi>titleStmt</gi>. </item>
-                                <item>Du module <ident>textstructure</ident> vous devez exclure tous les élémenst sauf : <gi>TEI</gi>, <gi>body</gi>, <gi>div</gi>,  <gi>salute</gi>, <gi>signed</gi> , <gi>text</gi> et <gi>closer</gi></item>
+                                <item>Du module <ident>textstructure</ident> vous devez exclure tous les éléments sauf : <gi>TEI</gi>, <gi>body</gi>, <gi>div</gi>,  <gi>salute</gi>, <gi>signed</gi>, <gi>text</gi>, <gi>trailer</gi> et <gi>closer</gi></item>
                                 <item>Du module <ident>figures</ident> vous devez exclure tous les éléments  sauf : <gi>figure</gi> et <gi>figDesc</gi>.</item>
                                 <item>Enfin, du module <ident>transcr</ident> vous devez inclure seulement : <gi>facsimile</gi>, <gi>surface</gi>, et <gi>zone</gi>.</item>
                             </list></item>
@@ -147,7 +146,8 @@
                         <item>Cliquez maintenant sur l’onglet <ident>Schéma</ident>. Vous pouvez choisir entre plusieurs langages de schéma&#xa0; : la TEI se définit indépendamment de ces langages, afin de pouvoir générer tous ces formats.</item>
                         <item>Nous vous conseillons de générer un schéma ou bien en Relax NG Compact Syntax, ou en Relax NG XML Syntax.</item>
                         <item>Cliquez sur <ident>Générer</ident> et votre navigateur dévrait télécharger un fichier de schéma. Placez ce fichier dans votre dossier <code>Travaux</code>.</item>
-                        <item rend="bold">Attention ! Ne fermez pas votre navigateur, vous en aurez encore besoin.</item>
+                        <item rend="bold"
+                            >Attention ! Ne fermez pas votre navigateur, vous en aurez encore besoin.</item>
                     </list>
                 </p>
             </div>
@@ -157,7 +157,9 @@
                         <item>Revenez dans oXygen et ouvrez votre fichier</item>
                         <item>Dans le menu Document ouvrir le menu Schéma et sélectionnez <ident>Associer un schéma</ident>. (Remarquez l’icône bleue et rouge pour cette action qui devrait également apparaître sur la barre à outils) </item>
                         <item>Dans la boîte de dialogue qui s’affiche, cliquez sur la petite icône en forme de dossier à côté de <ident>URL</ident> pour naviguer vers le fichier RNG que vous venez de créer avec Roma, puis cliquez sur <ident>OK</ident>.</item>
-                        <item>Dans votre fichier XML-TEI, vous devrez maintenant voir apparaître une ligne ressemblant à ceci : <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <item>Dans votre fichier XML-TEI, vous devrez maintenant voir apparaître une ligne ressemblant à ceci : <egXML
+                                xmlns="http://www.tei-c.org/ns/Examples"
+                                >
                             &lt;?xml-model href="teiTranscr.rnc"
                                 type="application/relaxng-compact-syntax"
                                 xmlns="http://relaxng.org/ns/structure/1.0"?&gt;
@@ -189,9 +191,9 @@
                                 <item><hi>Liste fermée :</hi> nous permet de préciser si la liste de valeurs proposées est une liste fixe impossible à augmenter ou non. Dans notre schéma, c’est une liste fermée, donc répondez <val>Yes</val>&#xa0; !</item>
                                 <item><hi>Liste de valeurs&#xa0; :</hi> nous permet de spécifier les valeurs permises pour cet attribut dans notre schéma. Les valeurs sont proposées sous la forme d’une seule ligne, chaque valeur séparée par une virgule. Entrez donc la séquence suivante (<hi>sans blancs</hi>) <code>prose,vers,drama,chapitre,volume,autre,inconnu</code>.</item>
                                 <item><hi>Description :</hi> nous permet de modifier la description de cet attribut. Vous pouvez la changer comme vous le souhaitez&#xa0; : par exemple, changer « n’importe quel système ou typologie de classification approprié » en « le système de classement proposé pour notre projet ».</item>
-                        </list></item>
+                            </list></item>
                         <item rend="bold"
-                            >De nouveau, n’oubliez pas de cliquez sur le bouton <ident>Save</ident> en bas de la page ! </item>
+                                >De nouveau, n’oubliez pas de cliquez sur le bouton <ident>Save</ident> en bas de la page ! </item>
                     </list>
                 </p>
             </div>
@@ -276,6 +278,7 @@
 </item>
     </p>
 </div>-->
+            <!-- @todo il manque <gi>signed</gi> et <gi>trailer</gi> indiqués à tort dans core alors qu’ils sont dans textstructure-->
         </body>
     </text>
 </TEI>

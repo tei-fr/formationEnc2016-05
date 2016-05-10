@@ -29,7 +29,7 @@
             <moduleRef key="msdescription"/>
             <moduleRef key="textstructure" include="TEI front body back text"/>
             <moduleRef key="namesdates" include="country persName forename surname settlement"/>
-            <moduleRef key="core" include="p list listBibl bibl author title hi item date ref term textLang note respStmt resp"/>
+            <moduleRef key="core" include="author bibl date editor hi item list listBibl name note p publisher ref resp respStmt term textLang title"/>
             <moduleRef key="header"/>
       </schemaSpec>
       </body>

@@ -18,13 +18,13 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:lang="fr">
+       <!--  <div xml:lang="fr">
             <head>Organigramme ODD</head>
-            <p><graphic url="images/oddity.png"/></p>
-         </div>
+            <p><graphic url="../images/oddity.png"/></p>
+         </div>-->
          <div>
             <p>Dans cet exercice nous allons travailler avec oXygen sur un ODD minimal, concu pour
-               la transcription des sources primaires par un publique pas tres informe, et donc sans
+               la transcription des sources primaires par un publique pas tres informé, et donc sans
                trop de complications. </p>
          </div>
          <div xml:lang="fr">
@@ -41,10 +41,9 @@
             <head>Documentation</head>
             <p>Ajoutons de documentation. <list>
 
-                  <item>Revenez dans votre copie du <ident>transMin.odd</ident> et ajoutez au debut
+                  <item>Revenez dans votre copie du <ident>transMin.odd</ident> et ajoutez au début
                      (apres le paragraphe qui commence <q>Cette personalisation propose...</q>) une
-                     paragraphe comme ceci: 
-                     <eg><![CDATA[
+                     paragraphe comme ceci: <eg><![CDATA[
                         <p>Voici la liste des elements textuels fournis par ce schema :
                            <specDesc key="ab"/>
                            <specDesc key="pb"/>
@@ -52,19 +51,19 @@
                         </p>
                      ]]></eg>
                   </item>
-                  <item>Revenez dans le scenario de transformation que vous utilisiez pour generer
-                     votre schema. et cette fois-ci cochez aussi la case pour "TEI ODD XHTML" (et/ou
-                     un des autres formats "TEI ODD DOCX" si vous preferez) </item>
+                  <item>Revenez dans le scenario de transformation que vous utilisiez pour générer
+                     votre schéma. Cette fois-ci cochez aussi la case pour "TEI ODD XHTML" (et/ou un
+                     des autres formats, meme "TEI ODD DOCX" si vous voulez) </item>
                   <item>Regardez l'effet de vos modifications dans le doc qui en ressort.</item>
                </list>
             </p>
-            <p>En principe, vous devriez ajouter un <gi>specDesc</gi> pour chacun des elements
-               fournis par le schema. Vous pourriez egalement enrichir la doc avec une description
-               particuliere adaptee aux besoins de votre projet, en utilisant des exemples
-               specifiques etc. </p>
+            <p>En principe, vous devriez ajouter un <gi>specDesc</gi> pour chacun des éléments
+               fournis par le schéma. Vous pourriez également enrichir la doc avec une description
+               particulière adapté aux besoins de votre projet, en utilisant des exemples
+               spécifiques etc. </p>
          </div>
          <div xml:lang="fr">
-            <head>Amelioration du schema (1) </head>
+            <head>Amélioration du schema (1) </head>
             <list>
                <item>On découvre quelques problèmes avec ce schema: <list>
                      <item>on souhaite indiquer la présence des glyphes et symboles
@@ -78,7 +77,7 @@
             <p rend="box">Vous souhaitez ajouter un element non-TEI? C'est aussi possible...</p>
          </div>
          <div xml:lang="fr">
-            <head>Anmelioration du schema (2) </head>
+            <head>Amélioration du schema (2) </head>
             <p>La TEI nous propose plusieurs variétés de noms (<gi>persName</gi>,
                <gi>placeName</gi>, <gi>orgName</gi> etc.) mais rien de particulier pour les noms
                botaniques. Dans cet exercice vous allez créer un élément <gi>botName</gi> pour
@@ -100,7 +99,7 @@
             </list>
          </div>
          <div xml:lang="fr">
-            <head>Simplification du schema </head>
+            <head>Simplification du schéma </head>
             <p>Notre personnalisation propose beaucoup d'attributs. Nous pouvons supprimer ceux qui
                ne nous interessent pas en deux manières: <list>
                   <item>on peut supprimer une classe <emph>entièrement</emph> avec un redéclaration
@@ -121,7 +120,8 @@
          </div>
          <div xml:lang="fr">
             <head>Contrôle des attributs </head>
-            <p> <list>
+            <p>
+               <list>
                   <item>Supprimez dans votre schéma les classes suivantes :
                         <ident>att.declaring</ident>, <ident>att.fragmentable</ident>,
                         <ident>att.edition</ident>, <ident>att.editLike</ident></item>

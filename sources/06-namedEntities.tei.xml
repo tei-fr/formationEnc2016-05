@@ -48,9 +48,10 @@
         <div>
           <head>Sommaire</head>
           <list type="ordered">
-            <item><ref target="#part1">Les entitées nommées</ref></item>
+            <item><ref target="#part1">Les entités nommées</ref></item>
             <item><ref target="#part2">Les formes du nom</ref></item>
-            <item><ref target="#part3">Le modèle de contenu (states, events)</ref></item>
+            <item><ref target="#part3"
+                  >Le modèle de contenu (<soCalled>traits</soCalled>, <soCalled>states</soCalled>, <soCalled>events</soCalled>)</ref></item>
           </list>
         </div>
       </div>
@@ -74,7 +75,7 @@
                 <item>de personnes,</item>
                 <item>des objets, etc.</item>
               </list></p>
-            <p>LB: La TEI se positionne avec Frege dans la grande discussion philosophique autour de la théorie de référence : elle cherche à encoder ce qu’il appelle das bedeutung (signification)</p>
+            <p>LB : La TEI se positionne avec Frege dans la grande discussion philosophique autour de la théorie de référence : elle cherche à encoder ce qu’il appelle <foreign>das bedeutung</foreign> (signification)</p>
           </div>
         </div>
         <div rend="slide" xml:lang="fr">
@@ -107,6 +108,7 @@
                 <item><gi>name</gi> nom quelconque</item>
                 <item><gi>rs</gi> chaîne de référence</item>
               </list>
+              <p>Où des attributs tels que <att>ref</att> permettent de pointer vers une description de rérence.</p>
             </div>
           </div>
           <div>
@@ -159,8 +161,9 @@
             <head>Les formes du nom</head>
             <p>L’association avec la classe <gi>person</gi> est basée sur la hiérarchie de l’élément XML (inclusion). L’association est implicite.</p>
             <p>Pour indiquer plusieurs formes du nom distinctes, cet élément est répétable. Agrégation : une instance de la classe <gi>person</gi> possède une ou plusieurs instances (ou "composants") de la classe cible, ici <gi>persName</gi></p>
-            <p>p. e. pour les formes langagières, la forme du nom autorisée, etc.</p>
-            <p>ici c’est la conjonction de l’élément et de l’attribut <att>full</att> qui permet de typer la forme du nom.</p>
+            <p><hi rend="italic"
+              >p. e.</hi> pour les formes langagières, la forme du nom autorisée, etc.</p>
+            <p>ici, c’est la conjonction de l’élément et de l’attribut <att>full</att> qui permet de typer la forme du nom.</p>
             <p>Par exemple contraindre la fourniture d’une forme autorisée du nom, d’une langue, etc.</p>
             <p>Ou au contraire autoriser son absence.</p>
           </div>
@@ -396,7 +399,7 @@
      <back>
       <div rend="title">
         <div>
-          <head>à <ref target="09-personnalisation.html">demain</ref></head>
+          <head>à <ref target="ex-07-entites.html">vous</ref></head>
           <note><ref target="#index">revenir au début</ref></note>
           <note><ref target="00-programme.html">programme</ref></note>
         </div>

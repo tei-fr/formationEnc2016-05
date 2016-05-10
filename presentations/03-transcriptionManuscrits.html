@@ -16,9 +16,11 @@ class: inverse
 ---
 class: center middle
 
+
+
 # 04-Édition critique des sources manuscrites
 
-# Formation TEI | ENC 9 au 12 mai 2016
+## Formation TEI | ENC 9 au 12 mai 2016
 
 .footnote[[Programme](00-programme.html)]
 ![test](images/logo-ecole-nationale-des-chartes.png)
@@ -28,23 +30,24 @@ template: inverse
 class: center middle
 
 
-# Introduction
+## Introduction
 
 ???
 
-# Introduction
+## Introduction
 
 Une édition critique est un essai de restitution d’un texte. Ainsi que nous l’avons vu, chaque édition résulte d’un point de vue du le texte, c’est-à-dire de choix et de partis-pris raisonnés. Dans le domaine de la production de sources historiques, on pourra par exemple souhaiter rendre le plus fidèlement possible le documents tel qu’il se présente au lecteur (transcription diplomatique). Dans certains cas, la tradition du texte peut-être riche et il faudra trouver des solutions pour prendre en charge les différents états du texte et ses témoins. Enfin, dans le cas d’une édition dite de génétique textuel, on s’intéressera aux différents manuscrits en essayant de restituer la succession des actes d’écriture.
+
+Lors de la transcription de sources primaires, on a donc besoin de pouvoir enregistrer des informations concernant la lecture du texte, ou d’ajouter des informations éditoriales telles que des notes d’édition critique ou des notes de commentaires historique, ou encore fournir des corrections et compléter des lacunes, par exemple.
 
 La TEI présente de nombreux mécanismes spécialement destinés à la prise en charge de ces différentes sortes d’éditions critiques. Ici, la plus part des éléments qui nous intéressent sont compris dans les modules de transcription `transcr`, et d’autres dans celui de description des manuscrits `msdescription` que nous aborderons plus tard. Les éléments définis dans ces modules peuvent parfois être utilement augmentés par `certainty` pour traiter des niveaux de certitudes et `gaiji` pour la prise en charge des glyphes et la documentation des systèmes d’écriture. Mais aussi `Critical Apparatus` pour les notes de variantes, ainsi que des mécanismes de liage et d’alignement tirés du module `Linking`.
 
 Ces différents éléments de la Text Encoding Initiative vous permettent de décrire aussi finement que de besoin les phénomènes textuels rencontrés ainsi que d’embarquer directement l’apparat critique de votre édition à l’intérieur du balisage.
 
 ---
-layout: false
 name: index
 
-# Sommaire
+## Sommaire
 
 * [L’inscription du texte sur le support](#part1)
 
@@ -63,9 +66,13 @@ name: part1
 ---
 
 
-## Prise en charge des lacunes
+### Prise en charge des lacunes
 
 `&lt;gap&gt;` passage ne pouvant pas être restitué pour des raisons matérielles
+
+```xml
+<gap  reason="illegible" agent="ink-blot"></gap>
+```
 
 `&lt;unclear&gt;` passage en partie illisible
 
@@ -81,7 +88,9 @@ name: part1
 
 ???
 
-## Prise en charge des lacunes
+### Prise en charge des lacunes
+
+Lors de la transcription de sources primaires, on peut avoir besoin d’enregistrer des informations concernant la lecture du texte.
 
 Ne pas confondre `&lt;gap&gt;` et `&lt;space&gt;` qui sert à désigner un espace blanc jugé significatif
 
@@ -94,15 +103,15 @@ Plusieurs attributs issus du module `certainty` qui peuvent vous permettre de pr
 ---
 
 
-## Ajouts et surplus
+### Ajouts et surplus
 
-## `&lt;add&gt;` texte ajouté
+#### `&lt;add&gt;` texte ajouté
 
 ```xml
 <add  place="above">nous</add>
 ```
 
-## `&lt;del&gt;` texte supprimé
+#### `&lt;del&gt;` texte supprimé
 
 ```xml
 <del  rend="overstrike">claustra</del>
@@ -110,12 +119,12 @@ Plusieurs attributs issus du module `certainty` qui peuvent vous permettre de pr
 
 ???
 
-## `&lt;subst&gt;` substitutions (génétique textuelle)
+#### `&lt;subst&gt;` substitutions (génétique textuelle)
 
 ```xml
 <subst >
-  <del>claustra</del>
-  <add place="margin">fenêtre</add>
+    <del>claustra</del>
+    <add place="margin">fenêtre</add>
 </subst>
 ```
 
@@ -130,26 +139,26 @@ name: part2
 ---
 
 
-## Passages fautifs
+### Passages fautifs
 
 * `&lt;sic&gt;` passage fautif, ou segment syntaxiquement incorrect
 
-* `&lt;corr&gt;` correction de l’éditeur
+* `&lt;orig&gt;` texte original
 
-* `&lt;abbr&gt;` abréviation
+* `&lt;corr&gt;` correction de l’éditeur
 
 * utilisation de `&lt;choice&gt;`
 
 ```xml
 <choice >
-  <abbr>M<hi rend="superscript">r</hi></abbr>
-  <expan>Monsieur</expan>
+  <orig>colomne</orig>
+  <reg>colonne</reg>
 </choice>
 ```
 
 ???
 
-## Passages fautifs
+### Passages fautifs
 
 La même utilisation de `&lt;choice&gt;` est possible pour les segments syntaxiquement incorrects.
 
@@ -163,6 +172,61 @@ La même utilisation de `&lt;choice&gt;` est possible pour les segments syntaxiq
 Partout, les attributs `@cert`, `@resp` et `@source` peuvent s’avérer utile.
 
 ---
+
+
+### Abréviations
+
+* `&lt;abbr&gt;` abréviation
+
+* `&lt;expan&gt;` abréviation développée
+
+```xml
+<abbr >Mtr.</abbr>
+```
+
+```xml
+<expan >Maître</expan>
+```
+
+```xml
+<choice ><abbr>Mtr.</abbr><expan>Maître</expan></choice>
+```
+
+???
+
+En soi, l’écriture manuscrite est souvent sujette à l’emploi d’abréviation pour abréger le travail scripteur. On y trouve communément des lettres ou groupes de lettres ou des phrases qui peuvent être représentés par des marques significatives. Ces phénomènes sont tellement répandus qu’elles sont difficiles à classifier. En fonction des besoins d’une édition, il est possible d’encoder ces abréviations de diverses manières afin de rendre compte plus ou moins finement de leur nature.
+
+La manière la plus simple de signaler la présence d’une abréviation dans le texte consiste à utiliser les éléments `&lt;abbr&gt;` et `&lt;expan&gt;` qui permettent tantôt de renseigner la forme abrégée ou la forme développée. Appariées avec `&lt;choice&gt;`, on peut fournir une alternative.
+
+---
+
+
+### Abréviations
+
+```xml
+<abbr >
+  <am>
+    <g ref="#b-per"></g>
+  </am>sone
+</abbr>
+```
+
+```xml
+<expan >
+  <ex>per</ex>sone
+</expan>
+```
+
+```xml
+<choice >
+  <am>
+    <g ref="#b-per"></g>
+  </am>
+  <ex>per</ex>
+</choice>
+```
+
+---
 template: inverse
 class: center middle
 name: part3
@@ -173,7 +237,7 @@ name: part3
 ---
 
 
-## La description des mains
+### La description des mains
 
 * `@hand`
 
@@ -191,7 +255,7 @@ handNote est répétable et peut contenir une localisation avec `@locus`.
 ---
 
 
-## Trois approches pour l’enregistrement et l’.red[alignement] des variantes
+### Trois approches pour l’enregistrement et l’.red[alignement] des variantes
 
 Les Guidelines proposent trois approches différentes pour aligner des passages textuels lorsque l’on établit une édition critique&nbsp;:
 
@@ -203,7 +267,7 @@ Les Guidelines proposent trois approches différentes pour aligner des passages 
 
 ???
 
-## Trois approches pour l’enregistrement et l’.red[alignement] des variantes
+### Trois approches pour l’enregistrement et l’.red[alignement] des variantes
 
 Les Guidelines proposent trois approches différentes pour aligner des passages textuels lorsque l’on établit une édition critique&nbsp;:
 
@@ -218,7 +282,7 @@ La méthode par segmentation parallèle est le plus couramment utilisée lors de
 ---
 
 
-## Segmentation parallèle
+### Segmentation parallèle
 
 * `&lt;app&gt;` entrée d’apparat critique
 
@@ -237,7 +301,7 @@ La méthode par segmentation parallèle est le plus couramment utilisée lors de
 ---
 
 
-## Variantes
+### Variantes
 
 * `&lt;rdgGrp&gt;` pour regrouper plusieurs variantes ayant un lien entre elles
 
@@ -248,7 +312,7 @@ La méthode par segmentation parallèle est le plus couramment utilisée lors de
 ---
 
 
-## Tableau de tradition
+### Tableau de tradition
 
 ```xml
 <listWit >
@@ -273,7 +337,7 @@ La méthode par segmentation parallèle est le plus couramment utilisée lors de
 ---
 
 
-## Localisation référencée
+### Localisation référencée
 
 ```xml
 <div  type="alignmentText" xml:id="cAlignmentText">
@@ -293,9 +357,11 @@ template: inverse
 class: center middle
 
 
-# Exemple d’[apparat critique](../travaux/witnessAngouleme.xml)
+## Exemple d’[apparat critique](../travaux/witnessAngouleme.xml)
 
-.footnote[[Revenir au début](#index)] | .footnote[[Programme](00-programme.html)]
+.footnote[[Revenir au début](#index)]
+
+.footnote[[Programme](00-programme.html)]
 </textarea><script src="js/remark-0.6.5.min.js" type="text/javascript"></script><script type="text/javascript">
         var hljs = remark.highlighter.engine;
       </script><script src="remark.language.js" type="text/javascript"></script><script type="text/javascript">

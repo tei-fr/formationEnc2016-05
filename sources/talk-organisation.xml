@@ -17,7 +17,7 @@
     </revisionDesc>
   </teiHeader>
   <text>
-   
+
     <body>
       <div rend="slide">
         <head>Structure(s) d'un document TEI-XML</head>
@@ -29,6 +29,19 @@
         <p rend="box"> Le terme <term rend="it">document </term> n'a aucune définition formelle,
           mais d'habitude il correspond à un object complet (un livre par ex). D'autres possibilités
           ne sont pas exclus... </p>
+      </div>
+      <div rend="slide">
+        <head>Un document n'est pas la meme chose qu'un fichier!</head>
+        <list>
+          <item>un fichier est un unité de stockage numérique </item>
+          <item>un document est un objet ayant une structure logique</item>
+        </list>
+        <p>Un fichier peut se trouver sur votre disque dur, dans le cloud, ou sur le Web ... ou
+          entièrement virtualisé</p>
+        <list>
+          <item>Un document peut etre stocké dans plusieurs fichiers -- ou un seul</item>
+          <item>Un fichier peut contenir plusieurs documents -- ou un seul</item>
+        </list>
       </div>
       <div>
         <head>L'édition numérique : en pratique</head>
@@ -59,7 +72,7 @@
           <item><gi>teiHeader</gi> : rassemble les métadonnées qui décrivent les objects traités et
             les méthodes d'encodage concernées </item>
         </list>
-        <p rend="box">Un élément <gi>TEI</gi> contient au minimum un <gi>teiHeader</gi>, suivi d'un
+        <p rend="box">Un élément <gi>TEI</gi> (un document) contient au minimum un <gi>teiHeader</gi>, suivi d'un
           ou plusieurs des autres possibilités</p>
       </div>
       <div>
@@ -88,7 +101,7 @@
         </egXML>
       </div>
       <div>
-        <head>Un TEI Corpus par contre.... </head>
+        <head>Un TEI Corpus est aussi possible .... </head>
         <p>
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <teiCorpus>
@@ -103,31 +116,9 @@
           </egXML>
         </p>
         <p rend="box">Cette structure servirait par ex à une collection de livres de la meme
-          sorte</p>
+          sorte, ou a un archive de documents independent</p>
       </div>
-      <div type="slide" xml:lang="fr" xml:id="part2">
-        <div>
-          <head>Macrostructures de texte composite</head>
-          <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <TEI>
-              <teiHeader><!-- ... --></teiHeader>
-              <text>
-                <front><!-- ... --></front>
-                <group>
-                  <text>
-                    <front><!-- ... --></front>
-                    <body><!-- ... --></body>
-                    <back><!-- ... --></back>
-                  </text>
-                  <text><!-- ... --></text>
-                  <text><!-- ... --></text>
-                </group>
-                <back><!-- ... --></back>
-              </text>
-            </TEI>
-          </egXML>
-        </div>
-      </div>
+   
 
       <div xml:lang="fr">
         <head> Deux méthodes simplissimes pour gérer un "facsimilé numérique"</head>
@@ -264,7 +255,7 @@
         <figure>
           <graphic url="../images/bovelles-1.png" height="90%"/>
         </figure>
-       <!-- <figure>
+        <!-- <figure>
           <graphic url="../images/bovelles.png" height="90%"/>
         </figure>
         <cb/>
@@ -302,7 +293,8 @@
         <head>Et la transcription</head>
         <figure>
           <graphic url="../images/bovelles-3.png" height="90%"/>
-        </figure><!--<figure>
+        </figure>
+        <!--<figure>
           <graphic url="../images/bovelles-boxed.png" height="90%"/>
         </figure>
         <cb/>
@@ -339,11 +331,11 @@
             </body>
           </text></egXML>-->
       </div>
-      <div type="slide" xml:lang="fr">
+    <!--  <div type="slide" xml:lang="fr">
 
         <div>
           <head>Macrostructure</head>
-          <!-- image -->
+          <!-\- image -\->
         </div>
         <div>
           <head>Macrostructure</head>
@@ -371,77 +363,72 @@
             <teiCorpus>
               <teiCorpus>
                 <TEI>
-                  <!-- témoin manuscrit -->
-                  <teiHeader><!-- ... --></teiHeader>
+                  <!-\- témoin manuscrit -\->
+                  <teiHeader><!-\- ... -\-></teiHeader>
                   <text>
-                    <body><!-- ... --></body>
+                    <body><!-\- ... -\-></body>
                   </text>
                 </TEI>
                 <TEI>
-                  <!-- témoin manuscrit -->
+                  <!-\- témoin manuscrit -\->
                 </TEI>
                 <TEI>
-                  <!-- témoin manuscrit -->
+                  <!-\- témoin manuscrit -\->
                 </TEI>
               </teiCorpus>
               <teiCorpus>
-                <!-- ... -->
+                <!-\- ... -\->
               </teiCorpus>
             </teiCorpus>
           </egXML>
         </div>
-      </div>
+      </div>-->
       <div type="slide" xml:lang="fr">
-        <div>
+       
           <head>Utilisation de XInclude</head>
+        <p rend="box">XInclude est un standard W3C pour la representation de la structure physique (en termes de
+        ressources) supportant un document XML</p>
+        <p>Par exemple: notre document est un <gi>teiCorpus</gi>, contenant donc
+        <list>
+          <item>un <gi>teiHeader</gi> </item>
+          <item>plusieurs <gi>TEI</gi> </item>
+        </list></p>
+        <p>Pour faciliter la mise en œuvre du travail (par exemple pour répartir l'encodage entre
+          des participants), nous preferons traiter tous ces éléments du corpus dans des
+          fichiers séparés.</p>
+        <p>Nous avons donc un fichier <ident>corpusHdr.xml</ident> et plusiers fichiers <ident>text1.xml</ident>,
+        <ident>text2.xml</ident>, etc.</p></div>
+      <div type="slide" xml:lang="fr">
+        <p>Nous pouvons intégrer dans un seul document TEI toutes ces ressources
+          en utilisant XInclude ainsi:
+        </p>
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <![CDATA[ <teiCorpus xmlns="http://www.tei-c.org/ns/1.0"
-                xmlns:xi="http://www.w3.org/2001/XInclude">
-                <teiHeader>
-                  <!-- ... -->
-                </teiHeader>
-                <!-- Inclusion du fichier TEI du manuscrit des Ordres (O) -->
-                <xi:include href="o/desgodetsO.tei.xml" parse="xml">
-                  <xi:fallback>Fichier des Ordres non trouvé</xi:fallback>
-                </xi:include>
-                <!-- Inclusion du fichier TEI du manuscrit des Commodités (C) -->
-                <xi:include href="c/desgodetsC.tei.xml" parse="xml">
-                  <xi:fallback>Fichier des Commodités non trouvé</xi:fallback>
-                </xi:include>
-              </teiCorpus>
-           ]]>
-          </egXML>
-          <p><ref target="http://www.w3.org/TR/xinclude/">XML Inclusions (XInclude) Version 1.0
+           <![CDATA[
+            <teiCorpus xmlns:xi="http://www.w3.org/2001/XInclude" >
+              <xi:include href="corpusHdr.xml"/>
+              <xi:include href="text1.xml"/>
+              <xi:include href="text2.xml"/>
+             <!-- etc -->
+            </teiCorpus>
+       ]]>   </egXML>
+        
+          <p>Voir <ref target="http://www.w3.org/TR/xinclude/">XML Inclusions (XInclude) Version 1.0
               (Second Edition), W3C Recommendation 15 November 2006.</ref></p>
-        </div>
+        
       </div>
-      <div>
+     
         <div>
           <head>Utilisation de XInclude</head>
-          <p>Pour faciliter la mise en œuvre du travail (par exemple pour répartir l'encodage entre
-            des participants), il peut être utile de traiter les éléments du corpus dans des
-            fichiers séparés.</p>
-          <p>Pour l’inclusion, on s'appuie sur un standard  du W3C : XInclude.</p>
-          <p>Attention ! il ne faut pas oublier de déclarer l'espace de nom XInclude.</p>
-        </div>
-        <div>
-          <head>Utilisation de XInclude</head>
-          <p>équivaut à :</p>
-          <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <![CDATA[ <teiCorpus xmlns="http://www.tei-c.org/ns/1.0"
-                xmlns:xi="http://www.w3.org/2001/XInclude">
-                <teiHeader><!-- ... --></teiHeader>
-                <!-- Inclusion du fichier TEI du manuscrit des Ordres (O) -->
-                <TEI><!-- contenu du fichier TEI --></TEI>
-                <TEI><!-- contenu du fichier TEI --></TEI>
-              </teiCorpus>
-            ]]></egXML>
-          <!-- desgodets images for example -->
-        </div>
-        <!-- add oulipens.xml for example -->
-      </div>
+         <list> <item>Le fichier à inclure est indiqué  par un <att>href</att>, et peut donc etre n'importe quelle 
+         type de ressource: pas forcément un fichier local. </item>
+          <item>On peut aussi spécifier un <soCalled>fallback</soCalled> , un texte ou un fichier à utiliser si celui
+          proposé n'est pas disponible</item>
+          <item>Le fichier à inclure peut correspondre à n'importe quel fragment du document XML, mais il
+          doit etre bien formé </item>
+          <item>Attention ! il faut comprendre l'usage des espaces de nom ...</item>
+ </list>       </div>
+     
 
-      
     </body>
 
   </text>

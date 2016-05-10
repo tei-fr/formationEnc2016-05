@@ -31,26 +31,73 @@
         groupe d’écrivains un peu particulier qui (depuis les années 1960) se réunissent tous les
         jeudis discuter de leur méthodes et de leurs productions. Ils ont ainsi créé une archive
         importante, notamment composée des comptes rendus de leur réunions, actuellement disponible
-        à la BnF, et qui fait l’objet d’un projet de numérisation financé par l’ANR. </p>
+        à la BnF, et qui fait l’objet d’un projet de numérisation financé par l’ANR. </p><p>Voici une liste des fichiers sur lesquels nous allons travailler:
+          <table>
+            <row>
+              <cell>cr610417</cell>
+              <cell>3</cell>
+              <cell>xml</cell>
+            </row>
+            <row>
+              <cell>cr610428</cell>
+              <cell>6</cell>
+              <cell>xml</cell>
+            </row>
+            <row>
+              <cell>cr611219</cell>
+              <cell>5</cell>
+              <cell>txt</cell>
+            </row>
+            <row>
+              <cell>cr620911</cell>
+              <cell>3</cell>
+              <cell>xml</cell>
+            </row>
+            <row>
+              <cell>cr650308</cell>
+              <cell>5</cell>
+              <cell>txt</cell>
+            </row>
+            
+          </table></p>
       <div>
         <head>Quels sont les objets d’intérêt à encoder ?</head>
-        <p>Vous êtes d’abord invités à considérer les documents présentés en mode image, par ex <ident>cr650308_1.jpg</ident>. Ce fichier représente la première page du compte rendu (cr) de la réunion du 8 mars 1965 (650308). Quels sont, d’après vous, les objets d’intérêt que vous pourriez souhaiter encoder dans ce document ? Comment est-il structuré ? Faîtes une liste des concepts qui vous intéressent.</p>
+        <p>Vous êtes d’abord invités à considérer les documents présentés en mode image, par ex
+            <ident>cr650308_1.jpg</ident>. Ce fichier représente la première page du compte rendu
+          (cr) de la réunion du 8 mars 1965 (650308). Quels sont, d’après vous, les objets d’intérêt
+          que vous pourriez souhaiter encoder dans ce document ? Comment est-il structuré ? Faîtes
+          une liste des concepts qui vous intéressent.</p>
+   
+
       </div>
       <div>
         <head>Sélection des éléments XML-TEI</head>
-        <p>Ensuite, décidez comment représenter ces concepts en utilisant des balises TEI. Par exemple, si vous considérez que les remarques des participants sont présentées comme si il s’agissait d’une représentation dramatique, voire théâtrale, vous aurez alors probablement besoin des balises <gi>sp</gi>, <gi>speaker</gi>, <gi>stage</gi>. Si par contre, vous considérez que cette présentation de forme dramatique est moins intéressante ou moins cohérente qu’une présentation en série de paragraphes, dont quelques-uns portent un label, vous n’aurez besoin que des balises <gi>label</gi> et <gi>p</gi>. Si cela vous intéresse, peut-être faudra-t-il faire quelque chose avec les noms de personnes, de lieux, des œuvres qui pourront être balisés avec <gi>name</gi>, <gi>title</gi>, etc. Et <foreign
-            xml:lang="lat"
-            >quid</foreign> des corrections, des ajouts etc. ? En tout les cas, vous aurez besoin des éléments <gi>div</gi>, <gi>pb</gi>, <gi>hi</gi>, etc. </p>
+        <p>Ensuite, décidez comment représenter ces concepts en utilisant des balises TEI. Par
+          exemple, si vous considérez que les remarques des participants sont présentées comme si il
+          s’agissait d’une représentation dramatique, voire théâtrale, vous aurez alors probablement
+          besoin des balises <gi>sp</gi>, <gi>speaker</gi>, <gi>stage</gi>. Si par contre, vous
+          considérez que cette présentation de forme dramatique est moins intéressante ou moins
+          cohérente qu’une présentation en série de paragraphes, dont quelques-uns portent un label,
+          vous n’aurez besoin que des balises <gi>label</gi> et <gi>p</gi>. Si cela vous intéresse,
+          peut-être faudra-t-il faire quelque chose avec les noms de personnes, de lieux, des œuvres
+          qui pourront être balisés avec <gi>name</gi>, <gi>title</gi>, etc. Et <foreign
+            xml:lang="lat">quid</foreign> des corrections, des ajouts etc. ? En tout les cas, vous
+          aurez besoin des éléments <gi>div</gi>, <gi>pb</gi>, <gi>hi</gi>, etc. </p>
       </div>
       <div>
         <head>Documentation par un Schéma ODD avec Roma</head>
-        <p>Documenter ensuite votre sélection, en utilisant Roma comme nous l’avons fait précédemment. </p>
+        <p>Documenter ensuite votre sélection, en utilisant Roma comme nous l’avons fait
+          précédemment. </p>
       </div>
       <div>
         <head>Production de la transcription sous le contrôle d’un schéma</head>
-        <p>Vous devez maintenant réaliser votre transcription sous le contrôle d’un Schéma. Pour ce faire, générez un schema RelaxNG à partir de votre document ODD ou de Roma, et associez le à un nouveau document XML.</p>
-        <p>Pour faciliter le travail de transcription vous trouverez dans le fichier <ident>cr650308.txt</ident> une première transcription en texte brut. </p>
+        <p>Vous devez maintenant réaliser votre transcription sous le contrôle d’un Schéma. Pour ce
+          faire, générez un schema RelaxNG à partir de votre document ODD ou de Roma, et associez le
+          à un nouveau document XML.</p>
+        <p>Pour faciliter le travail de transcription vous trouverez dans le fichier
+            <ident>cr650308.txt</ident> une première transcription en texte brut. </p>
       </div>
+
     </body>
   </text>
 </TEI>

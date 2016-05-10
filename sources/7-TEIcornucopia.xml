@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Welcome to the TEI Community</title>
+      </titleStmt>
+
+      <publicationStmt>
+        <p/>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Various previous talks, TEI Guidelines, etc.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+      <div rend="slide">
+        <head>What is the TEI?</head>
+        <p><graphic url="../../Graphics/whatistei.png" height="50%"/></p>
+        <list>
+          <item>an organization or an institution?</item>
+          <item>a club or a religion or a fashion?</item>
+          <item>a technical specification, or a framework for making one?</item>
+          <item>a community... a way of thinking... a shared perception</item>
+        </list>
+      </div>
+
+      <div rend="slide">
+        <head>So what exactly is the TEI?</head>
+        <p>Originally, <hi>Text Encoding for Interchange</hi> ... an initiative intended to produce
+          recommendations which would</p>
+        <list>
+          <item>facilitate the<hi>creation</hi>, <hi>exchange</hi>, and <hi>integration</hi> of
+            textual data in digital form <list>
+              <item>every kind of text</item>
+              <item>in every language</item>
+              <item>for any purpose, from any culture</item>
+            </list></item>
+          <item>The TEI recommendations are intended for ...<list>
+              <item>beginners, seeking well-established solutions to well-understood problems</item>
+              <item>experts, seeking to create new solutions</item>
+            </list></item>
+        </list>
+      </div>
+
+      <div>
+        <head>Its original design goals</head>
+        <list>
+          <item>provide <hi>recommendations</hi> derived from the existing consensus, where this
+            could be determined </item>
+          <item>prefers <hi>general solutions</hi> to discipline-specific ones</item>
+          <item>supporting both <hi>specialisation</hi> and <hi>extension</hi></item>
+        </list>
+        <p rend="box">The TEI was not designed to provide a complete answer "out of the box"</p>
+      </div>
+
+
+
+      <div>
+        <head>Organisation of the TEI today</head>
+        <figure>
+          <graphic height="80%" url="../../Graphics/tei-community.png"/>
+        </figure>
+      </div>
+
+      <div rend="slide">
+        <head>TEI Website</head>
+        <p>
+          <list>
+            <item>Main website for the TEI community</item>
+            <item>Runs versions of Roma, OxGarage, etc.</item>
+            <item>Maintains a vault of old material, including in <ref
+                target="http://www.tei-c.org/Vault/P5/">/Vault/P5/</ref> all P5 releases to
+              date</item>
+            <item>URL: <ref target="http://www.tei-c.org/">http://www.tei-c.org/</ref>
+            </item>
+          </list>
+        </p>
+      </div>
+      <div>
+        <head>http://www.tei-c.org/</head>
+        <p>
+          <graphic height="90%" url="../../Graphics/tei-website.png"/>
+        </p>
+      </div>
+      <div>
+        <head>http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index-toc.html</head>
+        <p>
+          <graphic height="80%" url="../../Graphics/tei-guidelines1.png"/>
+        </p>
+      </div>
+      <div>
+        <head>http://www.tei-c.org/release/doc/tei-p5-doc/en/html/MS.html</head>
+        <p>
+          <graphic height="80%" url="../../Graphics/tei-guidelines2.png"/>
+        </p>
+      </div>
+      <div>
+        <head>http://www.tei-c.org/release/doc/tei-p5-doc/en/html/MS.html#msdates</head>
+        <p>
+          <graphic height="80%" url="../../Graphics/tei-guidelines3.png"/>
+        </p>
+      </div>
+      <div>
+        <head> http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-history.html</head>
+        <p>
+          <graphic height="80%" url="../../Graphics/tei-guidelines4.png"/>
+        </p>
+      </div>
+
+      <div rend="slide">
+        <head>TEI Wiki</head>
+        <p>
+          <list>
+            <item>Open to the TEI community for editing </item>
+            <item>Sample files, Stylesheets, Customisations </item>
+            <item>FAQs, SIGs work, Information on Tools</item>
+            <item>And much more... </item>
+            <item>
+              <ref target="http://wiki.tei-c.org/">http://wiki.tei-c.org/</ref>
+            </item>
+          </list>
+        </p>
+      </div>
+      <div>
+        <head>http://wiki.tei-c.org/index.php/Main_Page</head>
+        <p>
+          <graphic height="90%" url="../../Graphics/teiwiki-main.png"/>
+        </p>
+      </div>
+
+      <div>
+        <head>http://wiki.tei-c.org/index.php/Category:XSLT</head>
+        <p>
+          <graphic height="90%" url="../../Graphics/teiwiki-xslt.png"/>
+        </p>
+      </div>
+      <div>
+        <head>http://wiki.tei-c.org/index.php/Count-Elements.xsl</head>
+        <p>
+          <graphic height="90%" url="../../Graphics/teiwiki-countElements.png"/>
+        </p>
+      </div>
+
+      <div>
+        <head>The TEI Journal</head>
+        <p><graphic url="../../Graphics/teijournal-1.png" height="75%"/></p>
+        <list>
+          <item>The TEI's open access peer-reviewed scholarly journal</item>
+          <item>Six issues since 2011 </item>
+          <item>Journal of record for annual TEI Conferences</item>
+          <item>Thematic issues</item>
+        </list>
+      </div>
+      <div>
+        <head/>
+        <p><graphic url="../../Graphics/teijournal-2.png"/></p>
+      </div>
+
+      <div>
+        <head>Annual conference/members meeting</head>
+        <p rend="box">http://tei2015.huma-num.fr/</p>
+        <p><graphic url="../../Graphics/teiconference.png" height="80%"/></p>
+      </div>
+      <div rend="slide">
+        <head>TEI on SourceForge </head>
+        <p>
+          <list>
+            <item>Main place of work for the TEI Council (aside from publicly archived mailing
+              list)</item>
+            <item>Place to submit bugs and feature requests</item>
+            <item>Place to download the official releases </item>
+            <item>Hosts the TEI Subversion repository (up-to-minute changes)</item>
+            <item>
+              <ref target="http://tei.sourceforge.net/">http://tei.sourceforge.net/</ref>
+            </item>
+          </list>
+        </p>
+      </div>
+      <div>
+        <head>http://tei.sourceforge.net</head>
+        <p>
+          <graphic height="90%" url="../../Graphics/teisf-main.png"/>
+        </p>
+      </div>
+      <div>
+        <head>http://sourceforge.net/p/tei/feature-requests/</head>
+        <p>
+          <graphic height="80%" url="../../Graphics/teisf-tracker1.png"/>
+        </p>
+      </div>
+      <div>
+        <head>http://sourceforge.net/p/tei/bugs/558/</head>
+        <p>
+          <graphic height="80%" url="../../Graphics/teisf-tracker2.png"/>
+        </p>
+      </div>
+      <div>
+        <head>http://tei.svn.sourceforge.net/viewvc/tei/trunk/P5/Source/Guidelines/en/CH-LanguagesCharacterSets.xml?r1=10541&amp;r2=10622</head>
+        <p>
+          <graphic height="80%" url="../../Graphics/teisf-svnDiff.png"/>
+        </p>
+      </div>
+
+      <div rend="slide">
+        <head>TEI-L Mailing List</head>
+        <p>
+          <list>
+            <item>Main place to ask questions</item>
+            <item>Technical and basic discussions</item>
+            <item>Don't be intimidated, just be clear</item>
+            <item>
+              <ref target="http://purl.org/tei/tei-l">http://purl.org/tei/tei-l</ref>
+            </item>
+          </list>
+        </p>
+      </div>
+      <div>
+        <head>http://purl.org/tei/tei-l</head>
+        <p>
+          <graphic height="80%" url="../../Graphics/tei-mailingList.png"/>
+        </p>
+      </div>
+
+      <div>
+        <head>TEI on github</head>
+        <p>Increasingly popular alternative to sourceforge... things here are not officially
+          maintained or supported by TEI Consortium, though they are typically produced by key
+          members of the TEI Community</p>
+        <list>
+          <item>TEI Stylesheets : <emph>the</emph> XSLT script library </item>
+          <item>Several sample collections of TEI-encoded texts</item>
+          <item>Assorted plugins, scripts, configuration files for interacting with TEI
+            documents</item>
+        </list>
+      </div>
+
+      <div>
+        <head>https://github.com/TEIC/Stylesheets</head>
+        <p><graphic url="../../Graphics/git-stylesheets.png" height="80%"/></p>
+      </div>
+
+      <div>
+        <head>https://github.com/StanfordUniversityLibraries/ap_tei</head>
+        <p><graphic url="../../Graphics/git-stanford.png" height="80%"/></p>
+      </div>
+
+      <!--div><head>For example: </head>
+        <p><graphic url="../Graphics/git-teibp.png"/></p></div-->
+
+      <div>
+        <head>https://github.com/teichi/teichi </head>
+        <p><graphic url="../../Graphics/git-teichi.png" height="80%"/></p>
+      </div>
+
+
+
+      <!--      
+      <div rend="slide">
+        <head>Other resources</head>
+
+        <list>
+        
+          <item>TEI By Example: <ref target="http://tbe.kantl.be/TBE/"
+              >http://tbe.kantl.be/TBE/</ref></item>
+          <item>Unsworth et al <title>Electronic Textual Editing</title> (NY, MLA: 2006) </item>
+          <item>Links to other online tutorial materials: <ptr  target="http://www.tei-c.org/Support/Learn/tutorials.xml"/></item><item>Reading lists on TEI markup: in the Guidelines <ptr
+            target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/BIB.html#BIB-RDG"/>; at Zotero: <ptr
+              target="https://www.zotero.org/groups/tei/items"/> </item>
+        </list>
+
+      </div>
+-->
+
+      <!--<div rend="slide">
+        <head>Summary</head>
+        <list >
+          <item>Now that it's all in TEI XML, what next?</item>
+          <item>Varieties of XML delivery system</item>
+          <item>Some real life examples</item>
+        </list>
+      </div>
+      
+      <div rend="slide">
+        <head>A reminder: what is XML for?</head>
+        <list >
+          <item>exchanging data
+            <list type="ordered">
+              <item>between people</item>
+              <item>between people and machines</item>
+              <item>between machines</item>
+            </list>
+          </item>
+          <item>preserving information
+            <list type="ordered">
+              <item>independent of particular applications</item>
+              <item>independent of medium or hardware</item>
+            </list>
+          </item>
+        </list>
+        <p rend="box">But is XML any good as a means of <hi>delivering</hi> information?</p>
+      </div>
+      
+      -->
+
+      <div>
+        <head>What tools do we need?</head>
+        <p>
+          <list type="unordered">
+            <item>Appropriately expressive vocabularies (eg TEI XML)</item>
+            <item>Syntax-checking document creation tools (ie editors)</item>
+            <item>Document transformation tools</item>
+            <item>Document delivery tools</item>
+            <item>Document storage and management tools</item>
+            <item>Programming interfaces</item>
+            <item>Specialized applications </item>
+          </list>
+        </p>
+      </div>
+
+
+      <div rend="slide">
+        <head>What are the options?</head>
+        <list>
+          <item>for delivery: <list>
+              <item>transform into HTML on the server and deliver that</item>
+              <item>deliver XML; use clever client-side processing to handle it</item>
+            </list>
+          </item>
+          <item>for management: <list>
+              <item>the filesystem</item>
+              <item>a content management system</item>
+              <item>a database management system</item>
+            </list>
+          </item>
+          <item>for tools development: <list>
+              <item>generic digital library software</item>
+              <item>generic Linux-Apache-mySQL-PHP (LAMP) toolkit</item>
+              <item>generic xml database systems e.g. eXist, baseX ...</item>
+            </list>
+          </item>
+        </list>
+      </div>
+
+
+      <div rend="slide">
+        <head>Real life examples 1</head>
+
+        <p>The line of least resistance... <list>
+            <item>Here are some TEI files. You know what to do. <ptr
+                target="http://www.cnrtl.fr/corpus/estrepublicain/"/>
+            </item>
+            <item>Just the data... <ptr target="http://archimedespalimpsest.net"/>
+            </item>
+            <item>Oxford Text Archive (<ptr target="http://ota.ox.ac.uk/"/>)</item>
+
+            <item>handling multiple scripts: Samyukta Agama (<ptr
+                target="http://buddhistinformatics.ddbc.edu.tw/BZA/"/>)</item>
+
+           
+
+          </list></p>
+      </div>
+
+<!--
+
+      <div rend="slide">
+        <head>Real life examples 2</head>
+
+        <list>
+          <item>make the client do the work: Artamène, ou Le Grand Cyrus (<ptr
+              target="http://www.artamene.org/"/>)</item>
+          <item>combine image and text: Robert Graves' Diary (<ptr
+              target="http://www.tapor.uvic.ca:8080/cocoon/graves/index.xml"/>)</item>
+          <item>critical edition of biblical literature: (<ptr
+              target="http://www.sbl-site.org/publications/books_additionalmaterial.aspx"/>)</item>
+          <item>Old Bailey proceedings <ptr target="http://www.oldbaileyonline.org"/></item>
+          <item>digital archive: Swinburne Archive (<ptr
+              target="http://swinburnearchive.indiana.edu/swinburne/www/swinburne/"/>)</item>
+          <item>Ms cataloguing (<ptr target="http://handrit.is"/>) </item>
+          <item><ptr target="http://www.bvh.univ-tours.fr/Epistemon/index.htm"/>
+          </item>
+        </list>
+      </div>
+-->
+      <div>
+        <head>XTF : a digital library creator</head>
+
+        <list>
+          <item>Extensible Text Framework or XTF (<ptr
+              target="http://www.cdlib.org/inside/projects/xtf/"/>) is a collection of server-side
+            scripts from the California Digital Library</item>
+          <item>If you are already running Apache and Tomcat, and have access to a website, you can
+            set up a default xtf application for TEI files in 5 minutes</item>
+          <item>(more or less)</item>
+          <item>Library model</item>
+        </list>
+      </div>
+      <div>
+        <head>Built with XTF</head>
+        <list>
+          <item> Victorian Women Writers <ptr
+              target="http://webapp1.dlib.indiana.edu/vwwp/projectinfo/technical.do"/>
+          </item>
+          <item>Names and places in the works of Rabelais <ptr target="http://renom.univ-tours.fr/"
+            /></item>
+        </list>
+      </div>
+      <div>
+        <head>eXist : a back end for any XML collection</head>
+
+        <p><graphic url="../../Graphics/exist-works-like-this.png"/></p>
+
+        <p>Another comparable tool is <ptr target="basex.org"/></p>
+
+      </div>
+
+      <div>
+        <head>Built with eXist</head>
+        <list>
+          <item>Colonial Despatched: <ptr target="http://bcgenesis.uvic.ca/docsByDate.htm"/></item>
+          <item>Carl Maria van Weber Archive<ptr
+              target="http://weber-gesamtausgabe.de/en/A002068/Correspondence"/>
+          </item>
+        </list>
+
+     </div>
+      
+      <div>
+        <head>Using specialised software</head>
+        <list>
+          <item>Ancient Wisdoms : kiln <ptr
+            target="http://www.ancientwisdoms.ac.uk/method/software-install/"/></item>
+          
+          <item>Shelley-Godwin archive : shared canvas viewer <ptr
+              target="http://shelleygodwinarchive.org/about"/>
+          </item>
+          <item>Letters and mss of 19th c Berlin 
+            <ptr
+              target="http://tei.ibi.hu-berlin.de/berliner-intellektuelle/manuscript?Sandmann+en#5"
+            />
+          </item>
+          <item>Bibliotheque Virtuelle des Humanistes : philologica <ptr
+              target="http://www.bvh.univ-tours.fr/Epistemon/philologic.asp"/>
+          </item>
+           
+        </list>
+      </div>
+      <div>
+        <head>For more examples...</head>
+        <p rend="box"> http://www.tei-c.org/Activities/Projects</p>
+      </div>
+
+      <div rend="slide">
+        <head>Conclusions</head>
+        <list>
+          <item>even the simplest of approaches allows you to share your encoding, your
+            analysis</item>
+          <item>the more ambitious your markup, the more sophisticated the possibilities</item>
+          <item>there is a common set of techniques and tools: you don't need to re-invent the
+            wheel</item>
+          <item>TEI XML empowers the data provider: you determine what can be done with your
+            materials</item>
+
+        </list>
+      </div>
+    </body>
+  </text>
+</TEI>

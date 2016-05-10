@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Welcome to the TEI Community</title>
+      </titleStmt>
+
+      <publicationStmt>
+        <p/>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Various previous talks, TEI Guidelines, etc.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+      <div rend="slide"><head>What is the TEI?</head>
+        <p><graphic url="../Graphics/whatistei.png" height="50%"/></p>
+        <list><item>an organization or an institution?</item><item>a club or a religion or a fashion?</item><item>a technical specification, or a framework for making one?</item><item>a community... a way of thinking... a shared perception</item></list>
+</div>
+      
+      <div rend="slide">        <head>So what exactly is the TEI?</head>
+        <p>Originally, <hi>Text Encoding for Interchange</hi> ... an initiative intended to produce
+          recommendations which would</p>
+        <list>
+          <item>facilitate the<hi>creation</hi>, <hi>exchange</hi>, and <hi>integration</hi> of
+            textual data in digital form <list>
+              <item>every kind of text</item>
+              <item>in every language</item>
+              <item>for any purpose, from any culture</item>
+            </list></item>
+          <item>The TEI recommendations are intended for ...<list>
+              <item>beginners, seeking well-established solutions to well-understood problems</item>
+              <item>experts, seeking to create new solutions</item>
+            </list></item>
+        </list>
+      </div>
+
+      <div>
+        <head>Its original design goals</head>
+        <list>
+          <item>provide <hi>recommendations</hi> derived from the existing consensus, where this
+            could be determined </item>
+          <item>prefers <hi>general solutions</hi> to discipline-specific ones</item>
+          <item>supporting both <hi>specialisation</hi> and <hi>extension</hi></item>
+        </list>
+        <p rend="box">The TEI was not designed to provide a complete answer "out of the box"</p>
+      </div>
+
+
+      <div rend="slide">
+        <head>Where did the TEI come from ? </head>
+        <list type="unordered">
+          <item>In the 1990s, it was one of the first major projects in the research community later
+            to be known as "digital humanities"... <list type="unordered">
+              <item>sponsored by three professional associations (ACL, ACH, ALLC) </item>
+              <item>Financed 1990-1994 by the NEH, EU LE Programme and SSHRC </item>
+            </list>
+          </item>
+          <item>Major influences <list type="unordered">
+              <item>digital libraries and archives</item>
+              <item>language engineering </item>
+              <item>scholarly editing of literary and historical sources</item>
+            </list></item>
+        </list>
+      </div>
+
+      <div>
+        <head>TheTEI then</head>
+        <figure rend="center">
+          <graphic url="../Graphics/tei-structure-1991.png" height="90%"/>
+        </figure>
+      </div>
+
+      <div>
+        <head>The TEI now</head>
+        <list>
+
+          <item>International membership consortium established 2000 (voir <ref
+              target="http://www.tei-c.org">http://www.tei-c.org/</ref>)</item>
+          <item>The TEI <term>Guidelines</term>, originally envisaged as a single (large) reference
+            manual, increasingly used as a modular online resource</item>
+          <item>The Guidelines embody a broad consensus about the significant particularities of a
+            huge range of textual materials </item>
+          <item>expressed both in prose and by means of formal definitions constituting a kind of
+            ontology</item>
+          <item>the definitions can be expressed as a grammar or schema: <list>
+              <item>TEI P1-P3 (1991-1999) : SGML DTD </item>
+              <item>TEI P4 (2000) : SGML or XML DTD</item>
+              <item>TEI P5 (2005-) XML DTD, W3C Schema, or RelaxNG</item>
+            </list>
+          </item>
+          <item>The TEI is a modular system, which must be customized for particular
+            applications</item>
+        </list>
+        <p rend="box"> ... the TEI is owned and developed by an active international community</p>
+      </div>
+
+
+      <div>
+        <head>Organisation of the TEI</head>
+        <figure>
+          <graphic height="80%" url="../Graphics/tei-community.png"/>
+        </figure>
+      </div>
+
+      <div rend="slide">
+        <head>TEI Website</head>
+        <p>
+          <list>
+            <item>Main website for the TEI community</item>
+            <item>Runs versions of Roma, OxGarage, etc.</item>
+            <item>Maintains a vault of old material, including in <ref
+                target="http://www.tei-c.org/Vault/P5/">/Vault/P5/</ref> all P5 releases to
+              date</item>
+            <item>URL: <ref target="http://www.tei-c.org/">http://www.tei-c.org/</ref>
+            </item>
+          </list>
+        </p>
+      </div>
+      <div>
+        <head>http://www.tei-c.org/</head>
+        <p>
+          <graphic height="90%" url="../Graphics/tei-website.png"/>
+        </p>
+      </div>
+      <div>
+        <head>http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index-toc.html</head>
+        <p>
+          <graphic height="80%" url="../Graphics/tei-guidelines1.png"/>
+        </p>
+      </div>
+      <div>
+        <head>http://www.tei-c.org/release/doc/tei-p5-doc/en/html/MS.html</head>
+        <p>
+          <graphic height="80%" url="../Graphics/tei-guidelines2.png"/>
+        </p>
+      </div>
+      <div>
+        <head>http://www.tei-c.org/release/doc/tei-p5-doc/en/html/MS.html#msdates</head>
+        <p>
+          <graphic height="80%" url="../Graphics/tei-guidelines3.png"/>
+        </p>
+      </div>
+      <div>
+        <head> http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-history.html</head>
+        <p>
+          <graphic height="80%" url="../Graphics/tei-guidelines4.png"/>
+        </p>
+      </div>
+
+      <div rend="slide">
+        <head>TEI Wiki</head>
+        <p>
+          <list>
+            <item>Open to the TEI community for editing </item>
+            <item>Sample files, Stylesheets, Customisations </item>
+            <item>FAQs, SIGs work, Information on Tools</item>
+            <item>And much more... </item>
+            <item>
+              <ref target="http://wiki.tei-c.org/">http://wiki.tei-c.org/</ref>
+            </item>
+          </list>
+        </p></div>
+        <div>
+          <head>http://wiki.tei-c.org/index.php/Main_Page</head>
+          <p>
+            <graphic height="90%" url="../Graphics/teiwiki-main.png"/>
+          </p>
+        </div>
+       
+        <div>
+          <head>http://wiki.tei-c.org/index.php/Category:XSLT</head>
+          <p>
+            <graphic height="90%" url="../Graphics/teiwiki-xslt.png"/>
+          </p>
+        </div>
+        <div>
+          <head>http://wiki.tei-c.org/index.php/Count-Elements.xsl</head>
+          <p>
+            <graphic height="90%" url="../Graphics/teiwiki-countElements.png"/>
+          </p>
+        </div>
+
+      <div><head>The TEI Journal</head>
+<p><graphic url="../Graphics/teijournal-1.png" height="75%"/></p>
+  <list>
+  <item>The TEI's open access peer-reviewed scholarly journal</item><item>Six issues since 2011  </item><item>Journal of record for annual TEI Conferences</item><item>Thematic issues</item>
+</list>
+</div>
+      <div><head></head>
+      <p><graphic url="../Graphics/teijournal-2.png"/></p>
+      </div>
+      <div rend="slide">
+        <head>TEI on SourceForge </head>
+        <p>
+          <list>
+            <item>Main place of work for the TEI Council (aside from publicly archived mailing
+              list)</item>
+            <item>Place to submit bugs and feature requests</item>
+            <item>Place to download the official releases </item>
+            <item>Hosts the TEI Subversion repository  (up-to-minute changes)</item>
+            <item>
+              <ref target="http://tei.sourceforge.net/">http://tei.sourceforge.net/</ref>
+            </item>
+          </list>
+        </p>
+      </div>
+      <div>
+        <head>http://tei.sourceforge.net</head>
+        <p>
+          <graphic height="90%" url="../Graphics/teisf-main.png"/>
+        </p>
+      </div>
+      <div>
+        <head>http://sourceforge.net/p/tei/feature-requests/</head>
+        <p>
+          <graphic height="80%" url="../Graphics/teisf-tracker1.png"/>
+        </p>
+      </div>
+      <div>
+        <head>http://sourceforge.net/p/tei/bugs/558/</head>
+        <p>
+          <graphic height="80%" url="../Graphics/teisf-tracker2.png"/>
+        </p>
+      </div>
+      <div>
+        <head>http://tei.svn.sourceforge.net/viewvc/tei/trunk/P5/Source/Guidelines/en/CH-LanguagesCharacterSets.xml?r1=10541&amp;r2=10622</head>
+        <p>
+          <graphic height="80%" url="../Graphics/teisf-svnDiff.png"/>
+        </p>
+      </div>
+
+      <div rend="slide">
+        <head>TEI-L Mailing List</head>
+        <p>
+          <list>
+            <item>Main place to ask questions</item>
+            <item>Technical and basic discussions</item>
+            <item>Don't be intimidated, just be clear</item>
+            <item>
+              <ref target="http://purl.org/tei/tei-l">http://purl.org/tei/tei-l</ref>
+            </item>
+          </list>
+        </p>
+      </div>
+      <div>
+        <head>http://purl.org/tei/tei-l</head>
+        <p>
+          <graphic height="80%" url="../Graphics/tei-mailingList.png"/>
+        </p>
+      </div>
+
+      <div>
+        <head>TEI on github</head>
+        <p>Increasingly popular alternative to sourceforge... things here are not officially
+          maintained or supported by TEI Consortium, though they are typically produced by key
+          members of the TEI Community</p>
+        <list>
+          <item>TEI Stylesheets : <emph>the</emph> XSLT script library </item>
+          <item>Several sample collections of TEI-encoded texts</item>
+          <item>Assorted plugins, scripts, configuration files for interacting with TEI
+            documents</item>
+        </list>
+      </div>
+      
+      <div><head>https://github.com/TEIC/Stylesheets</head>
+        <p><graphic url="../Graphics/git-stylesheets.png" height="80%"/></p></div>
+      
+      <div><head>https://github.com/StanfordUniversityLibraries/ap_tei</head>
+        <p><graphic url="../Graphics/git-stanford.png" height="80%"/></p></div>
+      
+      <!--div><head>For example: </head>
+        <p><graphic url="../Graphics/git-teibp.png"/></p></div-->
+      
+      <div><head>https://github.com/teichi/teichi </head>
+        <p><graphic url="../Graphics/git-teichi.png" height="80%"/></p></div>
+      
+      <div rend="slide">
+        <head>Other resources</head>
+
+        <list>
+        
+          <item>TEI By Example: <ref target="http://tbe.kantl.be/TBE/"
+              >http://tbe.kantl.be/TBE/</ref></item>
+          <item>Unsworth et al <title>Electronic Textual Editing</title> (NY, MLA: 2006) </item>
+          <item>Links to other online tutorial materials: <ptr  target="http://www.tei-c.org/Support/Learn/tutorials.xml"/></item><item>Reading lists on TEI markup: in the Guidelines <ptr
+            target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/BIB.html#BIB-RDG"/>; at Zotero: <ptr
+              target="https://www.zotero.org/groups/tei/items"/> </item>
+        </list>
+
+      </div>
+    </body>
+  </text>
+</TEI>

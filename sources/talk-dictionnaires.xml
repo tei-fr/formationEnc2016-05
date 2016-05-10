@@ -1,0 +1,656 @@
+<?xml version="1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="fr">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TEI pour les dictionnaires</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>MEET</publisher>
+        <availability>
+          <p>Freely available for use and derivative works under a Creative Commons Attribution
+            license.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Various previous talks, TEI Guidelines, etc.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change when="2013-05-13">Revised for Barcelona
+      </change>
+      <change when="2013-03-02">As used for Lille, and Paris
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+<!--
+      <div rend="slide">
+
+        <head>Qu'est-ce que la Text Encoding Initiative (TEI) ?</head>
+<p>C'est d'abord <soCalled>L'Initiative de l'Encodage Textuel</soCalled>....
+        <list>
+          <item rend="pause">un ensemble de <soCalled>recommandations</soCalled> pour l'encodage des ressources numériques avec XML</item>
+          <item rend="pause">un infrastructure internationale responsable de la maintenance, de l'évolution, et de la distribution de ces recommandations</item>
+          <item rend="pause">une communauté internationale d'utilisateurs de ces recommandations</item>
+</list>
+<p rend="box">Plutot un cadre permettant de réflechir sur ce que c'est qu'un texte numérisé qu'un "standard" fixe.</p></p>
+      </div>
+ 
+      <div>
+        <head>L'encodage : une technologie ancienne qui facilite et explicite nos lectures </head>
+        <list>
+          <item>L'interprétation des mots d'un texte n'est pas aléatoire : elle est guidee par les signes de ponctuation, par les changements de police, par leur disposition spatiale etc !</item>
+          <item>Pour indiquer les même choses (et d'autres) dans un texte numérique, une balisage devient essentiel</item>
+          <item>Le balisage sert ainsi à exprimer nos lectures préalables</item>
+<item>Le balisage rend possible une polyvalence des ressources textuelles et induit des reflexions profondes sur la materialité des textes qu'elles impliquent</item>
+        </list>
+      </div>
+      
+ <div rend="slide">
+        <head>Qu'est-ce qu'on fait en numérisant un texte?</head>
+        <figure>
+          <graphic url="../Graphics/model-fr.png"/>
+        </figure>
+      </div>
+
+      <div>
+        <head>La TEI : un ensemble de définitions de balise</head>
+        <list>
+          <item>Le balisage XML n'a pas de sémantique intrinsèque</item>
+          <item>La TEI lui apporte des règles d'usage et de signification</item>
+          <item>Mais en même temps, la TEI doit permettre l'extension et la modification de ces règles</item>
+<item>Elle reste un cadre, un "framework", d'encodage qui vous propose plusieurs choix de balisage</item>
+        </list>
+      </div>
+
+      <div rend="slide">
+        <head>Les enjeux de la TEI</head>
+        <p><hi>"Text Encoding for Interchange"</hi></p>
+        <list>
+          <item>faciliter la <hi>création</hi>, l'<hi>échange</hi>, et l'<hi>intégration</hi> des
+            données textuelles informatisées <list>
+              <item>toute sorte de textes</item>
+              <item>toutes les langues </item>
+              <item>toute origine temporelle ou culturelle</item>
+            </list></item>
+          <item>La TEI s'adresse également ...<list>
+              <item>aux débutants, cherchant des solutions bien connues et consensuelles</item>
+              <item>aux experts, cherchant à créer de nouvelles solutions</item>
+            </list></item>
+        </list>
+      </div>
+
+      <div>
+        <head>Les buts de la TEI</head>
+        <list>
+          <item>faire des <hi>recommandations</hi> qui se basent sur un consensus existant</item>
+          <item>préférer les <hi>solutions générales</hi> à celles spécifiques à une discipline</item>
+          <item>en même temps permettre la <hi>spécialisation</hi> et <hi>l'extension</hi></item>
+        </list>
+
+      </div>
+
+
+      <div rend="slide">
+        <head>D'où est sortie la TEI ? </head>
+        <list type="unordered">
+          <item>Dans les années 90, c'était un projet de recherche en "digital humanities"... <list
+              type="unordered">
+              <item>Parrainé par trois associations érudites </item>
+              <item>Financé 1990-1994 par NEH, EU LE Programme et SSHRC au Canada</item>
+            </list>
+          </item>
+          <item>Influences majeures <list type="unordered">
+              <item>bibliothèques et archives numerisées</item>
+              <item>lexicographie et ingénierie linguistique</item>
+              <item>édition des sources littéraires ou historiques</item>
+            </list></item>
+          <item>Consortium international établi en 1999 (voir <ref target="http://www.tei-c.org"
+              >http://www.tei-c.org/</ref>)</item>
+        </list>
+      </div>
+
+
+<div>
+<figure>
+<graphic url="../Graphics/theGuidelines.jpg"/>
+</figure>
+</div>
+
+      <div>
+        <head>Qu'est-ce que la TEI aujourd'hui ?</head>
+        <list>
+          <item>Un ensemble de <term>Guidelines</term> (lignes directrices)  peu
+            prescriptives</item>
+          <item>représentant un consensus au sujet des distinctions significatives dans un vaste
+            ensemble de matériaux textuels</item>
+          <item>qui s'expriment en deux gros volumes de prose et un ensemble de définitions
+            formelles </item>
+          <item>ces définitions peuvent être exprimées en plusieurs langues schéma: <list>
+              <item>TEI P1-P3 (1991-1999) : en SGML DTD </item>
+              <item>TEI P4 (2000) : soit en SGML soit en XML DTD</item>
+              <item>TEI P5 (2005-) soit en XML DTD, en W3C Schema, ou en RelaxNG</item>
+            </list>
+          </item>
+          <item>derrière cet ensemble se trouve un modèle formel ("conceptual schema") de plus en
+            plus élaboré, organisé en système de classes, voire en <hi>ontologie</hi></item>
+        </list>
+        <p rend="box"> ... et une communauté internationale active</p>
+      </div>
+
+<div><head>Organisation de la TEI</head>
+<figure><graphic height="80%" url="../Graphics/tei-community.png"/></figure>
+</div>
+
+
+      <div>
+        <head>Il n'y a pas de &#x201C;TEI dtd&#x201D;</head>
+
+        <list type="unordered">
+          <item> TEI est un système <emph>modulaire</emph>. On s'en sert pour créer un système
+            d'encodage selon ses propres besoins, en sélectionnant des <term>modules</term>
+            spécifiques</item>
+          <item>Chaque module définit un groupe d'éléments (et leurs attributs)</item>
+          <item>on peut sélectionner les éléments voulus, et même en changer des propriétés </item>
+          <item>on peut y mélanger des éléments nouveaux, ou bien natifs ou bien d'autres
+            standards</item>
+        </list>
+      </div>
+
+
+      <div>
+        <head>L'outillage TEI</head>
+<list>
+        <item>Il faut se méfier : la TEI ne vous propose aucune solution toute faite ("out of the box")</item>
+<item>Mais les utilisateurs de la TEI sont partout dans le monde scientifique, et ils parlent (à peu près) la même langue... </item>
+<item>Vous trouverez donc sans probleme des instances de personalisation TEI dans plusieurs domaines : y compris les dictionnaires </item>
+<item>Et on peut se servir de n'importe quelle outillage XML -\- parce
+que la TEI est 100% standard XML</item>
+</list>
+</div>
+-->
+<div><head>Dictionnaires</head>
+<p>La dictionnaire ancienne nous pose d'une manière très pointue des questionnements fondamentaux autour de l'encodage... essentiellement, qu'est-ce que c'est que nous allons baliser?
+<!-- The early print dictionary poses in acute form the fundamental ontological problem of all encoding endeavour: what exactly are we encoding?--></p>
+</div>
+
+<div><head>Dictionnaire de l'Académie françoise, I, 47 (1762)</head>
+<p><graphic url="dicAcFrI.jpg"/></p>
+</div>
+
+<!--div><head>Une bete a trois tetes!</head>
+<p><graphic height="60%" url="cerberus.jpg"/></p>
+<list>
+<item>typographic view : page layout, font usage, visual appearance </item>
+<item>textual view : sequence of words and punctuation in reading order</item>
+<item>lexical view  : the information conveyed irrespective of its form</item>
+</list>
+</div-->
+<div><head>Une bete à trois têtes!</head>
+<p rend='center'><graphic height="60%" url="cerberus.jpg"/></p>
+<list>
+<item>perspective typographique : mise en page, usage des polices, aspects visuels </item>
+<item>perspective textuelle : séquence de mots et de signes de ponctuation, à lire en ordre</item>
+<item>perspective lexical  : l'information portée par un lexique sans  considération de sa mise en forme</item>
+</list>
+</div>
+
+
+
+ <div>
+ <head>Variétés de dictionnaire</head>
+<p>En plus, les dictionnaires ne sont pas toutes pareilles.
+On peut les distinguer selon plusieurs axes :
+<list>
+<item>monolingue ou multilingue</item>
+<item>glossaire (mot + glosse)</item>
+<item>historique (mot, + évolution des sens dans le temps)</item>
+<item>thésaurus (organisation selon conceptes abstraites, avec attestations de mots)</item>
+<item>à partir d'une depouillement systématique d'un corpus textuel, ou à partir des intuitions linguistiques</item>
+<item>à l'usage des machines ou des êtres humains</item>
+</list></p>
+<p rend="block">Les propositions de la TEI prennent une perspective sémasiologique (et non onomasiologique) et (en principe) s'orientent plus vers les lexiques destinés à une lecture humaine qu'à ceux destinés à un traîtement automatisé.</p>   
+</div>
+
+<div><head>Organisation fondamental</head>
+<list>
+<item>Comme tout autre texte, une dictionnaire possède des pièces liminaires ... </item>
+<item>.. et un "corps" partagé en divisions</item>
+<item>Mais ces divisions d'habitude ne contiennent que des <term>entrées</term></item>
+<item>Chaque entrée est structurée, typiquement d'une manière hiérarchique</item>
+</list>
+</div>
+        <div>
+          <head>Elements TEI corréspondants </head>
+          <list>
+            <item><gi>entry</gi> pour une entrée dont la structure interne ressemble aux attentes de la  TEI </item>
+
+            <item><gi>entryFree</gi> pour une entrée dont la structure est plus ou moins aleatoire, et ne conforme pas aux attetes de l'element <gi>entry</gi></item>
+            <item><gi>superEntry</gi> une groupe d'entrees consecutives, consideree dans une dictionnaire de constituer un seul unite</item>
+          </list>
+<p rend="block">Ces elements  constituent la classe <ident>model.entryLike</ident></p>
+        </div>
+
+<div><head>Par exemple</head>
+<p><graphic url="cotgrave.png"/></p>
+</div>
+
+<div><head>A l'intérieur d'une entrée...</head>
+<p>Nous attendons :
+<list>
+<item>la forme orthographique servant comme lemme de l'entrée</item>
+<item>des définitions </item>
+<item>des renseignements etymologiques</item>
+<item>des renseignements grammaticales</item>
+<item>des exemples d'usage, veritables ou imaginaires</item>
+<item>des liens vers d'autres entrees</item>
+</list>
+</p>
+<p>Ou bien :
+<list>
+<item>des informations sur d'autres mots homographes</item>
+<item>des informations sur des senses distinctes de ce mot</item>
+</list></p>
+<p rend="box">ou une sequence sans organisation particuliere ou  peuvent figurertous ces objets</p>
+</div>
+
+        <div>
+          <head>TEI nous fournit avec...</head>
+          <list>
+            <item><gi>hom</gi> (homograph)  regroupe les informations relatives à un homographe dans une entrée</item>
+            <item><gi>sense</gi>  regroupe toutes les informations relatives à un des sens d’un mot dans une entrée de dictionnaire (définitions, exemples, équivalents linguistiques, etc.)</item>
+          </list>
+        </div>
+
+
+        <div>
+          <head>Et dans ces structures ... </head>
+          <list>
+            <item><gi>form</gi> regroupe toutes les informations relatives à la morphologie et à la prononciation d'une entrée </item>
+            <item><gi>gramGrp</gi> regroupe des informations morphosyntaxiques sur un item lexical</item>
+            <item><gi>def</gi>contient une définition </item>
+            <item><gi>etym</gi> contient des informations etymologiques
+            </item>
+          </list>
+        </div>
+
+<div><head>Un exemple célèbre </head>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+<entry>	<form>
+		<orth>OATS</orth>,
+	</form> 
+	<gramGrp>
+		<pos>n.</pos>
+		<number>s.</number>
+	</gramGrp> 
+	<etym>[aten, Sax.]</etym>
+	<def>A grain, which in England is  generally given to horses; but in Scotland supports the people.</def>
+</entry>
+</egXML></div>
+
+<div><head>(Bien-sûr, la vie n'est pas aussi simple...)</head>
+<p>Surtout dans les lexiques anciens, nous allons trouver beaucoup de matières que nous souhaitons distinguer, mais qui peuvent figurer n'importe où dans la structure d'une entrée.</p>
+<p>La TEI nous propose  :
+<list>
+            <item><gi>cit</gi> contient un exemple d'usage </item>
+	    <item><gi>lbl</gi> contient un métacommentaire ou labelisation quelqconque</item>
+            <item><gi>usg</gi> une type spécial de <gi>lbl</gi> indiquant par ex la do,aine d'application d'un mot</item>
+            <item><gi>xr</gi> contient un lien vers une autre entrée</item>
+            <item><gi>re</gi> contient une entrée reliée</item>
+            <item><gi>note</gi> contient une annotation.</item>
+</list></p>
+<p rend="box">La notion TEI de  <term>classe d'elements</term> est tres utile à cet égard</p>
+</div>
+    
+<div>
+          <head>Au sein d'un <gi>form</gi></head>
+          <list>
+            <item><gi>orth</gi> donne l’orthographe du mot concerné</item>
+            <item><gi>pron</gi> donne la prononciation du mot concerné</item>
+            <item><gi>hyph</gi> donne la troncature  du mot concerné</item>
+            <item><gi>syll</gi> donne la syllabisation du mot concerné.</item>
+            <item><gi>stress</gi> donne le modèle d’accentuation du mot concerné</item>
+          </list>
+    
+    </div>
+
+
+        <div>
+          <head>Par exemple</head>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <entry>
+              <form>
+                <orth>competitor</orth>
+                <hyph>com|peti|tor</hyph>
+                <pron>k@m"petit@(r)</pron>
+              </form>
+             </entry>
+          </egXML>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <entry>
+              <form>
+                <orth>area</orth>
+                 <hyph>ar|ea</hyph>
+		 <syll>ar|e|a</syll>
+              </form>
+             </entry>
+          </egXML>
+<!-- W7 according to P5 -->
+        </div>
+
+        <div>
+          <head>On peut regrouper plusieurs formes flexiones dans un seul  <gi>form</gi></head>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <form>
+              <orth>brag</orth>
+            </form>
+            <gramGrp>
+              <pos>vb</pos>
+            </gramGrp>
+            <form type="infl">
+              <orth>brags</orth>
+              <orth>bragging</orth>
+              <orth>bragged</orth>            </form>
+          </egXML>
+<!-- CED in P5 -->
+<p>Ou (peut etre mieux) les presenter comme des forms distincts </p>
+         </div>
+
+<div><head>Les Forms peuvent bien s'imbriquer siu besoin est</head>
+
+<eg><![CDATA[ hospitaller or U.S. hospitaler ("hQspIt@l@) ]]></eg>
+  <p>Pour indiquer que la même prononciation s'associe aux deux formes orthographiques, nous allons imbriquer l'épellation américaine dans sa version britannique :
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<form>
+ <orth>hospitaller</orth>
+ <form>
+  <usg type="geo">U.S.</usg>
+  <orth>hospitaler</orth>
+ </form>
+ <pron>"hQspIt@l@</pron>
+</form>
+</egXML>
+   </p></div>
+
+<div><head>Les formes s'associent normalement avec des informations linguistiques</head>
+
+<p><graphic url="ascendance-1.png"/></p>
+
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<entry xml:id="ascendance">
+<form>
+<orth>ASCENDANCE</orth>
+<pron>a-ssan-dan-s'</pron>
+</form>
+<gramGrp>
+<pos>s.</pos>
+<gen>f.</gen>
+</gramGrp>
+</entry>
+</egXML>
+
+<p rend="box">L'élément <gi>gramGrp</gi> est un <term>crystal</term> qui peut apparaître a l'interieur d'un  <gi>form</gi> ou au meme niveau, comme besoin est</p>
+</div>
+     <div>
+          <head>Composants du <gi>gramGrp</gi></head>
+<p>Des informations morpho-linguistiques qui s'appliquent a une forme ou une entree ou a l'un de ces composants, peuvent etre fournies :
+<list>
+<item>en se servant de l'element generique <gi>gram</gi> avec son attribut <att>type</att></item>
+<item>en se servant d'un des elements precis constituants la classe <ident>model.morphLike</ident> class (a savoir, <gi>pos</gi>; <gi>gen</gi>(gender) ; <gi>number</gi>; <gi>case</gi>; <gi>per</gi> (person); <gi>tns</gi> (tense); <gi>subc</gi> (subcategory); <gi>colloc</gi> (collocate);  <gi>mood</gi>; <gi>iType</gi> (inflectional class) ... </item>
+<item>facultativement avec des attributs normalisants </item>
+</list></p></div>
+
+<div><head>Par exemple</head>
+
+<p><graphic url="medire.png"/></p>
+
+ <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
+<form> <orth>médire</orth></form>
+<gramGrp>
+ <colloc type="prep">de</colloc>
+ <pos>v. </pos>
+ <subc>t. ind.</subc>
+</gramGrp>
+</egXML>
+ <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
+<form> <orth>médire</orth></form>
+<gramGrp>
+ <gram type="collocPrep">de</gram>
+ <gram type="pos">v</gram>
+ <gram type="subc">t ind</gram>
+</gramGrp>
+</egXML>
+
+        </div>
+
+<div><head>Comment distinguer son "n" de son "sb"</head>
+<p rend="box">Chaque dictionnaire encode de sa propre maniere les annotations linguistiques.</p>
+<p>Deux methodes sont proposes pour la normalisation de ces codes :
+<list>
+<item>les attributs <att>norm</att> et <att>expand</att>  fournissent des valeurs normalises (selon votre propre systeme idiosyncratique)</item>
+<item> <att>dcr:datCat</att> et <att>dcr:datCatValue</att> fournissent des valeurs selectionnes dans le  Data Category Registry (http://www.isocat.org) de l'ISO</item>
+</list>
+ <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<pos norm="noun" expand="substantive">sb</pos>
+</egXML>
+ <egXML xmlns="http://www.tei-c.org/ns/Examples" xmlns:dcr="http://www.isocat.org/ns/dcr">
+<pos dcr:datcat="http://www.isocat.org/datcat/DC-1345" 
+dcr:valueDatCat="http://www.isocat.org/datcat/DC-1256">sb</pos>
+</egXML>
+
+</p></div>
+
+
+<div><head>Les <gi>sense</gi>s d'une entree</head>
+<list>
+<item>regroupe d'autres elements pour exprimer une seule  <q>signification</q> ou un <q>sens</q> pour le mot-vedette</item>
+<item>normalement contient une  definition (<gi>def</gi>) plus des  citations (<gi>cit</gi>) facultativement avec des etiquettes pour preciser l'usage  (<gi>usg</gi>) </item>
+<item>peut aussi contenir un  <gi>sense</gi> imbrique, pour representer une hierarchie de sens</item>
+<item>... et d'autres elements selectionnes dans la classe  <ident>model.entryPart.top</ident> par exemple <gi>dictScrap</gi>,  <gi>etym</gi> <gi>xr</gi>, etc.</item>
+</list></div>
+
+<div><head>Exemple: La pomme de Dr Johnson</head>
+<p><graphic url="apple-johnson.png" height="20%"/></p>
+
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny"><entry>
+              <form type="lemma">
+                <orth rend="ALLCAPS">A'PPLE</orth>. <gramGrp><pos norm="noun">n.s.</pos></gramGrp>
+              </form>
+              <etym>[<foreign xml:lang="ang">æppel</foreign>, <lang>Saxon</lang>.] </etym>
+              <sense n="1">
+                <def>The fruit of the apple tree.</def>
+                <cit>
+                  <quote><l>Tall thriving trees confess'd the fruitful mold;</l>
+                    <l>The red'ning <hi>apple</hi> ripens here to gold.</l></quote>
+                  <bibl>Pope's <title>Odyssey</title>.</bibl>
+                </cit>
+              </sense>
+              <sense n="2">
+                <def>The pupil of the eye.</def>
+                <cit>
+                  <quote> He instructed him; he kept him as the apple of his eye.</quote>
+                  <bibl>Deut. xxxii. 10.</bibl>
+                </cit>
+              </sense></entry>
+          </egXML>
+</div>
+
+<div><head>L'element <gi>cit</gi> </head>
+<list>
+<item>tres utile dans tous les lieux ou un bout de texte est cite comme exemple, traduction, etc.</item>
+<item>souvent (mais pas forcement) associe avec un reference bibliographique indicatif de ses origines</item>
+</list>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
+            <entry>
+              <form>
+                <orth>rémoulade</orth>
+                <pron>Remulad</pron>
+              </form>
+              <gramGrp>
+                <pos>n</pos><gen>f</gen>
+              </gramGrp>
+              <cit type="translation" xml:lang="en">
+                <quote>remoulade</quote>
+                <quote>rémoulade</quote>
+                <def>dressing containing mustard and herbs</def>
+              </cit>
+            </entry>
+          </egXML>
+        </div>
+
+<div><head>Raccourcis</head>
+<list>
+<item>Ceux qui font les dictionnaires adorent les raccourcis, les pointeurs et toute manière d'éviter la répétition </item>
+<item>TEI fournit des élém,ents génériques  <gi>abbr</gi> et <gi>expan</gi>, ainsi que <gi>ptr</gi> et <gi>ref</gi></item>
+<item>Pour les dictionnaires sont fournis des pointeurs spécialisés :
+<list>
+<item><gi>oRef</gi> : indique une référence symbolique à la/aux forme(s) orthographique(s) du mot-vedette. 
+<list><item>l'attribut <att>type</att> indique  la réalisation de l'<gi>oRef</gi> : comme signe typographique particuliere, lettre initiale, etc.</item>
+<item>l'attribut <att>target</att> attribute de quel  <gi>orth</gi> il s'agit (si besoin est) </item></list></item>
+<item><gi>oVar</gi> : contient une référence à une/des variante(s) orthographique(s) du mot-vedette</item>
+<item><gi>pVar</gi> et <gi>pRef</gi> font pareille pour les éléments <gi>pron</gi></item>
+</list>
+</item></list>    
+</div>
+
+<div><head>Verbosité</head>
+<list>
+<item>Dictionnaires (surtout les imprimés) font des abrègements pour de raisons compréhensibles de point de vue et financière et intéllectuel </item>
+<item>Quand même, des bytes supplémentaires ne coûtent pas cher, et ammènent  une amélioration d'utilité importante</item>
+<item>(Mais risquent d'endommager la conservation de l'apparence des originaux)</item>
+</list>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+	  <gramGrp>
+	    <pos>s.</pos>
+	    <gen>f.</gen>
+	  </gramGrp>
+</egXML>
+<p>est plus explicite et ainsi plus traitable que
+</p>        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+	  <gramGrp><gram>s. f.</gram></gramGrp>
+</egXML>
+</div>
+
+
+<div><head>Exemples : usage de <gi>oRef</gi></head>
+
+<eg><![CDATA[The Royal A. of Arts]]></eg>
+<egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
+      <entry>
+        <form><orth>academy</orth></form>
+        <cit type="example">
+          <quote>The Royal <oRef type="cap"/> of Arts</quote>
+        </cit>
+      </entry>
+    </egXML>
+<p><graphic url="apple-hachette-1.png"/></p>
+<egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
+        <re type="compound">
+          <form>
+            <orth><oRef/>tree</orth>
+          </form>
+          <gramGrp> <pos>n</pos> </gramGrp>
+          <cit type="translation">
+            <form>
+              <orth>pommier</orth>
+              <gramGrp><gen>m</gen></gramGrp>
+            </form>
+          </cit>
+        </re>
+</egXML>
+</div>
+<div><head>Une dictionnaire multilingue presentera des sens divers en d'autres langues</head>
+<p><graphic url="cotgrave-1.png"/></p>
+<egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
+<entry>
+<form><orth>Pomme</orth></form>
+<gramGrp><gen>m.</gen></gramGrp>
+<sense>
+<cit type="translation" xml:lang="en">Cyder</cit>;
+<def xml:lang="en">drinke made of apples.</def>
+</sense>
+</entry>
+</egXML>
+</div>
+
+
+<div><head>La polysemie est a attendre dans les dictionnaire multilingues</head>
+
+<p><graphic url="apple-hachette.png"/></p>
+</div>
+
+<div><head>Deux traductions de  <q>apple</q>  </head>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny">
+      <entry>
+        <form>
+          <orth>apple</orth>
+          <pron>'æpl</pron>
+        </form>
+        <sense n="I">
+          <gramGrp><pos>n</pos></gramGrp>
+          <cit type="translation">
+            <q xml:lang="fr">pomme</q>
+            <gramGrp><gen>f</gen></gramGrp>
+          </cit>
+          <cit type="example">
+            <q>the (Big) Apple</q>
+            <def>New York</def>
+          </cit>
+        </sense>
+        <sense n="II">
+          <gramGrp>
+            <pos>noun modifier</pos>
+          </gramGrp>
+          <usg type="colloc">juice, peel</usg>
+          <cit type="translation">
+            <q xml:lang="fr">de pomme</q>
+          </cit>
+	  <usg type="colloc">tart</usg>
+          <cit type="translation">
+            <q xml:lang="fr">aux pommes</q>
+          </cit>
+        </sense>
+</entry></egXML></div>
+
+<div><head>Comment profiter de tout ce balisage?</head>
+
+<list>
+<item>Pour les bibliothecaires, la perspective typographique suffit ... </item>
+<item>Pour les lexicologues, la perspective textuelle suffit ...</item>
+<item>Pour les linguiste, la perspective lexicale est l'essentiel ...</item>
+<item>C'est l'integration de ces perspectives qui facilite
+<list>
+<item>des recherches intelligentes</item>
+<item>l'integration des sources diverses</item>
+</list>
+</item>
+<item>La TEI nous fournit une vocabulaire adequate a exprimer toutes ces perspectives</item>
+</list>
+</div>
+<!--
+      <div>
+        <head>Quelques liens utiles</head>
+<list>
+            <item>Guidelines: <ref
+                target="http://www.tei-c.org/Guidelines/P5/"
+                >http://www.tei-c.org/Guidelines/P5/</ref></item>
+            <item>Référence: <ref
+                target="http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/REF-ELEMENTS.html"
+                >http://www.tei-c.org/release/doc/tei-p5-doc/fr/html/REF-ELEMENTS.html</ref></item>
+<!-\-            <item>Badges: <ref target="http://www.tei-c.org/About/Badges/"
+                >http://www.tei-c.org/About/Badges/</ref></item>-\->
+            <item>Wiki: <ref target="http://wiki.tei-c.org/"
+                >http://wiki.tei-c.org/</ref></item>
+            <item>Sourceforge: <ref
+                target="http://sourceforge.net/projects/tei/"
+                >http://sourceforge.net/projects/tei/</ref></item>
+          </list>
+      </div>
+-->
+
+
+</body></text></TEI>

@@ -12,7 +12,8 @@
       <p>Edition numérique distribué par le projet ANR DifDePo</p>
      </publicationStmt>
      <sourceDesc>
-      <bibl><idno type="ark">12148/btv1b100100073</idno><idno type="ead">d0e191</idno><idno>t10010007-1961-04-17-cr</idno><meeting xml:id="t10010007-1961-04-17"><date when="1961-04-17"/><list type="present"><item><persName ref="#NA"/></item><item><persName ref="#JD"/></item><item><persName ref="#JL"/></item><item><persName ref="#JQ"/></item><item><persName role="président" ref="#RQ"/></item></list></meeting></bibl>
+      <bibl><idno type="ark">12148/btv1b100100073</idno>
+        <idno type="ead">d0e191</idno><idno>t10010007-1961-04-17-cr</idno><meeting xml:id="t10010007-1961-04-17"><date when="1961-04-17"/><list type="present"><item><persName ref="#NA"/></item><item><persName ref="#JD"/></item><item><persName ref="#JL"/></item><item><persName ref="#JQ"/></item><item><persName role="président" ref="#RQ"/></item></list></meeting></bibl>
      </sourceDesc>
    </fileDesc>
    

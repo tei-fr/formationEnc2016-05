@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Transcription du scan 10010053 pp. 2 à 6 (CR) : version TEI</title><respStmt><resp>transcription</resp><name>Invité</name></respStmt>
+                
+            </titleStmt>
+            
+            <publicationStmt>
+                <p>Edition numérique distribué par le projet ANR DifDePo</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl><meeting><date when="1965-03-08"/><placeName>XX</placeName><list type="present"><item><persName ref="#JL"/></item><item><persName ref="#FLL"/></item><item><persName ref="#RQ"/></item><item><persName ref="#JD"/></item><item><persName ref="#CB"/></item><item><persName ref="#PB"/></item><item><persName ref="#JQ"/></item><item><persName ref="#AB"/></item><item><persName ref="#NA"/></item><item><persName role="invité">XX</persName></item><item><persName role="président" ref="#JB"/></item><item><persName role="secrétaire" ref="#JD"/></item></list></meeting></bibl>
+            </sourceDesc>
+        </fileDesc>
+        
+        <revisionDesc>
+            <listChange><change when="2016-04-24T21:24:18Z"> Oulipo specific tags added</change>
+                <change><date>2016-04-24T18:09:00Z</date><name>Invité</name></change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text type="CR">
+        <body><pb/>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <p rend="incipit">OUVROIR DE </p>
+            <p rend="incipit">LITTERATURE </p>
+            <p rend="incipit">POTENTIELLE</p>
+            <p rend="incipit">Circulaire No. 59</p>
+            <p rend="incipit">COMPTE-RENDU DE LA REUNION DU 8 MARS 1965</p>
+            <p rend="incipit">PRESENTS : <persName>J. Lescure</persName>, <persName>F.
+                    Le Lionnais</persName>, <persName>R. Queneau</persName>, <persName>J.
+                    Duchateau</persName>, <persName>C. Berge</persName>, <persName>P.
+                    Braffort</persName>, <persName>J. Queval</persName>, <persName>N.
+                    Arnaud</persName>, <persName>A. Blavier</persName></p>
+            <p rend="incipit">PRESIDENT : <persName>J. BENS</persName></p>
+            <p><persName>LE LIONNAIS</persName> (véhément) : Un membre de l’Oulipo ayant omis de
+                faire les démarches nécessaires, nous ne pourrons nous rendre chez <orgName>I.B.M</orgName> après le déjeuner. </p>
+            <p><persName>C. BERGE</persName> (distrait) : Quel membre ? </p>
+            <p><persName>LE LIONNAIS</persName> : (S’étranglant) Comment ça quel membre ? </p>
+            <p><persName>BENS</persName> (Présidant avec autorité) : Enfin, <persName>Berge</persName> ! </p>
+            <p>- <persName>Berge</persName> regarde <persName>Le Lionnais</persName>. <persName>Le Lionnais</persName> regarde <persName>Berge</persName>.- </p>
+            <p><persName>BRAFFORT</persName> : Je vais écrire un livre sur l’<term>imagination</term> : puis-je parler de l’Oulipo et des travaux de certains de ses
+                membres ? </p>
+            <p>TOUS : Oui. </p>
+            <p><persName>QUENEAU</persName> : A propos dans la collection
+                « Idée » va paraître « <title>Bâtons, Lettres et Chiffres</title> » avec en
+                plus ma <name type="manif">conférence à l’Institut H. Poincaré</name>. 50.000
+                exemplaires ! </p>
+            <p><persName>BENS</persName> : La gloire. </p>
+            <p><persName>BRAFFORT</persName> : J’espère que je ne m’appellerai pas « Pierre »
+                comme dans « <orgName>La Pleiade</orgName> ». (<persName>Queneau</persName> sort un papier et note) </p>
+            <p><persName>BRAFFORT</persName> : Au fait, la jambe de ma femme se portant bien,
+                nous allons pouvoir nous rendre tous à Limours. </p>
+            <p>(On prend date : le <name type="manif">12 juin</name>, <name type="manif">Oulilimours</name>) </p>
+            <p><pb/></p>
+            <p><persName>QUENEAU</persName> : Qui connait Andouille ? </p>
+            <p>(il mange une </p>
+            <p>omelette au fromage </p>
+            <p>sans fromage</p>
+            <p>mais avec tomate)</p>
+            <p>Bruit noir. Référence d’Ardouille : <persName>Reuterwald</persName>, cher <persName>Schwartz</persName>, <persName>Milan</persName>). Dans Andouille
+                chaque mot est traité suivant le <term>code de demoiselle des
+                    postes</term>. Exemple : « lui » donne « Léon, Ursule, Irène » </p>
+            <p><persName>DUCHATEAU</persName> : Je voudrais signaler le numéro 4 de « <title>Communications</title> » qui est consacré aux <title>« Recherches Sémiologiques</title> » <persName>Christian Metz</persName> dans
+                un article :
+                <title>Le Cinéma, langue ou langage ?  </title>fait état
+                du manifeste d’<term>art permutationnel </term>de <persName>Moles</persName> et en profites pour affirmer la « manipulation
+                souveraine n’est pas une voie féconde du cinéma (ni d’ailleurs pour la poésie). » </p>
+            <p>Il y a aussi un article sur le message narratif, tout ça c’est très intéressant,
+                intelligent. Naturellement ( ?) l’<orgName>Oulipo</orgName> n’est pas
+                cité. Est-ce un hasard, ou bien est-ce une conséquence des positions, disons,
+                ultra-linguistiques, qu’ils adoptent. </p>
+            <p><persName>QUENEAU</persName> : Il faudrait que nous en prenions connaissance. </p>
+            <p><persName>ARNAUD</persName> : Je l’ai lu, il y a une grande analyse de <persName>Barthes</persName>, ils savent beaucoup de choses. </p>
+            <p><persName>LESCURE</persName> : Nous aussi. </p>
+            <p><persName>QUEVAL</persName> : C’est peut-être pas les mêmes. </p>
+            <p><persName>QUENEAU</persName> : Prenons connaissance, nous pourrons inviter, ou ne
+                pas inviter, selon. </p>
+            <p><persName>BENS</persName> : Il ne s’agit pas d’avoir l’air idiot. </p>
+            <p><persName>BENS</persName> : J’ai un ami dans le midi qui admire beaucoup <persName>Berge</persName>. Il voudrait connaitre sa définition des <term>graphes</term>. Grâce à ses amis, je m’initie aux mathématiques, je
+                sais maintenant ce que c’est que l’<term>intersection</term>. </p>
+            <p><pb/></p>
+            <p><persName>BLAVIER</persName> : Le midi bouge. </p>
+            <p><persName>BRAFFORT</persName> : Et l’<term>ensemble</term> vide ? </p>
+            <p><persName>LE LIONNAIS</persName> : Fait-il ou non partie des <term>ensemble</term>s. ?</p>
+            <p><persName>BERGE</persName> : Quelle est sa taille ?</p>
+            <p><persName>BENS</persName> : Vous voulez me décourager. </p>
+            <p><persName>QUENEAU</persName> : Je signale que <persName>Quemada</persName> a
+                procédé à l’analyse lexicologique de très nombreux livres. </p>
+            <p><ref>Annexe No.1</ref></p>
+            <p><persName>QUENEAU</persName> : Je voudrais parler de <persName>Estivals</persName>. <persName>Estivals</persName> c’est le <term>signisme</term>. Il part du signe « très naturel », facile à comprendre. Par
+                exemple une de ses toiles représente des cornes. Il me demande ce que cela évoque : </p>
+            <list type="unordered">
+                <item>Moi : Une tête de taureau</item>
+                <item>Lui : Ah. </item>
+                <item>Moi : Vous êtes dubitatif. </item>
+                <item>Lui : Je ne sais pas. J’ai oublié ce que c’est. </item>
+            </list>
+            <p><persName>BRAFFORT</persName> : Il s’agirait de <term>pictogramme</term> ? </p>
+            <p><persName>QUENEAU</persName> : Plus « conventionnels » </p>
+            <p><persName>ARNAUD</persName> : A mon avis ce n’est pas assez farfelu… </p>
+            <p><persName>LE LIONNAIS</persName> : … Pas assez scientifique. </p>
+            <p><persName>ARNAUD</persName> : C’est ce que je voulais dire. </p>
+            <p><persName>QUENEAU</persName> : ça pourrait se rattacher à l’<orgName>Oulipeinpo</orgName></p>
+            <p><pb/></p>
+            <p><persName>QUENEAU</persName> : Contre. </p>
+            <p><persName>BRAFFORT</persName> : Une lettre pour. </p>
+            <p><persName>LE LIONNAIS</persName> : Ambigu. </p>
+            <p><persName>BRAFFORT</persName> : Pour mais après. </p>
+            <p><persName>LE LIONNAIS</persName> : Après les clients. </p>
+            <p><persName>LESCURE</persName> : Après le mouton, les cornes ! </p>
+            <p><persName>BENS</persName> : Si ça intéresse, ça intéresse ; sinon on va à la
+                pêche ou on va à la pêche. Convaincus, vous ne l’êtes pas ? </p>
+            <p>(Une réunion secrète se tiendra pour procéder à l’<term>intersection</term>
+                des points de vue sur la réunion des cerveaux.) </p>
+            <p><persName>LE PRESIDENT BENS</persName> : Revenons à nos moutons. </p>
+            <p><persName>QUENEAU</persName> : Je lis, je relis, j’en coupe et des meilleurs. </p>
+            <p><persName>QUEVAL</persName> : De quoi parlez-vous ? </p>
+            <p><persName>BENS</persName> : <persName>Queneau</persName> est mon esclave. Je
+                rêve. </p>
+            <p><persName>QUENEAU</persName> ! Ce sera revu et corrigé par chacun. </p>
+            <p>Il est encore question de l’<orgName>Ourepo</orgName> (<persName>F. Le Lionnais</persName>), et <persName>R. Queneau</persName> demande : « Toutes
+                (les religions) n’ont-elles pas été inventées ?. » <persName>Queval</persName> :
+                « Et l’univers en expansion. » <persName>Braffort</persName> : « C’est pas du
+                domaine de la religion. » <persName>Le Lionnais</persName> : « Matérialiste. » </p>
+            <p>Le même <persName>F. Le Lionnais</persName> qui représente l’Oulipo à Bordighera
+                pour les bandes dessinées, nous parle des travaux, faits et à faire, en utilisant
+                les collages, en remplaçant les textes des bulles, etc….</p>
+            <p><pb/></p>
+            <p>Enfin <persName>Queneau</persName> signale que dans le bulletin du tourisme
+                espagnol il a lu que <persName>Dali</persName> a fait un taureau sous les ordres
+                d’une machine. </p>
+            <p>Le <persName>S.P</persName></p>
+            <p><persName>J.D</persName></p>
+            <p><name type="manif">Prochaine réunion : lundi 29 mars</name>. </p>
+            <p>NB :</p>
+            <p><persName>LE LIONNAIS</persName> : Si on invitait <persName>Faure</persName> ? </p>
+            <p><persName>QUENEAU</persName> : <persName>Faure</persName> ? N’est-il pas
+                sarcastique à notre égard ? </p>
+            <p><persName>BRAFFORT</persName> : Je dirais même lubrique. </p>
+            <p><persName>LE LIONNAIS</persName> : Vous vous égarez, Messieurs. </p>
+            <p><persName>Faure</persName> est invité. </p>
+        </body>
+    </text>
+</TEI>

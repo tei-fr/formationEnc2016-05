@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Feed back formation mai 2016</title>
+        <author>Lou Burnard</author>
+        <author>Emmanuel Château</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>MEET</publisher>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This is the master version of an original document.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change>
+        <date>2016-05-10</date>
+        <name>Emmanuel Chateau</name>, création</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <head>Retours sur la formation</head>
+        <div>
+          <head>Premier jour</head>
+          <p>Exercice avec Roma ne fait peut être pas suffisamment réfléchir à ce que l’on fait. Faire évoluer l’exercice afin que les participants formulent plus clairement des choix.</p>
+          <p>Dans l’exercice avec Roma, faire télécharger le fichier ODD pour éviter les erreurs.</p>
+          <p>Il manquait peut-être du travail d’encodage simple pour commencer.</p>
+          <p>Donner des instructions claires sur le nommage de fichier.</p>
+        </div>
+        <div>
+          <head>Deuxième jour</head>
+          <p>Travail de modélisation pour le texte qui mériterait que dans la foulée puisse l’appliquer au traitement de la transcription pour expérimenter plus directement l’effet des choix formulés. Mais cela implique la génération d’un schéma et l’association au document.</p>
+          <p>Comment mieux articuler l’exercice sur Msdescription avec la transcription du manuscrit ?</p>
+          <p>Ex-5-MsDesc, il manque <gi>quote</gi> dans le schéma ODD pour la description des manuscrits.</p>
+        </div>
+        <div>
+          <head>Troisième jour</head>
+        </div>
+        <div>
+          <head>Quatrième jour</head>
+        </div>
+        <div>
+          <head>Remarques générales</head>
+          <p></p>
+        </div>/
+      </div>
+    </body>
+  </text>
+</TEI>

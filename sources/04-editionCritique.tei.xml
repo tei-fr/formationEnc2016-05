@@ -33,11 +33,12 @@
         <div>
           <head>Introduction</head>
           <p>Une édition critique est un essai de restitution d’un texte. Ainsi que nous l’avons vu, chaque édition résulte d’un point de vue du le texte, c’est-à-dire de choix et de partis-pris raisonnés. Dans le domaine de la production de sources historiques, on pourra par exemple souhaiter rendre le plus fidèlement possible le documents tel qu’il se présente au lecteur (transcription diplomatique). Dans certains cas, la tradition du texte peut-être riche et il faudra trouver des solutions pour prendre en charge les différents états du texte et ses témoins. Enfin, dans le cas d’une édition dite de génétique textuel, on s’intéressera aux différents manuscrits en essayant de restituer la succession des actes d’écriture.</p>
+          <p>Lors de la transcription de sources primaires, on a donc besoin de pouvoir enregistrer des informations concernant la lecture du texte, ou d’ajouter des informations éditoriales telles que des notes d’édition critique ou des notes de commentaires historique, ou encore fournir des corrections et compléter des lacunes, par exemple.</p>
           <p>La TEI présente de nombreux mécanismes spécialement destinés à la prise en charge de ces différentes sortes d’éditions critiques. Ici, la plus part des éléments qui nous intéressent sont compris dans les modules de transcription <ident>transcr</ident>, et d’autres dans celui de description des manuscrits <ident>msdescription</ident> que nous aborderons plus tard. Les éléments définis dans ces modules peuvent parfois être utilement augmentés par <ident>certainty</ident> pour traiter des niveaux de certitudes et <ident>gaiji</ident> pour la prise en charge des glyphes et la documentation des systèmes d’écriture. Mais aussi <ident>Critical Apparatus</ident> pour les notes de variantes, ainsi que des mécanismes de liage et d’alignement tirés du module <ident>Linking</ident>. </p>
           <p>Ces différents éléments de la Text Encoding Initiative vous permettent de décrire aussi finement que de besoin les phénomènes textuels rencontrés ainsi que d’embarquer directement l’apparat critique de votre édition à l’intérieur du balisage.</p>
         </div>
       </div>
-      <div rend="sommaire" xml:lang="fr"  xml:id="index">
+      <div rend="sommaire" xml:lang="fr" xml:id="index">
         <div>
           <head>Sommaire</head>
           <list>
@@ -56,12 +57,12 @@
           <div>
             <head>Prise en charge des lacunes</head>
             <p><gi>gap</gi> passage ne pouvant pas être restitué pour des raisons matérielles</p>
-            <egXML>
-              <gap reason="illegible" agent="ink-blot" />
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <gap reason="illegible" agent="ink-blot"/>
             </egXML>
             <p><gi>unclear</gi> passage en partie illisible</p>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <unclear agent="ink-blot" cert="low" resp="#EC" />
+              <unclear agent="ink-blot" cert="low" resp="#EC"/>
             </egXML>
             <p>
               <gi>suplied</gi> restitution d’un passage manquant</p>
@@ -71,6 +72,7 @@
           </div>
           <div>
             <head>Prise en charge des lacunes</head>
+            <p>Lors de la transcription de sources primaires, on peut avoir besoin d’enregistrer des informations concernant la lecture du texte.</p>
             <p>Ne pas confondre <gi>gap</gi> et <gi>space</gi> qui sert à désigner un espace blanc jugé significatif</p>
             <p>Plusieurs attributs issus du module <ident>certainty</ident> qui peuvent vous permettre de préciser le niveau de certitude des restitutions.</p>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -117,14 +119,14 @@
             <head>Passages fautifs</head>
             <list>
               <item><gi>sic</gi> passage fautif, ou segment syntaxiquement incorrect</item>
+              <item><gi>orig</gi> texte original</item>
               <item><gi>corr</gi> correction de l’éditeur</item>
-              <item><gi>abbr</gi> abréviation</item>
               <item>utilisation de <gi>choice</gi></item>
             </list>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <choice>
-                <abbr>M<hi rend="superscript">r</hi></abbr>
-                <expan>Monsieur</expan>
+                <orig>colomne</orig>
+                <reg>colonne</reg>
               </choice>
             </egXML>
           </div>
@@ -138,6 +140,53 @@
               </choice>
             </egXML>
             <p>Partout, les attributs <att>cert</att>, <att>resp</att> et <att>source</att> peuvent s’avérer utile.</p>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Abréviations</head>
+            <list>
+              <item><gi>abbr</gi> abréviation</item>
+              <item><gi>expan</gi> abréviation développée</item>
+            </list>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <abbr>Mtr.</abbr>
+            </egXML>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <expan>Maître</expan>
+            </egXML>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <choice><abbr>Mtr.</abbr><expan>Maître</expan></choice>
+            </egXML>
+          </div>
+          <div>
+            <p>En soi, l’écriture manuscrite est souvent sujette à l’emploi d’abréviation pour abréger le travail scripteur. On y trouve communément des lettres ou groupes de lettres ou des phrases qui peuvent être représentés par des marques significatives. Ces phénomènes sont tellement répandus qu’elles sont difficiles à classifier. En fonction des besoins d’une édition, il est possible d’encoder ces abréviations de diverses manières afin de rendre compte plus ou moins finement de leur nature.</p>
+            <p>La manière la plus simple de signaler la présence d’une abréviation dans le texte consiste à utiliser les éléments <gi>abbr</gi> et <gi>expan</gi> qui permettent tantôt de renseigner la forme abrégée ou la forme développée. Appariées avec <gi>choice</gi>, on peut fournir une alternative.</p>
+          </div>
+        </div>
+        <div type="slide" xml:lang="fr">
+          <div>
+            <head>Abréviations</head>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <abbr>
+                <am>
+                  <g ref="#b-per"/>
+                </am>sone
+            </abbr>
+            </egXML>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <expan>
+                <ex>per</ex>sone
+            </expan>
+            </egXML>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <choice>
+                <am>
+                  <g ref="#b-per"/>
+                </am>
+                <ex>per</ex>
+              </choice>sone
+          </egXML>
           </div>
         </div>
       </div>
@@ -244,8 +293,7 @@
                   <link target="#c1Front #c2Front"/>
                   <link target="#c1FrontFr #c2FrontFr02"/>
                   <link target="#c1FrontFr01 #c2FrontFr01"/>
-                  <link
-                    target="#c1FrontFr01.p001 #c2FrontFr01.p001"/>
+                  <link target="#c1FrontFr01.p001 #c2FrontFr01.p001"/>
                   <!-- ... -->
                 </linkGrp>
               </div>
@@ -258,7 +306,8 @@
       <div rend="title" xml:lang="fr">
         <div>
           <!-- @todo ajouter exemple apparat critique -->
-          <head>Exemple d’<ref target="../travaux/witnessAngouleme.xml">apparat critique</ref></head>
+          <head>Exemple d’<ref target="../travaux/witnessAngouleme.xml"
+            >apparat critique</ref></head>
           <note><ref target="#index">Revenir au début</ref></note>
           <note><ref target="00-programme.html">Programme</ref></note>
         </div>

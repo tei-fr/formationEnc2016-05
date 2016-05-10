@@ -30,12 +30,16 @@
           <p>Dans l’exercice avec Roma, faire télécharger le fichier ODD pour éviter les erreurs.</p>
           <p>Il manquait peut-être du travail d’encodage simple pour commencer.</p>
           <p>Donner des instructions claires sur le nommage de fichier.</p>
+          <p>Raccourcir la présentation d’introduction. Il n’est peut-être pas nécessaire de présenter autant d’éléments.</p>
+          <p>Prévoir des diapositives d’introduction succintes pour le premier exercice ODD.</p>
         </div>
         <div>
           <head>Deuxième jour</head>
           <p>Travail de modélisation pour le texte qui mériterait que dans la foulée puisse l’appliquer au traitement de la transcription pour expérimenter plus directement l’effet des choix formulés. Mais cela implique la génération d’un schéma et l’association au document.</p>
           <p>Comment mieux articuler l’exercice sur Msdescription avec la transcription du manuscrit ?</p>
           <p>Ex-5-MsDesc, il manque <gi>quote</gi> dans le schéma ODD pour la description des manuscrits.</p>
+          <p>Le fichier ODD tei-msDesc n’est pas fourni avec les fichiers de la formation. Ajouter <gi>publisher</gi>, <gi>respStmt</gi>, <gi>editor</gi>. Autoriser <gi>name</gi> dans change.</p>
+          <p>Essayer de prévoir des schéma qui s’enchaîne les uns avec les autres. Ou bien se contenter de créer un élément <gi>msDesc</gi> puis l’inclure</p>
         </div>
         <div>
           <head>Troisième jour</head>
@@ -45,8 +49,10 @@
         </div>
         <div>
           <head>Remarques générales</head>
-          <p></p>
-        </div>/
+          <p>Renforcer le fait de filer un même exercice tout au long de la formation.</p>
+          <p>Dans le nouveau format, participation accrue des membres.</p>
+          <p>Prévoire une organisation des répertoires plus stricte de manière à ce que les stagiaires retrouvent plus facilement leurs fichiers, par exemple un répertoire pour mettre les schémas, etc.</p>
+        </div>
       </div>
     </body>
   </text>

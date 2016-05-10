@@ -65,7 +65,7 @@
               <unclear agent="ink-blot" cert="low" resp="#EC"/>
             </egXML>
             <p>
-              <gi>suplied</gi> restitution d’un passage manquant</p>
+              <gi>supplied</gi> restitution d’un passage manquant</p>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <supplied reason="hole" source="#autreEd">les</supplied>
             </egXML>

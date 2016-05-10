@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Exercice de personnalisation</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div xml:lang="fr">
+            <head>Organigramme ODD</head>
+            <p><graphic url="images/oddity.png"/></p>
+         </div>
+         <div>
+            <p>Dans cet exercice nous allons travailler avec oXygen sur un ODD minimal, concu pour
+               la transcription des sources primaires par un publique pas tres informe, et donc sans
+               trop de complications. </p>
+         </div>
+         <div xml:lang="fr">
+            <head>Le ODD minimal </head>
+            <list>
+               <item>Ouvrez le fichier <ident>transMin.odd</ident> avec oXygen</item>
+               <item>Testez votre compréhension de ce fichier</item>
+               <item>Utilisez oXygen pour en générer un schéma dans votre langage de schéma préférée </item>
+               <item>Créez un nouveau document TEI XML qui utilise ce schéma</item>
+               <item>Vérifiez les éléments et les attributs disponibles</item>
+            </list>
+         </div>
+         <div>
+            <head>Documentation</head>
+            <p>Ajoutons de documentation. <list>
+
+                  <item>Revenez dans votre copie du <ident>transMin.odd</ident> et ajoutez au debut
+                     (apres le paragraphe qui commence <q>Cette personalisation propose...</q>) une
+                     paragraphe comme ceci: 
+                     <eg><![CDATA[
+                        <p>Voici la liste des elements textuels fournis par ce schema :
+                           <specDesc key="ab"/>
+                           <specDesc key="pb"/>
+                           <specDesc key="unclear"/>
+                        </p>
+                     ]]></eg>
+                  </item>
+                  <item>Revenez dans le scenario de transformation que vous utilisiez pour generer
+                     votre schema. et cette fois-ci cochez aussi la case pour "TEI ODD XHTML" (et/ou
+                     un des autres formats "TEI ODD DOCX" si vous preferez) </item>
+                  <item>Regardez l'effet de vos modifications dans le doc qui en ressort.</item>
+               </list>
+            </p>
+            <p>En principe, vous devriez ajouter un <gi>specDesc</gi> pour chacun des elements
+               fournis par le schema. Vous pourriez egalement enrichir la doc avec une description
+               particuliere adaptee aux besoins de votre projet, en utilisant des exemples
+               specifiques etc. </p>
+         </div>
+         <div xml:lang="fr">
+            <head>Amelioration du schema (1) </head>
+            <list>
+               <item>On découvre quelques problèmes avec ce schema: <list>
+                     <item>on souhaite indiquer la présence des glyphes et symboles
+                        non-Unicode</item>
+                     <item>on souhaite indiquer la présence des noms de personnes et de lieux</item>
+                  </list></item>
+               <item>Ajoutez donc les éléments <gi>g</gi> et <gi>name</gi> à votre ODD</item>
+               <item>Regénérez votre schéma et testez si ces elements sont maintenant
+                  disponibles.</item>
+            </list>
+            <p rend="box">Vous souhaitez ajouter un element non-TEI? C'est aussi possible...</p>
+         </div>
+         <div xml:lang="fr">
+            <head>Anmelioration du schema (2) </head>
+            <p>La TEI nous propose plusieurs variétés de noms (<gi>persName</gi>,
+               <gi>placeName</gi>, <gi>orgName</gi> etc.) mais rien de particulier pour les noms
+               botaniques. Dans cet exercice vous allez créer un élément <gi>botName</gi> pour
+               remplir cette lacune.</p>
+            <list>
+               <item>Revenez dans votre ODD. </item>
+               <item>Ajoutez un element <gi>elementSpec</gi>, avec identifiant
+                     <ident>botName</ident></item>
+               <item>Dans cette spécification, il faut ajouter au moins: <list>
+                     <item>un <gi>desc</gi> avec une brève description de l'élément</item>
+                     <item>dans <gi>classes</gi> une indication de la classement de l'élément, avec
+                        au moins un <gi>memberOf</gi> (nous vous conseillons de faire en sorte que
+                        cet élément soit membre des classes <ident>att.global</ident> et
+                           <ident>model.phrase</ident>) </item>
+                     <item>dans <gi>content</gi> une indication du contenu du nouveau élément (par
+                        ex <tag>macroRef key="macro.phraseSeq"</tag></item>
+                  </list></item>
+               <item>Regénérez votre schéma et testez l'effet de vos modifications.</item>
+            </list>
+         </div>
+         <div xml:lang="fr">
+            <head>Simplification du schema </head>
+            <p>Notre personnalisation propose beaucoup d'attributs. Nous pouvons supprimer ceux qui
+               ne nous interessent pas en deux manières: <list>
+                  <item>on peut supprimer une classe <emph>entièrement</emph> avec un redéclaration
+                     spécifiant <att>mode</att>=<val>delete</val>: <egXML
+                        xmlns="http://www.tei-c.org/ns/Examples">
+                        <classSpec type="atts" ident="att.declaring" mode="delete"/>
+                     </egXML>
+                  </item>
+                  <item>ou on peut supprimer (ou séléctionner) quelques attributs spécifiques sur un
+                        <gi>classRef</gi> : <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <classRef key="att.global.rendition" except="rendition rend"/>
+                     </egXML> ou, avec le même effet: <egXML
+                        xmlns="http://www.tei-c.org/ns/Examples">
+                        <classRef key="att.global.rendition" include="style"/>
+                     </egXML>
+                  </item>
+               </list></p>
+         </div>
+         <div xml:lang="fr">
+            <head>Contrôle des attributs </head>
+            <p> <list>
+                  <item>Supprimez dans votre schéma les classes suivantes :
+                        <ident>att.declaring</ident>, <ident>att.fragmentable</ident>,
+                        <ident>att.edition</ident>, <ident>att.editLike</ident></item>
+                  <item>Sélectionnez dans votre schéma l'attribut <att>key</att> de la classe
+                        <ident>att.canonical</ident>; supprimez les attributs <att>rendition</att>
+                     et <att>rend</att> de la classe <ident>att.global.rendition</ident></item>
+                  <item>Regénérez votre schéma et testez l'effet de vos modifications...</item>
+               </list>
+            </p>
+            <p>Vous pouvez également ajouter ou supprimer des attributs, en utilisant un
+                  <gi>attList</gi>, qui contient des <gi>attDef</gi>...</p>
+         </div>
+         <div xml:lang="fr">
+            <head>Usage de <gi>attList</gi></head>
+            <list>
+               <item>Trouvez le bon endroit au sein du <gi>elementDecl</gi> existant pour ajouter un
+                     <gi>attList</gi>
+               </item>
+               <item>Insérez un <gi>attDef</gi> pour définir un nouveau attribut
+                     <ident>genus</ident></item>
+               <item>Cet attribut fournit le nom du genus auquel appartient l'objet indiqué:
+                  expliquez cela dans son <gi>desc</gi></item>
+               <item>La valeur de cet attribut sera conforme au datatype
+                  <ident>teidata.word</ident></item>
+               <item>Insérez un deuxième <gi>attDef</gi> pour définir un nouveau attribut
+                     <att>status</att>
+               </item>
+               <item>Cet attribut indique le status du nom botanique, par ex s'il est international,
+                  vulgaire, etc.</item>
+               <item>La valeur de cet attribut conformera au datatype
+                     <ident>teidata.enumerated</ident>
+               </item>
+               <item>Sa définition doit donc etre complétée par un <gi>valList</gi> ...à vous de le
+                  définir!</item>
+            </list>
+         </div>
+      </body>
+   </text>
+</TEI>

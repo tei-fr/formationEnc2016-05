@@ -57,8 +57,8 @@
          <div rend="slide" xml:lang="fr">
             <head>Instruction pour partager les fichiers de l’édition</head>
             <list>
-               <item>Dans le terminal rendez-vous dans votre dossier de travail</item>
-               <item>Créez un nouveau répertoire pour l’édition intitulé <ident>edition</ident></item>
+               <item>Dans le terminal rendez-vous dans votre dossier de la formation <ident>formationEnc2016-05</ident></item>
+               <item>Nous avons créé un répertoire destiné à l’édition intitulé <ident>oulipoEd</ident></item>
                <item>Placez-y vos fichiers édités</item>
                <item>Poussez vos documents avec la séquence de commandes suivante
                   <code>git add edition/* # ajouter tous les fichiers du répertoire à l’index
@@ -66,17 +66,20 @@
                      git push # envoi des fichiers vers les serveur
                   </code>
                </item>
-               <item>L’un d’entre vous créé un fichier teiCorpus</item>
-               <item>Consultez le répertoire et voyez le travail des autres</item>
-               <item>Ajoutez votre fichier au corpus</item>
+               <item>Consultez le répertoire et constatez le versement du travail des autres collaborateurs</item>
+               <item>Consultez le fichier <ident>teiCorpus.xml</ident> que nous avons ajouté au répertoire</item>
+               <item>Ajoutez votre fichier au corpus en suivant l’exemple compris dans le fichier</item>
             </list>
+            <!-- @todo créer un squelette TEI -->
          </div>
          <div rend="slide" xml:lang="fr">
             <div>
                <head>Définir la place des autres documents</head>
                <list>
                   <item>Images</item>
+                  <!-- avoir un fichier image, leur faire changer le lien @facs dans leur fichier -->
                   <item>Index des personnes</item>
+                  <!-- modifier le teiCorpus pour mettre un XInclude -->
                   <item>Bibliographie</item>
                   <item>Textes d’introduction de l’édition</item>
                   <item>Documentation</item>

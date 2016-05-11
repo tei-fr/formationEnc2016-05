@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="../travaux/out/tei_Oulipo_ST_LLC.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">CR 610428 pages 4, 5 de la réunion de travail OULIPO</title>
+            <title type="sub">Exercice d'encodage</title>
+            <principal>Ecole Nationale des Chartes</principal>
+            <author xml:id="ST">Sara Tandar</author>
+            <author xml:id="LLC">Laëtitia Le Couedic</author>
+            <funder>ANR Oulipopo</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>BNF</publisher>
+            <date type="2016-05-12">12/05/2016</date>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Paris</settlement>
+                  <institution>BNF</institution>
+                  <repository>Bibiliothèque de l'Arsenal</repository>
+                  <idno>12148/btv1b100100073</idno>
+                  <msName>cr610417</msName>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <title>Dossiers mensuels de réunion (1960-2010) / 1961/ Décembre 1961</title>
+                  </msItem>
+
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support><material>feuilles de papier</material></support>
+                        <collation>5 feuillets de tailles variables. Plusieurs numérotations
+                           effectuées dans le passé</collation>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+
+               <additional>
+                  <listBibl type="Meeting"/>
+               </additional>
+
+
+               <!--
+                  <idno type="ark">12148/btv1b100100073</idno>
+               <idno type="ead">d0e191</idno>
+               <idno>t10010007-1961-04-28-cr</idno>-->
+               <!--<bibl><meeting xml:id="t10010007-1961-04-28">
+                  <date when="1961-04-28"/>
+                  <list type="present">
+                     <item>
+                        <persName ref="#NA"/>
+                     </item>
+                     <item>
+                        <persName ref="#AMS"/>
+                     </item>
+                     <item>
+                        <persName ref="#JL"/>
+                     </item>
+                     <item>
+                        <persName ref="#RQ"/>
+                     </item>
+                     <item>
+                        <persName ref="#JB"/>
+                     </item>
+                     <item>
+                        <persName role="président" ref="#JQ"/>
+                     </item>
+                  </list>
+               </meeting>
+            </bibl>-->
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+
+
+      <encodingDesc>
+         <editorialDecl>
+           Utilisation des modules textStructure, header, core pour décrire les échanges
+               (dialogues) et des parties de texte quelconque qui font suite aux dialogues.
+         </editorialDecl>
+      </encodingDesc>
+
+
+   </teiHeader>
+   <text>
+      <body>
+         <div><listPerson>
+            <person xml:id="FLL" n="1">
+               <persName>François Le Lionnais</persName>
+               <birth when="1901"/>
+               <death when="1984-03-13">Excusé depuis la 13 mars 1984</death>
+               <affiliation>Président-Fondateur</affiliation>
+            </person>
+            
+            <person xml:id="RQ" n="2">
+               <persName scope="major">Raymond Queneau</persName>
+               <sex>Masculin</sex>
+               <persName scope="minor">Michel Presle</persName>
+               <persName scope="minor">Sally Mara</persName>
+               <birth when="1903-02-21">21 février 1903</birth>
+               <affiliation>Président-Fondateur</affiliation>
+               <death when="1976-10-25">25 octobre 1976</death>
+               <state><p>Excusé</p></state>
+               <idno type="ISNI">0000 0001 2144 1794</idno>
+            </person>
+            
+            <person xml:id="NA" n="3">
+               <persName>Noél Arnaud</persName>
+               <birth when="1919"/>
+               <affiliation>Membre fondateur</affiliation>
+               <affiliation from="1984" to="2003">Président de 1984 a 2003</affiliation>
+               <death when="2003-04-01">Excusé depuis le 1er avril 2003</death>
+            </person>
+            
+            <person xml:id="JB" n="4">
+               <persName>Jacques Bens</persName>
+               
+               <affiliation >Membre fondateur</affiliation>
+               <birth when="1931"/>
+               <death when="2001-07-26">Excusé depuis le 26 juillet 2001</death>
+            </person>
+            <person xml:id="CB" n="5">
+               <persName>Claude Berge</persName>
+               <affiliation when="1926" >Membre fondateur</affiliation>
+               <!-- cf Bens, supra -->
+               <death when="2002-06-30">Excusé depuis le 30 juin 2002</death>
+            </person>
+            <person xml:id="JD" n="6">
+               <persName>Jacques Duchateau</persName>
+               <birth when="1924"/>
+               <affiliation> Membre fondateur</affiliation>
+            </person>
+            <person xml:id="L" n="7">
+               <persName>Latis alias Emmanuel Peillet</persName>
+               <birth when="1913">1913</birth>
+               <death when="1973-09-01">Excusé depuis le 1er Septembre 1973</death>
+               <affiliation >Membre fondateur </affiliation>
+               <!-- on reste membre fondateur meme apres sa disparition, donc 
+        supprimez l'attribut @to-->
+            </person>
+            <person xml:id="JL" n="8">
+               <persName>Jean Lescure</persName>
+               <birth when="1912"/>
+               <death when="2005-10-17"/>
+               <affiliation to="2005-10-17">
+                  <affiliation >Membre fondateur Excusé depuis le 17 octobre
+                     2005</affiliation>
+               </affiliation>
+               <!-- cf Bens, supra. La mention "Excuse depuis..." ferait mieux comme
+        contenu de la balise <death>. Il ne s'agit pas d'une affiliation -->
+            </person>
+            <person xml:id="JQ" n="9">
+               <persName>Jean Queval</persName>
+               <birth when="1913"/>
+               <death when="1990-12-10"/>
+               <affiliation >Membre fondateur Excusé depuis le 10 décembre
+                  1990</affiliation>
+               <!-- cf Lescure supra -->
+            </person>
+            <person xml:id="AMS" n="10">
+               <persName>Albert-Marie Schmidt</persName>
+               <birth when="1901">1901</birth>
+               <death when="1966"/>
+               <affiliation >Membre fondateur Excusé depuis le 8 février 1966</affiliation>
+            </person>
+            <!-- cf Lescure supra -->
+            
+            <person xml:id="AB" n="11">
+               <persName>André Blavier </persName>
+               <birth when="1922"/>
+               <death when="2001-06-09"/>
+               <affiliation when="1961-02-13" >Correspondant étranger depuis le 13 février
+                  1961 Excusé depuis le 9 juin 2001</affiliation>
+            </person>
+            <person xml:id="RC" n="12">
+               <persName>Ross Chambers</persName>
+               <birth when="1932">Né en 1932</birth>
+               <affiliation when="1961-02-13">Correspondant étranger depuis le 13 février 1961
+               </affiliation>
+            </person>
+            <person xml:id="SC" n="13">
+               <persName>Stanley Chapman</persName>
+               <birth when="1925"/>
+               <death when="2009-05-26"/>
+               <affiliation when="1961-02-13" >Correspondant étranger depuis le 13 février
+                  1961 Excusé depuis le 26 mai 2009</affiliation>
+            </person>
+            <person xml:id="PB" n="14">
+               <persName>Paul Braffort</persName>
+               <birth when="1923">Né en 1923</birth>
+               <affiliation when="1961-03-13">Entré à l'Oulipo le 13 mars 1961</affiliation>
+            </person>
+            <person xml:id="MD" n="15">
+               <persName>Marcel Duchamp</persName>
+               <birth when="1887"/>
+               <death when="1968-10-02"/>
+               <affiliation when="1932-03-16">Entré à l'Oulipo le 16 mars 1962 Excusé depuis le 2 octobre
+                  1968</affiliation>
+            </person>
+            <person xml:id="JR" n="16">
+               <persName>Jacques Roubaud</persName>
+               <birth when="1932"/>
+               <affiliation from="1966-11-27">Entré à l'Oulipo le 27 novembre 1966</affiliation>
+            </person>
+            <person xml:id="GP" n="17">
+               <persName>Georges Perec</persName>
+               <birth when="1936"/>
+               <death when="1982-03-03"/>
+               <affiliation when="1967-03-22">Entré à l'Oulipo le 22 mars 1967 Excusé
+                  depuis le 3 mars 1982</affiliation>
+            </person>
+            <person xml:id="MB" n="18">
+               <persName>Marcel Bénabou</persName>
+               <birth when="1939">Né en 1939</birth>
+               <affiliation from="1970-10-29">Entré à l'Oulipo le 29 octobre 1970</affiliation>
+               <affiliation from="1971">Secrétaire déﬁnitivement provisoire depuis 1971 </affiliation>
+            </person>
+            <person xml:id="LE" n="19">
+               <persName>Luc Etienne</persName>
+               <birth when="1908"/>
+               <death when="1984-11-27"/>
+               <affiliation when="1979-10-29" >Entré à l'Oulipo Ie 29 octobre 1979 Excusé
+                  depuis le 27 novembre 1984</affiliation>
+            </person>
+            <person xml:id="PF" n="20">
+               <persName>Paul Fournel</persName>
+               <birth when="1947">Né en 1947</birth>
+               <affiliation from="1971-09-10">Entré à l'Oulipo le 10 septembre 1971 Secrétaire
+                  provisoirement déﬁnitif de 1971 à 2003</affiliation>
+               <!-- ca c'est 2 affiliations -->
+               <affiliation from="2003-05-12">Troisiéme president de l’Oulipo depuis le 12 mai
+                  2003</affiliation>
+            </person>
+            <person xml:id="IC" n="21">
+               <persName>Italo Calvino</persName>
+               <birth when="1923"/>
+               <death when="1985-09-19"/>
+               <affiliation when="1973" >Entré à l'Oulipo le 14 février 1973 Excusé depuis le 19
+                  septembre 1985 </affiliation>
+            </person>
+            <!-- cf Lescure supra -->
+            
+            <person xml:id="HM" n="22">
+               <persName>Harry Mathews</persName>
+               <birth when="1930"/>
+               <affiliation from="1973-02-14">Entré à l'Oulipo le 14 février 1973</affiliation>
+            </person>
+            <person xml:id="MM" n="23">
+               <persName>Michele Métail</persName>
+               <birth when="1950">Née en 1950</birth>
+               <affiliation from="1975" to="2001">Entrée à l'Oulipo le 28 octobre 1975 Prend ses distances
+                  avec le groupe en 2001</affiliation>
+               
+            </person>
+            <person xml:id="FC" n="24">
+               <persName>François Caradec</persName>
+               <birth when="1924"/>
+               <death when="2008-11-03"/>
+               <affiliation when="1983-10-04" >Entré à l‘Oulipo le 4 octobre 1983 Excusé
+                  depuis le 13 novembre 2008</affiliation>
+            </person>
+            <person xml:id="JJ" n="25">
+               <persName>Jacques Jouet</persName>
+               <birth when="1947">Né en 1947</birth>
+               <affiliation from="1983-10-04">Entré à l'Oulipo le 4 octobre 1983</affiliation>
+            </person>
+            <person xml:id="OP" n="26">
+               <persName>Oskar Pastior</persName>
+               <birth when="1927"/>
+               <death when="2006-10-04"/>
+               <affiliation when="1992-04" >Entré à l'Oulipo en avril 1992 Excusé depuis le
+                  4 octobre 2006</affiliation>
+            </person>
+            <person xml:id="PR" n="27">
+               <persName>Pierre Rosenstiehl</persName>
+               <birth when="1933">Né en 1933</birth>
+               <affiliation from="1992">Entré à l'Oulipo en avril 1992</affiliation>
+            </person>
+            <person xml:id="HLT" n="28">
+               <persName>Hervé Le Tellier</persName>
+               <birth when="1957">Né en 1957</birth>
+               <affiliation when="1992-12-15">Entré à l'Oulipo le 15 décembre 1992</affiliation>
+            </person>
+            <person xml:id="BC" n="29">
+               <persName>Bernard Cerquiglini</persName>
+               <birth when="1947">Né en 1947</birth>
+               <affiliation from="1995-04-15">Entré à l'Oulipo le 15 avril 1995</affiliation>
+            </person>
+            <person xml:id="MG" n="30">
+               <persName>Michelle Grangaud</persName>
+               <birth when="1941">Née en 1941</birth>
+               <affiliation from="1995-05">Entrée à l'Oulipo en mai 1995</affiliation>
+            </person>
+            <person xml:id="IM" n="31">
+               <persName>Ian Monk</persName>
+               <birth when="1960">Né en 1960</birth>
+               <affiliation from="1998">Entré à l'Oulipo en juin 1998</affiliation>
+            </person>
+         </listPerson>
+         </div>
+         <pb xml:id="p9" n="9"/>
+
+         <div>composition de poèmes avec mots imposés (qui ne sont donc que
+               <distinct>bouts-rimés</distinct>). Dans la substitution de termes, etc … ?</div>
+         <div>
+            <persName ref="#RQ">Raymond QUENEAU</persName> et <persName ref="#JL">Jean
+               LESCURE</persName>
+            <stage>(en chœur)</stage> : Nous sommes au milieu du <date>XX° siècle</date>.
+               <hi>Tout</hi> présente un rapport avec la Science.</div>
+         <div>
+            <persName ref="#RQ">Raymond QUENEAU</persName> : Nous pouvons dire, par exemple, que nos
+            recherches de rhétorique tiennent compte du fait que la Science n’en est pas restée à
+               <persName ref="#pythagore">Pythagore</persName>.</div>
+         <div>
+            <persName ref="#AMS">Albert Marie-SCHMIDT</persName> : On pourrait alors préciser que
+            nous nous trouvons devant de textes existants, et que nous les modifions sans faire
+            intervenir notre affectivité personnelle…</div>
+         <div>
+            <persName ref="#RQ">Raymond QUENEAU</persName> : Permettez ! Permettez : nous avons
+            trouvé inintéressant l’<distinct>OuLiPotage</distinct> réalisé sur un poème de <persName
+               ref="#cocteau">Cocteau</persName>…</div>
+         <div>
+            <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : …qui n’a pas flatté notre
+            affectivité…</div>
+         <div>
+            <persName ref="#NA">Noël ARNAUD</persName> : …qui ne nous a pas donné de
+               <hi>plaisir</hi> !</div>
+         <div>
+            <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : l’affectivité est donc résolument
+            mise en cause !</div>
+         <div>
+            <persName ref="#JB">Jacques BENS</persName> : il faudrait tout de même remarquer que ce
+            qui nous a préoccupés jusqu’ici, c’est la <hi>méthode</hi>. Or, c’est une méthode
+            scientifique : nous partons de textes existants, c’est-à-dire de faits. Et nous leur
+            appliquons un certain nombre de traitements systématiques et prévus par avance. C’est la
+            démarche même de toute expérience scientifique.</div>
+         <div>
+            <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : En tant que professeur, je tiens
+            à relever la complète objectivité des recherches que l’on nous a présentées jusqu’ici.
+            Cependant, un phénomène me semble mériter un soupçon d’attention : tout texte étudié
+            possède des potentialités que nous faisons passer à l’actualité, c’est-à-dire que nous
+            transformons en réalités.</div>
+         <div>
+            <persName ref="#NA">Noël ARNAUD</persName> : Je voudrais insister à mon tour sur les
+            faits. Ce sont des faits que nous partons. C’est pourquoi, je crois qu’il serait vaut
+            mieux nous en tenir au matériau concret. Et puis, ne pas oublier les machines.</div>
+         <div>
+            <persName ref="#RQ">Raymond QUENEAU</persName> : Je proteste ! Notre méthode pourrait
+            s’appliquer à des faits inexistants.</div>
+         <div>
+            <p><persName ref="#JL">Jean LESCURE</persName> : J’approuve ce que vient de dire le
+               <persName ref="#trtsatrape">Trt Satrape</persName> : nous pouvons très bien faire
+            passer des faits inexistants à l’existence. Il y a une potentialité de l’inexistant.</p></div>
+         <div>
+            <persName ref="#AMS">Albert-Marie SCHMIDT</persName> (avec étonnement) : Mais c’est très
+            intelligent !</div>
+         <div>
+            <persName ref="#JL">Jean LESCURE</persName> : Je ne vous le fais pas dire.</div>
+         <div>
+            <persName ref="#JQ">Jean QUEVAL</persName> : Messieurs, pas d’ironie, je vous prie.</div>
+         <div>
+            <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : Mais pas du tout ! <persName
+               ref="#JL">Lescure</persName> rejoint là un certain nombre de conceptions très en
+            honneur dans le Romantisme Allemand.</div>
+         <div>
+            <persName ref="#JB">Jacques BENS</persName> : Je proteste à mon tour ! Ce dont parle
+               <persName ref="#JL">Lescure</persName> fait appel à une méthode poétique, non pas
+            scientifique.</div>
+
+         <pb xml:id="p10" n="10"/>
+
+         <div>
+            <persName ref="#JQ">Jean QUEVAL</persName> : Permettez au <persName ref="#president"
+               >Président</persName> de récapituler, pour clarifier (si faire se peut—mais faire se
+            peut-il ?) la discussion. Je relève trois points : a/ l’unanimité est faite sur
+            l’importance de cette définition et sa difficulté ; b/ nous est-il possible de ne pas
+            nous limiter aux matériaux ; c/ ne pas oublier l’intervention des machines.</div>
+         <div>
+           <p> <persName ref="#RQ">Raymond QUENEAU</persName> (qui tient à son idée) : Pour en revenir
+            au petit b, ne pensez-vous pas que ce que nous faisons ressemble à ce que font certains
+            peintres ? Comme ils découvrent des valeurs picturales où elles n’existent pas, nous
+            découvrons des valeurs littéraires où il n’y en a pas. Historiquement, on peut
+            considérer que, le jour où les <persName ref="#carolingiens">Carolingiens</persName> se
+            sont mis à compter sur leurs doigts jusqu'à 6, 8, ou 12 pour faire des vers, ils ont
+            accompli un travail OuLiPien.</p></div>
+         <div>
+            <persName ref="#JL">Jean LESCURE</persName> : Du boulier à la machine Bull !</div>
+         <div>
+            <p><persName ref="#RQ">Raymond QUENEAU</persName> : D’autre part, et contrairement à ce que
+            l’attitude de notre ami <persName ref="#JL">Lescure</persName> pourrait parfois laisser
+            croire, nous ne sommes pas des petits plaisantins. C’est très sérieusement que nous nous
+            livrons à nos travaux. (Murmures approbateurs.) Et nous avons acclamé la détermination
+            de potentiel au lieu d’expérimental. Or, le potentiel c’est ce qui n’existe pas
+            encore.</p></div>
+         <div>
+            <persName ref="#JL">Jean LESCURE</persName> (qui n’a rien compris) : T’as compris,
+               <persName ref="#dataire">dataire</persName> ?</div>
+         <div>
+            <persName ref="#JB">Jacques BENS</persName> : Que disais-je d’autre ? Pour arriver au
+            potentiel (au futur), il faut bien partir de ce qui existe (le présent) !</div>
+         <div>(La fin de la discussion se perd dans le tumulte et l’anarchie.)</div>
+         <div>Il est enfin question du <title ref="#dossieroulipienducollege">Dossier OuLiPien du
+               Collège</title>. Une <ref>circulaire spéciale (n°7)</ref> a été consacrée à cet
+            important problème. Une <name type="manif" ref="#reunionspeciale">réunion
+               spéciale</name> lui sera également consacrée.</div>
+         <div>
+            <persName ref="#JL">Jean Lescure</persName> donne lecture de permutations réalisées sur
+            des <title ref="#phrases">Phrases</title> d’<persName ref="#arthurrimbaud">Arthur
+               Rimbaud</persName>. L’opération paraît intéressante. A poursuivre.</div>
+         <div>
+            <persName ref="#RQ">Raymond Queneau</persName> signale la perte de la canonicité par
+            exemple <persName ref="#philomene">Philomène</persName>. Il ajoute : « Ce dégommage
+            conduit inéluctablement à la négation de la divinité du <persName ref="#christ"
+               >Christ</persName> », sans préciser s’il le déplore ou s’en réjouit, ce que n’a pas
+            cherché à percer la discrétion toute OuLiPienne de l’assemblée.</div>
+
+         <pb xml:id="p11" n="11"/>
+
+         <div>
+                     <persName ref="#NA">Noël Arnaud</persName> lit (et verse aux archives) le très curieux
+            résultat d’un « <name type="manif" ref="#concoursdesartistes">Concours des
+               Artistes</name> » de Guadeloupe. Bien que ces textes ressortissent plus à la folie
+            littéraire qu’à la littérature potentielle,
+               <persName ref="#RQ">Raymond Queneau</persName> propose de retenir ce vers d’une
+            chanson primée :</div>
+         <div>« Ces recherches sobres et fécondes … »</div>
+         <div>La <name type="manif" ref="#prochainereunion">prochaine réunion</name> officielle aura
+            lieu le LUNDI 5 JUIN 1961, au Restaurant Laborderie, 40 rue de l’Université (1er
+            étage).</div>
+         <div>Cependant, une <name type="manif" ref="#reunionfacultative">réunion facultative</name>
+            est prévue pour le VENDREDI 12 MAI, au même lieu. Elle sera entièrement consacrée à la
+            préparation du <ref>Dossier</ref> dont il a été question à plusieurs reprises. Les
+            absences seront excusées, mais les présences hautement appréciées.</div>
+         <div>pour le <persName ref="#sdd">S.D.D</persName>.,</div>
+         <div>
+            <persName ref="#ythiermarchant"> Ythier MARCHANT</persName>
+         </div>
+      </body>
+   </text>
+</TEI>

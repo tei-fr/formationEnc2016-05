@@ -22,7 +22,6 @@
     </teiHeader>
     <text>
         <body>
-
             <head>Programme de la formation</head>
             <div>
                 <head>Premier jour</head>
@@ -72,7 +71,6 @@
                     <p>Comment partir des complexités du modèle vers la TEI ; les 5 étapes; modules,
                         classes etc.</p>
                     <p><ref target="02-richessesTEI.tei.xml">02-richessesTEI.tei</ref></p>
-
                 </div>
                 <div xml:id="T05" resp="#EM ">
                     <head>15h - 17h : Personnalisation TEI avec Roma<!--– TP EM--></head>
@@ -81,10 +79,8 @@
                         <item> Création avec Roma ODD schéma réduit</item>
                         <item> Génération du schéma et de l’ODD</item>
                         <item> Valider avec le schéma</item>
-
                         <item> Transcription d’un manuscrit simple; validation de la transcription.
                             (exercices sur deGaulle.xml) </item>
-
                     </list>
                     <p>Avant de partir, ne pas oublier de prévenir les participants que nous
                         attendons d’eux trois diapositives de présentation de leur projet pour le
@@ -127,7 +123,6 @@
                 <div xml:id="T08" resp="#EM">
                     <head>11h30 -1200  : TEI Header <!--– PM EM--></head>
                     <p><ref target="04-teiHeader.tei.xml">04-teiHeader.tei</ref></p>
-
                 </div>
                 <div xml:id="T08bis" resp="#EM">
                     <head>12h -12h30 : TP TEI Header<!-- – TP EM--></head>

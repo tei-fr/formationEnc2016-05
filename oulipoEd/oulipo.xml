@@ -23,7 +23,13 @@
          <sourceDesc>
             <p>Information about the source</p>
          </sourceDesc>
+        
       </fileDesc>
+     <profileDesc>
+        <particDesc>
+           <xi:include href="oulipiens.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>          
+        </particDesc>
+     </profileDesc>
   </teiHeader>
   <xi:include href="cr610428_1.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
   <xi:include href="CR610428_4.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>

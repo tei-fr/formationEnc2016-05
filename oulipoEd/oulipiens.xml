@@ -1,0 +1,208 @@
+<listPerson xmlns="http://www.tei-c.org/ns/1.0">
+    <person xml:id="FLL" n="1">
+        <persName>François Le Lionnais</persName>
+        <birth when="1901"/>
+        <death when="1984-03-13">Excusé depuis la 13 mars 1984</death>
+        <affiliation>Président-Fondateur</affiliation>
+    </person>
+
+    <person xml:id="RQ" n="2">
+        <persName>Raymond Queneau</persName>
+        <birth when="1903"/>
+        <affiliation>Président-Fondateur</affiliation>
+        <death when="1976-10-25">Excusé depuis le 25 octobre 1976</death>
+    </person>
+
+    <person xml:id="NA" n="3">
+        <persName>Noél Arnaud</persName>
+        <birth when="1919"/>
+        <affiliation>Membre fondateur</affiliation>
+        <affiliation from="1984" to="2003">Président de 1984 a 2003</affiliation>
+        <death when="2003-04-01">Excusé depuis le 1er avril 2003</death>
+    </person>
+
+    <person xml:id="JB" n="4">
+        <persName>Jacques Bens</persName>
+        
+        <affiliation >Membre fondateur</affiliation>
+            <birth when="1931"/>
+        <death when="2001-07-26">Excusé depuis le 26 juillet 2001</death>
+    </person>
+    <person xml:id="CB" n="5">
+        <persName>Claude Berge</persName>
+        <affiliation when="1926" >Membre fondateur</affiliation>
+        <!-- cf Bens, supra -->
+        <death when="2002-06-30">Excusé depuis le 30 juin 2002</death>
+    </person>
+    <person xml:id="JD" n="6">
+        <persName>Jacques Duchateau</persName>
+        <birth when="1924"/>
+        <affiliation> Membre fondateur</affiliation>
+    </person>
+    <person xml:id="L" n="7">
+        <persName>Latis alias Emmanuel Peillet</persName>
+        <birth when="1913">1913</birth>
+        <death when="1973-09-01">Excusé depuis le 1er Septembre 1973</death>
+        <affiliation >Membre fondateur </affiliation>
+        <!-- on reste membre fondateur meme apres sa disparition, donc 
+        supprimez l'attribut @to-->
+    </person>
+    <person xml:id="JL" n="8">
+        <persName>Jean Lescure</persName>
+        <birth when="1912"/>
+        <death when="2005-10-17"/>
+        <affiliation to="2005-10-17">
+            <affiliation >Membre fondateur Excusé depuis le 17 octobre
+                2005</affiliation>
+        </affiliation>
+        <!-- cf Bens, supra. La mention "Excuse depuis..." ferait mieux comme
+        contenu de la balise <death>. Il ne s'agit pas d'une affiliation -->
+    </person>
+    <person xml:id="JQ" n="9">
+        <persName>Jean Queval</persName>
+        <birth when="1913"/>
+        <death when="1990-12-10"/>
+        <affiliation >Membre fondateur Excusé depuis le 10 décembre
+            1990</affiliation>
+        <!-- cf Lescure supra -->
+    </person>
+    <person xml:id="AMS" n="10">
+        <persName>Albert-Marie Schmidt</persName>
+        <birth when="1901">1901</birth>
+        <death when="1966"/>
+        <affiliation >Membre fondateur Excusé depuis le 8 février 1966</affiliation>
+    </person>
+    <!-- cf Lescure supra -->
+    
+    <person xml:id="AB" n="11">
+        <persName>André Blavier </persName>
+        <birth when="1922"/>
+        <death when="2001-06-09"/>
+        <affiliation when="1961-02-13" >Correspondant étranger depuis le 13 février
+            1961 Excusé depuis le 9 juin 2001</affiliation>
+    </person>
+    <person xml:id="RC" n="12">
+        <persName>Ross Chambers</persName>
+        <birth when="1932">Né en 1932</birth>
+        <affiliation when="1961-02-13">Correspondant étranger depuis le 13 février 1961
+        </affiliation>
+    </person>
+    <person xml:id="SC" n="13">
+        <persName>Stanley Chapman</persName>
+        <birth when="1925"/>
+        <death when="2009-05-26"/>
+        <affiliation when="1961-02-13" >Correspondant étranger depuis le 13 février
+            1961 Excusé depuis le 26 mai 2009</affiliation>
+    </person>
+    <person xml:id="PB" n="14">
+        <persName>Paul Braffort</persName>
+        <birth when="1923">Né en 1923</birth>
+        <affiliation when="1961-03-13">Entré à l'Oulipo le 13 mars 1961</affiliation>
+    </person>
+    <person xml:id="MD" n="15">
+        <persName>Marcel Duchamp</persName>
+        <birth when="1887"/>
+        <death when="1968-10-02"/>
+        <affiliation when="1932-03-16">Entré à l'Oulipo le 16 mars 1962 Excusé depuis le 2 octobre
+            1968</affiliation>
+     </person>
+    <person xml:id="JR" n="16">
+        <persName>Jacques Roubaud</persName>
+        <birth when="1932"/>
+        <affiliation from="1966-11-27">Entré à l'Oulipo le 27 novembre 1966</affiliation>
+    </person>
+    <person xml:id="GP" n="17">
+        <persName>Georges Perec</persName>
+        <birth when="1936"/>
+        <death when="1982-03-03"/>
+        <affiliation when="1967-03-22">Entré à l'Oulipo le 22 mars 1967 Excusé
+            depuis le 3 mars 1982</affiliation>
+    </person>
+    <person xml:id="MB" n="18">
+        <persName>Marcel Bénabou</persName>
+        <birth when="1939">Né en 1939</birth>
+        <affiliation from="1970-10-29">Entré à l'Oulipo le 29 octobre 1970</affiliation>
+        <affiliation from="1971">Secrétaire déﬁnitivement provisoire depuis 1971 </affiliation>
+    </person>
+    <person xml:id="LE" n="19">
+        <persName>Luc Etienne</persName>
+        <birth when="1908"/>
+        <death when="1984-11-27"/>
+        <affiliation when="1979-10-29" >Entré à l'Oulipo Ie 29 octobre 1979 Excusé
+            depuis le 27 novembre 1984</affiliation>
+    </person>
+    <person xml:id="PF" n="20">
+        <persName>Paul Fournel</persName>
+        <birth when="1947">Né en 1947</birth>
+        <affiliation from="1971-09-10">Entré à l'Oulipo le 10 septembre 1971 Secrétaire
+            provisoirement déﬁnitif de 1971 à 2003</affiliation>
+   <!-- ca c'est 2 affiliations -->
+        <affiliation from="2003-05-12">Troisiéme president de l’Oulipo depuis le 12 mai
+            2003</affiliation>
+    </person>
+    <person xml:id="IC" n="21">
+        <persName>Italo Calvino</persName>
+        <birth when="1923"/>
+        <death when="1985-09-19"/>
+        <affiliation when="1973" >Entré à l'Oulipo le 14 février 1973 Excusé depuis le 19
+            septembre 1985 </affiliation>
+    </person>
+    <!-- cf Lescure supra -->
+    
+    <person xml:id="HM" n="22">
+        <persName>Harry Mathews</persName>
+        <birth when="1930"/>
+        <affiliation from="1973-02-14">Entré à l'Oulipo le 14 février 1973</affiliation>
+    </person>
+    <person xml:id="MM" n="23">
+        <persName>Michele Métail</persName>
+        <birth when="1950">Née en 1950</birth>
+        <affiliation from="1975" to="2001">Entrée à l'Oulipo le 28 octobre 1975 Prend ses distances
+            avec le groupe en 2001</affiliation>
+       
+    </person>
+    <person xml:id="FC" n="24">
+        <persName>François Caradec</persName>
+        <birth when="1924"/>
+        <death when="2008-11-03"/>
+        <affiliation when="1983-10-04" >Entré à l‘Oulipo le 4 octobre 1983 Excusé
+            depuis le 13 novembre 2008</affiliation>
+      </person>
+    <person xml:id="JJ" n="25">
+        <persName>Jacques Jouet</persName>
+        <birth when="1947">Né en 1947</birth>
+        <affiliation from="1983-10-04">Entré à l'Oulipo le 4 octobre 1983</affiliation>
+    </person>
+    <person xml:id="OP" n="26">
+        <persName>Oskar Pastior</persName>
+        <birth when="1927"/>
+        <death when="2006-10-04"/>
+        <affiliation when="1992-04" >Entré à l'Oulipo en avril 1992 Excusé depuis le
+            4 octobre 2006</affiliation>
+       </person>
+    <person xml:id="PR" n="27">
+        <persName>Pierre Rosenstiehl</persName>
+        <birth when="1933">Né en 1933</birth>
+        <affiliation from="1992">Entré à l'Oulipo en avril 1992</affiliation>
+    </person>
+    <person xml:id="HLT" n="28">
+        <persName>Hervé Le Tellier</persName>
+        <birth when="1957">Né en 1957</birth>
+        <affiliation when="1992-12-15">Entré à l'Oulipo le 15 décembre 1992</affiliation>
+    </person>
+    <person xml:id="BC" n="29">
+        <persName>Bernard Cerquiglini</persName>
+        <birth when="1947">Né en 1947</birth>
+        <affiliation from="1995-04-15">Entré à l'Oulipo le 15 avril 1995</affiliation>
+    </person>
+    <person xml:id="MG" n="30">
+        <persName>Michelle Grangaud</persName>
+        <birth when="1941">Née en 1941</birth>
+        <affiliation from="1995-05">Entrée à l'Oulipo en mai 1995</affiliation>
+    </person>
+    <person xml:id="IM" n="31">
+        <persName>Ian Monk</persName>
+        <birth when="1960">Né en 1960</birth>
+        <affiliation from="1998">Entré à l'Oulipo en juin 1998</affiliation>
+    </person>
+</listPerson>

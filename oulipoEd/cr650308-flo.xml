@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="out/tei_oulipo_ODD_flo.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -64,7 +62,7 @@
          <head>
             <title type="main">OUVROIR DE LITTERATURE POTENTIELLE</title>
          </head> 
-         <div>
+         <!--<div>
             <listPerson>
                <person xml:id="FLL" n="1">
                   <persName>François Le Lionnais</persName>
@@ -98,7 +96,7 @@
                <person xml:id="CB" n="5">
                   <persName>Claude Berge</persName>
                   <affiliation when="1926">Membre fondateur</affiliation>
-                  <!-- cf Bens, supra -->
+                  <!-\- cf Bens, supra -\->
                   <death when="2002-06-30">Excusé depuis le 30 juin 2002</death>
                </person>
                <person xml:id="JD" n="6">
@@ -111,8 +109,8 @@
                   <birth when="1913">1913</birth>
                   <death when="1973-09-01">Excusé depuis le 1er Septembre 1973</death>
                   <affiliation>Membre fondateur </affiliation>
-                  <!-- on reste membre fondateur meme apres sa disparition, donc 
-        supprimez l'attribut @to-->
+                  <!-\- on reste membre fondateur meme apres sa disparition, donc 
+        supprimez l'attribut @to-\->
                </person>
                <person xml:id="JL" n="8">
                   <persName>Jean Lescure</persName>
@@ -121,15 +119,15 @@
                   <affiliation to="2005-10-17">
                      <affiliation>Membre fondateur Excusé depuis le 17 octobre 2005</affiliation>
                   </affiliation>
-                  <!-- cf Bens, supra. La mention "Excuse depuis..." ferait mieux comme
-        contenu de la balise <death>. Il ne s'agit pas d'une affiliation -->
+                  <!-\- cf Bens, supra. La mention "Excuse depuis..." ferait mieux comme
+        contenu de la balise <death>. Il ne s'agit pas d'une affiliation -\->
                </person>
                <person xml:id="JQ" n="9">
                   <persName>Jean Queval</persName>
                   <birth when="1913"/>
                   <death when="1990-12-10"/>
                   <affiliation>Membre fondateur Excusé depuis le 10 décembre 1990</affiliation>
-                  <!-- cf Lescure supra -->
+                  <!-\- cf Lescure supra -\->
                </person>
                <person xml:id="AMS" n="10">
                   <persName>Albert-Marie Schmidt</persName>
@@ -137,7 +135,7 @@
                   <death when="1966"/>
                   <affiliation>Membre fondateur Excusé depuis le 8 février 1966</affiliation>
                </person>
-               <!-- cf Lescure supra -->
+               <!-\- cf Lescure supra -\->
                
                <person xml:id="AB" n="11">
                   <persName>André Blavier </persName>
@@ -205,7 +203,7 @@
                   <birth when="1947">Né en 1947</birth>
                   <affiliation from="1971-09-10">Entré à l'Oulipo le 10 septembre 1971 Secrétaire
                      provisoirement déﬁnitif de 1971 à 2003</affiliation>
-                  <!-- ca c'est 2 affiliations -->
+                  <!-\- ca c'est 2 affiliations -\->
                   <affiliation from="2003-05-12">Troisiéme president de l’Oulipo depuis le 12 mai
                      2003</affiliation>
                </person>
@@ -216,7 +214,7 @@
                   <affiliation when="1973">Entré à l'Oulipo le 14 février 1973 Excusé depuis le 19
                      septembre 1985 </affiliation>
                </person>
-               <!-- cf Lescure supra -->
+               <!-\- cf Lescure supra -\->
                
                <person xml:id="HM" n="22">
                   <persName>Harry Mathews</persName>
@@ -276,7 +274,7 @@
                </person>
             </listPerson>
          </div>         
-           
+           -->
 
          <div>
             <head>

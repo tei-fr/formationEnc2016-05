@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../oulipoDox/Oulipo_cr620911/teiOulipoOddMSFK.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -29,9 +27,8 @@
                   <p>Compte rendu de la réunion des Oulipiens en date du <date when="1962-09-11">11
                         septembre 1962</date></p>
                </msContents>
-               <additional>
-                  <p>Présence d'une estampille "Oulipo"</p>
-               </additional>
+               <additional><adminInfo><note>Présence d'une estampille "Oulipo"</note></adminInfo>              
+                    </additional>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -125,7 +122,7 @@
                   démontré qu’une solution de négligence n’est pas possible.) On pourrait, par
                   exemple, admettre qu’il existe un ordre différent de <emph rend="souligné">l’ordre
                      temporel</emph>. Peut-être pas n’importe lequel, d’ailleurs. Mais je ne sais
-                  pas lequel. Si nous prenons <title xml:id="100000milliardsdepoemes">100.000
+                  pas lequel. Si nous prenons <title xml:id="millemilliardsdepoemes">100.000
                      milliards de poèmes</title>, nous constatons que chaque poème est bon. Dans le
                   livre de <persName ref="#S">Saporta</persName>, toutes les <term
                      xml:id="combinaisons">combinaisons</term> ne sont pas bonnes. Peut-on proposer
@@ -228,7 +225,7 @@
             <p><signatures>Le S.P.</signatures></p>
          </div>
       </body>
-      <back>
+      <!--<back>
          <listPerson>
             <head>Oulipiens</head>
             <person xml:id="LLF" n="1">
@@ -331,7 +328,7 @@
             <person xml:id="BC" n="5">
                <persName>Claude Berge</persName>
                <affiliation when="1926" >Membre fondateur</affiliation>
-               <!-- cf Bens, supra -->
+               <!-\- cf Bens, supra -\->
                <death when="2002-06-30">Excusé depuis le 30 juin 2002</death>
             </person>
             <person xml:id="DJ" n="6">
@@ -344,8 +341,8 @@
                <birth when="1913">1913</birth>
                <death when="1973-09-01">Excusé depuis le 1er Septembre 1973</death>
                <affiliation>Membre fondateur</affiliation>
-               <!-- on reste membre fondateur meme apres sa disparition, donc 
-        supprimez l'attribut @to-->
+               <!-\- on reste membre fondateur meme apres sa disparition, donc 
+        supprimez l'attribut @to-\->
             </person>
             <person xml:id="LJ" n="8">
                <persName>Jean Lescure</persName>
@@ -353,8 +350,8 @@
                <death when="2005-10-17"/>
                <affiliation to="2005-10-17">Membre fondateur Excusé depuis le 17 octobre
                   2005</affiliation>
-               <!-- cf Bens, supra. La mention "Excuse depuis..." ferait mieux comme
-        contenu de la balise <death>. Il ne s'agit pas d'une affiliation -->
+               <!-\- cf Bens, supra. La mention "Excuse depuis..." ferait mieux comme
+        contenu de la balise <death>. Il ne s'agit pas d'une affiliation -\->
             </person>
             <person xml:id="QJ" n="9">
                <persName>Jean Queval</persName>
@@ -362,7 +359,7 @@
                <death when="1990-12-10"/>
                <affiliation>Membre fondateur Excusé depuis le 10 décembre
                   1990</affiliation>
-               <!-- cf Lescure supra -->
+               <!-\- cf Lescure supra -\->
             </person>
             <person xml:id="SAM" n="10">
                <persName>Albert-Marie Schmidt</persName>
@@ -370,7 +367,7 @@
                <death when="1966"/>
                <affiliation>Membre fondateur Excusé depuis le 8 février 1966</affiliation>
             </person>
-            <!-- cf Lescure supra -->               
+            <!-\- cf Lescure supra -\->               
             <person xml:id="BA" n="11">
                <persName>André Blavier </persName>
                <birth when="1922"/>
@@ -433,7 +430,7 @@
                <birth when="1947">Né en 1947</birth>
                <affiliation from="1971-09-10">Entré à l'Oulipo le 10 septembre 1971 Secrétaire
                   provisoirement déﬁnitif de 1971 à 2003</affiliation>
-               <!-- ca c'est 2 affiliations -->
+               <!-\- ca c'est 2 affiliations -\->
                <affiliation from="2003-05-12">Troisiéme president de l’Oulipo depuis le 12 mai
                   2003</affiliation>
             </person>
@@ -444,7 +441,7 @@
                <affiliation when="1973" >Entré à l'Oulipo le 14 février 1973 Excusé depuis le 19
                   septembre 1985 </affiliation>
             </person>
-            <!-- cf Lescure supra -->               
+            <!-\- cf Lescure supra -\->               
             <person xml:id="MH" n="22">
                <persName>Harry Mathews</persName>
                <birth when="1930"/>
@@ -501,6 +498,6 @@
                <affiliation from="1998">Entré à l'Oulipo en juin 1998</affiliation>
             </person>
          </listPerson>
-      </back>
+      </back>-->
    </text>
 </TEI>

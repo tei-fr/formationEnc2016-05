@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-model href="../travaux/out/tei_Oulipo_ST_LLC.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -43,11 +41,7 @@
                   </objectDesc>
                </physDesc>
 
-               <additional>
-                  <listBibl type="Meeting"/>
-               </additional>
-
-
+             
                <!--
                   <idno type="ark">12148/btv1b100100073</idno>
                <idno type="ead">d0e191</idno>
@@ -83,16 +77,16 @@
 
       <encodingDesc>
          <editorialDecl>
-           Utilisation des modules textStructure, header, core pour décrire les échanges
+         <p>  Utilisation des modules textStructure, header, core pour décrire les échanges
                (dialogues) et des parties de texte quelconque qui font suite aux dialogues.
-         </editorialDecl>
+     </p>    </editorialDecl>
       </encodingDesc>
 
 
    </teiHeader>
    <text>
       <body>
-         <div><listPerson>
+         <!--<listPerson>
             <person xml:id="FLL" n="1">
                <persName>François Le Lionnais</persName>
                <birth when="1901"/>
@@ -130,7 +124,7 @@
             <person xml:id="CB" n="5">
                <persName>Claude Berge</persName>
                <affiliation when="1926" >Membre fondateur</affiliation>
-               <!-- cf Bens, supra -->
+               <!-\- cf Bens, supra -\->
                <death when="2002-06-30">Excusé depuis le 30 juin 2002</death>
             </person>
             <person xml:id="JD" n="6">
@@ -143,8 +137,8 @@
                <birth when="1913">1913</birth>
                <death when="1973-09-01">Excusé depuis le 1er Septembre 1973</death>
                <affiliation >Membre fondateur </affiliation>
-               <!-- on reste membre fondateur meme apres sa disparition, donc 
-        supprimez l'attribut @to-->
+               <!-\- on reste membre fondateur meme apres sa disparition, donc 
+        supprimez l'attribut @to-\->
             </person>
             <person xml:id="JL" n="8">
                <persName>Jean Lescure</persName>
@@ -154,8 +148,8 @@
                   <affiliation >Membre fondateur Excusé depuis le 17 octobre
                      2005</affiliation>
                </affiliation>
-               <!-- cf Bens, supra. La mention "Excuse depuis..." ferait mieux comme
-        contenu de la balise <death>. Il ne s'agit pas d'une affiliation -->
+               <!-\- cf Bens, supra. La mention "Excuse depuis..." ferait mieux comme
+        contenu de la balise <death>. Il ne s'agit pas d'une affiliation -\->
             </person>
             <person xml:id="JQ" n="9">
                <persName>Jean Queval</persName>
@@ -163,7 +157,7 @@
                <death when="1990-12-10"/>
                <affiliation >Membre fondateur Excusé depuis le 10 décembre
                   1990</affiliation>
-               <!-- cf Lescure supra -->
+               <!-\- cf Lescure supra -\->
             </person>
             <person xml:id="AMS" n="10">
                <persName>Albert-Marie Schmidt</persName>
@@ -171,7 +165,7 @@
                <death when="1966"/>
                <affiliation >Membre fondateur Excusé depuis le 8 février 1966</affiliation>
             </person>
-            <!-- cf Lescure supra -->
+            <!-\- cf Lescure supra -\->
             
             <person xml:id="AB" n="11">
                <persName>André Blavier </persName>
@@ -235,7 +229,7 @@
                <birth when="1947">Né en 1947</birth>
                <affiliation from="1971-09-10">Entré à l'Oulipo le 10 septembre 1971 Secrétaire
                   provisoirement déﬁnitif de 1971 à 2003</affiliation>
-               <!-- ca c'est 2 affiliations -->
+               <!-\- ca c'est 2 affiliations -\->
                <affiliation from="2003-05-12">Troisiéme president de l’Oulipo depuis le 12 mai
                   2003</affiliation>
             </person>
@@ -246,7 +240,7 @@
                <affiliation when="1973" >Entré à l'Oulipo le 14 février 1973 Excusé depuis le 19
                   septembre 1985 </affiliation>
             </person>
-            <!-- cf Lescure supra -->
+            <!-\- cf Lescure supra -\->
             
             <person xml:id="HM" n="22">
                <persName>Harry Mathews</persName>
@@ -305,94 +299,94 @@
                <affiliation from="1998">Entré à l'Oulipo en juin 1998</affiliation>
             </person>
          </listPerson>
-         </div>
+         </p></div>-->
          <pb xml:id="p9" n="9"/>
 
-         <div>composition de poèmes avec mots imposés (qui ne sont donc que
-               <distinct>bouts-rimés</distinct>). Dans la substitution de termes, etc … ?</div>
-         <div>
+        <div> <p>composition de poèmes avec mots imposés (qui ne sont donc que
+               <distinct>bouts-rimés</distinct>). Dans la substitution de termes, etc … ?</p></div>
+         <div><p>
             <persName ref="#RQ">Raymond QUENEAU</persName> et <persName ref="#JL">Jean
                LESCURE</persName>
             <stage>(en chœur)</stage> : Nous sommes au milieu du <date>XX° siècle</date>.
-               <hi>Tout</hi> présente un rapport avec la Science.</div>
-         <div>
+               <hi>Tout</hi> présente un rapport avec la Science.</p></div>
+         <div><p>
             <persName ref="#RQ">Raymond QUENEAU</persName> : Nous pouvons dire, par exemple, que nos
             recherches de rhétorique tiennent compte du fait que la Science n’en est pas restée à
-               <persName ref="#pythagore">Pythagore</persName>.</div>
-         <div>
+               <persName ref="#pythagore">Pythagore</persName>.</p></div>
+         <div><p>
             <persName ref="#AMS">Albert Marie-SCHMIDT</persName> : On pourrait alors préciser que
             nous nous trouvons devant de textes existants, et que nous les modifions sans faire
-            intervenir notre affectivité personnelle…</div>
-         <div>
+            intervenir notre affectivité personnelle…</p></div>
+         <div><p>
             <persName ref="#RQ">Raymond QUENEAU</persName> : Permettez ! Permettez : nous avons
             trouvé inintéressant l’<distinct>OuLiPotage</distinct> réalisé sur un poème de <persName
-               ref="#cocteau">Cocteau</persName>…</div>
-         <div>
+               ref="#cocteau">Cocteau</persName>…</p></div>
+         <div><p>
             <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : …qui n’a pas flatté notre
-            affectivité…</div>
-         <div>
+            affectivité…</p></div>
+         <div><p>
             <persName ref="#NA">Noël ARNAUD</persName> : …qui ne nous a pas donné de
-               <hi>plaisir</hi> !</div>
-         <div>
+               <hi>plaisir</hi> !</p></div>
+         <div><p>
             <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : l’affectivité est donc résolument
-            mise en cause !</div>
-         <div>
+            mise en cause !</p></div>
+         <div><p>
             <persName ref="#JB">Jacques BENS</persName> : il faudrait tout de même remarquer que ce
             qui nous a préoccupés jusqu’ici, c’est la <hi>méthode</hi>. Or, c’est une méthode
             scientifique : nous partons de textes existants, c’est-à-dire de faits. Et nous leur
             appliquons un certain nombre de traitements systématiques et prévus par avance. C’est la
-            démarche même de toute expérience scientifique.</div>
-         <div>
+            démarche même de toute expérience scientifique.</p></div>
+         <div><p>
             <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : En tant que professeur, je tiens
             à relever la complète objectivité des recherches que l’on nous a présentées jusqu’ici.
             Cependant, un phénomène me semble mériter un soupçon d’attention : tout texte étudié
             possède des potentialités que nous faisons passer à l’actualité, c’est-à-dire que nous
-            transformons en réalités.</div>
-         <div>
+            transformons en réalités.</p></div>
+         <div><p>
             <persName ref="#NA">Noël ARNAUD</persName> : Je voudrais insister à mon tour sur les
             faits. Ce sont des faits que nous partons. C’est pourquoi, je crois qu’il serait vaut
-            mieux nous en tenir au matériau concret. Et puis, ne pas oublier les machines.</div>
-         <div>
+            mieux nous en tenir au matériau concret. Et puis, ne pas oublier les machines.</p></div>
+         <div><p>
             <persName ref="#RQ">Raymond QUENEAU</persName> : Je proteste ! Notre méthode pourrait
-            s’appliquer à des faits inexistants.</div>
-         <div>
-            <p><persName ref="#JL">Jean LESCURE</persName> : J’approuve ce que vient de dire le
+            s’appliquer à des faits inexistants.</p></div>
+         <div><p>
+          <persName ref="#JL">Jean LESCURE</persName> : J’approuve ce que vient de dire le
                <persName ref="#trtsatrape">Trt Satrape</persName> : nous pouvons très bien faire
             passer des faits inexistants à l’existence. Il y a une potentialité de l’inexistant.</p></div>
-         <div>
+         <div><p>
             <persName ref="#AMS">Albert-Marie SCHMIDT</persName> (avec étonnement) : Mais c’est très
-            intelligent !</div>
-         <div>
-            <persName ref="#JL">Jean LESCURE</persName> : Je ne vous le fais pas dire.</div>
-         <div>
-            <persName ref="#JQ">Jean QUEVAL</persName> : Messieurs, pas d’ironie, je vous prie.</div>
-         <div>
+            intelligent !</p></div>
+         <div><p>
+            <persName ref="#JL">Jean LESCURE</persName> : Je ne vous le fais pas dire.</p></div>
+         <div><p>
+            <persName ref="#JQ">Jean QUEVAL</persName> : Messieurs, pas d’ironie, je vous prie.</p></div>
+         <div><p>
             <persName ref="#AMS">Albert-Marie SCHMIDT</persName> : Mais pas du tout ! <persName
                ref="#JL">Lescure</persName> rejoint là un certain nombre de conceptions très en
-            honneur dans le Romantisme Allemand.</div>
-         <div>
+            honneur dans le Romantisme Allemand.</p></div>
+         <div><p>
             <persName ref="#JB">Jacques BENS</persName> : Je proteste à mon tour ! Ce dont parle
                <persName ref="#JL">Lescure</persName> fait appel à une méthode poétique, non pas
-            scientifique.</div>
+            scientifique.</p></div>
 
          <pb xml:id="p10" n="10"/>
 
-         <div>
-            <persName ref="#JQ">Jean QUEVAL</persName> : Permettez au <persName ref="#president"
+         <div><p>
+         <persName ref="#JQ">Jean QUEVAL</persName> : Permettez au <persName ref="#president"
                >Président</persName> de récapituler, pour clarifier (si faire se peut—mais faire se
             peut-il ?) la discussion. Je relève trois points : a/ l’unanimité est faite sur
             l’importance de cette définition et sa difficulté ; b/ nous est-il possible de ne pas
-            nous limiter aux matériaux ; c/ ne pas oublier l’intervention des machines.</div>
-         <div>
-           <p> <persName ref="#RQ">Raymond QUENEAU</persName> (qui tient à son idée) : Pour en revenir
+            nous limiter aux matériaux ; c/ ne pas oublier l’intervention des machines.</p></div>
+         <div><p>
+       <persName ref="#RQ">Raymond QUENEAU</persName> (qui tient à son idée) : Pour en revenir
             au petit b, ne pensez-vous pas que ce que nous faisons ressemble à ce que font certains
             peintres ? Comme ils découvrent des valeurs picturales où elles n’existent pas, nous
             découvrons des valeurs littéraires où il n’y en a pas. Historiquement, on peut
             considérer que, le jour où les <persName ref="#carolingiens">Carolingiens</persName> se
             sont mis à compter sur leurs doigts jusqu'à 6, 8, ou 12 pour faire des vers, ils ont
             accompli un travail OuLiPien.</p></div>
-         <div>
-            <persName ref="#JL">Jean LESCURE</persName> : Du boulier à la machine Bull !</div>
+         <div><p>
+  <persName ref="#JL">Jean LESCURE</persName> : Du boulier à la machine Bull !</p></div>
          <div>
             <p><persName ref="#RQ">Raymond QUENEAU</persName> : D’autre part, et contrairement à ce que
             l’attitude de notre ami <persName ref="#JL">Lescure</persName> pourrait parfois laisser
@@ -400,49 +394,49 @@
             livrons à nos travaux. (Murmures approbateurs.) Et nous avons acclamé la détermination
             de potentiel au lieu d’expérimental. Or, le potentiel c’est ce qui n’existe pas
             encore.</p></div>
-         <div>
+         <div><p>
             <persName ref="#JL">Jean LESCURE</persName> (qui n’a rien compris) : T’as compris,
-               <persName ref="#dataire">dataire</persName> ?</div>
-         <div>
+               <persName ref="#dataire">dataire</persName> ?</p></div>
+         <div><p>
             <persName ref="#JB">Jacques BENS</persName> : Que disais-je d’autre ? Pour arriver au
-            potentiel (au futur), il faut bien partir de ce qui existe (le présent) !</div>
-         <div>(La fin de la discussion se perd dans le tumulte et l’anarchie.)</div>
-         <div>Il est enfin question du <title ref="#dossieroulipienducollege">Dossier OuLiPien du
+            potentiel (au futur), il faut bien partir de ce qui existe (le présent) !</p></div>
+         <div><p>(La fin de la discussion se perd dans le tumulte et l’anarchie.)</p></div>
+         <div><p>Il est enfin question du <title ref="#dossieroulipienducollege">Dossier OuLiPien du
                Collège</title>. Une <ref>circulaire spéciale (n°7)</ref> a été consacrée à cet
             important problème. Une <name type="manif" ref="#reunionspeciale">réunion
-               spéciale</name> lui sera également consacrée.</div>
-         <div>
+               spéciale</name> lui sera également consacrée.</p></div>
+         <div><p>
             <persName ref="#JL">Jean Lescure</persName> donne lecture de permutations réalisées sur
             des <title ref="#phrases">Phrases</title> d’<persName ref="#arthurrimbaud">Arthur
-               Rimbaud</persName>. L’opération paraît intéressante. A poursuivre.</div>
-         <div>
+               Rimbaud</persName>. L’opération paraît intéressante. A poursuivre.</p></div>
+         <div><p>
             <persName ref="#RQ">Raymond Queneau</persName> signale la perte de la canonicité par
             exemple <persName ref="#philomene">Philomène</persName>. Il ajoute : « Ce dégommage
             conduit inéluctablement à la négation de la divinité du <persName ref="#christ"
                >Christ</persName> », sans préciser s’il le déplore ou s’en réjouit, ce que n’a pas
-            cherché à percer la discrétion toute OuLiPienne de l’assemblée.</div>
+            cherché à percer la discrétion toute OuLiPienne de l’assemblée.</p></div>
 
          <pb xml:id="p11" n="11"/>
 
-         <div>
+         <div><p>
                      <persName ref="#NA">Noël Arnaud</persName> lit (et verse aux archives) le très curieux
             résultat d’un « <name type="manif" ref="#concoursdesartistes">Concours des
                Artistes</name> » de Guadeloupe. Bien que ces textes ressortissent plus à la folie
             littéraire qu’à la littérature potentielle,
                <persName ref="#RQ">Raymond Queneau</persName> propose de retenir ce vers d’une
-            chanson primée :</div>
-         <div>« Ces recherches sobres et fécondes … »</div>
-         <div>La <name type="manif" ref="#prochainereunion">prochaine réunion</name> officielle aura
+            chanson primée :</p></div>
+         <div><p>« Ces recherches sobres et fécondes … »</p></div>
+         <div><p>La <name type="manif" ref="#prochainereunion">prochaine réunion</name> officielle aura
             lieu le LUNDI 5 JUIN 1961, au Restaurant Laborderie, 40 rue de l’Université (1er
-            étage).</div>
-         <div>Cependant, une <name type="manif" ref="#reunionfacultative">réunion facultative</name>
+            étage).</p></div>
+         <div><p>Cependant, une <name type="manif" ref="#reunionfacultative">réunion facultative</name>
             est prévue pour le VENDREDI 12 MAI, au même lieu. Elle sera entièrement consacrée à la
             préparation du <ref>Dossier</ref> dont il a été question à plusieurs reprises. Les
-            absences seront excusées, mais les présences hautement appréciées.</div>
-         <div>pour le <persName ref="#sdd">S.D.D</persName>.,</div>
-         <div>
+            absences seront excusées, mais les présences hautement appréciées.</p></div>
+         <div><p>pour le <persName ref="#sdd">S.D.D</persName>.,</p></div>
+         <div><p>
             <persName ref="#ythiermarchant"> Ythier MARCHANT</persName>
-         </div>
+         </p></div>
       </body>
    </text>
 </TEI>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TEI pour une transcription minimale</title>
+      </titleStmt>
+      <publicationStmt>
+        <p/>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Written from scratch.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Une personalisation minimale de la TEI</head>
+      <p>Cette personalisation propose un schema minimale pour la transcription des documents
+        archivals. </p>
+      
+      <schemaSpec ident="transMin" start="TEI text" docLang="fr">
+        <moduleRef key="header" include="teiHeader fileDesc titleStmt publicationStmt sourceDesc"/>
+        <elementRef key="title"/>
+        <moduleRef key="tei"/>
+        <moduleRef key="textstructure" include="TEI text body div"/>
+        <elementRef key="ab"/>
+        <elementRef key="pb"/>
+        <elementRef key="unclear"/>
+        <elementRef key="hi"/>
+        <elementRef key="g"/>
+        <elementRef key="name"/>
+        
+      </schemaSpec>
+    </body>
+  </text>
+</TEI>

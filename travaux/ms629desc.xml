@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="file:/home/lou/Public/ENC/travaux/tei-msdesc.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>France</country>
+                        <settlement>Orleans</settlement>
+                        <repository>Bibliotheque Municipale</repository>
+                        <idno>Ms 629</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <author>Jacques Colas</author>
+                            <title>Suputation nouvellement faicte de la valeur des monnoyes et abuz
+                                dicelles quant a la mise Par Jaques Colas de paris Nihil est opertum
+                                quod non reveletur. </title>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="8°">
+                            <supportDesc>
+                                <collation> 2 f. préliminaire (1er blanc, 2e C'est de Jaques Colas
+                                    Spes mea deus.) 52 f. 3 f. postliminaires. </collation>
+                                <condition>Dans un très bon état, sauf les représentations de
+                                    monnaies, avec argent et or, qui sont très effacées.</condition>
+                            </supportDesc>
+
+
+                        </objectDesc>
+
+                        <bindingDesc>
+                            <p>Reliure veau brun (XVIe siècle) </p>
+                        </bindingDesc>
+                    </physDesc>
+                    <history>
+                        <origin><date>1557</date></origin>
+                        <provenance><p> Au feuillet chiffré 1 : "Ce present livre ma este donne de
+                                monsieur et père monsieur Colas, conseiller du Roy et general en son
+                                court des monnoyes, le Sixme jour de novembre mil vc soisante
+                                dixneuf. Colas / Mon espoir passe ma fortune". </p></provenance>
+                    </history>
+                    <additional>
+                        <adminInfo>
+                            <custodialHist>
+                                <custEvent>
+                                    <date>10/10/2008 17:57:3</date>Fac-similé numérisé </custEvent>
+                            </custodialHist>
+
+                        </adminInfo>
+                        <listBibl>
+                            <bibl>Catalogue reliure p. 53. </bibl>
+                        </listBibl>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body><p/></body>
+    </text>
+</TEI>

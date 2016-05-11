@@ -2,12 +2,12 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main">Archives oulipiennes</title>
-            <title type="sub">Réunions de littérature potentielle</title>
+           <title type="sub">Corpus des comptes-rendus des réunions de l'OULIPO</title>
             <editor>
                <persName>
                   <forename>Lou</forename>
@@ -17,8 +17,8 @@
             <!-- mentionnez-vous -->
          </titleStmt>
          <publicationStmt>
-            <publisher>École nationale des chartes</publisher>
-            <date when="2016">2016</date>
+            <publisher>École nationale des chartes: Service de formation continue</publisher>
+            <date when="2016-05">mai 2016</date>
          </publicationStmt>
          <sourceDesc>
             <p>Information about the source</p>
@@ -35,5 +35,6 @@
            <sourceDesc></sourceDesc>
         </fileDesc>
      </teiHeader>
+     
   </TEI>
 </teiCorpus>

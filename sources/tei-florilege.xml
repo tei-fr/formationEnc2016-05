@@ -28,102 +28,97 @@
     </revisionDesc>
   </teiHeader>
   <text>
+    <front>
+      <titlePage xml:lang="fr">
+        <titlePart>09-Florilège de la TEI</titlePart>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
+        <note><ref target="00-programme.html">Programme</ref></note>
+      </titlePage>
+    </front>
     <body>
-
       <!--
-Cette intervention traite tres rapidement l'histoire de la TEI, mais
+Cette intervention traite tres rapidement l’histoire de la TEI, mais
 principalement se focalise sur quelques utilisations de ses
-"Guidelines" dans de projets de construction et d'exploitation de
+"Guidelines" dans de projets de construction et d’exploitation de
 grands corpus textuels. Ces projets sont tres divers, avec des usages
 dans plusieurs domaines scientifiques (litterraires, linguistiques,
-historiques ...) et contribuent egalement a la mise en place des
+historiques…) et contribuent egalement a la mise en place des
 ressources numeriques a disposition du grand public ou des communautes
 savants. Quel est le role de la TEI dans leur construction?  comment
-contribue-t-elle a leur reussite ? quelle est sa contribution a la
-perennisation de ces grandes collections patrimonialles? jusqu'a
-quelle point est-ce qu'elle aide le polyvalence de ces ressources et
-les reflexions sur la materialite des textes qu'ils impliquent?
+contribue-t-elle a leur reussite ? quelle est sa contribution a la
+perennisation de ces grandes collections patrimonialles? jusqu’a
+quelle point est-ce qu’elle aide le polyvalence de ces ressources et
+les reflexions sur la materialite des textes qu’ils impliquent?
 -->
 
-      <div>
-        <head>La TEI, elle est partout...</head>
+      <div rend="slide">
+        <head>La TEI, elle est partout…</head>
         <p>Dans le hall du monastère bouddhiste de la Montagne du Tambour du Dharma ( <seg
-            xml:lang="zh-TW">法鼓山</seg>) au Taiwan vous trouverez un mur couvert de tablettes de
-          marbre vert, sur lesquels sont gravées plusieurs versions du soutra
-            <soCalled>Coeur</soCalled> du Tripitaka. Il y a une version dans tous les langues de
-          l'orient (japonais, hindou, chinois, etc.).... et aussi une version en TEI P4.</p>
-       
+            xml:lang="zh-TW"
+            >法鼓山</seg>) au Taiwan vous trouverez un mur couvert de tablettes de marbre vert, sur lesquels sont gravées plusieurs versions du soutra <soCalled>Coeur</soCalled> du Tripitaka. Il y a une version dans tous les langues de l’orient (japonais, hindou, chinois, etc.)…. et aussi une version en TEI P4.</p>
       </div>
 
-
-
-      <div>
-        <head>Disponibilite des textes TEI</head>
+      <div rend="slide">
+        <head>Disponibilité des textes TEI</head>
         <list>
-          <item>La TEI (et ses utilisateurs) s'inscrivent entièrement dans l'esprit Open
-            Source</item>
+          <item>La TEI (et ses utilisateurs) s’inscrivent entièrement dans l’esprit Open Source</item>
           <item>Donc on peut attendre trouver des ressources TEI-XML téléchargeables sans obstacles
             partout</item>
-          <item>Restent bien sur des problemes juridiques, ou de la peur de ces obstacles, et
-            d'autres problèmes...</item>
+          <item>Restent bien sur des problèmes juridiques, ou de la peur de ces obstacles, et d’autres problèmes…</item>
           <item>Nous allons explorer cela</item>
         </list>
       </div>
 
-      <div>
-        <head>Interoperabilité des textes TEI</head>
-        <p rend="box">La TEI fut conçue comme outil de l'interoperabilité/interchange : est-ce que
-          cette promesse a été validée? </p>
+      <div rend="slide">
+        <head>Interopérabilité des textes TEI</head>
+        <p rend="box"
+          >La TEI fut conçue comme outil de l’interopérabilité/interchange : est-ce que cette promesse a été validée? </p>
         <list>
-          <item>confronté par la richesse, beaucoup d'utilisateurs se limitent è des sous ensembles
-            (pas forcément compatible l'un avec l'autre) </item>
-          <item>confronté par la complexite, beaucoup d'utilisateurs risquent de mécomprendre
-            quelques details</item>
+          <item>confronté par la richesse, beaucoup d’utilisateurs se limitent è des sous ensembles (pas forcément compatible l’un avec l’autre) </item>
+          <item>confronté par la complexité, beaucoup d’utilisateurs risquent de mal comprendre quelques détails</item>
         </list>
-        <p>Nous allons explorer cela...</p>
+        <p>Nous allons explorer cela…</p>
       </div>
 
-      <div>
+      <div rend="slide">
         <head>Usages typiques de la TEI</head>
         <p>
           <list>
-            <item>Editions de sources patrimoniales en ligne</item>
+            <item>Éditions de sources patrimoniales en ligne</item>
             <item>Catalogues en ligne de notices bibliographiques</item>
-            <item>Ressources linguistiques (corpus, lexiques, dictionnaires... )</item>
+            <item>Ressources linguistiques (corpus, lexiques, dictionnaires… )</item>
           </list>
         </p>
-        <p>Ces distinctions sont un peu floues : l'interêt d'un encodage TEI c'est justement sa
-          polyvalence... </p>
+        <p>Ces distinctions sont un peu floues : l’intérêt d’un encodage TEI c’est justement sa polyvalence… </p>
       </div>
-      <div>
+      <div rend="slide">
         <head>Quelques exemples</head>
-        <p>Mais nous commencons avec un brief regard sur quelques projets de divers types,
-          d'origines differentes, et egalement tres variable de point de vue disciplinaire. Mais ils
-          on tous en commun: <list>
+        <p>Commençons avec un bref regard sur quelques projets de divers types, d’origines différentes, et également très variables d’un point de vue disciplinaire. Mais ils on tous en commun : <list>
             <item>ils se servent de la TEI</item>
-            <item>ils traitent des documents francais</item>
-            <item>ils exposent les source TEI XML</item>
+            <item>ils traitent des documents français</item>
+            <item>ils exposent les sources XML-TEI</item>
           </list></p>
       </div>
-      <div>
+      <div rend="slide">
         <head>Répertoires d’éditions critiques numériques</head>
-         <list>
-          <item><ref target="http://www.tei-c.org/Activities/Projects/">Projects Using the TEI, site
+        <list>
+          <item><ref target="http://www.tei-c.org/Activities/Projects/"
+              >Projects Using the TEI, site
               de la TEI</ref></item>
-          <item><ref target="http://www.digitale-edition.de">Scholarly Digital Editions. An
+          <item><ref target="http://www.digitale-edition.de"
+              >Scholarly Digital Editions. An
               annotated List, compiled by Patrick Sahle</ref></item>
-          <item><ref target="https://github.com/gfranzini/digEds_cat/wiki">Greta Franzini, Catalogue
-              of Digital Editions?</ref></item>
+          <item><ref target="https://github.com/gfranzini/digEds_cat/wiki"
+              >Greta Franzini, Catalogue of Digital Editions</ref></item>
         </list>
       </div>
-      <div>
-        <head> Essai sur le récit, ou entretiens sur la manière de raconter de François-Joseph
-          Bérardier de Bataut</head>
+      <div rend="slide">
+        <head>Essai sur le récit, ou entretiens sur la manière de raconter de François-Joseph Bérardier de Bataut</head>
         <list>
           <item>http://www.beradier.org</item>
           <item>Projet modeste consistant à mettre en ligne un seul texte </item>
-          <item>Se servant d'un logiciel "marché" (drupal)</item>
-          <item>Choix d'affichage du texte : texte de lecture ou transcription linéaire</item>
+          <item>Se servant d’un logiciel du « marché » (drupal)</item>
+          <item>Choix d’affichage du texte : texte de lecture ou transcription linéaire</item>
         </list>
         <note rend="none">
           <list>
@@ -131,162 +126,149 @@ les reflexions sur la materialite des textes qu'ils impliquent?
             <item>Texte de lecture vs Transcrioption lineaire</item>
             <item>use of side notes</item>
             <item>telecharger une chapitre and open in oxygen</item>
-            <item>show <gi>choice</gi> elements l'encodage qui rend tout possible</item>
+            <item>show <gi>choice</gi> elements l’encodage qui rend tout possible</item>
             <item>validate with TEI All (fix errors)</item>
           </list>
         </note>
       </div>
 
-      <div>
-        <head>Le mariage sous L'Ancien Regime</head>
+      <div rend="slide">
+        <head>Le mariage sous L’Ancien Regime</head>
         <list>
           <item>http://mariage.uvic.ca</item>
-          <item>Une "anthologie virtuelle" sur la parole polémique relative au mariage, rassemblant
-            des fictions, des gravures, des traités catholiques, medicaux... </item>
+          <item>Une « anthologie virtuelle » sur la parole polémique relative au mariage, rassemblant des fictions, des gravures, des traités catholiques, medicaux…</item>
           <item>Indexage des termes et des noms propres beaucoup très minutieuse</item>
         </list>
         <!-- mariage-1 to 7b.png -->
       </div>
 
-      <!-- je narrive pas a retrouver les index ? -->
+      <!-- je narrive pas a retrouver les index ? -->
 
-      <div>
+      <div rend="slide">
         <head>Presses universitaires de Caen, Chroniques latines du Mont Saint-Michel</head>
         <list>
           <item>
             <ref target="http://www.unicaen.fr/services/puc/sources/chroniqueslatines"
               >http://www.unicaen.fr/services/puc/sources/chroniqueslatines</ref>
           </item>
-          <item>Equipe d’édition pionnière : une chaîne éditoriale XML TEI</item>
+          <item>Équipe d’édition pionnière : une chaîne éditoriale XML-TEI</item>
           <item>affichage parallèle du texte original et de sa traduction</item>
           <item>affichage du fac-similé (sans navigation continue)</item>
-          <item>production d'un texte imprimé de format très classique... à partir du format
-            TEI</item>
+          <item>production d’un texte imprimé de format très classique… à partir du format TEI</item>
         </list>
         <!-- screenshot of XML source on website -->
       </div>
 
 
 
-      <div>
-        <head>Bibliotheques virtuelles humanistes </head>
+      <div rend="slide">
+        <head>Bibliothèques virtuelles humanistes </head>
         <list>
           <item><ref target="http://renom.univ-tours.fr/">Renom</ref></item>
         </list>
       </div>
       <!-- play with renom, but mainly we want to see the texts spo go to
-        L'isle sonnante
+        L’isle sonnante
         foillow link to tf.bvh.univ-tours.fr/xtf/view?docId=tei/B751131011_RES_P_Y2_1349/B751131011_RES_P_Y2_1349_tei.xml&doc.view=notice;
         Acceder au docu,ment
         show display options, searchability
         under "telecharger", right click TEI to get TEI file
         open it in oxygen to look at the encoding
         -->
-      <div>
-        <head>Corpus literraires</head>
-        <p>Le LABEX Obvil (Observatoire de la vie literraire) rassemble plusieurs corpus de textes
-          litteraires francaises, pas forcément tous disponible en TEI XML</p>
-        <p>Par exemple <ref target="http://obvil.paris-sorbonne.fr/corpus/haine-theatre/">Corpus
-            Haine de la Théatre</ref></p>
+      <div rend="slide">
+        <head>Corpus littéraires</head>
+        <p>Le LABEX Obvil (Observatoire de la vie littéraire) rassemble plusieurs corpus de textes littéraires français, pas forcément tous disponibles en XML-TEI</p>
+        <p>Par exemple <ref target="http://obvil.paris-sorbonne.fr/corpus/haine-theatre/"
+            >Corpus Haine du Théâtre</ref></p>
       </div>
 
-      <div>
-        <head>Catalogue en ligne de notices bibliographiques des manuscrits: e-Codices</head>
+      <div rend="slide">
+        <head>Catalogue en ligne de notices bibliographiques des manuscrits : e-Codices</head>
         <list>
           <item><ref target="http://www.e-codices.unifr.ch">e-Codices </ref></item>
         </list>
-        <p>On peut faire mention de plusieurs autres projets pareilles nationales, par ex <ref
-            target="http://handrit.is">Handrit : projet nationale islandais</ref>; <ref
-            target="http://www.manuscriptorium.com">Manuscriptorium : projet international et
-            cooperatif au BN de Prague</ref>; <ref target="http://www.fihrist.org.uk">FIHRIST :
-            catalogue des collections britanniques de manuscrits en langue arabe</ref>
+        <p>On peut faire mention de plusieurs autres projets similaires à vocation nationale.</p>
+        <p>Par exemple : <ref target="http://handrit.is"
+            >Handrit : projet nationale islandais</ref> | <ref
+            target="http://www.manuscriptorium.com"
+            >Manuscriptorium : projet international et coopératif de la BN de Prague</ref> | <ref
+            target="http://www.fihrist.org.uk"
+            >FIHRIST : catalogue des collections britanniques de manuscrits en langue arabe</ref>
         </p>
       </div>
 
-      <div>
+      <div rend="slide">
         <head>Dictionnaires</head>
-        <p>La TEI propose une gamme de balises tres détaillée pour l'encodage des dictionnaires,
-          existantes ou nouvelles.</p>
+        <p>La TEI propose une gamme de balises très détaillée pour l’encodage des dictionnaires, existantes ou nouvelles.</p>
         <p>Par exemple <list>
-            <item><ref target="http://www.freedict.org/fr/"> Projet Freedict : rassemble et
-                harmonise des lexiques disponibles sur internet </ref>
-              <!-- "Liste detaille"-->
+            <item><ref target="http://www.freedict.org/fr/"
+                > Projet Freedict : rassemble et harmonise des lexiques disponibles sur internet </ref>
+              <!-- "Liste detaillée"-->
             </item>
           </list></p>
       </div>
 
 
 
-      <div>
+      <div rend="slide">
         <head>Applications linguistiques</head>
-        <p>Une fois structure en TEI, tout document peut devenir un objet d'analyse linguistique. La
-          plupart des grands projets de corpus de langue européens s'en servent, d'une manière ou
-          d'une autre. </p>
+        <p>Une fois structure en TEI, tout document peut devenir un objet d’analyse linguistique. La plupart des grands projets de corpus de langue européens s’en servent, d’une manière ou d’une autre. </p>
 
         <list>
-          <item><ref target="https://www.ortolang.fr/market/corpora"> Le projet Ortolang</ref>
-            rassemble de nombreux projets linguistiques, dont plusieurs utilisent la TEI. Mais
-            typiquement il faut faire quelques tours pour les telecharger, ou meme les visualiser </item>
-          <item>Corpus classique de presse : le quotidien contemporain <ref
-              target="http://www.cnrtl.fr/corpus/estrepublicain/">L'Est Republicain</ref>
+          <item><ref target="https://www.ortolang.fr/market/corpora"
+            > Le projet Ortolang</ref> rassemble de nombreux projets linguistiques, dont plusieurs utilisent la TEI. Mais typiquement il faut faire quelques contorsions pour arriver à les télécharger, ou même les visualiser </item>
+          <item>Corpus classique de presse : le quotidien contemporain <ref
+              target="http://www.cnrtl.fr/corpus/estrepublicain/">L’Est Républicain</ref>
             <!-- lestrep.png --></item>
-          <item>Edition medievale avec annotation linguistique: <ref
-              target="https://www.ortolang.fr/market/corpora/digulleville">Le Pelerinage de Vie
-              humaine de Guillaume de Digulleville</ref></item>
-          <item>Corpus multilingue : corpus bouddhiste des <ref
+          <item>Édition médiévale avec annotation linguistique : <ref
+              target="https://www.ortolang.fr/market/corpora/digulleville"
+              >Le Pelerinage de Vie humaine de Guillaume de Digulleville</ref></item>
+          <item>Corpus multilingue : corpus bouddhiste des <ref
               target="http://buddhistinformatics.ddbc.edu.tw/BZA/">Samyukta Agama</ref></item>
-
         </list>
-
-
       </div>
 
 
-      <div>
-        <head>L'esprit TEI</head>
-        <p>Qu'est-ce que cela veut dire : «être conforme» à la TEI ?</p>
+      <div rend="slide">
+        <head>L’esprit TEI</head>
+        <p>Qu’est-ce que cela veut dire : « être conforme » à la TEI ?</p>
         <list>
           <item>une pratique de balisage consensuelle</item>
           <item>un lexique commun</item>
-          <item>un respect de l'autonomie</item>
+          <item>un respect de l’autonomie</item>
         </list>
-        <p>Un effort de standardisation qui ne dit pas «fais comme moi» ; mais plutôt «explique-moi
-          ce que tu fais. »</p>
+        <p>Un effort de standardisation qui ne dit pas « fais comme moi » ; mais plutôt « explique-moi ce que tu fais ».</p>
       </div>
-      <div>
+      <div rend="slide">
         <head>TEI explorations</head>
-        <p>Dans l'exercice qui suit, vous êtes invité a rechercher la variéte des textes TEI
-          disponible sur le web. </p>
-        <p>Voici quelques liens que j’ai découvert au hasard en recherchant des textes TEI
-          disponibles sur l’internet. Dans cet exercice, vous êtes invité à : <list>
+        <p>Dans l’exercice qui suit, vous êtes invité a rechercher la variété des textes TEI disponible sur le web. </p>
+        <p>Voici quelques liens que j’ai découvert au hasard en recherchant des textes TEI disponibles sur l’internet. Dans cet exercice, vous êtes invité à : <list>
             <item>télécharger un ou plusieurs de ces documents</item>
-            <item>valider le document contre tei_all (ou un schéma plus précis s’il est
-              disponible)</item>
-            <item>considérez l’utilité, la validité, et l’élégance du balisage fourni, et
-              l’améliorer si besoin est</item>
+            <item>valider le document contre <ident>tei_all</ident> (ou un schéma plus précis s’il est disponible)</item>
+            <item>considérez l’utilité, la validité, et l’élégance du balisage fourni, et l’améliorer au besoin.</item>
           </list>
         </p>
       </div>
-      <div>
-        <head>À la recherche des textes français disponible en format TEI ...</head>
+      <div rend="slide">
+        <head>À la recherche des textes français disponible en format TEI…</head>
         <list>
           <item>
-            <ref target="https://www.ortolang.fr/market/corpora/digulleville">Le Pelerinage de Vie
+            <ref target="https://www.ortolang.fr/market/corpora/digulleville"
+              >Le Pelerinage de Vie
               humaine de Guillaume de Digulleville</ref>
           </item>
-          <item><ref target="http://ota.ox.ac.uk/text/4653.xml">Mémoire justificatif (d'Edward
-              Gibbon)</ref></item>
-          <item><ref target="http://ota.ox.ac.uk/desc/2555">French Oral Narrative Corpus</ref>
-            (telecharger le corpus, et rechercher le texte <title> Conte de Bourgogne 1. Comment les
-              femmes peuvent parfois tirer profit de la grande faiblesse des hommes. </title> en
-            P5)</item>
+          <item><ref target="http://ota.ox.ac.uk/text/4653.xml"
+              >Mémoire justificatif (d’Edward Gibbon)</ref></item>
+          <item><ref target="http://ota.ox.ac.uk/desc/2555"
+              >French Oral Narrative Corpus</ref> (télécharger le corpus, et rechercher le texte <title> Conte de Bourgogne 1. Comment les femmes peuvent parfois tirer profit de la grande faiblesse des hommes. </title> en P5)</item>
           <item>
-            <ref target="http://www.licorn-research.fr/Boissy.html">Corpus pièces de théâtre de
+            <ref target="http://www.licorn-research.fr/Boissy.html"
+              >Corpus pièces de théâtre de
               Louis de Boissy (1694-1758)</ref>
           </item>
           <item><ref
               target="http://xtf.bvh.univ-tours.fr/xtf/view?docId=tei/B751131011_RES_P_Y2_1349/B751131011_RES_P_Y2_1349_tei.xml"
-              > L'Ile Sonnante de Francois Rabelais (BVH) </ref></item>
+              > L’Ile Sonnante de Francois Rabelais (BVH) </ref></item>
           <!-- <item>http://ota.ox.ac.uk/desc/2499 (Partanopeus de Blois)  (voir http://www.hrionline.ac.uk/partonopeus</item>
    -->
           <!--  <item> <bibl><title>Corpus14 (lettres des poilus)</title>
@@ -296,8 +278,7 @@ les reflexions sur la materialite des textes qu'ils impliquent?
                <ident>corpus14.zip</ident>
             </bibl></item>-->
         </list>
-        <p>Si aucun des documents dans la liste ne vous intéresse, vous êtes bien sur libre d’aller
-          retrouver d’autres ! </p>
+        <p>Si aucun des documents dans la liste ne vous intéresse, vous êtes bien sur libres d’aller retrouver d’autres ! </p>
       </div>
     </body>
   </text>

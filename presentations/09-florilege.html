@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Programme</title>
+      <link href="themes/remark-dark.css" rel="stylesheet" media="all" type="text/css">
+   </head>
+   <body><textarea id="source">
+title: Un florilège de projets TEI
+description: Lou Burnard Consulting, 
+theme: theme/remark-dark-em.css
+name: inverse
+layout: true
+class: inverse
+
+---
+class: center middle
+
+
+
+# 09-Florilège de la TEI
+
+## Formation TEI | ENC 9 au 12 mai 2016
+
+.footnote[[Programme](00-programme.html)]
+![test](images/logo-ecole-nationale-des-chartes.png)
+
+---
+
+
+# La TEI, elle est partout…
+
+Dans le hall du monastère bouddhiste de la Montagne du Tambour du Dharma ( 法鼓山) au Taiwan vous trouverez un mur couvert de tablettes de marbre vert, sur lesquels sont gravées plusieurs versions du soutra Coeur du Tripitaka. Il y a une version dans tous les langues de l’orient (japonais, hindou, chinois, etc.)…. et aussi une version en TEI P4.
+
+---
+
+
+# Disponibilité des textes TEI
+
+* La TEI (et ses utilisateurs) s’inscrivent entièrement dans l’esprit Open Source
+
+* Donc on peut attendre trouver des ressources TEI-XML téléchargeables sans obstacles partout
+
+* Restent bien sur des problèmes juridiques, ou de la peur de ces obstacles, et d’autres problèmes…
+
+* Nous allons explorer cela
+
+---
+
+
+# Interopérabilité des textes TEI
+
+La TEI fut conçue comme outil de l’interopérabilité/interchange&nbsp;: est-ce que cette promesse a été validée? 
+
+* confronté par la richesse, beaucoup d’utilisateurs se limitent è des sous ensembles (pas forcément compatible l’un avec l’autre) 
+
+* confronté par la complexité, beaucoup d’utilisateurs risquent de mal comprendre quelques détails
+
+Nous allons explorer cela…
+
+---
+
+
+# Usages typiques de la TEI
+
+
+* Éditions de sources patrimoniales en ligne
+
+* Catalogues en ligne de notices bibliographiques
+
+* Ressources linguistiques (corpus, lexiques, dictionnaires… )
+
+
+Ces distinctions sont un peu floues&nbsp;: l’intérêt d’un encodage TEI c’est justement sa polyvalence… 
+
+---
+
+
+# Quelques exemples
+
+Commençons avec un bref regard sur quelques projets de divers types, d’origines différentes, et également très variables d’un point de vue disciplinaire. Mais ils on tous en commun&nbsp;: 
+* ils se servent de la TEI
+
+* ils traitent des documents français
+
+* ils exposent les sources XML-TEI
+
+
+---
+
+
+# Répertoires d’éditions critiques numériques
+
+* [Projects Using the TEI, site de la TEI](http://www.tei-c.org/Activities/Projects/)
+
+* [Scholarly Digital Editions. An annotated List, compiled by Patrick Sahle](http://www.digitale-edition.de)
+
+* [Greta Franzini, Catalogue of Digital Editions](https://github.com/gfranzini/digEds_cat/wiki)
+
+---
+
+
+# Essai sur le récit, ou entretiens sur la manière de raconter de François-Joseph Bérardier de Bataut
+
+* http://www.beradier.org
+
+* Projet modeste consistant à mettre en ligne un seul texte 
+
+* Se servant d’un logiciel du «&nbsp;marché&nbsp;» (drupal)
+
+* Choix d’affichage du texte&nbsp;: texte de lecture ou transcription linéaire
+
+.footnote[
+* choose a page (e.g. second entretien) 
+
+* Texte de lecture vs Transcrioption lineaire
+
+* use of side notes
+
+* telecharger une chapitre and open in oxygen
+
+* show `&lt;choice&gt;` elements l’encodage qui rend tout possible
+
+* validate with TEI All (fix errors)
+]
+
+---
+
+
+# Le mariage sous L’Ancien Regime
+
+* http://mariage.uvic.ca
+
+* Une «&nbsp;anthologie virtuelle&nbsp;» sur la parole polémique relative au mariage, rassemblant des fictions, des gravures, des traités catholiques, medicaux…
+
+* Indexage des termes et des noms propres beaucoup très minutieuse
+
+---
+
+
+# Presses universitaires de Caen, Chroniques latines du Mont Saint-Michel
+
+* [http://www.unicaen.fr/services/puc/sources/chroniqueslatines](http://www.unicaen.fr/services/puc/sources/chroniqueslatines)
+
+* Équipe d’édition pionnière&nbsp;: une chaîne éditoriale XML-TEI
+
+* affichage parallèle du texte original et de sa traduction
+
+* affichage du fac-similé (sans navigation continue)
+
+* production d’un texte imprimé de format très classique… à partir du format TEI
+
+---
+
+
+# Bibliothèques virtuelles humanistes 
+
+* [Renom](http://renom.univ-tours.fr/)
+
+---
+
+
+# Corpus littéraires
+
+Le LABEX Obvil (Observatoire de la vie littéraire) rassemble plusieurs corpus de textes littéraires français, pas forcément tous disponibles en XML-TEI
+
+Par exemple [Corpus Haine du Théâtre](http://obvil.paris-sorbonne.fr/corpus/haine-theatre/)
+
+---
+
+
+# Catalogue en ligne de notices bibliographiques des manuscrits&nbsp;: e-Codices
+
+* [e-Codices ](http://www.e-codices.unifr.ch)
+
+On peut faire mention de plusieurs autres projets similaires à vocation nationale.
+
+Par exemple&nbsp;: [Handrit&nbsp;: projet nationale islandais](http://handrit.is)&nbsp;| [Manuscriptorium&nbsp;: projet international et coopératif de la BN de Prague](http://www.manuscriptorium.com)&nbsp;| [FIHRIST&nbsp;: catalogue des collections britanniques de manuscrits en langue arabe](http://www.fihrist.org.uk)
+
+---
+
+
+# Dictionnaires
+
+La TEI propose une gamme de balises très détaillée pour l’encodage des dictionnaires, existantes ou nouvelles.
+
+Par exemple 
+* [Projet Freedict&nbsp;: rassemble et harmonise des lexiques disponibles sur internet ](http://www.freedict.org/fr/) 
+
+
+---
+
+
+# Applications linguistiques
+
+Une fois structure en TEI, tout document peut devenir un objet d’analyse linguistique. La plupart des grands projets de corpus de langue européens s’en servent, d’une manière ou d’une autre. 
+
+* [Le projet Ortolang](https://www.ortolang.fr/market/corpora) rassemble de nombreux projets linguistiques, dont plusieurs utilisent la TEI. Mais typiquement il faut faire quelques contorsions pour arriver à les télécharger, ou même les visualiser
+
+* Corpus classique de presse&nbsp;: le quotidien contemporain [L’Est Républicain](http://www.cnrtl.fr/corpus/estrepublicain/) 
+
+* Édition médiévale avec annotation linguistique&nbsp;: [Le Pelerinage de Vie humaine de Guillaume de Digulleville](https://www.ortolang.fr/market/corpora/digulleville)
+
+* Corpus multilingue&nbsp;: corpus bouddhiste des [Samyukta Agama](http://buddhistinformatics.ddbc.edu.tw/BZA/)
+
+---
+
+
+# L’esprit TEI
+
+Qu’est-ce que cela veut dire&nbsp;: «&nbsp;être conforme&nbsp;» à la TEI&nbsp;?
+
+* une pratique de balisage consensuelle
+
+* un lexique commun
+
+* un respect de l’autonomie
+
+Un effort de standardisation qui ne dit pas «&nbsp;fais comme moi&nbsp;»&nbsp;; mais plutôt «&nbsp;explique-moi ce que tu fais&nbsp;».
+
+---
+
+
+# TEI explorations
+
+Dans l’exercice qui suit, vous êtes invité a rechercher la variété des textes TEI disponible sur le web. 
+
+Voici quelques liens que j’ai découvert au hasard en recherchant des textes TEI disponibles sur l’internet. Dans cet exercice, vous êtes invité à&nbsp;: 
+* télécharger un ou plusieurs de ces documents
+
+* valider le document contre `tei_all` (ou un schéma plus précis s’il est disponible)
+
+* considérez l’utilité, la validité, et l’élégance du balisage fourni, et l’améliorer au besoin.
+
+
+---
+
+
+# À la recherche des textes français disponible en format TEI…
+
+* [Le Pelerinage de Vie humaine de Guillaume de Digulleville](https://www.ortolang.fr/market/corpora/digulleville)
+
+* [Mémoire justificatif (d’Edward Gibbon)](http://ota.ox.ac.uk/text/4653.xml)
+
+* [French Oral Narrative Corpus](http://ota.ox.ac.uk/desc/2555) (télécharger le corpus, et rechercher le texte Conte de Bourgogne 1. Comment les femmes peuvent parfois tirer profit de la grande faiblesse des hommes.  en P5)
+
+* [Corpus pièces de théâtre de Louis de Boissy (1694-1758)](http://www.licorn-research.fr/Boissy.html)
+
+* [L’Ile Sonnante de Francois Rabelais (BVH) ](http://xtf.bvh.univ-tours.fr/xtf/view?docId=tei/B751131011_RES_P_Y2_1349/B751131011_RES_P_Y2_1349_tei.xml)
+
+Si aucun des documents dans la liste ne vous intéresse, vous êtes bien sur libres d’aller retrouver d’autres&nbsp;! 
+</textarea><script src="js/remark-0.6.5.min.js" type="text/javascript"></script><script type="text/javascript">
+        var hljs = remark.highlighter.engine;
+      </script><script src="remark.language.js" type="text/javascript"></script><script type="text/javascript">
+        var slideshow = remark.create({
+        highlightStyle: 'monokai',
+        highlightLanguage: 'remark'
+        }) ;
+      </script></body>
+</html>

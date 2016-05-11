@@ -180,8 +180,8 @@
               <item><code>surname</code> nom de famille</item>
               <item><code>nameLink</code>, <code>roleName</code>, <code>genName</code></item>
             </list>
-            <p><gi>full</gi> indique si le nom est donné dans une forme normalisée</p>
-            <p><gi>sort</gi> spécifie l’ordre des composantes du nom entre elles</p>
+            <p><att>full</att> indique si le nom est donné dans une forme normalisée</p>
+            <p><att>sort</att> spécifie l’ordre des composantes du nom entre elles</p>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <persName ref="tag:projectname.org,2012:pn9">
                 <forename sort="2">Sergei</forename>
@@ -226,13 +226,23 @@
           <div>
             <head>Liens vers des données d’autorité</head>
             <list>
-              <item><gi>key</gi> pour fournir une référence externe</item>
-              <item><gi>ref</gi> pour une référence au moyen d’une URI</item>
+              <item><att>key</att> pour fournir un identifiant externe</item>
+              <item><att>ref</att> pour une référence au moyen d’une URI</item>
             </list>
             <p>On privilégiera dans des notices d’autorité, une approche qui s’appuie sur un élément introduit récemment dans le modèle de contenu de <gi>person</gi>, <gi>org</gi> et <gi>place</gi></p>
             <list>
               <item><gi>idno</gi></item>
             </list>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <person>
+              <persName>
+                <roleName type="honorific" full="abb">Mme</roleName>
+                <nameLink>de la</nameLink>
+                <surname>Rochefoucault</surname>
+              </persName>
+              <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb16377695t</idno>
+            </person>
+            </egXML>
           </div>
           <div>
             <head>Liens vers des données d’autorité</head>

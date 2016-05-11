@@ -69,9 +69,9 @@
                 </div>
                 <div xml:id="T04" resp="#LB">
                     <head>14h -15h : Introduction aux richesses de la TEI<!-- – PM LB--></head>
-                    <p>Comment partir des complexités du modèle vers la TEI; les 5 étapes; modules,
+                    <p>Comment partir des complexités du modèle vers la TEI ; les 5 étapes; modules,
                         classes etc.</p>
-                    <p><ref target="talk-tei-intro.xml">talk-tei-intro</ref></p>
+                    <p><ref target="02-richessesTEI.tei.xml">02-richessesTEI.tei</ref></p>
 
                 </div>
                 <div xml:id="T05" resp="#EM ">
@@ -104,7 +104,7 @@
                     <head>9h30-10h :  Édition critique <!--– PM EM--></head>
                     <p>Transcription sources primaires : segmentation ; interventions éditoriales </p>
                     <!-- a finir -->
-                    <p><ref target="04-editionCritique.tei.xml">04-editionCritique.tei</ref></p>
+                    <p><ref target="03-transcriptionManuscrits.tei.xml">03-transcriptionManuscrits.tei</ref></p>
                     <p> cf. <ident>2015-09-lyon/talk-07-ms.xml</ident>;
                             <ident>2015-09-lyon/04-editionCritique.tei.xml</ident>
                     </p>
@@ -126,7 +126,7 @@
                 </div>
                 <div xml:id="T08" resp="#EM">
                     <head>11h30 -1200  : TEI Header <!--– PM EM--></head>
-                    <p><ref target="03-teiHeader.tei.xml">03-teiHeader.tei</ref></p>
+                    <p><ref target="04-teiHeader.tei.xml">04-teiHeader.tei</ref></p>
 
                 </div>
                 <div xml:id="T08bis" resp="#EM">
@@ -142,7 +142,7 @@
                 <div xml:id="T09" resp="#LB">
                     <head>13h30 -14h15  : TEI Msdescription<!-- – PM LB--></head>
                     <p>
-                        <ref target="talk-msdesc.xml">talk-msdesc.xml</ref>
+                        <ref target="05-msdesc.tei.xml">05-talk-msdesc.tei</ref>
                     </p>
                     <p>Exemple d’un document très spécialisé</p>
                 </div>
@@ -182,8 +182,8 @@
                     <div xml:id="T13" resp="#LB">
                         <head>11h30-12h Modalités d’organisation des documents TEI – PM LB </head>
                         <!-- a fournir -->
-                        <p><ref target="talk-organisation.xml">talk-organisation</ref></p>
-                        <p>Conceptes de group, corpus, facsimile. etc: organisation des fichiers.
+                        <p><ref target="07-organisation.tei.xml">07-organisation.tei</ref></p>
+                        <p>Concepts de group, corpus, facsimile. etc: organisation des fichiers.
                         </p>
                     </div>
                     <div xml:id="T14" resp="#EM">
@@ -201,7 +201,7 @@
                         <p>
                         <ref target="08-personnalisation.tei.xml">08-personnalisation.tei</ref>
                     </p>
-                        <p>Revoir et comprendre l’ODD crée</p>
+                        <p>Revoir et comprendre l’ODD créé</p>
                     </div>
                     <div xml:id="T16" resp="#LB">
                         <head>14h - 15h : Création d’un ODD personnalisé – TP LB </head>

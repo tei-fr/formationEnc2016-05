@@ -222,9 +222,9 @@ Ou au contraire autoriser son absence.
 
 * `nameLink`, `roleName`, `genName`
 
-`&lt;full&gt;` indique si le nom est donné dans une forme normalisée
+`@full` indique si le nom est donné dans une forme normalisée
 
-`&lt;sort&gt;` spécifie l’ordre des composantes du nom entre elles
+`@sort` spécifie l’ordre des composantes du nom entre elles
 
 ```xml
 <persName ref="tag:projectname.org,2012:pn9">
@@ -279,13 +279,24 @@ Comporte un certain nombre d’éléments qui permettent à l’encodeur de four
 
 ## Liens vers des données d’autorité
 
-* `&lt;key&gt;` pour fournir une référence externe
+* `@key` pour fournir une référence externe
 
-* `&lt;ref&gt;` pour une référence au moyen d’une URI
+* `@ref` pour une référence au moyen d’une URI
 
 On privilégiera dans des notices d’autorité, une approche qui s’appuie sur un élément introduit récemment dans le modèle de contenu de `&lt;person&gt;`, `&lt;org&gt;` et `&lt;place&gt;`
 
 * `&lt;idno&gt;`
+
+```xml
+  <person>
+    <persName>
+      <roleName type="honorific" full="abb">Mme</roleName>
+      <nameLink>de la</nameLink>
+      <surname>Rochefoucault</surname>
+    </persName>
+    <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb16377695t</idno>
+  </person>
+```
 
 ???
 

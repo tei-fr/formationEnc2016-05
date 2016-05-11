@@ -25,16 +25,9 @@
          </sourceDesc>
       </fileDesc>
   </teiHeader>
-  <TEI>
-     <teiHeader>
-        <fileDesc>
-           <titleStmt>
-              <title></title>
-           </titleStmt>
-           <publicationStmt></publicationStmt>
-           <sourceDesc></sourceDesc>
-        </fileDesc>
-     </teiHeader>
-     
-  </TEI>
+  <xi:include href="cr610428_1.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
+  <xi:include href="CR610428_4.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
+  <xi:include href="cr620911_header.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
+  <xi:include href="cr650308-flo.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
+
 </teiCorpus>

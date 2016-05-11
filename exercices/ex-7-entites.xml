@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Ex 7 entités nommées</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div>
+            <p>Cet exercice vise à vous familiariser avec le maniement des entités-nommées. En utilisant un fichier biographique concernant les oulipiens, vous allez commencer la construction d’un index des personnes.</p>
+         </div>
+         <div>
+            <head>Balisez les entités-nommées dans la transcription</head>
+            <p>Le texte que vous devez transcrire comporte très probablement en grand nombre de mention de personnes. Balisez ces entités-nommées à l’aide de la balise <gi>persName</gi>.</p>
+         </div>
+         <div>
+            <head>Créer un lien entre les entités-nommées et la liste de personne</head>
+            <list>
+               <item>Consultez maintenant le fichier de biographie <ident>oulipiens.xml</ident> contenu dans <ident>travaux</ident>.</item>
+               <item>Repérez dans ce fichier les auteurs mentionnés dans votre transcription.</item>
+               <item>Établissez un lien entre votre transcription et ce fichier d’index à l’aide d’un pointeur.</item>
+            </list>
+         </div>
+         <div>
+            <head>Développer la description biographique d’une personne</head>
+            <list>
+               <item>Identifiez une notice qui pourrait être développée dans le fichier <gi>oulipiens.xml</gi></item>
+               <item>Encodez le nom et le prénom</item>
+               <item>Fournissez une forme du nom normalisée avec l’attribut <gi>full</gi></item>
+               <item>À partir d’information collectées sur le web, augmentez cette notice en fournissant quelques informations biographiques</item>
+               <item>Fournissez un identifiant unique pour cette personne dans un système d’autorité (par exemple le catalogue d’autorités de la Bnf.</item>
+            </list>
+         </div>
+         <div>
+            <head>Commencez la création d’un index des lieux</head>
+            <list>
+               <item>Ajoutez un élément <gi>listPlace</gi> à la suite de l’élément <gi>listPerson</gi></item>
+               <item>Créez une première entité de lieu correspondant à une mention de votre texte et explorez les éléments disponibles</item>
+               <item>Renseignez son nom, sa localisation géographique</item>
+            </list>
+         </div>
+      </body>
+  </text>
+</TEI>

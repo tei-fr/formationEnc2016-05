@@ -52,8 +52,8 @@
                      ]]></eg>
                   </item>
                   <item>Revenez dans le scenario de transformation que vous utilisiez pour générer
-                     votre schéma. Cette fois-ci cochez aussi la case pour "TEI ODD XHTML" (et/ou un
-                     des autres formats, meme "TEI ODD DOCX" si vous voulez) </item>
+                     votre schéma. Cette fois-ci cochez aussi la case pour <ident>TEI ODD XHTML</ident> (et/ou un
+                     des autres formats, meme <ident>TEI ODD DOCX</ident> si vous voulez) </item>
                   <item>Regardez l'effet de vos modifications dans le doc qui en ressort.</item>
                </list>
             </p>

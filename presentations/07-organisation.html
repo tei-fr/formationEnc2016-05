@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Programme</title>
+      <link href="themes/remark-dark.css" rel="stylesheet" media="all" type="text/css">
+   </head>
+   <body><textarea id="source">
+title: Modalités d’organisation des documents TEI
+description: , 
+theme: theme/remark-dark-em.css
+name: inverse
+layout: true
+class: inverse
+
+---
+class: center middle
+name: index
+
+
+# Modalités d’organisation des documents TEI
+
+## Formation TEI | ENC 9 au 12 mai 2016
+
+.footnote[[Programme](00-programme.html)]
+![test](images/logo-ecole-nationale-des-chartes.png)
+
+---
+layout: false
+
+# Structure(s) d’un document TEI-XML
+
+* Chaque document TEI est représenté par un élément `&lt;TEI&gt;`, regroupant de texte et des métadonnées
+
+* On peut également regrouper des `&lt;TEI&gt;` dans un `&lt;teiCorpus&gt;`
+
+Le terme document  n’a aucune définition formelle, mais d’habitude il correspond à un objet complet (un livre par ex). D’autres possibilités ne sont pas exclus...
+
+---
+
+
+# Un document n’est pas la même chose qu’un fichier!
+
+* un fichier est un unité de stockage numérique 
+
+* un document est un objet ayant une structure logique
+
+Un fichier peut se trouver sur votre disque dur, dans le cloud, ou sur le Web ... ou entièrement virtualisé
+
+* Un document peut être stocké dans plusieurs fichiers -- ou un seul
+
+* Un fichier peut contenir plusieurs documents -- ou un seul
+
+---
+
+
+# L’édition numérique : en pratique
+
+On fait une édition numérique à partir des composants suivants: 
+
+* un ensemble d’images numérique, chacun représentant une page d’une ressource 
+
+* une transcription plus ou moins complète du texte qui figure sur ces pages
+
+* des métadonnées concernant les ressources numérisées, par ex. leur relation, leur origine etc.
+
+* des métadonnées concernant la manière de sa numérisation
+
+* des annotations plus ou moins riches sur les entités référencées par les textes, la langue des textes, etc
+
+Le système TEI nous propose plusieurs manières d’organiser tout cela
+
+---
+
+
+# Structures TEI pour la transcription des sources
+
+* `&lt;facsimile&gt;` : regroupe un ensemble d’images représentant les pages (vel sim) d’une ressource
+
+* `&lt;text&gt;` : rassemble une lecture structurée du contenu intellectuel d’un document (ou en ensemble des documents) i.e. son texte
+
+* `&lt;sourceDoc&gt;` : transcription quasiment objective des aspects physique d’un document
+
+* `&lt;teiHeader&gt;` : rassemble les métadonnées qui décrivent les objets traités et les méthodes d’encodage concernées
+
+Un élément `&lt;TEI&gt;` (un document) contient au minimum un `&lt;teiHeader&gt;`, suivi d’un ou plusieurs des autres possibilités
+
+---
+
+
+# Un document TEI peut donc rassembler...
+
+* un ensemble de représentations visuelles (`&lt;facsimile&gt;`)
+
+* ou une transcription textuelle (`&lt;text&gt;`)
+
+* ou une transcription documentaire (`&lt;sourceDoc&gt;`)
+
+* ou ces trois types d’objet conjointement
+
+```xml
+<TEI>
+  <teiHeader>
+    <!-- obligatoire :  métadonnées  --></teiHeader>
+  <facsimile>
+    <!-- facultatif :  rassemble des images de l’objet-->
+  </facsimile>
+  <sourceDoc>
+    <!-- facultatif :  transcription documentaire de l’objet -->
+  </sourceDoc>
+  <text>
+    <!-- facultatif :  transcription textuelle  de l’objet --></text>
+</TEI>
+```
+
+---
+
+
+# Un TEI Corpus est aussi possible .... 
+
+
+```xml
+<teiCorpus>
+    <teiHeader>
+     <!-- obligatoire -->
+    </teiHeader>
+    <TEI>
+     <!-- obligatoire -->
+    </TEI>
+  <!-- encore d’elements <TEI>  -->
+  </teiCorpus>
+```
+
+
+Cette structure servirait par ex à une collection de livres de la même sorte, ou a un archive de documents independent
+
+---
+
+
+### Deux méthodes simplissimes pour gérer un facsimile numérique
+
+```xml
+<TEI>
+  <teiHeader>
+     <!-- métadonnées sur l’édition numerique --></teiHeader>
+  <facsimile>
+    <graphic url="page1r.png"></graphic>
+    <graphic url="page1v.png"></graphic>
+    <graphic url="page2r.png"></graphic>
+    <graphic url="page2v.png"></graphic>
+  </facsimile>
+</TEI>
+```
+
+NB: aucune manière de structurer les images
+
+```xml
+<TEI>
+  <teiHeader>
+     <!-- métadonnées sur l’édition numerique --></teiHeader>
+  <text>
+    <pb facs="page1.png"></pb>
+     <!-- texte de la  page 1 facultativement transcrit ici -->
+    <pb facs="page2.png"></pb>    
+     <!-- texte de la  page 2 facultativement transcrit ici-->
+  </text>
+</TEI>
+```
+
+(On se servirait de `&lt;sourceDoc&gt;` au lieu de `&lt;text&gt;` selon ses principes éditoriaux)
+
+---
+
+
+# Inconvénients
+
+* difficile de supporter des relations plus compliquées 
+
+* maintien difficile d’informations propres à l’image 
+
+* nécessité donc d’intégration avec d’autres fichiers (typiquement METS) 
+
+Problèmes&nbsp;: 
+
+* plusieurs images pour une seul page
+
+* comment associer des pages, par ex pour une feuille, ou une double-page 
+
+---
+
+
+# On dispose de versions alternatives d’une même image&nbsp;?
+
+L’élément `&lt;surface&gt;` nous permet de regrouper les images équivalentes:
+
+```xml
+<facsimile>
+  <graphic url="page1.png"></graphic>
+  <surface>
+    <graphic url="page2-highRes.png"></graphic>
+    <graphic url="page2-lowRes.png"></graphic>
+  </surface>
+  <graphic url="page3.png"></graphic>
+  <graphic url="page4.png"></graphic>
+</facsimile>
+```
+
+---
+
+
+# On veut identifier les feuilles d’un manuscrit&nbsp;?
+
+L’élément `&lt;surfaceGrp&gt;` nous permet de regrouper les surfaces:
+
+```xml
+<facsimile>
+  <surfaceGrp type="leaf">
+    <surface>
+      <graphic url="page1recto.png"></graphic>
+    </surface>
+    <surface>
+      <graphic url="page1verso.png"></graphic>
+    </surface>
+  </surfaceGrp>
+</facsimile>
+```
+
+---
+
+
+### On veut distinguer des sous-parties d’une surface
+
+L’élément `&lt;zone&gt;` nous permet d’identifier n’importe quelle région d’une surface.
+
+* Un `&lt;zone&gt;` identifie un polygone (pas forcément rectangulaire) : un espace en 2d
+
+* Il est défini ou bien par l’attribut `@points` ou bien par les attributs `@ulx`, `@uly`, `@lrx` et `@lry`
+
+* Toute définition de zone doit utiliser le système de coordonnées définie pour la surface
+
+* Un système de coordonnées définit une plage de valeurs pour les paires de coordonnées (x,y) qui expriment un polygone 2d 
+
+* (il ne s’agit pas d’une mensuration)
+
+```xml
+<facsimile>
+  <surface ulx="0" uly="0" lrx="40" lry="30">
+    <graphic url="page1r.png"></graphic>
+    <zone points="22,10 30,21 17,25 12,23">
+      <graphic url="page1rdetail.png"></graphic>
+    </zone>
+  </surface>
+</facsimile>
+```
+
+---
+
+
+# Lier les images avec leur transcription
+
+* L’attribut `@facs` est disponible sur tout élément de transcription. Il pointe sur un `&lt;zone&gt;`, `&lt;surface&gt;`, ou (plus simplement) sur un `&lt;graphic&gt;`
+
+* (L’attribut `@start` de `&lt;zone&gt;` ou de `&lt;surface&gt;` pointe dans le sens opposé, vers une portion de transcription)
+
+```xml
+<facsimile>
+  <surfaceGrp type="leaf">
+    <surface xml:id="p1r">
+      <graphic url="page1r.png"></graphic>
+      <graphic url="page1r.tiff"></graphic>
+    </surface>
+    <surface xml:id="p1v">
+      <graphic url="page1v.png"></graphic>
+    </surface>
+  </surfaceGrp>
+</facsimile><text>
+  <pb facs="#p1r"></pb>
+  <!-- text from page 1 recto transcribed here -->
+  <pb facs="#p1v"></pb>
+  <!-- text from page 1 verso transcribed here -->
+</text>
+```
+
+---
+
+
+# Exemple 
+![](../images/bovelles-1.png)
+---
+
+
+# Exemple
+![](../images/bovelles-2.png)
+---
+
+
+# Et la transcription
+![](../images/bovelles-3.png)
+---
+
+
+# Utilisation de XInclude
+
+XInclude est un standard W3C pour la représentation de la structure physique (en termes de ressources) supportant un document XML
+
+Par exemple&nbsp;: notre document est un `&lt;teiCorpus&gt;`, contenant donc 
+* un `&lt;teiHeader&gt;`
+
+* plusieurs `&lt;TEI&gt;`
+
+
+Pour faciliter la mise en œuvre du travail (par exemple pour répartir l’encodage entre des participants), nous préférons traiter tous ces éléments du corpus dans des fichiers séparés.
+
+Nous avons donc un fichier `corpusHdr.xml` et plusieurs fichiers `text1.xml`, `text2.xml`, etc.
+
+---
+
+
+Nous pouvons intégrer dans un seul document TEI toutes ces ressources en utilisant XInclude ainsi&nbsp;: 
+
+```xml
+<teiCorpus xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <xi:include href="corpusHdr.xml"/>
+  <xi:include href="text1.xml"/>
+  <xi:include href="text2.xml"/>
+  <!-- etc -->
+</teiCorpus>
+```
+
+Voir [XML Inclusions (XInclude) Version 1.0 (Second Edition), W3C Recommendation 15 November 2006.](http://www.w3.org/TR/xinclude/)
+
+
+Rappel : n’oubliez pas de déclarer l’espace de nom XInclude au début de votre fichier
+
+---
+
+
+# Utilisation de XInclude
+
+* Le fichier à inclure est indiqué par un `@href`, et peut donc être n’importe quelle type de ressource: pas forcément un fichier local.
+
+* On peut aussi spécifier un fallback , un texte ou un fichier à utiliser si celui proposé n’est pas disponible
+
+* Le fichier à inclure peut correspondre à n’importe quel fragment du document XML, mais il doit être bien formé 
+
+* Attention&nbsp;! il faut comprendre l’usage des espaces de nom ...
+</textarea><script src="js/remark-0.6.5.min.js" type="text/javascript"></script><script type="text/javascript">
+        var hljs = remark.highlighter.engine;
+      </script><script src="remark.language.js" type="text/javascript"></script><script type="text/javascript">
+        var slideshow = remark.create({
+        highlightStyle: 'monokai',
+        highlightLanguage: 'remark'
+        }) ;
+      </script></body>
+</html>

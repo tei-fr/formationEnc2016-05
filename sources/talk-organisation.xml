@@ -20,18 +20,16 @@
 
     <body>
       <div rend="slide">
-        <head>Structure(s) d'un document TEI-XML</head>
+        <head>Structure(s) d’un document TEI-XML</head>
         <list>
-          <item>Chaque document TEI est représenté par un élément <gi>TEI</gi>, regroupant de texte
-            et des metadonnées </item>
+          <item>Chaque document TEI est représenté par un élément <gi>TEI</gi>, regroupant de texte et des métadonnées </item>
           <item>On peut également regrouper des <gi>TEI</gi> dans un <gi>teiCorpus</gi></item>
         </list>
-        <p rend="box"> Le terme <term rend="it">document </term> n'a aucune définition formelle,
-          mais d'habitude il correspond à un object complet (un livre par ex). D'autres possibilités
-          ne sont pas exclus... </p>
+        <p rend="box"> Le terme <term rend="it"
+          >document </term> n’a aucune définition formelle, mais d’habitude il correspond à un objet complet (un livre par ex). D’autres possibilités ne sont pas exclus... </p>
       </div>
       <div rend="slide">
-        <head>Un document n'est pas la meme chose qu'un fichier!</head>
+        <head>Un document n’est pas la même chose qu’un fichier!</head>
         <list>
           <item>un fichier est un unité de stockage numérique </item>
           <item>un document est un objet ayant une structure logique</item>
@@ -39,68 +37,58 @@
         <p>Un fichier peut se trouver sur votre disque dur, dans le cloud, ou sur le Web ... ou
           entièrement virtualisé</p>
         <list>
-          <item>Un document peut etre stocké dans plusieurs fichiers -- ou un seul</item>
+          <item>Un document peut être stocké dans plusieurs fichiers -- ou un seul</item>
           <item>Un fichier peut contenir plusieurs documents -- ou un seul</item>
         </list>
       </div>
-      <div>
-        <head>L'édition numérique : en pratique</head>
+      <div rend="slide">
+        <head>L’édition numérique : en pratique</head>
         <p>On fait une édition numérique à partir des composants suivants: </p>
         <list>
-          <item>un ensemble d'images numérique, chacun représentant une page d'une ressource </item>
+          <item>un ensemble d’images numérique, chacun représentant une page d’une ressource </item>
           <item>une transcription plus ou moins complète du texte qui figure sur ces pages</item>
-          <item>des metadonnées concernant les ressources numerisées, par ex. leur relation, leur
-            origine etc.</item>
-          <item>des metadonnées concenant la manière de sa numérisation</item>
-          <item>des annotations plus ou moins riches sur les entités referenciés par les textes, la
-            langue des textes, etc</item>
+          <item>des métadonnées concernant les ressources numérisées, par ex. leur relation, leur origine etc.</item>
+          <item>des métadonnées concernant la manière de sa numérisation</item>
+          <item>des annotations plus ou moins riches sur les entités référencées par les textes, la langue des textes, etc</item>
         </list>
-        <p rend="box">Le système TEI nous propose plusieurs manières d'organiser tout cela</p>
+        <p rend="box">Le système TEI nous propose plusieurs manières d’organiser tout cela</p>
       </div>
-      <div>
+      <div rend="slide">
         <head>Structures TEI pour la transcription des sources</head>
         <list>
-          <item><gi>facsimile</gi> : regroupe un ensemble d'images représentant les pages
-              (<foreign>vel sim</foreign>) d'une ressource</item>
+          <item><gi>facsimile</gi> : regroupe un ensemble d’images représentant les pages (<foreign>vel sim</foreign>) d’une ressource</item>
 
-          <item><gi>text</gi> : rassemble une lecture structurée du contenu intellectuel d'un
-            document (ou en ensemble des documents) i.e. son <q>texte</q>
+          <item><gi>text</gi> : rassemble une lecture structurée du contenu intellectuel d’un document (ou en ensemble des documents) i.e. son <q>texte</q>
           </item>
 
-          <item><gi>sourceDoc</gi> : transcription quasiment objective des aspects physique d'un
-            document </item>
-          <item><gi>teiHeader</gi> : rassemble les métadonnées qui décrivent les objects traités et
-            les méthodes d'encodage concernées </item>
+          <item><gi>sourceDoc</gi> : transcription quasiment objective des aspects physique d’un document </item>
+          <item><gi>teiHeader</gi> : rassemble les métadonnées qui décrivent les objets traités et les méthodes d’encodage concernées </item>
         </list>
-        <p rend="box">Un élément <gi>TEI</gi> (un document) contient au minimum un <gi>teiHeader</gi>, suivi d'un
-          ou plusieurs des autres possibilités</p>
+        <p rend="box"
+            >Un élément <gi>TEI</gi> (un document) contient au minimum un <gi>teiHeader</gi>, suivi d’un ou plusieurs des autres possibilités</p>
       </div>
-      <div>
+      <div rend="slide">
         <head>Un document TEI peut donc rassembler...</head>
         <list>
           <item>un ensemble de représentations visuelles (<gi>facsimile</gi>)</item>
           <item>ou une transcription textuelle (<gi>text</gi>) </item>
           <item>ou une transcription documentaire (<gi>sourceDoc</gi>) </item>
-          <item>ou ces trois types d'objet conjointement</item>
+          <item>ou ces trois types d’objet conjointement</item>
         </list>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
           <TEI>
-            <teiHeader>
-              <!-- obligatoire :  métadonnées  -->
-            </teiHeader>
+            <teiHeader><!-- obligatoire :  métadonnées  --></teiHeader>
             <facsimile>
-              <!-- facultatif :  rassemble des images de l'objet-->
+              <!-- facultatif :  rassemble des images de l’objet-->
             </facsimile>
             <sourceDoc>
-              <!-- facultatif :  transcription documentaire  de l'objet -->
+              <!-- facultatif :  transcription documentaire  de l’objet -->
             </sourceDoc>
-            <text>
-              <!-- facultatif :  transcription textuelle  de l'objet -->
-            </text>
+            <text><!-- facultatif :  transcription textuelle  de l’objet --></text>
           </TEI>
         </egXML>
       </div>
-      <div>
+      <div rend="slide">
         <head>Un TEI Corpus est aussi possible .... </head>
         <p>
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -111,7 +99,7 @@
               <TEI>
                 <!-- obligatoire -->
               </TEI>
-              <!-- encore d'elements <TEI>  -->
+              <!-- encore d’elements <TEI>  -->
             </teiCorpus>
           </egXML>
         </p>
@@ -120,13 +108,11 @@
       </div>
    
 
-      <div xml:lang="fr">
-        <head> Deux méthodes simplissimes pour gérer un "facsimilé numérique"</head>
+      <div rend="slide" xml:lang="fr">
+        <head> Deux méthodes simplissimes pour gérer un <soCalled>facsimile numérique</soCalled></head>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
           <TEI>
-            <teiHeader>
-              <!-- metadonnées sur l'édition numerique -->
-            </teiHeader>
+            <teiHeader><!-- métadonnées sur l’édition numerique --></teiHeader>
             <facsimile>
               <graphic url="page1r.png"/>
               <graphic url="page1v.png"/>
@@ -138,9 +124,7 @@
         <p>NB: aucune manière de structurer les images</p>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
           <TEI>
-            <teiHeader>
-              <!-- metadonnées sur l'édition numerique -->
-            </teiHeader>
+            <teiHeader><!-- métadonnées sur l’édition numerique --></teiHeader>
             <text>
               <pb facs="page1.png"/>
               <!-- texte de la  page 1 facultativement transcrit ici -->
@@ -149,25 +133,24 @@
             </text>
           </TEI>
         </egXML>
-        <p>(On se servirait de <gi>sourceDoc</gi> au lieu de <gi>text</gi> selon ses principes
-          editoriaux)</p>
+        <p>(On se servirait de <gi>sourceDoc</gi> au lieu de <gi>text</gi> selon ses principes éditoriaux)</p>
       </div>
-      <div xml:lang="en">
+      <div rend="slide" xml:lang="fr">
         <head>Inconvénients</head>
         <list>
           <item>difficile de supporter des relations plus compliquées </item>
-          <item>maintien difficile d'informations propres à l'image </item>
-          <item>nécessité donc d'intégration avec d'autres fichiers (typiquement METS) </item>
+          <item>maintien difficile d’informations propres à l’image </item>
+          <item>nécessité donc d’intégration avec d’autres fichiers (typiquement METS) </item>
         </list>
-        <p> .Problèmes : </p>
+        <p> Problèmes : </p>
         <list>
           <item>plusieurs images pour une seul page</item>
           <item>comment associer des pages, par ex pour une feuille, ou une double-page </item>
         </list>
       </div>
-      <div>
-        <head>On dispose de versions alternatives d'une même image ?</head>
-        <p>L'élément <gi>surface</gi> nous permet de regrouper les images équivalentes: </p>
+      <div rend="slide">
+        <head>On dispose de versions alternatives d’une même image ?</head>
+        <p>L’élément <gi>surface</gi> nous permet de regrouper les images équivalentes: </p>
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <facsimile>
             <graphic url="page1.png"/>
@@ -180,9 +163,9 @@
           </facsimile>
         </egXML>
       </div>
-      <div>
-        <head>On veut identifier les feuilles d'un manuscrit ?</head>
-        <p>L'élément <gi>surfaceGrp</gi> nous permet de regrouper les surfaces: </p>
+      <div rend="slide">
+        <head>On veut identifier les feuilles d’un manuscrit ?</head>
+        <p>L’élément <gi>surfaceGrp</gi> nous permet de regrouper les surfaces: </p>
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <facsimile>
             <surfaceGrp type="leaf">
@@ -196,19 +179,18 @@
           </facsimile>
         </egXML>
       </div>
-      <div>
-        <head>On veut distinguer des sous-parties d'une surface</head>
-        <p>L'élément <gi>zone</gi> nous permet d'identifier n'importe quelle région d'une surface. </p>
+      <div rend="slide">
+        <head>On veut distinguer des sous-parties d’une surface</head>
+        <p>L’élément <gi>zone</gi> nous permet d’identifier n’importe quelle région d’une surface. </p>
         <list>
           <item>Un <gi>zone</gi> identifie un polygone (pas forcément rectangulaire) : un espace en
             2d</item>
-          <item>Il est défini ou bien par l'attribut <att>points</att> ou bien par les attributs
-              <att>ulx</att>, <att>uly</att>, <att>lrx</att> et <att>lry</att></item>
+          <item>Il est défini ou bien par l’attribut <att>points</att> ou bien par les attributs <att>ulx</att>, <att>uly</att>, <att>lrx</att> et <att>lry</att></item>
           <item>Toute définition de zone doit utiliser le <term>système de coordonnées</term>
             définie pour la surface </item>
           <item>Un système de coordonnées définit une plage de valeurs pour les paires de
             coordonnées (x,y) qui expriment un polygone 2d </item>
-          <item>(il ne s'agit pas d'une mensuration)</item>
+          <item>(il ne s’agit pas d’une mensuration)</item>
         </list>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
           <facsimile>
@@ -221,15 +203,12 @@
           </facsimile>
         </egXML>
       </div>
-      <div>
+      <div rend="slide">
         <head>Lier les images avec leur transcription</head>
         <list>
-          <item>L'attribut <att>facs</att> est disponible sur tout élément de transcription. Il
-            pointe sur un <gi>zone</gi>, <gi>surface</gi>, ou (plus simplement) sur un
-              <gi>graphic</gi>
+          <item>L’attribut <att>facs</att> est disponible sur tout élément de transcription. Il pointe sur un <gi>zone</gi>, <gi>surface</gi>, ou (plus simplement) sur un <gi>graphic</gi>
           </item>
-          <item>(L'attribut <att>start</att> de <gi>zone</gi> ou de <gi>surface</gi> pointe dans le
-            sens opposé, vers une portion de transcription) </item>
+          <item>(L’attribut <att>start</att> de <gi>zone</gi> ou de <gi>surface</gi> pointe dans le sens opposé, vers une portion de transcription) </item>
         </list>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny"><facsimile>
             <surfaceGrp type="leaf">
@@ -250,7 +229,7 @@
           </text>
         </egXML>
       </div>
-      <div>
+      <div rend="slide">
         <head>Exemple </head>
         <figure>
           <graphic url="../images/bovelles-1.png" height="90%"/>
@@ -263,11 +242,11 @@
         <p>Nous distinguons plusieurs zones sur cette surface : <list>
             <item>le titre</item>
             <item>la lettrine</item>
-            <item>l'image d'une cloche</item>
+            <item>l’image d’une cloche</item>
           </list>...</p>
         <p>Ce sont tous des zones rectangulaires</p>-->
       </div>
-      <div>
+      <div rend="slide">
         <head>Exemple</head>
         <figure>
           <graphic url="../images/bovelles-2.png" height="90%"/>
@@ -287,9 +266,9 @@
               <!-\- la cloche -\->
             </surface>
           </facsimile></egXML>
-        <p>(Notons que nous n'avons pas encore introduit des identifiants pour chaque zone)</p>-->
+        <p>(Notons que nous n’avons pas encore introduit des identifiants pour chaque zone)</p>-->
       </div>
-      <div>
+      <div rend="slide">
         <head>Et la transcription</head>
         <figure>
           <graphic url="../images/bovelles-3.png" height="90%"/>
@@ -323,7 +302,7 @@
                   imperfaictes &amp;amp; irregulieres: &amp;amp; leur accord se fait par reigle
                   Geometrique: comme si les deux cloches C &amp;amp; D sont pendantes à vn mesme
                   axe, ou essieu, A B: je dy que leur accord se fera en contraires parties
-                    co<ex>m</ex>me voyez icy figuré. Car quand l'vne sera en haut, l'autre declinera
+                    co<ex>m</ex>me voyez icy figuré. Car quand l’vne sera en haut, l’autre declinera
                   en bas. Autreme<ex>m</ex>t si elles de.<figure facs="#B49rFig1"/>
                   <pb/><!-\- ... -\->
                 </p>
@@ -386,22 +365,18 @@
       <div type="slide" xml:lang="fr">
        
           <head>Utilisation de XInclude</head>
-        <p rend="box">XInclude est un standard W3C pour la representation de la structure physique (en termes de
-        ressources) supportant un document XML</p>
-        <p>Par exemple: notre document est un <gi>teiCorpus</gi>, contenant donc
-        <list>
-          <item>un <gi>teiHeader</gi> </item>
-          <item>plusieurs <gi>TEI</gi> </item>
-        </list></p>
-        <p>Pour faciliter la mise en œuvre du travail (par exemple pour répartir l'encodage entre
-          des participants), nous preferons traiter tous ces éléments du corpus dans des
-          fichiers séparés.</p>
-        <p>Nous avons donc un fichier <ident>corpusHdr.xml</ident> et plusiers fichiers <ident>text1.xml</ident>,
-        <ident>text2.xml</ident>, etc.</p></div>
+        <p rend="box"
+          >XInclude est un standard W3C pour la représentation de la structure physique (en termes de ressources) supportant un document XML</p>
+        <p>Par exemple : notre document est un <gi>teiCorpus</gi>, contenant donc <list>
+            <item>un <gi>teiHeader</gi>
+            </item>
+            <item>plusieurs <gi>TEI</gi>
+            </item>
+          </list></p>
+        <p>Pour faciliter la mise en œuvre du travail (par exemple pour répartir l’encodage entre des participants), nous préférons traiter tous ces éléments du corpus dans des fichiers séparés.</p>
+        <p>Nous avons donc un fichier <ident>corpusHdr.xml</ident> et plusieurs fichiers <ident>text1.xml</ident>, <ident>text2.xml</ident>, etc.</p></div>
       <div type="slide" xml:lang="fr">
-        <p>Nous pouvons intégrer dans un seul document TEI toutes ces ressources
-          en utilisant XInclude ainsi:
-        </p>
+        <p>Nous pouvons intégrer dans un seul document TEI toutes ces ressources en utilisant XInclude ainsi : </p>
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
            <![CDATA[
             <teiCorpus xmlns:xi="http://www.w3.org/2001/XInclude" >
@@ -417,15 +392,12 @@
         
       </div>
      
-        <div>
+      <div rend="slide">
           <head>Utilisation de XInclude</head>
-         <list> <item>Le fichier à inclure est indiqué  par un <att>href</att>, et peut donc etre n'importe quelle 
-         type de ressource: pas forcément un fichier local. </item>
-          <item>On peut aussi spécifier un <soCalled>fallback</soCalled> , un texte ou un fichier à utiliser si celui
-          proposé n'est pas disponible</item>
-          <item>Le fichier à inclure peut correspondre à n'importe quel fragment du document XML, mais il
-          doit etre bien formé </item>
-          <item>Attention ! il faut comprendre l'usage des espaces de nom ...</item>
+         <list> <item>Le fichier à inclure est indiqué par un <att>href</att>, et peut donc être n’importe quelle type de ressource: pas forcément un fichier local. </item>
+          <item>On peut aussi spécifier un <soCalled>fallback</soCalled> , un texte ou un fichier à utiliser si celui proposé n’est pas disponible</item>
+          <item>Le fichier à inclure peut correspondre à n’importe quel fragment du document XML, mais il doit être bien formé </item>
+          <item>Attention ! il faut comprendre l’usage des espaces de nom ...</item>
  </list>       </div>
      
 

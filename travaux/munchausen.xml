@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person type="fictif" xml:id="in000ex">
+  <!-- Exemple d'encodage du nom propre -->
+  <persName full="yes"
+    >Münchhausen, Karl Hieronymus (1720-1797 ; baron von)</persName>
+  <persName>
+    <!-- Nom de famille -->
+    <surname sort="1">Münchhausen</surname>
+    <!-- Qualificatif de génération (éventuellement) -->
+    <genName>Junior</genName>
+    <!-- Prénoms (ordonnés) -->
+    <forename sort="2">Karl</forename>
+    <forename>Friedrich</forename>
+    <forename sort="3">Hieronymus</forename>
+    <!-- Particule etc. (éventuellement) -->
+    <nameLink type="nobility">von</nameLink>
+    <!-- Titre (éventuellement) -->
+    <roleName type="nobility">baron</roleName>
+    <!-- ou bien : type="military", type="office", type="epithet" -->
+  </persName>
+  <!-- Dates de naissance et de mort avec un attribut normalisé -->
+  <birth when="1720-05-11">11 mai 1720</birth>
+  <death when="1797-02-22">22 février 1797</death>
+  <!-- Activité normalisée pour l'index -->
+  <occupation>mercenaire</occupation>
+  <!-- Identifiant dans une notice d'autorité -->
+  <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb119462100/PUBLIC</idno>
+</person>

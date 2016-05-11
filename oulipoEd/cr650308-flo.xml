@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="out/tei_oulipo_ODD_flo.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Transcription CR réunion 8 mars 1965, Ouvroir de littérature
+               potentielle</title>
+            <title type="sub">flo-cr650308.xml</title>
+            <principal xml:id="LB">Lou Burnard</principal>
+            <principal xml:id="FLP">Florence Le Priol</principal>
+            <!--<funder>ANR</funder>-->
+         </titleStmt>
+         <publicationStmt>
+            <publisher>BNF</publisher>
+            <date when="1965-03-08">8 mars 1965</date>
+            <!--<idno>circulaire 59</idno>-->
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country>France</country>
+                  <settlement>Paris</settlement>
+                  <repository>BNF</repository>
+                  <idno>circulaire n°59</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItem>
+                     <title type="main">OUVROIR DE LITTERATURE POTENTIELLE</title>
+                     <title type="sub">COMPTE-RENDU DE LA REUNION DU 8 MARS 1965</title>
+
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <collation>5 feuillets dactylographiés</collation>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin> 1965 </origin>
+               </history>
+
+            </msDesc>
+
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>indications éditoriales</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change who="#FLP">
+            <date when="2016-05-10" type="creation">création le 10 mai 2016</date>
+            <date when="2016-05-10" type="modification"> révision 10 mai 2016</date>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+
+   <text>
+      <body>
+         <head>
+            <title type="main">OUVROIR DE LITTERATURE POTENTIELLE</title>
+         </head> 
+         <div>
+            <listPerson>
+               <person xml:id="FLL" n="1">
+                  <persName>François Le Lionnais</persName>
+                  <birth when="1901"/>
+                  <death when="1984-03-13">Excusé depuis la 13 mars 1984</death>
+                  <affiliation>Président-Fondateur</affiliation>
+               </person>
+               
+               <person xml:id="RQ" n="2">
+                  <persName>Raymond Queneau</persName>
+                  <birth when="1903"/>
+                  <affiliation>Président-Fondateur</affiliation>
+                  <death when="1976-10-25">Excusé depuis le 25 octobre 1976</death>
+               </person>
+               
+               <person xml:id="NA" n="3">
+                  <persName>Noél Arnaud</persName>
+                  <birth when="1919"/>
+                  <affiliation>Membre fondateur</affiliation>
+                  <affiliation from="1984" to="2003">Président de 1984 a 2003</affiliation>
+                  <death when="2003-04-01">Excusé depuis le 1er avril 2003</death>
+               </person>
+               
+               <person xml:id="JB" n="4">
+                  <persName>Jacques Bens</persName>
+                  
+                  <affiliation>Membre fondateur</affiliation>
+                  <birth when="1931"/>
+                  <death when="2001-07-26">Excusé depuis le 26 juillet 2001</death>
+               </person>
+               <person xml:id="CB" n="5">
+                  <persName>Claude Berge</persName>
+                  <affiliation when="1926">Membre fondateur</affiliation>
+                  <!-- cf Bens, supra -->
+                  <death when="2002-06-30">Excusé depuis le 30 juin 2002</death>
+               </person>
+               <person xml:id="JD" n="6">
+                  <persName>Jacques Duchateau</persName>
+                  <birth when="1924"/>
+                  <affiliation> Membre fondateur</affiliation>
+               </person>
+               <person xml:id="L" n="7">
+                  <persName>Latis alias Emmanuel Peillet</persName>
+                  <birth when="1913">1913</birth>
+                  <death when="1973-09-01">Excusé depuis le 1er Septembre 1973</death>
+                  <affiliation>Membre fondateur </affiliation>
+                  <!-- on reste membre fondateur meme apres sa disparition, donc 
+        supprimez l'attribut @to-->
+               </person>
+               <person xml:id="JL" n="8">
+                  <persName>Jean Lescure</persName>
+                  <birth when="1912"/>
+                  <death when="2005-10-17"/>
+                  <affiliation to="2005-10-17">
+                     <affiliation>Membre fondateur Excusé depuis le 17 octobre 2005</affiliation>
+                  </affiliation>
+                  <!-- cf Bens, supra. La mention "Excuse depuis..." ferait mieux comme
+        contenu de la balise <death>. Il ne s'agit pas d'une affiliation -->
+               </person>
+               <person xml:id="JQ" n="9">
+                  <persName>Jean Queval</persName>
+                  <birth when="1913"/>
+                  <death when="1990-12-10"/>
+                  <affiliation>Membre fondateur Excusé depuis le 10 décembre 1990</affiliation>
+                  <!-- cf Lescure supra -->
+               </person>
+               <person xml:id="AMS" n="10">
+                  <persName>Albert-Marie Schmidt</persName>
+                  <birth when="1901">1901</birth>
+                  <death when="1966"/>
+                  <affiliation>Membre fondateur Excusé depuis le 8 février 1966</affiliation>
+               </person>
+               <!-- cf Lescure supra -->
+               
+               <person xml:id="AB" n="11">
+                  <persName>André Blavier </persName>
+                  <birth when="1922"/>
+                  <death when="2001-06-09"/>
+                  <affiliation when="1961-02-13">Correspondant étranger depuis le 13 février 1961
+                     Excusé depuis le 9 juin 2001</affiliation>
+               </person>
+               <person xml:id="RC" n="12">
+                  <persName>Ross Chambers</persName>
+                  <birth when="1932">Né en 1932</birth>
+                  <affiliation when="1961-02-13">Correspondant étranger depuis le 13 février 1961
+                  </affiliation>
+               </person>
+               <person xml:id="SC" n="13">
+                  <persName>Stanley Chapman</persName>
+                  <birth when="1925"/>
+                  <death when="2009-05-26"/>
+                  <affiliation when="1961-02-13">Correspondant étranger depuis le 13 février 1961
+                     Excusé depuis le 26 mai 2009</affiliation>
+               </person>
+               <person xml:id="PB" n="14">
+                  <persName>Paul Braffort</persName>
+                  <birth when="1923">Né en 1923</birth>
+                  <affiliation when="1961-03-13">Entré à l'Oulipo le 13 mars 1961</affiliation>
+               </person>
+               <person xml:id="MD" n="15">
+                  <persName>Marcel Duchamp</persName>
+                  <birth when="1887"/>
+                  <death when="1968-10-02"/>
+                  <affiliation when="1932-03-16">Entré à l'Oulipo le 16 mars 1962 Excusé depuis le 2
+                     octobre 1968</affiliation>
+               </person>
+               <person xml:id="JR" n="16">
+                  <persName>Jacques Roubaud</persName>
+                  <birth when="1932"/>
+                  <affiliation from="1966-11-27">Entré à l'Oulipo le 27 novembre 1966</affiliation>
+               </person>
+               <person xml:id="GP" n="17">
+                  <persName ref="https://fr.wikipedia.org/wiki/Georges_Perec"
+                     ><forename>Georges</forename>
+                     <surname full="yes">Perec</surname></persName>
+                  <birth when="1936"><settlement>Paris 19e</settlement></birth>
+                  <death when="1982-03-03"><settlement>Ivry-sur-Seine</settlement></death>
+                  <affiliation when="1967-03-22">Entré à l'Oulipo le 22 mars 1967 Excusé depuis le 3
+                     mars 1982</affiliation>
+                  <nationality>Français</nationality>
+               </person>
+               <person xml:id="MB" n="18">
+                  <persName>Marcel Bénabou</persName>
+                  <birth when="1939">Né en 1939</birth>
+                  <affiliation from="1970-10-29">Entré à l'Oulipo le 29 octobre 1970</affiliation>
+                  <affiliation from="1971">Secrétaire déﬁnitivement provisoire depuis 1971
+                  </affiliation>
+               </person>
+               <person xml:id="LE" n="19">
+                  <persName>Luc Etienne</persName>
+                  <birth when="1908"/>
+                  <death when="1984-11-27"/>
+                  <affiliation when="1979-10-29">Entré à l'Oulipo Ie 29 octobre 1979 Excusé depuis
+                     le 27 novembre 1984</affiliation>
+               </person>
+               <person xml:id="PF" n="20">
+                  <persName>Paul Fournel</persName>
+                  <birth when="1947">Né en 1947</birth>
+                  <affiliation from="1971-09-10">Entré à l'Oulipo le 10 septembre 1971 Secrétaire
+                     provisoirement déﬁnitif de 1971 à 2003</affiliation>
+                  <!-- ca c'est 2 affiliations -->
+                  <affiliation from="2003-05-12">Troisiéme president de l’Oulipo depuis le 12 mai
+                     2003</affiliation>
+               </person>
+               <person xml:id="IC" n="21">
+                  <persName>Italo Calvino</persName>
+                  <birth when="1923"/>
+                  <death when="1985-09-19"/>
+                  <affiliation when="1973">Entré à l'Oulipo le 14 février 1973 Excusé depuis le 19
+                     septembre 1985 </affiliation>
+               </person>
+               <!-- cf Lescure supra -->
+               
+               <person xml:id="HM" n="22">
+                  <persName>Harry Mathews</persName>
+                  <birth when="1930"/>
+                  <affiliation from="1973-02-14">Entré à l'Oulipo le 14 février 1973</affiliation>
+               </person>
+               <person xml:id="MM" n="23">
+                  <persName>Michele Métail</persName>
+                  <birth when="1950">Née en 1950</birth>
+                  <affiliation from="1975" to="2001">Entrée à l'Oulipo le 28 octobre 1975 Prend ses
+                     distances avec le groupe en 2001</affiliation>
+                  
+               </person>
+               <person xml:id="FC" n="24">
+                  <persName>François Caradec</persName>
+                  <birth when="1924"/>
+                  <death when="2008-11-03"/>
+                  <affiliation when="1983-10-04">Entré à l‘Oulipo le 4 octobre 1983 Excusé depuis le
+                     13 novembre 2008</affiliation>
+               </person>
+               <person xml:id="JJ" n="25">
+                  <persName>Jacques Jouet</persName>
+                  <birth when="1947">Né en 1947</birth>
+                  <affiliation from="1983-10-04">Entré à l'Oulipo le 4 octobre 1983</affiliation>
+               </person>
+               <person xml:id="OP" n="26">
+                  <persName>Oskar Pastior</persName>
+                  <birth when="1927"/>
+                  <death when="2006-10-04"/>
+                  <affiliation when="1992-04">Entré à l'Oulipo en avril 1992 Excusé depuis le 4
+                     octobre 2006</affiliation>
+               </person>
+               <person xml:id="PR" n="27">
+                  <persName>Pierre Rosenstiehl</persName>
+                  <birth when="1933">Né en 1933</birth>
+                  <affiliation from="1992">Entré à l'Oulipo en avril 1992</affiliation>
+               </person>
+               <person xml:id="HLT" n="28">
+                  <persName>Hervé Le Tellier</persName>
+                  <birth when="1957">Né en 1957</birth>
+                  <affiliation when="1992-12-15">Entré à l'Oulipo le 15 décembre 1992</affiliation>
+               </person>
+               <person xml:id="BC" n="29">
+                  <persName>Bernard Cerquiglini</persName>
+                  <birth when="1947">Né en 1947</birth>
+                  <affiliation from="1995-04-15">Entré à l'Oulipo le 15 avril 1995</affiliation>
+               </person>
+               <person xml:id="MG" n="30">
+                  <persName>Michelle Grangaud</persName>
+                  <birth when="1941">Née en 1941</birth>
+                  <affiliation from="1995-05">Entrée à l'Oulipo en mai 1995</affiliation>
+               </person>
+               <person xml:id="IM" n="31">
+                  <persName>Ian Monk</persName>
+                  <birth when="1960">Né en 1960</birth>
+                  <affiliation from="1998">Entré à l'Oulipo en juin 1998</affiliation>
+               </person>
+            </listPerson>
+         </div>         
+           
+
+         <div>
+            <head>
+            <title type="sub">COMPTE-RENDU DE LA REUNION DU 8 MARS 1965</title>
+            <title type="sub">Circulaire No. 59</title>
+            </head>
+            <p> PRESENTS : </p>
+            <list type="presents">
+               <item xml:id="Lescure"><persName ref="#JL">J. Lescure</persName></item>
+               <item xml:id="Lionnais"><persName ref="#FLL">F. Le Lionnais</persName></item>
+               <item xml:id="Queneau"><persName ref="#RQ">R. Queneau</persName></item>
+               <item xml:id="Duchateau"><persName ref="#JD">J. Duchateau</persName></item>
+               <item xml:id="Berge"><persName ref="#CB">C. Berge</persName></item>
+               <item xml:id="Braffort"><persName ref="#PB">P. Braffort</persName></item>
+               <item xml:id="Queval"><persName ref="#JQ">J. Queval</persName></item>
+               <item xml:id="Arnaud"><persName ref="#NA">N. Arnaud </persName></item>
+               <item xml:id="Blavier"><persName ref="#AB">A. Blavier</persName>
+               </item>
+            </list>
+            <p>PRESIDENT : <persName xml:id="Bens" ref="#JB">J. BENS</persName>
+            </p>
+         </div>
+         <div>
+            <sp who="#Lionnais">
+               <speaker><persName ref="#Lionnais">LE LIONNAIS</persName> (véhément)</speaker>
+               <p> : Un membre de l’Oulipo ayant omis de faire les démarches nécessaires, nous ne
+                  pourrons nous rendre chez I.B.M après le déjeuner. </p>
+            </sp>
+            <sp who="#Berge">
+               <speaker><persName ref="#Berge">C. BERGE</persName> (distrait)</speaker>
+               <p> : Quel membre ? </p>
+            </sp>
+            <sp who="#Lionnais">
+               <speaker><persName ref="#Lionnais">LE LIONNAIS</persName> : (S’étranglant) </speaker>
+               <p>Comment ça quel membre ? </p>
+            </sp>
+            <sp who="#Bens">
+               <speaker><persName ref="#Bens">BENS</persName> (Présidant avec autorité)</speaker>
+               <p> : Enfin, <persName ref="#Berge">Berge</persName> ! </p>
+            </sp>
+            <stage>- <persName ref="#Berge">Berge</persName> regarde <persName ref="#Lionnais">Le Lionnais</persName>. <persName ref="#Lionnais">Le Lionnais</persName> regarde <persName ref="#Berge">Berge</persName>.- </stage>
+         </div>
+         <metamark>o0o</metamark>
+         <div>
+            <sp who="#Braffort">
+               <speaker><persName>BRAFFORT</persName></speaker>
+               <p> : Je vais écrire un livre sur l’imagination : puis-je parler de l’Oulipo et des
+                  travaux de certains de ses membres ? </p>
+            </sp>
+            <sp>
+               <speaker>TOUS </speaker>
+               <p>: Oui. </p>
+            </sp>
+            <sp who="#Queneau">
+               <speaker><persName>QUENEAU</persName></speaker>
+               <p> : A propos dans la collection « Idée » va paraître « Bâtons, Lettres et
+                  Chiffres » avec en plus ma conférence à l’Institut H. Poincaré. 50.000
+                  exemplaires !</p>
+            </sp>
+            <sp who="#Bens">
+               <speaker><persName>BENS</persName></speaker>
+               <p> : La gloire.</p>
+            </sp>
+            <sp who="#Braffort">
+               <speaker><persName>BRAFFORT</persName></speaker>
+               <p> : J’espère que je ne m’appellerai pas « Pierre » comme dans « La Pleiade ».</p>
+            </sp>
+            <stage>(Queneau sort un papier et note)</stage>
+            <sp who="#Braffort">
+               <speaker><persName>BRAFFORT</persName></speaker>
+               <p> : Au fait, la jambe de ma femme se portant bien, nous allons pouvoir nous rendre
+                  tous à Limours.</p>
+            </sp>
+            <stage>(On prend date : le 12 juin, Oulilimours)</stage>
+            <!-- mettre balise changement de feuillet : pb -->
+            <sp who="#Queneau">
+               <speaker><persName>QUENEAU</persName></speaker>
+               <p>: Qui connait Andouille ?</p>
+            </sp>
+            <stage>(il mange une omelette au fromage sans fromage mais avec tomate)</stage>
+            <stage>Bruit noir. Référence d’Ardouille : Reuterwald, cher Schwartz, Milan). Dans
+               Andouille chaque mot est traité suivant le code de demoiselle des postes. Exemple :
+               « lui » donne « Léon, Ursule, Irène » .</stage>
+         </div>
+         <metamark>o0o</metamark>
+         <div>
+            <sp who="#Duchateau">
+               <speaker><persName>DUCHATEAU</persName></speaker>
+               <p> : Je voudrais signaler le numéro 4 de <quote>« Communications »</quote> qui est
+                  consacré aux <quote>« Recherches Sémiologiques »</quote> Christian Metz dans un
+                  article : Le Cinéma, langue ou langage ? fait état du manifeste d’art
+                  permutationnel de Moles et en profites pour affirmer la <quote>« manipulation
+                     souveraine n’est pas une voie féconde du cinéma (ni d’ailleurs pour la
+                     poésie). »</quote>
+               </p>
+               <p>Il y a aussi un article sur le message narratif, tout ça c’est très intéressant,
+                  intelligent. Naturellement ( ?) l’Oulipo n’est pas cité. Est-ce un hasard, ou bien
+                  est-ce une conséquence des positions, disons, ultra-linguistiques, qu’ils
+                  adoptent. </p>
+            </sp>
+            <sp who="#Queneau">
+               <speaker><persName>QUENEAU</persName></speaker>
+               <p>: Il faudrait que nous en prenions connaissance. </p>
+            </sp>
+            <sp who="#Arnaud">
+               <speaker><persName>ARNAUD</persName></speaker>
+               <p> : Je l’ai lu, il y a une grande analyse de Barthes, ils savent beaucoup de
+                  choses. </p>
+            </sp>
+            <sp who="#Lescure">
+               <speaker><persName>LESCURE</persName></speaker>
+               <p> : Nous aussi. </p>
+            </sp>
+            <sp who="#Queval">
+               <speaker><persName>QUEVAL</persName></speaker>
+               <p> : C’est peut-être pas les mêmes. </p>
+            </sp>
+            <sp who="#Queneau">
+               <speaker><persName>QUENEAU</persName></speaker>
+               <p> : Prenons connaissance, nous pourrons inviter, ou ne pas inviter, selon. </p>
+            </sp>
+            <sp who="#Bens">
+               <speaker><persName>BENS</persName></speaker>
+               <p> : Il ne s’agit pas d’avoir l’air idiot. </p>
+            </sp>
+            <sp who="#Bens">
+               <speaker><persName>BENS</persName></speaker>
+               <p> : J’ai un ami dans le midi qui admire beaucoup Berge. Il voudrait connaitre sa
+                  définition des graphes. Grâce à ses amis, je m’initie aux mathématiques, je sais
+                  maintenant ce que c’est que l’intersection.</p>
+            </sp>
+            <!-- mettre balise changement de feuillet : pb -->
+            <sp who="#Blavier">
+               <speaker><persName>BLAVIER</persName></speaker>
+               <p> : Le midi bouge.</p>
+            </sp>
+            <sp who="#Braffort">
+               <speaker><persName>BRAFFORT</persName></speaker>
+               <p>: Et l’ensemble vide ?</p>
+            </sp>
+            <sp who="#Lionnais">
+               <speaker><persName>LE LIONNAIS</persName></speaker>
+               <p> : Fait-il ou non partie des ensembles. ? </p>
+            </sp>
+            <sp who="#Berge">
+               <speaker><persName>BERGE</persName></speaker>
+               <p> : Quelle est sa taille ? </p>
+            </sp>
+            <sp>
+               <speaker><persName>BENS</persName></speaker>
+               <p> : Vous voulez me décourager.</p>
+            </sp>
+         </div>
+         <metamark>o0o</metamark>
+         <div>
+            <sp who="#Queneau">
+               <speaker><persName>QUENEAU</persName></speaker>
+               <p> : Je signale que Quemada a procédé à l’analyse lexicologique de très nombreux
+                  livres. </p>
+            </sp>
+         </div>
+         <div>
+            <head>Annexe No.1 </head>
+            <sp who="#Queneau">
+               <speaker><persName>QUENEAU</persName></speaker>
+               <!-- A REVOIR -->
+               <p> : Je voudrais parler de Estivals. Estivals c’est le signisme. Il part du signe
+                     <quote>« très naturel »</quote>, facile à comprendre. Par exemple une de ses
+                  toiles représente des cornes. Il me demande ce que cela évoque : Moi : Une tête de
+                  taureau Lui : Ah. Moi : Vous êtes dubitatif. Lui : Je ne sais pas. J’ai oublié ce
+                  que c’est. </p>
+            </sp>
+            <sp who="#Braffort">
+               <speaker><persName>BRAFFORT</persName></speaker>
+               <p> : Il s’agirait de pictogramme ? </p>
+            </sp>
+            <sp who="#Queneau">
+               <speaker><persName>QUENEAU</persName></speaker>
+               <p> : Plus <quote>« conventionnels »</quote>
+               </p>
+            </sp>
+            <sp who="#Arnaud">
+               <speaker><persName>ARNAUD</persName></speaker>
+               <p> : A mon avis ce n’est pas assez farfelu… </p>
+            </sp>
+            <sp who="#Lionnais">
+               <speaker><persName>LE LIONNAIS</persName></speaker>
+               <p> : … Pas assez scientifique. </p>
+            </sp>
+            <sp who="#Arnaud">
+               <speaker><persName>ARNAUD</persName></speaker>
+               <p> : C’est ce que je voulais dire.</p>
+            </sp>
+            <sp who="#Queneau">
+               <speaker><persName>QUENEAU</persName></speaker>
+               <p> : ça pourrait se rattacher à l’Oulipeinpo </p>
+            </sp>
+            <!-- mettre balise changement de feuillet : pb -->
+            <sp who="#Queneau">
+               <speaker><persName>QUENEAU</persName></speaker>
+               <p> : Contre. </p>
+            </sp>
+            <sp who="#Braffort">
+               <speaker><persName>BRAFFORT</persName></speaker>
+               <p> : Une lettre pour. </p>
+            </sp>
+            <sp who="#Lionnais">
+               <speaker><persName>LE LIONNAIS</persName></speaker>
+               <p> : Ambigu.</p>
+            </sp>
+            <sp who="#Braffort">
+               <speaker><persName>BRAFFORT</persName></speaker>
+               <p> : Pour mais après. </p>
+            </sp>
+            <sp who="#Lionnais">
+               <speaker><persName>LE LIONNAIS</persName></speaker>
+               <p> : Après les clients.</p>
+            </sp>
+            <sp who="#Lescure">
+               <speaker><persName>LESCURE</persName></speaker>
+               <p> : Après le mouton, les cornes !</p>
+            </sp>
+            <sp who="#Bens">
+               <speaker><persName>BENS</persName></speaker>
+               <p> : Si ça intéresse, ça intéresse ; sinon on va à la pêche ou on va à la pêche.
+                  Convaincus, vous ne l’êtes pas ? </p>
+            </sp>
+            <stage>(Une réunion secrète se tiendra pour procéder à l’intersection des points de vue
+               sur la réunion des cerveaux.)</stage>
+         </div>
+         <metamark>o0o</metamark>
+         <div>
+            <sp who="#Bens">
+               <speaker> LE PRESIDENT <persName>BENS</persName></speaker>
+               <p> : Revenons à nos moutons.</p>
+            </sp>
+            <sp who="#Queneau">
+               <speaker><persName>QUENEAU</persName></speaker>
+               <p> : Je lis, je relis, j’en coupe et des meilleurs. </p>
+            </sp>
+            <sp who="#Queval">
+               <speaker><persName>QUEVAL</persName></speaker>
+               <p> : De quoi parlez-vous ? </p>
+            </sp>
+            <sp>
+               <speaker><persName>BENS</persName></speaker>
+               <p> : Queneau est mon esclave. Je rêve.</p>
+            </sp>
+            <sp>
+               <speaker><persName>QUENEAU</persName></speaker>
+               <p> : Ce sera revu et corrigé par chacun. </p>
+            </sp>
+         </div>
+         <metamark>o0o</metamark>
+         <div>
+            <p>Il est encore question de l’Ourepo </p>
+            <sp who="#Lionnais #Queneau">
+               <speaker>(<persName ref="#Lionnais">F. Le Lionnais</persName>), et <persName ref="#Queneau">R.
+                     Queneau</persName></speaker>
+               <p> demande : <quote>« Toutes (les religions) n’ont-elles pas été inventées ?. »
+                  </quote></p>
+            </sp>
+            <sp who="#Queval">
+               <speaker><persName>Queval</persName></speaker>
+               <p> : <quote>« Et l’univers en expansion. »</quote>
+               </p>
+            </sp>
+            <sp who="#Braffort">
+               <speaker><persName>Braffort</persName></speaker>
+               <p> : <quote>« C’est pas du domaine de la religion. »</quote>
+               </p>
+            </sp>
+            <sp who="#Lionnais">
+               <speaker><persName>Le Lionnais</persName></speaker>
+               <p> : <quote>« Matérialiste. »</quote>
+               </p>
+            </sp>
+            <p>Le même <persName ref="#Lionnais">F. Le Lionnais</persName> qui représente l’Oulipo à
+               Bordighera pour les bandes dessinées, nous parle des travaux, faits et à faire, en
+               utilisant les collages, en remplaçant les textes des bulles, etc….</p>
+            <!-- mettre balise changement de feuillet : pb -->
+            <p>Enfin <persName ref="#Queneau">Queneau</persName> signale que dans le bulletin du
+               tourisme espagnol il a lu que <persName>Dali</persName> a fait un taureau sous les
+               ordres d’une machine. </p>
+         </div>
+         <div>
+            <signed><state>
+                  <p>Le S.P</p>
+               </state>
+               <persName full="init">J.D</persName></signed>
+         </div>
+         <div>
+            <p> Prochaine réunion : <date when="1965-03-29">lundi 29 mars</date>. </p>
+         </div>
+         <div>
+            <head>NB :</head>
+            <sp who="#Lionnais">
+               <speaker><persName ref="#Lionnais">LE LIONNAIS</persName></speaker>
+               <p> : Si on invitait Faure ?</p>
+            </sp>
+            <sp who="#Queneau">
+               <speaker><persName ref="#Queneau">QUENEAU</persName></speaker>
+               <p> : <persName>Faure</persName> ? N’est-il pas sarcastique à notre égard ? </p>
+            </sp>
+            <sp who="#Braffort">
+               <speaker><persName ref="#Braffort">BRAFFORT</persName></speaker>
+               <p> : Je dirais même lubrique. </p>
+            </sp>
+            <sp who="#Lionnais">
+               <speaker><persName ref="#Lionnais">LE LIONNAIS</persName></speaker>
+               <p> : Vous vous égarez, Messieurs. Faure est invité. </p>
+            </sp>
+         </div>
+      </body>
+   </text>
+</TEI>

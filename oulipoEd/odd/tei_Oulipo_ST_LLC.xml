@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
+    xml:lang="fr">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI CR Oulipo_610428</title>
+                <author>ST_LLC</author>
+                <author>Sebastian Rahtz</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>TEI Consortium</publisher>
+                <availability status="free">
+                    <p>This template file is freely available and you are hereby authorised to copy,
+                        modify, and redistribute it in any way without further reference or
+                        permissions.</p>
+                    <p>When making such modifications, you are strongly recommended to change the
+                        present text to include an accurate statement of the licencing conditions
+                        applicable to your modified text.</p>
+                </availability>
+            </publicationStmt>
+            <notesStmt>
+                <note type="ns">http://www.example.org/ns/nonTEI</note>
+            </notesStmt>
+            <sourceDesc>
+                <p>No source; this was originally written from scratch in digital form.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p> and <att>prev</att> attributes which are often useful when dramatic speeches overlap
+                verse lines in a non-hierarchical manner. Other global attributes which are normally
+                provided by this module have been deleted from this customization. In addition the
+                    <att>xml:base</att> and <att>xml:space</att> attributes have been removed.Oulipo
+                CR 610428_4,5,6next and prev attributes which&#13; are often useful when dramatic
+                speeches overlap verse lines in a&#13; non-hierarchical manner. Other global
+                attributes which are normally&#13; provided by this module have been deleted from
+                this customization. In&#13; addition the xml:base and xml:space attributes&#13; have
+                been removed.Oulipo CR 610428_4,5,6</p>
+            <schemaSpec ident="tei_Oulipo_ST_LLC" start="TEI teiCorpus" prefix="" docLang="fr">
+                <!-- get required modules -->
+                <moduleRef key="header"
+                    except="abstract appInfo application availability biblFull cRefPattern calendar calendarDesc catDesc catRef category change classCode classDecl correction correspAction correspContext correspDesc creation distributor edition editionStmt editorialDecl encodingDesc extent geoDecl handNote hyphenation interpretation keywords langUsage language licence listChange listPrefixDef namespace normalization notesStmt prefixDef principal profileDesc projectDesc punctuation quotation refState refsDecl rendition samplingDecl scriptNote segmentation seriesStmt sponsor stdVals styleDefDecl tagUsage tagsDecl taxonomy textClass typeNote xenoData"/>
+                <moduleRef key="core"
+                    except="abbr addrLine address analytic biblScope biblStruct binaryObject cb cit citedRange corr desc divGen editor email expan foreign gap gb gloss graphic headItem headLabel imprint index l label lg listBibl measure measureGrp media meeting mentioned milestone monogr note num orig postBox postCode ptr pubPlace reg relatedItem rs series street term textLang time"/>
+                <moduleRef key="tei"/>
+                <moduleRef key="msdescription"/>
+                <moduleRef key="namesdates"/>
+                <moduleRef key="textstructure"
+                    except="argument back byline closer div1 div2 div3 div4 div5 div6 div7 docEdition docImprint epigraph front group imprimatur opener postscript salute signed titlePage titlePart trailer"/>
+                <!-- get optional modules -->
+                <moduleRef key="linking"/>
+                <!-- required to avoid Sanity Checker complaint -->
+                <!-- remove some global attributes -->
+                <classSpec predeclare="true" module="linking" xml:id="CLLINK" type="atts"
+                    ident="att.global.linking" mode="change">
+                    <desc xml:lang="en" versionDate="2014-01-12">defines the attributes used for
+                        aggregating partial elements into a single virtual element.</desc>
+                    <attList>
+                        <attDef ident="corresp" usage="opt" mode="delete"/>
+                        <attDef ident="synch" usage="opt" mode="delete"/>
+                        <attDef ident="sameAs" usage="opt" mode="delete"/>
+                        <attDef ident="copyOf" usage="opt" mode="delete"/>
+                        <attDef ident="next" usage="opt" mode="change">
+                            <valDesc mode="change">a URI which should point to an element of the
+                                same type, typically within the same document</valDesc>
+                        </attDef>
+                        <attDef ident="prev" usage="opt" mode="change">
+                            <valDesc mode="change">a URI which should point to an element of the
+                                same type, typically within the same document</valDesc>
+                        </attDef>
+                        <attDef ident="exclude" usage="opt" mode="delete"/>
+                        <attDef ident="select" usage="opt" mode="delete"/>
+                    </attList>
+                    <listRef>
+                        <ptr target="#SAAG"/>
+                    </listRef>
+                </classSpec>
+                <!-- -->
+                <classSpec module="tei" xml:id="GLOBAL" type="atts" ident="att.global" mode="change">
+                    <desc xml:lang="en" versionDate="2014-01-12">provides a set of attributes common
+                        to all elements in the <name>tei_drama</name> customization of the TEI
+                        encoding scheme.</desc>
+                    <classes>
+                        <memberOf key="att.global.linking"/>
+                        <memberOf key="att.global.analytic"/>
+                    </classes>
+                    <attList>
+                        <attDef ident="xml:space" usage="opt" mode="delete"/>
+                        <attDef ident="xml:base" usage="opt" mode="delete"/>
+                    </attList>
+                </classSpec>
+                <elementSpec ident="vocal" module="spoken" mode="change">
+                    <attList>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="cert" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="copyOf" mode="delete"/>
+                        <attDef ident="corresp" mode="delete"/>
+                        <attDef ident="dur" mode="delete"/>
+                        <attDef ident="dur-iso" mode="delete"/>
+                        <attDef ident="end" mode="delete"/>
+                        <attDef ident="exclude" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="iterated" mode="delete"/>
+                        <attDef ident="n" mode="delete"/>
+                        <attDef ident="next" mode="delete"/>
+                        <attDef ident="prev" mode="delete"/>
+                        <attDef ident="sameAs" mode="delete"/>
+                        <attDef ident="select" mode="delete"/>
+                        <attDef ident="start" mode="delete"/>
+                        <attDef ident="subtype" mode="delete"/>
+                        <attDef ident="synch" mode="delete"/>
+                        <attDef ident="type" mode="delete"/>
+                        <attDef ident="who" mode="delete"/>
+                        <attDef ident="xml:base" mode="delete"/>
+                    </attList>
+                </elementSpec>
+            </schemaSpec>
+        </body>
+    </text>
+</TEI>

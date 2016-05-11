@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<?xml-model href="out/Oulipo_AlDo.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -46,8 +43,8 @@
    </teiHeader>
    <text type="CR">
       <body>
-         <pb xml:id="p1" n="1"/>
-         <p><label type="rubrique">Erratum :</label></p>
+       <pb xml:id="cr6104_p1" n="1"/>
+       <p><label type="rubrique">Erratum :</label></p>
          <p>Inclure, ligne 8 en partant du bas, entre « OuLiPo » et « Ce sera fait ». La phrase
             suivante qui a sauté à la composition :</p>
          <p>« A ce sujet, Noël Arnaud précise qu’il est nécessaire d’étudier, au cours de notre
@@ -55,7 +52,7 @@
                Collège</title> qui sera consacré (pour moitié environ) aux activités
             OuLiPiennes. »</p>
 
-         <pb xml:id="p2" n="2"/>
+         <pb xml:id="cr6104_p2" n="2"/>
 
          <p>Circulaire n°6</p>
          <p>OUVROIR DE LITTERATURE POTENTIELLE</p>
@@ -87,7 +84,7 @@
             une théorie scientifique concernant éventuellement le langage (donc : l’anthropologie),
             on peut y introduire du plaisir esthétique (affectivité et fantaisie).</p>
 
-         <pb xml:id="p3" n="3"/>
+         <pb xml:id="cr6104_p3" n="3"/>
 
          <p> Oulipiens : Rats qui ont à construire le labyrinthe dont ils se proposent de sortir.
             (1)</p>
@@ -99,7 +96,7 @@
          <p>La séance est levée. (3)</p>
          <p>(1) On aperçoit, sous les grands mots, toute la sournoiserie du cheminement. Car le
             labyrinthe dont on sort les plus aisément est évidemment celui que l’on a construit de
-            ses mains. (<persName ref="#ND">N.D.</persName> <persName ref="#QB">Q.B.</persName>)
+            ses mains. (<persName ref="#ND">N.D.</persName> <persName ref="#QB">Q.B.</persName>)</p>
          <p>(2) On voit où peut conduire l’absence des membres les plus avisés (<persName ref="#AMS">A.M.S.</persName>)</p>
          <p>(3) Il était temps, en effet (<persName ref="#FLL">F.L.L.</persName>)</p>
          <p>Prochaine réunion :</p>
@@ -107,7 +104,7 @@
          <p>Restaurant Laborderie, 40, rue de l’Université</p>
          <p>Par intérim :</p>
             <p> <persName>R.Q.</persName> et <persName>J.L.</persName></p>
-         <div>
+        <!-- <div>
             <listPerson>
                <person xml:id="FLL" n="1">
                   <persName>François Le Lionnais</persName>
@@ -141,7 +138,7 @@
                <person xml:id="CB" n="5">
                   <persName>Claude Berge</persName>
                   <affiliation when="1926">Membre fondateur</affiliation>
-                  <!-- cf Bens, supra -->
+                  <!-\- cf Bens, supra -\->
                   <death when="2002-06-30">Excusé depuis le 30 juin 2002</death>
                </person>
                <person xml:id="JD" n="6">
@@ -154,8 +151,8 @@
                   <birth when="1913">1913</birth>
                   <death when="1973-09-01">Excusé depuis le 1er Septembre 1973</death>
                   <affiliation>Membre fondateur </affiliation>
-                  <!-- on reste membre fondateur meme apres sa disparition, donc 
-        supprimez l'attribut @to-->
+                  <!-\- on reste membre fondateur meme apres sa disparition, donc 
+        supprimez l'attribut @to-\->
                </person>
                <person xml:id="JL" n="8">
                   <persName>Jean Lescure</persName>
@@ -164,15 +161,15 @@
                   <affiliation to="2005-10-17">
                      <affiliation>Membre fondateur Excusé depuis le 17 octobre 2005</affiliation>
                   </affiliation>
-                  <!-- cf Bens, supra. La mention "Excuse depuis..." ferait mieux comme
-        contenu de la balise <death>. Il ne s'agit pas d'une affiliation -->
+                  <!-\- cf Bens, supra. La mention "Excuse depuis..." ferait mieux comme
+        contenu de la balise <death>. Il ne s'agit pas d'une affiliation -\->
                </person>
                <person xml:id="JQ" n="9">
                   <persName>Jean Queval</persName>
                   <birth when="1913"/>
                   <death when="1990-12-10"/>
                   <affiliation>Membre fondateur Excusé depuis le 10 décembre 1990</affiliation>
-                  <!-- cf Lescure supra -->
+                  <!-\- cf Lescure supra -\->
                </person>
                <person xml:id="AMS" n="10">
                   <persName>Albert-Marie Schmidt</persName>
@@ -180,7 +177,7 @@
                   <death when="1966"/>
                   <affiliation>Membre fondateur Excusé depuis le 8 février 1966</affiliation>
                </person>
-               <!-- cf Lescure supra -->
+               <!-\- cf Lescure supra -\->
 
                <person xml:id="AB" n="11">
                   <persName>André Blavier </persName>
@@ -245,7 +242,7 @@
                   <birth when="1947">Né en 1947</birth>
                   <affiliation from="1971-09-10">Entré à l'Oulipo le 10 septembre 1971 Secrétaire
                      provisoirement déﬁnitif de 1971 à 2003</affiliation>
-                  <!-- ca c'est 2 affiliations -->
+                  <!-\- ca c'est 2 affiliations -\->
                   <affiliation from="2003-05-12">Troisiéme president de l’Oulipo depuis le 12 mai
                      2003</affiliation>
                </person>
@@ -256,7 +253,7 @@
                   <affiliation when="1973">Entré à l'Oulipo le 14 février 1973 Excusé depuis le 19
                      septembre 1985 </affiliation>
                </person>
-               <!-- cf Lescure supra -->
+               <!-\- cf Lescure supra -\->
 
                <person xml:id="HM" n="22">
                   <persName>Harry Mathews</persName>
@@ -316,6 +313,6 @@
                </person>
             </listPerson>
          </div>
-      </body>
+     --> </body>
    </text>
 </TEI>

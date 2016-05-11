@@ -75,7 +75,7 @@
                </div>
             </div>
          </div>
-         <div>
+         <div type="slide">
             <div>
                <head>Le commit</head>
                <figure>
@@ -110,7 +110,7 @@
          </div>
          <div rend="slide" xml:lang="fr">
             <div>
-               <head>Pourquoi utiliser un système de gestion de version</head>
+               <head>Pourquoi utiliser un système de gestion de version ?</head>
                <list>
                   <item>Sécuriser votre travail d’encodage</item>
                   <item>Assurer la traçabilité des fichiers</item>
@@ -144,7 +144,12 @@
                      fichiers vers les serveur </code>
                </item>
                <item>Consultez le répertoire et constatez le versement du travail des autres
-                  collaborateurs</item>
+                  collaborateurs (`git pull`)</item>
+            </list>
+         </div>
+         <div type="slide">
+            <head>Ajouter votre fichier au corpus</head>
+            <list>
                <item>Consultez le fichier <ident>teiCorpus.xml</ident> que nous avons ajouté au
                   répertoire</item>
                <item>Ajoutez votre fichier au corpus en suivant l’exemple compris dans le

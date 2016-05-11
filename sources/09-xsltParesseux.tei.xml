@@ -19,7 +19,7 @@
     <front>
       <titlePage xml:lang="fr">
         <titlePart>08-TEI Stylesheets</titlePart>
-        <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="title">
@@ -298,7 +298,6 @@
     <back>
       <div rend="title">
         <div>
-          <head>Pour finir, les <ref target="06-namedEntities.html">entités nommées</ref></head>
           <note><ref target="#index">revenir au début</ref> | <ref target="00-programme.html"
               >programme</ref></note>
         </div>

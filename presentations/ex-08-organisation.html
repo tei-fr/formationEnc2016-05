@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Programme</title>
+      <link href="themes/remark-dark.css" rel="stylesheet" media="all" type="text/css">
+   </head>
+   <body><textarea id="source">
+title: Organisation d’un projet
+description: , 
+theme: theme/remark-dark-em.css
+name: inverse
+layout: true
+class: inverse
+
+---
+class: center middle
+
+
+
+# ex-8- Organisation du projet
+
+# Formation TEI | ENC 9 au 12 mai 2016
+
+.footnote[[Programme](00-programme.html)]
+![test](images/logo-ecole-nationale-des-chartes.png)
+
+
+---
+layout: false
+
+## Objectifs
+
+???
+
+Nous avons maintenant besoin de vos recommandations au sujet de l’organisation de notre projet d’édition des archives de l’Oulipo. Comme vous le savez maintenant, le projet consiste à éditer un ensemble de compte-rendus de réunions de l’Ouvroir de littérature potentielle. Les promoteurs du projet considèrent que cet ensemble constitue un tout cohérent. Les documents que vous avez déjà transcrits appartenant à cet ensemble.
+
+Comment pouvons nous les organiser avec la TEI pour, tout en traduisant cette organisation, assurer une méthode de travail adaptée pour continuer le travail d’édition qui implique plusieurs personnes.
+
+---
+
+
+## Quelques mots sur GitHub
+![](../images/git.png))
+???
+
+### Le paradigme du versionning
+
+diff et wikipédia
+
+Code par nature mouvant, obsolescence
+
+Corrections et versions. Développement de système pour garder la trace des changements. Crucial pour le développement informatique.
+
+Plusieurs protocoles, SVN Subversion, etc. Git.
+
+### Le protocole Git
+
+Mis au point dans le cadre du développement du noyau Linux
+
+Finalement assez stupide, une manière de 
+* stoker des arbres de contenus un peu comme un système de fichiers
+
+* un commit créer un nouvel arbre accessible par son nom
+
+* on peut changer le répertoire pour recréer n’importe quel arbre
+.
+
+Conçu pour gérer le développement du noyau Linux (Linux Kernel) 
+* très efficient
+
+* prend en charge les développements non linéaires gracieusement
+
+* un système distribué
+
+
+### Ce qui différentie Git
+
+* Commit, Sorte de clichés de l’historique.
+
+* Git branching model
+
+* Rebase
+
+* Système distribué
+
+---
+
+## Le commit
+![](../images/gitCommit.png)
+
+#### repo
+
+Répertoire dans lequel suit les fichiers
+
+#### Idée du Snapshots
+
+* manière dont garde la trace de l’historique du code
+
+* enregistrement de ce que contiennent tous les fichiers à un moment donné
+
+* possibilité de revenir en arrière
+
+???
+### Commit
+
+Acte de créer un snapshot. Un projet consiste en une série de commit.
+
+Trois éléments d’information
+* informations sur les changements de fichier
+
+* une référence au commit précédent (le parent-
+
+* un hash code qui le désigne
+
+
+---
+
+
+## Pourquoi utiliser un système de gestion de version
+
+* Sécuriser votre travail d’encodage
+
+* Assurer la traçabilité des fichiers
+
+* Organiser la collaboration distante
+
+En somme, c’est une bonne pratique&nbsp;!
+
+---
+
+
+## Notre répertoire GitHub
+
+[https://github.com/tei-fr/formationEnc2016-05](https://github.com/tei-fr/formationEnc2016-05)
+
+* Consultez l’historique
+
+* Voir les contributeurs
+
+---
+
+
+# Instruction pour partager les fichiers de l’édition
+
+* Dans le terminal rendez-vous dans votre dossier de la formation `formationEnc2016-05`
+
+* Nous avons créé un répertoire destiné à l’édition intitulé `oulipoEd`
+
+* Placez-y vos fichiers édités
+
+* Poussez vos documents avec la séquence de commandes suivante 
+
+```bash
+git add edition/* # ajouter tous les fichiers du répertoire à l’index 
+git commit -m"ajout des fichiers d’édition" # création du commit 
+git push # envoi des fichiers vers les serveur ```
+
+* Constatez le versement du travail des autres collaborateurs
+
+```bash
+git pull
+```
+
+---
+
+## Ajouter votre fichier au corpus
+
+* Consultez le fichier `teiCorpus.xml` que nous avons ajouté au répertoire
+
+* Ajoutez votre fichier au corpus en suivant l’exemple compris dans le fichier
+
+---
+
+
+## Définir la place des autres documents
+
+* Où mettre les images ?
+
+* Index des personnes, lieux etc. ?
+
+* Transcriptions éditées ?
+
+* Ajouts scientifiques (bibliographie, textes d'introduction etc.) ?
+
+* Documentation, schéma, ODD ?
+
+</textarea><script src="js/remark-0.6.5.min.js" type="text/javascript"></script><script type="text/javascript">
+        var hljs = remark.highlighter.engine;
+      </script><script src="remark.language.js" type="text/javascript"></script><script type="text/javascript">
+        var slideshow = remark.create({
+        highlightStyle: 'monokai',
+        highlightLanguage: 'remark'
+        }) ;
+      </script></body>
+</html>

@@ -169,7 +169,7 @@
                 <head>3ème journée…</head>
                 <div xml:id="T12" resp="#EM">
                     <head>09h30-10h  :  Entités nommées<!-- – PM EM--></head>
-                    <p><ref target="06-namedEntities.tei.xml">06-namedEntities.tei</ref></p>
+                    <p><ref target="06-entitesNommees.tei.xml">06-entitesNommees.tei</ref></p>
                     </div>
                     <div xml:id="T12bis" resp="#EM">
                         <head>10h-11h00 Création et gestion des Entités nommées – TP EM</head>

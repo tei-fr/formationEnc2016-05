@@ -20,8 +20,8 @@
   <text>
     <front>
       <titlePage xml:lang="fr">
-        <titlePart>07-persobnalisation de la TEI</titlePart>
-        <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
+        <titlePart>07-personnalisation de la TEI</titlePart>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="title" xml:lang="fr">
@@ -102,6 +102,7 @@
             <item>quelque chose qui permette de <hi>définir un sous-ensemble</hi> de la TEI</item>
             <item>quelque chose qui permette de <hi>générer un schéma</hi> pour contrôler la validité de nos documents</item>
           </list>
+          
           <list>
             <item>quelles balises sont disponibles</item>
             <item>dans quels contextes</item>
@@ -134,7 +135,7 @@
           </div>
           <div>
             <head><hi>O</hi>ne <hi>D</hi>ocument <hi>D</hi>oes it all (<hi>ODD</hi>)</head>
-            <p>L’ensemble de la TEI est rédigée dans un format source intitulé ODD (One Document Does it All) qui inclue les fragments de schéma, la documentation en prose et la documentation de référence des Guidelines dans un seul document. Une spécification ODD est un document XML-TEI qui utilise le module <code>tagdocs</code>.</p>
+            <p>L’ensemble de la TEI est rédigée dans un format source intitulé ODD (One Document Does it All) qui inclue les fragments de schéma, la documentation en prose et la documentation de référence des <title>Guidelines</title> dans un seul document. Une spécification ODD est un document XML-TEI qui utilise le module <code>tagdocs</code>.</p>
             <p>Lequel module fournit une série d’éléments employés pour spécifier un nouveau schéma, ou des modifications apportées à la structure des éléments TEI afin de générer automatiquement un schéma dans le format choisi et sa documentation correspondante au moyen d’un processeur destiné à cet effet.</p>
             <bibl>cf. Sperberg-McQueen, C. Michael, Burnard, Lou, et Bauman, Syd, « TEI P5 : Guidelines for Electronic Text Encoding and Interchange », TEI P5 : Guidelines for Electronic Text Encoding and Interchange, <ref
                 target="http://www.tei-c.org/Guidelines/P5/"
@@ -265,7 +266,7 @@
               except="div1 div2 div3 div4 div5 div6 div7 group"/>
           </egXML>
           <p>Dans la plupart des cas, la suppression d’un élément est une modification « propre » de la TEI, toutefois certains éléments disposent d’enfants obligatoires. Par exemple, <gi>fileDesc</gi> doit contenir à la fois <gi>titleStmt</gi> et <gi>sourceDesc</gi>. La suppression d’un élément enfant obligatoire dans le modèle de contenu rompt le modèle abstrait de la TEI.</p>
-            <p>Il est également possible de désigner des éléments ou des classes individuellement avec les éléments <gi>elementSpec</gi>, <gi>classSpec</gi>, ou <gi>macroSpec</gi>. Le type de modification apporté est déterminé par la valeur d’un attribut <att>mode</att> (add, replace, delete, et change) :</p>
+            <p>Il est également possible de désigner des éléments ou des classes individuellement avec les éléments <gi>elementSpec</gi>, <gi>classSpec</gi>, ou <gi>macroSpec</gi>. Le type de modification apporté est déterminé par la valeur d’un attribut <att>mode</att> (<val>add</val>, <val>replace</val>, <val>delete</val>, et <val>change</val>) :</p>
           <egXML xmlns="http://www.tei-c.org/ns/Examples">
             <attDef ident="org" mode="delete"/>
           </egXML>
@@ -347,7 +348,7 @@
           </div>
           <div>
             <head>Modification des classes</head>
-            <p>Le mode modification peut également s’appliquer à des classes. Dans cet exemple, nous avons remplacé à l’aide de Roma un ensemble de valeurs d’attributs pour tout attribut membre de la classe att.internetMedia.</p>
+            <p>Le mode modification peut également s’appliquer à des classes. Dans cet exemple, nous avons remplacé à l’aide de Roma un ensemble de valeurs d’attributs pour tout attribut membre de la classe <ident>att.internetMedia</ident>.</p>
           </div>
         </div>
         <div rend="slide" xml:lang="fr">
@@ -357,20 +358,21 @@
               <item>rédiger une spécification de haut niveau</item>
               <item>utiliser les sous-modules de la TEI et spécifier dans ces sous-ensembles les fonctionnalités à activer</item>
             </list>
-            <div>
+          </div>
+          <div>
               <head>Les différentes manières de personnaliser la TEI</head>
               <p>Il est possible de personnaliser la TEI en supprimant des modules un certain nombre d’éléments qui ne seraient pas nécessaires pour le traitement de ses documents ou en modifiant ces classes. Ce faisant, on peut restreindre la manière de traiter certains phénomènes, ou encore, limiter les attributs disponibles sur un élément, et définir pour ces attributs des listes de valeurs ouvertes ou fermées. Au besoin, on peut également modifier le nom des éléments par exemple pour l’internationalisation ou ajouter des éléments, ce qui n’a pas été retenu dans le cadre de notre projet.</p>
-              <p>Les Guidelines décrivent trois manières de personnaliser (customizing) la TEI :</p>
+              <p>Les <title>Guidelines</title> décrivent deux manières de personnaliser (<foreign
+                  xml:lang="en">customizing</foreign>) la TEI :</p>
               <list type="ordered">
                 <item>Rédiger une spécification de haut niveau pour une représentation en TEI et générer un schéma ad hoc ;</item>
                 <item>Utiliser les modules de la TEI et spécifier dans ces sous-ensembles quelles fonctionnalités l’on souhaite activer ;</item>
               </list>
               <p>Dans tous les cas, ne pas tout prendre</p>
               <p>Des schémas de base déjà disponibles que l’on peut augmenter ou réduire.</p>
-            </div>
           </div>
         </div>
-      </div>
+      
       <div type="part" xml:id="part3">
         <head xml:lang="fr">Génération d’un Schéma XML ou RelaxNG</head>
         <div rend="slide" xml:lang="fr">
@@ -381,7 +383,7 @@
               <item>d’assembler les composants référencés de la TEI</item>
               <item>résoudre des déclarations multiples</item>
               <item>vérifier la validité</item>
-              <item>émettre un schema dans un ou plusieurs langages formels</item>
+              <item>émettre un schéma dans un ou plusieurs langages formels</item>
               <item>produire un document XML avec la documentation des composants</item>
             </list>
           </div>

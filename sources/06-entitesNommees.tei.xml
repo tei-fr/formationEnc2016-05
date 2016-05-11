@@ -30,7 +30,7 @@
        <p>class: center middle</p>-->
       <titlePage xml:lang="fr">
         <titlePart>08-Entités nommées</titlePart>
-        <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="title" xml:lang="fr">
@@ -51,13 +51,14 @@
             <item><ref target="#part1">Les entités nommées</ref></item>
             <item><ref target="#part2">Les formes du nom</ref></item>
             <item><ref target="#part3"
-                  >Le modèle de contenu (<soCalled>traits</soCalled>, <soCalled>states</soCalled>, <soCalled>events</soCalled>)</ref></item>
+                  >Le modèle conceptuel (<soCalled>traits</soCalled>, <soCalled>states</soCalled>, <soCalled>events</soCalled>)</ref></item>
           </list>
         </div>
       </div>
     </front>
     <body>
-      <div type="part">
+      <div type="part" xml:id="part1">
+        <head>Entités nommées définition</head>
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Entités nommées définition</head>
@@ -137,6 +138,9 @@
             <p>Comme il s’agit d’une classe, tous les éléments qui appartiennent à cette classe disposent de certaines propriétés.</p>
           </div>
         </div>
+      </div>
+      <div type="part" xml:id="par2">
+        <head>Les formes du nom</head>
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Les formes du nom</head>
@@ -243,6 +247,9 @@
             <p><att>cert</att> (certainty) signifies the degree of certainty associated with the intervention or interpretation.</p>
           </div>
         </div>
+      </div>
+      <div type="part" xml:id="part3">
+        <head>Le modèle de conceptuel</head>
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Le modèle conceptuel</head>

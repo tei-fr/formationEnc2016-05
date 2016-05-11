@@ -1,0 +1,534 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Programme</title>
+      <link href="themes/remark-dark.css" rel="stylesheet" media="all" type="text/css">
+   </head>
+   <body><textarea id="source">
+title: 
+description: , 
+theme: theme/remark-dark-em.css
+name: inverse
+layout: true
+class: inverse
+
+---
+class: center middle
+
+
+
+# 07-personnalisation de la TEI
+
+# Formation TEI | ENC 9 au 12 mai 2016
+
+.footnote[[Programme](00-programme.html)]
+![test](images/logo-ecole-nationale-des-chartes.png)
+
+---
+template: inverse
+class: center middle
+
+
+# Introduction
+
+???
+
+# Introduction
+
+La Text Encoding Initiative (TEI) est un projet universitaire international dont l’objectif est de favoriser le partage et l’échange de sources textuelles encodées. Comme on l’a vu, c’est le contexte scientifique du projet qui explique que la TEI ne constitue pas une norme proprement dit, mais avant tout un cadre de travail personnalisable dans lequel puiser en fonction des besoins propres et particuliers de chaque projet de recherche.
+
+.red[La philosophie de la TEI consiste à fournir un vocabulaire nécessaire pour la description des textes sans pour autant dicter précisément ce que ces textes doivent contenir ou pourraient contenir.]
+
+Ainsi, la TEI spécifie des conventions d’encodage simples, faciles à employer et relativement compréhensibles qui sont accompagnées d’.red[amples mécanismes d’extension] afin de pouvoir répondre à des besoins particuliers{Ide 1995}.
+
+À certains égards, on peut dire comme le suggère Florence Clavaud qu’elle propose une sorte «&nbsp;d’ontologie générique du texte&nbsp;» capable de prendre en charge tant l’hétérogénéité des matériaux textuels rencontrés que des points de vue adoptés. Pour autant, celle-ci n’est pas exprimée de manière formelle mais sous forme d’une documentation littéraire inspirée des principes de la programmation littéraire de Donald Knuth.
+
+---
+layout: false
+name: index
+
+# Sommaire
+
+1. [Une logique modulaire](#part1)
+
+1. [Le langage ODD](#part2)
+
+1. [Génération d’un schéma RelaxNG](#part3)
+
+---
+template: inverse
+class: center middle
+name: part1
+
+
+# Une logique modulaire
+
+---
+
+
+## Un système modulaire
+
+Une modélisation s’exprime à l’aide d’un .red[schéma]
+
+* Première modélisation à partir d’un échantillon représentatif
+
+* Correction ou renforcement du contrôle lors du passage à l’échelle
+
+* Un processus incrémentiel, le schéma n’est pas figé dans le marbre
+
+???
+
+## Un système modulaire
+
+Dès l’origine la TEI a été conçue pour être employée comme un ensemble de briques permettant de construire des schémas spécifiques pour un projet donné.
+
+* Dans cet esprit, la TEI propose un vocabulaire pour décrire les textes sans préjuger de ce que les textes pourraient contenir.
+
+* Aussi est-il important de comprendre que la TEI ne propose pas un schéma global, mais un ensemble de modules parmi lesquels choisir les éléments qui répondent à ses propres besoins en termes de modélisation.
+
+## Une modélisation qui s’exprime à l’aide d’un schéma
+
+.red[Cette modélisation s’exprime à l’aide d’un schéma] qui est une personnalisation de la TEI. Il s’agit en fait de produire un sous-ensemble de la TEI approprié à son projet. Comme la TEI utilise les technologies XML, il est possible de contrôler la production d’un document dans un éditeur XML ou encore de valider son contenu en l’associant à un schéma qui peut être rédigé dans divers formats (RelaxNG, W3C XML schema, etc.). Un schéma constitue donc à la fois une manière de représenter le modèle de contenu des documents traités et de contrôler leur structure ou leur contenu d’un point de vue technique.
+
+## Une définition qui s’opère au moyen d’aller-retour avec les sources textuelles
+
+Afin de produire une modélisation de ce type, et éventuellement le manuel d’encodage qui l’accompagne, il est nécessaire de bien comprendre sa source. Aussi ne faut-il pas envisager l’encodage comme une fin en soi, mais plutôt comme un moyen de travailler et d’étudier le matériau textuel. La définition du modèle s’opère au moyen d’aller-retour continus avec les sources textuelles que l’on souhaite traiter.
+
+La définition du schéma s’opère au moyen d’aller-retour continus avec les sources textuelles que l’on souhaite traiter.
+
+* On effectue généralement d’abord une .red[première modélisation à partir d’un échantillon jugé représentatif] du corpus.
+
+* Enfin, lors du passage à l’échelle, il est parfois nécessaire de .red[corriger quelques choix s’avérant inappropriés ou bien encore de renforcer le contrôle] par l’intermédiaire du schéma.
+
+* Le processus d’élaboration du modèle est donc .red[un processus incrémentiel], et le schéma n’est pas d’emblée figé dans le marbre.
+
+---
+template: inverse
+class: center middle
+name: part2
+
+
+# Le Langage ODD
+
+---
+
+
+# De quoi a-t-on besoin&nbsp;?
+
+* quelque chose qui .red[documente] notre modèle
+
+* quelque chose qui permette de .red[définir un sous-ensemble] de la TEI
+
+* quelque chose qui permette de .red[générer un schéma] pour contrôler la validité de nos documents
+
+
+* quelles balises sont disponibles
+
+* dans quels contextes
+
+* avec quels attributs
+
+* avec quelles valeurs
+
+* d’.red[outils] informatiques pour transformer et gérer nos données
+
+???
+# De quoi a-t-on besoin&nbsp;?
+
+Quelque chose qui permette d’expliciter nos choix éditoriaux.
+
+Une manière de sélectionner un sous-ensemble de la TEI
+
+un schéma pour non seulement contrôler la validité de nos fichiers, mais aussi pour spécifier les balises disponibles, en fonction du contexte, leurs attributs, leurs valeurs…
+
+Des outils pour transformer&nbsp;: processeur ODD, archivage long terme
+
+---
+
+
+## .red[O]ne .red[D]ocument .red[D]oes it all (.red[ODD])
+
+C’est précisément l’objet de ODD qui propose un vocabulaire spécialisé pour définir
+
+* des schémas
+
+* des types d’éléments XML
+
+* des macros ou patrons
+
+* des classes d’éléments ou d’attributs
+
+* une manière de faire référence à ces objets
+
+module `tagdocs`
+
+???
+
+## .red[O]ne .red[D]ocument .red[D]oes it all (.red[ODD])
+
+L’ensemble de la TEI est rédigée dans un format source intitulé ODD (One Document Does it All) qui inclue les fragments de schéma, la documentation en prose et la documentation de référence des Guidelines dans un seul document. Une spécification ODD est un document XML-TEI qui utilise le module `tagdocs`.
+
+Lequel module fournit une série d’éléments employés pour spécifier un nouveau schéma, ou des modifications apportées à la structure des éléments TEI afin de générer automatiquement un schéma dans le format choisi et sa documentation correspondante au moyen d’un processeur destiné à cet effet.
+cf. Sperberg-McQueen, C. Michael, Burnard, Lou, et Bauman, Syd, « TEI P5 : Guidelines for Electronic Text Encoding and Interchange », TEI P5 : Guidelines for Electronic Text Encoding and Interchange, [Chapitre 22](http://www.tei-c.org/Guidelines/P5/).
+--&gt; Le language ODD est le vocabulaire XML utilisé par la TEI pour se décrire elle même.
+
+---
+
+
+## Éléments de base en ODD
+
+* `&lt;schemaSpec&gt;` définit et identifie un schéma
+
+* `&lt;moduleRef&gt;` fournit un ensemble de spécifications d’éléments en faisant référence à un module
+
+* `&lt;elementSpec&gt;` fournit une définition d’élément (entière ou partielle)
+
+* `&lt;elementRef&gt;` utilise une définition d’élément existant
+
+* `&lt;classSpec&gt;` fournit la définition d’une classe
+
+* `&lt;classRef&gt;` utilise une définition de classe existante
+
+???
+
+## Éléments de base en ODD
+
+Un document ODD se présente comme un document XML-TEI courant comportant une en-tête TEI, un élément `&lt;front&gt;`, `&lt;body&gt;` et `&lt;back&gt;`, le schéma est défini au moyen d’un élément `&lt;schemaSpec&gt;` qui va contenir les déclarations. À partir d’un tel document, un processeur ODD sera en mesure de combiner les déclarations des modules désignés et de produire un schéma du type requis et éventuellement une documentation de tous les éléments choisis.
+
+Pour produire un sous-ensemble de la TEI, on va donc très largement s’appuyer sur la documentation existante. Il sera notamment possible de venir préciser, dans le contexte de son édition, l’utilisation donnée d’un élément, de restreindre ou fixer des valeurs d’attributs, ou encore de fournir des exemples.
+
+Le module `tagdocs`, qui sert au modèle TEI à produire ses spécifications formelles mais dont peut se servir pour préciser les spécifications.
+
+---
+
+
+## Organisation de la TEI (rappel)
+
+* 22 Modules Dans l’infrastructure de la TEI, les éléments de la TEI sont organisés au sein de différents modules qui les regroupent par type d’utilisation.
+
+* [Classes de modèle](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/REF-CLASSES-MODEL.html)
+
+* [Classes d’attribut](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/REF-CLASSES-ATTS.html)
+
+Les éléments d’une classe peuvent partager un ensemble d’attributs ou bien apparaître au même endroit dans un modèle de contenu. Dans l’un ou l’autre des cas, on considère qu’un élément ou un attribut hérite des propriétés de la classe dont il est membre.
+
+???
+
+## Organisation de la TEI (rappel)
+
+L’architecture de la TEI permet de construire un schéma en combinant comme de besoin des déclarations d’éléments et d’attributs.
+
+Chaque élément est documenté par un élément de spécification adéquat et dispose d’un identifiant unique dans le système.
+
+Pour plus de facilité, ces spécifications sont groupées dans des modules distincts qui peuvent être combinés entre eux. Chaque module détermine un certain nombre d’éléments spécifiques qui peuvent également renseigner des classes particulières. Toutes les classes sont disponibles globalement, indépendamment des modules dans lesquelles elles sont déclarées.
+
+Lorsque c’est possible, les modèles de contenus sont définis en termes de classes (classes), les modules peuvent également déclarer certains motifs particuliers (patterns).
+
+## Les modules de la TEI
+
+Dans l’infrastructure de la TEI, les éléments de la TEI sont organisés au sein de différents modules qui les regroupent par type d’utilisation.
+
+## Système de classes
+
+Outre ces vingt-deux modules, les cinq cinquante-cinq éléments de la TEI et leurs attributs sont également organisés en classes de modèle (model class) et classes d’attribut (attribute class).
+
+Tous éléments de la TEI sont formellement classés dans ces classes pour faciliter la compréhension et la modularité ainsi que leur modification.
+
+.red[Les éléments d’une classe peuvent partager un ensemble d’attributs ou bien apparaître au même endroit dans un modèle de contenu.] Dans l’un ou l’autre des cas, on considère qu’un élément ou un attribut hérite des propriétés de la classe dont il est membre.
+
+Les éléments d’une même classe peuvent apparaître au même endroit dans un modèle de contenu, il s’agit alors d’une classe de modèle, ou partager un ensemble d’attributs, il s’agit alors d’une classe d’attributs.
+
+Le système de classes de la TEI distingue donc :
+
+* [des classes de modèle de contenu](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/REF-CLASSES-MODEL.html)
+
+* [des classes d’attribut](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/REF-CLASSES-ATTS.html)
+
+L’intérêt de ces classes est qu’elles permettent de factoriser les déclarations de modèle de contenu. Les classes permettent de rassembler un certain nombre d’éléments afin de pouvoir y faire référence de manière groupée.
+
+Même s’il s’agit d’un système de classification formelle des éléments et des attributs de la TEI, ce système de classes de modèle ou d’attribut n’est pas directement assimilable aux notions de classes ou d’attributs telles qu’elles sont habituellement employées en UML ou pour les ontologies.
+
+Cependant, elles servent à décrire des relations entre les éléments et les attributs. Et en utilisant ces classes de modèle et d’attribut, la spécification d’un schéma permet de contraindre la cardinalité ou les listes de valeurs de ces éléments ou attributs en XML. Mais la sémantique de ces relations n’est pas définie formellement, elle est seulement donnée littéralement dans la documentation de la TEI.
+
+## Les macros
+
+Il est enfin possible de déclarer sous forme de macros, les déclarations fréquentes pour réemployer à plusieurs endroits le même bloc de contenu par exemple pour définir le type de données des attributs ou des éléments TEI.
+
+---
+
+
+## Sélection des modules
+
+```xml
+<schemaSpec ident="desgodetsSchemaTEI" docLang="fr" 
+  prefix="tei_" xml:lang="en">
+  <moduleRef key="tei"/>
+  <moduleRef key="header"/>
+  <moduleRef key="core"/>
+  <moduleRef key="textstructure"/>
+  <moduleRef key="msdescription"/>
+  <!-- description des manuscrits -->
+  <moduleRef key="transcr"/>
+  <!-- transcription des sources primaires -->
+  <moduleRef key="figures"/>
+  <!-- tableaux et figures -->
+  <moduleRef key="namesdates"/>
+  <!-- noms, dates, personnes et lieux -->
+</schemaSpec>
+```
+
+???
+
+## Sélection des modules
+
+Par exemple, dans le cadre d’un projet éditorial consistant à publier une collection de matériaux manuscrits sous la forme d’un corpus, chaque source manuscrite devant faire l’objet d’une description appropriée, et pouvant comprendre des images, on pourrait éprouver le besoin d’ajouter plusieurs modules aux quatre modules habituels&nbsp;: `tei`, `header`, `core`, et `textstructure`.
+
+Le module `msdescription` peut permettre de prendre en charge une grande partie de la description des manuscrits. `transcr` est un module spécialisé dans la transcription des sources primaires manuscrites. Le module `figures` apporterait quant à lui les éléments nécessaires pour localiser et documenter les planches dans l’édition.
+
+S’agissant d’une édition à caractère historique, on pourrait également juger que le module `namesdates` nous serait utile.
+
+Dans le fichier ODD, à l’intérieur de l’élément `&lt;schemaSpec&gt;`, une série d’éléments `&lt;moduleRef&gt;` servent à désigner les modules utilisés au moyen d’un attribut `@key`
+
+---
+
+
+## Référence à des modules
+
+```xml
+<schemaSpec ident="monSchema" 
+  source="http://www.tei-c.org/release/xml/tei/ODD/p5subset.xml">
+  <moduleRef key="tei"/>
+  <moduleRef key="core"/>
+  <moduleRef key="header"/>
+  <moduleRef key="textstructure" except="div1 div2 div3 
+    div4 div5 div6 div7 group"/>
+  <moduleRef key="namesdates" include="persName placeName"/>
+</schemaSpec>
+```
+
+???
+
+## Référence à des modules
+
+L’architecture de la TEI permet une personnalisation plus détaillée au sein de chaque module. Il est possible de supprimer des éléments, de restreindre la liste des attributs, et même d’ajouter des éléments. La spécification que nous avons élaborée à l’aide de Roma a par exemple supprimé un certain nombre d’éléments jugés inutiles à l’intérieur de certains modules de la manière suivante&nbsp;:
+
+```xml
+<moduleRef key="textstructure" except="div1 div2 div3 div4 
+  div5 div6 div7 group"/>
+```
+
+Dans la plupart des cas, la suppression d’un élément est une modification «&nbsp;propre&nbsp;» de la TEI, toutefois certains éléments disposent d’enfants obligatoires. Par exemple, `&lt;fileDesc&gt;` doit contenir à la fois `&lt;titleStmt&gt;` et `&lt;sourceDesc&gt;`. La suppression d’un élément enfant obligatoire dans le modèle de contenu rompt le modèle abstrait de la TEI.
+
+Il est également possible de désigner des éléments ou des classes individuellement avec les éléments `&lt;elementSpec&gt;`, `&lt;classSpec&gt;`, ou `&lt;macroSpec&gt;`. Le type de modification apporté est déterminé par la valeur d’un attribut `@mode` (add, replace, delete, et change) :
+
+```xml
+<attDef ident="org" mode="delete"/>
+```
+
+On peut également modifier la liste des attributs possibles pour un élément. Celles-ci peuvent être données explicitement au moyen d’un élément `&lt;attList&gt;` dans la spécification de l’élément correspondant ou bien être héritées d’une classe d’attribut. Lorsque l’on ajoute un attribut, on doit d’abord vérifier si celui-ci n’est pas déjà défini dans une classe d’attribut. Si tel est le cas, il suffit de rendre l’élément concerné membre de cette classe. Sinon ont doit définir un attribut au moyen de `&lt;attDef&gt;` pour l’ajouter à la liste `&lt;attList&gt;` de l’élément concerné.
+
+---
+
+
+## Contraindre la valeur d’un attribut
+
+```xml
+<schemaSpec ident="monSchema" 
+  source="http://www.tei-c.org/release/xml/tei/ODD/p5subset.xml">
+  <moduleRef key="tei"/>
+  <moduleRef key="core"/>
+  <moduleRef key="header"/>
+  <moduleRef key="textstructure" except="div1 div2 div3 
+    div4 div5 div6 div7 group"/>
+  <elementSpec ident="title" mode="change">
+    <attList>
+      <attDef ident="type" mode="change">
+        <valList mode="replace" type="closed">
+          <valItem ident="biography"/>
+          <valItem ident="introduction"/>
+        </valList>
+      </attDef>
+    </attList>
+  </elementSpec>
+</schemaSpec>
+```
+
+---
+
+
+## Contraindre la valeur d’un attribut
+
+```xml
+<attDef ident="agent" mode="change" usage="req">
+  <datatype minOccurs="1" maxOccurs="unbounded">
+    <dataRef key="teidata.enumerated"/>
+    <!-- <rng:text xmlns:rng="http://relaxng.org/ns/structure/1.0"/> -->
+  </datatype>
+  <valList type="closed" mode="replace">
+    <valItem ident="fire"/>
+    <valItem ident="moisture"/>
+    <valItem ident="rubbing"/>
+    <valItem ident="smoke"/>
+    <valItem ident="tear"/>
+    <valItem ident="water"/>
+    <valItem ident="unknown"/>
+  </valList>
+</attDef>
+```
+
+???
+
+## Contraindre la valeur d’un attribut
+
+Il est souvent utile de contraindre les valeurs possibles d’un attribut au moyen d’un typage des données. Cela peut être réalisé facilement au moyen de l’élément `&lt;valList&gt;` qui est un élément enfant de `&lt;attDef&gt;`. De la même manière on peut étendre ou remplacer la liste existante d’attributs proposée par la TEI. Selon les modifications réalisées de cette manière, celles-ci sont plus ou moins propres.
+
+Il peut aussi être intéressant de préciser l’information sémantique de certains éléments qui peut être trop générale par rapport à son utilisation dans le projet (`&lt;desc&gt;` dans `&lt;elementSpec&gt;`). Les exemples dans `&lt;exemplum&gt;` peuvent également être enrichis par ceux du projet. Nous n’avons pas eu le temps de réaliser ces personnalisations, mais il nous semble qu’elles pourraient se révéler utiles avant la publication du schéma.
+
+Ici j’utilise également une spécification rng pour définir la cardinalité.
+
+Bientôt remplacé par une déclaration entièrement fournie en ODD
+
+---
+
+
+## Modification des classes
+
+```xml
+<classSpec ident="att.internetMedia" type="atts" 
+  mode="change" module="tei">
+  <attList>
+    <attDef ident="mimeType" mode="change">
+      <valList type="closed" mode="replace">
+        <valItem ident="image/jpg"/>
+        <valItem ident="application/pdf"/>
+        <valItem ident="application/tei+xml"/>
+        <valItem ident="application/xml"/>
+      </valList>
+    </attDef>
+  </attList>
+</classSpec>
+```
+
+???
+
+## Modification des classes
+
+Le mode modification peut également s’appliquer à des classes. Dans cet exemple, nous avons remplacé à l’aide de Roma un ensemble de valeurs d’attributs pour tout attribut membre de la classe `att.internetMedia`.
+
+---
+
+
+## Les différentes manières de personnaliser la TEI
+
+### 1. rédiger une `spécification de haut niveau`
+
+### 1. `utiliser les sous-modules` de la TEI et spécifier dans ces sous-ensembles les fonctionnalités à activer
+
+???
+## Les différentes manières de personnaliser la TEI
+
+Il est possible de personnaliser la TEI en supprimant des modules un certain nombre d’éléments qui ne seraient pas nécessaires pour le traitement de ses documents ou en modifiant ces classes. Ce faisant, on peut restreindre la manière de traiter certains phénomènes, ou encore, limiter les attributs disponibles sur un élément, et définir pour ces attributs des listes de valeurs ouvertes ou fermées. Au besoin, on peut également modifier le nom des éléments par exemple pour l’internationalisation ou ajouter des éléments, ce qui n’a pas été retenu dans le cadre de notre projet.
+
+Les Guidelines décrivent deux manières de personnaliser (customizing) la TEI&nbsp;:
+
+1. Rédiger une spécification de haut niveau pour une représentation en TEI et générer un schéma ad hoc ;
+
+1. Utiliser les modules de la TEI et spécifier dans ces sous-ensembles quelles fonctionnalités l’on souhaite activer ;
+
+Dans tous les cas, ne pas tout prendre
+
+Des schémas de base déjà disponibles que l’on peut augmenter ou réduire.
+
+---
+template: inverse
+class: center middle
+name: part3
+
+
+# Génération d’un Schéma XML ou RelaxNG
+
+---
+
+
+## Le processeur ODD
+
+Le processeur ODD, sera un outil logiciel capable
+
+* d’assembler les composants référencés de la TEI
+
+* résoudre des déclarations multiples
+
+* vérifier la validité
+
+* émettre un schéma dans un ou plusieurs langages formels
+
+* produire un document XML avec la documentation des composants
+
+---
+
+
+## TP Utilisation de [Roma](http://www.tei-c.org/Roma/)
+
+Utiliser [Roma](http://www.tei-c.org/Roma/) pour produire un ODD et le modifier
+
+---
+
+
+## TP rédiger un ODD "from scratch"
+
+* définir une liste de valeurs fermées (`&lt;valList&gt;`) pour `@type`
+
+* fournir une description pour chaque `&lt;valItem&gt;`
+
+---
+
+
+## TP Utiliser les feuilles de style Oxygen pour manipuler des fichiers ODD
+
+* utiliser l’add-on
+
+* allez dans le menu "Aide" et sélectionnez "Gérer les add-ons"
+
+* si l’add-on n’est pas présent, l’ajouter : aller dans " préférences", sélectionner "Add-ons" et ajouter http://www.tei-c.org/release/oxygen/updateSite.oxygen dans la liste des "mise à jour URLs Sites"
+
+---
+template: inverse
+class: center middle
+
+
+# Sources et bibliographie
+
+# Sources et orientations bibliographiques
+
+* [https://github.com/TEIC/pureODD](https://github.com/TEIC/pureODD)
+
+* Lou Burnard, Formation ODD, Lyon 2013, [https://code.google.com/p/tei](https://code.google.com/p/tei)-fr/source/browse/#svn%2Ftrunk%2FTalks%2F2014-02-lyon%253Fstate%253Dclosed
+
+* About Customisation, tei-c, http://www.tei-c.org/Guidelines/Customization/
+
+* Rahtz, Sebastian, et Lou Burnard. "Reviewing the TEI ODD System." In Proceedings of the 2013 ACM Symposium on Document Engineering. DocEng ’13. ACM, 2013. [http://doi.acm.org/10.1145/2494266.2494321.](http://doi.acm.org/10.1145/2494266.2494321.)
+
+* Burnard, Lou. "Resolving the Durand Conundrum." Journal of the Text Encoding Initiative , no. 6 (2013). [http://jtei.revues.org/842](http://jtei.revues.org/842) (accessed February 21, 2014).
+
+* Burnard, Lou, et Rahtz, Sebastian. A complete schema definition language for the Text Encoding Initiative, XML London, June 16th 2013. http://tei.oucs.ox.ac.uk/Talks/2013-06-london/talk.pdf
+
+---
+template: inverse
+class: center middle
+
+
+# ...
+
+.footnote[[revenir au début](#index)]
+
+.footnote[[programme](00-programme.html)]
+</textarea><script src="js/remark-0.6.5.min.js" type="text/javascript"></script><script type="text/javascript">
+        var hljs = remark.highlighter.engine;
+      </script><script src="remark.language.js" type="text/javascript"></script><script type="text/javascript">
+        var slideshow = remark.create({
+        highlightStyle: 'monokai',
+        highlightLanguage: 'remark'
+        }) ;
+      </script></body>
+</html>

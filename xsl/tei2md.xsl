@@ -168,6 +168,13 @@
     <xsl:text>]</xsl:text>
     <xsl:call-template name="newline"/>
   </xsl:template>
+  
+  <xsl:template match="note[@rend='none']">
+    <xsl:call-template name="newline"/>
+    <xsl:text>???</xsl:text>
+    <xsl:call-template name="newline"/>
+    <xsl:apply-templates/>
+  </xsl:template>
 
 
   <xsl:template match="gi">

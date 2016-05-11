@@ -112,9 +112,9 @@
             <div>
                <head>Pourquoi utiliser un système de gestion de version ?</head>
                <list>
-                  <item>Sécuriser votre travail d’encodage</item>
-                  <item>Assurer la traçabilité des fichiers</item>
-                  <item>Organiser la collaboration distante</item>
+                  <item><hi>Sécuriser</hi> votre travail d’encodage</item>
+                  <item>Assurer la <hi>traçabilité</hi> des fichiers</item>
+                  <item>Organiser la <hi>collaboration</hi> distante</item>
                </list>
                <p>En somme, c’est une bonne pratique !</p>
             </div>

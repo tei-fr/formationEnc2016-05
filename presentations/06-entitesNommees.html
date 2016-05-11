@@ -364,27 +364,60 @@ Les informations concernant les personnes, les lieux, et les organisations sont 
 
 * des .red[événements (events)] ou incidents qui peuvent conduire à un changement d’état ou moins fréquemment de trait.
 
-## Traits
 
-Traits, typiquement indépendants du vouloir de la personne, ou de ses actions. Peuvent être d’ordre physiques, sexe, couleur des yeux, ou culturels, ethniques, croyance…
+
+---
+
+
+### Traits
+
+Contiennent une description du statut ou de la qualité attribuée à une personne, un lieu ou une organisation qui typiquement, mais pas nécessairement, est indépendante du vouloir ou de l’action du porteur et habituellement n’est pas spécifique à une période de temps.
+
+* `&lt;sex&gt;` le sexe d’une personne
+
+* `&lt;nationality&gt;` contient une description informelle de la nationalité passée ou présente
 
 ```xml
-<trait type="ethnicity" key="alb">
+  <trait xmlns="http://www.tei-c.org/ns/Examples" type="ethnicity" key="alb">
     <label>Ethnicity</label>
     <desc>Ethnic Albanian.</desc>
 </trait>
 ```
 
-## États
+???
 
-Les états incluent par exemple le statut marital, le lieu de résidence et la position ou l’occupation.
+`&lt;trait&gt;` contains a description of some status or quality attributed to a person, place, or organization typically, but not necessarily, independent of the volition or action of the holder and usually not at some specific time or for a specific date range.
 
-Durée définie, c’est-à-dire un début et une fin.
+---
 
-```xml
-<state type="office" from="1777-04-07" 
-  to="1780-07-12">Procureur</state>
-```
+
+### États
+
+Les .red[états] décrivent certains statuts ou qualités attribuées à une personne, à des lieux, ou des organisations généralement à un moment donné ou spécifique à une période de temps.
+
+* `&lt;faith&gt;` spécifie la foi, la religion ou les croyances d’une personne
+
+* `&lt;langKnowledge&gt;` (language knowledge) résume la connaissance linguistique d’une personne à un moment donné
+
+* `&lt;socecStatus&gt;` (socio-economic status) contient une description ifnromelle du statut économique ou social perçu
+
+* `&lt;age&gt;` spécifie l’âge d’une personne.
+
+* `&lt;occupation&gt;` contient une description informelle de l’activité d’une personne ou de son emploi
+
+* `&lt;residence&gt;` décrit les résidences présente ou passées d’une personne
+
+* `&lt;affiliation&gt;` contient une description informelle de l’affiliation d’une personne à une organisation
+
+* `&lt;floruit&gt;` information sur la période d’activité d’une personne
+
+* `&lt;education&gt;` contient une description du niveau d’éducation d’une personne
+
+???
+
+`&lt;state&gt;` contains a description of some status or quality attributed to a person, place, or organization often at some specific time or for a specific date range.
+
+La classe `model.persStateLike` contient des éléments décrivant des caractéristiques physiques ou sociales construites.
 
 ---
 
@@ -484,6 +517,22 @@ att.editLike provides attributes describing the nature of an encoded scholarly i
 `att.source` provides attributes for pointing to the source of a bibliographic reference.
 
 `@source` provides a pointer to the bibliographical source from which a quotation or citation is drawn.
+
+---
+
+
+### Exemple d’événement
+
+```xml
+<event xml:id="eMBB" from="1955-12-01" to="1956-12-20">
+  <label>Montgomery Bus Boycott</label>
+  <desc>A political and social protest campaign against 
+  the policy of racial segregation on the public transit 
+  system of the city of <placeName ref="#MONT">Montgomery
+  </placeName>.
+  </desc>
+</event>
+```
 
 ---
 

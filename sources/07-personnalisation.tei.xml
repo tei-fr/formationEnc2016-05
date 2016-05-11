@@ -189,9 +189,9 @@
             </div>
             <div>
               <head>Système de classes</head>
-              <p>Outre ces vingt-deux modules, les cinq cinquante-cinq éléments de la TEI et leurs attributs sont également organisés en classes de modèle (model class) et classes d’attribut (attribute class).</p>
+              <p>Outre ces vingt-deux modules, les cinq cinquante-cinq éléments de la TEI et leurs attributs sont également organisés en <soCalled>classes de modèle</soCalled> (model class) et <soCalled>classes d’attribut</soCalled> (attribute class).</p>
               <p>Tous éléments de la TEI sont formellement classés dans ces classes pour faciliter la compréhension et la modularité ainsi que leur modification.</p>
-              <p>Les éléments d’une classe peuvent partager un ensemble d’attributs ou bien apparaître au même endroit dans un modèle de contenu. Dans l’un ou l’autre des cas, on considère qu’un élément ou un attribut hérite des propriétés de la classe dont il est membre.</p>
+              <p><hi>Les éléments d’une classe peuvent partager un ensemble d’attributs ou bien apparaître au même endroit dans un modèle de contenu.</hi> Dans l’un ou l’autre des cas, on considère qu’un élément ou un attribut hérite des propriétés de la classe dont il est membre.</p>
               <p>Les éléments d’une même classe peuvent apparaître au même endroit dans un modèle de contenu, il s’agit alors d’une classe de modèle, ou partager un ensemble d’attributs, il s’agit alors d’une classe d’attributs.</p>
               <p>Le système de classes de la TEI distingue donc :</p>
               <list>

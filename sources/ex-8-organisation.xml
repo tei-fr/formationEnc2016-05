@@ -37,7 +37,76 @@
          <div rend="slide" xml:lang="fr">
             <div>
                <head>Quelques mots sur GitHub</head>
+               <figure>
+                  <graphic url="../images/git.png)"/>
+               </figure>
             </div>
+            <div>
+               <div>
+                  <head>Le paradigme du versionning</head>
+                  <p>diff et wikipédia</p>
+                  <p>Code par nature mouvant, obsolescence</p>
+                  <p>Corrections et versions. Développement de système pour garder la trace des changements. Crucial pour le développement informatique.</p>
+                  <p>Plusieurs protocoles, SVN Subversion, etc. Git.</p>
+               </div>
+               <div>
+                  <head>Le protocole Git</head>
+                  <p>Mis au point dans le cadre du développement du noyau Linux</p>
+                  <p>Finalement assez stupide, une manière de
+                  <list>
+                        <item>stoker des arbres de contenus un peu comme un système de fichiers</item>
+                        <item>un commit créer un nouvel arbre accessible par son nom</item>
+                        <item>on peut changer le répertoire pour recréer n’importe quel arbre</item>
+                     </list>.</p>
+                  <p>Conçu pour gérer le développement du noyau Linux (Linux Kernel) <list>
+                        <item>très efficient</item>
+                        <item>prend en charge les développements non linéaires gracieusement</item>
+                        <item>un système distribué</item>
+                     </list></p>
+               </div>
+               <div>
+                  <head>Ce qui différentie Git</head>
+                  <list>
+                     <item>Commit, Sorte de clichés de l’historique.</item>
+                     <item>Git branching model</item>
+                     <item>Rebase</item>
+                     <item>Système distribué</item>
+                  </list>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div>
+               <head>Le commit</head>
+               <figure>
+                  <graphic url="../images/gitCommit.png"/>
+               </figure>
+            </div>
+            <div>
+               <div>
+                  <head>repo</head>
+                  <p>Répertoire dans lequel suit les fichiers</p>
+               </div>
+               <div>
+                  <head>Idée du Snapshots</head>
+                  <list>
+                     <item>manière dont garde la trace de l’historique du code</item>
+                     <item>enregistrement de ce que contiennent tous les fichiers à un moment donné</item>
+                     <item>possibilité de revenir en arrière</item>
+                  </list>
+               </div>
+               <div>
+                  <head>Commit</head>
+                  <p>Acte de créer un snapshot. Un projet consiste en une série de commit.</p>
+                  <p>Trois éléments d’information<list>
+                        <item>informations sur les changements de fichier</item>
+                        <item>une référence au commit précédent (le parent-</item>
+                        <item>un hash code qui le désigne</item>
+                     </list>
+                  </p>
+               </div>
+            </div>
+
          </div>
          <div rend="slide" xml:lang="fr">
             <div>
@@ -89,7 +158,8 @@
                <!-- modifier le teiCorpus pour  utiliser XInclude -->
 
                <list>
-                  <item>Images : <ident>images</ident></item>
+                  <item>Où mettre les images</item>
+                  <!-- : <ident>images</ident> -->
                   <!-- avoir un fichier image, leur faire changer le lien @facs dans leur fichier -->
                   <item>Index des personnes, lieux etc. <ident>data</ident></item>
                   <item>Transcriptions éditées <ident>sources</ident></item>

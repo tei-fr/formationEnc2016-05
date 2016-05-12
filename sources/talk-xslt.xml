@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>XSLT pour les nuls</title>
-	<title><lb/>Esquisse d'une initiation aux normes de transformation
+        <title><lb/>Esquisse d’une initiation aux normes de transformation
 	XML</title>
-	<author>Lou Burnard Consulting</author>
-	
+        <author>Lou Burnard Consulting</author>
+
       </titleStmt>
       <editionStmt>
         <edition>
@@ -37,43 +36,44 @@
   <text>
     <body>
 
-<div><head>Objectifs</head>
-<p rend="box">Ceci n'est pas une formation complète! son objectif est
+      <div rend="slide">
+        <head>Objectifs</head>
+        <p rend="box">Ceci n’est pas une formation complète! son objectif est
 de ... </p>
-<list>
-<item>vous donner un avant-gout des possibilités affordés par les
+        <list>
+          <item>vous donner un avant-goût des possibilités offertes par les
 normes XSLT et XPath</item>
-<item>surtout dans le domaine de traitement des documents
+          <item>surtout dans le domaine de traitement des documents
 <q>XML-TEI</q>, principalement donc sortis des sciences
 humaines</item>
-<item>aborder les concepts fondamentaux et les usages les plus
+          <item>aborder les concepts fondamentaux et les usages les plus
 répandus du norme XSLT</item>
-<!--item>vous préparer pour une formation plus approfondie </item-->
-</list>
-</div>
-
-      <div>
-	<head>XSL: un ensemble de normes complémentaires</head>
-	<p>
-	  <list type="unordered">
-	    <item>XPath: un syntaxe normalisé pour définir et accéder aux
-	    sous-parties d'une arborescence XML </item>
-	    <item>XSLT: un norme informatique pour la transformation
-	    des arborescences XML </item>
-	    <item>XSL FO: un vocabulaire XML pour la description
-	    d'affichage des pages </item>
-	  </list>
-	</p>
-<p>Tous les trois dévelopés et maintenus par le W3C, comme le norme XML.</p>
+          <!--item>vous préparer pour une formation plus approfondie </item-->
+        </list>
       </div>
 
-<!--
+      <div rend="slide">
+        <head>XSL: un ensemble de normes complémentaires</head>
+        <p>
+          <list type="unordered">
+            <item>XPath: un syntaxe normalisé pour définir et accéder aux
+	    sous-parties d’une arborescence XML </item>
+            <item>XSLT: un norme informatique pour la transformation
+	    des arborescences XML </item>
+            <item>XSL FO: un vocabulaire XML pour la description
+	    d’affichage des pages </item>
+          </list>
+        </p>
+        <p>Tous les trois développés et maintenus par le W3C, comme le norme XML.</p>
+      </div>
+
+      <!--
 <div><head>A quoi sert le XSL ?</head>
 <list>
-<item>Un document XML n'est qu'une chaîne de caractères Unicode avec
+<item>Un document XML n’est qu’une chaîne de caractères Unicode avec
 des balises: pourquoi pas le traîter en tant que tel?</item>
 <item>Parce que les balises representent quelque chose de plus
-signifiant : l'arborescence.</item>
+signifiant : l’arborescence.</item>
 <item>Parce que le syntax XML permet des variations ...
 <egXML xmlns="http://www.tei-c.org/ns/Examples"><![CDATA[
 <foo       bar= "x" baz = "z"></foo>
@@ -82,364 +82,424 @@ baz= "z" bar =
 "x"/>]]>
 </egXML>
 </item>
-<item>Parce que la <emph>structuration</emph> d'un document XML fait partie de sa
+<item>Parce que la <emph>structuration</emph> d’un document XML fait partie de sa
 signification</item>
  </list>
 </div>
 -->
 
-<div><head>C'est quoi une arborescence ?</head>
-  <p><graphic height="50%" url="../Graphics/arborescence.png"/></p>
-<list>
-<item>un ensemble de <term>noeuds</term>, organisé de manière hiérarchique</item>
-<item>chaque noeud porte un <term>identifiant générique</term> (son "type")</item>
-<item>il y a un seul <term>noeud racine</term> qui contient (ou domine) tous les
+      <div rend="slide">
+        <head>C’est quoi une arborescence ?</head>
+        <p><graphic height="50%" url="../Graphics/arborescence.png"/></p>
+        <list>
+          <item>un ensemble de <term>nœuds</term>, organisé de manière hiérarchique</item>
+          <item>chaque nœud porte un <term>identifiant générique</term> (son "type")</item>
+          <item>il y a un seul <term>nœud racine</term> qui contient (ou domine) tous les
 autres</item>
-<item>chaque noeud peut contenir (ou dominer)
+          <item>chaque nœud peut contenir (ou dominer)
 <list>
-<item>un sous-arborescence</item>
-<item>ou un morceau de texte</item>
-<!--item>facultativement un ensemble d'<term>attributs</term></item-->
-</list></item>
-<!--item>chaque attribut comporte un <term>nom</term> et un <term>valeur</term> </item-->
-</list>
-</div>
+              <item>un sous-arborescence</item>
+              <item>ou un morceau de texte</item>
+              <!--item>facultativement un ensemble d’<term>attributs</term></item-->
+            </list></item>
+          <!--item>chaque attribut comporte un <term>nom</term> et un <term>valeur</term> </item-->
+        </list>
+      </div>
 
-<div><head>Arborescence XML</head>
-  <list>
-    <item>chaque noeud correspond à un élément identifié</item><item>les attributs d'un élément constitue une sous-arborescence associée au noeud</item><item>chaque attribut comporte un <term>nom</term> et un <term>valeur</term> 
-    </item>
-  </list>
-</div>
+      <div rend="slide">
+        <head>Arborescence XML</head>
+        <list>
+          <item>chaque nœud correspond à un élément identifié</item>
+          <item>les attributs d’un élément constitue une sous-arborescence associée au nœud</item>
+          <item>chaque attribut comporte un <term>nom</term> et un <term>valeur</term>
+          </item>
+        </list>
+      </div>
 
-      <div>
+      <div rend="slide">
         <head>Exemple texte XML ... </head>
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
-<body type="anthology">
-  <div type="poem">
-    <head>The SICK ROSE </head> 
-    <lg type= "stanza"> 
-      <l n="1">O Rose thou art sick.</l> 
-      <l n="2">The invisible worm,</l> 
-      <l n="3">That flies in the night </l> 
-      <l n="4">In the howling storm:</l> 
-    </lg> 
-    <lg type= "stanza">
-      <l n="5">Has found out thy bed </l> 
-      <l n="6">Of crimson joy:</l> 
-      <l n="7">And his dark secret love </l> 
-      <l n="8">Does thy life destroy.</l> 
-    </lg>
-  </div>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <body type="anthology">
+            <div type="poem">
+              <head>The SICK ROSE </head>
+              <lg type="stanza">
+                <l n="1">O Rose thou art sick.</l>
+                <l n="2">The invisible worm,</l>
+                <l n="3">That flies in the night </l>
+                <l n="4">In the howling storm:</l>
+              </lg>
+              <lg type="stanza">
+                <l n="5">Has found out thy bed </l>
+                <l n="6">Of crimson joy:</l>
+                <l n="7">And his dark secret love </l>
+                <l n="8">Does thy life destroy.</l>
+              </lg>
+            </div>
 
-<div type="shortpoem">
-        <head>Queen Anne's tipple</head>
-        <lg type="couplet">
-            <l n="1">Here thou Great Anna whom three realms obey</l>
-            <l n="2">Doth sometimes council take, and sometimes tea.</l>
-        </lg>
-    </div>
-</body>
-</egXML>
-<!--figure><graphic url="xpath-eg-0.png"/></figure-->
-</div>
-<div><head>.. ou, en forme d'arborescence: </head>
-<figure><graphic url="../Graphics/xpath-eg-1.png"/></figure>
-</div>
-
-
-
-<div><head>XPath : une feuille de route</head>
-<p>Pour accéder aux composants d'un document XML, on spécifie un
-<term>chemin</term>, spécifiant les  noeuds qu'il faut
-traverser pour arriver à la partie souhaité</p>
-<p>Par exemple, pour arriver aux <gi>head</gi>s dans cet exemple, on
- commence au <gi>body</gi>, puis passe à un <gi>div</gi> fils, et ensuite
- on arrive à un <gi>head</gi> </p>
-<p>En XPath, on dit : <code>/body/div/head</code></p>
-</div>
-
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-06.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-07.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-08.png"/></figure>
-</div>
-
-<div><head>Les étapes</head>
-<list>
-<item>Chaque étape sur ce chemin n'est pas forcément un élément XML...</item>
-<item>on peut aussi regarder les attributs</item>
-<item>ou des morceaux de texte</item>
-</list>
-</div>
-
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-09.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-10.png"/></figure>
-</div>
-<!-- text() example needed -->
-
-<div><head>Les sélections</head>
-<list>
-<item>On peut séléctionner parmi les noeuds resultants, en forme de
-restriction entre parenthèses [ et ] </item>
-<item>Une restriction peut tenir en compte la valeur d'un attribut</item>
-<item>ou la position ordinale du noeud dans l'arbre</item>
-<item>ou l'existence d' un élément du type indiqué</item>
-</list>
-</div>
-
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-12.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-13.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-14.png"/></figure>
-</div>
-
-<div><head>Le point de depart</head>
-<p>On peut partir de n'importe quel point dans l'arborescence: 
-<list>
-<item><code>//</code> signifie <q>n'importe où</q></item>
-<item><code>..</code> signifie <q>mon parent</q></item>
-</list>
-</p>
-<p>On peut aussi naviguer l'hierarchie, en se servant des
-<term>axes</term> tels que <code>ancestor::</code>, 
-<code>following-sibling::</code>, <code>descendant::</code> ... </p>
-</div>
-
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-17.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-18.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-19.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-20.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-21.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-22.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-23.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-24.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-25.png"/></figure>
-</div>
-<div><head/>
-<figure><graphic url="../Graphics/xpath-eg-26.png"/></figure>
-</div>
-
-<div><head>Fonctions XPath</head>
-<p>XPath fournit également une librarie extensive de fonctions 
-utiles. On signale ici seulement quelques-unes :
-<list>
-<item><code>count(x)</code> fournit le nombre des noeuds dans
-l'arbre x</item>
-<item><code>position()</code> fournit le nombre ordinal du noeud courant
-par rapport à son contexte</item>
-<item><code>last()</code> fournit fournit le nombre ordinal du dernier
-noeud courant
-par rapport à son contexte</item>
-<item><code>contains(x,y)</code> test l'existence de la chaine
-<code>y</code> dans le morceau de texte <code>x</code> </item>
-</list>
-</p></div>
-
-<div><head>Premier exercice</head>
-<p>Tester votre compréhension de XPath avec la première partie de
-l'exercice...</p>
-</div>
-       
-      <div>
-	<head>Comment se servir d' XSLT ?</head>
-	<p><figure>
-	  <graphic url="../Graphics/xslt-use.png" height="80%"/>
-</figure></p>
-<p rend="box">XSLT est un langage de transformation</p>
-</div>
-<div>
-<head>Une transformation simplissime></head>
-<p>A partir de ceci :
-<egXML xmlns="http://www.tei-c.org/ns/Examples" >
-  <ref target="http://www.tei-c.org">The TEI website</ref>
-</egXML>
-on veut produire :
-<egXML xmlns="http://www.tei-c.org/ns/Examples"> 
-  <a href="http://www.tei-c.org">The TEI website</a></egXML>
-donc on va ....
-<list>
-<item>transformer l'element <gi>ref</gi> de la TEI dans un element 
-<gi>a</gi> de (x)HTML</item>
-<item>transformer son attribut <att>target</att> dans un attribut <att>href</att></item>
-</list>
-</p></div>
-
-<div>
-  <head>Comment exprimer cela en XSL?</head>
-
-    <egXML xmlns="http://www.tei-c.org/ns/Examples">
-      <xsl:stylesheet 
-	  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	  xpath-default-namespace="http://www.tei-c.org/ns/1.0"
-	  version="2.0">
-	<xsl:template match="ref">
-	  <a href="{@target}">
-	    <xsl:apply-templates/>
-	</a>
-	</xsl:template>  
-	</xsl:stylesheet>
-      </egXML>
-    </div>
-<div>
-<head>Une transformation plus typique</head>
-<p>A partir de ceci :
-<egXML xmlns="http://www.tei-c.org/ns/Examples" >
-  <div type="recette" n="34">
-    <head>Pasta pour les debutants</head>
-    <list>
-      <item>pates</item>
-      <item>fromage râpé</item>
-    </list>
-    <p>Faire bouiller les pates, et melanger avec le fromage.</p>
-  </div>
-</egXML>
-on veut produire :
-<egXML xmlns="http://www.tei-c.org/ns/Examples"> 
-  <html xmlns="http://www.w3.org/1999/xhtml">
-    <h1>34: Pasta pour les novices</h1>
-    <p>Ingrédients: pates  fromage râpé</p>
-    <p>Faire bouiller les pates, et melanger avec le fromage.</p>
-  </html>
-</egXML>
-</p>
-</div>
-
-<div>
-  <head>Comment exprimer cela en XSL?</head>
-  <p>
-    <egXML xmlns="http://www.tei-c.org/ns/Examples">
-      <xsl:stylesheet 
-	  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	  xpath-default-namespace="http://www.tei-c.org/ns/1.0"
-	  version="2.0">
-	<xsl:template match="div">
-	  <html> 
-	    <h1>
-	      <xsl:value-of select="@n"/>:
-	      <xsl:value-of select="head"/>
-	    </h1>
-	    <p>Ingrédients:    
-	    <xsl:apply-templates  
-		select = "list/item"/> 
-	    </p> 
-	    <p>
-	      <xsl:value-of select="p"/>
-	    </p>
-	  </html> 
-  </xsl:template>
-</xsl:stylesheet>
-</egXML>
-</p>
-</div>
-
-
-
-<div>
-<head>Une feuille de style XSLT</head>
-<list>
-<item>est un document XML, contenant des éléments de l'espace de noms
-<code>http://www.w3.org/1999/XSL/Transform</code>
-</item>
-<item><gi>xsl:stylesheet</gi> (élément racine de tout stylesheet)
-permet de spécifier tous les noms d'espace utilisés, un nom d'espace
-par defaut, et la version
-du norme XSLT employé (1 ou 2)</item>
-<item><gi>xsl:output</gi> : spécifie quelques options pour l'arbre de
-sortie, par exemple son format (HTML, XML, TEXT...), encodage
-(ISO-8859-1, UTF-8 ...) etc.</item>
-</list>
- <egXML xmlns="http://www.tei-c.org/ns/Examples">
-<xsl:stylesheet
-    xpath-default-namespace="http://www.tei-c.org/ns/1.0"
-    version="2.0">
-<xsl:output method="html" encoding="ISO-8859-1"/>
-<xsl:template match="/">
-<xsl:apply-templates/>
-</xsl:template>
-</xsl:stylesheet>
-</egXML>
+            <div type="shortpoem">
+              <head>Queen Anne’s tipple</head>
+              <lg type="couplet">
+                <l n="1">Here thou Great Anna whom three realms obey</l>
+                <l n="2">Doth sometimes council take, and sometimes tea.</l>
+              </lg>
+            </div>
+          </body>
+        </egXML>
+        <!--figure><graphic url="xpath-eg-0.png"/></figure-->
+      </div>
+      <div rend="slide">
+        <head>.. ou, en forme d’arborescence: </head>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-1.png"/>
+        </figure>
       </div>
 
 
 
-<div><head>Dix éléments XSLT essentiels</head>
+      <div rend="slide">
+        <head>XPath : une feuille de route</head>
+        <p>Pour accéder aux composants d’un document XML, on spécifie un
+<term>chemin</term>, spécifiant les  nœuds qu’il faut
+traverser pour arriver à la partie souhaité</p>
+        <p>Par exemple, pour arriver aux <gi>head</gi>s dans cet exemple, on
+ commence au <gi>body</gi>, puis passe à un <gi>div</gi> fils, et ensuite
+ on arrive à un <gi>head</gi>
+        </p>
+        <p>En XPath, on dit : <code>/body/div/head</code></p>
+      </div>
+
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-06.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-07.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-08.png"/>
+        </figure>
+      </div>
+
+      <div rend="slide">
+        <head>Les étapes</head>
+        <list>
+          <item>Chaque étape sur ce chemin n’est pas forcément un élément XML...</item>
+          <item>on peut aussi regarder les attributs</item>
+          <item>ou des morceaux de texte</item>
+        </list>
+      </div>
+
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-09.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-10.png"/>
+        </figure>
+      </div>
+      <!-- text() example needed -->
+
+      <div rend="slide">
+        <head>Les sélections</head>
+        <list>
+          <item>On peut sélectionner parmi les nœuds résultants, en forme de
+restriction entre parenthèses [ et ] </item>
+          <item>Une restriction peut tenir en compte la valeur d’un attribut</item>
+          <item>ou la position ordinale du nœud dans l’arbre</item>
+          <item>ou l’existence d’ un élément du type indiqué</item>
+        </list>
+      </div>
+
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-12.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-13.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-14.png"/>
+        </figure>
+      </div>
+
+      <div rend="slide">
+        <head>Le point de départ</head>
+        <p>On peut partir de n’importe quel point dans l’arborescence: 
 <list>
-<item><gi>xsl:template</gi> spécifie un modèle de transformation</item>
-<item><gi>xsl:apply-templates</gi> applique des templates</item>
-<item><gi>xsl:value-of</gi> sort une valeur</item>
-<item><gi>xsl:text</gi> sort un morceau de texte</item>
-<item><gi>xsl:element</gi>, <gi>xsl:attribute</gi> et
-<gi>xsl:comment</gi> sortent un élément, attribut, ou commentaire </item>
-<item><gi>xsl:if</gi> et <gi>xsl:choose</gi> actions conditionnels</item>
-<item><gi>xsl:for-each</gi> bouclage des actions </item>
-<item><gi>xsl:variable</gi> définition de variable</item>
-<item><gi>xsl:number</gi> effectue une numerotation </item>
-<item><gi>xsl:sort</gi> effectue un tri </item>
-</list>
-</div>
+            <item><code>//</code> signifie <q>n’importe où</q></item>
+            <item><code>..</code> signifie <q>mon parent</q></item>
+          </list>
+        </p>
+        <p>On peut aussi naviguer dans la hiérarchie, en se servant des
+<term>axes</term> tels que <code>ancestor::</code>, 
+<code>following-sibling::</code>, <code>descendant::</code> ... </p>
+      </div>
 
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-17.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-18.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-19.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-20.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-21.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-22.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-23.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-24.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-25.png"/>
+        </figure>
+      </div>
+      <div rend="slide">
+        <head/>
+        <figure>
+          <graphic url="../Graphics/xpath-eg-26.png"/>
+        </figure>
+      </div>
 
-<div><head><gi>xml:template</gi></head>
+      <div rend="slide">
+        <head>Fonctions XPath</head>
+        <p>XPath fournit également une librairie extensive de fonctions 
+utiles. On signale ici seulement quelques-unes :
+<list>
+            <item><code>count(x)</code> fournit le nombre des nœuds dans
+l’arbre x</item>
+            <item><code>position()</code> fournit le nombre ordinal du nœud courant
+par rapport à son contexte</item>
+            <item><code>last()</code> fournit le nombre ordinal du dernier
+nœud courant
+par rapport à son contexte</item>
+            <item><code>contains(x,y)</code> test l’existence de la chaîne
+<code>y</code> dans le morceau de texte <code>x</code>
+            </item>
+          </list>
+        </p>
+      </div>
 
-<p>Cet élément  spécifie un modèle (des actions) à appliquer à l'
-arborescence spécifiée par son attribut <att>match</att></p>
-<p>Il peut contenir d'autres éléments XSL, des éléments d'autres noms
-d'espace (qui seront copiés), ou rien de tout.</p>
+      <div rend="slide">
+        <head>Premier exercice</head>
+        <p>Tester votre compréhension de XPath avec la première partie de
+l’exercice...</p>
+      </div>
+
+      <div rend="slide">
+        <head>Comment se servir d’ XSLT ?</head>
+        <p><figure>
+            <graphic url="../Graphics/xslt-use.png" height="80%"/>
+          </figure></p>
+        <p rend="box">XSLT est un langage de transformation</p>
+      </div>
+      <div rend="slide">
+        <head>Une transformation simplissime></head>
+        <p>A partir de ceci :
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-<xsl:stylesheet
-    xpath-default-namespace="http://www.tei-c.org/ns/1.0"
-    version="2.0">
+            <ref target="http://www.tei-c.org">The TEI website</ref>
+          </egXML>
+on veut produire :
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <a href="http://www.tei-c.org">The TEI website</a></egXML>
+donc on va ....
+<list>
+            <item>transformer l’élément <gi>ref</gi> de la TEI dans un élément 
+<gi>a</gi> de (x)HTML</item>
+            <item>transformer son attribut <att>target</att> dans un attribut <att>href</att></item>
+          </list>
+        </p>
+      </div>
 
-<xsl:template match="div">
+      <div rend="slide">
+        <head>Comment exprimer cela en XSL?</head>
+
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+            xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+            <xsl:template match="ref">
+              <a href="{@target}">
+                <xsl:apply-templates/>
+              </a>
+            </xsl:template>
+          </xsl:stylesheet>
+        </egXML>
+      </div>
+      <div rend="slide">
+        <head>Une transformation plus typique</head>
+        <p>A partir de ceci :
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <div type="recette" n="34">
+              <head>Pasta pour les débutants</head>
+              <list>
+                <item>pates</item>
+                <item>fromage râpé</item>
+              </list>
+              <p>Faire bouiller les pates, et mélanger avec le fromage.</p>
+            </div>
+          </egXML>
+on veut produire :
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <html xmlns="http://www.w3.org/1999/xhtml">
+              <h1>34: Pasta pour les novices</h1>
+              <p>Ingrédients: pates  fromage râpé</p>
+              <p>Faire bouiller les pates, et melanger avec le fromage.</p>
+            </html>
+          </egXML>
+        </p>
+      </div>
+
+      <div rend="slide">
+        <head>Comment exprimer cela en XSL?</head>
+        <p>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+              xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+              <xsl:template match="div">
+                <html>
+                  <h1>
+                    <xsl:value-of select="@n"/>:
+	      <xsl:value-of select="head"/>
+                  </h1>
+                  <p>Ingrédients:    
+	    <xsl:apply-templates select="list/item"/>
+                  </p>
+                  <p>
+                    <xsl:value-of select="p"/>
+                  </p>
+                </html>
+              </xsl:template>
+            </xsl:stylesheet>
+          </egXML>
+        </p>
+      </div>
+
+
+
+      <div rend="slide">
+        <head>Une feuille de style XSLT</head>
+        <list>
+          <item>est un document XML, contenant des éléments de l’espace de noms
+<code>http://www.w3.org/1999/XSL/Transform</code>
+          </item>
+          <item><gi>xsl:stylesheet</gi> (élément racine de tout stylesheet)
+permet de spécifier tous les noms d’espace utilisés, un nom d’espace
+par défaut, et la version
+du norme XSLT employé (1 ou 2)</item>
+          <item><gi>xsl:output</gi> : spécifie quelques options pour l’arbre de
+sortie, par exemple son format (HTML, XML, TEXT...), encodage
+(ISO-8859-1, UTF-8 ...) etc.</item>
+        </list>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <xsl:stylesheet xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+            <xsl:output method="html" encoding="ISO-8859-1"/>
+            <xsl:template match="/">
+              <xsl:apply-templates/>
+            </xsl:template>
+          </xsl:stylesheet>
+        </egXML>
+      </div>
+
+
+
+      <div rend="slide">
+        <head>Dix éléments XSLT essentiels</head>
+        <list>
+          <item><gi>xsl:template</gi> spécifie un modèle de transformation</item>
+          <item><gi>xsl:apply-templates</gi> applique des templates</item>
+          <item><gi>xsl:value-of</gi> sort une valeur</item>
+          <item><gi>xsl:text</gi> sort un morceau de texte</item>
+          <item><gi>xsl:element</gi>, <gi>xsl:attribute</gi> et
+<gi>xsl:comment</gi> sortent un élément, attribut, ou commentaire </item>
+          <item><gi>xsl:if</gi> et <gi>xsl:choose</gi> actions conditionnels</item>
+          <item><gi>xsl:for-each</gi> bouclage des actions </item>
+          <item><gi>xsl:variable</gi> définition de variable</item>
+          <item><gi>xsl:number</gi> effectue une numerotation </item>
+          <item><gi>xsl:sort</gi> effectue un tri </item>
+        </list>
+      </div>
+
+
+      <div rend="slide">
+        <head><gi>xml:template</gi></head>
+
+        <p>Cet élément  spécifie un modèle (des actions) à appliquer à l’
+arborescence spécifiée par son attribut <att>match</att></p>
+        <p>Il peut contenir d’autres éléments XSL, des éléments d’autres noms
+d’espace (qui seront copiés), ou rien de tout.</p>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <xsl:stylesheet xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+              <xsl:template match="div"
+              >
 &lt;!--  .... actions pour les éléments div....-->
-</xsl:template>
-
-<xsl:template match="head">
+</xsl:template> <xsl:template
+              match="head">
 &lt;!--  .... actions pour tous les éléments head....-->
 </xsl:template>
-
-<xsl:template match="div/head">
+              <xsl:template match="div/head"
+              >
 &lt;!--  .... actions pour les éléments head contenus par un div....-->
 </xsl:template>
-
-<xsl:template match="teiHeader"/>
-
-</xsl:stylesheet>
-</egXML>
-</div>
-<!--
+              <xsl:template match="teiHeader"/> </xsl:stylesheet>
+        </egXML>
+      </div>
+      <!--
 <div>
 <head>Wild cards</head>
-<p>A part des éléments et des attributs, l'attribut <ident>match</ident> sur  <gi>xsl:template</gi>
+<p>A part des éléments et des attributs, l’attribut <ident>match</ident> sur  <gi>xsl:template</gi>
 peut indiquer... 
 <table>
   <row><cell><code>/</code></cell><cell>la racine du document </cell></row>
@@ -466,124 +526,130 @@ peut indiquer...
 </p>
 </div>
 -->
-<div><head>Les règles d'or de XSLT</head>
-<p>Par defaut, le document est a traiter élément par élément...
+      <div rend="slide">
+        <head>Les règles d’or de XSLT</head>
+        <p>Par défaut, le document est a traiter élément par élément...
 <list type="ordered">
-<item>Si aucun template ne correspond à un élément, traiter les
-éléments qu'il contient </item>
-<item>Si aucun élément reste à traiter par regle 1, sortir les
-morceaux de texte contenus par l' élément</item>
-<item>Un élément n'est traite que si un template lui correspond</item>
-<item>L'ordre des templates dans le stylesheet est sans significance</item>
-<item>Tout partie du document est traitable part tout template,
-eventuellement plusieurs fois</item>
-<item>Un stylesheet ne peut contenir que de XML bien-forme</item>
-</list>
-</p></div>
+            <item>Si aucun template ne correspond à un élément, traiter les
+éléments qu’il contient </item>
+            <item>Si aucun élément reste à traiter par regle 1, sortir les
+morceaux de texte contenus par l’ élément</item>
+            <item>Un élément n’est traite que si un template lui correspond</item>
+            <item>L’ordre des templates dans le stylesheet est sans significance</item>
+            <item>Tout partie du document est traitable part tout template,
+éventuellement plusieurs fois</item>
+            <item>Un stylesheet ne peut contenir que de XML bien-forme</item>
+          </list>
+        </p>
+      </div>
 
-<div><head>Contenu d'un template</head>
-<p>Les éléments XML d'un nom d'espaces autre que le XSL se trouvant dans un
+      <div rend="slide">
+        <head>Contenu d’un template</head>
+        <p>Les éléments XML d’un nom d’espaces autre que le XSL se trouvant dans un
 template sont sortis sans changement. </p>
-<p>Les fragments textuels (plus ou moins) pareils.</p>
-<p>Un template vide requiert la sortie de ... rien, donc (s'il est
+        <p>Les fragments textuels (plus ou moins) pareils.</p>
+        <p>Un template vide requiert la sortie de ... rien, donc (s’il est
 invoqué) il supprime les noeuds concernes.</p>
-</div>
+      </div>
 
 
-<div>
-<head>Plusieures templates peuvent etre spécifies pour un meme élément en
+      <div rend="slide">
+        <head>Plusieurs templates peuvent être spécifies pour un même élément en
 des contextes divers</head>
-<p>Comparer
-<egXML xmlns="http://www.tei-c.org/ns/Examples" >
-<xsl:template match="head">
+        <p>Comparer
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <xsl:template match="head">
   ....
 </xsl:template>
-</egXML>
+          </egXML>
 avec
-<egXML xmlns="http://www.tei-c.org/ns/Examples" >
-<xsl:template match="div/head">
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+            <xsl:template match="div/head">
  ...
 </xsl:template>
-<xsl:template match="figure/head">
+            <xsl:template match="figure/head">
  ....
 </xsl:template>
-</egXML>
-</p>
-<p>En cas de conflit, c'est  le template le plus spécifique qui
+          </egXML>
+        </p>
+        <p>En cas de conflit, c’est  le template le plus spécifique qui
 gagne.</p>
-</div>
+      </div>
 
 
-<div>
-<head><gi>xsl:apply-templates</gi></head>
+      <div rend="slide">
+        <head><gi>xsl:apply-templates</gi></head>
 
-<p>Cet élément rend disponible dans le contexte courant les regles
+        <p>Cet élément rend disponible dans le contexte courant les règles
 contenus par les templates indiques dans son attribut
-<att>select</att>. Si aucun template n'est indiqué, tous les templates
+<att>select</att>. Si aucun template n’est indiqué, tous les templates
 sont disponibles. </p>
 
- <egXML xmlns="http://www.tei-c.org/ns/Examples">
-<xsl:template match="/">
- <html>
-   <xsl:apply-templates/>
-  </html>
-</xsl:template>
-</egXML>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <xsl:template match="/">
+            <html>
+              <xsl:apply-templates/>
+            </html>
+          </xsl:template>
+        </egXML>
 
-  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-<xsl:template match="TEI"   >
- <xsl:apply-templates select="text"/>
-</xsl:template>
-</egXML>
-<p>Il est tres utile pour varier l'ordre des sorties:
-  <egXML xmlns="http://www.tei-c.org/ns/Examples"   >
-    <xsl:template match="text">
-      <h1>Corps du texte</h1>
-      <xsl:apply-templates select="body"/>
-      <h1>Pièces liminaires</h1>
-      <xsl:apply-templates select="front"/>
-      <xsl:apply-templates select="back"/>
-</xsl:template>
-</egXML>
-</p></div>
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+          <xsl:template match="TEI">
+            <xsl:apply-templates select="text"/>
+          </xsl:template>
+        </egXML>
+        <p>Il est très utile pour varier l’ordre des sorties:
+  <egXML
+            xmlns="http://www.tei-c.org/ns/Examples">
+            <xsl:template match="text">
+              <h1>Corps du texte</h1>
+              <xsl:apply-templates select="body"/>
+              <h1>Pièces liminaires</h1>
+              <xsl:apply-templates select="front"/>
+              <xsl:apply-templates select="back"/>
+            </xsl:template>
+          </egXML>
+        </p>
+      </div>
 
-<div ><head><gi>xsl:value-of</gi></head>
-<p>Cet élément fait sortir la valeur d'un élément ou d'un attribut :
+      <div rend="slide">
+        <head><gi>xsl:value-of</gi></head>
+        <p>Cet élément fait sortir la valeur d’un élément ou d’un attribut :
 
-  <egXML xmlns="http://www.tei-c.org/ns/Examples">
-    <xsl:value-of
-	select="/TEI/teiHeader/fileDesc/titleStmt/title"/>
-  </egXML>
-</p>
+  <egXML
+            xmlns="http://www.tei-c.org/ns/Examples">
+            <xsl:value-of select="/TEI/teiHeader/fileDesc/titleStmt/title"/>
+          </egXML>
+        </p>
 
-<p>Attention aux doublons potentiels!
+        <p>Attention aux doublons potentiels!
 
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-<xsl:template match="div">
- <h2> <xsl:value-of select="@n"/>
- <xsl:value-of select="head"/></h2>
- <xsl:apply-templates/>
-</xsl:template>
+            <xsl:template match="div">
+              <h2>
+                <xsl:value-of select="@n"/>
+                <xsl:value-of select="head"/></h2>
+              <xsl:apply-templates/>
+            </xsl:template>
+            <xsl:template match="div/head"/>
+          </egXML>
+        </p>
+      </div>
 
-<xsl:template match="div/head" />
-</egXML>
-</p>
-   </div>
-
-<!--
+      <!--
 <div><head>Attention: à ne pas confondre...</head>
 <list>
 <item><gi>xsl:value-of select="XX"</gi> fait sortir le contenu des
 noeuds indiques par le XPath "XX".</item>
  <item><gi>xsl:apply-templates select="XX"</gi> fait traiter les
 templates disponibles pour les noeuds indiques par le XPath "XX"</item>
-<item><gi>xsl:template match="XX"</gi> n'a aucun effet direct : il sert a définir
-le correspondence entre ce template et l'élément XX</item>
+<item><gi>xsl:template match="XX"</gi> n’a aucun effet direct : il sert a définir
+le correspondence entre ce template et l’élément XX</item>
 </list>
 </div>
 
 <div>
-  <head>Evaluation des valeurs d'attribut</head>
+  <head>Evaluation des valeurs d’attribut</head>
   <p>On a : 
   <egXML xmlns="http://www.tei-c.org/ns/Examples">
     <ref target="http://www.gallica.bnf.fr">site Gallica</ref>
@@ -603,13 +669,13 @@ On veut :
     </xsl:template>
   </egXML>
   </p>
-<p>parce qu'il donnera à l'attribut <att>href</att> la valeur  <q>@target</q>!</p>
+<p>parce qu’il donnera à l’attribut <att>href</att> la valeur  <q>@target</q>!</p>
 
 </div>
 
 <div>
 <head>Une astuce syntaxique...</head>
-<p>On se sert de  <code>{}</code> pour indiquer qu'une expression
+<p>On se sert de  <code>{}</code> pour indiquer qu’une expression
 doit être  <hi>evaluée</hi>:
   <egXML xmlns="http://www.tei-c.org/ns/Examples">
     <xsl:template match="ref" >
@@ -619,14 +685,14 @@ doit être  <hi>evaluée</hi>:
     </xsl:template>
   </egXML>
   </p>
-<p>Ceci donnera à l'attribut <att>href</att>  la valeur de l' attribut
+<p>Ceci donnera à l’attribut <att>href</att>  la valeur de l’ attribut
 <att>target</att> quelle que soit la valeur de ce dernier</p>
 </div>
 
 <div><head><gi>xsl:element</gi>, <gi>xsl:attribute</gi>, <gi>xsl:comment</gi></head>
-<p>Ces éléments font apparaitre des éléments XML dans l'arbre de
+<p>Ces éléments font apparaitre des éléments XML dans l’arbre de
 sortie. Ils sont un peu plus verbose que les abbréviations
-presentées jusqu'à là, mais peut-être plus élégant...
+presentées jusqu’à là, mais peut-être plus élégant...
 
   <egXML xmlns="http://www.tei-c.org/ns/Examples">
     <xsl:template match="ref" >
@@ -638,7 +704,7 @@ presentées jusqu'à là, mais peut-être plus élégant...
       </xsl:élément>
     </xsl:template>
   </egXML>
- est l'equivalent de
+ est l’equivalent de
   <egXML xmlns="http://www.tei-c.org/ns/Examples">
     <xsl:template match="ref" >
       <a href="{@target}">
@@ -669,7 +735,7 @@ template).
   <p>Cet élément permet des actions conditionelles :
   <egXML xmlns="http://www.tei-c.org/ns/Examples">
     <xsl:template match="person">
-      <xsl:if test="@sex='1'">
+      <xsl:if test="@sex=’1’">
 	<li>
 	  <xsl:value-of select="persName"/>
 	</li>
@@ -678,7 +744,7 @@ template).
 </egXML>
 cf.
   <egXML xmlns="http://www.tei-c.org/ns/Examples">
-    <xsl:template match="person[@sex='1']">
+    <xsl:template match="person[@sex=’1’]">
 	<li>
 	  <xsl:value-of select="persName"/>
 	</li>
@@ -696,10 +762,10 @@ cf.
     <xsl:template match="person">
       <xsl:apply-templates/>
       <xsl:choose>
-	<xsl:when test="@sex='1'">
+	<xsl:when test="@sex=’1’">
 	  (mâle)
 	</xsl:when>
-	<xsl:when test="@sex='2'">
+	<xsl:when test="@sex=’2’">
 	  (femelle)
 	</xsl:when>
 	<xsl:when test="not(@sex)">
@@ -746,14 +812,14 @@ cf.
 </div>
 
 <div><head><gi>xsl:variable</gi> : creation de variable</head>
-<p>Cet élément permet d'associer un nom avec un ensemble de noeuds, ou
+<p>Cet élément permet d’associer un nom avec un ensemble de noeuds, ou
 avec une chaine de caracteres, par exemple pour faciliter sa ré-utilisation
 plusieurs fois dans un même stylesheet.
   <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="small">
 <xsl:variable name="modernise">
 oui
 </xsl:variable>
-<xsl:if test='$modernise = "oui"'>
+<xsl:if test=’$modernise = "oui"’>
  ....
 </xsl:if>
 </egXML>
@@ -763,9 +829,9 @@ oui
 <div>
   <head> <gi>xsl:number</gi> : numerotation </head>
   <p>On peut generer une numérotation derivée de la séquence des
-  éléments dans l'arborescence XML...
+  éléments dans l’arborescence XML...
   <list type="ordered">
-    <item>par rapport a l'élément parent:
+    <item>par rapport a l’élément parent:
   <egXML xmlns="http://www.tei-c.org/ns/Examples">
     <xsl:template match="p">
       <xsl:number/>
@@ -791,7 +857,7 @@ oui
 </div>
 
 <div><head><gi>xsl:sort</gi> : faire un tri</head>
-<p>Cet élément permet de trier un ensemble de noeuds resultant d'un
+<p>Cet élément permet de trier un ensemble de noeuds resultant d’un
 élément <gi>xsl:apply-templates</gi> ou <gi>xsl:for-each</gi>.
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
                      <xsl:template match="text">
@@ -821,19 +887,22 @@ oui
     <item>numéroter et trier les objets de sortie</item>
   </list>
   </p>
-<p>On va expérimenter cela dans la deuxieme partie de l'exercice....</p>
+<p>On va expérimenter cela dans la deuxieme partie de l’exercice....</p>
 </div>
 -->
-<div><head>Pour en savoir plus</head>
-<list>
+      <div>
+        <head>Pour en savoir plus</head>
+        <list>
 
-<item>A <ref
-target="http://www.gchagnon.fr/cours/xml/">http://www.gchagnon.fr/cours/xml/
+          <item>A <ref target="http://www.gchagnon.fr/cours/xml/"
+              >http://www.gchagnon.fr/cours/xml/
 </ref> vous trouverez deux cours complets et très clairs</item>
-<item>Un texte classique: Philippe Rigaux et Bernd Amann <title>Comprendre
-XSLT</title>. O'Reilly, 2002.</item>
-<item>Beaucoup, beaucoup, d'autres ressources anglophones...</item>
-</list>
-</div> 
+          <item>Un texte classique: Philippe Rigaux et Bernd Amann <title>Comprendre
+XSLT</title>. O’Reilly, 2002.</item>
+          <item>Beaucoup, beaucoup, d’autres ressources anglophones...</item>
+        </list>
+      </div>
 
-</body></text></TEI>
+    </body>
+  </text>
+</TEI>

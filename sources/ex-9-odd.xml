@@ -154,7 +154,7 @@
                <item>La valeur de cet attribut conformera au datatype
                      <ident>teidata.enumerated</ident>
                </item>
-               <item>Sa définition doit donc etre complétée par un <gi>valList</gi> ...à vous de le
+               <item>Sa définition doit donc être complétée par un <gi>valList</gi> ...à vous de le
                   définir!</item>
             </list>
          </div>

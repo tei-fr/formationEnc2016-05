@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Chaînes de traitement pour la TEI</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Document nativement numérique</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>emchateau, ENC 2016</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change>première rédaction, <date when="2016-05">mai 2016</date></change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage xml:lang="fr">
+        <titlePart>09-Chaînes de traitement pour la TEI</titlePart>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
+        <note><ref target="00-programme.html">Programme</ref></note>
+      </titlePage>
+      <div rend="title">
+        <div>
+          <head>Introduction</head>
+        </div>
+        <div>
+          <p>En ayant recours à la Text Encoding Initiative (TEI), on adopte le <hi>principal standard informatique</hi> actuellement employé dans le <hi>domaine de l’édition critique</hi> numérique.<lb/> La TEI fournit tout à la fois un cadre de travail pour traiter et analyser les sources, et enregistrer le résultat de l’activité scientifique qui aura été menée. Toutefois, les fichiers sources XML-TEI ne sont pas directement destinés à la consultation. La TEI constitue plutôt <hi>un format pivot à partir duquel on produit diverses "manifestations" du texte en fonction des besoins</hi> et des contextes de lecture (pages xhtml, fichiers epub, pdf, api, etc.). Le manque d’outils adaptés, faciles d’emploi, pour le traitement, l’analyse et la publication de ces fichiers est souvent considéré comme un des principaux freins à l’utilisation de la TEI.</p>
+          <p>Du fait de l’utilisation courante de la TEI dans des projets de recherche, plusieurs solutions pour la publication d’édition critiques électroniques ont été développées ces dernières années, soit sous la forme de chaînes éditoriales propres soit sous la forme de logiciels libres ou open source. Il convient de choisir une solution de publication adaptée à nos besoins mais qui puisse être également maintenue dans la durée. Plusieurs solutions s’offrent à vous qui peuvent plus ou moins bien répondre aux besoins de votre projet, ou s’inscrire dans la politique générale de votre institution. Dans tous les cas, il n’y a pas de solution miracle, et le choix d’un outil résulte d’un arbitrage entre la complexité technique et l’étendue des fonctionnalités attendues.</p>
+        </div>
+      </div>
+      <div rend="sommaire" xml:id="index">
+        <div>
+          <head>Sommaire</head>
+          <list>
+            <item><ref target="#part1">Quelques questions pratiques</ref></item>
+            <item><ref target="#part2">Comment traiter ses données ?</ref></item>
+          </list>
+        </div>
+      </div>
+    </front>
+    <body>
+      <div type="part" xml:id="part1">
+        <head>Quelques questions pratiques</head>
+        <div rend="slide">
+          <div>
+            <head>Quel éditeur XML choisir ?</head>
+            <div>
+            <head>N’importe quel éditeur de texte</head>
+          <div>
+            <head>XMLMind XML Editor</head></div>
+          <div>
+            <head>Pourquoi Oxygen ?</head>
+          </div>
+        </div>
+          </div>
+        </div>
+        <div rend="slide">
+          <div><head>Questions courantes</head><div>
+            <head>Qui doit encoder ?</head></div>
+          <div>
+            <head>Un schéma est-il figé dans le marbre ?</head>
+          </div>
+          <div>
+            <head>Pourquoi Oxygen ?</head>
+          </div>
+          <div>
+            <head>Pourquoi faut-il produire une documentation ?</head>
+          </div>
+          <div>
+            <head>Comment publier mes données ?</head>
+          </div></div>
+        </div>
+      </div>
+      <div type="part" xml:id="part2">
+        <head>Comment traiter ses données <hi>XML-TEI</hi> ?</head>
+        <div rend="slide">
+          <div>
+            <head>Un <hi>format pivot</hi> pour la publication</head>
+            <p>À partir d’une même source XML-TEI, il est possible de produire plusieurs formats de sortie</p>
+            <list>
+              <item>Sorties HTML</item>
+              <item>Sorties EPub, Kindle, etc.</item>
+              <item>Sorties papier (PDF, LateX, etc.)</item>
+            </list>
+          </div>
+        </div>
+        <div rend="slide">
+          <div>
+            <head>Le stockage des données</head>
+            <div>
+              <head>Stockage des fichiers à plat (Flat File Storage)</head>
+              <div>
+                <head>Bases de données relationnelles et orientées objet</head>
+              </div>
+              <div>
+                <head>Le stockage natif des données XML</head>
+              </div>
+            </div>
+          </div>
+          <div>
+              <p>Travailler avec des données XML nécessite de pouvoir effectuer trois types d’opérations distinctes : ajouter de l’information dans l’entrepôt, chercher et retrouver l’information dans l’entrepôt, et mettre à jour l’information contenue dans l’entrepôt. Plusieurs solutions pour les bases de données XML ont été proposés telles que le stockage de fichiers à plat, l’utilisation de bases de données relationnelles, ou d’autres systèmes de gestion.</p>
+              <div>
+                <head>Stockage des fichiers à plat (Flat File Storage)</head>
+                <p>C’est la solution la plus simple, le document complet constitue l’entité principale, les structures internes ne jouant aucun rôle. Cette solution peut être implémentée avec n’importe quel système de fichiers. Si le stockage est efficace et peu coûteux, d’autres opérations comme la recherche qui requièrent un accès à la structure interne du document peuvent devenir prohibitives. Le stockage à plat n’est pas le plus approprié lorsque la recherche est fréquente car le niveau de granularité du stockage est le document entier et non pas son contenu.</p>
+              </div>
+              <div>
+                <head>Bases de données relationnelles et orientées objet</head>
+                <p>Les données XML peuvent être stockées dans des bases de données relationnelles. Elles peuvent ainsi bénéficier des fonctionnalités d’indexation, de transaction et d’optimisation des requêtes habituellement offertes par ces systèmes. Cependant, comme les données XML sont des données semi-structurées, elles nécessitent une conversion dans un modèle de données relationnelles. Compte-tenu des différences significatives inhérentes aux modèles relationnels et aux structures imbriquées des données semi-structurées, ces conversions impliquent généralement des jointures coûteuses pour le traitement des requêtes. L’utilisation de bases de données relationnelles orientées objet a été proposée pour refléter les structures imbriquées des données semi-structurées afin de réduire les redondances et ces jointures.</p>
+              </div>
+              <div>
+                <head>Le stockage natif des données XML</head>
+                <p>Conçus spécialement pour gérer des données XML, les systèmes natifs ont l’avantage de ne pas nécessiter d’opérations de conversion. Les techniques de stockage et de traitement des requêtes adoptées par les bases de données XML sont habituellement plus efficientes que celles basées sur le stockage de fichiers à plats et les bases de données relationnelles.</p>
+                <p>Plusieurs langages de requêtes ont été proposés pour manipuler des données XML (XML-QL, XML-GL, Quilt, XPath et XQuery). Le principal langage de requête pour XML qui ait été standardisé est XQuery. Il repose sur l’utilisation d’expressions de chemins XPath qui adressent des ensembles des parties spécifiques des documents XML.</p>
+              </div>
+            </div>
+          <div rend="slide">
+            <div>
+              <head>Tirer partie de l’outillage XML</head>
+              <p>Plusieurs langages de transformation ou de requête pour les données XML peuvent être particulièrement utiles pour exploiter des données XML-TEI.</p>
+              <div>
+                <head>Les langages de transformation</head>
+                <list>
+                  <item><hi>XSLT</hi> XML Stylesheet Transformation Language</item>
+                  <item><hi>XSL-FO</hi> XML Stylesheet Formatting Object</item>
+                </list>
+              </div>
+              <div>
+                <head>Les langages de requêtage</head>
+                <list>
+                  <item><hi>XQuery</hi> XML Query Language</item>
+                </list>
+              </div>
+            </div>
+            <div>
+              <p>L’utilisation de XML comme format pivot en vue d’une publication de sources textuelles dans un autre format est un cas typique d’utilisation de cette technologie. Plusieurs langages de transformation de segments XML ont été proposés, notamment XSLT et XSL-FO qui reposent tous deux sur le langage XPath.</p>
+              <p>Si XSLT constitue une solution très efficace pour passer d’un format XML donné à un autre, comme par exemple XHTML, les processeurs disponibles pour réaliser cette transformation sont limités à la version 1.0 du langage dans l’environnement courant LAMP (Linux Apache PHP). Les processeurs XSLT 2.0 et XQuery sont généralement incompatibles avec cet environnement, c’est une des raisons pour lesquelles la plupart des applications pour travailler avec des sources XML sont développées en Java pour pleinement tirer parti des possibilités de ces langages et du modèle de données.</p>
+            </div>
+          </div>
+        </div>
+        <div rend="slide">
+          <div>
+            <head>Processus de transformation <hi>XSL</hi></head>
+            <figure>
+              <graphic url="../images/xsltProcessing.svg"/>
+            </figure>
+          </div>
+          <div>
+            <p>Ce schéma présente le processus à l’œuvre lorsque l’on associe une feuille de style et un document source.</p>
+            <p>Un programme XSLT spécifie une sortie à produire à partir d’un segment ou d’un fichier XML, si ce segment existe dans le document fourni en entrée et répond à certains critères.</p>
+            <p>Le résultat est une fonction de l’entrée.</p>
+          </div>
+        </div>
+        <div rend="slide">
+          <div>
+            <head>Que peut faire XSLT ?</head>
+            <figure>
+              <graphic url="../images/whatXsltCanDo.png"/>
+            </figure>
+          </div>
+          
+        </div>
+        <div rend="slide">
+          <div>
+            <head>Les bases de données XML natives</head>
+            <p>Elles indexent les documents XML sur la base de leur structure.</p>
+            <p>Facilitent l’exécution de requêtes sur les fichiers</p>
+            <list>
+              <head>Bases de données XML natives</head>
+              <item><ref target="http://basex.org/">Basex</ref></item>
+              <item><ref target="http://exist-db.org/">eXist-DB</ref></item>
+              <item><ref target="http://www.marklogic.com/">Marklogic</ref></item>
+            </list>
+            <p>Synops<hi>X</hi> <ref target="http://synopsx.github.io">http://synopsx.github.io</ref></p>
+          </div>
+        </div>
+        <div type="slide">
+          <div>
+            <head>Stratégies de publication</head>
+            <div>
+              <head>Produire un site statique avec des transformations XSL</head>
+              <p>Le résultat de la transformation est placée sur le serveur sous forme d’un site web statique</p>
+            </div>
+            <div>
+              <head>Produire un site dynamique avec des pipelines de traitement</head>
+              <p>Des environnements tels que Cocoon permettent de développer des chaînes de traitement qui peuvent être exécutées dynamiquement côté serveur</p>
+            </div>
+            <div>
+              <head>Produire un site dynamique avec une base de données XML native</head>
+              <p>Une base de données XML native permet l’exécution dynamique des requêtes. Particulièrement adapté pour des contenus sujets à des modifications ou les requêtes non pré-définies</p>
+            </div>
+          </div>
+        </div>
+        <div rend="slide">
+          <div>
+            <head>Hébergement des données</head>
+            <div>
+              <head>Le problème de l’environnement</head>
+              <list>
+                <item>Beaucoup d’applications en environnement Java</item>
+                <item>Pas de solutions d’hébergement standard</item>
+              </list>
+            </div>
+            <div>
+              <head>La grille de service de la TGIR Huma-Num</head>
+              <p><ref target="http://www.huma-num.fr/service/grille-de-services"
+                  >http://www.huma-num.fr/service/grille-de-services</ref></p>
+              <list>
+                <item>Solutions d’hébergement pour les projets du domaine de l’Enseignement supérieur et de la recherche</item>
+                <item>Habitués à gérer ce genre de demandes</item>
+                <item>Besoin de se conformer à des <ref
+                    target="http://www.huma-num.fr/ressources/guide-des-bonnes-pratiques-numeriques"
+                    >bonnes pratiques</ref></item>
+                <item>Archivage pérenne</item>
+              </list>
+            </div>
+          </div>
+          <div>
+            <p>Comment les créateurs de données en TEI dans des petites institutions peuvent-ils publier et archiver leurs données, et disposer d’un support technique pour leurs projets ?</p>
+            <p>Une question d’échelle Intérêt de la publication de regroupement de textes Mutualisation et économie.</p>
+            <p>Question de la vulnérabilité des ressources produites. Choix de technologies libres et ouvertes pour la publication qui garantissent l’indépendance à l’égard d’une infrastructure commerciale. Le médium numérique requiert néanmoins une attention particulière à sa conservation. La production d’une édition électronique nécessite d’envisager sa maintenance dans le temps sans quoi elle risque de devenir obsolète ou de ne plus être disponible.</p>
+            <p>Grille de service du TGIR HumaNum offre un hébergement web adapté pour accueillir des servlets java. Environnement sécurisé et robuste fournit dans le cadre d’un partenariat avec le centre de calcul IN2P3 à Lyon. Solution semble-t-il favorisée par le CNRS pour les projets en Digital Humanities car elle permet une mutualisation au niveau de l’infrastructure serveur, virtualisation, maintenance, montée en charge, performance, évolutivité en fonction des besoins, etc. Cette solution a en outre l’avantage de la gratuité pour les projets ANR et réalisés dans le cadre de Labex.</p>
+            <p>Outre l’hébergement web, l’offre de la TGIR HumaNum un ensemble de services qui peuvent s’avérer nécessaires. Pérennisation des données, et archivage à long terme réalisé en partenariat avec le XXXX de Montpellier. Serveur de document, accès SSH, etc.</p>
+          </div>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div type="part">
+        <head>Orientations bibliographiques</head>
+        <div rend="slide">
+          <head>Orientations bibliographiques</head>
+          <list>
+            <item>Boot, Peter. "Some Digital Editions and Some Remaining Challenges." Janus, Estudios sobre el siglo de oro , no. 1 (2012). <ref
+                target="http://www.janusdigital.es/articulo.htm?id=7"
+                >http://www.janusdigital.es/articulo.htm?id=7</ref></item>
+            <item>Pape, Sebastian, Christof Schöch, and Lutz Wegner. "TEICHI and the Tools Paradox." Journal of the Text Encoding Initiative , no. 2, Selected Papers from the 2010 TEI Conference (2012). <ref
+                target="http://jtei.revues.org/432">http://jtei.revues.org/432</ref></item>
+            <item>Stapelfeldt, Kirsta, and Donald Moses. "Islandora and TEI: Current and Emerging Applications/Approaches." Journal of the Text Encoding Initiative , no. 5 (2013). <ref
+                target="http://jtei.revues.org/790">http://jtei.revues.org/790</ref></item>
+            <item>Beaulieu, Anne, Karina van Dalen-Oskam, and Joris van Zundert. "Between Tradition and Web 2.0 : ELaborate As a Social Experiment in Humanities Scholarship." In Social Software and the Evolution of User Expertise. Edited by Tatjana Takševa. 2013.</item>
+            <item>Flanders, Julia, and Scott Hamlin. "TAPAS: Building a TEI Publishing and Repository Service." Journal of the Text Encoding Initiative 5 (2013). <ref
+                target="http://jtei.revues.org/788">http://jtei.revues.org/788</ref></item>
+          </list>
+        </div>
+      </div>
+    </back>
+  </text>
+</TEI>

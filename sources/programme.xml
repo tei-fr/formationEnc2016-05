@@ -22,7 +22,6 @@
     </teiHeader>
     <text>
         <body>
-
             <head>Programme de la formation</head>
             <div>
                 <head>Premier jour</head>
@@ -72,7 +71,6 @@
                     <p>Comment partir des complexités du modèle vers la TEI ; les 5 étapes; modules,
                         classes etc.</p>
                     <p><ref target="02-richessesTEI.tei.xml">02-richessesTEI.tei</ref></p>
-
                 </div>
                 <div xml:id="T05" resp="#EM ">
                     <head>15h - 17h : Personnalisation TEI avec Roma<!--– TP EM--></head>
@@ -81,10 +79,8 @@
                         <item> Création avec Roma ODD schéma réduit</item>
                         <item> Génération du schéma et de l’ODD</item>
                         <item> Valider avec le schéma</item>
-
                         <item> Transcription d’un manuscrit simple; validation de la transcription.
                             (exercices sur deGaulle.xml) </item>
-
                     </list>
                     <p>Avant de partir, ne pas oublier de prévenir les participants que nous
                         attendons d’eux trois diapositives de présentation de leur projet pour le
@@ -127,7 +123,6 @@
                 <div xml:id="T08" resp="#EM">
                     <head>11h30 -1200  : TEI Header <!--– PM EM--></head>
                     <p><ref target="04-teiHeader.tei.xml">04-teiHeader.tei</ref></p>
-
                 </div>
                 <div xml:id="T08bis" resp="#EM">
                     <head>12h -12h30 : TP TEI Header<!-- – TP EM--></head>
@@ -237,7 +232,7 @@
                 <head>4ème journée…</head>
                 <div xml:id="T19" resp="#EM">
                     <head>9h30-10h : Chaînes de traitement TEI <!--– PM EM--></head>
-                    <!-- a fournir -->
+                    <p><ref target="09-traitementTEI.tei.xml">09-traitementTEI.tei</ref></p>
                     <p>CSS, XSLT, XQuery, environnements de publication</p>
                     <p>epub, pdf, inDesign, etc.</p>
                 </div>
@@ -256,7 +251,7 @@
                 </div>
                 <div xml:id="T21" resp="#EM">
                     <head>11h30-12h30  : XSLT pour les paresseux <!--– PM+TP EM--></head>
-                    <p><ref target="08-xsltParesseux.tei.xml">08-xsltParesseux.tei</ref></p>
+                    <p><ref target="11-xsltParesseux.tei.xml">11-xsltParesseux.tei</ref></p>
                     <list>
                         <item>Framework TEI Oxygen </item>
                         <item>Personnalisation avec les variables </item>

@@ -537,8 +537,7 @@ Cet élément rend disponible dans le contexte courant les règles contenus par 
 
 Cet élément fait sortir la valeur d’un élément ou d’un attribut : 
 ```xml
-<xsl:value-of xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-  select="/TEI/teiHeader/fileDesc/titleStmt/title"></xsl:value-of>
+<xsl:value-of select="/TEI/teiHeader/fileDesc/titleStmt/title"/>
 ```
 
 
@@ -547,8 +546,9 @@ Attention aux doublons potentiels!
 <xsl:template match="div">
   <h2>
     <xsl:value-of select="@n"/>
-    <xsl:value-of select="head"/></h2>
-    <xsl:apply-templates/>
+    <xsl:value-of select="head"/>
+  </h2>
+  <xsl:apply-templates/>
 </xsl:template>
 <xsl:template  match="div/head"/>
 

@@ -285,13 +285,11 @@ XSLT est un langage de transformation
 
 A partir de ceci : 
 ```xml
-<ref xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  target="http://www.tei-c.org">The TEI website</ref>
+<ref target="http://www.tei-c.org">The TEI website</ref>
 ```
  on veut produire : 
 ```xml
-<a xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  href="http://www.tei-c.org">The TEI website</a>
+<a href="http://www.tei-c.org">The TEI website</a>
 ```
  donc on va .... 
 * transformer l’élément `&lt;ref&gt;` de la TEI dans un élément `&lt;a&gt;` de (x)HTML
@@ -305,7 +303,9 @@ A partir de ceci :
 # Comment exprimer cela en XSL ?
 
 ```xml
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+  xpath-default-namespace="http://www.tei-c.org/ns/1.0" 
+  version="2.0">
   <xsl:template match="ref">
     <a href="{@target}">
       <xsl:apply-templates/>
@@ -332,8 +332,7 @@ A partir de ceci :
 ```
  on veut produire : 
 ```xml
-  <html xmlns="http://www.w3.org/1999/xhtml" 
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <html>
     <h1>34: Pasta pour les novices</h1>
     <p>Ingrédients: pates  fromage râpé</p>
     <p>Faire bouiller les pates, et melanger avec le fromage.</p>
@@ -348,7 +347,7 @@ A partir de ceci :
 
 
 ```xml
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
   xpath-default-namespace="http://www.tei-c.org/ns/1.0" 
   version="2.0">
     <xsl:template match="div">
@@ -429,13 +428,14 @@ Il peut contenir d’autres éléments XSL, des éléments d’autres noms d’e
   version="2.0">
     <xsl:template match="div">
 &lt;!--  .... actions pour les éléments div....--&gt;
-</xsl:template> <xsl:template match="head">
+  </xsl:template> 
+  <xsl:template match="head">
 &lt;!--  .... actions pour tous les éléments head....--&gt;
-</xsl:template>
-    <xsl:template match="div/head">
+  </xsl:template>
+  <xsl:template match="div/head">
 &lt;!--  .... actions pour les éléments head contenus par un div....--&gt;
-</xsl:template>
-    <xsl:template match="teiHeader"></xsl:template>
+  </xsl:template>
+    <xsl:template match="teiHeader"/>
 </xsl:stylesheet>
 ```
 
@@ -472,22 +472,20 @@ Un template vide requiert la sortie de ... rien, donc (s’il est invoqué) il s
 ---
 
 
-# Plusieurs templates peuvent être spécifies pour un même élément en des contextes divers
+### Plusieurs templates peuvent être spécifies pour un même élément en des contextes divers
 
 Comparer 
 ```xml
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
- match="head">
+<xsl:template" match="head">
   ....
 </xsl:template>
 ```
  avec 
 ```xml
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-  match="div/head">
+<xsl:template match="div/head">
  ...
-</xsl:template><xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-  match="figure/head">
+</xsl:template>
+<xsl:template match="figure/head">
  ....
 </xsl:template>
 ```
@@ -503,7 +501,7 @@ En cas de conflit, c’est le template le plus spécifique qui gagne.
 Cet élément rend disponible dans le contexte courant les règles contenus par les templates indiques dans son attribut `@select`. Si aucun template n’est indiqué, tous les templates sont disponibles.
 
 ```xml
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" match="/">
+<xsl:template match="/">
   <html>
     <xsl:apply-templates/>
   </html>
@@ -511,7 +509,7 @@ Cet élément rend disponible dans le contexte courant les règles contenus par 
 ```
 
 ```xml
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" match="TEI">
+<xsl:template match="TEI">
   <xsl:apply-templates select="text"/>
 </xsl:template>
 ```
@@ -521,8 +519,7 @@ Cet élément rend disponible dans le contexte courant les règles contenus par 
 ## Il est aussi très utile pour varier l’ordre des sorties:
 
 ```xml
-  <xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-    match="text">
+  <xsl:template match="text">
     <h1>Corps du texte</h1>
     <xsl:apply-templates select="body"/>
     <h1>Pièces liminaires</h1>
@@ -545,14 +542,14 @@ Cet élément fait sortir la valeur d’un élément ou d’un attribut :
 
 Attention aux doublons potentiels! 
 ```xml
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" match="div">
+<xsl:template match="div">
   <h2>
     <xsl:value-of select="@n"/>
     <xsl:value-of select="head"/></h2>
     <xsl:apply-templates/>
 </xsl:template>
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" match="div/head">
-</xsl:template>
+<xsl:template  match="div/head"/>
+
 ```
 
 ---

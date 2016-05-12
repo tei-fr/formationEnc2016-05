@@ -30,11 +30,11 @@ template: inverse
 class: center middle
 
 
-## Introduction
+# Introduction
 
 ???
 
-## Introduction
+# Introduction
 
 Lorsque des documents sont encodés en XML, il devient relativement aisé de les manipuler et de les transformer en utilisant différents langages informatiques tels que XSLT ou XQuery. Tout en étant extrêmement puissants, ces langages sont complexes et difficiles à maîtriser. Aussi, la Text Encoding Initiative met à disposition plusieurs outils pour transformer des documents TEI en différents formats sans nécessairement avoir besoin de connaissances approfondies en programmation.
 
@@ -44,7 +44,7 @@ Les XSL Stylesheets développées par Sebastian Rahtz, sont un ensemble de trans
 layout: false
 name: index
 
-## Sommaire
+# Sommaire
 
 * [Distribution des XSL Stylesheets](#part1)
 
@@ -55,6 +55,7 @@ name: index
 ---
 template: inverse
 class: center middle
+name: part1
 
 
 # Distribution des XSL Stylesheets
@@ -62,7 +63,7 @@ class: center middle
 ---
 
 
-### Les XSL Stylesheet
+## Les XSL Stylesheets
 
 .red[XSLT Stylesheets] = une bibliothèque de XSL (XSLT et XSL-FO) pour transformer des documents TEI vers toute sorte de formats
 * conçues pour les besoins du TEI Consortium
@@ -83,7 +84,7 @@ class: center middle
 ---
 
 
-### Pourquoi utiliser les XSL Stylesheet&nbsp;?
+## Pourquoi utiliser les XSL Stylesheet&nbsp;?
 
 En dehors du fait d’être faignants…
 
@@ -97,7 +98,7 @@ En dehors du fait d’être faignants…
 
 ???
 
-### Pourquoi utiliser les XSL Stylesheets&nbsp;?
+## Pourquoi utiliser les XSL Stylesheets&nbsp;?
 
 En dehors du fait que nous soyons faignants…
 
@@ -112,7 +113,7 @@ En dehors du fait que nous soyons faignants…
 ---
 
 
-### Limitations
+## Limitations
 
 * ne fournissent pas nécessairement des rendus pour tous les éléments de la TEI
 
@@ -124,7 +125,7 @@ En revanche elles permettent de régler de nombreux problèmes courants
 
 ???
 
-### Limitations
+## Limitations
 
 Il est important de comprendre d’emblée que si les XSLT Stylesheets offrent un ensemble de traitements génériques pour la TEI, elles ne traitent pas tous les cas de figure ou tous les éléments ou valeurs d’attribut de la TEI.
 
@@ -135,7 +136,7 @@ Les transformations pour la P5 sont seulement développées en XSLT&nbsp;2.0, le
 ---
 
 
-### Sebastian Patrick Quintus Rahtz (13 February 1955 – 15 March 2016)
+## Sebastian Patrick Quintus Rahtz [(13 February 1955 – 15 March 2016)]()
 ![](../images/sebastian.jpg)
 ???
 
@@ -144,12 +145,12 @@ La TEI est une communauté, elle est largement redevable des personnes qui ont c
 ---
 
 
-### Distribution des XSL Stylesheets
+## Distribution des XSL Stylesheets
 * Sources&nbsp;: https://github.com/TEIC/Stylesheets
 * Documentation&nbsp;: http://www.tei-c.org/release/doc/tei-xsl/
-* Téléchargeable sous forme de packet Debian/Ubuntu&nbsp;: http://tei.oucs.ox.ac.uk/teideb/
+* Téléchargeables sous forme de packet Debian/Ubuntu&nbsp;: http://tei.oucs.ox.ac.uk/teideb/
 * Au cœur du convertisseur OxGarage&nbsp;: http://www.tei-c.org/oxgarage/
-* Distribué comme framework d’oXygen&nbsp;: Pré-installé dans la distribution d’oXygen
+* Distribuées comme framework d’oXygen&nbsp;: Pré-installé dans la distribution d’oXygen
 
 ???
 
@@ -164,27 +165,26 @@ Enfin, les stylesheets sont également distribuées parmi les Framework offerts 
 ---
 
 
-### Plusieurs manières de personnaliser les XSL Stylesheets
+## Plusieurs manières de personnaliser les XSL Stylesheets
 
-* en spécifiant des valeurs de paramètres avec oXygen
+* en spécifiant des .red[valeurs de paramètres] avec oXygen
 
-* en fournissant ces paramètres en ligne de commande
+* en fournissant ces paramètres .red[en ligne de commande]
 
-* en construisant des feuilles de styles embarquant celles de la librairie en les surchargeant.
-
-???
+* en construisant des .red[feuilles de styles embarquant celles de la librairie] en les surchargeant.
 
 ---
 template: inverse
 class: center middle
+name: part2
 
 
-# Transformations par défaut avec oXygen
+# Transformations par défaut avec o.red[X]ygen
 
 ---
 
 
-### Scénarios du Framework TEI d’oXygen
+## Scénarios du Framework TEI d’oXygen
 ![](../images/oxygenScenariosTEIP5.png)
 ???
 
@@ -197,15 +197,27 @@ Vous pouvez également, si vous l’avez installé, de transformations spéciali
 ---
 
 
-### TP personnalisation d’une sortie vers html
+## .red[TP] personnalisation d’une sortie vers html
 
-Les XSL Stylesheets propose de très nombreux paramètres de personnalisation pour calibrer la sortie.
+Les XSL Stylesheets proposent de très nombreux paramètres de personnalisation pour calibrer la sortie.
 
-* Ajouter/retirer un sommaire
+Essayons de produire une sortie HTML de notre édition des archives de l’Oulipo
 
-* Ajouter des numéros de paragraphes
+* Configurez un scénario de transformation avec TEIP5 to HTML
+
+* Exécutez la transformation et observez le résultat
+
+* Modifiez ensuite les paramètres ci-dessous
+
+* Ajoutez/retirer les sommaires
+
+* Retirez la numérotation des parties
+
+* Ajouter des id aux paragraphes
 
 * Sélectionner une CSS
+
+* Sous l’onglet `Sortie` cochez la case `Ouvrir dans un éditeur` pour voir le code html résultant
 
 ???
 
@@ -214,7 +226,7 @@ En appliquant un scénario pré-défini de transformation dans oXygen, vous avez
 ---
 
 
-### Organisation du Framework
+## Organisation du Framework
 * common&nbsp;: règles utilisées par plusieurs transformations
 * csv&nbsp;: transformations pour csv
 * epub&nbsp;: transformations pour epub
@@ -233,21 +245,19 @@ Ici, le répertoire `profiles/` est très important car c’est celui qui va con
 ---
 
 
-### Sorties non proposées par défaut
+## Sorties non proposées par défaut
 
 Chemin du Framework&nbsp;: `oxygen/frameworks/tei/xml/tei/stylesheet/`
 
-* bénéficier d’un plus grand nombre de formats de sortie
+## .red[Exercice]&nbsp;: Bénéficier d’un plus grand nombre de formats de sortie
 
-* ex.&nbsp;: LaTeX, csv, etc.
+En faisant directement appel aux XSL Stylesheet, vous pouvez bénéficier d’un plus grand nombre de formats de sortie, par ex.&nbsp;: LaTeX, csv, etc.
 
-* configurez un scénario de transformation en utilisant le profile par défaut pour PDF
+* configurez un scénario de transformation en utilisant le profil par défaut pour PDF
 
 * produire une sortie PDF à partir d’un fichier encodé en TEI
 
-* modfiez le paramètre institution et prenez connaissance du résultat de vos modifications
-
-* 
+* modifiez le paramètre institution et prenez connaissance du résultat de vos modifications
 
 * Comment traiter le texte sur deux colonnes, retirer les numéros de page, modifier le retrait des paragraphes, changer de format de page&nbsp;?
 
@@ -276,6 +286,7 @@ Par exemple, pour transformer un fichier TEI vers html5 par défaut, on peut ex�
 ---
 template: inverse
 class: center middle
+name: part3
 
 
 # Personnalisation
@@ -283,7 +294,7 @@ class: center middle
 ---
 
 
-### Plusieurs manières de personnaliser les XSL Stylesheets
+## Plusieurs manières de personnaliser les XSL Stylesheets
 
 * En utilisant des paramètres
 
@@ -306,16 +317,21 @@ Si l’on regarde ce que contiennent les fichiers XSLT contenus dans le réperto
 ---
 
 
-### 
-
+## Exemple d’inclusion d’une .red[XSLT]
+```xsl
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+    version="1.0"&gt; 
+    &lt;xsl:import href="../path/to/" /&gt; 
+&lt;/xsl:stylesheet&gt;
+  ```
 ---
 
 
-### `import` et `include`
+## `import` et `include`
 
 `import` et `include` sont deux fonctionnalités prévues par XSLT.
-* &lt;xsl:import href="..."/&gt;&nbsp;: inclue les règles d’un autre fichier XSLT, en prenant la prééminence sur elles si besoin
-* &lt;xsl:include href="..."/&gt;&nbsp;: importe les règles d’un autre fichier XSLT, mais sans prendre de prééminence sur elles
+* `&lt;xsl:import href="..."/&gt;`&nbsp;: inclue les règles d’un autre fichier XSLT, en prenant la prééminence sur elles si besoin
+* `&lt;xsl:include href="..."/&gt;`&nbsp;: importe les règles d’un autre fichier XSLT, mais sans prendre de prééminence sur elles
 
 ???
 
@@ -328,15 +344,15 @@ Dans le cas où vous voudriez importer dans un fichier des règles correspondant
 ---
 
 
-### Créer son propre profil
+## Créer son propre profil
 
-profiles/$PROFILENAME/$FORMAT/to.xsl
+`profiles/$PROFILENAME/$FORMAT/to.xsl`
 
-profiles/$PROFILENAME/$FORMAT/from.xsl
+`profiles/$PROFILENAME/$FORMAT/from.xsl`
 
-Vous pouvez commencer en copiant les fichiers par défaut. Par exemple, prendre...
+Vous pouvez commencer en copiant les fichiers par défaut. Par exemple, prendre htm5
 
-Ajouter une règle
+Ajouter une règle pour créer une table des matières du corpus.
 
 ---
 template: inverse

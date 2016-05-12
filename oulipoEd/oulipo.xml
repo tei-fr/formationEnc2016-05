@@ -35,5 +35,24 @@
   <xi:include href="CR610428_4.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
   <xi:include href="cr620911_header.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
   <xi:include href="cr650308-flo.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
-
+  <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Liste des personnes citées</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Unknown</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>fichier d’index généré informatiquement</p>
+            </sourceDesc>
+         </fileDesc>
+      </teiHeader>
+     <text>
+        <body>
+           <div><divGen type='namelist'/></div>
+        </body>
+     </text>
+   </TEI>
 </teiCorpus>

@@ -380,7 +380,8 @@ A partir de ceci :
 * `&lt;xsl:output&gt;` : spécifie quelques options pour l’arbre de sortie, par exemple son format (HTML, XML, TEXT...), encodage (ISO-8859-1, UTF-8 ...) etc.
 
 ```xml
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+  xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
   <xsl:output method="html" encoding="ISO-8859-1"/>
   <xsl:template match="/">
     <xsl:apply-templates/>
@@ -536,7 +537,8 @@ Cet élément rend disponible dans le contexte courant les règles contenus par 
 
 Cet élément fait sortir la valeur d’un élément ou d’un attribut : 
 ```xml
-<xsl:value-of xmlns:xsl="http://www.w3.org/1999/XSL/Transform" select="/TEI/teiHeader/fileDesc/titleStmt/title"></xsl:value-of>
+<xsl:value-of xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+  select="/TEI/teiHeader/fileDesc/titleStmt/title"></xsl:value-of>
 ```
 
 

@@ -19,6 +19,11 @@
       <head>Une personalisation minimale de la TEI</head>
       <p>Cette personalisation propose un schema minimale pour la transcription des documents
         archivals. </p>
+      <p>Voici la liste des elements textuels fournis par ce schema :
+        <specDesc key="ab"/>
+        <specDesc key="pb"/>
+        <specDesc key="unclear"/>
+      Machine truc bla bla bla</p>
       
       <schemaSpec ident="transMin" start="TEI text" docLang="fr">
         <moduleRef key="header" include="teiHeader fileDesc titleStmt publicationStmt sourceDesc"/>
@@ -29,6 +34,18 @@
         <elementRef key="pb"/>
         <elementRef key="unclear"/>
         <elementRef key="hi"/>
+        <elementRef key="g"/>
+        <elementRef key="name"/>
+        <elementSpec ident="botName">
+          <desc xml:lang="fr">nom botanique ou phytonome</desc>
+          <desc xml:lang="en">botanical name of a plant vel sim</desc>
+          <classes><memberOf key="model.phrase"/>
+          <memberOf key="att.global"/>
+          </classes>
+          <content>
+            <macroRef key="macro.phraseSeq"/>
+          </content>
+        </elementSpec>
       </schemaSpec>
     </body>
   </text>

@@ -30,20 +30,21 @@ template: inverse
 class: center middle
 
 
-## Introduction
+# Introduction
 
 ???
 
-## Introduction
+# Introduction
 
 Lorsque des documents sont encodés en XML, il devient relativement aisé de les manipuler et de les transformer en utilisant différents langages informatiques tels que XSLT ou XQuery. Tout en étant extrêmement puissants, ces langages sont complexes et difficiles à maîtriser. Aussi, la Text Encoding Initiative met à disposition plusieurs outils pour transformer des documents TEI en différents formats sans nécessairement avoir besoin de connaissances approfondies en programmation.
 
 Les XSL Stylesheets développées par Sebastian Rahtz, sont un ensemble de transformations XSLT qui sert notamment à produire les Guidelines et le site web de la TEI. Celles-ci sont également présentes au sein du Framework TEI offert par l’éditeur XML oXygen. Nous vous proposons une rapide introduction pour apprendre à les utiliser pour produire des sorties dans différents formats (xhtml, LateX, pdf, docx, etc.) à partir de vos documents TEI.
 
 ---
+layout: false
 name: index
 
-## Sommaire
+# Sommaire
 
 * [Distribution des XSL Stylesheets](#part1)
 
@@ -62,7 +63,7 @@ name: part1
 ---
 
 
-### Les XSL Stylesheets
+## Les XSL Stylesheets
 
 .red[XSLT Stylesheets] = une bibliothèque de XSL (XSLT et XSL-FO) pour transformer des documents TEI vers toute sorte de formats
 * conçues pour les besoins du TEI Consortium
@@ -83,7 +84,7 @@ name: part1
 ---
 
 
-### Pourquoi utiliser les XSL Stylesheet&nbsp;?
+## Pourquoi utiliser les XSL Stylesheet&nbsp;?
 
 En dehors du fait d’être faignants…
 
@@ -97,7 +98,7 @@ En dehors du fait d’être faignants…
 
 ???
 
-### Pourquoi utiliser les XSL Stylesheets&nbsp;?
+## Pourquoi utiliser les XSL Stylesheets&nbsp;?
 
 En dehors du fait que nous soyons faignants…
 
@@ -112,7 +113,7 @@ En dehors du fait que nous soyons faignants…
 ---
 
 
-### Limitations
+## Limitations
 
 * ne fournissent pas nécessairement des rendus pour tous les éléments de la TEI
 
@@ -124,7 +125,7 @@ En revanche elles permettent de régler de nombreux problèmes courants
 
 ???
 
-### Limitations
+## Limitations
 
 Il est important de comprendre d’emblée que si les XSLT Stylesheets offrent un ensemble de traitements génériques pour la TEI, elles ne traitent pas tous les cas de figure ou tous les éléments ou valeurs d’attribut de la TEI.
 
@@ -135,7 +136,7 @@ Les transformations pour la P5 sont seulement développées en XSLT&nbsp;2.0, le
 ---
 
 
-### Sebastian Patrick Quintus Rahtz [(13 February 1955 – 15 March 2016)]()
+## Sebastian Patrick Quintus Rahtz [(13 February 1955 – 15 March 2016)]()
 ![](../images/sebastian.jpg)
 ???
 
@@ -144,7 +145,7 @@ La TEI est une communauté, elle est largement redevable des personnes qui ont c
 ---
 
 
-### Distribution des XSL Stylesheets
+## Distribution des XSL Stylesheets
 * Sources&nbsp;: https://github.com/TEIC/Stylesheets
 * Documentation&nbsp;: http://www.tei-c.org/release/doc/tei-xsl/
 * Téléchargeables sous forme de packet Debian/Ubuntu&nbsp;: http://tei.oucs.ox.ac.uk/teideb/
@@ -164,7 +165,7 @@ Enfin, les stylesheets sont également distribuées parmi les Framework offerts 
 ---
 
 
-### Plusieurs manières de personnaliser les XSL Stylesheets
+## Plusieurs manières de personnaliser les XSL Stylesheets
 
 * en spécifiant des .red[valeurs de paramètres] avec oXygen
 
@@ -183,7 +184,7 @@ name: part2
 ---
 
 
-### Scénarios du Framework TEI d’oXygen
+## Scénarios du Framework TEI d’oXygen
 ![](../images/oxygenScenariosTEIP5.png)
 ???
 
@@ -196,7 +197,7 @@ Vous pouvez également, si vous l’avez installé, de transformations spéciali
 ---
 
 
-### Générer un document OpenOffice (ou MsWord)
+## Générer un document OpenOffice (ou MsWord)
 
 * Ouvrez le fichier `oulipo.xml` qui se trouve dans `oulipoEd`
 
@@ -209,7 +210,7 @@ Vous pouvez également, si vous l’avez installé, de transformations spéciali
 ---
 
 
-### .red[TP] personnalisation d’une sortie vers html
+## .red[TP] personnalisation d’une sortie vers html
 
 Les XSL Stylesheets proposent de très nombreux paramètres de personnalisation pour calibrer la sortie.
 
@@ -227,7 +228,7 @@ Essayons de produire une sortie HTML de notre édition des archives de l’Oulip
 
 * Ajouter des id aux paragraphes
 
-* Sélectionner une CSS
+* Sélectionner la CSS présente dans `oulipoEd/css/oulipo.css`
 
 * Sous l’onglet `Sortie` cochez la case `Ouvrir dans un éditeur` pour voir le code html résultant
 
@@ -238,7 +239,7 @@ En appliquant un scénario pré-défini de transformation dans oXygen, vous avez
 ---
 
 
-### Organisation du Framework
+## Organisation du Framework
 * common&nbsp;: règles utilisées par plusieurs transformations
 * csv&nbsp;: transformations pour csv
 * epub&nbsp;: transformations pour epub
@@ -257,11 +258,11 @@ Ici, le répertoire `profiles/` est très important car c’est celui qui va con
 ---
 
 
-### Sorties non proposées par défaut
+## Sorties non proposées par défaut
 
 Chemin du Framework&nbsp;: `oxygen/frameworks/tei/xml/tei/stylesheet/`
 
-#### .red[Exercice]&nbsp;: Bénéficier d’un plus grand nombre de formats de sortie
+## .red[Exercice]&nbsp;: Bénéficier d’un plus grand nombre de formats de sortie
 
 En faisant directement appel aux XSL Stylesheet, vous pouvez bénéficier d’un plus grand nombre de formats de sortie, par ex.&nbsp;: LaTeX, csv, etc.
 
@@ -306,7 +307,7 @@ name: part3
 ---
 
 
-### Plusieurs manières de personnaliser les XSL Stylesheets
+## Plusieurs manières de personnaliser les XSL Stylesheets
 
 * En utilisant des paramètres
 
@@ -329,7 +330,7 @@ Si l’on regarde ce que contiennent les fichiers XSLT contenus dans le réperto
 ---
 
 
-### Exemple d’inclusion d’une .red[XSLT]
+## Exemple d’inclusion d’une .red[XSLT]
 ```xslt
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 version="1.0"> 
@@ -339,7 +340,7 @@ version="1.0">
 ---
 
 
-### `import` et `include`
+## `import` et `include`
 
 `import` et `include` sont deux fonctionnalités prévues par XSLT.
 * &lt;xsl:import href="..."/&gt;&nbsp;: inclue les règles d’un autre fichier XSLT, en prenant la prééminence sur elles si besoin
@@ -356,7 +357,7 @@ Dans le cas où vous voudriez importer dans un fichier des règles correspondant
 ---
 
 
-### Créer son propre profil
+## Créer son propre profil
 
 `profiles/$PROFILENAME/$FORMAT/to.xsl`
 
@@ -383,7 +384,7 @@ Exemple :
 ---
 
 
-### Afficher une liste des personnes citées
+## Afficher une liste des personnes citées
 
 * Observez dans le fichier `oulipo.xml` que nous avons ajouté un document TEI à la fin du corpus qui contient un élément `divGen` identifié par un attribut `@type`
 
@@ -394,7 +395,7 @@ Exemple :
 ---
 
 
-### Afficher une liste des personnes citées (suite)
+## Afficher une liste des personnes citées (suite)
 
 Un profil a déjà été défini pour le projet Oulipo
 

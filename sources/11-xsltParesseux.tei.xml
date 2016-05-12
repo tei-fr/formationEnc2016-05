@@ -161,6 +161,17 @@
         </div>
         <div rend="slide" xml:lang="fr">
           <div>
+            <head>Générer un document OpenOffice (ou MsWord)</head>
+            <list>
+              <item>Ouvrez le fichier <ident>oulipo.xml</ident> qui se trouve dans <ident>oulipoEd</ident></item>
+              <item>Configurez un scénario de transformation</item>
+              <item>Dans <ident>TEI P5</ident>, sélectionnez <ident>TEI P5 to ODT</ident></item>
+              <item>Appliquez les scénarios sélectionnés</item>
+            </list>
+          </div>
+        </div>
+        <div rend="slide" xml:lang="fr">
+          <div>
             <head><hi>TP</hi> personnalisation d’une sortie vers html</head>
             <p>Les XSL Stylesheets proposent de très nombreux paramètres de personnalisation pour calibrer la sortie.</p>
             <p>Essayons de produire une sortie HTML de notre édition des archives de l’Oulipo</p>
@@ -294,8 +305,42 @@
             <p><ident>profiles/$PROFILENAME/$FORMAT/to.xsl</ident></p>
             <p><ident>profiles/$PROFILENAME/$FORMAT/from.xsl</ident></p>
             <p>Vous pouvez commencer en copiant les fichiers par défaut. Par exemple, prendre html5</p>
-            <p>Dans votre copie, ajouter une règle pour créer une table des matières du corpus.</p>
+            <list>
+              <item>Créez un répertoire <ident>perso/</ident> dans <ident>profiles/</ident>.</item>
+              <item>Dans ce répertoire copiez le répertoire <ident>html5/</ident> contenu dans <ident>default/</ident></item>
+              <item>Créez un scénario de transformation avec le fichier <ident>to.xsl</ident> contenu dans <ident>profiles/perso/html5/</ident></item>
+              <item>Modifiez le fichier <ident>profiles/perso/html5/to.xsl</ident> pour personnalisez votre transformation avec des paramètres</item>
+              <item>Supprimer les numéros de titres</item>
+            </list>
+            <p>Exemple :</p>
+            <egXML>
+              <![CDATA[<xsl:param name="numberFigures">false</xsl:param>]]>
+            </egXML>
             
+            <!-- @todo définir un exercice -->
+          </div>
+        </div>
+        <div rend="slide" xml:lang="fr">
+          <div>
+            <head>Afficher une liste des personnes citées</head>
+            <list>
+              <item>Observez dans le fichier <ident>oulipo.xml</ident> que nous avons ajouté un document TEI à la fin du corpus qui contient un élément <ident>divGen</ident> identifié par un attribut <att>type</att></item>
+              <item>Avec ce que vous connaissez de XSLT, créez dans votre pofil une règle qui s’occupera de cet élément avec <gi>xsl:template</gi> et l’attribut <att>match</att></item>
+              <item>Donnez un contenu à cette règle qui liste tous les éléments <gi>persName</gi> contenus dans le document</item>
+            </list>
+            <!-- @todo définir un exercice -->
+          </div>
+        </div>
+        <div rend="slide" xml:lang="fr">
+          <div>
+            <head>Afficher une liste des personnes citées (suite)</head>
+            <p>Un profil a déjà été défini pour le projet Oulipo</p>
+            <list>
+              <item>Retrouvez le répertoire <ident>oulipo</ident> dans les profils</item>
+              <item>Dans le dossier <ident>html</ident>, ouvrez le fichier <ident>to.xsl</ident></item>
+              <item>Observez la règle modèle qui se trouve à la fin du document</item>
+              <item>Appliquez cette transformation au fichier <ident>oulipo.xml</ident> et consultez le fichier HTML résulat dans un navigateur</item>
+            </list>
             <!-- @todo définir un exercice -->
           </div>
         </div>

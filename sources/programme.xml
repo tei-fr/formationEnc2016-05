@@ -232,7 +232,7 @@
                 <head>4ème journée…</head>
                 <div xml:id="T19" resp="#EM">
                     <head>9h30-10h : Chaînes de traitement TEI <!--– PM EM--></head>
-                    <!-- a fournir -->
+                    <p><ref target="09-traitementTEI.tei.xml">09-traitementTEI.tei</ref></p>
                     <p>CSS, XSLT, XQuery, environnements de publication</p>
                     <p>epub, pdf, inDesign, etc.</p>
                 </div>
@@ -251,7 +251,7 @@
                 </div>
                 <div xml:id="T21" resp="#EM">
                     <head>11h30-12h30  : XSLT pour les paresseux <!--– PM+TP EM--></head>
-                    <p><ref target="08-xsltParesseux.tei.xml">08-xsltParesseux.tei</ref></p>
+                    <p><ref target="11-xsltParesseux.tei.xml">11-xsltParesseux.tei</ref></p>
                     <list>
                         <item>Framework TEI Oxygen </item>
                         <item>Personnalisation avec les variables </item>

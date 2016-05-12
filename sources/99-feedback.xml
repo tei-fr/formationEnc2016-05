@@ -43,10 +43,22 @@
         </div>
         <div>
           <head>Troisième jour</head>
-          <p>Corriger attribut dans entités et @key</p>
+          <div>
+            <p>Dans présentation ODD, corriger dia, plusieurs manière de spécifier un fichier</p>
+            <p>Expliquer comment faire appel directement à un élément</p>
+            <p>Expliquer comment ajouter documentation</p>
+            <p>Expliquer comment étendre</p>
+          </div>
+          <div>
+            <p>Si conserve l’idée de travailler collectivement sur un projet, créer les comptes GitHub avant. </p>
+          </div>
+          <div>
+            <p>Préciser que nouvel élément pas dans l’espace de nom de la TEI. Expliquer comment fait pour le valider concrètement.</p>
+          </div>
         </div>
         <div>
           <head>Quatrième jour</head>
+          <p>Utiliser exemple de la production de la doc pour expliquer processus de traitement.</p>
         </div>
         <div>
           <head>Remarques générales</head>

@@ -73,7 +73,7 @@
             </list>
           </div>
           <div>
-            <head>Pourquoi utiliser les XSL Stylesheet ?</head>
+            <head>Pourquoi utiliser les XSL Stylesheets ?</head>
             <p>En dehors du fait que nous soyons faignants…</p>
             <list>
               <item>elles résolvent divers problèmes, plus ou moins courants, auxquels vous n’aurez pas besoin de penser</item>
@@ -103,7 +103,7 @@
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Sebastian Patrick Quintus Rahtz (13 February 1955 – 15 March 2016)</head>
-            <figure><graphic url="sebastian.jpg"/></figure>
+            <figure><graphic url="../images/sebastian.jpg"/></figure>
           </div>
           <div>
             <p>La TEI est une communauté, elle est largement redevable des personnes qui ont contribué à son fonctionnement. Sebastian Rahtz a été l’initiateur des XSL Stylesheets dont il a longtemps assuré la maintenance. Pour beaucoup d’entre nous, il était un modèle d’engagement, de désintéressement et de rigueur dans le travail. Sa contribution à la TEI fut considérable, et son décès est une grande perte pour la communauté.</p>
